@@ -1,0 +1,43 @@
+constants:
+  goodDebriefingMusic: GMDEBGOO
+  badDebriefingMusic: GMDEBPOR
+######
+musics:
+  - type: GMDEBGOO
+  - type: GMDEBPOR
+  - type: gmstory2
+  - type: gmtactic2
+  - type: gmtactic3
+  - type: gmlose
+  - type: INMYSPIRIT
+  - type: FATE
+  - type: KYRIE
+  - type: gmwin
+    normalization: 1.0
+  - type: BRIEFELDAR
+    normalization: 1.5
+  - type: SECURELAND
+    normalization: 1.5
+  - type: BRIEFCBASE
+    normalization: 1.5
+  - type: BRIEFTERROR
+    normalization: 1.5
+  - type: BRIEFORK
+    normalization: 1.5
+  - type: BRIEFCULT
+    normalization: 1.5
+  - type: BRIEFBASE
+    normalization: 1.5
+  - type: BRIEFWAR
+    normalization: 1.5
+  - type: BRIEFHULK
+    normalization: 1.5
+  - type: BRIEFTG
+    normalization: 1.5
+  - type: BRIEFSAB
+    normalization: 1.5
+  - type: BRIEFTOMB
+    normalization: 1.5
+  - type: BRIEFHIVE
+    normalization: 1.5
+######

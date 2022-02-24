@@ -1,0 +1,12 @@
+name: "40k"
+version: "032"
+author: "bulletdesigner, Ryskeliini, ohartenstein23 with help from all OXC forum, special thks to all who help"
+description: "40k mod"
+id: 40k
+master: xcom1
+isMaster: true
+resourceConfig: Ruleset/vars40k.rul
+loadResources:
+  - UFO
+reservedSpace: 2
+requiredExtendedVersion: "7.5.3"

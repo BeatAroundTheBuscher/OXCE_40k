@@ -1,0 +1,196 @@
+research:
+#*** Imperial guard logistics research ***
+  #- name: STR_IMPERIAL_GUARD_OPERATIONS # this is now part of the base mod
+
+  - name: STR_IMPERIAL_GUARD_BASIC_TRAINING
+    cost: 100
+    points: 15
+    dependencies:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+
+  - name: STR_IMPERIAL_GUARD_MISSIONS
+    cost: 50
+    points: 50
+    dependencies:
+      - STR_IMPERIAL_GUARD_BASIC_TRAINING
+
+  - name: STR_IMPERIAL_GUARD_MISSION_TRAINING_COMPLETE
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GENERALLOCK
+    needItem: true
+
+  - name: STR_IMPERIAL_GUARD_MISSIONS_BULLGRYN_RIOT
+    cost: 50
+    points: 50
+    dependencies:
+      - STR_OGRYN_REQUISITION
+      - STR_IMPERIAL_GUARD_MISSION_TRAINING_COMPLETE
+
+  - name: STR_IMPERIAL_GUARD_MISSION_BULLGRYN_RIOT_COMPLETE
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GENERALLOCK
+    needItem: true
+
+  - name: STR_IMPERIAL_GUARD_MISSIONS_TANITH
+    cost: 50
+    points: 50
+    dependencies:
+      - STR_MIDTIER_PREREQ
+      - STR_NAVY_COMUNICATIONS
+      - STR_IMPERIAL_GUARD_MISSION_TRAINING_COMPLETE
+
+  - name: STR_IMPERIAL_GUARD_MISSIONS_TANITH0_COMPLETE
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GENERALLOCK
+    needItem: true
+
+  - name: STR_IMPERIAL_GUARD_MISSIONS_TANITH_CONVOYAMBUSH
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_IMPERIAL_GUARD_MISSIONS_TANITH0_COMPLETE
+      - STR_LEADER_PLUS
+
+  - name: STR_IMPERIAL_GUARD_MISSIONS_TANITH1_COMPLETE
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GENERALLOCK
+    needItem: true
+
+  - name: STR_IMPERIAL_GUARD_MISSION_ELYSIAN_DROP_COMPLETE # This will be available later as a mission unlock
+    cost: 250 # 0
+    points: 0
+    dependencies:
+      - STR_MIDTIER_PREREQ
+      - STR_IMPERIAL_GUARD_MISSION_TRAINING_COMPLETE
+      #- STR_GENERALLOCK
+    #needItem: true
+
+  - name: STR_IMPERIAL_GUARD_MIDTIER
+    cost: 200
+    points: 200
+    cutscene: c2
+    dependencies:
+      - STR_HEAVY_LASER
+      - STR_ALIEN_ALLOYS
+      - STR_MOTION_SCANNER
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    unlocks:
+      - STR_MIDTIER_PREREQ
+
+  - name: STR_IMPERIAL_GUARD_HIGHTIER
+    cost: 900
+    points: 30
+    dependencies:
+      - STR_MIDTIER_PREREQ
+      - STR_CYDONIA_OR_BUST
+      - STR_REGIMENT_OFFICERS
+      - STR_MARAUDER_REQUISITION
+    unlocks:
+      - STR_HIGHTIER_PREREQ
+
+#*** Imperial guard personnel ***
+  - name: STR_OGRYN_REQUISITION
+    cost: 150
+    points: 25
+    dependencies:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+
+  - name: STR_BULLGRYN_ARMOR
+    cost: 100
+    points: 25
+    dependencies:
+      - STR_IMPERIAL_GUARD_MISSION_BULLGRYN_RIOT_COMPLETE
+
+  - name: STR_REGIMENT_OFFICERS
+    cost: 200
+    points: 50
+    dependencies:
+      - STR_MIDTIER_PREREQ
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    spawnedItem: STR_REGIMENT_COMMISSIONS
+
+  - name: STR_STORMTROOPER_REQUISITION
+    cost: 300
+    points: 75
+    dependencies:
+      - STR_REGIMENT_OFFICERS
+    spawnedItem: STR_STORMTROOPER_REQUISITION
+
+  - name: STR_PSYKER_REQUISITION
+    cost: 400
+    points: 100
+    dependencies:
+      - STR_HIGHTIER_PREREQ
+      - STR_PSI_LAB
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    spawnedItem: STR_PSYKER_REQUISITION
+
+#*** Imperial guard weapons and equipment ***
+  - name: STR_PHOTON_GRENADE_REQUISITION
+    cost: 150
+    points: 25
+    dependencies:
+      - STR_MIDTIER_PREREQ
+      - STR_IMPERIAL_GUARD_OPERATIONS
+
+  - name: STR_AUTOCANNON_GUARD
+    cost: 200
+    points: 25
+    dependencies:
+      - STR_MIDTIER_PREREQ
+      - STR_IMPERIAL_GUARD_OPERATIONS
+
+  - name: STR_HEAVY_SENTINEL
+    cost: 200
+    points: 25
+    dependencies:
+      - STR_MIDTIER_PREREQ
+      - STR_IMPERIAL_GUARD_OPERATIONS
+      - STR_UFO_CONSTRUCTION
+    unlocks:
+      - STR_HFLAMER_FUEL_MANUFACTURING
+
+  - name: STR_HOTSHOT_VOLLEY_GUN
+    cost: 300
+    points: 30
+    dependencies:
+      - STR_STORMTROOPER_REQUISITION
+
+  - name: STR_TANITH_REQUISITIONS
+    cost: 300
+    points: 50
+    dependencies:
+      - STR_IMPERIAL_GUARD_MISSIONS_TANITH1_COMPLETE
+
+#*** Craft ***
+  - name: STR_MARAUDER_REQUISITION
+    cost: 600
+    points: 25
+    dependencies:
+      - STR_MIDTIER_PREREQ
+      - STR_IMPERIAL_GUARD_OPERATIONS
+      - STR_UFO_POWER_SOURCE
+      - STR_UFO_NAVIGATION
+
+#*** Ground-based craft weapons ***
+  - name: STR_CRAFT_QUADLASER
+    cost: 420
+    points: 15
+    dependencies:
+      - STR_GUARD_AND_ARBITES
+      - STR_LASCAN
+
+  - name: STR_CRAFT_AUTOCANNON
+    cost: 420
+    points: 15
+    dependencies:
+      - STR_GUARD_AND_ARBITES
+      - STR_MIDTIER_PREREQ

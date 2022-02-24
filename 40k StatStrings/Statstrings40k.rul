@@ -1,0 +1,38 @@
+# Based on XcomUtil by Scott Jones and BladeFireLight
+# @ librarian
+# ^ tatical
+# ! coward
+# # devastator
+# & sniper
+# _ scout
+# { assault
+# Psionic Training has been added as a value that can be reported by statstrings.  Use "psiTraining:" as the criteria, values will be ignored.
+  statStrings:
+  - string: "@"
+    psiStrength: [15, ~]
+  - string: "^"
+    health: [37, 59]
+  - string: "!"
+    bravery: [~, 20]
+  - string: "!"
+    psiStrength: [~, 10]
+  - string: "#"
+    strength: [38, 59]
+  - string: "&"
+    reactions: [50, 80]
+    firing: [65, 74]
+  - string: "{"
+    reactions: [40, ~]
+    tu: [55, ~]
+    melee: [75, 79]
+  - string: "|"
+    health: [60, ~]
+  - string: "|"
+    strength: [60, ~]
+  - string: "|"
+    firing: [75, ~]
+  - string: "|"
+    melee: [80, ~]
+  - string: "|"
+    reactions: [80, ~]	
+    stamina: [99, ~]

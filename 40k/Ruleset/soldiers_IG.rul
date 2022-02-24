@@ -1,0 +1,478 @@
+soldiers:
+  - type: STR_GUARDSM
+    rankSprite: 1000
+    rankBattleSprite: 1000
+    rankTinySprite: 1000
+
+  - type: STR_GUARD_VETERAN
+    flagOffset: 42
+    requires:
+      - STR_NOT_AVAILABLE
+    costSalary: 10000
+    minStats:
+      tu: 50
+      stamina: 40
+      health: 25
+      bravery: 20
+      reactions: 30
+      firing: 40
+      throwing: 35
+      strength: 10
+      psiStrength: 0
+      psiSkill: 0
+      melee: 20
+    maxStats:
+      tu: 60
+      stamina: 70
+      health: 40
+      bravery: 60
+      reactions: 60
+      firing: 70
+      throwing: 65
+      strength: 20
+      psiStrength: 100
+      psiSkill: 6
+      melee: 60
+    statCaps:
+      tu: 65
+      stamina: 100
+      health: 50
+      bravery: 110
+      reactions: 70
+      firing: 120
+      throwing: 70
+      strength: 60
+      psiStrength: 100
+      psiSkill: 100
+      melee: 100
+    trainingStatCaps:
+      tu: 60
+      stamina: 70
+      health: 30
+      firing: 70
+      throwing: 65
+      strength: 25
+      psiStrength: 100
+      psiSkill: 100
+      melee: 70
+    armor: STR_STORMTROOPER_CARAPACE_ARMOR
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    allowPiloting: true
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - GuardName/
+    deathMale: [41, 42, 43]
+    deathFemale: [44, 45, 46]
+    rankStrings:
+      - STR_GUARD_RANK_0
+      - STR_GUARD_RANK_1
+      - STR_GUARD_RANK_2
+      - STR_GUARD_RANK_3
+    rankSprite: 1006
+    rankBattleSprite: 1006
+    rankTinySprite: 1006
+
+  - type: STR_GUARD_OFFICER
+    flagOffset: 42
+    requires:
+      - STR_NOT_AVAILABLE
+    costSalary: 30000
+    minStats:
+      tu: 50
+      stamina: 40
+      health: 25
+      bravery: 30
+      reactions: 30
+      firing: 50
+      throwing: 35
+      strength: 15
+      psiStrength: 0
+      psiSkill: 0
+      melee: 40
+    maxStats:
+      tu: 60
+      stamina: 70
+      health: 40
+      bravery: 70
+      reactions: 60
+      firing: 70
+      throwing: 65
+      strength: 25
+      psiStrength: 100
+      psiSkill: 16
+      melee: 70
+    statCaps:
+      tu: 75
+      stamina: 120
+      health: 60
+      bravery: 110
+      reactions: 80
+      firing: 90
+      throwing: 70
+      strength: 60
+      psiStrength: 100
+      psiSkill: 100
+      melee: 120
+    trainingStatCaps:
+      tu: 60
+      stamina: 70
+      health: 40
+      firing: 70
+      throwing: 65
+      strength: 35
+      psiStrength: 100
+      psiSkill: 100
+      melee: 70
+    armor: STR_OFFICER_FLAK_ARMOR
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    allowPiloting: true
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - GuardName/
+    deathMale: [41, 42, 43]
+    deathFemale: [44, 45, 46]
+    rankStrings:
+      - STR_OFFICER_RANK_0
+      - STR_OFFICER_RANK_1
+      - STR_OFFICER_RANK_2
+      - STR_OFFICER_RANK_3
+      - STR_OFFICER_RANK_4
+      - STR_OFFICER_RANK_5
+    rankSprite: 1012
+    rankBattleSprite: 1012
+    rankTinySprite: 1012
+
+  - type: STR_COMMISSAR
+    flagOffset: 42
+    requires:
+      - STR_NOT_AVAILABLE
+    costSalary: 30000
+    minStats:
+      tu: 50
+      stamina: 40
+      health: 35
+      bravery: 60
+      reactions: 40
+      firing: 50
+      throwing: 40
+      strength: 25
+      psiStrength: 50
+      psiSkill: 0
+      melee: 50
+    maxStats:
+      tu: 60
+      stamina: 70
+      health: 45
+      bravery: 90
+      reactions: 60
+      firing: 70
+      throwing: 65
+      strength: 35
+      psiStrength: 100
+      psiSkill: 16
+      melee: 80
+    statCaps:
+      tu: 75
+      stamina: 120
+      health: 60
+      bravery: 110
+      reactions: 80
+      firing: 90
+      throwing: 70
+      strength: 60
+      psiStrength: 100
+      psiSkill: 100
+      melee: 120
+    trainingStatCaps:
+      tu: 60
+      stamina: 70
+      health: 40
+      firing: 70
+      throwing: 65
+      strength: 35
+      psiStrength: 100
+      psiSkill: 100
+      melee: 80
+    armor: STR_COMMISSAR_UC
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    allowPiloting: true
+    allowPromotion: false
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - GuardName/
+    deathMale: [41, 42, 43]
+    deathFemale: [44, 45, 46]
+    rankStrings:
+      - STR_COMMISSAR
+    rankSprite: 1018
+    rankBattleSprite: 1018
+    rankTinySprite: 1018
+
+  - type: STR_STORMTROOPER
+    flagOffset: 42
+    costSalary: 30000
+    requires:
+      - STR_NOT_AVAILABLE
+    minStats:
+      tu: 50
+      stamina: 50
+      health: 30
+      bravery: 40
+      reactions: 45
+      firing: 60
+      throwing: 40
+      strength: 25
+      psiStrength: 40
+      psiSkill: 0
+      melee: 50
+    maxStats:
+      tu: 60
+      stamina: 80
+      health: 45
+      bravery: 80
+      reactions: 60
+      firing: 80
+      throwing: 70
+      strength: 35
+      psiStrength: 70
+      psiSkill: 6
+      melee: 70
+    statCaps:
+      tu: 70
+      stamina: 120
+      health: 50
+      bravery: 110
+      reactions: 70
+      firing: 130
+      throwing: 70
+      strength: 60
+      psiStrength: 70
+      psiSkill: 50
+      melee: 100
+    trainingStatCaps:
+      tu: 60
+      stamina: 80
+      health: 40
+      firing: 80
+      throwing: 70
+      strength: 35
+      psiStrength: 70
+      psiSkill: 50
+      melee: 70
+    armor: STR_SCION_CARAPACE_ARMOR
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    allowPiloting: true
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - GuardName/
+    deathMale: [41, 42, 43]
+    deathFemale: [44, 45, 46]
+    rankStrings:
+      - STR_STORMTROOPER_RANK_0
+      - STR_STORMTROOPER_RANK_1
+      - STR_STORMTROOPER_RANK_2
+      - STR_STORMTROOPER_RANK_3
+    rankSprite: 1019
+    rankBattleSprite: 1019
+    rankTinySprite: 1019
+
+  - type: STR_OGRYN
+    requires:
+      - STR_OGRYN_REQUISITION
+    flagOffset: 42
+    costBuy: 45000
+    costSalary: 5000
+    minStats:
+      tu: 60
+      stamina: 50
+      health: 75
+      bravery: 10
+      reactions: 25
+      firing: 20
+      throwing: 35
+      strength: 60
+      psiStrength: 20
+      psiSkill: 0
+      melee: 40
+    maxStats:
+      tu: 70
+      stamina: 80
+      health: 120
+      bravery: 50
+      reactions: 40
+      firing: 25
+      throwing: 65
+      strength: 80
+      psiStrength: 40
+      psiSkill: 0
+      melee: 65
+    statCaps:
+      tu: 80
+      stamina: 120
+      health: 150
+      bravery: 80
+      reactions: 60
+      firing: 50
+      throwing: 70
+      strength: 120
+      psiStrength: 40
+      psiSkill: 0
+      melee: 110
+    trainingStatCaps:
+      tu: 70
+      stamina: 80
+      health: 120
+      firing: 20
+      throwing: 65
+      strength: 60
+      psiStrength: 40
+      psiSkill: 0
+      melee: 70
+    armor: STR_OGRYN_UC
+    allowPiloting: false
+    allowPromotion: false
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 0
+    avatarOffsetX: 68
+    avatarOffsetY: 38
+    soldierNames:
+      - delete
+      - OgrynName/
+    deathMale: [41, 42, 43]
+    deathFemale: [44, 45, 46]
+    rankStrings:
+      - STR_AUXILIARY_RANK
+    rankSprite: 1005
+    rankBattleSprite: 1005
+    rankTinySprite: 1005
+
+  - type: STR_PSYKER
+    flagOffset: 42
+    requires:
+      - STR_NOT_AVAILABLE
+    costSalary: 30000
+    minStats:
+      tu: 50
+      stamina: 40
+      health: 25
+      bravery: 40
+      reactions: 30
+      firing: 40
+      throwing: 35
+      strength: 10
+      psiStrength: 80
+      psiSkill: 20
+      melee: 20
+    maxStats:
+      tu: 60
+      stamina: 70
+      health: 40
+      bravery: 70
+      reactions: 60
+      firing: 70
+      throwing: 65
+      strength: 20
+      psiStrength: 100
+      psiSkill: 50
+      melee: 60
+    statCaps:
+      tu: 65
+      stamina: 100
+      health: 50
+      bravery: 110
+      reactions: 70
+      firing: 120
+      throwing: 70
+      strength: 60
+      psiStrength: 100
+      psiSkill: 100
+      melee: 100
+    trainingStatCaps:
+      tu: 60
+      stamina: 70
+      health: 30
+      firing: 70
+      throwing: 65
+      strength: 25
+      psiStrength: 100
+      psiSkill: 100
+      melee: 70
+    armor: STR_PSYKER_ARMOR
+    allowPiloting: false
+    allowPromotion: false
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - GuardName/
+    deathMale: [41, 42, 43]
+    deathFemale: [44, 45, 46]
+    rankStrings:
+      - STR_PSYKER_RANK_0
+    rankSprite: 1006
+    rankBattleSprite: 1006
+    rankTinySprite: 1006
+
+extraSprites:
+  - type: BASEBITS.PCK
+    width: 192
+    height: 128
+    subX: 32
+    subY: 32
+    files:
+      1000: Resources_IG/Ranks/ranks_basescape.png
+
+  - type: SMOKE.PCK
+    width: 192
+    height: 160
+    subX: 32
+    subY: 40
+    files:
+      1000: Resources_IG/Ranks/ranks_battlescape.png
+
+  - type: TinyRanks
+    width: 42
+    height: 28
+    subX: 7
+    subY: 7
+    files:
+      1000: Resources_IG/Ranks/ranks_tiny.png

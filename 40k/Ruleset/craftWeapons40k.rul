@@ -1,0 +1,485 @@
+craftWeapons:
+  - type: STR_STINGRAY               #R 40       A 6        D 60     Acc 65
+    sprite: 0
+    sound: 5
+    damage: 60
+    range: 40
+    accuracy: 65
+    reloadCautious: 64
+    reloadStandard: 48
+    reloadAggressive: 32
+    ammoMax: 6
+    launcher: STR_STINGRAY_LAUNCHER
+    clip: STR_STINGRAY_MISSILES
+    projectileType: 0
+    projectileSpeed: 8
+  - type: STR_AVALANCHE              #R 50       A 3        D100     Acc 75
+    sprite: 1
+    sound: 5
+    damage: 100
+    range: 50
+    accuracy: 75
+    reloadCautious: 96
+    reloadStandard: 72
+    reloadAggressive: 48
+    ammoMax: 3
+    launcher: STR_AVALANCHE_LAUNCHER
+    clip: STR_AVALANCHE_MISSILES
+    projectileType: 1
+    projectileSpeed: 8
+  - type: STR_CANNON_UC              #R 30       A 100      D10      Acc 40
+    sprite: 2
+    sound: 4
+    damage: 10
+    range: 30
+    accuracy: 40
+    reloadCautious: 4
+    reloadStandard: 4
+    reloadAggressive: 4
+    ammoMax: 100
+    rearmRate: 100
+    launcher: STR_CANNON
+    clip: STR_CANNON_ROUNDS_X50
+    projectileType: 2
+    projectileSpeed: 8
+  - type: STR_FUSION_BALL_UC         #R 10       A 2        D230     Acc 90
+    sprite: 3
+    sound: 7
+    damage: 230
+    range: 10
+    accuracy: 90
+    reloadCautious: 64
+    reloadStandard: 48
+    reloadAggressive: 32
+    ammoMax: 2
+    launcher: STR_FUSION_BALL_LAUNCHER
+    clip: STR_FUSION_BALL
+    projectileType: 3
+    projectileSpeed: 8
+  - type: STR_LASER_CANNON_UC        #R 30      A 10        D70      Acc  45
+    sprite: 4
+    sound: 8
+    damage: 70
+    range: 30
+    accuracy: 45
+    reloadCautious: 24
+    reloadStandard: 24
+    reloadAggressive: 24
+    ammoMax: 10
+    rearmRate: 50
+    launcher: STR_LASER_CANNON
+    projectileType: 4
+  - type: STR_PLASMA_BEAM_UC         #R 40      A 5         D120     Acc 30
+    sprite: 5
+    sound: 9
+    damage: 120
+    range: 40
+    accuracy: 30
+    reloadCautious: 24
+    reloadStandard: 24
+    reloadAggressive: 24
+    ammoMax: 5
+    rearmRate: 50
+    launcher: STR_PLASMA_BEAM
+    projectileType: 5
+  - type: STR_THUNDER_CANNON_UC      #R 40      A 2         D300     Acc 30
+    weaponType: 1
+    sprite: 752
+    sound: 32
+    damage: 300
+    range: 40
+    accuracy: 30
+    reloadCautious: 48
+    reloadStandard: 48
+    reloadAggressive: 48
+    ammoMax: 2
+    launcher: STR_THUNDER_CANNON
+    projectileType: 2
+    projectileSpeed: 50
+  - type: STR_ASSCANNON_UC           #R 30      A 50        D20      Acc 40
+    sprite: 759
+    sound: 4
+    damage: 20
+    range: 30
+    accuracy: 40
+    reloadCautious: 4
+    reloadStandard: 4
+    reloadAggressive: 4
+    ammoMax: 50
+    rearmRate: 100
+    launcher: STR_ASSCANNON
+    clip: STR_CANNON_ROUNDS_X50
+    projectileType: 2
+    projectileSpeed: 8
+#Addons
+  - type: STR_THRUSTER_UC
+    weaponType: 4
+    sprite: 753
+    sound: 0
+    damage: 0
+    range: 0
+    accuracy: 0
+    reloadCautious: 0
+    reloadStandard: 0
+    reloadAggressive: 0
+    ammoMax: 0
+    rearmRate: 0
+    launcher: STR_THRUSTER
+    projectileType: 0
+    projectileSpeed: 0
+    stats:
+      avoidBonus: 3
+      speedMax: 250
+  - type: STR_TARGETER_UC
+    weaponType: 4
+    sprite: 754
+    sound: 0
+    damage: 0
+    range: 0
+    accuracy: 0
+    reloadCautious: 0
+    reloadStandard: 0
+    reloadAggressive: 0
+    ammoMax: 0
+    rearmRate: 0
+    launcher: STR_TARGETER
+    projectileType: 0
+    projectileSpeed: 0
+    stats:
+      radarRange: 50
+      hitBonus: 10
+  - type: STR_HULL_PLATING_UC
+    weaponType: 4
+    sprite: 755
+    sound: 0
+    damage: 0
+    range: 0
+    accuracy: 0
+    reloadCautious: 0
+    reloadStandard: 0
+    reloadAggressive: 0
+    ammoMax: 0
+    rearmRate: 0
+    launcher: STR_HULL_PLATING
+    projectileType: 0
+    projectileSpeed: 0
+    stats:
+      damageMax: 250
+      armor: 2
+  - type: STR_FLARE_LAUNCH_UC
+    weaponType: 4
+    sprite: 756
+    sound: 0
+    damage: 0
+    range: 0
+    accuracy: 0
+    reloadCautious: 0
+    reloadStandard: 0
+    reloadAggressive: 0
+    ammoMax: 0
+    rearmRate: 0
+    launcher: STR_FLARE_LAUNCH
+    projectileType: 0
+    projectileSpeed: 0
+    stats:
+      avoidBonus: 10
+  - type: STR_SCANNER_UC
+    weaponType: 4
+    sprite: 757
+    sound: 0
+    damage: 0
+    range: 0
+    accuracy: 0
+    reloadCautious: 0
+    reloadStandard: 0
+    reloadAggressive: 0
+    ammoMax: 0
+    rearmRate: 0
+    launcher: STR_SCANNER
+    projectileType: 0
+    projectileSpeed: 0
+    stats:
+      radarRange: 1000
+  - type: STR_RETICULE_UC
+    weaponType: 4
+    sprite: 758
+    sound: 0
+    damage: 0
+    range: 0
+    accuracy: 0
+    reloadCautious: 0
+    reloadStandard: 0
+    reloadAggressive: 0
+    ammoMax: 0
+    rearmRate: 0
+    launcher: STR_RETICULE
+    projectileType: 0
+    projectileSpeed: 0
+    stats:
+      powerBonus: 10
+  - type: STR_CRAFT_SHIELD_UC
+    weaponType: 4
+    sprite: 760
+    sound: 0
+    damage: 0
+    range: 0
+    accuracy: 0
+    reloadCautious: 0
+    reloadStandard: 0
+    reloadAggressive: 0
+    ammoMax: 0
+    rearmRate: 0
+    launcher: STR_CRAFT_SHIELD
+    projectileType: 0
+    projectileSpeed: 0
+    stats:
+      shieldCapacity: 250
+      shieldRecharge: 0
+      shieldRechargeInGeoscape: 10
+      shieldBleedThrough: 100
+items: #craft Related
+  - type: STR_THUNDER_CANNON              #S 3
+    categories: [ STR_CRAFT_WEAPONS]
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+    size: 3.0
+    costSell: 25000
+    transferTime: 48
+    listOrder: 1700
+  - type: STR_ASSCANNON               #S 1
+    categories: [ STR_CRAFT_WEAPONS]
+    requires:
+      - STR_CASSC
+    size: 1.0
+    costSell: 50000
+    transferTime: 48
+    listOrder: 1750
+  - type: STR_STINGRAY_LAUNCHER           #S 2
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 0.8
+    costBuy: 16000
+    costSell: 12000
+    transferTime: 48
+    listOrder: 1100
+  - type: STR_STINGRAY_MISSILES           #S 0.4
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 0.4
+    costBuy: 3000
+    costSell: 2400
+    transferTime: 48
+    clipSize: 1
+    listOrder: 1150
+  - type: STR_AVALANCHE_LAUNCHER          #S 1
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1
+    costBuy: 17000
+    costSell: 12750
+    transferTime: 48
+    listOrder: 1200
+  - type: STR_AVALANCHE_MISSILES          #S 1.5
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1.5
+    costBuy: 9000
+    costSell: 7200
+    transferTime: 48
+    clipSize: 1
+    listOrder: 1250
+  - type: STR_CANNON                      #S 1.5
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1.5
+    costBuy: 30000
+    costSell: 22500
+    transferTime: 48
+    listOrder: 1300
+  - type: STR_CANNON_ROUNDS_X50           #S 0.1
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 0.1
+    costBuy: 1240
+    costSell: 1012
+    transferTime: 96
+    clipSize: 50
+    listOrder: 1350
+  - type: STR_FUSION_BALL_LAUNCHER        #S 2
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 2.0
+    costSell: 28000
+    transferTime: 48
+    listOrder: 1400
+  - type: STR_FUSION_BALL                 #S 0.6
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 0.6
+    costSell: 20300
+    transferTime: 48
+    clipSize: 1
+    listOrder: 1450
+  - type: STR_LASER_CANNON                #S 2.0
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 2.0
+    costSell: 21000
+    transferTime: 48
+    listOrder: 1500
+  - type: STR_PLASMA_BEAM                 #S 1.2
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1.2
+    costSell: 26300
+    transferTime: 48
+    listOrder: 1600
+  - type: STR_THRUSTER
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 2
+    costSell: 250000
+    transferTime: 48
+    listOrder: 1800
+  - type: STR_TARGETER
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 0.5
+    costSell: 25000
+    transferTime: 48
+    listOrder: 1810
+  - type: STR_HULL_PLATING
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 4
+    costSell: 25000
+    transferTime: 48
+    listOrder: 1820
+  - type: STR_FLARE_LAUNCH
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1
+    costSell: 50000
+    transferTime: 48
+    listOrder: 1830
+  - type: STR_SCANNER
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 2
+    costSell: 25000
+    transferTime: 48
+    listOrder: 1840
+  - type: STR_RETICULE
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 0.5
+    costSell: 25000
+    transferTime: 48
+    listOrder: 1850
+  - type: STR_CRAFT_SHIELD
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 0.5
+    costSell: 25000
+    transferTime: 48
+    listOrder: 1851
+manufacture:
+  - name: STR_FUSION_BALL_LAUNCHER
+    #category: STR_CRAFT_WEAPON
+    #requires:
+    #  - STR_FUSION_MISSILE
+    #space: 6
+    #time: 400
+    cost: 250000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 75
+  - name: STR_LASER_CANNON
+    #category: STR_CRAFT_WEAPON
+    #requires:
+    #  - STR_LASER_CANNON
+    #space: 6
+    #time: 300
+    cost: 175000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+  - name: STR_PLASMA_BEAM
+    #category: STR_CRAFT_WEAPON
+    #requires:
+    #  - STR_PLASMA_CANNON
+    #space: 8
+    #time: 500
+    cost: 225000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_ELERIUM_115: 15
+  - name: STR_ASSCANNON
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_ASSC
+    space: 6
+    time: 300
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 60
+  - name: STR_RETICULE
+    requires:
+      - STR_CRAFTADD
+    category: STR_CRAFT_EQUIPMENT
+    space: 5
+    time: 2000
+    cost: 50000
+    requiredItems:
+      STR_UFO_NAVIGATION: 3
+      STR_ALIEN_HABITAT: 2
+    listOrder: 1
+  - name: STR_THRUSTER
+    requires:
+      - STR_CRAFTADD
+    category: STR_CRAFT_EQUIPMENT
+    space: 10
+    time: 1500
+    cost: 10000
+    requiredItems:
+      STR_UFO_POWER_SOURCE: 1
+      STR_ALIEN_HABITAT: 2
+    listOrder: 1
+  - name: STR_TARGETER
+    requires:
+      - STR_CRAFTADD
+    category: STR_CRAFT_EQUIPMENT
+    space: 5
+    time: 2000
+    cost: 50000
+    requiredItems:
+      STR_UFO_NAVIGATION: 3
+      STR_ALIEN_HABITAT: 2
+    listOrder: 1
+  - name: STR_HULL_PLATING
+    requires:
+      - STR_CRAFTADD
+    category: STR_CRAFT_EQUIPMENT
+    space: 10
+    time: 3000
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 100
+      STR_UFO_CONSTRUCTION: 50
+      STR_ALIEN_HABITAT: 2
+    listOrder: 1
+  - name: STR_FLARE_LAUNCH
+    requires:
+      - STR_CRAFTADD
+    category: STR_CRAFT_EQUIPMENT
+    space: 10
+    time: 4000
+    cost: 100000
+    requiredItems:
+      STR_ELERIUM_115: 150
+      STR_ALIEN_HABITAT: 2
+    listOrder: 1
+  - name: STR_SCANNER
+    requires:
+      - STR_CRAFTADD
+    category: STR_CRAFT_EQUIPMENT
+    space: 5
+    time: 2000
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_UFO_NAVIGATION: 1
+      STR_UFO_CONSTRUCTION: 10
+    listOrder: 1
+#  - name: STR_THUNDER_CANNON
+#    requires:
+#      - STR_NEW_FIGHTER_TRANSPORTER
+#    category: STR_CRAFT_WEAPON
+#    space: 5
+#    time: 2000
+#    cost: 50000
+#    requiredItems:
+#      STR_ALIEN_ALLOYS: 75
+#      STR_UFO_CONSTRUCTION: 50
+#    listOrder: 1

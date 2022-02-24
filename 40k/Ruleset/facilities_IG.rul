@@ -1,0 +1,18 @@
+facilities:
+#*** Upgraded barracks that allows basic training of troops
+  - type: STR_LIVING_QUARTERS
+    canBeBuiltOver: true
+
+  - type: STR_GUARD_BARRACKS
+    requires:
+      - STR_IMPERIAL_GUARD_BASIC_TRAINING
+    buildOverFacilities:
+      - STR_LIVING_QUARTERS
+    spriteShape: 1
+    spriteFacility: 18
+    buildCost: 500000
+    buildTime: 16
+    monthlyCost: 15000
+    personnel: 50
+    mapName: XBASE_01
+    trainingRooms: 10
