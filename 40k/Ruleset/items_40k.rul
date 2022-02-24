@@ -144,7 +144,7 @@
       ToStun: 0.0
       ToWound: 0.0
     explosionHitSound: 737
-    hitAnimation: 1990
+    hitAnimation: 1992
     armor: 255
     hiddenOnMinimap: true
 
@@ -165,7 +165,7 @@
       ToStun: 0.0
       ToTile: 0.0
       ToWound: 0.0
-    hitAnimation: 1990
+    hitAnimation: 1992
     explosionHitSound: [686, 687]
     armor: 255
     hiddenOnMinimap: true
@@ -187,7 +187,7 @@
       ToStun: 0.0
       ToTile: 0.0
       ToWound: 0.0
-    hitAnimation: 1990
+    hitAnimation: 1992
     explosionHitSound: 737
     armor: 255
     hiddenOnMinimap: true
@@ -209,7 +209,7 @@
       ToStun: 0.0
       ToTile: 0.0
       ToWound: 0.0
-    hitAnimation: 1990
+    hitAnimation: 1992
     explosionHitSound: 833
     armor: 255
     hiddenOnMinimap: true
@@ -231,7 +231,7 @@
       ToStun: 0.0
       ToTile: 0.0
       ToWound: 0.0
-    hitAnimation: 1990
+    hitAnimation: 1992
     explosionHitSound: 7
     armor: 255
     hiddenOnMinimap: true
@@ -282,7 +282,7 @@
       ToWound: 0.0
       ToTile: 1.0
     explosionHitSound: 737
-    hitAnimation: 1990
+    hitAnimation: 1992
     armor: 255
     hiddenOnMinimap: true
 
