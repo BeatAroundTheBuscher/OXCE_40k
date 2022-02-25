@@ -3164,7 +3164,7 @@ terrains:
       - 04STORAGE
       - 04PIPES
       - 04ENGINE
-    script: CITY
+    # script: CITY # script is defined in alienDeployment
     mapBlocks:
       - name: CITY00
         width: 20
@@ -3252,7 +3252,7 @@ terrains:
       - 04STORAGE
       - 04PIPES
       - 04ENGINE
-    script: CITY
+    # script: CITY # script is defined in alienDeployment
     mapBlocks:
       - name: RIG00
         width: 20
@@ -4310,7 +4310,7 @@ terrains:
       - OUTPOSTSM
       - OUTPOSTSM2
       - OUTPOSTSM3
-    script: IDESERT
+    # script: IDESERT # script is defined in alienDeployment
     mapBlocks:
       - name: IDESERT00
         width: 10
