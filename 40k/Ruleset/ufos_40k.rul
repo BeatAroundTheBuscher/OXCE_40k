@@ -1143,7 +1143,7 @@
               - [9, 5, 1]
               - [10, 5, 1]
   - type: STR_TRAIN_MISSION
-    size: STR_SIGNAL
+    size: STR_VERY_SMALL
     marker: 1
     markerLand: 33
     modSprite: InterceptionUFO-09
@@ -1175,7 +1175,7 @@
             STR_TATICALTRAININFO:
               - [3, 22, 0]
   - type: STR_CHOUT
-    size: STR_SIGNAL
+    size: STR_VERY_SMALL
     marker: 1
     markerLand: 33
     modSprite: InterceptionUFO-09
@@ -1207,7 +1207,7 @@
   - type: STR_CAT
     marker: 1
     markerLand: 33
-    size: STR_SIGNAL
+    size: STR_VERY_SMALL
     modSprite: InterceptionUFO-09
     damageMax: 1
     speedMax: 50000
