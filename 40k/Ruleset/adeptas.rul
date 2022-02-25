@@ -1,4 +1,17 @@
-﻿units:
+﻿extended:
+  tags:
+    RuleArmor:
+#*** Tags for energy shield on armor ***
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: int
+      ARMOR_ENERGY_SHIELD_DECAY: int
+#*** Tags for soldiers gaining devotion/psi skill as secondary experience ***
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: int
+    RuleItem:
+#*** Tags for creating energy shields on hitting a unit ***
+      ITEM_ADDS_ENERGY_SHIELD_FROM_POWER: int
+      ITEM_SETS_ENERGY_SHIELD_DECAY: int
+
+units:
 #------------  Zombie -------------------------
   - type: STR_ADEPTAS_ZOMBIE
     race: STR_ZOMBIEF
