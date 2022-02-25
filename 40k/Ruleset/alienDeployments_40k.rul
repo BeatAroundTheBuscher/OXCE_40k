@@ -5919,7 +5919,7 @@ alienDeployments:
     finalDestination: false # used for the hangar mission, not necessary since this is spawned as a base
 
   - type: STR_CHAOS_FINAL_ASSAULT                     # RANK0 # RANK1 STR_INSIDE_ENVIRO
-    startingCondition: STR_INSIDE_ENVIRO
+    enviroEffects: STR_INSIDE_ENVIRO
     music:
       - INMYSPIRIT
     data:
@@ -7167,7 +7167,7 @@ alienDeployments:
     briefing:
       title: STR_ALIEN_CONTACT_SITE_MISSION
       palette: 4
-      music: gmdefend
+      music: GMDEFEND
       background: BACK151.SCR
     markerName: STR_ARTIFACT_SITE
     objectiveType: 3
@@ -7825,7 +7825,6 @@ alienDeployments:
     script: WARRSCRIPT
     alert: STR_TANK_ALERT
     alertBackground: BACK03.SCR
-    alertSound: 43
     briefing:
       title: STR_TANK_TITLE
       palette: 4
