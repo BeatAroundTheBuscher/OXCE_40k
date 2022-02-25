@@ -118,6 +118,9 @@ research:
   - name: STR_GENERALLOCK
     needItem: true
 
+  - name: STR_DONTSHOWYET
+    needItem: true
+
   - name: STR_GAME_START
     unlockFinalMission: true
 
