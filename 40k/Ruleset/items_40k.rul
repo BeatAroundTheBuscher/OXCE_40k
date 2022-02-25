@@ -10084,7 +10084,7 @@
     invHeight: 3
     armor: 26
     battleType: 11
-    recover: true
+    recover: false
     recoverCorpse: false
   - type: STR_GUARDH_CORPSE
     name: STR_GUARD_CORPSE
@@ -10105,7 +10105,7 @@
     invHeight: 3
     armor: 5
     battleType: 11
-    recover: true
+    recover: false
     recoverCorpse: false
   - type: STR_MONK_CORPSE
     name: STR_CORPSE
@@ -11286,6 +11286,24 @@
     liveAlien: true
     costSell: 40000
     listOrder: 20200
+  - type: STR_GENE
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+    listOrder: 21200
+  - type: STR_CHAOSDEFILER_L                #21200
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+    listOrder: 21200
+  - type: STR_CHAOSDEFILER_R                #21200
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+    listOrder: 21200
   - type: STR_PRED_TURRET                #21200
     size: 0.0
     recover: true
