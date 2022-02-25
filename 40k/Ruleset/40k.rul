@@ -8822,7 +8822,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 30
     spriteSheet: XCOM_27.PCK
-    spriteInv: MAN_27
+    # spriteInv: MAN_27
     customArmorPreviewIndex: 13
     zombiImmune: true
     corpseBattle:
