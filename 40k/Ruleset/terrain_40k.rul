@@ -3418,11 +3418,11 @@ terrains:
           STR_CULTIST_RITUALIST_SUMMONING_SPAWNER:
             - [4, 3, 0]
             - [6, 6, 0]
-        randomizedItems:
-          - position: [4, 4, 0]
-            amount: 1
-            itemList:
-              - STR_CULTIST_SUMMONING_DAEMON_SPAWNER
+#        randomizedItems:
+#          - position: [4, 4, 0]
+#            amount: 1
+#            itemList:
+#              - STR_CULTIST_SUMMONING_DAEMON_SPAWNER
 
   - name: INDUSTRIALURBANDIO
     mapDataSets:
