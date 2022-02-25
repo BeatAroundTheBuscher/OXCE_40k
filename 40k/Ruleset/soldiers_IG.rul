@@ -7,7 +7,7 @@ soldiers:
   - type: STR_GUARD_VETERAN
     flagOffset: 42
     requires:
-      - STR_NOT_AVAILABLE
+      - STR_GENERALLOCK
     costSalary: 10000
     minStats:
       tu: 50
@@ -84,7 +84,7 @@ soldiers:
   - type: STR_GUARD_OFFICER
     flagOffset: 42
     requires:
-      - STR_NOT_AVAILABLE
+      - STR_GENERALLOCK
     costSalary: 30000
     minStats:
       tu: 50
@@ -163,7 +163,7 @@ soldiers:
   - type: STR_COMMISSAR
     flagOffset: 42
     requires:
-      - STR_NOT_AVAILABLE
+      - STR_GENERALLOCK
     costSalary: 30000
     minStats:
       tu: 50
@@ -238,7 +238,7 @@ soldiers:
     flagOffset: 42
     costSalary: 30000
     requires:
-      - STR_NOT_AVAILABLE
+      - STR_GENERALLOCK
     minStats:
       tu: 50
       stamina: 50
@@ -385,7 +385,7 @@ soldiers:
   - type: STR_PSYKER
     flagOffset: 42
     requires:
-      - STR_NOT_AVAILABLE
+      - STR_GENERALLOCK
     costSalary: 30000
     minStats:
       tu: 50
