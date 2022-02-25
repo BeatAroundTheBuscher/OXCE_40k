@@ -362,6 +362,7 @@ interfaces:
         color: *geoYellow
       - id: list
         color: *geoYellow
+        color2: *geoTan
         border: *geoTan
       - id: button
         color: *geoLightGrey
