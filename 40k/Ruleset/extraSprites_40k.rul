@@ -6284,6 +6284,9 @@
     subY: 32
     files:
       0: Resources/Geo/TEXTURES.PNG
+
+  - type: ExtendedPediaBackgroundPalBasescape # only referenced (from xcom1 Extended) for Pedro's yaml helper
+
   - type: ExtendedPediaBackgroundPalBasescape-InfoButton
     width: 320
     height: 200
