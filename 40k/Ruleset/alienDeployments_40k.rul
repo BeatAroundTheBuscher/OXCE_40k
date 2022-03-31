@@ -192,10 +192,6 @@ alienDeployments:
     cheatTurn: 10
     markerName: STR_ALIEN_BASE
     genMissionFreq: 10
-    genMission:
-      STR_MONOLITH_PATROL: 50
-      STR_NECRON_TERROR: 25
-      STR_NECRON_BASE: 25
     points: 1
 
   - type: STR_TOMB_NECRON #NECRON
