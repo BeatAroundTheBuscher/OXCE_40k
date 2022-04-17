@@ -1,0 +1,323 @@
+manufacture:
+  - name: STR_MARAUDER
+    category: STR_CRAFT
+    requires:
+      - STR_MARAUDER_REQUISITION
+    space: 30
+    time: 12000
+    cost: 400000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 500
+      STR_UFO_POWER_SOURCE: 2
+      STR_UFO_NAVIGATION: 1
+
+  - name: STR_CRAFT_QUADLASER
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_CRAFT_QUADLASER
+    space: 6
+    time: 300
+    cost: 360000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 100
+
+  - name: STR_CRAFT_AUTOCANNON
+    category: STR_CRAFT_WEAPON
+    requires:
+      - STR_CRAFT_AUTOCANNON
+    space: 6
+    time: 250
+    cost: 288000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 100
+
+  - name: STR_CRAFT_AUTOCANNON_ROUNDS
+    category: STR_CRAFT_AMMUNITION
+    requires:
+      - STR_CRAFT_AUTOCANNON
+    space: 6
+    time: 50
+    cost: 2000
+
+  - name: STR_UNPACK_COMMISSIONS
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_REGIMENT_OFFICERS
+    space: 0
+    time: 10
+    cost: 0
+    requiredItems:
+      STR_REGIMENT_COMMISSIONS: 1
+    producedItems:
+      STR_ALIEN_HABITAT: 3
+
+  - name: STR_CONVERT_COMMISSION
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_REGIMENT_OFFICERS
+    space: 0
+    time: 500
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_HABITAT: 1
+    producedItems:
+      STR_OFFICER_COMMISSION: 1
+      STR_OFFICERS_SWORD: 1
+      STR_LASER_PISTOL: 1
+      STR_LASPISTOL_CLIP: 2
+
+  - name: STR_OFFICER_REQUISITION
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_REGIMENT_OFFICERS
+    space: 0
+    time: 500
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_HABITAT: 1
+    spawnedPersonType: STR_GUARD_OFFICER
+    producedItems:
+      STR_OFFICERS_SWORD: 1
+      STR_LASER_PISTOL: 1
+      STR_LASPISTOL_CLIP: 2
+
+  - name: STR_COMMISSAR_REQUISITION
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    space: 0
+    time: 500
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_HABITAT: 1
+    spawnedPersonType: STR_COMMISSAR
+    producedItems:
+      STR_CHAINSWORD: 1
+      STR_PISTOL: 1
+      STR_PISTOL_CLIP: 2
+
+  - name: STR_UNPACK_STORMTROOPER_REQUISITION
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_STORMTROOPER_REQUISITION
+    space: 0
+    time: 10
+    cost: 0
+    requiredItems:
+      STR_STORMTROOPER_REQUISITION: 1
+    producedItems:
+      STR_ALIEN_HABITAT: 4
+
+  - name: STR_STORMTROOPER_REQUISITION
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_STORMTROOPER_REQUISITION
+    space: 0
+    time: 500
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_HABITAT: 2
+    spawnedPersonType: STR_STORMTROOPER
+    producedItems:
+      STR_STORMTROOPER_CARAPACE_ARMOR_HELLGUN: 1
+      STR_GRENADE: 3
+      STR_KNIF: 1
+
+  - name: STR_VETERAN_PROMOTION
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_STORMTROOPER_REQUISITION
+    space: 0
+    time: 500
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_HABITAT: 2
+    producedItems:
+      STR_VETERAN_PROMOTION: 1
+      STR_STORMTROOPER_CARAPACE_ARMOR_HELLGUN: 1
+      STR_GRENADE: 3
+      STR_KNIF: 1
+
+  - name: STR_UNPACK_PSYKER_REQUISITION
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_PSYKER_REQUISITION
+    space: 0
+    time: 10
+    cost: 0
+    requiredItems:
+      STR_PSYKER_REQUISITION: 1
+    producedItems:
+      STR_ALIEN_HABITAT: 4
+
+  - name: STR_PSYKER_REQUISITION
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_PSYKER_REQUISITION
+    space: 0
+    time: 500
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_HABITAT: 2
+    spawnedPersonType: STR_PSYKER
+    producedItems:
+      STR_LASER_PISTOL: 1
+      STR_LASPISTOL_CLIP: 2
+      STR_PURITY_SEAL: 1
+
+  - name: STR_LASCANNON_HANDHELD
+    category: STR_WEAPON
+    requires:
+      - STR_LASCAN
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    space: 4
+    time: 700
+    cost: 32000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 35
+
+  - name: STR_LASCANNON_CLIP_SMALL
+    category: STR_AMMUNITION
+    requires:
+      - STR_LASCAN
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    space: 2
+    time: 40
+    cost: 1250
+
+  - name: STR_AUTOCANNON_HANDHELD
+    category: STR_WEAPON
+    requires:
+      - STR_AUTOCANNON_GUARD
+    space: 4
+    time: 400
+    cost: 40000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 60
+
+  - name: STR_HOTSHOT_VOLLEY_GUN
+    category: STR_WEAPON
+    requires:
+      - STR_HOTSHOT_VOLLEY_GUN
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 10
+    producedItems:
+      STR_STORMTROOPER_CARAPACE_ARMOR_VOLLEYGUN: 1
+    space: 4
+    time: 500
+    cost: 64000
+
+  - name: STR_GUARD_ARMORS_MOUNTED_LASCANNON
+    category: STR_WEAPON
+    requires:
+      - STR_LASCAN
+      - STR_IMPERIAL_GUARD_MIDTIER
+    space: 4
+    time: 500
+    cost: 56000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 100
+
+  - name: STR_GUARD_ARMORS_MOUNTED_AUTOCANNON
+    category: STR_WEAPON
+    requires:
+      - STR_AUTOCANNON_GUARD
+    space: 4
+    time: 500
+    cost: 56000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 100
+
+  - name: STR_AUTOCANNON_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_AUTOCANNON_GUARD
+    space: 4
+    time: 80
+    cost: 6000
+    requiredItems:
+      STR_ELERIUM_115: 10
+
+  - name: STR_GUARD_ARMORS_SENTINEL_AUTOCANNON
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_AUTOCANNON_GUARD
+      - STR_HEAVY_SENTINEL
+    space: 12
+    time: 600
+    cost: 32000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 80
+      STR_UFO_CONSTRUCTION: 10
+
+  - name: STR_GUARD_ARMORS_SENTINEL_HEAVY_FLAMER
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_HEAVY_SENTINEL
+    space: 12
+    time: 600
+    cost: 32000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 80
+      STR_UFO_CONSTRUCTION: 10
+
+  - name: STR_GUARD_ARMORS_SENTINEL_MULTIMELTA
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_BLASTER_LAUNCHER
+      - STR_BLASTER_BOMB
+      - STR_HEAVY_SENTINEL
+    space: 12
+    time: 600
+    cost: 32000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 80
+      STR_ELERIUM_115: 30
+      STR_UFO_CONSTRUCTION: 10
+
+  - name: STR_OGRYN_CARAPACE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_OGRYN_REQUISITION
+    space: 8
+    time: 400
+    cost: 17500
+    requiredItems:
+      STR_ALIEN_ALLOYS: 25
+
+  - name: STR_BULLGRYN_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_BULLGRYN_ARMOR
+    space: 8
+    time: 600
+    cost: 25000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 40
+
+  - name: STR_TANITH_SCOUT_GEAR
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_TANITH_REQUISITIONS
+    space: 4
+    time: 250
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_HABITAT: 1
+    producedItems:
+      STR_TANITH_CAMO_ARMOR: 1
+      STR_LONGLAS_TANITH: 1
+
+  - name: STR_TANITH_MEDIC_GEAR
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_TANITH_REQUISITIONS
+    space: 4
+    time: 250
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_HABITAT: 1
+    producedItems:
+      STR_TANITH_MEDIC_ARMOR: 1
+      STR_LASGUN_TANITH: 1

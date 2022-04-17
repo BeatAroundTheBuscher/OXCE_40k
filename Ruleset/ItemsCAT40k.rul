@@ -1,0 +1,65 @@
+﻿itemCategories:
+  - type: STR_CRAFT_WEAPONS
+    listOrder: 2
+  - type: STR_CAT_AUXILIARY
+    listOrder: 4
+  - type: STR_CAT_ARMOR
+    listOrder: 5
+  - type: STR_THROWING
+    listOrder: 10
+  - type: STR_BOWS
+    listOrder: 15
+  - type: STR_CAT_BOLTER #d
+    listOrder: 20
+  - type: STR_CAT_PLASMA #d
+    listOrder: 30
+  - type: STR_CAT_LASGUN #d
+    listOrder: 40
+  - type: STR_CAT_AUTO #d
+    listOrder: 45
+  - type: STR_CAT_MELTA #d
+    listOrder: 50
+  - type: STR_CAT_GRAVGUN #d
+    listOrder: 70
+  - type: STR_CAT_GRENADES #d
+    listOrder: 80
+  - type: STR_CAT_FLAMER #d
+    listOrder: 90
+  - type: STR_CAT_SHOTGUN #d
+    listOrder: 100
+  - type: STR_CAT_SNIPER #d
+    listOrder: 110
+  - type: STR_CAT_ROCKETL #d
+    listOrder: 120
+  - type: STR_CAT_MELEE #d
+    listOrder: 150
+  - type: STR_CAT_EQUIPMENT #d
+    listOrder: 160
+  - type: STR_CAT_SPELLS #d
+    listOrder: 170
+  - type: STR_CAT_SCOUT #SQUAD
+    listOrder: 180
+  - type: STR_CAT_TACTICAL #SQUAD
+    listOrder: 185
+  - type: STR_CAT_DEVASTATOR #SQUAD
+    listOrder: 188
+  - type: STR_CAT_ASSAULT #SQUAD
+    listOrder: 190
+  - type: STR_CAT_TERMINATOR #SQUAD
+    listOrder: 193
+  - type: STR_CAT_IMPERIUM #race 199
+    listOrder: 199
+  - type: STR_CAT_CHAOS #race 200
+    listOrder: 200
+  - type: STR_CAT_ELDAR #race 201
+    listOrder: 201
+  - type: STR_CAT_ORK #race 202
+    listOrder: 202
+  - type: STR_CAT_TAU #race 203
+    listOrder: 203
+  - type: STR_CAT_NECRON # race 204
+    listOrder: 204
+  - type: STR_CAT_GRANADES
+    listOrder: 250
+  - type: STR_BLANKS
+    listOrder: 999

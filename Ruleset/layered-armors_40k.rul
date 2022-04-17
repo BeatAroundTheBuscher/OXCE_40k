@@ -1,0 +1,2927 @@
+##################################################################################################################################################
+##################################################################GREY KNIGHTS####################################################################
+##################################################################################################################################################
+armors:
+  - type: STR_GK_LIB_LV1_UC #GK
+    customArmorPreviewIndex: 204
+    layersDefaultPrefix: 21
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 163, 96, 163, 163, 160, 96, 160, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["0", "GKLIB1", "M0_FACE"]
+      M1: ["0", "GKLIB1", "M1_FACE"]
+      M2: ["0", "GKLIB1", "M2_FACE"]
+      M3: ["0", "GKLIB1", "M3_FACE"]
+      M4: ["0", "GKLIB1", "M4_FACE"]
+      M5: ["0", "GKLIB1", "M5_FACE"]
+      M6: ["0", "GKLIB1", "M6_FACE"]
+      F0: ["0", "GKLIB1", "M7_FACE"]
+      F1: ["0", "GKLIB1", "M8_FACE"]
+      F2: ["0", "GKLIB1", "M9_FACE"]
+      F3: ["0", "GKLIB1", "M10_FACE"]
+      F4: ["0", "GKLIB1", "M11_FACE"]
+      F5: ["0", "GKLIB1", "M12_FACE"]
+      F6: ["0", "GKLIB1", "M13_FACE"]
+  - type: STR_GK_LIB_LV2_UC #MKX
+    customArmorPreviewIndex: 204
+    layersDefaultPrefix: 21
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 163, 96, 163, 163, 160, 96, 160, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["0", "GKLIB2", "M0_FACE", "MEDAL1"]
+      M1: ["0", "GKLIB2", "M1_FACE", "MEDAL1"]
+      M2: ["0", "GKLIB2", "M2_FACE", "MEDAL1"]
+      M3: ["0", "GKLIB2", "M3_FACE", "MEDAL1"]
+      M4: ["0", "GKLIB2", "M4_FACE", "MEDAL1"]
+      M5: ["0", "GKLIB2", "M5_FACE", "MEDAL2"]
+      M6: ["0", "GKLIB2", "M6_FACE", "MEDAL2"]
+      F0: ["0", "GKLIB2", "M7_FACE", "MEDAL2"]
+      F1: ["0", "GKLIB2", "M8_FACE", "MEDAL2"]
+      F2: ["0", "GKLIB2", "M9_FACE", "MEDAL3"]
+      F3: ["0", "GKLIB2", "M10_FACE", "MEDAL3"]
+      F4: ["0", "GKLIB2", "M11_FACE", "MEDAL3"]
+      F5: ["0", "GKLIB2", "M12_FACE", "MEDAL3"]
+      F6: ["0", "GKLIB2", "M13_FACE", "MEDAL3"]
+  - type: STR_GK_LIB_LV3_UC #MKX
+    customArmorPreviewIndex: 204
+    layersDefaultPrefix: 21
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 163, 96, 163, 163, 160, 96, 160, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["CAPEP", "GKLIB3", "M0_FACE", "MEDAL1"]
+      M1: ["CAPEP", "GKLIB3", "M1_FACE", "MEDAL1"]
+      M2: ["CAPEP", "GKLIB3", "M2_FACE", "MEDAL1"]
+      M3: ["CAPEP", "GKLIB3", "M3_FACE", "MEDAL1"]
+      M4: ["CAPEP", "GKLIB3", "M4_FACE", "MEDAL1"]
+      M5: ["CAPEP", "GKLIB3", "M5_FACE", "MEDAL2"]
+      M6: ["CAPEP", "GKLIB3", "M6_FACE", "MEDAL2"]
+      F0: ["CAPEP", "GKLIB3", "M7_FACE", "MEDAL2"]
+      F1: ["CAPEP", "GKLIB3", "M8_FACE", "MEDAL2"]
+      F2: ["CAPEP", "GKLIB3", "M9_FACE", "MEDAL3"]
+      F3: ["CAPEP", "GKLIB3", "M10_FACE", "MEDAL3"]
+      F4: ["CAPEP", "GKLIB3", "M11_FACE", "MEDAL3"]
+      F5: ["CAPEP", "GKLIB3", "M12_FACE", "MEDAL3"]
+      F6: ["CAPEP", "GKLIB3", "M13_FACE", "MEDAL3"]
+  - type: STR_GK_TEC_LV1_UC #TEC
+    customArmorPreviewIndex: 200
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["0", "GKTEC1", "M0_FACE", "MEDAL1"]
+      M1: ["0", "GKTEC1", "M1_FACE", "MEDAL1"]
+      M2: ["0", "GKTEC1", "M2_FACE", "MEDAL1"]
+      M3: ["0", "GKTEC1", "M3_FACE", "MEDAL1"]
+      M4: ["0", "GKTEC1", "M4_FACE", "MEDAL1"]
+      M5: ["0", "GKTEC1", "M5_FACE", "MEDAL2"]
+      M6: ["0", "GKTEC1", "M6_FACE", "MEDAL2"]
+      F0: ["0", "GKTEC1", "M7_FACE", "MEDAL2"]
+      F1: ["0", "GKTEC1", "M8_FACE", "MEDAL2"]
+      F2: ["0", "GKTEC1", "M9_FACE", "MEDAL3"]
+      F3: ["0", "GKTEC1", "M10_FACE", "MEDAL3"]
+      F4: ["0", "GKTEC1", "M11_FACE", "MEDAL3"]
+      F5: ["0", "GKTEC1", "M12_FACE", "MEDAL3"]
+      F6: ["0", "GKTEC1", "M13_FACE", "MEDAL3"]
+  - type: STR_GK_TEC_LV2_UC #TEC
+    customArmorPreviewIndex: 200
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: APO
+    layersDefinition:
+      M0: ["0", "GKTEC2", "M0_FACE", "MEDAL1"]
+      M1: ["0", "GKTEC2", "M1_FACE", "MEDAL1"]
+      M2: ["0", "GKTEC2", "M2_FACE", "MEDAL1"]
+      M3: ["0", "GKTEC2", "M3_FACE", "MEDAL1"]
+      M4: ["0", "GKTEC2", "M4_FACE", "MEDAL1"]
+      M5: ["0", "GKTEC2", "M5_FACE", "MEDAL2"]
+      M6: ["0", "GKTEC2", "M6_FACE", "MEDAL2"]
+      F0: ["0", "GKTEC2", "M7_FACE", "MEDAL2"]
+      F1: ["0", "GKTEC2", "M8_FACE", "MEDAL2"]
+      F2: ["0", "GKTEC2", "M9_FACE", "MEDAL3"]
+      F3: ["0", "GKTEC2", "M10_FACE", "MEDAL3"]
+      F4: ["0", "GKTEC2", "M11_FACE", "MEDAL3"]
+      F5: ["0", "GKTEC2", "M12_FACE", "MEDAL3"]
+      F6: ["0", "GKTEC2", "M13_FACE", "MEDAL3"]
+  - type: STR_GK_TEC_LV3_UC #TEC
+    customArmorPreviewIndex: 200
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: APO
+    layersDefinition:
+      M0: ["0", "GKTEC2", "M0_FACE", "MEDAL1"]
+      M1: ["0", "GKTEC2", "M1_FACE", "MEDAL1"]
+      M2: ["0", "GKTEC2", "M2_FACE", "MEDAL1"]
+      M3: ["0", "GKTEC2", "M3_FACE", "MEDAL1"]
+      M4: ["0", "GKTEC2", "M4_FACE", "MEDAL1"]
+      M5: ["0", "GKTEC2", "M5_FACE", "MEDAL2"]
+      M6: ["0", "GKTEC2", "M6_FACE", "MEDAL2"]
+      F0: ["0", "GKTEC2", "M7_FACE", "MEDAL2"]
+      F1: ["0", "GKTEC2", "M8_FACE", "MEDAL2"]
+      F2: ["0", "GKTEC2", "M9_FACE", "MEDAL3"]
+      F3: ["0", "GKTEC2", "M10_FACE", "MEDAL3"]
+      F4: ["0", "GKTEC2", "M11_FACE", "MEDAL3"]
+      F5: ["0", "GKTEC2", "M12_FACE", "MEDAL3"]
+      F6: ["0", "GKTEC2", "M13_FACE", "MEDAL3"]
+  - type: STR_GK_APO_ARMOR_UC     #APOT
+    customArmorPreviewIndex: 198
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: APO
+    layersDefinition:
+      M0: ["0", "GKAPOT", "M0_FACE", "MEDAL1"]
+      M1: ["0", "GKAPOT", "M1_FACE", "MEDAL1"]
+      M2: ["0", "GKAPOT", "M2_FACE", "MEDAL1"]
+      M3: ["0", "GKAPOT", "M3_FACE", "MEDAL1"]
+      M4: ["0", "GKAPOT", "M4_FACE", "MEDAL1"]
+      M5: ["0", "GKAPOT", "M5_FACE", "MEDAL2"]
+      M6: ["0", "GKAPOT", "M6_FACE", "MEDAL2"]
+      F0: ["0", "GKAPOT", "M7_FACE", "MEDAL2"]
+      F1: ["0", "GKAPOT", "M8_FACE", "MEDAL2"]
+      F2: ["0", "GKAPOT", "M9_FACE", "MEDAL3"]
+      F3: ["0", "GKAPOT", "M10_FACE", "MEDAL3"]
+      F4: ["0", "GKAPOT", "M11_FACE", "MEDAL3"]
+      F5: ["0", "GKAPOT", "M12_FACE", "MEDAL3"]
+      F6: ["0", "GKAPOT", "M13_FACE", "MEDAL3"]
+  - type: STR_GK_CHP_UC     #CHAPLAIN
+    customArmorPreviewIndex: 202
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: GK
+    layersDefinition:
+      M0: ["0", "GKCHAP", "M0_FACE", "MEDAL1"]
+      M1: ["0", "GKCHAP", "M1_FACE", "MEDAL1"]
+      M2: ["0", "GKCHAP", "M2_FACE", "MEDAL1"]
+      M3: ["0", "GKCHAP", "M3_FACE", "MEDAL1"]
+      M4: ["0", "GKCHAP", "M4_FACE", "MEDAL1"]
+      M5: ["0", "GKCHAP", "M5_FACE", "MEDAL2"]
+      M6: ["0", "GKCHAP", "M6_FACE", "MEDAL2"]
+      F0: ["0", "GKCHAP", "M7_FACE", "MEDAL2"]
+      F1: ["0", "GKCHAP", "M8_FACE", "MEDAL2"]
+      F2: ["0", "GKCHAP", "M9_FACE", "MEDAL3"]
+      F3: ["0", "GKCHAP", "M10_FACE", "MEDAL3"]
+      F4: ["0", "GKCHAP", "M11_FACE", "MEDAL3"]
+      F5: ["0", "GKCHAP", "M12_FACE", "MEDAL3"]
+      F6: ["0", "GKCHAP", "M13_FACE", "MEDAL3"]
+  - type: STR_GK_TAC_LV1_UC #MKX
+    customArmorPreviewIndex: 196
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["0", "GKLV1", "M0_FACE"]
+      M1: ["0", "GKLV1", "M1_FACE"]
+      M2: ["0", "GKLV1", "M2_FACE"]
+      M3: ["0", "GKLV1", "M3_FACE"]
+      M4: ["0", "GKLV1", "M4_FACE"]
+      M5: ["0", "GKLV1", "M5_FACE"]
+      M6: ["0", "GKLV1", "M6_FACE"]
+      F0: ["0", "GKLV1", "M7_FACE"]
+      F1: ["0", "GKLV1", "M8_FACE"]
+      F2: ["0", "GKLV1", "M9_FACE"]
+      F3: ["0", "GKLV1", "M10_FACE"]
+      F4: ["0", "GKLV1", "M11_FACE"]
+      F5: ["0", "GKLV1", "M12_FACE"]
+      F6: ["0", "GKLV1", "M13_FACE"]
+  - type: STR_GK_TAC_LV2_UC #MKX
+    customArmorPreviewIndex: 196
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["0", "GKLV2", "M0_FACE", "MEDAL1"]
+      M1: ["0", "GKLV2", "M1_FACE", "MEDAL1"]
+      M2: ["0", "GKLV2", "M2_FACE", "MEDAL1"]
+      M3: ["0", "GKLV2", "M3_FACE", "MEDAL1"]
+      M4: ["0", "GKLV2", "M4_FACE", "MEDAL1"]
+      M5: ["0", "GKLV2", "M5_FACE", "MEDAL2"]
+      M6: ["0", "GKLV2", "M6_FACE", "MEDAL2"]
+      F0: ["0", "GKLV2", "M7_FACE", "MEDAL2"]
+      F1: ["0", "GKLV2", "M8_FACE", "MEDAL2"]
+      F2: ["0", "GKLV2", "M9_FACE", "MEDAL3"]
+      F3: ["0", "GKLV2", "M10_FACE", "MEDAL3"]
+      F4: ["0", "GKLV2", "M11_FACE", "MEDAL3"]
+      F5: ["0", "GKLV2", "M12_FACE", "MEDAL3"]
+      F6: ["0", "GKLV2", "M13_FACE", "MEDAL3"]
+  - type: STR_GK_TAC_LV3_UC #MKX
+    customArmorPreviewIndex: 196
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["0", "GKLV3", "M0_FACE", "MEDAL1"]
+      M1: ["0", "GKLV3", "M1_FACE", "MEDAL1"]
+      M2: ["0", "GKLV3", "M2_FACE", "MEDAL1"]
+      M3: ["0", "GKLV3", "M3_FACE", "MEDAL1"]
+      M4: ["0", "GKLV3", "M4_FACE", "MEDAL1"]
+      M5: ["0", "GKLV3", "M5_FACE", "MEDAL2"]
+      M6: ["0", "GKLV3", "M6_FACE", "MEDAL2"]
+      F0: ["0", "GKLV3", "M7_FACE", "MEDAL2"]
+      F1: ["0", "GKLV3", "M8_FACE", "MEDAL2"]
+      F2: ["0", "GKLV3", "M9_FACE", "MEDAL3"]
+      F3: ["0", "GKLV3", "M10_FACE", "MEDAL3"]
+      F4: ["0", "GKLV3", "M11_FACE", "MEDAL3"]
+      F5: ["0", "GKLV3", "M12_FACE", "MEDAL3"]
+      F6: ["0", "GKLV3", "M13_FACE", "MEDAL3"]
+  - type: STR_GK_TAC_LV4_UC #MKX
+    customArmorPreviewIndex: 196
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["0", "GKLV4", "M0_FACE", "MEDAL1"]
+      M1: ["0", "GKLV4", "M1_FACE", "MEDAL1"]
+      M2: ["0", "GKLV4", "M2_FACE", "MEDAL1"]
+      M3: ["0", "GKLV4", "M3_FACE", "MEDAL1"]
+      M4: ["0", "GKLV4", "M4_FACE", "MEDAL1"]
+      M5: ["0", "GKLV4", "M5_FACE", "MEDAL2"]
+      M6: ["0", "GKLV4", "M6_FACE", "MEDAL2"]
+      F0: ["0", "GKLV4", "M7_FACE", "MEDAL2"]
+      F1: ["0", "GKLV4", "M8_FACE", "MEDAL2"]
+      F2: ["0", "GKLV4", "M9_FACE", "MEDAL3"]
+      F3: ["0", "GKLV4", "M10_FACE", "MEDAL3"]
+      F4: ["0", "GKLV4", "M11_FACE", "MEDAL3"]
+      F5: ["0", "GKLV4", "M12_FACE", "MEDAL3"]
+      F6: ["0", "GKLV4", "M13_FACE", "MEDAL3"]
+  - type: STR_GK_TAC_LV5_UC #MKX
+    customArmorPreviewIndex: 196
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["CAPEP", "GKLV5", "M0_FACE", "MEDAL1"]
+      M1: ["CAPEP", "GKLV5", "M1_FACE", "MEDAL1"]
+      M2: ["CAPEP", "GKLV5", "M2_FACE", "MEDAL1"]
+      M3: ["CAPEP", "GKLV5", "M3_FACE", "MEDAL1"]
+      M4: ["CAPEP", "GKLV5", "M4_FACE", "MEDAL1"]
+      M5: ["CAPEP", "GKLV5", "M5_FACE", "MEDAL2"]
+      M6: ["CAPEP", "GKLV5", "M6_FACE", "MEDAL2"]
+      F0: ["CAPEP", "GKLV5", "M7_FACE", "MEDAL2"]
+      F1: ["CAPEP", "GKLV5", "M8_FACE", "MEDAL2"]
+      F2: ["CAPEP", "GKLV5", "M9_FACE", "MEDAL3"]
+      F3: ["CAPEP", "GKLV5", "M10_FACE", "MEDAL3"]
+      F4: ["CAPEP", "GKLV5", "M11_FACE", "MEDAL3"]
+      F5: ["CAPEP", "GKLV5", "M12_FACE", "MEDAL3"]
+      F6: ["CAPEP", "GKLV5", "M13_FACE", "MEDAL3"]
+##################################################################################################################################################
+##################################################################CHAOS####################################################################
+##################################################################################################################################################
+  - type: STR_CHAOS_BEHEMOTH_ARMOR #CHAOS PATH
+    layersDefaultPrefix: 4
+    layersSpecificPrefix:
+      4: CHAOS
+    layersDefinition:
+      M0: ["0", "CHAOSB", "M0_FACE"]
+      M1: ["0", "CHAOSB", "M1_FACE"]
+      M2: ["0", "CHAOSB", "M2_FACE"]
+      M3: ["0", "CHAOSB", "M3_FACE"]
+      M4: ["0", "CHAOSB", "M4_FACE"]
+      M5: ["0", "CHAOSB", "M5_FACE"]
+      F0: ["0", "CHAOSB", "F0_FACE"]
+      F1: ["0", "CHAOSB", "F1_FACE"]
+      F2: ["0", "CHAOSB", "F2_FACE"]
+      F3: ["0", "CHAOSB", "F3_FACE"]
+      F4: ["0", "CHAOSB", "F4_FACE"]
+      F5: ["0", "CHAOSB", "F5_FACE"]
+  - type: STR_CHAOS_SORC_ARMOR #CHAOS PATH
+    layersDefaultPrefix: 3
+    layersSpecificPrefix:
+      3: CHAOS
+    layersDefinition:
+      M0: ["0", "SORCM", "M0_FACE"]
+      M1: ["0", "SORCM", "M1_FACE"]
+      M2: ["0", "SORCM", "M2_FACE"]
+      M3: ["0", "SORCM", "M3_FACE"]
+      M4: ["0", "SORCM", "M4_FACE"]
+      M5: ["0", "SORCM", "M5_FACE"]
+      F0: ["0", "SORCF", "F0_FACE"]
+      F1: ["0", "SORCF", "F1_FACE"]
+      F2: ["0", "SORCF", "F2_FACE"]
+      F3: ["0", "SORCF", "F3_FACE"]
+      F4: ["0", "SORCF", "F4_FACE"]
+      F5: ["0", "SORCF", "F5_FACE"]
+  - type: STR_CHAOS_HAVOC_ARMOR #CHAOS PATH
+    layersDefaultPrefix: 3
+    layersSpecificPrefix:
+      3: CHAOS
+    layersDefinition:
+      M0: ["0", "HAVOCM", "M0_FACE"]
+      M1: ["0", "HAVOCM", "M1_FACE"]
+      M2: ["0", "HAVOCM", "M2_FACE"]
+      M3: ["0", "HAVOCM", "M3_FACE"]
+      M4: ["0", "HAVOCM", "M4_FACE"]
+      M5: ["0", "HAVOCM", "M5_FACE"]
+      F0: ["0", "HAVOCF", "F0_FACE"]
+      F1: ["0", "HAVOCF", "F1_FACE"]
+      F2: ["0", "HAVOCF", "F2_FACE"]
+      F3: ["0", "HAVOCF", "F3_FACE"]
+      F4: ["0", "HAVOCF", "F4_FACE"]
+      F5: ["0", "HAVOCF", "F5_FACE"]
+  - type: STR_CHAOS_RAPTOR_ARMOR #CHAOS PATH
+    layersDefaultPrefix: 3
+    layersSpecificPrefix:
+      3: CHAOS
+    layersDefinition:
+      M0: ["0", "RAPTORM", "M0_FACE"]
+      M1: ["0", "RAPTORM", "M1_FACE"]
+      M2: ["0", "RAPTORM", "M2_FACE"]
+      M3: ["0", "RAPTORM", "M3_FACE"]
+      M4: ["0", "RAPTORM", "M4_FACE"]
+      M5: ["0", "RAPTORM", "M5_FACE"]
+      F0: ["0", "RAPTORF", "F0_FACE"]
+      F1: ["0", "RAPTORF", "F1_FACE"]
+      F2: ["0", "RAPTORF", "F2_FACE"]
+      F3: ["0", "RAPTORF", "F3_FACE"]
+      F4: ["0", "RAPTORF", "F4_FACE"]
+      F5: ["0", "RAPTORF", "F5_FACE"]
+  - type: STR_CHAOS_MARINE_ARMOR #CHAOS PATH
+    layersDefaultPrefix: 3
+    layersSpecificPrefix:
+      3: CHAOS
+    layersDefinition:
+      M0: ["0", "CHAOSM", "M0_FACE"]
+      M1: ["0", "CHAOSM", "M1_FACE"]
+      M2: ["0", "CHAOSM", "M2_FACE"]
+      M3: ["0", "CHAOSM", "M3_FACE"]
+      M4: ["0", "CHAOSM", "M4_FACE"]
+      M5: ["0", "CHAOSM", "M5_FACE"]
+      F0: ["0", "CHAOSF", "F0_FACE"]
+      F1: ["0", "CHAOSF", "F1_FACE"]
+      F2: ["0", "CHAOSF", "F2_FACE"]
+      F3: ["0", "CHAOSF", "F3_FACE"]
+      F4: ["0", "CHAOSF", "F4_FACE"]
+      F5: ["0", "CHAOSF", "F5_FACE"]
+  - type: STR_CHAOS_TERMINATOR_ARMOR #TERMINATOR
+    layersDefaultPrefix: 3
+    layersSpecificPrefix:
+      3: CTERMINATOR
+    layersDefinition:
+      M0: ["0", "CHAOSTMF", "M0_FACE"]
+      M1: ["0", "CHAOSTMF", "M1_FACE"]
+      M2: ["0", "CHAOSTMF", "M2_FACE"]
+      M3: ["0", "CHAOSTMF", "M3_FACE"]
+      M4: ["0", "CHAOSTMF", "M4_FACE"]
+      M5: ["0", "CHAOSTMF", "M5_FACE"]
+      F0: ["0", "CHAOSTMF", "F0_FACE"]
+      F1: ["0", "CHAOSTMF", "F1_FACE"]
+      F2: ["0", "CHAOSTMF", "F2_FACE"]
+      F3: ["0", "CHAOSTMF", "F3_FACE"]
+      F4: ["0", "CHAOSTMF", "F4_FACE"]
+      F5: ["0", "CHAOSTMF", "F5_FACE"]
+  - type: STR_CHAOS_LORD_ARMOR #CHOSEN
+    layersDefaultPrefix: 4
+    layersSpecificPrefix:
+      4: CTERMINATOR
+    layersDefinition:
+      M0: ["0", "CHAOSCMF", "M0_FACE"]
+      M1: ["0", "CHAOSCMF", "M1_FACE"]
+      M2: ["0", "CHAOSCMF", "M2_FACE"]
+      M3: ["0", "CHAOSCMF", "M3_FACE"]
+      M4: ["0", "CHAOSCMF", "M4_FACE"]
+      M5: ["0", "CHAOSCMF", "M5_FACE"]
+      F0: ["0", "CHAOSCMF", "F0_FACE"]
+      F1: ["0", "CHAOSCMF", "F1_FACE"]
+      F2: ["0", "CHAOSCMF", "F2_FACE"]
+      F3: ["0", "CHAOSCMF", "F3_FACE"]
+      F4: ["0", "CHAOSCMF", "F4_FACE"]
+      F5: ["0", "CHAOSCMF", "F5_FACE"]
+  - type: STR_CHAOS_SERGEANT_ARMOR #SERGEANT
+    layersDefaultPrefix: 4
+    layersSpecificPrefix:
+      4: SERG
+    layersDefinition:
+      M0: ["0", "SERGM", "M0_FACE"]
+      M1: ["0", "SERGM", "M1_FACE"]
+      M2: ["0", "SERGM", "M2_FACE"]
+      M3: ["0", "SERGM", "M3_FACE"]
+      M4: ["0", "SERGM", "M4_FACE"]
+      M5: ["0", "SERGM", "M5_FACE"]
+      F0: ["0", "SERGF", "F0_FACE"]
+      F1: ["0", "SERGF", "F1_FACE"]
+      F2: ["0", "SERGF", "F2_FACE"]
+      F3: ["0", "SERGF", "F3_FACE"]
+      F4: ["0", "SERGF", "F4_FACE"]
+      F5: ["0", "SERGF", "F5_FACE"]
+##################################################################################################################################################
+##################################################################ULTRAMARINES####################################################################
+##################################################################################################################################################
+
+##################################################################PRIMARIS####################################################################
+##################################################################################################################################################
+  - type: STR_MKX_LIB_LV1_UC #MKX
+    customArmorPreviewIndex: 293
+    layersDefaultPrefix: 23
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 163, 96, 163, 163, 160, 96, 160, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    layersSpecificPrefix:
+      23: GRV
+    layersDefinition:
+      M0: ["0", "LIBLV1", "M0_FACE"]
+      M1: ["0", "LIBLV1", "M1_FACE"]
+      M2: ["0", "LIBLV1", "M2_FACE"]
+      M3: ["0", "LIBLV1", "M3_FACE"]
+      M4: ["0", "LIBLV1", "M4_FACE"]
+      M5: ["0", "LIBLV1", "M5_FACE"]
+      M6: ["0", "LIBLV1", "M6_FACE"]
+      F0: ["0", "LIBLV1", "M7_FACE"]
+      F1: ["0", "LIBLV1", "M8_FACE"]
+      F2: ["0", "LIBLV1", "M9_FACE"]
+      F3: ["0", "LIBLV1", "M10_FACE"]
+      F4: ["0", "LIBLV1", "M11_FACE"]
+      F5: ["0", "LIBLV1", "M12_FACE"]
+      F6: ["0", "LIBLV1", "M13_FACE"]
+  - type: STR_MKX_LIB_LV2_UC #MKX
+    customArmorPreviewIndex: 293
+    layersDefaultPrefix: 23
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 163, 96, 163, 163, 160, 96, 160, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    layersSpecificPrefix:
+      23: GRV
+    layersDefinition:
+      M0: ["0", "LIBLV2", "M0_FACE", "MEDAL1"]
+      M1: ["0", "LIBLV2", "M1_FACE", "MEDAL1"]
+      M2: ["0", "LIBLV2", "M2_FACE", "MEDAL1"]
+      M3: ["0", "LIBLV2", "M3_FACE", "MEDAL1"]
+      M4: ["0", "LIBLV2", "M4_FACE", "MEDAL1"]
+      M5: ["0", "LIBLV2", "M5_FACE", "MEDAL2"]
+      M6: ["0", "LIBLV2", "M6_FACE", "MEDAL2"]
+      F0: ["0", "LIBLV2", "M7_FACE", "MEDAL2"]
+      F1: ["0", "LIBLV2", "M8_FACE", "MEDAL2"]
+      F2: ["0", "LIBLV2", "M9_FACE", "MEDAL3"]
+      F3: ["0", "LIBLV2", "M10_FACE", "MEDAL3"]
+      F4: ["0", "LIBLV2", "M11_FACE", "MEDAL3"]
+      F5: ["0", "LIBLV2", "M12_FACE", "MEDAL3"]
+      F6: ["0", "LIBLV2", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_LIB_LV3_UC #MKX
+    customArmorPreviewIndex: 293
+    layersDefaultPrefix: 23
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 163, 96, 163, 163, 160, 96, 160, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    layersSpecificPrefix:
+      23: GRV
+    layersDefinition:
+      M0: ["CAPEP", "LIBLV3", "M0_FACE", "MEDAL1"]
+      M1: ["CAPEP", "LIBLV3", "M1_FACE", "MEDAL1"]
+      M2: ["CAPEP", "LIBLV3", "M2_FACE", "MEDAL1"]
+      M3: ["CAPEP", "LIBLV3", "M3_FACE", "MEDAL1"]
+      M4: ["CAPEP", "LIBLV3", "M4_FACE", "MEDAL1"]
+      M5: ["CAPEP", "LIBLV3", "M5_FACE", "MEDAL2"]
+      M6: ["CAPEP", "LIBLV3", "M6_FACE", "MEDAL2"]
+      F0: ["CAPEP", "LIBLV3", "M7_FACE", "MEDAL2"]
+      F1: ["CAPEP", "LIBLV3", "M8_FACE", "MEDAL2"]
+      F2: ["CAPEP", "LIBLV3", "M9_FACE", "MEDAL3"]
+      F3: ["CAPEP", "LIBLV3", "M10_FACE", "MEDAL3"]
+      F4: ["CAPEP", "LIBLV3", "M11_FACE", "MEDAL3"]
+      F5: ["CAPEP", "LIBLV3", "M12_FACE", "MEDAL3"]
+      F6: ["CAPEP", "LIBLV3", "M13_FACE", "MEDAL3"]
+
+  - type: STR_MKX_BIKE_LV1_UC #MKX
+    customArmorPreviewIndex: [294, 295, 296]
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["BIKE", "MKXLV1", "M0_FACE"]
+      M1: ["BIKE", "MKXLV1", "M1_FACE"]
+      M2: ["BIKE", "MKXLV1", "M2_FACE"]
+      M3: ["BIKE", "MKXLV1", "M3_FACE"]
+      M4: ["BIKE", "MKXLV1", "M4_FACE"]
+      M5: ["BIKE", "MKXLV1", "M5_FACE"]
+      M6: ["BIKE", "MKXLV1", "M6_FACE"]
+      F0: ["BIKE", "MKXLV1", "M7_FACE"]
+      F1: ["BIKE", "MKXLV1", "M8_FACE"]
+      F2: ["BIKE", "MKXLV1", "M9_FACE"]
+      F3: ["BIKE", "MKXLV1", "M10_FACE"]
+      F4: ["BIKE", "MKXLV1", "M11_FACE"]
+      F5: ["BIKE", "MKXLV1", "M12_FACE"]
+      F6: ["BIKE", "MKXLV1", "M13_FACE"]
+  - type: STR_MKX_BIKE_LV2_UC #MKX
+    customArmorPreviewIndex: [294, 295, 296]
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["BIKE", "MKXLV2", "M0_FACE", "MEDAL1"]
+      M1: ["BIKE", "MKXLV2", "M1_FACE", "MEDAL1"]
+      M2: ["BIKE", "MKXLV2", "M2_FACE", "MEDAL1"]
+      M3: ["BIKE", "MKXLV2", "M3_FACE", "MEDAL1"]
+      M4: ["BIKE", "MKXLV2", "M4_FACE", "MEDAL1"]
+      M5: ["BIKE", "MKXLV2", "M5_FACE", "MEDAL2"]
+      M6: ["BIKE", "MKXLV2", "M6_FACE", "MEDAL2"]
+      F0: ["BIKE", "MKXLV2", "M7_FACE", "MEDAL2"]
+      F1: ["BIKE", "MKXLV2", "M8_FACE", "MEDAL2"]
+      F2: ["BIKE", "MKXLV2", "M9_FACE", "MEDAL3"]
+      F3: ["BIKE", "MKXLV2", "M10_FACE", "MEDAL3"]
+      F4: ["BIKE", "MKXLV2", "M11_FACE", "MEDAL3"]
+      F5: ["BIKE", "MKXLV2", "M12_FACE", "MEDAL3"]
+      F6: ["BIKE", "MKXLV2", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_BIKE_LV3_UC #MKX
+    customArmorPreviewIndex: [294, 295, 296]
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["BIKE", "MKXLV3", "M0_FACE", "MEDAL1"]
+      M1: ["BIKE", "MKXLV3", "M1_FACE", "MEDAL1"]
+      M2: ["BIKE", "MKXLV3", "M2_FACE", "MEDAL1"]
+      M3: ["BIKE", "MKXLV3", "M3_FACE", "MEDAL1"]
+      M4: ["BIKE", "MKXLV3", "M4_FACE", "MEDAL1"]
+      M5: ["BIKE", "MKXLV3", "M5_FACE", "MEDAL2"]
+      M6: ["BIKE", "MKXLV3", "M6_FACE", "MEDAL2"]
+      F0: ["BIKE", "MKXLV3", "M7_FACE", "MEDAL2"]
+      F1: ["BIKE", "MKXLV3", "M8_FACE", "MEDAL2"]
+      F2: ["BIKE", "MKXLV3", "M9_FACE", "MEDAL3"]
+      F3: ["BIKE", "MKXLV3", "M10_FACE", "MEDAL3"]
+      F4: ["BIKE", "MKXLV3", "M11_FACE", "MEDAL3"]
+      F5: ["BIKE", "MKXLV3", "M12_FACE", "MEDAL3"]
+      F6: ["BIKE", "MKXLV3", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_BIKE_LV4_UC #MKX
+    customArmorPreviewIndex: [294, 295, 296]
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["BIKE", "MKXLV4", "M0_FACE", "MEDAL1"]
+      M1: ["BIKE", "MKXLV4", "M1_FACE", "MEDAL1"]
+      M2: ["BIKE", "MKXLV4", "M2_FACE", "MEDAL1"]
+      M3: ["BIKE", "MKXLV4", "M3_FACE", "MEDAL1"]
+      M4: ["BIKE", "MKXLV4", "M4_FACE", "MEDAL1"]
+      M5: ["BIKE", "MKXLV4", "M5_FACE", "MEDAL2"]
+      M6: ["BIKE", "MKXLV4", "M6_FACE", "MEDAL2"]
+      F0: ["BIKE", "MKXLV4", "M7_FACE", "MEDAL2"]
+      F1: ["BIKE", "MKXLV4", "M8_FACE", "MEDAL2"]
+      F2: ["BIKE", "MKXLV4", "M9_FACE", "MEDAL3"]
+      F3: ["BIKE", "MKXLV4", "M10_FACE", "MEDAL3"]
+      F4: ["BIKE", "MKXLV4", "M11_FACE", "MEDAL3"]
+      F5: ["BIKE", "MKXLV4", "M12_FACE", "MEDAL3"]
+      F6: ["BIKE", "MKXLV4", "M13_FACE", "MEDAL3"]
+
+  - type: STR_MKX_APO_UC #APOT
+    customArmorPreviewIndex: 290
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: APO
+    layersDefinition:
+      M0: ["0", "MKXAPO", "M0_FACE", "MEDAL1"]
+      M1: ["0", "MKXAPO", "M1_FACE", "MEDAL1"]
+      M2: ["0", "MKXAPO", "M2_FACE", "MEDAL1"]
+      M3: ["0", "MKXAPO", "M3_FACE", "MEDAL1"]
+      M4: ["0", "MKXAPO", "M4_FACE", "MEDAL1"]
+      M5: ["0", "MKXAPO", "M5_FACE", "MEDAL2"]
+      M6: ["0", "MKXAPO", "M6_FACE", "MEDAL2"]
+      F0: ["0", "MKXAPO", "M7_FACE", "MEDAL2"]
+      F1: ["0", "MKXAPO", "M8_FACE", "MEDAL2"]
+      F2: ["0", "MKXAPO", "M9_FACE", "MEDAL3"]
+      F3: ["0", "MKXAPO", "M10_FACE", "MEDAL3"]
+      F4: ["0", "MKXAPO", "M11_FACE", "MEDAL3"]
+      F5: ["0", "MKXAPO", "M12_FACE", "MEDAL3"]
+      F6: ["0", "MKXAPO", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_TEC_LV1_UC #TEC
+    customArmorPreviewIndex: 291
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: APO
+    layersDefinition:
+      M0: ["0", "MKXTEC", "M0_FACE", "MEDAL1"]
+      M1: ["0", "MKXTEC", "M1_FACE", "MEDAL1"]
+      M2: ["0", "MKXTEC", "M2_FACE", "MEDAL1"]
+      M3: ["0", "MKXTEC", "M3_FACE", "MEDAL1"]
+      M4: ["0", "MKXTEC", "M4_FACE", "MEDAL1"]
+      M5: ["0", "MKXTEC", "M5_FACE", "MEDAL2"]
+      M6: ["0", "MKXTEC", "M6_FACE", "MEDAL2"]
+      F0: ["0", "MKXTEC", "M7_FACE", "MEDAL2"]
+      F1: ["0", "MKXTEC", "M8_FACE", "MEDAL2"]
+      F2: ["0", "MKXTEC", "M9_FACE", "MEDAL3"]
+      F3: ["0", "MKXTEC", "M10_FACE", "MEDAL3"]
+      F4: ["0", "MKXTEC", "M11_FACE", "MEDAL3"]
+      F5: ["0", "MKXTEC", "M12_FACE", "MEDAL3"]
+      F6: ["0", "MKXTEC", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_TEC_LV2_UC #TEC
+    customArmorPreviewIndex: 291
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: APO
+    layersDefinition:
+      M0: ["0", "MKXTEC2", "M0_FACE", "MEDAL1"]
+      M1: ["0", "MKXTEC2", "M1_FACE", "MEDAL1"]
+      M2: ["0", "MKXTEC2", "M2_FACE", "MEDAL1"]
+      M3: ["0", "MKXTEC2", "M3_FACE", "MEDAL1"]
+      M4: ["0", "MKXTEC2", "M4_FACE", "MEDAL1"]
+      M5: ["0", "MKXTEC2", "M5_FACE", "MEDAL2"]
+      M6: ["0", "MKXTEC2", "M6_FACE", "MEDAL2"]
+      F0: ["0", "MKXTEC2", "M7_FACE", "MEDAL2"]
+      F1: ["0", "MKXTEC2", "M8_FACE", "MEDAL2"]
+      F2: ["0", "MKXTEC2", "M9_FACE", "MEDAL3"]
+      F3: ["0", "MKXTEC2", "M10_FACE", "MEDAL3"]
+      F4: ["0", "MKXTEC2", "M11_FACE", "MEDAL3"]
+      F5: ["0", "MKXTEC2", "M12_FACE", "MEDAL3"]
+      F6: ["0", "MKXTEC2", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_TEC_LV3_UC #TEC
+    customArmorPreviewIndex: 291
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: APO
+    layersDefinition:
+      M0: ["0", "MKXTEC2", "M0_FACE", "MEDAL1"]
+      M1: ["0", "MKXTEC2", "M1_FACE", "MEDAL1"]
+      M2: ["0", "MKXTEC2", "M2_FACE", "MEDAL1"]
+      M3: ["0", "MKXTEC2", "M3_FACE", "MEDAL1"]
+      M4: ["0", "MKXTEC2", "M4_FACE", "MEDAL1"]
+      M5: ["0", "MKXTEC2", "M5_FACE", "MEDAL2"]
+      M6: ["0", "MKXTEC2", "M6_FACE", "MEDAL2"]
+      F0: ["0", "MKXTEC2", "M7_FACE", "MEDAL2"]
+      F1: ["0", "MKXTEC2", "M8_FACE", "MEDAL2"]
+      F2: ["0", "MKXTEC2", "M9_FACE", "MEDAL3"]
+      F3: ["0", "MKXTEC2", "M10_FACE", "MEDAL3"]
+      F4: ["0", "MKXTEC2", "M11_FACE", "MEDAL3"]
+      F5: ["0", "MKXTEC2", "M12_FACE", "MEDAL3"]
+      F6: ["0", "MKXTEC2", "M13_FACE", "MEDAL3"]
+
+  - type: STR_MKX_CHP_UC #TEC
+    customArmorPreviewIndex: 292
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: APO
+    layersDefinition:
+      M0: ["0", "MKXCHP", "M0_FACE", "MEDAL1", "HOOD"]
+      M1: ["0", "MKXCHP", "M1_FACE", "MEDAL1", "HOOD"]
+      M2: ["0", "MKXCHP", "M2_FACE", "MEDAL1", "HOOD"]
+      M3: ["0", "MKXCHP", "M3_FACE", "MEDAL1", "HOOD"]
+      M4: ["0", "MKXCHP", "M4_FACE", "MEDAL1", "HOOD"]
+      M5: ["0", "MKXCHP", "M5_FACE", "MEDAL2", "HOOD"]
+      M6: ["0", "MKXCHP", "M6_FACE", "MEDAL2", "HOOD"]
+      F0: ["0", "MKXCHP", "M7_FACE", "MEDAL2", "HOOD"]
+      F1: ["0", "MKXCHP", "M8_FACE", "MEDAL2", "HOOD"]
+      F2: ["0", "MKXCHP", "M9_FACE", "MEDAL3", "HOOD"]
+      F3: ["0", "MKXCHP", "M10_FACE", "MEDAL3", "HOOD"]
+      F4: ["0", "MKXCHP", "M11_FACE", "MEDAL3", "HOOD"]
+      F5: ["0", "MKXCHP", "M12_FACE", "MEDAL3", "HOOD"]
+      F6: ["0", "MKXCHP", "M13_FACE", "MEDAL3", "HOOD"]
+  - type: STR_MKX_TAC_LV1_UC #MKX
+    customArmorPreviewIndex: 270
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["0", "MKXLV1", "M0_FACE"]
+      M1: ["0", "MKXLV1", "M1_FACE"]
+      M2: ["0", "MKXLV1", "M2_FACE"]
+      M3: ["0", "MKXLV1", "M3_FACE"]
+      M4: ["0", "MKXLV1", "M4_FACE"]
+      M5: ["0", "MKXLV1", "M5_FACE"]
+      M6: ["0", "MKXLV1", "M6_FACE"]
+      F0: ["0", "MKXLV1", "M7_FACE"]
+      F1: ["0", "MKXLV1", "M8_FACE"]
+      F2: ["0", "MKXLV1", "M9_FACE"]
+      F3: ["0", "MKXLV1", "M10_FACE"]
+      F4: ["0", "MKXLV1", "M11_FACE"]
+      F5: ["0", "MKXLV1", "M12_FACE"]
+      F6: ["0", "MKXLV1", "M13_FACE"]
+  - type: STR_MKX_TAC_LV2_UC #MKX
+    customArmorPreviewIndex: 271
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["0", "MKXLV2", "M0_FACE", "MEDAL1"]
+      M1: ["0", "MKXLV2", "M1_FACE", "MEDAL1"]
+      M2: ["0", "MKXLV2", "M2_FACE", "MEDAL1"]
+      M3: ["0", "MKXLV2", "M3_FACE", "MEDAL1"]
+      M4: ["0", "MKXLV2", "M4_FACE", "MEDAL1"]
+      M5: ["0", "MKXLV2", "M5_FACE", "MEDAL2"]
+      M6: ["0", "MKXLV2", "M6_FACE", "MEDAL2"]
+      F0: ["0", "MKXLV2", "M7_FACE", "MEDAL2"]
+      F1: ["0", "MKXLV2", "M8_FACE", "MEDAL2"]
+      F2: ["0", "MKXLV2", "M9_FACE", "MEDAL3"]
+      F3: ["0", "MKXLV2", "M10_FACE", "MEDAL3"]
+      F4: ["0", "MKXLV2", "M11_FACE", "MEDAL3"]
+      F5: ["0", "MKXLV2", "M12_FACE", "MEDAL3"]
+      F6: ["0", "MKXLV2", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_TAC_LV3_UC #MKX
+    customArmorPreviewIndex: 272
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["0", "MKXLV3", "M0_FACE", "MEDAL1"]
+      M1: ["0", "MKXLV3", "M1_FACE", "MEDAL1"]
+      M2: ["0", "MKXLV3", "M2_FACE", "MEDAL1"]
+      M3: ["0", "MKXLV3", "M3_FACE", "MEDAL1"]
+      M4: ["0", "MKXLV3", "M4_FACE", "MEDAL1"]
+      M5: ["0", "MKXLV3", "M5_FACE", "MEDAL2"]
+      M6: ["0", "MKXLV3", "M6_FACE", "MEDAL2"]
+      F0: ["0", "MKXLV3", "M7_FACE", "MEDAL2"]
+      F1: ["0", "MKXLV3", "M8_FACE", "MEDAL2"]
+      F2: ["0", "MKXLV3", "M9_FACE", "MEDAL3"]
+      F3: ["0", "MKXLV3", "M10_FACE", "MEDAL3"]
+      F4: ["0", "MKXLV3", "M11_FACE", "MEDAL3"]
+      F5: ["0", "MKXLV3", "M12_FACE", "MEDAL3"]
+      F6: ["0", "MKXLV3", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_TAC_LV4_UC #MKX
+    customArmorPreviewIndex: 273
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["0", "MKXLV4", "M0_FACE", "MEDAL1"]
+      M1: ["0", "MKXLV4", "M1_FACE", "MEDAL1"]
+      M2: ["0", "MKXLV4", "M2_FACE", "MEDAL1"]
+      M3: ["0", "MKXLV4", "M3_FACE", "MEDAL1"]
+      M4: ["0", "MKXLV4", "M4_FACE", "MEDAL1"]
+      M5: ["0", "MKXLV4", "M5_FACE", "MEDAL2"]
+      M6: ["0", "MKXLV4", "M6_FACE", "MEDAL2"]
+      F0: ["0", "MKXLV4", "M7_FACE", "MEDAL2"]
+      F1: ["0", "MKXLV4", "M8_FACE", "MEDAL2"]
+      F2: ["0", "MKXLV4", "M9_FACE", "MEDAL3"]
+      F3: ["0", "MKXLV4", "M10_FACE", "MEDAL3"]
+      F4: ["0", "MKXLV4", "M11_FACE", "MEDAL3"]
+      F5: ["0", "MKXLV4", "M12_FACE", "MEDAL3"]
+      F6: ["0", "MKXLV4", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_TAC_LV5_UC #MKX
+    customArmorPreviewIndex: 274
+    layersDefaultPrefix: 21
+    layersSpecificPrefix:
+      21: MKX
+    layersDefinition:
+      M0: ["CAPEP", "MKXLV5", "M0_FACE", "MEDAL1"]
+      M1: ["CAPEP", "MKXLV5", "M1_FACE", "MEDAL1"]
+      M2: ["CAPEP", "MKXLV5", "M2_FACE", "MEDAL1"]
+      M3: ["CAPEP", "MKXLV5", "M3_FACE", "MEDAL1"]
+      M4: ["CAPEP", "MKXLV5", "M4_FACE", "MEDAL1"]
+      M5: ["CAPEP", "MKXLV5", "M5_FACE", "MEDAL2"]
+      M6: ["CAPEP", "MKXLV5", "M6_FACE", "MEDAL2"]
+      F0: ["CAPEP", "MKXLV5", "M7_FACE", "MEDAL2"]
+      F1: ["CAPEP", "MKXLV5", "M8_FACE", "MEDAL2"]
+      F2: ["CAPEP", "MKXLV5", "M9_FACE", "MEDAL3"]
+      F3: ["CAPEP", "MKXLV5", "M10_FACE", "MEDAL3"]
+      F4: ["CAPEP", "MKXLV5", "M11_FACE", "MEDAL3"]
+      F5: ["CAPEP", "MKXLV5", "M12_FACE", "MEDAL3"]
+      F6: ["CAPEP", "MKXLV5", "M13_FACE", "MEDAL3"]
+#
+  - type: STR_MKX_INC_LV1_UC #MKX
+    customArmorPreviewIndex: 285
+    layersDefaultPrefix: 23
+    layersSpecificPrefix:
+      23: GRV
+    layersDefinition:
+      M0: ["0", "INCLV1", "M0_FACE"]
+      M1: ["0", "INCLV1", "M1_FACE"]
+      M2: ["0", "INCLV1", "M2_FACE"]
+      M3: ["0", "INCLV1", "M3_FACE"]
+      M4: ["0", "INCLV1", "M4_FACE"]
+      M5: ["0", "INCLV1", "M5_FACE"]
+      M6: ["0", "INCLV1", "M6_FACE"]
+      F0: ["0", "INCLV1", "M7_FACE"]
+      F1: ["0", "INCLV1", "M8_FACE"]
+      F2: ["0", "INCLV1", "M9_FACE"]
+      F3: ["0", "INCLV1", "M10_FACE"]
+      F4: ["0", "INCLV1", "M11_FACE"]
+      F5: ["0", "INCLV1", "M12_FACE"]
+      F6: ["0", "INCLV1", "M13_FACE"]
+  - type: STR_MKX_INC_LV2_UC #MKX
+    customArmorPreviewIndex: 286
+    layersDefaultPrefix: 23
+    layersSpecificPrefix:
+      23: GRV
+    layersDefinition:
+      M0: ["0", "INCLV2", "M0_FACE", "MEDAL1"]
+      M1: ["0", "INCLV2", "M1_FACE", "MEDAL1"]
+      M2: ["0", "INCLV2", "M2_FACE", "MEDAL1"]
+      M3: ["0", "INCLV2", "M3_FACE", "MEDAL1"]
+      M4: ["0", "INCLV2", "M4_FACE", "MEDAL1"]
+      M5: ["0", "INCLV2", "M5_FACE", "MEDAL2"]
+      M6: ["0", "INCLV2", "M6_FACE", "MEDAL2"]
+      F0: ["0", "INCLV2", "M7_FACE", "MEDAL2"]
+      F1: ["0", "INCLV2", "M8_FACE", "MEDAL2"]
+      F2: ["0", "INCLV2", "M9_FACE", "MEDAL3"]
+      F3: ["0", "INCLV2", "M10_FACE", "MEDAL3"]
+      F4: ["0", "INCLV2", "M11_FACE", "MEDAL3"]
+      F5: ["0", "INCLV2", "M12_FACE", "MEDAL3"]
+      F6: ["0", "INCLV2", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_INC_LV3_UC #MKX
+    customArmorPreviewIndex: 287
+    layersDefaultPrefix: 23
+    layersSpecificPrefix:
+      23: GRV
+    layersDefinition:
+      M0: ["0", "INCLV3", "M0_FACE", "MEDAL1"]
+      M1: ["0", "INCLV3", "M1_FACE", "MEDAL1"]
+      M2: ["0", "INCLV3", "M2_FACE", "MEDAL1"]
+      M3: ["0", "INCLV3", "M3_FACE", "MEDAL1"]
+      M4: ["0", "INCLV3", "M4_FACE", "MEDAL1"]
+      M5: ["0", "INCLV3", "M5_FACE", "MEDAL2"]
+      M6: ["0", "INCLV3", "M6_FACE", "MEDAL2"]
+      F0: ["0", "INCLV3", "M7_FACE", "MEDAL2"]
+      F1: ["0", "INCLV3", "M8_FACE", "MEDAL2"]
+      F2: ["0", "INCLV3", "M9_FACE", "MEDAL3"]
+      F3: ["0", "INCLV3", "M10_FACE", "MEDAL3"]
+      F4: ["0", "INCLV3", "M11_FACE", "MEDAL3"]
+      F5: ["0", "INCLV3", "M12_FACE", "MEDAL3"]
+      F6: ["0", "INCLV3", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_INC_LV4_UC #MKX
+    customArmorPreviewIndex: 288
+    layersDefaultPrefix: 23
+    layersSpecificPrefix:
+      23: GRV
+    layersDefinition:
+      M0: ["0", "INCLV4", "M0_FACE", "MEDAL1"]
+      M1: ["0", "INCLV4", "M1_FACE", "MEDAL1"]
+      M2: ["0", "INCLV4", "M2_FACE", "MEDAL1"]
+      M3: ["0", "INCLV4", "M3_FACE", "MEDAL1"]
+      M4: ["0", "INCLV4", "M4_FACE", "MEDAL1"]
+      M5: ["0", "INCLV4", "M5_FACE", "MEDAL2"]
+      M6: ["0", "INCLV4", "M6_FACE", "MEDAL2"]
+      F0: ["0", "INCLV4", "M7_FACE", "MEDAL2"]
+      F1: ["0", "INCLV4", "M8_FACE", "MEDAL2"]
+      F2: ["0", "INCLV4", "M9_FACE", "MEDAL3"]
+      F3: ["0", "INCLV4", "M10_FACE", "MEDAL3"]
+      F4: ["0", "INCLV4", "M11_FACE", "MEDAL3"]
+      F5: ["0", "INCLV4", "M12_FACE", "MEDAL3"]
+      F6: ["0", "INCLV4", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_INC_LV5_UC #MKX
+    customArmorPreviewIndex: 289
+    layersDefaultPrefix: 23
+    layersSpecificPrefix:
+      23: GRV
+    layersDefinition:
+      M0: ["0", "INCLV5", "M0_FACE", "MEDAL1"]
+      M1: ["0", "INCLV5", "M1_FACE", "MEDAL1"]
+      M2: ["0", "INCLV5", "M2_FACE", "MEDAL1"]
+      M3: ["0", "INCLV5", "M3_FACE", "MEDAL1"]
+      M4: ["0", "INCLV5", "M4_FACE", "MEDAL1"]
+      M5: ["0", "INCLV5", "M5_FACE", "MEDAL2"]
+      M6: ["0", "INCLV5", "M6_FACE", "MEDAL2"]
+      F0: ["0", "INCLV5", "M7_FACE", "MEDAL2"]
+      F1: ["0", "INCLV5", "M8_FACE", "MEDAL2"]
+      F2: ["0", "INCLV5", "M9_FACE", "MEDAL3"]
+      F3: ["0", "INCLV5", "M10_FACE", "MEDAL3"]
+      F4: ["0", "INCLV5", "M11_FACE", "MEDAL3"]
+      F5: ["0", "INCLV5", "M12_FACE", "MEDAL3"]
+      F6: ["0", "INCLV5", "M13_FACE", "MEDAL3"]
+#
+  - type: STR_MKX_PHB_LV1_UC #PHB
+    customArmorPreviewIndex: 275
+    layersDefaultPrefix: 22
+    layersSpecificPrefix:
+      22: PHB
+    layersDefinition:
+      M0: ["0", "PHBLV1", "M0_FACE"]
+      M1: ["0", "PHBLV1", "M1_FACE"]
+      M2: ["0", "PHBLV1", "M2_FACE"]
+      M3: ["0", "PHBLV1", "M3_FACE"]
+      M4: ["0", "PHBLV1", "M4_FACE"]
+      M5: ["0", "PHBLV1", "M5_FACE"]
+      M6: ["0", "PHBLV1", "M6_FACE"]
+      F0: ["0", "PHBLV1", "M7_FACE"]
+      F1: ["0", "PHBLV1", "M8_FACE"]
+      F2: ["0", "PHBLV1", "M9_FACE"]
+      F3: ["0", "PHBLV1", "M10_FACE"]
+      F4: ["0", "PHBLV1", "M11_FACE"]
+      F5: ["0", "PHBLV1", "M12_FACE"]
+      F6: ["0", "PHBLV1", "M13_FACE"]
+  - type: STR_MKX_PHB_LV2_UC #PHB
+    customArmorPreviewIndex: 276
+    layersDefaultPrefix: 22
+    layersSpecificPrefix:
+      22: PHB
+    layersDefinition:
+      M0: ["0", "PHBLV2", "M0_FACE", "MEDAL1"]
+      M1: ["0", "PHBLV2", "M1_FACE", "MEDAL1"]
+      M2: ["0", "PHBLV2", "M2_FACE", "MEDAL1"]
+      M3: ["0", "PHBLV2", "M3_FACE", "MEDAL1"]
+      M4: ["0", "PHBLV2", "M4_FACE", "MEDAL1"]
+      M5: ["0", "PHBLV2", "M5_FACE", "MEDAL2"]
+      M6: ["0", "PHBLV2", "M6_FACE", "MEDAL2"]
+      F0: ["0", "PHBLV2", "M7_FACE", "MEDAL2"]
+      F1: ["0", "PHBLV2", "M8_FACE", "MEDAL2"]
+      F2: ["0", "PHBLV2", "M9_FACE", "MEDAL3"]
+      F3: ["0", "PHBLV2", "M10_FACE", "MEDAL3"]
+      F4: ["0", "PHBLV2", "M11_FACE", "MEDAL3"]
+      F5: ["0", "PHBLV2", "M12_FACE", "MEDAL3"]
+      F6: ["0", "PHBLV2", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_PHB_LV3_UC #PHB
+    customArmorPreviewIndex: 277
+    layersDefaultPrefix: 22
+    layersSpecificPrefix:
+      22: PHB
+    layersDefinition:
+      M0: ["0", "PHBLV3", "M0_FACE", "MEDAL1"]
+      M1: ["0", "PHBLV3", "M1_FACE", "MEDAL1"]
+      M2: ["0", "PHBLV3", "M2_FACE", "MEDAL1"]
+      M3: ["0", "PHBLV3", "M3_FACE", "MEDAL1"]
+      M4: ["0", "PHBLV3", "M4_FACE", "MEDAL1"]
+      M5: ["0", "PHBLV3", "M5_FACE", "MEDAL2"]
+      M6: ["0", "PHBLV3", "M6_FACE", "MEDAL2"]
+      F0: ["0", "PHBLV3", "M7_FACE", "MEDAL2"]
+      F1: ["0", "PHBLV3", "M8_FACE", "MEDAL2"]
+      F2: ["0", "PHBLV3", "M9_FACE", "MEDAL3"]
+      F3: ["0", "PHBLV3", "M10_FACE", "MEDAL3"]
+      F4: ["0", "PHBLV3", "M11_FACE", "MEDAL3"]
+      F5: ["0", "PHBLV3", "M12_FACE", "MEDAL3"]
+      F6: ["0", "PHBLV3", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_PHB_LV4_UC #PHB
+    customArmorPreviewIndex: 278
+    layersDefaultPrefix: 22
+    layersSpecificPrefix:
+      22: PHB
+    layersDefinition:
+      M0: ["0", "PHBLV4", "M0_FACE", "MEDAL1"]
+      M1: ["0", "PHBLV4", "M1_FACE", "MEDAL1"]
+      M2: ["0", "PHBLV4", "M2_FACE", "MEDAL1"]
+      M3: ["0", "PHBLV4", "M3_FACE", "MEDAL1"]
+      M4: ["0", "PHBLV4", "M4_FACE", "MEDAL1"]
+      M5: ["0", "PHBLV4", "M5_FACE", "MEDAL2"]
+      M6: ["0", "PHBLV4", "M6_FACE", "MEDAL2"]
+      F0: ["0", "PHBLV4", "M7_FACE", "MEDAL2"]
+      F1: ["0", "PHBLV4", "M8_FACE", "MEDAL2"]
+      F2: ["0", "PHBLV4", "M9_FACE", "MEDAL3"]
+      F3: ["0", "PHBLV4", "M10_FACE", "MEDAL3"]
+      F4: ["0", "PHBLV4", "M11_FACE", "MEDAL3"]
+      F5: ["0", "PHBLV4", "M12_FACE", "MEDAL3"]
+      F6: ["0", "PHBLV4", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_PHB_LV5_UC #PHB
+    customArmorPreviewIndex: 279
+    layersDefaultPrefix: 22
+    layersSpecificPrefix:
+      22: PHB
+    layersDefinition:
+      M0: ["CAPEP", "PHBLV5", "M0_FACE", "MEDAL1"]
+      M1: ["CAPEP", "PHBLV5", "M1_FACE", "MEDAL1"]
+      M2: ["CAPEP", "PHBLV5", "M2_FACE", "MEDAL1"]
+      M3: ["CAPEP", "PHBLV5", "M3_FACE", "MEDAL1"]
+      M4: ["CAPEP", "PHBLV5", "M4_FACE", "MEDAL1"]
+      M5: ["CAPEP", "PHBLV5", "M5_FACE", "MEDAL2"]
+      M6: ["CAPEP", "PHBLV5", "M6_FACE", "MEDAL2"]
+      F0: ["CAPEP", "PHBLV5", "M7_FACE", "MEDAL2"]
+      F1: ["CAPEP", "PHBLV5", "M8_FACE", "MEDAL2"]
+      F2: ["CAPEP", "PHBLV5", "M9_FACE", "MEDAL3"]
+      F3: ["CAPEP", "PHBLV5", "M10_FACE", "MEDAL3"]
+      F4: ["CAPEP", "PHBLV5", "M11_FACE", "MEDAL3"]
+      F5: ["CAPEP", "PHBLV5", "M12_FACE", "MEDAL3"]
+      F6: ["CAPEP", "PHBLV5", "M13_FACE", "MEDAL3"]
+#
+  - type: STR_MKX_GRV_LV1_UC #GRV
+    customArmorPreviewIndex: 280
+    layersDefaultPrefix: 23
+    layersSpecificPrefix:
+      23: GRV
+    layersDefinition:
+      M0: ["0", "GRVLV1", "M0_FACE"]
+      M1: ["0", "GRVLV1", "M1_FACE"]
+      M2: ["0", "GRVLV1", "M2_FACE"]
+      M3: ["0", "GRVLV1", "M3_FACE"]
+      M4: ["0", "GRVLV1", "M4_FACE"]
+      M5: ["0", "GRVLV1", "M5_FACE"]
+      M6: ["0", "GRVLV1", "M6_FACE"]
+      F0: ["0", "GRVLV1", "M7_FACE"]
+      F1: ["0", "GRVLV1", "M8_FACE"]
+      F2: ["0", "GRVLV1", "M9_FACE"]
+      F3: ["0", "GRVLV1", "M10_FACE"]
+      F4: ["0", "GRVLV1", "M11_FACE"]
+      F5: ["0", "GRVLV1", "M12_FACE"]
+      F6: ["0", "GRVLV1", "M13_FACE"]
+  - type: STR_MKX_GRV_LV2_UC #GRV
+    customArmorPreviewIndex: 281
+    layersDefaultPrefix: 23
+    layersSpecificPrefix:
+      23: GRV
+    layersDefinition:
+      M0: ["0", "GRVLV2", "M0_FACE", "MEDAL1"]
+      M1: ["0", "GRVLV2", "M1_FACE", "MEDAL1"]
+      M2: ["0", "GRVLV2", "M2_FACE", "MEDAL1"]
+      M3: ["0", "GRVLV2", "M3_FACE", "MEDAL1"]
+      M4: ["0", "GRVLV2", "M4_FACE", "MEDAL1"]
+      M5: ["0", "GRVLV2", "M5_FACE", "MEDAL1"]
+      M6: ["0", "GRVLV2", "M6_FACE", "MEDAL1"]
+      F0: ["0", "GRVLV2", "M7_FACE", "MEDAL1"]
+      F1: ["0", "GRVLV2", "M8_FACE", "MEDAL1"]
+      F2: ["0", "GRVLV2", "M9_FACE", "MEDAL1"]
+      F3: ["0", "GRVLV2", "M10_FACE", "MEDAL1"]
+      F4: ["0", "GRVLV2", "M11_FACE", "MEDAL1"]
+      F5: ["0", "GRVLV2", "M12_FACE", "MEDAL1"]
+      F6: ["0", "GRVLV2", "M13_FACE", "MEDAL1"]
+  - type: STR_MKX_GRV_LV3_UC #GRV
+    customArmorPreviewIndex: 282
+    layersDefaultPrefix: 23
+    layersSpecificPrefix:
+      23: GRV
+    layersDefinition:
+      M0: ["0", "GRVLV3", "M0_FACE", "MEDAL1"]
+      M1: ["0", "GRVLV3", "M1_FACE", "MEDAL1"]
+      M2: ["0", "GRVLV3", "M2_FACE", "MEDAL1"]
+      M3: ["0", "GRVLV3", "M3_FACE", "MEDAL1"]
+      M4: ["0", "GRVLV3", "M4_FACE", "MEDAL1"]
+      M5: ["0", "GRVLV3", "M5_FACE", "MEDAL2"]
+      M6: ["0", "GRVLV3", "M6_FACE", "MEDAL2"]
+      F0: ["0", "GRVLV3", "M7_FACE", "MEDAL2"]
+      F1: ["0", "GRVLV3", "M8_FACE", "MEDAL2"]
+      F2: ["0", "GRVLV3", "M9_FACE", "MEDAL3"]
+      F3: ["0", "GRVLV3", "M10_FACE", "MEDAL3"]
+      F4: ["0", "GRVLV3", "M11_FACE", "MEDAL3"]
+      F5: ["0", "GRVLV3", "M12_FACE", "MEDAL3"]
+      F6: ["0", "GRVLV3", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_GRV_LV4_UC #GRV
+    customArmorPreviewIndex: 283
+    layersDefaultPrefix: 23
+    layersSpecificPrefix:
+      23: GRV
+    layersDefinition:
+      M0: ["0", "GRVLV4", "M0_FACE", "MEDAL1"]
+      M1: ["0", "GRVLV4", "M1_FACE", "MEDAL1"]
+      M2: ["0", "GRVLV4", "M2_FACE", "MEDAL1"]
+      M3: ["0", "GRVLV4", "M3_FACE", "MEDAL1"]
+      M4: ["0", "GRVLV4", "M4_FACE", "MEDAL1"]
+      M5: ["0", "GRVLV4", "M5_FACE", "MEDAL2"]
+      M6: ["0", "GRVLV4", "M6_FACE", "MEDAL2"]
+      F0: ["0", "GRVLV4", "M7_FACE", "MEDAL2"]
+      F1: ["0", "GRVLV4", "M8_FACE", "MEDAL2"]
+      F2: ["0", "GRVLV4", "M9_FACE", "MEDAL3"]
+      F3: ["0", "GRVLV4", "M10_FACE", "MEDAL3"]
+      F4: ["0", "GRVLV4", "M11_FACE", "MEDAL3"]
+      F5: ["0", "GRVLV4", "M12_FACE", "MEDAL3"]
+      F6: ["0", "GRVLV4", "M13_FACE", "MEDAL3"]
+  - type: STR_MKX_GRV_LV5_UC #GRV
+    customArmorPreviewIndex: 284
+    layersDefaultPrefix: 23
+    layersSpecificPrefix:
+      23: GRV
+    layersDefinition:
+      M0: ["CAPEP", "GRVLV5", "M0_FACE", "MEDAL1"]
+      M1: ["CAPEP", "GRVLV5", "M1_FACE", "MEDAL1"]
+      M2: ["CAPEP", "GRVLV5", "M2_FACE", "MEDAL1"]
+      M3: ["CAPEP", "GRVLV5", "M3_FACE", "MEDAL1"]
+      M4: ["CAPEP", "GRVLV5", "M4_FACE", "MEDAL1"]
+      M5: ["CAPEP", "GRVLV5", "M5_FACE", "MEDAL2"]
+      M6: ["CAPEP", "GRVLV5", "M6_FACE", "MEDAL2"]
+      F0: ["CAPEP", "GRVLV5", "M7_FACE", "MEDAL2"]
+      F1: ["CAPEP", "GRVLV5", "M8_FACE", "MEDAL2"]
+      F2: ["CAPEP", "GRVLV5", "M9_FACE", "MEDAL3"]
+      F3: ["CAPEP", "GRVLV5", "M10_FACE", "MEDAL3"]
+      F4: ["CAPEP", "GRVLV5", "M11_FACE", "MEDAL3"]
+      F5: ["CAPEP", "GRVLV5", "M12_FACE", "MEDAL3"]
+      F6: ["CAPEP", "GRVLV5", "M13_FACE", "MEDAL3"]
+##################################################################FIRSTBORN####################################################################
+##################################################################################################################################################
+  - type: CENT_ARMOR_UC #CENT
+    layersDefaultPrefix: 1
+    layersSpecificPrefix:
+      1: CENT
+    layersDefinition:
+      M0: ["0", "CENTMF", "M0_FACE"]
+      M1: ["0", "CENTMF", "M1_FACE"]
+      M2: ["0", "CENTMF", "M2_FACE"]
+      M3: ["0", "CENTMF", "M3_FACE"]
+      M4: ["0", "CENTMF", "M4_FACE"]
+      M5: ["0", "CENTMF", "M5_FACE"]
+      F0: ["0", "CENTMF", "F0_FACE"]
+      F1: ["0", "CENTMF", "F1_FACE"]
+      F2: ["0", "CENTMF", "F2_FACE"]
+      F3: ["0", "CENTMF", "F3_FACE"]
+      F4: ["0", "CENTMF", "F4_FACE"]
+      F5: ["0", "CENTMF", "F5_FACE"]
+  - type: BIKE_ARMOR_UC #BIKE
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: BIKE
+    layersDefinition:
+      M0: ["0", "BIKEM", "M0_FACE"]
+      M1: ["0", "BIKEM", "M1_FACE"]
+      M2: ["0", "BIKEM", "M2_FACE"]
+      M3: ["0", "BIKEM", "M3_FACE"]
+      M4: ["0", "BIKEM", "M4_FACE"]
+      M5: ["0", "BIKEM", "M5_FACE"]
+      F0: ["0", "BIKEF", "F0_FACE"]
+      F1: ["0", "BIKEF", "F1_FACE"]
+      F2: ["0", "BIKEF", "F2_FACE"]
+      F3: ["0", "BIKEF", "F3_FACE"]
+      F4: ["0", "BIKEF", "F4_FACE"]
+      F5: ["0", "BIKEF", "F5_FACE"]
+  - type: STR_SCOUT_UC #SCOUT
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: SCOUT
+      3: GOGGLES
+    layersDefinition:
+      M0: ["0", "ASCOUTM", "M0_FACE", "GOGGLES"]
+      M1: ["0", "ASCOUTM", "M1_FACE", "GOGGLES"]
+      M2: ["0", "ASCOUTMC", "M2_FACE", "GOGGLES"]
+      M3: ["0", "ASCOUTMB", "M3_FACE", "GOGGLES"]
+      M4: ["0", "ASCOUTM", "M4_FACE", "GOGGLES"]
+      M5: ["0", "ASCOUTM", "M5_FACE", "GOGGLES"]
+      F0: ["0", "ASCOUTF", "F0_FACE", "GOGGLES"]
+      F1: ["0", "ASCOUTF", "F1_FACE", "GOGGLES"]
+      F2: ["0", "ASCOUTFC", "F2_FACE", "GOGGLES"]
+      F3: ["0", "ASCOUTFB", "F3_FACE", "GOGGLES"]
+      F4: ["0", "ASCOUTF", "F4_FACE", "GOGGLES"]
+      F5: ["0", "ASCOUTF", "F5_FACE", "GOGGLES"]
+  - type: STR_SCOUTHG_UC #SCOUT HONOR GREEN
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    layersDefaultPrefix: CAPE
+    layersSpecificPrefix:
+      1: SCOUTH
+      3: GOGGLES
+    layersDefinition:
+      M0: ["CAPEG", "AHSCOUTM", "M0_FACE", "GOGGLES"]
+      M1: ["CAPEG", "AHSCOUTM", "M1_FACE", "GOGGLES"]
+      M2: ["CAPEG", "AHSCOUTM", "M2_FACE", "GOGGLES"]
+      M3: ["CAPEG", "AHSCOUTM", "M3_FACE", "GOGGLES"]
+      M4: ["CAPEG", "AHSCOUTM", "M4_FACE", "GOGGLES"]
+      M5: ["CAPEG", "AHSCOUTM", "M5_FACE", "GOGGLES"]
+      F0: ["CAPEG", "AHSCOUTF", "F0_FACE", "GOGGLES"]
+      F1: ["CAPEG", "AHSCOUTF", "F1_FACE", "GOGGLES"]
+      F2: ["CAPEG", "AHSCOUTF", "F2_FACE", "GOGGLES"]
+      F3: ["CAPEG", "AHSCOUTF", "F3_FACE", "GOGGLES"]
+      F4: ["CAPEG", "AHSCOUTF", "F4_FACE", "GOGGLES"]
+      F5: ["CAPEG", "AHSCOUTF", "F5_FACE", "GOGGLES"]
+  - type: STR_SCOUTHR_UC #SCOUT HONOR DESERT
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    layersDefaultPrefix: CAPE
+    layersSpecificPrefix:
+      1: SCOUTH
+      3: GOGGLES
+    layersDefinition:
+      M0: ["CAPER", "AHSCOUTM", "M0_FACE", "GOGGLES"]
+      M1: ["CAPER", "AHSCOUTM", "M1_FACE", "GOGGLES"]
+      M2: ["CAPER", "AHSCOUTM", "M2_FACE", "GOGGLES"]
+      M3: ["CAPER", "AHSCOUTM", "M3_FACE", "GOGGLES"]
+      M4: ["CAPER", "AHSCOUTM", "M4_FACE", "GOGGLES"]
+      M5: ["CAPER", "AHSCOUTM", "M5_FACE", "GOGGLES"]
+      F0: ["CAPER", "AHSCOUTF", "F0_FACE", "GOGGLES"]
+      F1: ["CAPER", "AHSCOUTF", "F1_FACE", "GOGGLES"]
+      F2: ["CAPER", "AHSCOUTF", "F2_FACE", "GOGGLES"]
+      F3: ["CAPER", "AHSCOUTF", "F3_FACE", "GOGGLES"]
+      F4: ["CAPER", "AHSCOUTF", "F4_FACE", "GOGGLES"]
+      F5: ["CAPER", "AHSCOUTF", "F5_FACE", "GOGGLES"]
+  - type: STR_SCOUTHY_UC #SCOUT HONOR DESERT
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    layersDefaultPrefix: CAPE
+    layersSpecificPrefix:
+      1: SCOUTH
+      3: GOGGLES
+    layersDefinition:
+      M0: ["CAPEY", "AHSCOUTM", "M0_FACE", "GOGGLES"]
+      M1: ["CAPEY", "AHSCOUTM", "M1_FACE", "GOGGLES"]
+      M2: ["CAPEY", "AHSCOUTM", "M2_FACE", "GOGGLES"]
+      M3: ["CAPEY", "AHSCOUTM", "M3_FACE", "GOGGLES"]
+      M4: ["CAPEY", "AHSCOUTM", "M4_FACE", "GOGGLES"]
+      M5: ["CAPEY", "AHSCOUTM", "M5_FACE", "GOGGLES"]
+      F0: ["CAPEY", "AHSCOUTF", "F0_FACE", "GOGGLES"]
+      F1: ["CAPEY", "AHSCOUTF", "F1_FACE", "GOGGLES"]
+      F2: ["CAPEY", "AHSCOUTF", "F2_FACE", "GOGGLES"]
+      F3: ["CAPEY", "AHSCOUTF", "F3_FACE", "GOGGLES"]
+      F4: ["CAPEY", "AHSCOUTF", "F4_FACE", "GOGGLES"]
+      F5: ["CAPEY", "AHSCOUTF", "F5_FACE", "GOGGLES"]
+  - type: STR_SCOUTH_UC #SCOUT HONOR BROWN
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    layersDefaultPrefix: CAPE
+    layersSpecificPrefix:
+      1: SCOUTH
+      3: GOGGLES
+    layersDefinition:
+      M0: ["CAPE", "AHSCOUTM", "M0_FACE", "GOGGLES"]
+      M1: ["CAPE", "AHSCOUTM", "M1_FACE", "GOGGLES"]
+      M2: ["CAPE", "AHSCOUTM", "M2_FACE", "GOGGLES"]
+      M3: ["CAPE", "AHSCOUTM", "M3_FACE", "GOGGLES"]
+      M4: ["CAPE", "AHSCOUTM", "M4_FACE", "GOGGLES"]
+      M5: ["CAPE", "AHSCOUTM", "M5_FACE", "GOGGLES"]
+      F0: ["CAPE", "AHSCOUTF", "F0_FACE", "GOGGLES"]
+      F1: ["CAPE", "AHSCOUTF", "F1_FACE", "GOGGLES"]
+      F2: ["CAPE", "AHSCOUTF", "F2_FACE", "GOGGLES"]
+      F3: ["CAPE", "AHSCOUTF", "F3_FACE", "GOGGLES"]
+      F4: ["CAPE", "AHSCOUTF", "F4_FACE", "GOGGLES"]
+      F5: ["CAPE", "AHSCOUTF", "F5_FACE", "GOGGLES"]
+  - type: STR_SCOUTHB_UC #SCOUT HONOR BLACK
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    layersDefaultPrefix: CAPE
+    layersSpecificPrefix:
+      1: SCOUTH
+      3: GOGGLES
+    layersDefinition:
+      M0: ["CAPEB", "AHSCOUTM", "M0_FACE", "GOGGLES"]
+      M1: ["CAPEB", "AHSCOUTM", "M1_FACE", "GOGGLES"]
+      M2: ["CAPEB", "AHSCOUTM", "M2_FACE", "GOGGLES"]
+      M3: ["CAPEB", "AHSCOUTM", "M3_FACE", "GOGGLES"]
+      M4: ["CAPEB", "AHSCOUTM", "M4_FACE", "GOGGLES"]
+      M5: ["CAPEB", "AHSCOUTM", "M5_FACE", "GOGGLES"]
+      F0: ["CAPEB", "AHSCOUTF", "F0_FACE", "GOGGLES"]
+      F1: ["CAPEB", "AHSCOUTF", "F1_FACE", "GOGGLES"]
+      F2: ["CAPEB", "AHSCOUTF", "F2_FACE", "GOGGLES"]
+      F3: ["CAPEB", "AHSCOUTF", "F3_FACE", "GOGGLES"]
+      F4: ["CAPEB", "AHSCOUTF", "F4_FACE", "GOGGLES"]
+      F5: ["CAPEB", "AHSCOUTF", "F5_FACE", "GOGGLES"]
+  - type: STR_SCOUTHW_UC #SCOUT HONOR WHITE
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    layersDefaultPrefix: CAPE
+    layersSpecificPrefix:
+      1: SCOUTH
+      3: GOGGLES
+    layersDefinition:
+      M0: ["CAPEW", "AHSCOUTM", "M0_FACE", "GOGGLES"]
+      M1: ["CAPEW", "AHSCOUTM", "M1_FACE", "GOGGLES"]
+      M2: ["CAPEW", "AHSCOUTM", "M2_FACE", "GOGGLES"]
+      M3: ["CAPEW", "AHSCOUTM", "M3_FACE", "GOGGLES"]
+      M4: ["CAPEW", "AHSCOUTM", "M4_FACE", "GOGGLES"]
+      M5: ["CAPEW", "AHSCOUTM", "M5_FACE", "GOGGLES"]
+      F0: ["CAPEW", "AHSCOUTF", "F0_FACE", "GOGGLES"]
+      F1: ["CAPEW", "AHSCOUTF", "F1_FACE", "GOGGLES"]
+      F2: ["CAPEW", "AHSCOUTF", "F2_FACE", "GOGGLES"]
+      F3: ["CAPEW", "AHSCOUTF", "F3_FACE", "GOGGLES"]
+      F4: ["CAPEW", "AHSCOUTF", "F4_FACE", "GOGGLES"]
+      F5: ["CAPEW", "AHSCOUTF", "F5_FACE", "GOGGLES"]
+  - type: STR_PERSONAL_ARMOR_UC #TATICAl
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: TATICAL
+    layersDefinition:
+      M0: ["0", "TATICALM", "M0_FACE"]
+      M1: ["0", "TATICALM", "M1_FACE"]
+      M2: ["0", "TATICALM", "M2_FACE"]
+      M3: ["0", "TATICALM", "M3_FACE"]
+      M4: ["0", "TATICALM", "M4_FACE"]
+      M5: ["0", "TATICALM", "M5_FACE"]
+      F0: ["0", "TATICALF", "F0_FACE"]
+      F1: ["0", "TATICALF", "F1_FACE"]
+      F2: ["0", "TATICALF", "F2_FACE"]
+      F3: ["0", "TATICALF", "F3_FACE"]
+      F4: ["0", "TATICALF", "F4_FACE"]
+      F5: ["0", "TATICALF", "F5_FACE"]
+  - type: STR_SIGNAL_ARMOR_UC #SIGNAL
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: SIGNAL
+    layersDefinition:
+      M0: ["0", "SIGNALM", "M0_FACE"]
+      M1: ["0", "SIGNALM", "M1_FACE"]
+      M2: ["0", "SIGNALM", "M2_FACE"]
+      M3: ["0", "SIGNALM", "M3_FACE"]
+      M4: ["0", "SIGNALM", "M4_FACE"]
+      M5: ["0", "SIGNALM", "M5_FACE"]
+      F0: ["0", "SIGNALF", "F0_FACE"]
+      F1: ["0", "SIGNALF", "F1_FACE"]
+      F2: ["0", "SIGNALF", "F2_FACE"]
+      F3: ["0", "SIGNALF", "F3_FACE"]
+      F4: ["0", "SIGNALF", "F4_FACE"]
+      F5: ["0", "SIGNALF", "F5_FACE"]
+  - type: STR_SIGNALFALSE_ARMOR_UC #SIGNAL
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: SIGNAL
+    layersDefinition:
+      M0: ["0", "SIGNALM", "M0_FACE"]
+      M1: ["0", "SIGNALM", "M1_FACE"]
+      M2: ["0", "SIGNALM", "M2_FACE"]
+      M3: ["0", "SIGNALM", "M3_FACE"]
+      M4: ["0", "SIGNALM", "M4_FACE"]
+      M5: ["0", "SIGNALM", "M5_FACE"]
+      F0: ["0", "SIGNALF", "F0_FACE"]
+      F1: ["0", "SIGNALF", "F1_FACE"]
+      F2: ["0", "SIGNALF", "F2_FACE"]
+      F3: ["0", "SIGNALF", "F3_FACE"]
+      F4: ["0", "SIGNALF", "F4_FACE"]
+      F5: ["0", "SIGNALF", "F5_FACE"]
+  - type: STR_HONOR_ARMOR_UC #HONOR
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: HONOR
+    layersDefinition:
+      M0: ["0", "HONORM", "M0_FACE"]
+      M1: ["0", "HONORM", "M1_FACE"]
+      M2: ["0", "HONORM", "M2_FACE"]
+      M3: ["0", "HONORM", "M3_FACE"]
+      M4: ["0", "HONORM", "M4_FACE"]
+      M5: ["0", "HONORM", "M5_FACE"]
+      F0: ["0", "HONORF", "F0_FACE"]
+      F1: ["0", "HONORF", "F1_FACE"]
+      F2: ["0", "HONORF", "F2_FACE"]
+      F3: ["0", "HONORF", "F3_FACE"]
+      F4: ["0", "HONORF", "F4_FACE"]
+      F5: ["0", "HONORF", "F5_FACE"]
+  - type: STR_ASS_ARMOR_HONOR_UC #HONOR ASSAULT
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: HONORASS
+    layersDefinition:
+      M0: ["0", "ASSAULTMH", "M0_FACE"]
+      M1: ["0", "ASSAULTMH", "M1_FACE"]
+      M2: ["0", "ASSAULTMH", "M2_FACE"]
+      M3: ["0", "ASSAULTMH", "M3_FACE"]
+      M4: ["0", "ASSAULTMH", "M4_FACE"]
+      M5: ["0", "ASSAULTMH", "M5_FACE"]
+      F0: ["0", "ASSAULTFH", "F0_FACE"]
+      F1: ["0", "ASSAULTFH", "F1_FACE"]
+      F2: ["0", "ASSAULTFH", "F2_FACE"]
+      F3: ["0", "ASSAULTFH", "F3_FACE"]
+      F4: ["0", "ASSAULTFH", "F4_FACE"]
+      F5: ["0", "ASSAULTFH", "F5_FACE"]
+  - type: STR_ASS_ARMOR_UC #ASSAULT
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: ASSAULT
+    layersDefinition:
+      M0: ["0", "ASSAULTM", "M0_FACE"]
+      M1: ["0", "ASSAULTM", "M1_FACE"]
+      M2: ["0", "ASSAULTM", "M2_FACE"]
+      M3: ["0", "ASSAULTM", "M3_FACE"]
+      M4: ["0", "ASSAULTM", "M4_FACE"]
+      M5: ["0", "ASSAULTM", "M5_FACE"]
+      F0: ["0", "ASSAULTF", "F0_FACE"]
+      F1: ["0", "ASSAULTF", "F1_FACE"]
+      F2: ["0", "ASSAULTF", "F2_FACE"]
+      F3: ["0", "ASSAULTF", "F3_FACE"]
+      F4: ["0", "ASSAULTF", "F4_FACE"]
+      F5: ["0", "ASSAULTF", "F5_FACE"]
+  - type: STR_DEV_ARMOR_UC #DEVASTATOR
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: DEVASTATOR
+    layersDefinition:
+      M0: ["0", "DEVASTATORM", "M0_FACE"]
+      M1: ["0", "DEVASTATORM", "M1_FACE"]
+      M2: ["0", "DEVASTATORM", "M2_FACE"]
+      M3: ["0", "DEVASTATORM", "M3_FACE"]
+      M4: ["0", "DEVASTATORM", "M4_FACE"]
+      M5: ["0", "DEVASTATORM", "M5_FACE"]
+      F0: ["0", "DEVASTATORF", "F0_FACE"]
+      F1: ["0", "DEVASTATORF", "F1_FACE"]
+      F2: ["0", "DEVASTATORF", "F2_FACE"]
+      F3: ["0", "DEVASTATORF", "F3_FACE"]
+      F4: ["0", "DEVASTATORF", "F4_FACE"]
+      F5: ["0", "DEVASTATORF", "F5_FACE"]
+  - type: STR_CHAP_ARMOR_UC ##CHAPLAIN
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: CHAPLAIN
+    layersDefinition:
+      M0: ["0", "CHAPLAINM", "M0_FACE"]
+      M1: ["0", "CHAPLAINM", "M1_FACE"]
+      M2: ["0", "CHAPLAINM", "M2_FACE"]
+      M3: ["0", "CHAPLAINM", "M3_FACE"]
+      M4: ["0", "CHAPLAINM", "M4_FACE"]
+      M5: ["0", "CHAPLAINM", "M5_FACE"]
+      F0: ["0", "CHAPLAINF", "F0_FACE"]
+      F1: ["0", "CHAPLAINF", "F1_FACE"]
+      F2: ["0", "CHAPLAINF", "F2_FACE"]
+      F3: ["0", "CHAPLAINF", "F3_FACE"]
+      F4: ["0", "CHAPLAINF", "F4_FACE"]
+      F5: ["0", "CHAPLAINF", "F5_FACE"]
+  - &STR_LIB_ARMOR_UC
+    type: STR_LIB_ARMOR_UC #LIBRA
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: LIB
+    layersDefinition:
+      M0: ["0", "LIBM", "M0_FACE"]
+      M1: ["0", "LIBM", "M1_FACE"]
+      M2: ["0", "LIBM", "M2_FACE"]
+      M3: ["0", "LIBM", "M3_FACE"]
+      M4: ["0", "LIBM", "M4_FACE"]
+      M5: ["0", "LIBM", "M5_FACE"]
+      F0: ["0", "LIBF", "F0_FACE"]
+      F1: ["0", "LIBF", "F1_FACE"]
+      F2: ["0", "LIBF", "F2_FACE"]
+      F3: ["0", "LIBF", "F3_FACE"]
+      F4: ["0", "LIBF", "F4_FACE"]
+      F5: ["0", "LIBF", "F5_FACE"]
+  - type: STR_LIB_ARMOR_LOCKDOWN
+    refNode: *STR_LIB_ARMOR_UC
+  - type: STR_LIB_ARMOR_MELEE_INSPIRE
+    refNode: *STR_LIB_ARMOR_UC
+  - type: STR_LIB_ARMOR_SHIELD
+    refNode: *STR_LIB_ARMOR_UC
+  - type: STR_LIB_ARMOR_SMITE
+    refNode: *STR_LIB_ARMOR_UC
+  - type: STR_LIB_ARMOR_STASIS
+    refNode: *STR_LIB_ARMOR_UC
+
+  - type: STR_TECH_ARMOR_UC #TECH
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: TECH
+    layersDefinition:
+      M0: ["0", "TECHM", "M0_FACE"]
+      M1: ["0", "TECHM", "M1_FACE"]
+      M2: ["0", "TECHM", "M2_FACE"]
+      M3: ["0", "TECHM", "M3_FACE"]
+      M4: ["0", "TECHM", "M4_FACE"]
+      M5: ["0", "TECHM", "M5_FACE"]
+      F0: ["0", "TECHF", "F0_FACE"]
+      F1: ["0", "TECHF", "F1_FACE"]
+      F2: ["0", "TECHF", "F2_FACE"]
+      F3: ["0", "TECHF", "F3_FACE"]
+      F4: ["0", "TECHF", "F4_FACE"]
+      F5: ["0", "TECHF", "F5_FACE"]
+  - type: STR_APOT_ARMOR_UC #APOTH
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: APOT
+    layersDefinition:
+      M0: ["0", "APOTM", "M0_FACE"]
+      M1: ["0", "APOTM", "M1_FACE"]
+      M2: ["0", "APOTM", "M2_FACE"]
+      M3: ["0", "APOTM", "M3_FACE"]
+      M4: ["0", "APOTM", "M4_FACE"]
+      M5: ["0", "APOTM", "M5_FACE"]
+      F0: ["0", "APOTF", "F0_FACE"]
+      F1: ["0", "APOTF", "F1_FACE"]
+      F2: ["0", "APOTF", "F2_FACE"]
+      F3: ["0", "APOTF", "F3_FACE"]
+      F4: ["0", "APOTF", "F4_FACE"]
+      F5: ["0", "APOTF", "F5_FACE"]
+  - type: STR_CAPTAIN_UC #CAPTAIN
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: CAPTAIN
+    layersDefinition:
+      M0: ["0", "CAPTAINM", "M0_FACE"]
+      M1: ["0", "CAPTAINM", "M1_FACE"]
+      M2: ["0", "CAPTAINM", "M2_FACE"]
+      M3: ["0", "CAPTAINM", "M3_FACE"]
+      M4: ["0", "CAPTAINM", "M4_FACE"]
+      M5: ["0", "CAPTAINM", "M5_FACE"]
+      F0: ["0", "CAPTAINF", "F0_FACE"]
+      F1: ["0", "CAPTAINF", "F1_FACE"]
+      F2: ["0", "CAPTAINF", "F2_FACE"]
+      F3: ["0", "CAPTAINF", "F3_FACE"]
+      F4: ["0", "CAPTAINF", "F4_FACE"]
+      F5: ["0", "CAPTAINF", "F5_FACE"]
+  - type: STR_SARGENT_ARMOR_UC #SARGENT
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: SARGENT
+    layersDefinition:
+      M0: ["0", "SARGENTM", "M0_FACE"]
+      M1: ["0", "SARGENTM", "M1_FACE"]
+      M2: ["0", "SARGENTM", "M2_FACE"]
+      M3: ["0", "SARGENTM", "M3_FACE"]
+      M4: ["0", "SARGENTM", "M4_FACE"]
+      M5: ["0", "SARGENTM", "M5_FACE"]
+      F0: ["0", "SARGENTF", "F0_FACE"]
+      F1: ["0", "SARGENTF", "F1_FACE"]
+      F2: ["0", "SARGENTF", "F2_FACE"]
+      F3: ["0", "SARGENTF", "F3_FACE"]
+      F4: ["0", "SARGENTF", "F4_FACE"]
+      F5: ["0", "SARGENTF", "F5_FACE"]
+  - type: STR_POWER_SUIT_UC #TERMINATOR
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: TERMINATOR
+    layersDefinition:
+      M0: ["0", "TERMINATORMF", "M0_FACE"]
+      M1: ["0", "TERMINATORMF", "M1_FACE"]
+      M2: ["0", "TERMINATORMF", "M2_FACE"]
+      M3: ["0", "TERMINATORMF", "M3_FACE"]
+      M4: ["0", "TERMINATORMF", "M4_FACE"]
+      M5: ["0", "TERMINATORMF", "M5_FACE"]
+      F0: ["0", "TERMINATORMF", "F0_FACE"]
+      F1: ["0", "TERMINATORMF", "F1_FACE"]
+      F2: ["0", "TERMINATORMF", "F2_FACE"]
+      F3: ["0", "TERMINATORMF", "F3_FACE"]
+      F4: ["0", "TERMINATORMF", "F4_FACE"]
+      F5: ["0", "TERMINATORMF", "F5_FACE"]
+  - type: STR_FLYING_SUIT_UC  #TERMINATOR ASS
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: TERMINATOR
+    layersDefinition:
+      M0: ["0", "TERMINATORMF", "M0_FACE"]
+      M1: ["0", "TERMINATORMF", "M1_FACE"]
+      M2: ["0", "TERMINATORMF", "M2_FACE"]
+      M3: ["0", "TERMINATORMF", "M3_FACE"]
+      M4: ["0", "TERMINATORMF", "M4_FACE"]
+      M5: ["0", "TERMINATORMF", "M5_FACE"]
+      F0: ["0", "TERMINATORMF", "F0_FACE"]
+      F1: ["0", "TERMINATORMF", "F1_FACE"]
+      F2: ["0", "TERMINATORMF", "F2_FACE"]
+      F3: ["0", "TERMINATORMF", "F3_FACE"]
+      F4: ["0", "TERMINATORMF", "F4_FACE"]
+      F5: ["0", "TERMINATORMF", "F5_FACE"]
+  - type: STR_TSARGENT_UC  #TSARGENT
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: TSARGENT
+    layersDefinition:
+      M0: ["0", "TERMINATORSMF", "M0_FACE"]
+      M1: ["0", "TERMINATORSMF", "M1_FACE"]
+      M2: ["0", "TERMINATORSMF", "M2_FACE"]
+      M3: ["0", "TERMINATORSMF", "M3_FACE"]
+      M4: ["0", "TERMINATORSMF", "M4_FACE"]
+      M5: ["0", "TERMINATORSMF", "M5_FACE"]
+      F0: ["0", "TERMINATORSMF", "F0_FACE"]
+      F1: ["0", "TERMINATORSMF", "F1_FACE"]
+      F2: ["0", "TERMINATORSMF", "F2_FACE"]
+      F3: ["0", "TERMINATORSMF", "F3_FACE"]
+      F4: ["0", "TERMINATORSMF", "F4_FACE"]
+      F5: ["0", "TERMINATORSMF", "F5_FACE"]
+#
+extraSprites:
+
+######################### GREYKNIGHTS ########################################################################################################
+  - typeSingle: 21__1__GKLIB1
+    fileSingle: Resources/LAYER/GK/GKLIB1.png
+  - typeSingle: 21__1__GKLIB2
+    fileSingle: Resources/LAYER/GK/GKLIB2.png
+  - typeSingle: 21__1__GKLIB3
+    fileSingle: Resources/LAYER/GK/GKLIB3.png
+  - typeSingle: 21__1__GKLV1
+    fileSingle: Resources/LAYER/GK/GKLV1.png
+  - typeSingle: 21__1__GKLV2
+    fileSingle: Resources/LAYER/GK/GKLV2.png
+  - typeSingle: 21__1__GKLV3
+    fileSingle: Resources/LAYER/GK/GKLV3.png
+  - typeSingle: 21__1__GKLV4
+    fileSingle: Resources/LAYER/GK/GKLV4.png
+  - typeSingle: 21__1__GKLV5
+    fileSingle: Resources/LAYER/GK/GKLV5.png
+  - typeSingle: 21__1__GKAPOT
+    fileSingle: Resources/LAYER/GK/GKAPOT1.png
+  - typeSingle: 21__1__GKCHAP
+    fileSingle: Resources/LAYER/GK/GKCHAP1.png
+  - typeSingle: 21__1__GKTEC1
+    fileSingle: Resources/LAYER/GK/GKTEC1.png
+  - typeSingle: 21__1__GKTEC2
+    fileSingle: Resources/LAYER/GK/GKTEC2.png
+######################### CHAOS ########################################################################################################
+  - typeSingle: 4__1__SERGM
+    fileSingle: Resources/CPATH/SERGM.png
+  - typeSingle: 4__1__SERGF
+    fileSingle: Resources/CPATH/SERGF.png
+  - typeSingle: 4__1__CHAOSB
+    fileSingle: Resources/CPATH/CHAOSB.png
+  - typeSingle: 4__1__CHAOSCMF
+    fileSingle: Resources/CPATH/CHAOSCMF.png
+  - typeSingle: 3__1__CHAOSTMF
+    fileSingle: Resources/CPATH/CHAOSTMF.gif
+  - typeSingle: 3__1__CHAOSM
+    fileSingle: Resources/CPATH/CHAOSM.png
+  - typeSingle: 3__1__CHAOSF
+    fileSingle: Resources/CPATH/CHAOSF.png
+  - typeSingle: 3__1__RAPTORM
+    fileSingle: Resources/CPATH/RAPTORM.png
+  - typeSingle: 3__1__RAPTORF
+    fileSingle: Resources/CPATH/RAPTORF.png
+  - typeSingle: 3__1__HAVOCM
+    fileSingle: Resources/CPATH/HAVOCM.png
+  - typeSingle: 3__1__HAVOCF
+    fileSingle: Resources/CPATH/HAVOCF.png
+  - typeSingle: 3__1__SORCM
+    fileSingle: Resources/CPATH/SORCM.png
+  - typeSingle: 3__1__SORCF
+    fileSingle: Resources/CPATH/SORCF.png
+# CHAOS FACE
+  - typeSingle: 4__2__M0_FACE
+    fileSingle: Resources/CPATH/4facem0.png
+  - typeSingle: 4__2__M1_FACE
+    fileSingle: Resources/CPATH/4facem1.png
+  - typeSingle: 4__2__M2_FACE
+    fileSingle: Resources/CPATH/4facem2.png
+  - typeSingle: 4__2__M3_FACE
+    fileSingle: Resources/CPATH/4facem3.png
+  - typeSingle: 4__2__M4_FACE
+    fileSingle: Resources/CPATH/4facem4.png
+  - typeSingle: 4__2__M5_FACE
+    fileSingle: Resources/CPATH/4facem5.png
+  - typeSingle: 4__2__F0_FACE
+    fileSingle: Resources/CPATH/4facef0.png
+  - typeSingle: 4__2__F1_FACE
+    fileSingle: Resources/CPATH/4facef1.png
+  - typeSingle: 4__2__F2_FACE
+    fileSingle: Resources/CPATH/4facef2.png
+  - typeSingle: 4__2__F3_FACE
+    fileSingle: Resources/CPATH/4facef3.png
+  - typeSingle: 4__2__F4_FACE
+    fileSingle: Resources/CPATH/4facef4.png
+  - typeSingle: 4__2__F5_FACE
+    fileSingle: Resources/CPATH/4facef5.png
+# CHAOS FACE
+  - typeSingle: 3__2__M0_FACE
+    fileSingle: Resources/CPATH/2facem0.png
+  - typeSingle: 3__2__M1_FACE
+    fileSingle: Resources/CPATH/2facem1.png
+  - typeSingle: 3__2__M2_FACE
+    fileSingle: Resources/CPATH/2facem2.png
+  - typeSingle: 3__2__M3_FACE
+    fileSingle: Resources/CPATH/2facem3.png
+  - typeSingle: 3__2__M4_FACE
+    fileSingle: Resources/CPATH/2facem4.png
+  - typeSingle: 3__2__M5_FACE
+    fileSingle: Resources/CPATH/2facem5.png
+  - typeSingle: 3__2__F0_FACE
+    fileSingle: Resources/CPATH/2facef0.png
+  - typeSingle: 3__2__F1_FACE
+    fileSingle: Resources/CPATH/2facef1.png
+  - typeSingle: 3__2__F2_FACE
+    fileSingle: Resources/CPATH/2facef2.png
+  - typeSingle: 3__2__F3_FACE
+    fileSingle: Resources/CPATH/2facef3.png
+  - typeSingle: 3__2__F4_FACE
+    fileSingle: Resources/CPATH/2facef4.png
+  - typeSingle: 3__2__F5_FACE
+    fileSingle: Resources/CPATH/2facef5.png
+
+
+######################### PRIMARIS ########################################################################################################
+  - typeSingle: 21__0__0
+    fileSingle: Resources/LAYER/0.gif
+  - typeSingle: 21__0__CAPEP
+    fileSingle: Resources/LAYER/CAPEP.png
+  - typeSingle: 21__0__BIKE
+    fileSingle: Resources/LAYER/ULTRAMARINE/OUTRIDER.png
+  - typeSingle: 21__3__MEDAL1
+    fileSingle: Resources/LAYER/MEDAL1.png
+  - typeSingle: 21__3__MEDAL2
+    fileSingle: Resources/LAYER/MEDAL2.png
+  - typeSingle: 21__3__MEDAL3
+    fileSingle: Resources/LAYER/MEDAL3.png
+  - typeSingle: 21__4__HOOD
+    fileSingle: Resources/LAYER/HOOD.png
+  - typeSingle: 21__1__MKXAPO
+    fileSingle: Resources/LAYER/ULTRAMARINE/MKXAPO.png
+  - typeSingle: 21__1__MKXTEC
+    fileSingle: Resources/LAYER/ULTRAMARINE/MKXTEC.png
+  - typeSingle: 21__1__MKXTEC2
+    fileSingle: Resources/LAYER/ULTRAMARINE/MKXTEC2.png
+  - typeSingle: 21__1__MKXCHP
+    fileSingle: Resources/LAYER/ULTRAMARINE/MKXCHP.png
+  - typeSingle: 21__1__MKXLV1
+    fileSingle: Resources/LAYER/ULTRAMARINE/MKXLV1.png
+  - typeSingle: 21__1__MKXLV2
+    fileSingle: Resources/LAYER/ULTRAMARINE/MKXLV2.png
+  - typeSingle: 21__1__MKXLV3
+    fileSingle: Resources/LAYER/ULTRAMARINE/MKXLV3.png
+  - typeSingle: 21__1__MKXLV4
+    fileSingle: Resources/LAYER/ULTRAMARINE/MKXLV4.png
+  - typeSingle: 21__1__MKXLV5
+    fileSingle: Resources/LAYER/ULTRAMARINE/MKXLV5.png
+
+  - typeSingle: 22__0__0
+    fileSingle: Resources/LAYER/0.gif
+  - typeSingle: 22__0__CAPEP
+    fileSingle: Resources/LAYER/CAPEP.png
+  - typeSingle: 22__3__MEDAL1
+    fileSingle: Resources/LAYER/MEDAL1.png
+  - typeSingle: 22__3__MEDAL2
+    fileSingle: Resources/LAYER/MEDAL2.png
+  - typeSingle: 22__3__MEDAL3
+    fileSingle: Resources/LAYER/MEDAL3.png
+  - typeSingle: 22__1__PHBLV1
+    fileSingle: Resources/LAYER/ULTRAMARINE/PHBLV1.png
+  - typeSingle: 22__1__PHBLV2
+    fileSingle: Resources/LAYER/ULTRAMARINE/PHBLV2.png
+  - typeSingle: 22__1__PHBLV3
+    fileSingle: Resources/LAYER/ULTRAMARINE/PHBLV3.png
+  - typeSingle: 22__1__PHBLV4
+    fileSingle: Resources/LAYER/ULTRAMARINE/PHBLV4.png
+  - typeSingle: 22__1__PHBLV5
+    fileSingle: Resources/LAYER/ULTRAMARINE/PHBLV5.png
+
+  - typeSingle: 23__3__MEDAL1
+    fileSingle: Resources/LAYER/MEDAL1.png
+  - typeSingle: 23__3__MEDAL2
+    fileSingle: Resources/LAYER/MEDAL2.png
+  - typeSingle: 23__3__MEDAL3
+    fileSingle: Resources/LAYER/MEDAL3.png
+  - typeSingle: 23__0__0
+    fileSingle: Resources/LAYER/0.gif
+  - typeSingle: 23__0__CAPEP
+    fileSingle: Resources/LAYER/CAPEP.png
+  - typeSingle: 23__1__GRVLV1
+    fileSingle: Resources/LAYER/ULTRAMARINE/GRVLV1.png
+  - typeSingle: 23__1__GRVLV2
+    fileSingle: Resources/LAYER/ULTRAMARINE/GRVLV2.png
+  - typeSingle: 23__1__GRVLV3
+    fileSingle: Resources/LAYER/ULTRAMARINE/GRVLV3.png
+  - typeSingle: 23__1__GRVLV4
+    fileSingle: Resources/LAYER/ULTRAMARINE/GRVLV4.png
+  - typeSingle: 23__1__GRVLV5
+    fileSingle: Resources/LAYER/ULTRAMARINE/GRVLV5.png
+  - typeSingle: 23__1__INCLV1
+    fileSingle: Resources/LAYER/ULTRAMARINE/INCLV1.png
+  - typeSingle: 23__1__INCLV2
+    fileSingle: Resources/LAYER/ULTRAMARINE/INCLV2.png
+  - typeSingle: 23__1__INCLV3
+    fileSingle: Resources/LAYER/ULTRAMARINE/INCLV3.png
+  - typeSingle: 23__1__INCLV4
+    fileSingle: Resources/LAYER/ULTRAMARINE/INCLV4.png
+  - typeSingle: 23__1__INCLV5
+    fileSingle: Resources/LAYER/ULTRAMARINE/INCLV5.png
+  - typeSingle: 23__1__LIBLV1
+    fileSingle: Resources/LAYER/ULTRAMARINE/LIBLV1.png
+  - typeSingle: 23__1__LIBLV2
+    fileSingle: Resources/LAYER/ULTRAMARINE/LIBLV2.png
+  - typeSingle: 23__1__LIBLV3
+    fileSingle: Resources/LAYER/ULTRAMARINE/LIBLV3.png
+#
+  - typeSingle: 21__2__M0_FACE
+    fileSingle: Resources/LAYER/P/2facem0.png
+  - typeSingle: 21__2__M1_FACE
+    fileSingle: Resources/LAYER/P/2facem1.png
+  - typeSingle: 21__2__M2_FACE
+    fileSingle: Resources/LAYER/P/2facem2.png
+  - typeSingle: 21__2__M3_FACE
+    fileSingle: Resources/LAYER/P/2facem3.png
+  - typeSingle: 21__2__M4_FACE
+    fileSingle: Resources/LAYER/P/2facem4.png
+  - typeSingle: 21__2__M5_FACE
+    fileSingle: Resources/LAYER/P/2facem5.png
+  - typeSingle: 21__2__M6_FACE
+    fileSingle: Resources/LAYER/P/2facem6.png
+  - typeSingle: 21__2__M7_FACE
+    fileSingle: Resources/LAYER/P/2facem7.png
+  - typeSingle: 21__2__M8_FACE
+    fileSingle: Resources/LAYER/P/2facem8.png
+  - typeSingle: 21__2__M9_FACE
+    fileSingle: Resources/LAYER/P/2facem9.png
+  - typeSingle: 21__2__M10_FACE
+    fileSingle: Resources/LAYER/P/2facem10.png
+  - typeSingle: 21__2__M11_FACE
+    fileSingle: Resources/LAYER/P/2facem11.png
+  - typeSingle: 21__2__M12_FACE
+    fileSingle: Resources/LAYER/P/2facem12.png
+  - typeSingle: 21__2__M13_FACE
+    fileSingle: Resources/LAYER/P/2facem13.png
+
+  - typeSingle: 22__2__M0_FACE
+    fileSingle: Resources/LAYER/R/2facem0.png
+  - typeSingle: 22__2__M1_FACE
+    fileSingle: Resources/LAYER/R/2facem1.png
+  - typeSingle: 22__2__M2_FACE
+    fileSingle: Resources/LAYER/R/2facem2.png
+  - typeSingle: 22__2__M3_FACE
+    fileSingle: Resources/LAYER/R/2facem3.png
+  - typeSingle: 22__2__M4_FACE
+    fileSingle: Resources/LAYER/R/2facem4.png
+  - typeSingle: 22__2__M5_FACE
+    fileSingle: Resources/LAYER/R/2facem5.png
+  - typeSingle: 22__2__M6_FACE
+    fileSingle: Resources/LAYER/R/2facem6.png
+  - typeSingle: 22__2__M7_FACE
+    fileSingle: Resources/LAYER/R/2facem7.png
+  - typeSingle: 22__2__M8_FACE
+    fileSingle: Resources/LAYER/R/2facem8.png
+  - typeSingle: 22__2__M9_FACE
+    fileSingle: Resources/LAYER/R/2facem9.png
+  - typeSingle: 22__2__M10_FACE
+    fileSingle: Resources/LAYER/R/2facem10.png
+  - typeSingle: 22__2__M11_FACE
+    fileSingle: Resources/LAYER/R/2facem11.png
+  - typeSingle: 22__2__M12_FACE
+    fileSingle: Resources/LAYER/R/2facem12.png
+  - typeSingle: 22__2__M13_FACE
+    fileSingle: Resources/LAYER/R/2facem13.png
+  - typeSingle: 23__2__M0_FACE
+    fileSingle: Resources/LAYER/G/2facem0.png
+  - typeSingle: 23__2__M1_FACE
+    fileSingle: Resources/LAYER/G/2facem1.png
+  - typeSingle: 23__2__M2_FACE
+    fileSingle: Resources/LAYER/G/2facem2.png
+  - typeSingle: 23__2__M3_FACE
+    fileSingle: Resources/LAYER/G/2facem3.png
+  - typeSingle: 23__2__M4_FACE
+    fileSingle: Resources/LAYER/G/2facem4.png
+  - typeSingle: 23__2__M5_FACE
+    fileSingle: Resources/LAYER/G/2facem5.png
+  - typeSingle: 23__2__M6_FACE
+    fileSingle: Resources/LAYER/G/2facem6.png
+  - typeSingle: 23__2__M7_FACE
+    fileSingle: Resources/LAYER/G/2facem7.png
+  - typeSingle: 23__2__M8_FACE
+    fileSingle: Resources/LAYER/G/2facem8.png
+  - typeSingle: 23__2__M9_FACE
+    fileSingle: Resources/LAYER/G/2facem9.png
+  - typeSingle: 23__2__M10_FACE
+    fileSingle: Resources/LAYER/G/2facem10.png
+  - typeSingle: 23__2__M11_FACE
+    fileSingle: Resources/LAYER/G/2facem11.png
+  - typeSingle: 23__2__M12_FACE
+    fileSingle: Resources/LAYER/G/2facem12.png
+  - typeSingle: 23__2__M13_FACE
+    fileSingle: Resources/LAYER/G/2facem13.png
+##################################################################FIRSTBORN####################################################################
+  - typeSingle: BIKE__1__BIKEM
+    fileSingle: Resources/LAYER/ULTRAMARINE/BIKEM.gif
+  - typeSingle: BIKE__1__BIKEF
+    fileSingle: Resources/LAYER/ULTRAMARINE/BIKEF.gif
+  - typeSingle: SCOUT__1__ASCOUTM
+    fileSingle: Resources/LAYER/ULTRAMARINE/ASCOUTM.gif
+  - typeSingle: SCOUT__1__ASCOUTMB
+    fileSingle: Resources/LAYER/ULTRAMARINE/ASCOUTMB.gif
+  - typeSingle: SCOUT__1__ASCOUTMC
+    fileSingle: Resources/LAYER/ULTRAMARINE/ASCOUTMC.gif
+  - typeSingle: SCOUT__1__ASCOUTF
+    fileSingle: Resources/LAYER/ULTRAMARINE/ASCOUTF.gif
+  - typeSingle: SCOUT__1__ASCOUTFB
+    fileSingle: Resources/LAYER/ULTRAMARINE/ASCOUTFB.gif
+  - typeSingle: SCOUT__1__ASCOUTFC
+    fileSingle: Resources/LAYER/ULTRAMARINE/ASCOUTFC.gif
+  - typeSingle: SCOUTH__1__AHSCOUTM
+    fileSingle: Resources/LAYER/ULTRAMARINE/AHSCOUTM.gif
+  - typeSingle: SCOUTH__1__AHSCOUTF
+    fileSingle: Resources/LAYER/ULTRAMARINE/AHSCOUTF.gif
+  - typeSingle: TATICAL__1__TATICALM
+    fileSingle: Resources/LAYER/ULTRAMARINE/TATICALM.gif
+  - typeSingle: TATICAL__1__TATICALF
+    fileSingle: Resources/LAYER/ULTRAMARINE/TATICALF.gif
+  - typeSingle: SIGNAL__1__SIGNALM
+    fileSingle: Resources/LAYER/ULTRAMARINE/SIGNALM.gif
+  - typeSingle: SIGNAL__1__SIGNALF
+    fileSingle: Resources/LAYER/ULTRAMARINE/SIGNALF.gif
+  - typeSingle: ASSAULT__1__ASSAULTM
+    fileSingle: Resources/LAYER/ULTRAMARINE/ASSAULTM.gif
+  - typeSingle: ASSAULT__1__ASSAULTF
+    fileSingle: Resources/LAYER/ULTRAMARINE/ASSAULTF.gif
+  - typeSingle: HONOR__1__HONORM
+    fileSingle: Resources/LAYER/ULTRAMARINE/HONORM.gif
+  - typeSingle: HONOR__1__HONORF
+    fileSingle: Resources/LAYER/ULTRAMARINE/HONORF.gif
+  - typeSingle: HONORASS__1__ASSAULTMH
+    fileSingle: Resources/LAYER/ULTRAMARINE/ASSAULTMH.gif
+  - typeSingle: HONORASS__1__ASSAULTFH
+    fileSingle: Resources/LAYER/ULTRAMARINE/ASSAULTFH.gif
+  - typeSingle: CHAPLAIN__1__CHAPLAINM
+    fileSingle: Resources/LAYER/ULTRAMARINE/CHAPLAINM.gif
+  - typeSingle: CHAPLAIN__1__CHAPLAINF
+    fileSingle: Resources/LAYER/ULTRAMARINE/CHAPLAINF.gif
+  - typeSingle: DEVASTATOR__1__DEVASTATORM
+    fileSingle: Resources/LAYER/ULTRAMARINE/DEVASTATORM.gif
+  - typeSingle: DEVASTATOR__1__DEVASTATORF
+    fileSingle: Resources/LAYER/ULTRAMARINE/DEVASTATORF.gif
+  - typeSingle: TECH__1__TECHM
+    fileSingle: Resources/LAYER/ULTRAMARINE/TECHM.gif
+  - typeSingle: TECH__1__TECHF
+    fileSingle: Resources/LAYER/ULTRAMARINE/TECHF.gif
+  - typeSingle: CAPTAIN__1__CAPTAINM
+    fileSingle: Resources/LAYER/ULTRAMARINE/CAPTAINM.gif
+  - typeSingle: CAPTAIN__1__CAPTAINF
+    fileSingle: Resources/LAYER/ULTRAMARINE/CAPTAINF.gif
+  - typeSingle: SARGENT__1__SARGENTM
+    fileSingle: Resources/LAYER/ULTRAMARINE/SARGENTM.gif
+  - typeSingle: SARGENT__1__SARGENTF
+    fileSingle: Resources/LAYER/ULTRAMARINE/SARGENTF.gif
+  - typeSingle: LIB__1__LIBM
+    fileSingle: Resources/LAYER/ULTRAMARINE/LIBM.gif
+  - typeSingle: LIB__1__LIBF
+    fileSingle: Resources/LAYER/ULTRAMARINE/LIBF.gif
+  - typeSingle: APOT__1__APOTM
+    fileSingle: Resources/LAYER/ULTRAMARINE/APOTM.gif
+  - typeSingle: APOT__1__APOTF
+    fileSingle: Resources/LAYER/ULTRAMARINE/APOTF.gif
+  - typeSingle: TERMINATOR__1__TERMINATORMF
+    fileSingle: Resources/LAYER/ULTRAMARINE/TERMINATORMF.gif
+  - typeSingle: TSARGENT__1__TERMINATORSMF
+    fileSingle: Resources/LAYER/ULTRAMARINE/TERMINATORSMF.gif
+  - typeSingle: CENT__1__CENTMF
+    fileSingle: Resources/LAYER/ULTRAMARINE/CENTMF.gif
+#
+#
+#
+  - typeSingle: 0__0__0
+    fileSingle: Resources/LAYER/0.gif
+  - typeSingle: 1__0__0
+    fileSingle: Resources/LAYER/0.gif
+  - typeSingle: 3__0__0
+    fileSingle: Resources/LAYER/0.gif
+  - typeSingle: 4__0__0
+    fileSingle: Resources/LAYER/0.gif
+  - typeSingle: CAPE__0__CAPE
+    fileSingle: Resources/LAYER/CAPE.gif
+  - typeSingle: CAPE__0__CAPEB
+    fileSingle: Resources/LAYER/CAPEB.gif
+  - typeSingle: CAPE__0__CAPEG
+    fileSingle: Resources/LAYER/CAPEG.gif
+  - typeSingle: CAPE__0__CAPER
+    fileSingle: Resources/LAYER/CAPER.gif
+  - typeSingle: CAPE__0__CAPEW
+    fileSingle: Resources/LAYER/CAPEW.gif
+  - typeSingle: CAPE__0__CAPEY
+    fileSingle: Resources/LAYER/CAPEY.gif
+#
+#
+  - typeSingle: CAPE__2__M0_FACE
+    fileSingle: Resources/LAYER/2facem0.gif
+  - typeSingle: CAPE__2__M1_FACE
+    fileSingle: Resources/LAYER/2facem1.gif
+  - typeSingle: CAPE__2__M2_FACE
+    fileSingle: Resources/LAYER/2facem2.gif
+  - typeSingle: CAPE__2__M3_FACE
+    fileSingle: Resources/LAYER/2facem3.gif
+  - typeSingle: CAPE__2__M4_FACE
+    fileSingle: Resources/LAYER/2facem4.gif
+  - typeSingle: CAPE__2__M5_FACE
+    fileSingle: Resources/LAYER/2facem5.gif
+  - typeSingle: CAPE__2__F0_FACE
+    fileSingle: Resources/LAYER/2facef0.gif
+  - typeSingle: CAPE__2__F1_FACE
+    fileSingle: Resources/LAYER/2facef1.gif
+  - typeSingle: CAPE__2__F2_FACE
+    fileSingle: Resources/LAYER/2facef2.gif
+  - typeSingle: CAPE__2__F3_FACE
+    fileSingle: Resources/LAYER/2facef3.gif
+  - typeSingle: CAPE__2__F4_FACE
+    fileSingle: Resources/LAYER/2facef4.gif
+  - typeSingle: CAPE__2__F5_FACE
+    fileSingle: Resources/LAYER/2facef5.gif
+#
+#
+  - typeSingle: 0__2__M0_FACE
+    fileSingle: Resources/LAYER/2facem0.gif
+  - typeSingle: 0__2__M1_FACE
+    fileSingle: Resources/LAYER/2facem1.gif
+  - typeSingle: 0__2__M2_FACE
+    fileSingle: Resources/LAYER/2facem2.gif
+  - typeSingle: 0__2__M3_FACE
+    fileSingle: Resources/LAYER/2facem3.gif
+  - typeSingle: 0__2__M4_FACE
+    fileSingle: Resources/LAYER/2facem4.gif
+  - typeSingle: 0__2__M5_FACE
+    fileSingle: Resources/LAYER/2facem5.gif
+  - typeSingle: 0__2__M6_FACE
+    fileSingle: Resources/LAYER/2facem6.gif
+  - typeSingle: 0__2__M7_FACE
+    fileSingle: Resources/LAYER/2facem7.gif
+  - typeSingle: 0__2__M8_FACE
+    fileSingle: Resources/LAYER/2facem8.gif
+  - typeSingle: 0__2__M9_FACE
+    fileSingle: Resources/LAYER/2facem9.gif
+  - typeSingle: 0__2__F0_FACE
+    fileSingle: Resources/LAYER/2facef0.gif
+  - typeSingle: 0__2__F1_FACE
+    fileSingle: Resources/LAYER/2facef1.gif
+  - typeSingle: 0__2__F2_FACE
+    fileSingle: Resources/LAYER/2facef2.gif
+  - typeSingle: 0__2__F3_FACE
+    fileSingle: Resources/LAYER/2facef3.gif
+  - typeSingle: 0__2__F4_FACE
+    fileSingle: Resources/LAYER/2facef4.gif
+  - typeSingle: 0__2__F5_FACE
+    fileSingle: Resources/LAYER/2facef5.gif
+  - typeSingle: 0__2__F6_FACE
+    fileSingle: Resources/LAYER/2facef6.gif
+  - typeSingle: 0__2__F7_FACE
+    fileSingle: Resources/LAYER/2facef7.gif
+  - typeSingle: 0__2__F8_FACE
+    fileSingle: Resources/LAYER/2facef8.gif
+  - typeSingle: 0__2__F9_FACE
+    fileSingle: Resources/LAYER/2facef9.gif
+#
+  - typeSingle: 1__2__M0_FACE
+    fileSingle: Resources/LAYER/CM0.gif
+  - typeSingle: 1__2__M1_FACE
+    fileSingle: Resources/LAYER/CM1.gif
+  - typeSingle: 1__2__M2_FACE
+    fileSingle: Resources/LAYER/CM2.gif
+  - typeSingle: 1__2__M3_FACE
+    fileSingle: Resources/LAYER/CM3.gif
+  - typeSingle: 1__2__M4_FACE
+    fileSingle: Resources/LAYER/CM4.gif
+  - typeSingle: 1__2__M5_FACE
+    fileSingle: Resources/LAYER/CM5.gif
+  - typeSingle: 1__2__F0_FACE
+    fileSingle: Resources/LAYER/CF0.gif
+  - typeSingle: 1__2__F1_FACE
+    fileSingle: Resources/LAYER/CF1.gif
+  - typeSingle: 1__2__F2_FACE
+    fileSingle: Resources/LAYER/CF2.gif
+  - typeSingle: 1__2__F3_FACE
+    fileSingle: Resources/LAYER/CF3.gif
+  - typeSingle: 1__2__F4_FACE
+    fileSingle: Resources/LAYER/CF4.gif
+  - typeSingle: 1__2__F5_FACE
+    fileSingle: Resources/LAYER/CF5.gif
+#
+#
+#INVENTORY`S
+  - typeSingle: GOGGLES__3__GOGGLES
+    fileSingle: Resources/LAYER/ULTRAMARINE/goggles.png
+  - typeSingle: CAPE__3__GOGGLES
+    fileSingle: Resources/LAYER/ULTRAMARINE/goggles.png
+#
+  - type: TINVFZ.SPK #TATICAL F                                  ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/TINVFZ.png
+  - type: TINVMZ.SPK #TATICAL M                                  ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/TINVMZ.png
+  - type: SINVFZ.SPK #SCOUT F                                  ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/SINVFZ.png
+  - type: SINVMZ.SPK #SCOUT M                                  ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/SINVMZ.png
+  - type: TERMINATORFZ.SPK #TER F                                 ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/TERMINATORFZ.png
+  - type: TERMINATORMZ.SPK #TER M                                 ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/TERMINATORMZ.png
+#
+  - type: JINV.SPK #NPCJ INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/JINV2.gif
+  - type: JINV5.SPK #NPCJ INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/JINV5.gif
+  - type: DREADINV.SPK #DREAD INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/DREADI.png
+  - type: DREADINV2.SPK #DREAD INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/DREADI2.png
+  - type: DREADINV3.SPK #DREAD INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/DREADI3.png
+  - type: DREADINV4.SPK #DREAD INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/DREADI4.png
+  - type: DREADINV5.SPK #DREAD INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/DREADI5.png
+  - type: CIV3.SPK #CIV1 INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/CIV3.gif
+  - type: CENTINV.SPK #CIV1 INV CENTURION
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/CENT.gif
+  - type: TARANTULA1.SPK #CIV1 INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/TAR.gif
+  - type: TARANTULA2.SPK #CIV1 INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/TAR2.gif
+  - type: WWI.SPK #CIV1 INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/WW.gif
+  - type: VIN.SPK #CIV1 INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/VIN.png
+  - type: D.SPK #CIV1 INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/D.gif
+  - type: RAZOR.SPK #CIV1 INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/RAZOR.gif
+  - type: STORMTALONI.SPK #STORMTALON INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/STORMTALON.gif
+  - type: IMPULSOR.SPK #CIV1 INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/IMPULSOR.png
+#
+#
+#DRAWING ROUTINES
+
+#PRIMARIS
+  - type: PRIMLIBLV1.PCK #MKX LEVEL 1
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXLIB1.png
+  - type: PRIMLIBLV2.PCK #MKX LEVEL 2
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXLIB2.png
+  - type: PRIMLIBLV3.PCK #MKX LEVEL 3
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXLIB3.png
+  - type: PRIMCHP.PCK #MKX CHAPLAIN
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXCHP.png
+  - type: PRIMAPO.PCK #MKX APOTH
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXAPOT.png
+  - type: PRIMTEC.PCK #MKX APOTH
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXTEC1.png
+  - type: PRIMTEC2.PCK #MKX APOTH
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXTEC2.png
+  - type: PRIMTACLV1.PCK #MKX LEVEL 1
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXTAC1.png
+  - type: PRIMTACLV2.PCK #MKX LEVEL 2
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXTAC2.png
+  - type: PRIMTACLV3.PCK #MKX LEVEL 3
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXTAC3.png
+  - type: PRIMTACLV4.PCK #MKX LEVEL 5
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXTAC4.png
+  - type: PRIMTACLV5.PCK #MKX LEVEL 5
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXTAC5.png
+  - type: PRIMINCLV1.PCK #MKX LEVEL 1
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXINC1.png
+  - type: PRIMINCLV2.PCK #MKX LEVEL 2
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXINC2.png
+  - type: PRIMINCLV3.PCK #MKX LEVEL 3
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXINC3.png
+  - type: PRIMINCLV4.PCK #MKX LEVEL 4
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXINC4.png
+  - type: PRIMINCLV5.PCK #MKX LEVEL 5
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXINC5.png
+  - type: PRIMPHBLV1.PCK #MKX LEVEL 1
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXPHB1.png
+  - type: PRIMPHBLV2.PCK #MKX LEVEL 2
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXPHB2.png
+  - type: PRIMPHBLV3.PCK #MKX LEVEL 3
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXPHB3.png
+  - type: PRIMPHBLV4.PCK #MKX LEVEL 4
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXPHB4.png
+  - type: PRIMPHBLV5.PCK #MKX LEVEL 5
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXPHB5.png
+#
+  - type: PRIMGRVLV1.PCK #MKX LEVEL 1
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXGRV1.png
+  - type: PRIMGRVLV2.PCK #MKX LEVEL 2
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXGRV2.png
+  - type: PRIMGRVLV3.PCK #MKX LEVEL 3
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXGRV3.png
+  - type: PRIMGRVLV4.PCK #MKX LEVEL 4
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXGRV4.png
+  - type: PRIMGRVLV5.PCK #MKX LEVEL 5
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXGRV5.png
+
+  - type: MKXBIKELV1.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/OUTR1.png
+  - type: MKXBIKELV2.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/OUTR2.png
+  - type: MKXBIKELV3.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/OUTR3.png
+  - type: MKXBIKELV4.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/OUTR4.png
+
+  - type: THUNDERFIREP.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/TFP.png
+  - type: TFINVP.SPK        #MKX                                           ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/TFINVP.PNG
+
+  - type: MKXTACZOMBIE.PCK  #MKX                                           ZOMBIESSSSSSSSSSSSS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXTACZ.png
+  - type: MKXPHBZOMBIE.PCK  #MKX                                           ZOMBIESSSSSSSSSSSSS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXPHBZ.png
+  - type: MKXINCZOMBIE.PCK  #MKX                                           ZOMBIESSSSSSSSSSSSS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXINCZ.png
+  - type: MKXGRVZOMBIE.PCK  #MKX                                           ZOMBIESSSSSSSSSSSSS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/ULTRAMARINE/MXGRVZ.png
+  - type: GRVZ.SPK        #MKX                                           ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/GRVZ.PNG
+  - type: INCZ.SPK        #MKX                                           ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/INCLVZ.PNG
+  - type: MKXZ.SPK        #MKX                                           ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/MKXZ.PNG
+  - type: PHBZ.SPK        #MKX                                           ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/PHBZ.PNG
+#
+#
+#
+  - type: TERMINATORZOMBIE.PCK  #TER                                     ZOMBIESSSSSSSSSSSSS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Zombies/ULTRAMARINE/TERMINATORZ.png
+  - type: SCOUTZOMBIE.PCK  #MK7                                          ZOMBIESSSSSSSSSSSSS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Zombies/ULTRAMARINE/SCOUTZ.png
+  - type: MK7ZOMBIE.PCK  #MK7                                            ZOMBIESSSSSSSSSSSSS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Zombies/ULTRAMARINE/MK7Z.png
+#
+  - type: XCOM_HS.PCK  #SCOUT ARMOR CAPE          BROWN
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Scout/ULTRAMARINE/SCOUTH.png
+  - type: XCOM_HSG.PCK #SCOUT ARMOR CAPE          GREEN
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Scout/ULTRAMARINE/SCOUTHG.png
+  - type: XCOM_HSR.PCK #SCOUT ARMOR CAPE          RED
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Scout/ULTRAMARINE/SCOUTHR.png
+  - type: XCOM_HSB.PCK #SCOUT ARMOR CAPE          URBAN
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Scout/ULTRAMARINE/SCOUTHB.png
+  - type: XCOM_HSW.PCK #SCOUT ARMOR CAPE          WHITE
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Scout/ULTRAMARINE/SCOUTHW.png
+  - type: XCOM_HSY.PCK #SCOUT ARMOR CAPE          YELOW
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Scout/ULTRAMARINE/SCOUTHY.png
+  - type: XCOM_0.PCK #SCOUT ARMOR xcom0
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Scout/ULTRAMARINE/SCOUT.png
+  - type: XCOM_1.PCK #MK7 ARMOR xcom1
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MK7-ARMOR/ULTRAMARINE/MK7-ARMOR.png
+  - type: XCOM_1_CIV.PCK #MK7 ARMOR CIVILIAN
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MK7-ARMOR/ULTRAMARINE/MK7-ARMOR2.png
+  - type: XCOM_2.PCK #TERMINATOR ARMOR xcom2
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Terminator/ULTRAMARINE/TERMINATOR-ARMOR.png
+  - type: XCOM_20.PCK #TERMINATOR CAPTAIN ARMOR xcom20
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/CAPTAIN/ULTRAMARINE/TERMINATOR-CAPTAIN.png
+  - type: XCOM_21.PCK #Sargent ARMOR xcom21
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Sargent/ULTRAMARINE/MK7-SARGENT.png
+  - type: XCOM_22.PCK #APOT ARMOR xcom22
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/APOT/ULTRAMARINE/APOT-ARMOR.png
+  - type: XCOM_23.PCK #DEV ARMOR xcom23
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Devastator/ULTRAMARINE/DEV-ARMOR.png
+  - type: XCOM_24.PCK #LIB ARMOR xcom24
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/LIB/ULTRAMARINE/LIB-ARMOR.png
+  - type: XCOM_25.PCK #ASS ARMOR xcom25
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Assault/ULTRAMARINE/ASS-ARMOR.png
+  - type: XCOM_26.PCK #Terminator ASS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Terminator/ULTRAMARINE/TERMINATORASS.png
+  - type: XCOM_27.PCK #CHAPLAIN ARMOR xcom27
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/CHAP/ULTRAMARINE/CHAP-ARMOR.png
+  - type: XCOM_28.PCK #HONOR ARMOR
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Honor/ULTRAMARINE/HONORARMOR.png
+  - type: XCOM_HASS.PCK #HONOR ARMOR ASSAULT
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Honor/ULTRAMARINE/HONORARMORASS.png
+  - type: XCOM_29.PCK #Terminator Sargent ARMOR xcom29
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Terminator/ULTRAMARINE/TERMINATORSARGENT.png
+  - type: XCOM_30.PCK #TECHMARINE ARMOR xcom30
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tech/ULTRAMARINE/TECH.png
+  - type: SIGNALDR.PCK #TECHMARINE ARMOR xcom30
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MK7-ARMOR/ULTRAMARINE/MASTER.png
+  - type: JOAN.PCK #NPC J
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/JOAN/ULTRAMARINE/MK7-JOAN.png
+##LARGE TANK DR
+  - type: STORMRAVEN.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Stormraven/ULTRAMARINE/Stormraven.png
+  - type: BIKE.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/bike/ULTRAMARINE/BIKE.png
+  - type: CENT.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Cent/ULTRAMARINE/CENT.png
+  - type: TARANTULA.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Tarantula/ULTRAMARINE/Tarantula.png
+  - type: TARANTULARADAR.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 200
+    files:
+      0: Resources/Tarantula/ULTRAMARINE/Tarantularadar.png
+  - type: TARANTULABOLTER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Tarantula/ULTRAMARINE/Tarantulabolter.png
+  - type: WW.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Tarantula/ULTRAMARINE/WW.png
+  - type: RB.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Tarantula/ULTRAMARINE/RB.png
+  - type: RD.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Tarantula/ULTRAMARINE/RD.png
+  - type: DREAD.PCK    #FISTS
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/dread/ULTRAMARINE/dread.png
+  - type: DREAD2.PCK    #MISSELE
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/dread/ULTRAMARINE/dread2.png
+  - type: DREAD3.PCK    #LASGUN
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/dread/ULTRAMARINE/dread3.png
+  - type: DREAD4.PCK    #PLASMA
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/dread/ULTRAMARINE/dread4.png
+  - type: DREAD5.PCK    #VETERAN
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/dread/ULTRAMARINE/dread5.png
+  - type: LTT.PCK #Left thunderhawnk turret
+    width: 256
+    height: 120
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Thunderhawk/ULTRAMARINE/LTT.png
+  - type: RTT.PCK #RIGHT thunderhawnk turret
+    width: 256
+    height: 120
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Thunderhawk/ULTRAMARINE/RTT.png
+  - type: STORMTALON.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 200
+    files:
+      0: Resources/Stormtalon/ULTRAMARINE/STDR12.png
+  - type: STORMTALON2.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 200
+    files:
+      0: Resources/Stormtalon/ULTRAMARINE/ST2DR12.png
+  - type: LTS.PCK #Left Stormtalon turret
+    width: 384
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Stormtalon/ULTRAMARINE/LTS.png
+  - type: RTS.PCK #RIGHT Stormtalon turret
+    width: 384
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Stormtalon/ULTRAMARINE/RTS.png
+  - type: VINDICATOR.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 200
+    files:
+      0: Resources/Support/ULTRAMARINE/VINDI2.png
+  - type: VINDICATOR2.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 200
+    files:
+      0: Resources/Support/ULTRAMARINE/VINDI3.png
+#CRAFTS
+  - type: BASEBITS.PCK            #BASEBIT BASEBIT BASEBIT BASEBIT BASEBIT
+    files:
+      55: Resources/Thunderhawk/ULTRAMARINE/Thunderhawk_base.png
+      56: Resources/Droppod/ULTRAMARINE/Droppod_base.png
+      57: Resources/Rhino/ULTRAMARINE/Rhino_base.png
+      58: Resources/Stormeagle/ULTRAMARINE/Stormeagle_base.png
+      59: Resources/Stormtalon/ULTRAMARINE/Stormtalon_base.png
+      60: Resources/Stormraven/ULTRAMARINE/Stormraven_base.png
+      61: Resources/Droppod/ULTRAMARINE/Droppod_base2.png
+      63: Resources/LANDSPEEDER/ULTRAMARINE/Speed_base.png
+      64: Resources/Stormhawk/ULTRAMARINE/Stormhawk_base.png
+      65: Resources/Army/ULTRAMARINE/army_base.png
+      133: Resources/Stormhawk/ULTRAMARINE/Stormhawk2_base.png
+      533: Resources/Rhino/ULTRAMARINE/Rhino_ass.png
+      534: Resources/Rhino/ULTRAMARINE/Rhino_dev.png
+      535: Resources/Rhino/ULTRAMARINE/Rhino_sct.png
+
+# PLUS 33 BASE ICON
+      911: Resources/Thunderhawk/ULTRAMARINE/Thunderhawk_base1.png        #MARINES  0
+      912: Resources/Thunderhawk/IMPERIALF/Thunderhawk_base1.png          #MARINES  1
+      913: Resources/Thunderhawk/BLOODA/Thunderhawk_base1.png             #MARINES  2
+      914: Resources/Thunderhawk/SALA/Thunderhawk_base1.png               #MARINES  3
+      915: Resources/Impulsor/ULTRAMARINE/parmy_base.png               #MARINES  4
+      916: Resources/Impulsor/ULTRAMARINE/repulsor_base.png            #MARINES  5
+      917: Resources/Impulsor/ULTRAMARINE/parmy_base.png               #MARINES  6
+      918: Resources/Xiphon/ULTRAMARINE/Xiphon_base.png                #MARINES  7
+      919: Resources/Impulsor/ULTRAMARINE/impulsor_base.png            #MARINES  8
+      920: Resources/Impulsor/ULTRAMARINE/repulsor_base.png            #MARINES  9
+      921: Resources/Impulsor/ULTRAMARINE/repulsord_base.png            #MARINES 10
+#BIG OBJS
+  - type: BIGOBS.PCK
+    files:
+      197: Resources/dread/ULTRAMARINE/WDREAD6.png
+      198: Resources/dread/ULTRAMARINE/WDREAD7.png
+      199: Resources/Thunderhawk/ULTRAMARINE/199.png
+      200: Resources/bike/ULTRAMARINE/200.png
+      201: Resources/dread/ULTRAMARINE/WDREAD1.png
+      202: Resources/dread/ULTRAMARINE/WDREAD4.png
+      203: Resources/dread/ULTRAMARINE/WDREAD3.png
+      204: Resources/Tarantula/ULTRAMARINE/204.png
+      205: Resources/Tarantula/ULTRAMARINE/205.png
+      207: Resources/Terminator/ULTRAMARINE/207.png
+      208: Resources/Scout/ULTRAMARINE/208.png
+      209: Resources/MK7-ARMOR/ULTRAMARINE/Bigdead.png
+      210: Resources/CAPTAIN/ULTRAMARINE/captain.png
+      211: Resources/Sargent/ULTRAMARINE/sargent.png
+      212: Resources/APOT/ULTRAMARINE/apot.png
+      223: Resources/Banner/ULTRAMARINE/223.png
+      231: Resources/LIB/ULTRAMARINE/231.png
+      234: Resources/dread/ULTRAMARINE/WDREAD2.png
+      254: Resources/CHAP/ULTRAMARINE/254.png
+      255: Resources/Honor/ULTRAMARINE/255.png
+      260: Resources/Terminator/ULTRAMARINE/STerminator.png
+      261: Resources/Terminator/ULTRAMARINE/261.png
+      269: Resources/Tech/ULTRAMARINE/269.png
+      306: Resources/JOAN/ULTRAMARINE/306.png
+      329: Resources/Cent/ULTRAMARINE/329.png
+      334: Resources/Tarantula/ULTRAMARINE/334.png
+      451: Resources/Stormtalon/ULTRAMARINE/451.png
+      456: Resources/Scout/ULTRAMARINE/456.png
+      457: Resources/Stormraven/ULTRAMARINE/457.png
+      900: Resources/Zombies/ULTRAMARINE/900.png       #ZOMBIESSSSSSSSSSSSS
+      901: Resources/Zombies/ULTRAMARINE/901.png       #ZOMBIESSSSSSSSSSSSS
+      902: Resources/Zombies/ULTRAMARINE/902.png       #ZOMBIESSSSSSSSSSSSS
+      903: Resources/MK7-ARMOR/ULTRAMARINE/904.png       #SIGNAL
+      905: Resources/MKX-ARMOR/ULTRAMARINE/905.png       #MKX
+      906: Resources/MKX-ARMOR/ULTRAMARINE/906.png       #MKX
+      907: Resources/MKX-ARMOR/ULTRAMARINE/907.png       #MKX
+      908: Resources/MKX-ARMOR/ULTRAMARINE/908.png       #MKX
+      909: Resources/MKX-ARMOR/ULTRAMARINE/909.png       #MKX
+      910: Resources/MKX-ARMOR/ULTRAMARINE/910.png       #MKX
+      911: Resources/MKX-ARMOR/ULTRAMARINE/911.png       #MKX
+      912: Resources/MKX-ARMOR/ULTRAMARINE/912.png       #MKX
+      913: Resources/MKX-ARMOR/ULTRAMARINE/913.png       #MKX
+      914: Resources/MKX-ARMOR/ULTRAMARINE/914.png       #MKX
+      920: Resources/MKX-ARMOR/ULTRAMARINE/920.png       #MKX
+      921: Resources/MKX-ARMOR/ULTRAMARINE/921.png       #MKX
+      922: Resources/MKX-ARMOR/ULTRAMARINE/922.png       #MKX
+      923: Resources/MKX-ARMOR/ULTRAMARINE/923.png       #MKX
+      924: Resources/MKX-ARMOR/ULTRAMARINE/924.png       #MKX
+      925: Resources/MKX-ARMOR/ULTRAMARINE/925.png       #MKX
+      926: Resources/MKX-ARMOR/ULTRAMARINE/926.png       #MKX
+  - type: FLOOROB.PCK
+    files:
+      82: Resources/bike/ULTRAMARINE/floorob_82.png
+      83: Resources/bike/ULTRAMARINE/floorob_83.png
+      84: Resources/bike/ULTRAMARINE/floorob_84.png
+      85: Resources/bike/ULTRAMARINE/floorob_85.png
+      86: Resources/dread/ULTRAMARINE/floorob_86.png
+      87: Resources/dread/ULTRAMARINE/floorob_87.png
+      88: Resources/dread/ULTRAMARINE/floorob_88.png
+      89: Resources/dread/ULTRAMARINE/floorob_89.png
+      90: Resources/Tarantula/ULTRAMARINE/floorob_90.png
+      91: Resources/Tarantula/ULTRAMARINE/floorob_91.png
+      92: Resources/Tarantula/ULTRAMARINE/floorob_92.png
+      93: Resources/Tarantula/ULTRAMARINE/floorob_93.png
+      95: Resources/Terminator/ULTRAMARINE/floorob_95.png
+      96: Resources/Scout/ULTRAMARINE/floorob_96.png
+      97: Resources/MK7-ARMOR/ULTRAMARINE/floorob_97.png
+      98: Resources/CAPTAIN/ULTRAMARINE/floorob_98.png
+      99: Resources/Sargent/ULTRAMARINE/floorob_99.png
+      100: Resources/APOT/ULTRAMARINE/floorob_100.png
+      109: Resources/Banner/ULTRAMARINE/floorob_109.png
+      117: Resources/LIB/ULTRAMARINE/floorob_117.png
+      136: Resources/Honor/ULTRAMARINE/floorob_136.png
+      145: Resources/Terminator/ULTRAMARINE/floorob_145.png
+      151: Resources/tech/ULTRAMARINE/floorob_151.png
+      171: Resources/JOAN/ULTRAMARINE/floorob_171.png
+      191: Resources/Cent/ULTRAMARINE/floorob_191.png
+      192: Resources/Cent/ULTRAMARINE/floorob_192.png
+      193: Resources/Cent/ULTRAMARINE/floorob_193.png
+      194: Resources/Cent/ULTRAMARINE/floorob_194.png
+      270: Resources/Thunderhawk/ULTRAMARINE/floorob_270.png
+      271: Resources/Thunderhawk/ULTRAMARINE/floorob_271.png
+      272: Resources/Stormtalon/ULTRAMARINE/floorob_272.png
+      273: Resources/Stormtalon/ULTRAMARINE/floorob_273.png
+      274: Resources/Stormtalon/ULTRAMARINE/floorob_274.png
+      275: Resources/Stormtalon/ULTRAMARINE/floorob_275.png
+      276: Resources/Stormtalon/ULTRAMARINE/floorob_276.png
+      277: Resources/Stormtalon/ULTRAMARINE/floorob_277.png
+      278: Resources/Stormtalon/ULTRAMARINE/floorob_278.png
+      279: Resources/Stormtalon/ULTRAMARINE/floorob_279.png
+      280: Resources/Stormtalon/ULTRAMARINE/floorob_280.png
+      281: Resources/Stormtalon/ULTRAMARINE/floorob_281.png
+      299: Resources/Scout/ULTRAMARINE/floorob_299.png
+      350: Resources/Stormraven/ULTRAMARINE/floorob_350.png
+      351: Resources/Stormraven/ULTRAMARINE/floorob_351.png
+      352: Resources/Stormraven/ULTRAMARINE/floorob_352.png
+      353: Resources/Stormraven/ULTRAMARINE/floorob_353.png
+      900: Resources/Zombies/ULTRAMARINE/floorob_900.png       #ZOMBIESSSSSSSSSSSSS
+      901: Resources/Zombies/ULTRAMARINE/floorob_901.png       #ZOMBIESSSSSSSSSSSSS
+      902: Resources/Zombies/ULTRAMARINE/floorob_902.png       #ZOMBIESSSSSSSSSSSSS
+      903: Resources/MK7-ARMOR/ULTRAMARINE/floorob_903.png     #SIGNAL
+      904: Resources/MKX-ARMOR/ULTRAMARINE/floorob_904.png     #MKX
+      905: Resources/MKX-ARMOR/ULTRAMARINE/floorob_905.png     #MKX
+      906: Resources/MKX-ARMOR/ULTRAMARINE/floorob_906.png     #MKX
+      907: Resources/MKX-ARMOR/ULTRAMARINE/floorob_907.png     #MKX
+      908: Resources/MKX-ARMOR/ULTRAMARINE/floorob_908.png     #MKX
+      909: Resources/MKX-ARMOR/ULTRAMARINE/floorob_909.png     #MKX
+      910: Resources/MKX-ARMOR/ULTRAMARINE/floorob_910.png     #MKX
+      911: Resources/MKX-ARMOR/ULTRAMARINE/floorob_911.png     #MKX
+      912: Resources/MKX-ARMOR/ULTRAMARINE/floorob_912.png     #MKX
+      913: Resources/MKX-ARMOR/ULTRAMARINE/floorob_913.png     #MKX
+      914: Resources/MKX-ARMOR/ULTRAMARINE/floorob_914.png     #MKX
+      915: Resources/MKX-ARMOR/ULTRAMARINE/floorob_915.png     #MKX
+      916: Resources/MKX-ARMOR/ULTRAMARINE/floorob_916.png     #MKX
+      917: Resources/MKX-ARMOR/ULTRAMARINE/floorob_917.png     #MKX
+      918: Resources/MKX-ARMOR/ULTRAMARINE/floorob_918.png     #MKX
+      919: Resources/MKX-ARMOR/ULTRAMARINE/floorob_919.png     #MKX
+      920: Resources/MKX-ARMOR/ULTRAMARINE/floorob_920.png     #MKX
+      921: Resources/MKX-ARMOR/ULTRAMARINE/floorob_921.png     #MKX
+      922: Resources/MKX-ARMOR/ULTRAMARINE/floorob_922.png     #MKX
+  - type: HANDOB.PCK
+    height: 40
+    width: 256
+    subX: 32
+    subY: 40
+    files:
+      240: Resources/Banner/ULTRAMARINE/240.png
+      1728: Resources/MKX-ARMOR/ULTRAMARINE/1728.png
+      1736: Resources/MKX-ARMOR/ULTRAMARINE/1736.png
+  - type: X1.PCK                       #EXPLOSION EXPLOSIONS EXPLOSION EXPLOSION EXPLOSIONS EXPLOSION
+    width: 1024
+    height: 448
+    subX: 128
+    subY: 64
+    files:
+      1728: Resources/MKX-ARMOR/ULTRAMARINE/XTHUNDER.png
+      1736: Resources/MKX-ARMOR/ULTRAMARINE/XBOLTER.png

@@ -1,0 +1,3297 @@
+extended:
+  tags:
+    RuleArmor:
+#*** Tag for armors that replenish energy clips ***
+      ARMOR_REPLENISHES_ENERGY_CLIPS: int
+
+items:
+#*** Craft weapon items ***
+  - type: STR_CRAFT_MULTILASER
+    requires:
+      - STR_GUARD_AND_ARBITES
+    size: 3.0
+    costBuy: 72000
+    costSell: 54000
+    transferTime: 48
+    listOrder: 1900
+
+  - type: STR_CRAFT_QUADLASER
+    requires:
+      - STR_GUARD_AND_ARBITES
+    size: 3.0
+    costSell: 66000
+    transferTime: 48
+    listOrder: 1910
+
+  - type: STR_CRAFT_AUTOCANNON
+    size: 3.0
+    costSell: 52500
+    transferTime: 48
+    listOrder: 1920
+
+  - type: STR_CRAFT_AUTOCANNON_ROUNDS
+    size: 0.2
+    costSell: 1500
+    transferTime: 48
+    clipSize: 50
+    listOrder: 1930
+
+#*** Charge for deploying by grav chute ***
+  - type: STR_GRAVDROP_DEPLOY_CHARGE
+    power: 1
+    weight: 999
+    hitAnimation: 1000
+    explosionHitSound: 15
+    damageType: 3
+    damageAlter:
+      FixRadius: 2
+      RandomType: 3
+      ResistType: 10
+      ToHealth: 0.0
+      ToArmor: 0.0
+      ToStun: 0.0
+      ToWound: 0.0
+      ToItem: 0.0
+      ToTile: 240.0
+      RadiusReduction: 0.0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 100
+    recover: false
+    hiddenOnMinimap: true
+
+
+  - type: STR_TAUROS_DEPLOY_CHARGE
+    power: 12
+    weight: 999
+    hitAnimation: 136
+    explosionHitSound: 835
+    damageType: 3
+    damageAlter:
+      FixRadius: 2
+      RandomType: 3
+      ResistType: 10
+      ArmorEffectiveness: 0.2
+      ToArmor: 0.0
+      ToItem: 0.0
+      ToTile: 20.0
+      RadiusReduction: 0.0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 100
+    recover: false
+    hiddenOnMinimap: true
+
+#*** New Imperial Guard-only weapons ***
+  - type: STR_BAYONET # standard melee weapon for all guardsmen
+    weight: 0
+    specialIconSprite: 102
+    specialUseEmptyHand: true
+    meleeHitSound: 101
+    meleeAnimation: 0
+    damageType: 7
+    power: 40
+    damageBonus:
+      strength: 0.2
+      melee: 0.2
+    damageAlter:
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 70
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 10
+    flatMelee:
+      time: true
+    fixedWeapon: true
+    recover: false
+    battleType: 3
+    clipSize: -1
+    experienceTrainingMode: 13
+
+  - type: STR_STUB_GUN
+    categories: [STR_CAT_AUTO]
+    size: 0.1
+    dropoff: 5
+    costBuy: 500
+    costSell: 360
+    weight: 5
+    bigSprite: 1110
+    floorSprite: 1110
+    handSprite: 1880
+    bulletSprite: 1
+    fireSound: [871, 872, 873]
+    compatibleAmmo:
+      - STR_STUB_GUN_AMMO
+    accuracySnap: 60
+    tuSnap: 25
+    snapRange: 12
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    bulletSpeed: 30
+    attraction: 1
+    listOrder: 10711
+
+  - type: STR_STUB_GUN_CHAOS
+    categories: [STR_CAT_AUTO]
+    requires:
+      - STR_ALIENS_ONLY
+    size: 0.1
+    dropoff: 5
+    costSell: 360
+    weight: 5
+    bigSprite: 1114
+    floorSprite: 1114
+    handSprite: 1888
+    bulletSprite: 1
+    fireSound: [871, 872, 873]
+    compatibleAmmo:
+      - STR_STUB_GUN_AMMO
+    accuracySnap: 60
+    tuSnap: 25
+    snapRange: 12
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    bulletSpeed: 30
+    attraction: 1
+    listOrder: 10712
+
+  - type: STR_STUB_RIFLE
+    categories: [STR_CAT_AUTO]
+    size: 0.2
+    dropoff: 5
+    costBuy: 1000
+    costSell: 720
+    weight: 10
+    bigSprite: 1108
+    floorSprite: 1108
+    handSprite: 1864
+    bulletSprite: 1
+    fireSound: [871, 872, 873]
+    compatibleAmmo:
+      - STR_STUB_GUN_AMMO
+    accuracySnap: 75
+    tuSnap: 30
+    accuracyAimed: 110
+    tuAimed: 70
+    snapRange: 18
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    bulletSpeed: 30
+    attraction: 1
+    listOrder: 10713
+
+  - type: STR_STUB_RIFLE_CHAOS
+    categories: [STR_CAT_AUTO]
+    requires:
+      - STR_ALIENS_ONLY
+    size: 0.2
+    dropoff: 5
+    costSell: 720
+    weight: 10
+    bigSprite: 1109
+    floorSprite: 1109
+    handSprite: 1872
+    bulletSprite: 1
+    fireSound: [871, 872, 873]
+    compatibleAmmo:
+      - STR_STUB_GUN_AMMO
+    accuracySnap: 75
+    tuSnap: 30
+    accuracyAimed: 110
+    tuAimed: 70
+    snapRange: 18
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    bulletSpeed: 30
+    attraction: 1
+    listOrder: 10714
+
+  - type: STR_STUB_GUN_AMMO
+    categories: [STR_CAT_AUTO]
+    size: 0.1
+    costBuy: 150
+    costSell: 50
+    weight: 2
+    bigSprite: 1118
+    floorSprite: 1118
+    handSprite: 1896
+    hitSound: 22
+    hitAnimation: 26
+    damageAlter:
+      ToArmorPre: 0.05
+    explosionSpeed: 5
+    power: 42
+    damageType: 1
+    clipSize: 8
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 30
+    attraction: 1
+    listOrder: 10715
+
+  - type: STR_AUTOPISTOL
+    categories: [STR_CAT_AUTO]
+    size: 0.1
+    dropoff: 5
+    costBuy: 1500
+    costSell: 500
+    weight: 5
+    bigSprite: 1012
+    floorSprite: 1012
+    handSprite: 1096
+    bulletSprite: 1
+    bulletSpeed: 25
+    fireSound: 4
+    compatibleAmmo:
+      - STR_AUTOPISTOL_CLIP
+    accuracySnap: 50
+    tuSnap: 28
+    confSnap:
+      shots: 3
+    accuracyAuto: 35
+    tuAuto: 34
+    confAuto:
+      shots: 5
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    experienceTrainingMode: 5
+    listOrder: 10720
+
+  - type: STR_AUTOPISTOL_CHAOS
+    categories: [STR_CAT_AUTO]
+    requires:
+      - STR_ALIENS_ONLY
+    size: 0.1
+    dropoff: 5
+    #costBuy: 1500
+    costSell: 500
+    weight: 5
+    bigSprite: 1017
+    floorSprite: 1017
+    handSprite: 1136
+    bulletSprite: 1
+    bulletSpeed: 25
+    fireSound: 4
+    compatibleAmmo:
+      - STR_AUTOPISTOL_CLIP
+    accuracySnap: 50
+    tuSnap: 28
+    confSnap:
+      shots: 3
+    accuracyAuto: 35
+    tuAuto: 34
+    confAuto:
+      shots: 5
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    armor: 30
+    experienceTrainingMode: 5
+    listOrder: 10721
+
+  - type: STR_AUTOPISTOL_CLIP
+    categories: [STR_CAT_AUTO]
+    size: 0.1
+    costBuy: 200
+    costSell: 75
+    weight: 3
+    bigSprite: 1013
+    floorSprite: 1013
+    handSprite: 1104
+    hitSound: 22
+    hitAnimation: 26
+    explosionSpeed: 5
+    power: 30
+    damageType: 1
+    damageAlter:
+      ToArmorPre: 0.033
+      ArmorEffectiveness: 0.90
+    clipSize: 20
+    battleType: 2
+    armor: 30
+    listOrder: 10730
+
+  - type: STR_AUTOGUN
+    categories: [STR_CAT_AUTO]
+    size: 0.2
+    dropoff: 5
+    costBuy: 3500
+    costSell: 1000
+    weight: 9
+    bigSprite: 1010
+    floorSprite: 1010
+    handSprite: 1080
+    bulletSprite: 2
+    bulletSpeed: 25
+    fireSound: 4
+    compatibleAmmo:
+      - STR_AUTOGUN_CLIP
+    accuracySnap: 65
+    tuSnap: 33
+    confSnap:
+      shots: 3
+    accuracyAuto: 46
+    tuAuto: 40
+    confAuto:
+      shots: 5
+    battleType: 1
+    invWidth: 1
+    invHeight: 3
+    twoHanded: true
+    armor: 30
+    experienceTrainingMode: 5
+    listOrder: 10740
+    #*** Melee bayonet
+    meleeHitSound: 101
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 40
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+    meleeAlter:
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 110
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 14
+    flatMelee:
+      time: true
+
+  - type: STR_AUTOGUN_CHAOS
+    categories: [STR_CAT_AUTO]
+    requires:
+      - STR_ALIENS_ONLY
+    size: 0.2
+    dropoff: 5
+    #costBuy: 3500
+    costSell: 1000
+    weight: 9
+    bigSprite: 1016
+    floorSprite: 1016
+    handSprite: 1128
+    bulletSprite: 2
+    bulletSpeed: 25
+    fireSound: 4
+    compatibleAmmo:
+      - STR_AUTOGUN_CLIP
+    accuracySnap: 65
+    tuSnap: 33
+    confSnap:
+      shots: 3
+    accuracyAuto: 46
+    tuAuto: 40
+    confAuto:
+      shots: 5
+    battleType: 1
+    invWidth: 1
+    invHeight: 3
+    twoHanded: true
+    armor: 30
+    experienceTrainingMode: 5
+    listOrder: 10741
+    #*** Melee bayonet
+    meleeHitSound: 101
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 40
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+    meleeAlter:
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 110
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 14
+    flatMelee:
+      time: true
+
+  - type: STR_AUTOGUN_CLIP
+    categories: [STR_CAT_AUTO]
+    size: 0.1
+    costBuy: 300
+    costSell: 105
+    weight: 3
+    bigSprite: 1011
+    floorSprite: 1011
+    handSprite: 1088
+    hitSound: 22
+    hitAnimation: 26
+    explosionSpeed: 5
+    power: 30
+    damageType: 1
+    damageAlter:
+      ToArmorPre: 0.033
+      ArmorEffectiveness: 0.90
+    clipSize: 30
+    battleType: 2
+    armor: 30
+    listOrder: 10750
+
+  - type: STR_HEAVY_STUBBER
+    categories: [STR_CAT_AUTO]
+    requiresBuy:
+        - STR_GUARD_SUPORT
+    size: 0.3
+    dropoff: 5
+    costBuy: 9000
+    costSell: 3750
+    weight: 20
+    bigSprite: 1002
+    floorSprite: 1002
+    handSprite: 1016
+    bulletSprite: 2
+    bulletSpeed: 25
+    fireSound: 4
+    compatibleAmmo:
+      - STR_HEAVY_STUBBER_CLIP
+    accuracyAuto: 45 #15 handle kneeling bonus by recoil script instead
+    tuAuto: 85
+    #kneelBonus: 300
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 60
+    autoRange: 18
+    autoShots: 25
+    sprayWaypoints: 2
+    listOrder: 10760
+
+  - type: STR_HEAVY_STUBBER_CHAOS
+    categories: [STR_CAT_AUTO]
+    requires:
+      - STR_ALIENS_ONLY
+    size: 0.3
+    dropoff: 5
+    #costBuy: 9000
+    costSell: 3750
+    weight: 20
+    bigSprite: 1122
+    floorSprite: 1122
+    handSprite: 1920
+    bulletSprite: 2
+    bulletSpeed: 25
+    fireSound: 4
+    compatibleAmmo:
+      - STR_HEAVY_STUBBER_CLIP
+    accuracyAuto: 40
+    accuracySnap: 55
+    tuAuto: 45
+    tuSnap: 30
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 60
+    autoRange: 15
+    snapRange: 15
+    autoShots: 10
+    confSnap:
+      shots: 4
+    sprayWaypoints: 2
+    listOrder: 10762
+
+  - type: STR_HEAVY_STUBBER_CLIP
+    categories: [STR_CAT_AUTO]
+    size: 0.1
+    costBuy: 600
+    costSell: 225
+    weight: 10
+    bigSprite: 1004
+    floorSprite: 1004
+    handSprite: 1032
+    hitSound: 22
+    hitAnimation: -1
+    #explosionSpeed: 5
+    power: 42
+    damageType: 1
+    damageAlter:
+      ToArmorPre: 0.05
+      ArmorEffectiveness: 0.90
+    clipSize: 125
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    listOrder: 10770
+
+  - type: STR_AUTOCANNON_HANDHELD
+    categories: [STR_CAT_AUTO]
+    weight: 70
+    size: 0.4
+    costSell: 72000
+    bigSprite: 1014
+    floorSprite: 1014
+    handSprite: 1112
+    bulletSprite: 6
+    fireSound: 12
+    compatibleAmmo:
+      - STR_AUTOCANNON_CLIP
+    accuracyAuto: 60 #20 kneel bonus handled by recoil script
+    tuAuto: 45
+    dropoff: 3
+    #kneelBonus: 300
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    autoRange: 20
+    autoShots: 3
+    bulletSpeed: 50
+    listOrder: 10775
+
+  - type: STR_LASCARBINE
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    size: 0.2
+    dropoff: 5
+    costBuy: 4800
+    requiresBuy:
+      - STR_LASER_WEAPONS
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costSell: 1500
+    weight: 4
+    bigSprite: 1022
+    floorSprite: 1022
+    handSprite: 1176
+    bulletSprite: 12
+    fireSound: 741
+    accuracyAuto: 50
+    accuracySnap: 70
+    tuAuto: 34
+    tuSnap: 22
+    snapRange: 12
+    autoRange: 9
+    compatibleAmmo:
+      - STR_LASGUN_CLIP
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    bulletSpeed: 50
+    listOrder: 10915
+    #*** Melee bayonet
+    meleeHitSound: 101
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 40
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+    meleeAlter:
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 110
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 14
+    flatMelee:
+      time: true
+
+  - type: STR_LASGUN_ACCATRAN
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    size: 0.2
+    dropoff: 5
+    costSell: 6000
+    weight: 4
+    bigSprite: 1023
+    floorSprite: 1023
+    handSprite: 1184
+    bulletSprite: 12
+    fireSound: 741
+    accuracyAuto: 50
+    accuracySnap: 70
+    tuAuto: 30
+    tuSnap: 22
+    snapRange: 14
+    autoRange: 9
+    compatibleAmmo:
+      - STR_LASGUN_CLIP
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    bulletSpeed: 50
+    listOrder: 10920
+    #*** Melee bayonet
+    meleeHitSound: 101
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 40
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+    meleeAlter:
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 110
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 14
+    flatMelee:
+      time: true
+
+  - type: STR_LASGUN_VOSS
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    size: 0.2
+    dropoff: 5
+    costSell: 6000
+    weight: 4
+    bigSprite: 1025
+    floorSprite: 1025
+    handSprite: 1200
+    bulletSprite: 12
+    fireSound: 741
+    accuracyAuto: 50
+    accuracySnap: 70
+    tuAuto: 34
+    tuSnap: 22
+    snapRange: 12
+    autoRange: 9
+    compatibleAmmo:
+      - STR_LASGUN_CLIP
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 85
+    invWidth: 1
+    invHeight: 2
+    bulletSpeed: 50
+    listOrder: 10930
+    #*** Melee bayonet
+    #meleeHitSound: 101
+    #meleeAnimation: 0
+    #meleeType: 7
+    #meleePower: 40
+    #meleeBonus:
+    #  strength: 0.2
+    #  melee: 0.2
+    #meleeAlter:
+    #  ArmorEffectiveness: 0.9
+    #accuracyMelee: 110
+    #meleeMultiplier:
+    #  flatHundred: 0.5
+    #  melee: 0.5
+    #tuMelee: 14
+    #flatMelee:
+    #  time: true
+
+  - type: STR_LASGUN_VOSTROYA
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    size: 0.2
+    dropoff: 5
+    costSell: 6000
+    weight: 12
+    bigSprite: 1026
+    floorSprite: 1026
+    handSprite: 1208
+    bulletSprite: 12
+    fireSound: 741
+    accuracyAuto: 50
+    accuracySnap: 80
+    tuAuto: 40
+    tuSnap: 30
+    snapRange: 20
+    compatibleAmmo:
+      - STR_LASGUN_CLIP
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    bulletSpeed: 50
+    listOrder: 10940
+    #*** Melee bayonet
+    meleeHitSound: 101
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 40
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+    meleeAlter:
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 110
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 14
+    flatMelee:
+      time: true
+
+  - type: STR_LASGUN_TANITH
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    size: 0.2
+    dropoff: 5
+    costSell: 6000
+    weight: 8
+    bigSprite: 1027
+    floorSprite: 1027
+    handSprite: 1216
+    bulletSprite: 12
+    fireSound: 741
+    accuracyAuto: 55
+    accuracySnap: 75
+    tuAuto: 34
+    tuSnap: 25
+    snapRange: 18
+    compatibleAmmo:
+      - STR_LASGUN_CLIP
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    bulletSpeed: 50
+    listOrder: 10950
+    #*** Melee bayonet
+    meleeHitSound: 101
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 40
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+    meleeAlter:
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 110
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 14
+    flatMelee:
+      time: true
+
+  - type: STR_LONGLAS
+    categories: [STR_CAT_LASGUN, STR_CAT_SNIPER]
+    size: 0.2
+    dropoff: 5
+    costBuy: 28750
+    requiresBuy:
+      - STR_LASER_WEAPONS
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costSell: 5000
+    weight: 8
+    bigSprite: 1020
+    floorSprite: 1020
+    handSprite: 1160
+    bulletSprite: 12
+    fireSound: 741
+    accuracySnap: 80
+    accuracyAimed: 100
+    accuracyMultiplier:
+      firing: [0.5, 0.005]
+    tuSnap: 35
+    tuAimed: 65
+    snapRange: 20
+    compatibleAmmo:
+      - STR_LASGUN_CLIP
+      - STR_LASGUN_CLIP_HOTSHOT
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    bulletSpeed: 50
+    listOrder: 11050
+
+  - type: STR_LASGUN_LUCIUS
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    size: 0.2
+    dropoff: 5
+    costSell: 6000
+    weight: 7
+    bigSprite: 1024
+    floorSprite: 1024
+    handSprite: 1192
+    bulletSprite: 12
+    fireSound: 741
+    accuracyAuto: 50
+    accuracySnap: 70
+    tuAuto: 50
+    tuSnap: 33
+    compatibleAmmo:
+      - STR_LASGUN_CLIP
+      - STR_LASGUN_CLIP_HOTSHOT
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    bulletSpeed: 50
+    listOrder: 11055
+    #*** Melee bayonet
+    meleeHitSound: 101
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 40
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+    meleeAlter:
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 110
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 14
+    flatMelee:
+      time: true
+
+  - type: STR_LONGLAS_TANITH
+    categories: [STR_CAT_LASGUN, STR_CAT_SNIPER]
+    size: 0.2
+    dropoff: 5
+    costSell: 7500
+    weight: 10
+    bigSprite: 1028
+    floorSprite: 1028
+    handSprite: 1224
+    bulletSprite: 12
+    fireSound: 741
+    accuracySnap: 80
+    accuracyAimed: 125
+    accuracyMultiplier:
+      firing: [0.5, 0.005]
+    tuSnap: 35
+    tuAimed: 60
+    snapRange: 24
+    compatibleAmmo:
+      - STR_LASGUN_CLIP
+      - STR_LASGUN_CLIP_HOTSHOT
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    bulletSpeed: 50
+    listOrder: 11051
+
+  - type: STR_LASGUN_CLIP_HOTSHOT
+    categories: [STR_CAT_LASGUN, STR_CAT_SNIPER]
+    size: 0.1
+    costBuy: 4000
+    requiresBuy:
+      - STR_LASER_WEAPONS
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    costSell: 1000
+    weight: 1
+    bigSprite: 1021
+    floorSprite: 1021
+    handSprite: 1168
+    hitSound: 19
+    hitAnimation: 36
+    power: 75
+    damageType: 4
+    damageAlter:
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToHealth: 1.0
+      ToArmor: 0.0
+      ToStun: 0.0
+    clipSize: 20
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 70
+    listOrder: 11060
+
+  - type: STR_LASCANNON_HANDHELD
+    categories: [STR_CAT_LASGUN]
+    weight: 50
+    size: 0.4
+    costSell: 61000
+    bigSprite: 1036
+    floorSprite: 1036
+    handSprite: 1288
+    bulletSprite: 12
+    fireSound: 742
+    compatibleAmmo:
+      - STR_LASCANNON_CLIP_SMALL
+    accuracyAimed: 105 #35
+    accuracySnap: 60 #20
+    tuAimed: 90
+    tuSnap: 55
+    dropoff: 5
+    #kneelBonus: 300
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    autoRange: 20
+    autoShots: 3
+    bulletSpeed: 50
+    listOrder: 12250
+
+  - type: STR_LASCANNON_CLIP_SMALL
+    categories: [STR_CAT_LASGUN]
+    size: 0.1
+    costSell: 1000
+    weight: 4
+    bigSprite: 1038
+    floorSprite: 1038
+    handSprite: 1304
+    hitSound: 19
+    hitAnimation: 36
+    power: 200
+    damageType: 4
+    damageAlter:
+      ToArmorPre: 0.2
+      ToHealth: 1.0
+      ToArmor: 0.0
+      ToStun: 0.0
+    clipSize: 1
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 70
+    listOrder: 12260
+
+  - type: STR_HEAVY_BOLTER_GUARD
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    categories: [STR_CAT_BOLTER]
+    size: 0.3
+    dropoff: 3
+    costBuy: 13500
+    costSell: 10125
+    weight: 40
+    bigSprite: 1000
+    floorSprite: 1000
+    handSprite: 1000
+    bulletSprite: 6
+    fireSound: 707
+    compatibleAmmo:
+      - STR_AC_AP_AMMO
+      - STR_AC_MC_AMMO
+      - STR_AC_HE_AMMO
+      - STR_AC_I_AMMO
+    accuracyAuto: 50 #17 kneeling bonus now handled by recoil script
+    accuracySnap: 60 #20
+    tuAuto: 40
+    tuSnap: 20
+    #kneelBonus: 300
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 60
+    snapRange: 24
+    autoRange: 24
+    autoShots: 5
+    sprayWaypoints: 2
+    bulletSpeed: 50
+    attraction: 4
+    listOrder: 12005
+
+  - type: STR_GRENADE_LAUNCHER
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    categories: [STR_CAT_ROCKETL]
+    size: 0.4
+    dropoff: 5
+    costBuy: 10000
+    costSell: 2000
+    weight: 15
+    bigSprite: 1005
+    floorSprite: 1005
+    handSprite: 1040
+    bulletSprite: 0
+    fireSound: 4
+    compatibleAmmo:
+      - STR_FRAG_GRENADE_DRUM
+      - STR_KRAK_GRENADE_DRUM
+      - STR_INCENDIARY_GRENADE_DRUM
+    accuracySnap: 65
+    tuSnap: 45
+    snapRange: 20
+    battleType: 1
+    arcingShot: true
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    listOrder: 11850
+
+  - type: STR_GRENADE_LAUNCHER_CHAOS
+    requires:
+      - STR_ALIENS_ONLY
+    categories: [STR_CAT_ROCKETL]
+    size: 0.4
+    dropoff: 5
+    #costBuy: 10000
+    costSell: 2000
+    weight: 15
+    bigSprite: 1120
+    floorSprite: 1120
+    handSprite: 1904
+    bulletSprite: 0
+    fireSound: 4
+    compatibleAmmo:
+      - STR_FRAG_GRENADE_DRUM
+      - STR_KRAK_GRENADE_DRUM
+      - STR_INCENDIARY_GRENADE_DRUM
+    accuracySnap: 65
+    tuSnap: 45
+    snapRange: 20
+    battleType: 1
+    arcingShot: true
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    listOrder: 11855
+
+  - type: STR_FRAG_GRENADE_DRUM
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    categories: [STR_CAT_ROCKETL]
+    size: 0.1
+    costBuy: 800
+    costSell: 600
+    weight: 5
+    bigSprite: 1006
+    floorSprite: 1006
+    handSprite: 1048
+    power: 60
+    damageType: 3
+    clipSize: 6
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 30
+    listOrder: 11860
+
+  - type: STR_KRAK_GRENADE_DRUM
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    categories: [STR_CAT_ROCKETL]
+    size: 0.1
+    costBuy: 800
+    costSell: 600
+    weight: 5
+    bigSprite: 1007
+    floorSprite: 1007
+    handSprite: 1048
+    power: 80
+    damageType: 3
+    clipSize: 6
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    blastRadius: 1
+    listOrder: 11870
+
+  - type: STR_INCENDIARY_GRENADE_DRUM
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    categories: [STR_CAT_ROCKETL]
+    size: 0.1
+    costBuy: 800
+    costSell: 600
+    weight: 5
+    bigSprite: 1008
+    floorSprite: 1008
+    handSprite: 1048
+    power: 50
+    damageType: 2
+    clipSize: 6
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 30
+    listOrder: 11880
+
+  - type: STR_PHOTON_GRENADE
+    categories: [ STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    requiresBuy:
+      - STR_PHOTON_GRENADE_REQUISITION
+    size: 0.1
+    costBuy: 12000
+    costSell: 6000
+    weight: 4
+    bigSprite: 1009
+    floorSprite: 1009
+    handSprite: 1072
+    bulletSprite: 21
+    tuAimed: 35
+    accuracyAimed: 100
+    maxRange: 12
+    arcingShot: true
+    clipSize: 1
+    accuracyMultiplier:
+      firing: 0.0
+      throwing: 1.0
+    power: 50
+    damageType: 6
+    damageAlter:
+      ArmorEffectiveness: 0.5
+      ToStun: 0.2
+      ToTime: 0.8
+      RadiusReduction: 5.0
+    blastRadius: 3
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    experienceTrainingMode: 7 #throwing
+    listOrder: 13660
+
+#*** Sentinel stuff ***
+  - type: STR_GUARD_ARMORS_SENTINEL_MISSILE
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_MIDTIER
+    size: 2
+    costBuy: 420000
+    costSell: 184000
+    transferTime: 50
+    listOrder: 6810
+
+  - type: STR_SENTINEL_MISSILE_LAUNCHER
+    weight: 0
+    bigSprite: 1070
+    bulletSprite: 0
+    fireSound: 52
+    compatibleAmmo:
+      - STR_SENTINEL_FRAG_MISSILES
+      - STR_SENTINEL_KRAKK_MISSILES
+    accuracyAimed: 115
+    accuracySnap: 55
+    accuracyAuto: 40
+    tuAimed: 75
+    tuSnap: 55
+    tuAuto: 90
+    dropoff: 5
+    autoShots: 4
+    sprayWaypoints: 2
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+
+  - type: STR_SENTINEL_FRAG_MISSILES
+    categories: [STR_CAT_AUXILIARY]
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_MIDTIER
+    costBuy: 2400
+    costSell: 1920
+    size: 0.5
+    weight: 20
+    bigSprite: 1071
+    floorSprite: 1071
+    handSprite: 816
+    hitSound: 0
+    hitAnimation: 0
+    power: 100
+    damageType: 3
+    clipSize: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    listOrder: 6820
+
+  - type: STR_SENTINEL_KRAKK_MISSILES
+    categories: [STR_CAT_AUXILIARY]
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_MIDTIER
+    costBuy: 3600
+    costSell: 2840
+    bigSprite: 1072
+    floorSprite: 1072
+    handSprite: 816
+    size: 0.5
+    weight: 20
+    #hitSound: 19
+    #hitAnimation: 36
+    power: 150
+    damageType: 3
+    blastRadius: 1
+    clipSize: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    listOrder: 6830
+
+  - type: STR_GUARD_ARMORS_SENTINEL_AUTOCANNON
+    size: 2
+    #costBuy: 420000
+    costSell: 184000
+    transferTime: 50
+    listOrder: 6840
+
+  - type: STR_SENTINEL_AUTOCANNON
+    weight: 0
+    bigSprite: 1060 #1073
+    bulletSprite: 6
+    fireSound: 12
+    compatibleAmmo:
+      - STR_AUTOCANNON_CLIP
+    accuracyAuto: 75
+    tuAuto: 45
+    dropoff: 3
+    autoRange: 30
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+
+  - type: STR_GUARD_ARMORS_SENTINEL_HEAVY_FLAMER
+    size: 2
+    #costBuy: 420000
+    costSell: 184000
+    transferTime: 50
+    listOrder: 6850
+
+  - type: STR_SENTINEL_HEAVY_FLAMER
+    weight: 0
+    bigSprite: 1074
+    bulletSprite: 5
+    fireSound: 706
+    compatibleAmmo:
+      - STR_HFLAMER_CLIP
+    accuracyAuto: 20
+    accuracySnap: 30
+    tuSnap: 15
+    tuAuto: 45
+    dropoff: 5
+    autoRange: 10
+    snapRange: 10
+    maxRange: 20
+    autoShots: 4
+    battleType: 1
+    arcingShot: true
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+
+  - type: STR_GUARD_ARMORS_SENTINEL_MULTIMELTA
+    size: 2
+    #costBuy: 420000
+    costSell: 184000
+    transferTime: 50
+    listOrder: 6860
+
+  - type: STR_SENTINEL_MULTIMELTA
+    weight: 0
+    bigSprite: 1075
+    bulletSprite: 16
+    bulletSpeed: 100
+    fireSound: 739
+    #compatibleAmmo:
+    #  - STR_BLASTER_BOMB
+    accuracySnap: 80
+    tuSnap: 55
+    confSnap:
+      shots: 2
+    dropoff: 5
+    battleType: 1
+    clipSize: -1
+    hitSound: 19
+    hitAnimation: 110
+    power: 10
+    damageType: 11
+    damageAlter: #DA MELTA Double
+      RandomType: 0
+      ToArmorPre: 1.0
+      ToHealth: 1.6
+      ToTile: 6.0
+      ToWound: 0.05
+      RandomWound: false
+      TileDamageMethod: 2
+    shotgunBehavior: 1
+    shotgunPellets: 10
+    shotgunSpread: 0
+    powerRangeReduction: 0.5
+    powerRangeThreshold: 16.0
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+
+  - type: INV_NULL_SENTINEL_LH
+    bigSprite: 1201
+    invWidth: 2
+    invHeight: 3
+    weight: 0
+    fixedWeapon: true
+    recover: false
+    defaultInventorySlot: STR_LEFT_HAND
+
+  - type: INV_NULL_SENTINEL_BACK_LASER
+    bigSprite: 1202
+    invWidth: 3
+    invHeight: 3
+    weight: 0
+    fixedWeapon: true
+    recover: false
+    defaultInventorySlot: STR_BACK_PACK
+
+  - type: INV_NULL_SENTINEL_BACK_MISSILE
+    bigSprite: 1203
+    invWidth: 3
+    invHeight: 3
+    weight: 0
+    fixedWeapon: true
+    recover: false
+    defaultInventorySlot: STR_BACK_PACK
+
+  - type: INV_NULL_SENTINEL_BACK_AUTOCANNON
+    bigSprite: 1207
+    invWidth: 3
+    invHeight: 3
+    weight: 0
+    fixedWeapon: true
+    recover: false
+    defaultInventorySlot: STR_BACK_PACK
+
+  - type: INV_NULL_SENTINEL_BACK_HEAVY_FLAMER
+    bigSprite: 1208
+    invWidth: 3
+    invHeight: 3
+    weight: 0
+    fixedWeapon: true
+    recover: false
+    defaultInventorySlot: STR_BACK_PACK
+
+  - type: INV_NULL_SENTINEL_BACK_MULTIMELTA
+    bigSprite: 1209
+    invWidth: 3
+    invHeight: 3
+    weight: 0
+    fixedWeapon: true
+    recover: false
+    defaultInventorySlot: STR_BACK_PACK
+
+  - type: INV_NULL_SENTINEL_BELT
+    bigSprite: 1204
+    invWidth: 4
+    invHeight: 3
+    weight: 0
+    fixedWeapon: true
+    recover: false
+    defaultInventorySlot: STR_BELT
+
+  - type: INV_NULL_SENTINEL_LL
+    bigSprite: 1205
+    invWidth: 2
+    invHeight: 1
+    weight: 0
+    fixedWeapon: true
+    recover: false
+    defaultInventorySlot: STR_LEFT_LEG
+
+#*** Mounted Armors ***
+  - type: STR_MOUNTED_LASCANNON
+    dropoff: 5
+    weight: 100
+    bigSprite: 1062
+    bulletSprite: 12
+    fireSound: 742
+    compatibleAmmo:
+      - STR_LASCANNON_CLIP_SMALL
+      - STR_LASCAN_CLIP
+    accuracySnap: 60
+    accuracyAimed: 94
+    tuSnap: 55
+    tuAimed: 90
+    tuLoad: 5
+    battleType: 1
+    invWidth: 2
+    invHeight: 3
+    bulletSpeed: 100
+    fixedWeapon: true
+    recover: false
+    listOrder: 6910
+
+  - type: STR_AUTOCANNON_GUARD
+    weight: 100
+    bigSprite: 1060
+    bulletSprite: 6
+    fireSound: 12
+    compatibleAmmo:
+      - STR_AUTOCANNON_CLIP
+    accuracyAuto: 75
+    tuAuto: 45
+    dropoff: 3
+    battleType: 1
+    #twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    autoRange: 40
+    autoShots: 3
+    bulletSpeed: 50
+    fixedWeapon: true
+    recover: false
+    listOrder: 6920
+
+  - type: STR_AUTOCANNON_CLIP
+    categories: [STR_CAT_AUXILIARY, STR_CAT_AUTO]
+    size: 0.3
+    costSell: 1000
+    weight: 15
+    bigSprite: 1061
+    floorSprite: 1061
+    handSprite: 1488
+    hitSound: 13
+    hitAnimation: 26
+    power: 110
+    damageType: 1
+    clipSize: 60
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    damageAlter: #DA BOLTER
+      ToArmorPre: 0.05
+      ArmorEffectiveness: 0.9
+      ToArmor: 0.1
+      ToHealth: 1.0
+      ToStun: 0.5
+    bulletSpeed: 50
+    explosionSpeed: 5
+    armor: 30
+    listOrder: 6930
+
+#*** Commissar armors ***
+  - type: STR_GUARD_PRIMER
+    categories: [STR_CAT_SPELLS]
+    specialIconSprite: 101
+    fireSound: 787
+    hitSound: [1110, 1111, 1112, 1113, 1114, 1115, 1116, 1117, 1118, 1119, 1120, 1121]
+    hitAnimation: 1100
+    power: 10
+    damageBonus:
+      bravery: 0.5
+    damageType: 10
+    damageAlter:
+      RandomType: 3
+      ArmorEffectiveness: 0.25
+      ToStun: 0.1
+      ToMorale: -1.00
+      ToTime: -1.00
+      ToHealth: 0.0
+      ToWound: 0.0
+      ToArmor: 0.0
+    confAimed:
+      name: STR_INSPIRE
+    costAimed:
+      time: 25
+      energy: 30
+    accuracyAimed: 100
+    accuracyMultiplier:
+      firing: 0.0
+      bravery: 2.2
+    maxRange: 16
+    powerRangeThreshold: 2
+    powerRangeReduction: 4.0
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+    flatRate: true
+    clipSize: -1
+    experienceTrainingMode: 19
+    #*** Melee bayonet
+    specialUseEmptyHand: true
+    meleeHitSound: 101
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 40
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+    meleeAlter:
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 70
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 10
+    flatMelee:
+      time: true
+
+  - type: STR_COMMISSAR
+    name: STR_COMMISSAR_CORPSE
+    recover: false
+    weight: 25
+    bigSprite: 1300
+    floorSprite: 1300
+    invWidth: 2
+    invHeight: 3
+    armor: 26
+    battleType: 11
+
+  - type: STR_COMMISSAR_CARAPACE
+    requiresBuy:
+      - STR_IMPERIAL_GUARD_MIDTIER
+    size: 0.4
+    listOrder: 7350
+    costBuy: 50000
+    costSell: 25000
+    transferTime: 10
+    weight: 10
+
+  - type: STR_COMMISSAR_CARAPACE_CORPSE
+    name: STR_COMMISSAR_CORPSE
+    recover: false
+    weight: 25
+    bigSprite: 1333
+    floorSprite: 1333
+    invWidth: 2
+    invHeight: 3
+    armor: 26
+    battleType: 11
+
+#*** Imperial guard medic armor ***
+  - type: STR_GUARD_ARMORS_MEDIC
+    requiresBuy:
+      - STR_GUARD_SUPORT
+    size: 0.2
+    costBuy: 15000
+    costSell: 7500
+    transferTime: 10
+    listOrder: 6660
+  - type: STR_MEDIC_CARAPACE_ARMOR
+    requiresBuy:
+      - STR_GUARD_SUPORT
+    size: 0.2
+    costBuy: 35000
+    costSell: 12500
+    transferTime: 10
+    listOrder: 6661
+
+  - type: STR_GUARD_MEDI_KIT
+    weight: 10
+    battleType: 6
+    painKiller: 20
+    heal: 20
+    stimulant: 20
+    woundRecovery: 1
+    healthRecovery: 3
+    stunRecovery: 4
+    energyRecovery: 10
+    tuUse: 10
+    experienceTrainingMode: 19
+    medikitTargetSelf: false
+    flatRate: true
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 100
+    #*** Melee bayonet
+    specialUseEmptyHand: true
+    meleeHitSound: 101
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 40
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+    meleeAlter:
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 70
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 10
+    flatMelee:
+      time: true
+    clipSize: -1
+
+  - type: INV_NULL_MEDI_KIT
+    weight: 0
+    invWidth: 3
+    invHeight: 3
+    bigSprite: 1206
+    defaultInventorySlot: STR_BACK_PACK
+    fixedWeapon: true
+    recover: false
+
+#*** Tanith Camo armors ***
+  - type: STR_TANITH_CAMO_ARMOR
+    size: 0.2
+    costSell: 24000
+    transferTime: 10
+    listOrder: 6665
+
+  - type: STR_TANITH_MEDIC_ARMOR
+    size: 0.2
+    costSell: 24000
+    transferTime: 10
+    listOrder: 6666
+
+  - type: STR_TANITH_CAMO_CORPSE
+    name: STR_GUARD_CORPSE
+    weight: 25
+    bigSprite: 1332
+    floorSprite: 1332
+    invWidth: 2
+    invHeight: 3
+    armor: 26
+    battleType: 11
+    recover: false
+
+  - type: STR_TANITH_STRAIGHT_SILVER # melee weapon for tanith camo
+    weight: 0
+    specialIconSprite: 106
+    specialUseEmptyHand: true
+    meleeHitSound: 101
+    meleeAnimation: 0
+    damageType: 7
+    power: 45
+    damageBonus:
+      strength: 0.2
+      melee: 0.25
+    damageAlter:
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 85
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 10
+    flatMelee:
+      time: true
+    fixedWeapon: true
+    recover: false
+    battleType: 3
+    clipSize: -1
+    experienceTrainingMode: 13
+
+  - type: STR_TANITH_MEDI_KIT
+    weight: 10
+    battleType: 6
+    painKiller: 20
+    heal: 20
+    stimulant: 20
+    woundRecovery: 1
+    healthRecovery: 3
+    stunRecovery: 4
+    energyRecovery: 10
+    tuUse: 10
+    experienceTrainingMode: 19
+    medikitTargetSelf: false
+    flatRate: true
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 100
+    #*** Melee bayonet
+    specialUseEmptyHand: true
+    meleeHitSound: 101
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 45
+    meleeBonus:
+      strength: 0.25
+      melee: 0.2
+    meleeAlter:
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 85
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 10
+    flatMelee:
+      time: true
+    clipSize: -1
+
+#*** Mounted weapon armors ***
+  - type: STR_GUARD_ARMORS_MOUNTED_LASCANNON
+    size: 2
+    costSell: 240000
+    transferTime: 50
+    listOrder: 6910
+
+  - type: STR_GUARD_ARMORS_MOUNTED_AUTOCANNON
+    size: 2
+    costSell: 240000
+    transferTime: 50
+    listOrder: 6920
+
+  - type: INV_NULL_MOUNT_WHEEL
+    weight: 0
+    invWidth: 2
+    invHeight: 1
+    bigSprite: 1200
+    defaultInventorySlot: STR_LEFT_LEG
+    fixedWeapon: true
+    recover: false
+
+  - type: GUARD_MOUNT_CORPSE1
+    floorSprite: 1307
+    invWidth: 0
+    invHeight: 0
+    weight: 120
+    battleType: 11
+    recover: false
+
+  - type: GUARD_MOUNT_CORPSE2
+    floorSprite: 1308
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+  - type: GUARD_MOUNT_CORPSE3
+    floorSprite: 1309
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+  - type: GUARD_MOUNT_CORPSE4
+    floorSprite: 1310
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+#*** Guard officer armors ***
+  - type: STR_REGIMENT_COMMISSIONS
+    size: 0.0
+    costSell: 0
+
+  - type: STR_OFFICER_COMMISSION
+    size: 0.0
+    costSell: 0
+
+  - type: STR_OFFICER_BASIC_VOX
+    bulletSprite: 22
+    fireSound: 491
+    damageType: 3
+    power: 150
+    tuAimed: 40
+    accuracyAimed: 110
+    accuracyMultiplier:
+      firing: 0.0
+      flatHundred: 1.0
+    confAimed:
+      name: STR_CALL_AIRSTRIKE
+    clipSize: 1
+    battleType: 1
+    arcingShot: true
+    bulletSpeed: -10
+    minRange: 5
+    dropoff: 0
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 103
+    #*** Melee bayonet
+    specialUseEmptyHand: true
+    meleeHitSound: 101
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 40
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+    meleeAlter:
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 70
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 10
+    flatMelee:
+      time: true
+
+  - type: STR_TRANSFORMED_ARMOR # used to disable armors for transformations, e.g. for disabling airstrikes underground
+
+  - type: STR_OFFICERS_SWORD
+    categories: [STR_CAT_MELEE]
+    size: 0.2
+    costSell: 3750
+    weight: 7
+    bigSprite: 1040
+    floorSprite: 1040
+    handSprite: 1320
+    explosionHitSound: [1110, 1111, 1112, 1113, 1114, 1115, 1116, 1117, 1118, 1119, 1120, 1121]
+    hitAnimation: 96
+    power: 0
+    damageBonus:
+      bravery: 0.25
+      rank: [0.0, 2.5]
+    damageType: 6
+    damageAlter:
+      ResistType: 10
+      RandomType: 3
+      ArmorEffectiveness: 0.0
+      ToStun: 0.1
+      ToMorale: -1.00
+      ToTime: -1.00
+      ToHealth: 0.0
+      ToWound: 0.0
+      RadiusReduction: 0.0
+      FixRadius: 3
+    confAimed:
+      name: STR_INSPIRE
+    costAimed:
+      time: 60
+      energy: 75
+      morale: 15
+    flatAimed:
+      time: true
+    accuracyAimed: 100
+    accuracyMultiplier:
+      firing: 0.0
+      bravery: 1.4
+      rank: [0.0, 2.0]
+    arcingShot: true
+    maxRange: 12
+    bulletSpeed: 80
+    experienceTrainingMode: 19
+    meleeHitSound: 101
+    meleeAnimation: 0
+    meleePower: 70
+    meleeType: 7
+    accuracyMelee: 110
+    meleeMultiplier:
+      flatHundred: 0.0
+      melee: 1.0
+    tuMelee: 12
+    flatMelee: true
+    clipSize: -1
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 3
+    armor: 30
+    listOrder: 12950
+
+#*** Storm Trooper armors and weapons ***
+  - type: STR_STORMTROOPER_REQUISITION
+    size: 0.0
+    costSell: 0
+
+  - type: STR_VETERAN_PROMOTION
+    size: 0.0
+    costSell: 0
+
+  - type: STR_STORMTROOPER_CORPSE
+    name: STR_STORMTROOPER_CORPSE
+    recover: false
+    weight: 30
+    bigSprite: 1331
+    floorSprite: 1331
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    battleType: 11
+
+  - type: STR_STORMTROOPER_CARAPACE_ARMOR_HELLGUN
+    size: 0.4
+    #listOrder: 20
+    #costBuy: 20000
+    costSell: 10000
+    transferTime: 10
+    listOrder: 7210
+
+  - type: INV_NULL_STORM_TROOPER_BACKPACK
+    weight: 0
+    invWidth: 3
+    invHeight: 3
+    bigSprite: 1030
+    defaultInventorySlot: STR_BACK_PACK
+    fixedWeapon: true
+    recover: false
+
+  - type: STR_HELLGUN
+    categories: [STR_CAT_LASGUN]
+    size: 0.2
+    dropoff: 5
+    weight: 9
+    bigSprite: 1032
+    floorSprite: 1032
+    handSprite: 1256
+    bulletSprite: 12
+    fireSound: 741
+    hitSound: 19
+    hitAnimation: 36
+    power: 75
+    damageType: 4
+    damageAlter:
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToHealth: 1.0
+      ToArmor: 0.0
+      ToStun: 0.0
+    accuracyAuto: 66
+    accuracySnap: 85
+    tuAuto: 34
+    tuSnap: 25
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    bulletSpeed: 50
+    recover: false
+    fixedWeapon: true
+    fixedWeaponShow: true
+    #*** Melee bayonet
+    meleeHitSound: 101
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 40
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+    meleeAlter:
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 110
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 14
+    flatMelee:
+      time: true
+
+  - type: STR_STORMTROOPER_CARAPACE_ARMOR_VOLLEYGUN
+    size: 0.4
+    #listOrder: 20
+    #costBuy: 20000
+    costSell: 10000
+    transferTime: 10
+    listOrder: 7220
+
+  - type: STR_HOTSHOT_VOLLEY_GUN
+    categories: [STR_CAT_LASGUN]
+    size: 0.2
+    dropoff: 5
+    weight: 9
+    bigSprite: 1034
+    floorSprite: 1034
+    handSprite: 1272
+    bulletSprite: 12
+    fireSound: 741
+    hitSound: 19
+    hitAnimation: 36
+    power: 75
+    damageType: 4
+    damageAlter:
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToHealth: 1.0
+      ToArmor: 0.0
+      ToStun: 0.0
+    accuracyAuto: 60
+    accuracySnap: 70
+    snapRange: 13
+    autoRange: 13
+    tuAuto: 30
+    tuSnap: 25
+    confAuto:
+      shots: 4
+    confSnap:
+      shots: 2
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    bulletSpeed: 50
+    recover: false
+    fixedWeapon: true
+    fixedWeaponShow: true
+
+#*** Ogryn armors and weapons ***
+  - type: STR_OGRYN_UNARMED
+    weight: 0
+    specialIconSprite: 104
+    specialUseEmptyHand: true
+    meleeHitSound: 100
+    meleeAnimation: 0
+    power: 12
+    damageType: 6
+    damageBonus:
+      strength: 0.4
+      melee: 0.2
+    damageAlter:
+      RandomType: 1
+      FixRadius: 0
+      IgnoreDirection: false
+      ToHealth: 0.5
+    accuracyMelee: 90
+    tuMelee: 12
+    flatMelee:
+      time: true
+    fixedWeapon: true
+    recover: false
+    battleType: 3
+    clipSize: -1
+
+  - type: STR_OGRYN_CORPSE
+    name: STR_OGRYN_CORPSE
+    recover: true
+    recoverCorpse: false
+    weight: 60
+    bigSprite: 1301
+    floorSprite: 1301
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    battleType: 11
+
+  - type: STR_OGRYN_CARAPACE
+    size: 0.6
+    costSell: 45000
+    listOrder: 7500
+
+  - type: STR_OGRYN_CARAPACE_CORPSE
+    name: STR_OGRYN_CORPSE
+    recover: false
+    recoverCorpse: false
+    weight: 70
+    bigSprite: 1302
+    floorSprite: 1302
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    battleType: 11
+
+  - type: STR_RIPPER_GUN
+    categories: [STR_CAT_SHOTGUN]
+    requiresBuy:
+      - STR_OGRYN_REQUISITION
+    size: 0.6
+    dropoff: 5
+    costBuy: 18000
+    costSell: 7500
+    weight: 50
+    bigSprite: 1050
+    floorSprite: 1050
+    handSprite: 1400
+    bulletSprite: 2
+    fireSound: 755
+    compatibleAmmo:
+      - STR_RIPPER_GUN_CLIP
+    accuracyMultiplier:
+      firing: 0.0
+      strength: 1.0
+    accuracyAuto: 45
+    tuAuto: 30
+    accuracySnap: 60
+    tuSnap: 25
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 75
+    invWidth: 2
+    invHeight: 3
+    armor: 60
+    autoRange: 10
+    snapRange: 12
+    #*** Melee club
+    meleeHitSound: 100
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 30
+    meleeBonus:
+      strength: 0.6
+      melee: 0.1
+    meleeAlter:
+      ToStun: 0.5
+    accuracyMelee: 100
+    meleeMultiplier:
+      strength: 0.5
+      melee: 0.5
+    tuMelee: 14
+    flatMelee:
+      time: true
+    listOrder: 10780
+
+  - type: STR_RIPPER_GUN_CLIP
+    categories: [STR_CAT_SHOTGUN]
+    requiresBuy:
+      - STR_OGRYN_REQUISITION
+    shotgunBehavior: 1
+    shotgunSpread: 35
+    size: 0.3
+    costBuy: 2000
+    costSell: 600
+    weight: 10
+    bigSprite: 1051
+    floorSprite: 1051
+    handSprite: 1408
+    hitSound: 22
+    hitAnimation: 26
+    power: 50
+    damageType: 1
+    clipSize: 24
+    battleType: 2
+    shotgunPellets: 6
+    damageAlter:
+      ToArmorPre: 0.02
+    invWidth: 2
+    invHeight: 1
+    listOrder: 10790
+
+  - type: STR_BULLGRYN_ARMOR
+    size: 0.6
+    costSell: 72000
+    listOrder: 7600
+
+  - type: STR_SLAB_SHIELD
+    weight: 20
+    invWidth: 2
+    invHeight: 3
+    bigSprite: 1052
+    handSprite: 1416
+    meleeHitSound: 100
+    meleeAnimation: 0
+    power: 20
+    damageType: 7
+    damageBonus:
+      strength: 0.8
+      melee: 0.2
+    damageAlter:
+      ToStun: 0.6
+    accuracyMelee: 80
+    meleeMultiplier:
+      strength: 0.5
+      melee: 0.5
+    tuMelee: 18
+    flatMelee:
+      time: true
+    clipSize: -1
+    battleType: 3
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+    defaultInventorySlot: STR_LEFT_HAND
+
+  - type: STR_BUCKLER
+    weight: 10
+    invWidth: 2
+    invHeight: 2
+    bigSprite: 1053
+    handSprite: 1424
+    meleeHitSound: 100
+    meleeAnimation: 0
+    power: 20
+    damageType: 7
+    damageBonus:
+      strength: 0.5
+      melee: 0.2
+    damageAlter:
+      ToStun: 0.6
+    accuracyMelee: 105
+    meleeMultiplier:
+      strength: 0.5
+      melee: 0.5
+    tuMelee: 15
+    flatMelee:
+      time: true
+    clipSize: -1
+    battleType: 3
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+    defaultInventorySlot: STR_LEFT_HAND
+
+#*** Psyker gear ***
+  - type: STR_PSYKER_REQUISITION
+    size: 0.0
+    costSell: 0
+
+  - type: STR_PSYKER_STAFF
+    invWidth: 2
+    invHeight: 3
+    bigSprite: 1100
+    handSprite: 1800
+    meleeHitSound: 100
+    meleeAnimation: 0
+    weight: 5
+    power: 20
+    damageType: 7
+    damageBonus:
+      strength: 0.5
+      melee: 0.2
+      psiSkill: 0.2
+      psiStrength: 0.1
+    damageAlter:
+      RandomType: 2
+      ToStun: 0.6
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 105
+    meleeMultiplier:
+      strength: 0.5
+      melee: 0.5
+      psiStrength: 1.0
+    tuMelee: 15
+    flatMelee:
+      time: true
+    clipSize: -1
+    battleType: 3
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+
+  - type: STR_BIOMANCER_STAFF
+    invWidth: 2
+    invHeight: 3
+    bigSprite: 1101
+    handSprite: 1800
+    bulletSpeed: 30
+    weight: 5
+    costSnap:
+      time: 35
+      energy: 15
+      morale: 5
+    accuracySnap: 100
+    accuracyMultiplier:
+      firing: 0.0
+      psiStrength: 0.5
+      psiSkill: 0.5
+    dropoff: 5
+    costMelee:
+      time: 30
+      energy: 20
+      morale: 5
+    accuracyMelee: 100
+    meleeMultiplier:
+      flatHundred: 1.0
+    confSnap:
+      ammoSlot: 0
+      name: STR_PSYKER_LIGHTNING_STRIKE
+    confMelee:
+      ammoSlot: 1
+      name: STR_HEALING_TOUCH
+    ammo:
+      0:
+        compatibleAmmo:
+          - STR_PSYKER_LIGHTNING_STRIKE
+      1:
+        compatibleAmmo:
+          - STR_HEALING_TOUCH
+    clipSize: -1
+    battleType: 1
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+    experienceTrainingMode: 28
+
+  - type: STR_PSYKER_LIGHTNING_STRIKE
+    invWidth: 2
+    invHeight: 3
+    bigSprite: 1101
+    bulletSprite: 17
+    hitSound: 864
+    hitAnimation: 1110
+    weight: 0
+    damageType: 5
+    power: 0
+    damageBonus:
+      psiStrength: 1.0
+    damageAlter:
+      RandomType: 6
+      ArmorEffectiveness: 0.5
+      ToArmor: 0.0
+      ToStun: 0.2
+      ToEnergy: 0.1
+    powerRangeThreshold: 5.0
+    powerRangeReduction: 8.0
+    clipSize: -1
+    battleType: 2
+
+  - type: STR_HEALING_TOUCH # add script for dealing with wounds?
+    invWidth: 2
+    invHeight: 3
+    bigSprite: 1101
+    meleeAnimation: 28 # replace with more healing-looking?
+    meleeHitSound: 775
+    weight: 0
+    meleeType: 0
+    power: 0
+    meleeBonus:
+      psiStrength: 0.1
+    meleeAlter:
+      RandomType: 2
+      ArmorEffectiveness: 0.0
+      ToArmor: 0.0
+      ToStun: 0.0
+      ToHealth: -1.0
+      ToWound: -0.03
+      RandomWound: false
+    clipSize: -1
+    battleType: 2
+
+  - type: STR_PYROMANCER_STAFF
+    invWidth: 2
+    invHeight: 3
+    bigSprite: 1102
+    handSprite: 1800
+    fireSound: 706
+    bulletSpeed: 30
+    weight: 5
+    costSnap:
+      time: 35
+      energy: 15
+      morale: 5
+    costAuto:
+      time: 45
+      energy: 20
+      morale: 5
+    accuracySnap: 100
+    accuracyAuto: 100
+    accuracyMultiplier:
+      firing: 0.0
+      psiStrength: 0.5
+      psiSkill: 0.5
+    dropoff: 5
+    costMelee:
+      time: 15
+      energy: 5
+    accuracyMelee: 105
+    meleePower: 20
+    meleeType: 7
+    meleeAnimation: 20
+    meleeHitSound: 100
+    meleeBonus:
+      strength: 0.5
+      melee: 0.2
+      psiSkill: 0.2
+      psiStrength: 0.1
+    meleeAlter:
+      RandomType: 2
+      ResistType: 2
+      FireThreshold: 10
+      ToMorale: 0.5
+      ToStun: 0.0
+    confSnap:
+      ammoSlot: 0
+      name: STR_PSYKER_FLAME_STRIKE
+    confAuto:
+      ammoSlot: 1
+      name: STR_DOUSE_FLAMES
+      shots: 1
+    ammo:
+      0:
+        compatibleAmmo:
+          - STR_PSYKER_FLAME_STRIKE
+      1:
+        compatibleAmmo:
+          - STR_DOUSE_FLAMES
+    clipSize: -1
+    battleType: 1
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+    experienceTrainingMode: 28
+
+  - type: STR_PSYKER_FLAME_STRIKE
+    invWidth: 2
+    invHeight: 3
+    bigSprite: 1102
+    bulletSprite: 19
+    hitSound: 12
+    hitAnimation: 88
+    weight: 0
+    damageType: 2
+    power: 0
+    damageBonus:
+      psiStrength: 0.5
+    damageAlter:
+      RandomType: 2
+      ToMorale: 0.5
+    clipSize: -1
+    battleType: 2
+
+  - type: STR_DOUSE_FLAMES # set tooMuchSmokeThreshold
+    invWidth: 2
+    invHeight: 3
+    bigSprite: 1102
+    hitAnimation: 104
+    weight: 0
+    damageType: 9
+    power: 40
+    isFireExtinguisher: true
+    clipSize: -1
+    battleType: 2
+
+  - type: STR_TELEKINE_STAFF
+    invWidth: 2
+    invHeight: 3
+    bigSprite: 1103
+    handSprite: 1800
+    fireSound: 778
+    bulletSprite: 14
+    bulletSpeed: 30
+    weight: 5
+    costSnap:
+      time: 35
+      energy: 15
+      morale: 5
+    costAuto:
+      time: 45
+      energy: 20
+      morale: 5
+    accuracySnap: 100
+    accuracyAuto: 200
+    accuracyMultiplier:
+      firing: 0.0
+      psiStrength: 0.5
+      psiSkill: 0.5
+    dropoff: 5
+    autoRange: 200
+    costMelee:
+      time: 15
+      energy: 5
+    accuracyMelee: 105
+    meleePower: 20
+    meleeType: 7
+    meleeAnimation: 0
+    meleeHitSound: 100
+    meleeBonus:
+      strength: 0.5
+      melee: 0.2
+      psiSkill: 0.3
+      psiStrength: 0.15
+    meleeAlter:
+      RandomType: 2
+      ResistType: 6
+      ToStun: 1.0
+      RandomWound: False
+      ToWound: 0.05
+    confSnap:
+      ammoSlot: 0
+      name: STR_PSYKER_STUN_STRIKE
+    confAuto:
+      ammoSlot: 1
+      name: STR_TELEKINETIC_SHIELD
+      shots: 1
+    ammo:
+      0:
+        compatibleAmmo:
+          - STR_PSYKER_STUN_STRIKE
+      1:
+        compatibleAmmo:
+          - STR_TELEKINETIC_SHIELD
+    clipSize: -1
+    battleType: 1
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+    experienceTrainingMode: 28
+
+  - type: STR_PSYKER_STUN_STRIKE
+    invWidth: 2
+    invHeight: 3
+    bigSprite: 1103
+    hitSound: 100
+    hitAnimation: 130
+    weight: 0
+    damageType: 6
+    power: 0
+    damageBonus:
+      psiStrength: 1.0
+    damageAlter:
+      RandomType: 1
+      ArmorEffectiveness: 0.75
+      IgnoreDirection: false
+      ToHealth: 0.2
+      RandomWound: true
+      FixRadius: 0
+    clipSize: -1
+    battleType: 2
+
+  - type: STR_TELEKINETIC_SHIELD
+    invWidth: 2
+    invHeight: 3
+    bigSprite: 1103
+    hitAnimation: 100
+    hitSound: 788
+    weight: 0
+    power: 0
+    damageBonus:
+      psiStrength: 1.0
+    damageType: 0
+    damageAlter:
+      RandomType: 3
+      ToArmor: 0.0
+      ToStun: 0.0
+      ToHealth: 0.0
+      ToWound: 0.0
+      ArmorEffectiveness: 0.0
+    clipSize: -1
+    battleType: 2
+
+  - type: STR_TELEPATH_STAFF
+    invWidth: 2
+    invHeight: 3
+    bigSprite: 1104
+    handSprite: 1800
+    hitSound: 36
+    clipSize: -1
+    battleType: 9
+    costPanic:
+      time: 25
+      energy: 10
+      morale: 5
+    costMindControl:
+      time: 35
+      energy: 20
+      morale: 10
+    flatRate: true
+    LOSRequired: true
+    costMelee:
+      time: 15
+      energy: 5
+    accuracyMelee: 105
+    meleePower: 20
+    meleeType: 7
+    meleeAnimation: 0
+    meleeHitSound: 100
+    meleeBonus:
+      strength: 0.5
+      melee: 0.2
+      psiSkill: 0.2
+      psiStrength: 0.1
+    meleeAlter:
+      RandomType: 2
+      ToStun: 0.6
+      ToMorale: 5.0
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+
+  - type: STR_MIND_READ
+    weight: 0
+    battleType: 8
+    hitSound: 37
+    costUse:
+      time: 20
+      energy: 5
+    LOSRequired: true
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 105
+    specialUseEmptyHand: true
+
+  - type: STR_PSYKER_SPELL
+    weight: 0
+    battleType: 9
+    hitSound: 743
+    hitAnimation: 96
+    costUse:
+      time: 20
+      energy: 10
+      morale: 5
+    costPanic:
+      time: 0
+    costMindControl:
+      time: 0
+    flatUse:
+      time: true
+    accuracyUse: 100
+    psiAttackName: STR_BLINDING_FLASH
+    dropoff: 0
+    LOSRequired: true
+    powerRangeThreshold: 10.0
+    powerRangeReduction: 5.0
+    damageType: 6
+    power: 0
+    damageBonus:
+      psiStrength: 1.0
+    blastRadius: 5
+    damageAlter:
+      RandomType: 6
+      ArmorEffectiveness: 0.25
+      ToTime: 1.0
+      ToEnergy: 0.6
+      ToStun: 0.2
+      ToMorale: 0.2
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 105
+    specialUseEmptyHand: true
+    clipSize: -1
+
+  - type: STR_PSYKER
+    name: STR_PSYKER_CORPSE
+    recover: false
+    weight: 25
+    bigSprite: 1319
+    floorSprite: 1319
+    invWidth: 2
+    invHeight: 3
+    armor: 26
+    battleType: 11
+
+#*** Vehicle turrets spawned on maps ***
+  - type: STR_CHIMERA_TURRET_SPAWNER
+    spawnUnit: STR_CHIMERA_TURRET
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+
+  - type: STR_TAUROX_TURRET_SPAWNER
+    spawnUnit: STR_TAUROX_TURRET
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+
+  - type: STR_TAUROS_TURRET_SPAWNER
+    spawnUnit: STR_TAUROS_TURRET
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+
+  - type: STR_TAUROS_SMALL_TURRET_SPAWNER
+    spawnUnit: STR_TAUROS_SMALL_TURRET
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+
+  - type: STR_GORGON_HEAVY_FLAMER_FRONT_LEFT_SPAWNER
+    spawnUnit: STR_GORGON_HEAVY_FLAMER_FRONT_LEFT
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+
+  - type: STR_GORGON_HEAVY_FLAMER_BACK_LEFT_SPAWNER
+    spawnUnit: STR_GORGON_HEAVY_FLAMER_BACK_LEFT
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+
+  - type: STR_GORGON_HEAVY_FLAMER_FRONT_RIGHT_SPAWNER
+    spawnUnit: STR_GORGON_HEAVY_FLAMER_FRONT_RIGHT
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+
+  - type: STR_GORGON_HEAVY_FLAMER_BACK_RIGHT_SPAWNER
+    spawnUnit: STR_GORGON_HEAVY_FLAMER_BACK_RIGHT
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+
+  - type: STR_GORGON_HEAVY_STUBBER_LEFT_SPAWNER
+    spawnUnit: STR_GORGON_HEAVY_STUBBER_LEFT
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+
+  - type: STR_GORGON_HEAVY_STUBBER_RIGHT_SPAWNER
+    spawnUnit: STR_GORGON_HEAVY_STUBBER_RIGHT
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+
+  - type: STR_MULTI_LASER
+    size: 1.0
+    weight: 100
+    bigSprite: 1081
+    bulletSprite: 12
+    fireSound: 742
+    hitSound: 19
+    hitAnimation: 36
+    bulletSpeed: 100
+    explosionSpeed: 5
+    power: 50
+    damageType: 4
+    accuracyAuto: 35
+    costAuto:
+      time: 1
+      energy: 50
+    flatUse:
+      time: true
+      energy: true
+    autoRange: 20
+    autoShots: 10
+    sprayWaypoints: 2
+    dropoff: 5
+    battleType: 1
+    damageAlter:
+      ToArmorPre: 0.2
+      ToHealth: 1.0
+      ToArmor: 0.0
+      ToStun: 0.0
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+
+  - type: STR_AUTOCANNON_TAUROX
+    weight: 85
+    bigSprite: 1060
+    bulletSprite: 6
+    fireSound: 12
+    compatibleAmmo:
+      - STR_AUTOCANNON_CLIP
+    accuracyAuto: 50
+    costAuto:
+      time: 1
+      energy: 50
+    flatUse:
+      time: true
+      energy: true
+    dropoff: 5
+    battleType: 1
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    autoRange: 20
+    autoShots: 3
+    bulletSpeed: 50
+    fixedWeapon: true
+    recover: false
+
+  - type: STR_LASCANNON_TAUROS
+    size: 1.0
+    weight: 90
+    bigSprite: 1081
+    bulletSprite: 12
+    bulletSpeed: 100
+    fireSound: 742
+    compatibleAmmo:
+      - STR_LASCAN_CLIP
+    accuracySnap: 60
+    costSnap:
+      time: 1
+      energy: 50
+    flatUse:
+      time: true
+      energy: true
+    snapRange: 20
+    dropoff: 5
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+
+  - type: STR_GRENADE_LAUNCHER_TAUROS
+    size: 1.0
+    dropoff: 5
+    weight: 85
+    bigSprite: 1083
+    bulletSprite: 0
+    fireSound: 4
+    compatibleAmmo:
+      - STR_FRAG_GRENADE_BELT_TAUROS
+    accuracySnap: 65
+    costSnap:
+      time: 1
+      energy: 33
+    flatUse:
+      time: true
+      energy: true
+    snapRange: 20
+    battleType: 1
+    arcingShot: true
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+
+  - type: STR_FRAG_GRENADE_BELT_TAUROS
+    size: 0.3
+    weight: 15
+    bigSprite: 1082
+    power: 60
+    damageType: 3
+    clipSize: 24
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    recover: false
+
+  - type: STR_GORGON_HEAVY_FLAMER
+    dropoff: 5
+    weight: 85
+    bigSprite: 280
+    bulletSprite: 5
+    fireSound: 706
+    compatibleAmmo:
+      - STR_HFLAMER_CLIP
+    accuracyAuto: 20
+    costAuto:
+      time: 1
+      energy: 50
+    flatAuto:
+      time: true
+      energy: true
+    battleType: 1
+    arcingShot: true
+    invWidth: 2
+    invHeight: 3
+    autoRange: 10
+    snapRange: 10
+    aimRange: 10
+    maxRange: 20
+    autoShots: 4
+    bulletSpeed: 80
+    fixedWeapon: true
+    recover: false
+
+  - type: STR_GORGON_HEAVY_STUBBER
+    dropoff: 5
+    weight: 100
+    bigSprite: 1003
+    bulletSprite: 2
+    bulletSpeed: 25
+    fireSound: 4
+    accuracySnap: 60
+    tuSnap: 25
+    confSnap:
+      shots: 5
+    accuracyAuto: 60
+    tuAuto: 45
+    battleType: 1
+    invWidth: 2
+    invHeight: 3
+    snapRange: 30
+    autoRange: 25
+    autoShots: 25
+    sprayWaypoints: 2
+    hitSound: 22
+    hitAnimation: -1
+    power: 42
+    damageAlter:
+      ToArmorPre: 0.05
+      ArmorEffectiveness: 0.90
+    damageType: 1
+    clipSize: -1
+    fixedWeapon: true
+    recover: false
+
+  - type: STR_CHIMERA_TURRET_CORPSE
+    battleType: 11
+    power: 60
+    blastRadius: 2
+
+  - type: STR_CHIMERA_TURRET_CORPSE_1
+    floorSprite: 1311
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+
+  - type: STR_CHIMERA_TURRET_CORPSE_2
+    floorSprite: 1312
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+  - type: STR_CHIMERA_TURRET_CORPSE_3
+    floorSprite: 1313
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+  - type: STR_CHIMERA_TURRET_CORPSE_4
+    floorSprite: 1314
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+  - type: STR_TAUROX_TURRET_CORPSE
+    battleType: 11
+    power: 60
+    blastRadius: 2
+
+  - type: STR_TAUROX_TURRET_CORPSE_1
+    floorSprite: 1315
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+
+  - type: STR_TAUROX_TURRET_CORPSE_2
+    floorSprite: 1316
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+  - type: STR_TAUROX_TURRET_CORPSE_3
+    floorSprite: 1317
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+  - type: STR_TAUROX_TURRET_CORPSE_4
+    floorSprite: 1318
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+  - type: STR_TAUROS_TURRET_CORPSE
+    battleType: 11
+    power: 40
+    blastRadius: 2
+
+  - type: STR_TAUROS_TURRET_CORPSE_1
+    floorSprite: 1320
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+
+  - type: STR_TAUROS_TURRET_CORPSE_2
+    floorSprite: 1321
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+  - type: STR_TAUROS_TURRET_CORPSE_3
+    floorSprite: 1322
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+  - type: STR_TAUROS_TURRET_CORPSE_4
+    floorSprite: 1323
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+  - type: STR_TAUROS_SMALL_TURRET_CORPSE
+    floorSprite: 1324
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+
+  - type: STR_GORGON_HEAVY_FLAMER_FRONT_LEFT_CORPSE
+    floorSprite: 1325
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+
+  - type: STR_GORGON_HEAVY_FLAMER_BACK_LEFT_CORPSE
+    floorSprite: 1326
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+
+  - type: STR_GORGON_HEAVY_FLAMER_FRONT_RIGHT_CORPSE
+    floorSprite: 1327
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+
+  - type: STR_GORGON_HEAVY_FLAMER_BACK_RIGHT_CORPSE
+    floorSprite: 1328
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+
+  - type: STR_GORGON_HEAVY_STUBBER_LEFT_CORPSE
+    floorSprite: 1329
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+
+  - type: STR_GORGON_HEAVY_STUBBER_RIGHT_CORPSE
+    floorSprite: 1330
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+
+#*** Unit spawners for missions ***
+  - type: STR_BULLGRYN_SLAB_SPAWNER
+    spawnUnit: STR_BULLGRYN_RIOT_TEAM_SLAB
+    spawnUnitFaction: 2
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 255
+
+  - type: STR_BULLGRYN_BUCKLER_SPAWNER
+    spawnUnit: STR_BULLGRYN_RIOT_TEAM_BUCKLER
+    spawnUnitFaction: 2
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 255
+
+  - type: STR_GUARDSMAN_FEMALE_SPAWNER
+    spawnUnit: FEMALE_CIVILIAN
+    spawnUnitFaction: 2
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 255
+
+  - type: STR_GUARDSMAN_MALE_SPAWNER
+    spawnUnit: MALE_CIVILIAN
+    spawnUnitFaction: 2
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 255
+
+  - type: STR_GUARDSMAN_PILOT_SPAWNER
+    spawnUnit: STR_GUARD_PILOT
+    spawnUnitFaction: 2
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 255
+
+  - type: STR_HEAVY_GUARDSMAN_FEMALE_SPAWNER
+    spawnUnit: STR_HEAVY_GUARDSMAN_FEMALE
+    spawnUnitFaction: 2
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 255
+
+  - type: STR_HEAVY_GUARDSMAN_MALE_SPAWNER
+    spawnUnit: STR_HEAVY_GUARDSMAN_MALE
+    spawnUnitFaction: 2
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 255
+
+  - type: STR_ALLIED_MARINE_SPAWNER
+    spawnUnit: STR_MARINE
+    spawnUnitFaction: 2
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    power: 5
+    damageType: 3
+    damageAlter:
+      ToHealth: 0.0
+      ToStun: 0.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      ToTile: 0.0
+    hitAnimation: 1992
+    explosionHitSound: 26
+    armor: 255
+    recover: false
+    hiddenOnMinimap: true
+
+  - type: STR_GUARDSMAN_CORPSE_PROP
+    name: STR_GUARD_CORPSE
+    weight: 25
+    bigSprite: 249
+    floorSprite: 50
+    invWidth: 2
+    invHeight: 3
+    armor: 26
+    recover: false
+
+  - type: STR_GUARDSMAN_PILOT_CORPSE_PROP
+    name: STR_GUARD_CORPSE
+    weight: 20
+    bigSprite: 382
+    floorSprite: 232
+    invWidth: 2
+    invHeight: 3
+    armor: 5
+    recover: false
+
+  - type: STR_TANITH_SCOUT_FEMALE_SPAWNER
+    spawnUnit: STR_TANITH_SCOUT_FEMALE
+    spawnUnitFaction: 2
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 255
+
+  - type: STR_TANITH_SCOUT_MALE_SPAWNER
+    spawnUnit: STR_TANITH_SCOUT_MALE
+    spawnUnitFaction: 2
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 255
+
+#*** Special items for scripted missions ***
+  - type: STR_OBJECTIVE_COMPLETED_CHARGE
+    weight: 999
+    power: 1
+    damageType: 3
+    damageAlter:
+      RandomType: 3
+      ToHealth: 0.0
+      ToStun: 0.0
+      ToArmor: 0.0
+      ToItem: 0.0
+      ToTile: 241.0
+      FixRadius: 0
+    hitAnimation: 1992
+    hitSound: 789
+    battleType: 4
+    hiddenOnMinimap: true
+    armor: 255
+    recover: false
+
+  - type: STR_TANITH_ANTITANK_TRIPMINE
+    power: 150
+    damageType: 3
+    damageAlter: #DA MELTA
+      ToArmor: 0.4
+      ToArmorPre: 0.0
+      ToHealth: 0.8
+    blastRadius: 5
+    battleType: 4
+    hiddenOnMinimap: true
+    armor: 255
+    recover: false
+
+  - type: STR_ASSAULT_MARINE_SPAWNER_TANITH_CONVOYAMBUSH
+    spawnUnit: STR_FLOATER_SOLDIER
+    spawnUnitFaction: 1
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    power: 5
+    damageType: 3
+    damageAlter:
+      ToHealth: 0.0
+      ToStun: 0.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      ToTile: 0.0
+    hitAnimation: 1992
+    explosionHitSound: 15
+    armor: 255
+    recover: false
+    hiddenOnMinimap: true
+
+#*** Civilian corpses for riot mission
+  - type: STR_CIVILIAN_F0_CORPSE
+    name: STR_CORPSE
+    recover: false
+    bigSprite: 1303
+    floorSprite: 1303
+    invWidth: 2
+    invHeight: 3
+    weight: 30
+    armor: 30
+    battleType: 11
+
+  - type: STR_CIVILIAN_M0_CORPSE
+    name: STR_CORPSE
+    recover: false
+    bigSprite: 1304
+    floorSprite: 1304
+    invWidth: 2
+    invHeight: 3
+    weight: 30
+    armor: 30
+    battleType: 11
+
+  - type: STR_CIVILIAN_F1_CORPSE
+    name: STR_CORPSE
+    recover: false
+    bigSprite: 1305
+    floorSprite: 1305
+    invWidth: 2
+    invHeight: 3
+    weight: 30
+    armor: 30
+    battleType: 11
+
+  - type: STR_CIVILIAN_M1_CORPSE
+    name: STR_CORPSE
+    recover: false
+    bigSprite: 1306
+    floorSprite: 1306
+    invWidth: 2
+    invHeight: 3
+    weight: 30
+    armor: 30
+    battleType: 11
+
+#*** Items that should not be accesible to the guard for purchase ***
+  - type: STR_TANK_CANNON
+    requiresBuy:
+      - STR_MARINES_STRATEGY
+
+  - type: STR_HWP_CANNON_SHELLS
+    requiresBuy:
+      - STR_MARINES_STRATEGY
+
+  - type: STR_BIKE_ARMOR
+    requiresBuy:
+      - STR_MARINES_STRATEGY
+
+  - type: STR_BANNER
+    requiresBuy:
+      - STR_MARINES_STRATEGY

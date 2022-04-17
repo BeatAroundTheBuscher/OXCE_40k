@@ -1,0 +1,3486 @@
+﻿extended:
+  tags:
+    RuleArmor:
+#*** Tags for energy shield on armor ***
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: int
+      ARMOR_ENERGY_SHIELD_DECAY: int
+#*** Tags for soldiers gaining devotion/psi skill as secondary experience ***
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: int
+    RuleItem:
+#*** Tags for creating energy shields on hitting a unit ***
+      ITEM_ADDS_ENERGY_SHIELD_FROM_POWER: int
+      ITEM_SETS_ENERGY_SHIELD_DECAY: int
+
+units:
+#------------  Zombie -------------------------
+  - type: STR_ADEPTAS_ZOMBIE
+    race: STR_ZOMBIEF
+    stats:
+      tu: 60
+      stamina: 40
+      health: 50
+      bravery: 60
+      reactions: 40
+      firing: 60
+      throwing: 60
+      strength: 60
+      psiStrength: 80
+      psiSkill: 0
+      melee: 60
+    armor: STR_ADEPTAS_ZOMBIE_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 50
+    intelligence: 4
+    aggression: 7
+    energyRecovery: 20
+    capturable: false
+  - type: STR_CELESTIAN_ZOMBIE
+    race: STR_ZOMBIEF
+    stats:
+      tu: 70
+      stamina: 40
+      health: 50
+      bravery: 60
+      reactions: 40
+      firing: 60
+      throwing: 60
+      strength: 60
+      psiStrength: 80
+      psiSkill: 0
+      melee: 60
+    armor: STR_CELESTIAN_ZOMBIE_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 50
+    intelligence: 4
+    aggression: 7
+    energyRecovery: 20
+    capturable: false
+#-----------
+  - type: STR_GK_SOLDIER_ADEPTAS #GREY KNIGHT                     RANK 5 weapons done
+    race: STR_GREYKNIGHT
+    stats:
+      tu: 80
+      stamina: 100
+      health: 60
+      bravery: 100
+      reactions: 75
+      firing: 80
+      throwing: 80
+      strength: 100
+      psiStrength: 50
+      psiSkill: 0
+      melee: 80
+    armor: STR_GREYKNIGHT_ADEPTAS_ARMOR
+    standHeight: 20
+    kneelHeight: 15
+    value: 0
+    intelligence: 6
+    aggression: 1
+    spotter: 1
+    energyRecovery: 40
+    deathSound: [713, 714, 715, 716, 717, 718, 719, 720, 721, 722]
+  - type: STR_STORMTURRET_ADEPTAS #STORMRAven TURRET
+    race: STR_STORMRAVEN
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 100
+      stamina: 1
+      health: 200
+      bravery: 100
+      reactions: 120
+      firing: 120
+      throwing: 0
+      strength: 90
+      psiStrength: 250
+      psiSkill: 0
+      melee: 0
+    armor: STORMRAVEN_ADEPTAS_ARMOR
+    standHeight: 23
+    kneelHeight: 16
+    value: 25
+    deathSound: 23
+    intelligence: 4
+    aggression: 5
+    sniper: 50
+    spotter: 1
+    energyRecovery: 34
+    livingWeapon: true
+  - type: STR_PENITENT_ENGINE                # TARANTULA
+    race: STR_PENITENT_ENGINE
+    stats:
+      tu: 100
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 30
+      firing: 60
+      throwing: 0
+      strength: 100
+      psiStrength: 100
+      psiSkill: 0
+      melee: 80
+    armor: STR_PENITENT_ARMOR
+    standHeight: 14
+    kneelHeight: 14
+    value: 20
+    deathSound: [859, 860]
+    #deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+  - type: STR_EXORCIST
+    race: STR_EXORCIST
+    stats:
+      tu: 100
+      stamina: 1
+      health: 90
+      bravery: 110
+      reactions: 120
+      firing: 60
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 0
+    armor: EXORCIST_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 500
+    deathSound: 23
+    intelligence: 4
+    aggression: 7
+    sniper: 50
+    spotter: 1
+    moveSound: 14
+    energyRecovery: 1
+    specab: 1
+    builtInWeaponSets:
+      - - STR_MORTAR
+      - - STR_MORTAR
+      - - STR_MORTAR
+  - type: STR_IMMOLATOR
+    race: STR_IMMOLATOR
+    stats:
+      tu: 100
+      stamina: 1
+      health: 90
+      bravery: 110
+      reactions: 120
+      firing: 60
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 0
+    armor: IMMOLATOR_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 100
+    deathSound: 23
+    intelligence: 4
+    aggression: 7
+    sniper: 50
+    spotter: 1
+    moveSound: 14
+    energyRecovery: 1
+    builtInWeaponSets:
+      - - STR_IMMOLATOR_HEAVY_FLAMER
+        - STR_IMMOLATOR_HEAVY_FLAMER
+        - STR_HFLAMER_CLIP
+        - STR_HFLAMER_CLIP
+      - - STR_IMMOLATOR_HEAVY_FLAMER
+        - STR_IMMOLATOR_HEAVY_FLAMER
+        - STR_HFLAMER_CLIP
+        - STR_HFLAMER_CLIP
+      - - STR_IMMOLATOR_HEAVY_FLAMER
+        - STR_IMMOLATOR_HEAVY_FLAMER
+        - STR_HFLAMER_CLIP
+        - STR_HFLAMER_CLIP
+  - type: STR_SKULL
+    race: STR_SKULL
+    stats:
+      tu: 80
+      stamina: 80
+      health: 20
+      bravery: 200
+      reactions: 150
+      firing: 0
+      throwing: 0
+      strength: 10
+      psiStrength: 250
+      psiSkill: 0
+      melee: 0
+    armor: SKULL_ARMOR
+    moveSound: 704
+    standHeight: 23
+    kneelHeight: 16
+    value: 0
+    deathSound: 23
+    intelligence: 4
+    aggression: 5
+    sniper: 50
+    spotter: 1
+    energyRecovery: 100
+    livingWeapon: true
+#                 #                                        #                      #
+#                 #                                        #                      #
+armors:
+  - type: STR_GREYKNIGHT_ADEPTAS_ARMOR                #GREYKNIGHT ARMOR
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: XCOM_50.PCK
+    spriteInv: GKINV.SPK
+    corpseBattle:
+      - STR_GREYK_CORPSE_ADEPTAS
+    specialWeapon: STR_UNARMED_GAUNTLET_PLUS
+    stats:
+       tu: -10
+       stamina: -10
+       health: 10
+       bravery: 10 #always multiples of 10
+       reactions: 0
+       firing: 0
+       throwing: 0
+       strength: 50
+       psiStrength: 0
+       psiSkill: 0
+       melee: 0
+    frontArmor: 150
+    sideArmor: 120
+    rearArmor: 100
+    underArmor: 90
+    damageModifier: #TERMINATOR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.3 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    builtInWeapons:
+      - STR_GK_HB
+      - STR_HB_CLIP
+      - INV_NULL_3X3
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+  - type: STORMRAVEN_ADEPTAS_ARMOR
+    visibilityAtDay: 60
+    visibilityAtDark: 60
+    spriteSheet: STORMRAVENA.PCK
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    spriteInv: NOTDONEIMP
+    corpseGeo:  STR_PREDATOR_CORPSE
+    corpseBattle:
+      - SRA_CORPSE1
+      - SRA_CORPSE2
+      - SRA_CORPSE3
+      - SRA_CORPSE4
+    frontArmor: 130
+    sideArmor: 130
+    rearArmor: 130
+    underArmor: 150
+    size: 2
+    damageModifier: #VEICULE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.4 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 3
+    builtInWeapons:
+      - STR_STORMRAVEN_ADEPTAS_WEAPON
+      - STR_STORMRAVEN_ADEPTAS_WEAPON
+      - STR_ASSC_CLIP
+      - STR_ASSC_CLIP
+  - type: STR_PENITENT_ARMOR          #DREAD ARMOR NORMAL
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: PEN.PCK
+    instantWoundRecovery: true
+    allowInv: false
+    spriteInv: PENI.SPK
+    customArmorPreviewIndex: [31, 32, 33]
+    corpseGeo: STR_DREAD_CORPSE
+    corpseBattle:
+      - PEN_CORPSE1
+      - PEN_CORPSE2
+      - PEN_CORPSE3
+      - PEN_CORPSE4
+    frontArmor: 130
+    sideArmor: 130
+    rearArmor: 130
+    underArmor: 150
+    size: 2
+    moveSound: 700
+    damageModifier: #DREADNOUGHT ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.2 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 5
+    builtInWeapons:
+      - INV_NULL_3X3
+      - AUX_PENITENT_FLAMER
+  - type: EXORCIST_ARMOR
+    visibilityAtDay: 60
+    visibilityAtDark: 60
+    spriteSheet: EXODR.PCK
+    spriteInv: EXOI.SPK
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    allowsMoving: false
+    corpseGeo:  STR_EXORCIST_CORPSE
+    corpseBattle:
+      - EXO_CORPSE1
+      - EXO_CORPSE2
+      - EXO_CORPSE3
+      - EXO_CORPSE4
+    frontArmor: 100
+    sideArmor: 100
+    rearArmor: 100
+    underArmor: 100
+    size: 2
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.4 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 3
+    scripts:
+      selectUnitSprite:
+        var int aiming;
+        var int frame;
+
+        unit.isAiming aiming;
+
+        if or eq blit_part blit_large_torso_0 eq blit_part blit_large_torso_1 eq blit_part blit_large_torso_2 eq blit_part blit_large_torso_3;
+
+          if neq 0 aiming;
+
+            set sprite_offset 0;
+            set frame anim_frame;
+            mod frame 4;
+            add sprite_offset frame;
+
+          else;
+
+            set sprite_offset 0;
+
+          end;
+
+        else or eq blit_part blit_large_propulsion_0 eq blit_part blit_large_propulsion_1 eq blit_part blit_large_propulsion_2 eq blit_part blit_large_propulsion_3;
+
+          set sprite_index 32;
+          set sprite_offset 0;
+
+        end;
+
+        add sprite_index sprite_offset;
+
+        return sprite_index;
+  - type: IMMOLATOR_ARMOR
+    visibilityAtDay: 60
+    visibilityAtDark: 60
+    spriteSheet: INCDR.PCK
+    spriteInv: INCI.SPK
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    allowsMoving: false
+    corpseGeo:  STR_DREAD_CORPSE
+    corpseBattle:
+      - INC_CORPSE1
+      - INC_CORPSE2
+      - INC_CORPSE3
+      - INC_CORPSE4
+    frontArmor: 100
+    sideArmor: 85
+    rearArmor: 70
+    underArmor: 100
+    size: 2
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.4 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 3
+    scripts:
+      selectUnitSprite:
+        var int temp;
+
+        unit.isCollapsing temp;
+
+        if eq temp 0;
+
+          unit.isAiming temp;
+
+          if or eq blit_part blit_large_torso_0 eq blit_part blit_large_torso_1 eq blit_part blit_large_torso_2 eq blit_part blit_large_torso_3;
+
+            if neq 0 temp;
+
+              add sprite_offset 32;
+
+            end;
+
+          else or eq blit_part blit_large_propulsion_0 eq blit_part blit_large_propulsion_1 eq blit_part blit_large_propulsion_2 eq blit_part blit_large_propulsion_3;
+
+            set sprite_index 32;
+            set sprite_offset 0;
+
+          end;
+
+        end;
+
+        add sprite_index sprite_offset;
+
+        return sprite_index;
+  - type: SKULL_ARMOR
+    spriteSheet: SKULLDR.PCK
+    spriteInv: SKULL.SPK
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    corpseBattle:
+      - STR_SKULL_CORPSE
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    drawingRoutine: 19
+    movementType: 1
+    constantAnimation: true
+    damageModifier:
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+  - type: STR_ADEPTAS_ARMORD_UC    #ADEPTAS DOM
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    tags:
+      #ARMOR_ENERGY_SHIELD_CAPACITY: 80
+      #ARMOR_ENERGY_SHIELD_PER_TURN: 10
+      #ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: 10
+      ARMOR_ENERGY_SHIELD_DECAY: 12
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+    spriteSheet: XCOM_45.PCK
+    spriteInv: MAN_45
+    customArmorPreviewIndex: 67
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 245, 32, 224, 224, 224, 224] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_ADEPTASD_CORPSE
+    storeItem: STR_ADEPTAS_ARMORD
+    stats:
+       tu: 0
+       stamina: 10
+       health: 20
+       bravery: 10 #always multiples of 10
+       psiStrength: 0
+       psiSkill: 0
+    frontArmor: 120
+    sideArmor: 100
+    rearArmor: 90
+    underArmor: 90
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    units:
+      - STR_ADEPTAS
+      - STR_CANONESS
+    builtInWeapons:
+      - INV_NULL_3X3
+      - STR_SKULL_SPAWNER
+    loftempsSet: [ 3 ]
+  - type: STR_ADEPTAS_ARMORC_UC    #ADEPTAS BARRONESS
+    tags:
+      #ARMOR_ENERGY_SHIELD_CAPACITY: 100
+      #ARMOR_ENERGY_SHIELD_PER_TURN: 10
+      #ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: 10
+      ARMOR_ENERGY_SHIELD_DECAY: 10
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+    specialWeapon: STR_BLESS
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: XCOM_46.PCK
+    spriteInv: MAN_46
+    customArmorPreviewIndex: 68
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 245, 32, 224, 224, 224, 224] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_ADEPTASC_CORPSE
+    storeItem: STR_ADEPTAS_ARMORC
+    stats:
+       tu: 0
+       stamina: 10
+       health: 20
+       bravery: 10 #always multiples of 10
+       psiStrength: 0
+       psiSkill: 0
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    units:
+      - STR_ADEPTAS
+      - STR_CANONESS
+    builtInWeapons:
+      - INV_NULL_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_ADEPTAS_ARMORI_UC    #ADEPTAS INQUISITOR
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    specialWeapon: AUX_ADEPTAS_PROBE
+    spriteSheet: XCOM_44.PCK
+    spriteInv: MAN_44
+    customArmorPreviewIndex: 66
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 245, 32, 224, 224, 224, 224] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_ADEPTASI_CORPSE
+    storeItem: STR_ADEPTAS_ARMORI
+    stats:
+       tu: 0
+       stamina: 10
+       health: 10
+       bravery: 10 #always multiples of 10
+       psiStrength: 10
+       psiSkill: 0
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    units:
+      - STR_ADEPTAS
+      - STR_CANONESS
+    builtInWeapons:
+      - INV_NULL_3X3
+      - STR_SKULL_SPAWNER
+    loftempsSet: [ 3 ]
+  - type: STR_ADEPTAS_ARMORB_UC    #ADEPTAS ASSASIN
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+    camouflageAtDay: -10 # you need to be 10 tiles closer than max vision range to see this unit in the light
+    camouflageAtDark: -5 # you need to be 5 tiles closer than max vision range (at night!) to see this unit in the dark
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: XCOM_43.PCK
+    spriteInv: MAN_43
+    customArmorPreviewIndex: 65
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 245, 32, 224, 224, 224, 224] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_ADEPTASB_CORPSE
+    storeItem: STR_ADEPTAS_ARMORB
+    stats:
+       tu: 30
+       stamina: 0
+       #firing: 0
+       health: 10
+       bravery: 20 #always multiples of 10
+       reactions: 60
+       firing: 10
+       throwing: 10
+       strength: 10
+       psiStrength: 0
+       psiSkill: 0
+       melee: 10
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 30
+    underArmor: 30
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.2 #IMPACT
+    units:
+      - STR_ADEPTAS
+      - STR_CANONESS
+    builtInWeapons:
+      - INV_NULL_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_ADEPTAS_ARMORA_UC    #ADEPTAS Apoth
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: XCOM_41.PCK
+    spriteInv: MAN_41
+    customArmorPreviewIndex: 63
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 245, 32, 224, 224, 224, 224] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_ADEPTASA_CORPSE
+    stats:
+       tu: -10
+       stamina: 0
+       health: 10
+       bravery: 0 #always multiples of 10
+       reactions: -10
+       firing: 0
+       throwing: 0
+       strength: 0
+       psiStrength: 0
+       psiSkill: 0
+       melee: 10
+    storeItem: STR_ADEPTAS_ARMORA
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    units:
+      - STR_ADEPTAS
+      - STR_CANONESS
+    builtInWeapons:
+      - INV_NULL_3X3
+      - AUX_ADEPTAS_MEDI_KIT
+    loftempsSet: [ 3 ]
+  - type: STR_ADEPTAS_ARMORS_UC    #ADEPTAS Seraph
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: XCOM_42.PCK
+    spriteInv: MAN_42
+    customArmorPreviewIndex: 64
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 245, 32, 224, 224, 224, 224] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_ADEPTAS_CORPSE
+    storeItem: STR_ADEPTAS_ARMORS
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    movementType: 1
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    units:
+      - STR_ADEPTAS
+      - STR_CANONESS
+    builtInWeapons:
+      - INV_NULL_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_ADEPTAS_ARMOR_UC     #ADEPTAS
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: XCOM_33.PCK
+    spriteInv: MAN_33
+    customArmorPreviewIndex: 60
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 245, 32, 224, 224, 224, 224] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_ADEPTAS_CORPSE
+    storeItem: STR_NONE
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    units:
+      - STR_ADEPTAS
+      - STR_CANONESS
+    builtInWeapons:
+      - INV_NULL_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_ADEPTAS_ARMORH_UC    #ADEPTAS Helmet
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: XCOM_38.PCK
+    spriteInv: MAN_38
+    customArmorPreviewIndex: 61
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 245, 32, 224, 224, 224, 224] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_ADEPTASH_CORPSE
+    storeItem: STR_ADEPTAS_ARMORH
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    units:
+      - STR_ADEPTAS
+      - STR_CANONESS
+    builtInWeapons:
+      - INV_NULL_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_ADEPTAS_ARMORR_UC    #ADEPTAS Repentia
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 10
+    visibilityAtDark: 30
+    spriteSheet: XCOM_40.PCK
+    spriteInv: MAN_40
+    customArmorPreviewIndex: 62
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 245, 32, 224, 224, 224, 224] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    stats:
+       tu: 30
+       stamina: 30
+       firing: 0
+       health: 0
+       bravery: 20 #always multiples of 10
+       reactions: 60
+       throwing: 0
+       strength: 0
+       psiStrength: 20
+       psiSkill: 0
+       melee: 10
+    corpseBattle:
+      - STR_ADEPTASR_CORPSE
+    storeItem: STR_NONE
+#    storeItem: STR_ADEPTAS_ARMORR
+    frontArmor: 5
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    damageModifier: #CULTIST ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.2 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.0 #MELTA
+    units:
+      - STR_ADEPTAS
+      - STR_CANONESS
+    builtInWeapons:
+      - INV_NULL_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_ADEPTAS_ARMORCEL_UC    #ADEPTAS CELESTIAN
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    tags:
+      #ARMOR_ENERGY_SHIELD_CAPACITY: 80
+      #ARMOR_ENERGY_SHIELD_PER_TURN: 10
+      #ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: 10
+      ARMOR_ENERGY_SHIELD_DECAY: 12
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+    spriteSheet: XCOM_47.PCK
+    spriteInv: MAN_47
+    customArmorPreviewIndex: 69
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 245, 32, 224, 224, 224, 224] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_ADEPTASCEL_CORPSE
+    storeItem: STR_ADEPTAS_ARMORCEL
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    movementType: 1
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    units:
+      - STR_ADEPTAS
+      - STR_CANONESS
+    builtInWeapons:
+      - INV_NULL_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_ADEPTAS_ARMORSUP_UC     #SAINT
+    visibilityAtDay: 60
+    visibilityAtDark: 60
+    tags:
+      #ARMOR_ENERGY_SHIELD_CAPACITY: 150
+      #ARMOR_ENERGY_SHIELD_PER_TURN: 20
+      #ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: 20
+      ARMOR_ENERGY_SHIELD_DECAY: 13
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+    bleedImmune: false
+    spriteSheet: CELSUP.PCK
+    spriteInv: MAN_48
+    customArmorPreviewIndex: [73, 74, 75]
+    scripts:
+      selectUnitSprite: |
+        var int temp;
+        var int walking;
+        var int floating;
+        unit.isWalking walking;
+        unit.isFloating floating;
+        if and eq walking 0 eq floating 1;
+          unit.getId temp;
+          offsetmod temp 11 0 8; #desync animation of different units
+          add temp anim_frame;
+          wavegen_saw temp 4 4 4;
+          add sprite_offset 1;
+          add sprite_offset temp;
+          add sprite_index sprite_offset;
+        else;
+          add sprite_index sprite_offset;
+        end;
+        return sprite_index;
+    allowInv: true
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 245, 32, 224, 224, 224, 224] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - SUP_CORPSE1
+      - SUP_CORPSE2
+      - SUP_CORPSE3
+      - SUP_CORPSE4
+    storeItem: STR_NONE
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 100
+    drawingRoutine: 20
+    constantAnimation: false
+    movementType: 1
+    size: 2
+    moveSound: 828
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    units:
+      - STR_SAINT
+    builtInWeapons:
+      - INV_NULL_3X3
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - INV_NULL_4X2
+      - STR_POWER_SWORD_SUP
+      - STR_HEALS
+    loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_ADEPTAS_ARMOR_HONOR_UC     #ADEPTAS HONOR
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: XCOM_49.PCK
+    spriteInv: MAN_49
+    customArmorPreviewIndex: 71
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 245, 32, 224, 224, 224, 224] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_ADEPTAS_HONOR_CORPSE
+    storeItem: STR_ADEPTAS_ARMOR_HONOR
+    stats:
+       tu: 0
+       stamina: 0
+       health: 10
+       bravery: 20 #always multiples of 10
+       reactions: 0
+       firing: 10
+       throwing: 0
+       strength: 10
+       psiStrength: 0
+       psiSkill: 0
+       melee: 10
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    units:
+      - STR_ADEPTAS
+      - STR_CANONESS
+    builtInWeapons:
+      - INV_NULL_3X3
+    loftempsSet: [ 3 ]
+#------------  Zombie -------------------------
+  - type: STR_ADEPTAS_ZOMBIE_ARMOR     #ADEPTAS
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: ADEPTASZ.PCK
+    spriteInv: AINVZ.SPK
+    customArmorPreviewIndex: 60
+    spriteHairGroup: 9
+    spriteHairColor: [245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_ADEPTASZ_CORPSE
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    builtInWeapons:
+      - INV_NULL_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_CELESTIAN_ZOMBIE_ARMOR    #ADEPTAS CELESTIAN
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    tags:
+      #ARMOR_ENERGY_SHIELD_CAPACITY: 80
+      #ARMOR_ENERGY_SHIELD_PER_TURN: 10
+      #ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: 10
+      ARMOR_ENERGY_SHIELD_DECAY: 12
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+    spriteSheet: CELESTIANZ.PCK
+    spriteInv: CINVZ.SPK
+    customArmorPreviewIndex: 69
+    spriteHairGroup: 9
+    spriteHairColor: [245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_CELZ_CORPSE
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    movementType: 1
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    builtInWeapons:
+      - INV_NULL_3X3
+    loftempsSet: [ 3 ]
+#                 #                                        #                      #
+crafts:
+  - type: STR_STORMRAVEN_ADEPTAS #STORMRAVEN
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    requires:
+      - STR_ADEPTAS
+      - STR_NEW_FIGHTER_CRAFT
+    sprite: 540
+    marker: 11
+    fuelMax: 1200
+    damageMax: 800
+    speedMax: 4200
+    accel: 9
+    weapons: 4          #weapon number increased to 4.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+      - 0               #slot 4 accepts weapons with type 0.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+      - STR_WEAPON_FOURTH
+    fixedWeapons: ["", "", "", "STR_ASSCANNON_UC"]
+    soldiers: 10
+    pilots: 2
+    vehicles: 1
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    score: 250
+    listOrder: 300
+    battlescapeTerrainData:
+      name: STORMRAVEN
+      mapDataSets:
+        - BLANKS
+        - 0A0STORMRAVEN
+      mapBlocks:
+        - name: STORMRAVEN
+          width: 10
+          length: 20
+          items:
+            STR_STORMTURRET_ADEPTAS_SPAWNER:
+              - [4, 6, 2]
+          fuseTimers:
+            STR_STORMTURRET_ADEPTAS_SPAWNER: [0, 0]
+    deployment:
+      - [4, 6, 0, 0]
+      - [4, 7, 0, 0]
+      - [4, 8, 0, 0]
+      - [5, 8, 0, 0]
+      - [4, 9, 0, 0]
+      - [5, 9, 0, 0]
+      - [4, 6, 1, 0]
+      - [5, 6, 1, 0]
+      - [4, 7, 1, 0]
+      - [5, 7, 1, 0]
+    spacecraft: true
+  - type: STR_STORMEAGLE_ADEPTAS
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    marker: 13
+    requires:
+      - STR_STORMEAGLE_INTERCEPTOR
+      - STR_ADEPTAS
+    sprite: 542
+    fuelMax: 1000
+    damageMax: 1500
+    speedMax: 6700
+    accel: 12
+    weapons: 4          #weapon number increased to 4.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [0, 4, 5]      #slot 3 accepts weapons with type 0, 4 and 5.
+      - 0               #slot 4 accepts weapons with type 0.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE_PLUS
+      - STR_WEAPON_FOURTH_PLUS
+    radarRange: 1000
+    costSell: 1500000
+    transferTime: 96
+    refuelItem: STR_ELERIUM_115
+    repairRate: 5
+    refuelRate: 5
+    score: 400
+    soldiers: 15
+    pilots: 2
+    vehicles: 1
+    listOrder: 600
+    battlescapeTerrainData:
+      name: STORMEAGLE
+      mapDataSets:
+        - BLANKS
+        - 0A0STORMEAGLE
+      mapBlocks:
+        - name: STORMEAGLE
+          width: 10
+          length: 20
+    deployment:
+      - [4, 11, 0, 0]
+      - [5, 11, 0, 0]
+      - [4, 10, 0, 0]
+      - [5, 10, 0, 0]
+      - [4, 9, 0, 0]
+      - [4, 8, 0, 0]
+      - [4, 7, 0, 0]
+      - [4, 6, 0, 0]
+      - [4, 5, 0, 0]
+      - [4, 4, 0, 0]
+      - [4, 7, 1, 0]
+      - [5, 7, 1, 0]
+      - [4, 8, 1, 0]
+      - [5, 8, 1, 0]
+      - [4, 9, 1, 0]
+      - [4, 9, 1, 0]
+    spacecraft: true
+  - type: STR_LANDRAIDER
+    takeoffSound: 63 #TANKMOVE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    marker: 30
+    requires:
+      - STR_ADEPTAS
+      - STR_LANDRAIDER_ADEPTAS
+    sprite: 539
+    fuelMax: 12000
+    damageMax: 10000
+    speedMax: 20
+    maxAltitude: 1
+    costRent: 600000
+    accel: 10
+    weapons: 0
+    soldiers: 26
+    vehicles: 2
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 50
+    score: 800
+    listOrder: 700
+    battlescapeTerrainData:
+      name: LANDRAIDER
+      mapDataSets:
+        - BLANKS
+        - LANDRAIDER
+      mapBlocks:
+        - name: LANDRAIDER
+          width: 10
+          length: 20
+          items:
+            STR_IMMOLATOR_SPAWNER:
+              - [7, 15, 1]
+          fuseTimers:
+            STR_IMMOLATOR_SPAWNER: [0, 0]
+    deployment:
+      - [2, 4, 0, 4]
+      - [3, 4, 0, 4]
+      - [2, 5, 0, 4]
+      - [3, 5, 0, 4] # was duplicate of 2, 5
+      - [2, 3, 0, 4]
+      - [3, 3, 0, 4]
+      - [2, 2, 0, 4]
+      - [3, 2, 0, 4] # was duplicate of 2,2 #raider
+      - [1, 14, 0, 0]
+      - [2, 14, 0, 0]
+      - [1, 15, 0, 0]
+      - [2, 15, 0, 0]
+      - [1, 16, 0, 0]
+      - [2, 16, 0, 0] #rhino
+      - [7, 14, 0, 0]
+      - [8, 14, 0, 0]
+      - [7, 15, 0, 0]
+      - [8, 15, 0, 0]
+      - [7, 16, 0, 0]
+      - [8, 16, 0, 0] #rhino
+      - [7, 6, 0, 0]
+      - [8, 6, 0, 0]
+      - [7, 7, 0, 0]
+      - [8, 7, 0, 0]
+      - [7, 8, 0, 0]
+      - [8, 8, 0, 0] #rhino
+    spacecraft: true
+  - type: STR_CORVUS
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [62, 63, 64] #REGULAR SOUND
+    requires:
+      - STR_ADEPTAS
+    marker: 36
+    sprite: 505
+    fuelMax: 1800
+    damageMax: 600
+    speedMax: 1000
+    accel: 4
+    weapons: 2         #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    soldiers: 14
+    vehicles: 1
+    pilots: 2
+    costBuy: 800000
+    costRent: 400000
+    refuelRate: 50
+    transferTime: 96
+    score: 300
+    listOrder: 210
+    battlescapeTerrainData:
+      name: CORVUS
+      mapDataSets:
+        - BLANKS
+        - CORVUS
+      mapBlocks:
+        - name: CORVUS
+          width: 10
+          length: 20
+    deployment:
+      - [3, 7, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 7, 0, 0]
+      - [6, 7, 0, 0]
+      - [3, 8, 0, 0]
+      - [4, 8, 0, 0]
+      - [5, 8, 0, 0]
+      - [6, 8, 0, 0]
+      - [3, 9, 0, 0]
+      - [4, 9, 0, 0]
+      - [5, 9, 0, 0]
+      - [6, 9, 0, 0]
+      - [4, 10, 0, 0]
+      - [5, 10, 0, 0]
+    spacecraft: true
+  - type: STR_ADEPTAS_THUNDERHAWNK #thunderhawnk ADEPTAS
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_ADEPTAS
+    sprite: 506
+    marker: 12
+    fuelMax: 1400
+    damageMax: 950
+    speedMax: 1600
+    accel: 6
+    weapons: 4          #weapon number increased to 4.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+      - 1               #slot 4 accepts weapons with type 1.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+      - STR_THUNDER_CANNON
+    fixedWeapons: ["", "", "", "STR_THUNDER_CANNON_UC"]
+    soldiers: 18
+    pilots: 4
+    vehicles: 2
+    costSell: 650000
+    refuelRate: 5
+    radarRange: 850
+    transferTime: 72
+    score: 400
+    listOrder: 400
+    battlescapeTerrainData:
+      name: THUNDERHAWK
+      mapDataSets:
+        - BLANKS
+        - 0A0THUNDERHAWK
+      mapBlocks:
+        - name: THUNDERHAWK
+          width: 10
+          length: 20
+    deployment:
+      - [4, 13, 1, 4]
+      - [5, 13, 1, 4]
+      - [4, 12, 1, 4]
+      - [5, 12, 1, 4]
+      - [4, 11, 1, 4]
+      - [5, 11, 1, 4]
+      - [4, 10, 1, 4]
+      - [5, 10, 1, 4]
+      - [4, 9, 1, 4]
+      - [5, 9, 1, 4]
+      - [4, 8, 1, 4]
+      - [5, 8, 1, 4]
+      - [4, 7, 1, 4]
+      - [5, 7, 1, 4]
+      - [4, 6, 1, 4]
+      - [5, 6, 1, 4]
+      - [4, 5, 2, 4]
+      - [5, 5, 2, 4]
+      - [4, 4, 2, 4]
+      - [5, 4, 2, 4]
+    spacecraft: true
+  - type: STR_AVENGER_ADEPTAS #ligtning
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    requires:
+      - STR_ADEPTAS
+    marker: 40
+    sprite: 508
+    fuelMax: 1000
+    damageMax: 150
+    speedMax: 2400
+    accel: 5
+    weapons: 3
+    weaponTypes:
+      - 0
+      - 0
+      - [4, 5, 13]
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    costBuy: 500000
+    costRent: 250000
+    costSell: 42500
+    soldiers: 2
+    vehicles: 0
+    refuelRate: 200
+    transferTime: 96
+    score: 250
+    pilots: 2
+    allowLanding: false
+    listOrder: 230
+  - type: STR_THUNDERBOLT_ADEPTAS
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    requires:
+      - STR_ADEPTAS
+    marker: 40
+    sprite: 507
+    fuelMax: 1000
+    damageMax: 450
+    speedMax: 2000
+    accel: 5
+    weapons: 3
+    weaponTypes:
+      - 0
+      - 0
+      - [4, 5, 13]
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    costBuy: 700000
+    costRent: 400000
+    costSell: 600000
+    soldiers: 1
+    vehicles: 0
+    refuelRate: 200
+    transferTime: 96
+    score: 250
+    pilots: 1
+    allowLanding: false
+    listOrder: 240
+  - type: STR_TTA #thunderhawnk Transport Adeptas
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    keepCraftAfterFailedMission: true
+    requires:
+      - STR_HIGHTIER_PREREQ
+      - STR_ADEPTAS
+    sprite: 541
+    marker: 13
+    fuelMax: 1400
+    damageMax: 1200
+    speedMax: 1400
+    accel: 10
+    weapons: 0
+    soldiers: 16
+    vehicles: 0
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    score: 400
+    listOrder: 500
+    battlescapeTerrainData:
+      name: RHINOA
+      mapDataSets:
+        - BLANKS
+        - 0A0THUNDERHAWKTEX
+        - 0A0RHINO
+      mapBlocks:
+        - name: RHINOA
+          width: 10
+          length: 20
+          items:
+            STR_IMMOLATOR_SPAWNER:
+              - [6, 12, 1]
+              - [6, 3, 1]
+            STR_THUNDER_CHARGE:
+              - [5, 10, 3]
+            STR_THUNDER_CHARGE2:
+              - [4, 3, 3]
+          fuseTimers:
+            STR_THUNDER_CHARGE: [1, 1]
+            STR_THUNDER_CHARGE2: [1, 1]
+            STR_IMMOLATOR_SPAWNER: [0, 0]
+    deployment:
+      - [6, 13, 0, 0]
+      - [7, 13, 0, 0]
+      - [6, 12, 0, 0]
+      - [7, 12, 0, 0]
+      - [6, 11, 0, 0]
+      - [7, 11, 0, 0]
+      - [6, 4, 0, 0]
+      - [7, 4, 0, 0]
+      - [6, 3, 0, 0]
+      - [7, 3, 0, 0]
+      - [6, 2, 0, 0]
+      - [7, 2, 0, 0]
+      - [4, 16, 2, 4]
+      - [5, 16, 2, 4]
+      - [4, 15, 2, 4]
+      - [5, 15, 2, 4]
+    spacecraft: true
+#                 #                                        #                      #
+items:
+  - type: STR_BLESS
+    tags:
+      ITEM_ADDS_ENERGY_SHIELD_FROM_POWER: 100
+      ITEM_SETS_ENERGY_SHIELD_DECAY: 60
+    size: 0.2
+    dropoff: 5
+    weight: 0
+    bulletSprite: 19
+    fireSound: [394, 395]
+    accuracySnap: 65
+    hitAnimation: 170
+    hitSound: 286
+    power: 0
+    maxRange: 2
+    damageBonus:
+      psiStrength: 0.5
+      psiSkill: 0.5
+    damageType: 0
+    damageAlter:
+      RandomType: 3
+      ToArmor: 0.0
+      ToStun: 0.0
+      ToHealth: 0.0
+      ToWound: 0.0
+      ArmorEffectiveness: 0.0
+    costSnap:
+      time: 40
+      energy: 40
+    confSnap:
+      name: STR_SHIELD_BLESS
+    clipSize: -1
+    battleType: 1
+    fixedWeapon: true
+    recover: false
+    experienceTrainingMode: 28
+    specialIconSprite: 8
+    specialUseEmptyHand: true
+  - type: STR_WEBBER #GRAVGUN                          11805
+    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    requires:
+      - STR_ADEPTAS
+      - STR_SMALL_LAUNCHER
+    size: 0.2
+    dropoff: 5
+    costSell: 10000
+    weight: 10
+    bigSprite: 626
+    floorSprite: 615
+    handSprite: 184
+    bulletSprite: 21
+    fireSound: 802
+    compatibleAmmo:
+      - STR_WEBBER_AMMO
+    accuracySnap: 65
+    tuSnap: 40
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 4
+    listOrder: 11805
+  - type: STR_WEBBER_AMMO #GRAVGUN                               11806
+    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    requires:
+      - STR_STUN_BOMB
+      - STR_ADEPTAS
+    size: 0.1
+    costSell: 300
+    weight: 3
+    bigSprite: 627
+    floorSprite: 616
+    handSprite: 616
+    hitSound: 790
+    hitAnimation: 160
+    power: 40
+    damageType: 1
+    clipSize: 4
+    battleType: 2
+    recoveryPoints: 1
+    damageAlter: #GRAV GUN
+      RandomType: 2 #TFTD [50% - 150%]
+      ArmorEffectiveness: 0.0
+      ToArmorPre: 0.0
+      ToArmor: 0.0
+      ToHealth: 0.0
+      ToStun: 1.0
+      ToWound: 0.0
+    listOrder: 11806
+  - type: AUX_ADEPTAS_PROBE                                                 #TOME
+    psiAttackName: STR_ANALYZE #string id of psi-amp attack name in the pop-up menu. Required to enable special attack.
+    weight: 0
+    hitSound: 37
+    battleType: 8
+    LOSRequired: true
+    tuUse: 5
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 7
+    specialUseEmptyHand: true
+  - type: STR_STORMTURRET_ADEPTAS_SPAWNER
+    spawnUnit: STR_STORMTURRET_ADEPTAS
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+  - type: STR_STORMRAVEN_ADEPTAS_WEAPON     #STORMRAVEN ASSAULT CAN
+    size: 0.6
+    dropoff: 5
+    weight: 10
+    bigSprite: 810
+    bulletSprite: 6
+    fireSound: 12
+    compatibleAmmo:
+      - STR_ASSC_CLIP
+    accuracyAuto: 50
+    tuAuto: 45
+    autoRange: 30
+    autoShots: 10
+    sprayWaypoints: 3
+    battleType: 1
+    hitSound: 13
+    hitAnimation: 26
+    power: 90
+    damageType: 1
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    twoHanded: false
+    fixedWeapon: true
+    bulletSpeed: 50
+  - type: STR_HEALS
+    confMelee:
+      name: STR_LAYHANDS
+    size: 0.2
+    weight: 5
+    bigSprite: 624
+    meleeSound: 834
+    meleeHitSound: 286
+    meleeAnimation: 60
+    power: 20
+    damageType: 0
+    accuracyMelee: 80
+    battleType: 3
+    twoHanded: false
+    invWidth: 2
+    invHeight: 3
+    armor: 52
+    skillApplied: true
+    strengthApplied: true
+    fixedWeapon: true
+    attraction: 1
+    damageAlter: #REPAIR
+      RandomType: 3
+      ToHealth: -1.0
+      ToStun: 0.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      ArmorEffectiveness: 0.0
+    flatRate: true
+    costMelee:
+      time: 15
+      energy: 40
+    recover: false
+    clipSize: -1
+    specialUseEmptyHand: true
+  - type: AUX_ADEPTAS_MEDI_KIT      #AUX MEDI KIT
+    size: 0.1
+    costSell: 50
+    weight: 0
+    bigSprite: 611
+    floorSprite: 24
+    battleType: 6
+    invWidth: 2
+    invHeight: 3
+    painKiller: 30
+    heal: 30
+    stimulant: 30
+    woundRecovery: 1
+    healthRecovery: 3
+    stunRecovery: 4
+    energyRecovery: 10
+    tuUse: 10
+    experienceTrainingMode: 19 #*** makes the apothecary medikit item train bravery ***
+    medikitTargetSelf: true
+    flatRate: true
+    recover: false
+    fixedWeapon: true
+    #*** Melee
+    meleeSound: 753 #753 Powerswrod miss
+    meleeHitSound: 709 #709 chainhit
+    meleeAnimation: 44
+    meleeType: 7
+    meleePower: 50
+    accuracyMelee: 70
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+    meleeAlter: #DA CHAIN
+      ToArmorPre: 0.3
+      ToHealth: 0.9
+      RandomType: 2 #TFTD [50% - 150%]
+      ToWound: 0.3
+      ToEnergy: 0.5
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 15
+    flatMelee:
+      time: true
+  - type: AUX_PENITENT_FLAMER   #dread Flamer Palm
+    categories: [ STR_CAT_FLAMER, STR_CAT_TACTICAL]
+    weight: 1
+    bigSprite: 621
+    bulletSprite: 5
+    fireSound: 706
+    hitSound: 12
+    hitAnimation: 88 #XFIRE
+    vaporColorSurface: 0
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    battleType: 1
+    power: 60
+    damageType: 2
+    blastRadius: 2
+    accuracyAuto: 20
+    tuAuto: 35
+    bulletSpeed: 50
+    explosionSpeed: 10
+    experienceTrainingMode: 6
+    maxRange: 9
+    autoShots: 6
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+    fixedWeapon: true
+    recover: false
+    twoHanded: false
+    #Melee FIST
+    meleeSound: 753 #753 Powerswrod miss
+    meleeHitSound: 709 #709 chainhit
+    meleeAnimation: 44
+    meleeType: 7
+    meleePower: 100
+    accuracyMelee: 70
+    tuMelee: 15
+    flatMelee:
+      time: true
+  - type: STR_POWER_SWORD_SUP  #         13001          DA POWER
+    categories: [STR_CAT_MELEE, STR_CAT_TERMINATOR]
+    size: 0.2
+    costSell: 15000
+    weight: 100
+    bigSprite: 623
+    meleeAnimation: 4
+    meleeSound: 753 #753 Powerswrod miss
+    meleeHitSound: 754 #744 Powerswrod hit
+    power: 140
+    damageAlter:     #DA POWER
+      ArmorEffectiveness: 0.7
+      ToArmorPre: 0.2
+      ToHealth: 0.9
+      RandomType: 2 #TFTD [50% - 150%]
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 10
+    clipSize: -1
+    battleType: 3
+    invWidth: 2
+    invHeight: 3
+    flatRate: true
+    armor: 60
+    skillApplied: true
+    meleeMultiplier:
+      melee: 1.0
+      flatHundred: 0.0
+    strengthApplied: false
+    fixedWeapon: true
+    recover: false
+    listOrder: 13001
+  - type: STR_PENITENT_ENGINE   #Tarantula Sentry Weapon    2300
+    categories: [STR_CAT_AUXILIARY]
+    size: 6
+    customItemPreviewIndex: 28
+    costSell: 360000
+    monthlySalary: 60000
+    transferTime: 96
+    weight: 1
+    bigSprite: 621
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 5
+    fireSound: 706
+    vaporColorSurface: 0
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    hitSound: 12
+    hitAnimation: 88 #XFIRE
+    battleType: 1
+    power: 60
+    damageType: 2
+    blastRadius: 2
+    accuracyAuto: 20
+    tuAuto: 35
+    bulletSpeed: 50
+    explosionSpeed: 10
+    maxRange: 9
+    autoShots: 6
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+    fixedWeapon: true
+    twoHanded: false
+    #Melee FIST
+    meleeSound: 753 #753 Powerswrod miss
+    meleeHitSound: 709 #709 chainhit
+    meleeAnimation: 44
+    meleeType: 7
+    meleePower: 100
+    accuracyMelee: 70
+    tuMelee: 15
+    flatMelee:
+      time: true
+    listOrder: 2310
+  - type: STR_EVISCERATOR #         12410            DA CHAIN
+    categories: [STR_CAT_MELEE, STR_CAT_ASSAULT]
+    size: 0.2
+    requiresBuy:
+      - STR_ADEPTAS
+    costBuy: 10000
+    costSell: 5500
+    weight: 25
+    bigSprite: 620
+    floorSprite: 610
+    handSprite: 168
+    meleeSound: 753 #753 Powerswrod miss
+    meleeHitSound: 709 #709 chainhit
+    meleeAnimation: 44
+    power: 100
+    damageAlter: #DA CHAIN
+      ToArmorPre: 0.3
+      ToHealth: 0.9
+      RandomType: 2 #TFTD [50% - 150%]
+      ToWound: 0.3
+      ToEnergy: 0.5
+    damageType: 7
+    accuracyMelee: 70
+    tuMelee: 20
+    clipSize: -1
+    battleType: 3
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 20
+    skillApplied: true
+    meleeMultiplier:
+      melee: 1.0
+      flatHundred: 0.0
+    experienceTrainingMode: 13
+    listOrder: 12410
+  - type: STR_MORTAR
+    weight: 10
+    bigSprite: 262
+    bulletSprite: 4
+    fireSound: [169, 170, 171]
+    clipSize: 12
+    accuracyAuto: 60
+    tuAuto: 80
+    autoShots: 3
+    confAuto:
+      name: STR_LAUNCH_SALVO
+    accuracyMultiplier:
+      firing: 0.8
+      throwing: 0.8
+    hitSound: 0
+    hitAnimation: 0
+    power: 200
+    damageType: 3
+    battleType: 1
+    twoHanded: false
+    invWidth: 2
+    invHeight: 3
+    arcingShot: true
+    minRange: 5
+    dropoff: 5
+    recover: false
+    fixedWeapon: true
+  - type: STR_IMMOLATOR_HEAVY_FLAMER
+    dropoff: 5
+    weight: 5
+    bigSprite: 618
+    bulletSprite: 5
+    fireSound: 706
+    vaporColorSurface: 0
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    compatibleAmmo:
+      - STR_HFLAMER_CLIP
+    accuracyAuto: 50
+    accuracySnap: 75
+    tuAuto: 50
+    tuSnap: 20
+    battleType: 1
+    arcingShot: true
+    invWidth: 2
+    invHeight: 3
+    autoRange: 10
+    snapRange: 10
+    aimRange: 10
+    maxRange: 20
+    autoShots: 4
+    bulletSpeed: 80
+    fixedWeapon: true
+    recover: false
+  - type: STR_IMMOLATOR_SPAWNER
+    spawnUnit: STR_IMMOLATOR
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+  - type: STR_EXORCIST_SPAWNER
+    spawnUnit: STR_EXORCIST
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+  - type: STR_SKULL_SPAWNER
+    spawnUnit: STR_SKULL
+    primeActionName: STR_ACTIVATE
+    spawnUnitFaction: 0
+    categories: [ STR_CAT_EQUIPMENT]
+    defaultInventorySlot: STR_LEFT_HAND
+    size: 0.1
+    weight: 3
+    bigSprite: 612
+    floorSprite: 373
+    handSprite: 192
+    power: 1
+    damageType: 3
+    battleType: 4
+    blastRadius: 1
+    explosionHitSound: 777 #792 Smoke
+    hitAnimation: 192 #XSmoke
+    invWidth: 2
+    invHeight: 1
+    recover: false
+  - type: STR_GK_SPAWNER
+    spawnUnit: STR_GK_SOLDIER_ADEPTAS
+    primeActionName: STR_ACTIVATE
+    spawnUnitFaction: 0
+    categories: [ STR_CAT_EQUIPMENT]
+    costSell: 500000
+    size: 0.2
+    weight: 15
+    bigSprite: 628
+    floorSprite: 397
+    handSprite: 966
+    power: 1
+    damageType: 3
+    battleType: 4
+    blastRadius: 1
+    hitAnimation: 176 #XTELEPORT
+    explosionHitSound: 788
+    invWidth: 2
+    invHeight: 2
+
+  - type: STR_ADEPTAS_ARMORD          #5730
+    size: 0.8
+    costSell: 10000
+    listOrder: 5730
+  - type: STR_ADEPTAS_ARMORI          #5720
+    size: 0.8
+    costSell: 10000
+    listOrder: 5720
+  - type: STR_ADEPTAS_ARMORB          #5710
+    size: 0.8
+    costSell: 10000
+    listOrder: 5710
+  - type: STR_ADEPTAS_ARMORA          #5700
+    size: 0.8
+    costSell: 10000
+    listOrder: 5700
+  - type: STR_ADEPTAS_ARMORS          #5730
+    size: 0.8
+    costSell: 10000
+    listOrder: 5730
+  - type: STR_ADEPTAS_ARMOR_HONOR     #5735
+    size: 0.8
+    costSell: 10000
+    listOrder: 5735
+  - type: STR_ADEPTAS_ARMORC          #5740
+    size: 0.8
+    costSell: 10000
+    listOrder: 5740
+  - type: STR_ADEPTAS_ARMORCEL        #5750
+    size: 0.8
+    costSell: 10000
+    listOrder: 5750
+#                 #                                        #                      #
+  - type: STR_EXORCIST_CORPSE #explod
+    size: 1
+    costSell: 30000
+    battleType: 11
+    power: 30
+    blastRadius: 2
+    damageAlter:
+      RandomType: 3
+      FixRadius: 2
+      ResistType: 10
+      ArmorEffectiveness: 0.2
+      ToArmor: 0.0
+      ToItem: 0.0
+      ToTile: 10.0
+      RadiusReduction: 0.0
+  - type: SRA_CORPSE1 #STORMRAVEN CORPSE
+    floorSprite: 611
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: SRA_CORPSE2
+    floorSprite: 612
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: SRA_CORPSE3
+    floorSprite: 613
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: SRA_CORPSE4
+    floorSprite: 614
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_GREYK_CORPSE_ADEPTAS                  #GK 19997
+    size: 0.4
+    costSell: 30000
+    weight: 50
+    bigSprite: 459
+    floorSprite: 358
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    battleType: 11
+    armor: 80
+    listOrder: 19997
+  - type: STR_ADEPTAS_HONOR_CORPSE
+    name: STR_CORPSE
+    weight: 30
+    bigSprite: 610
+    floorSprite: 372
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    battleType: 11
+    recover: false
+  - type: STR_ADEPTASA_CORPSE
+    name: STR_CORPSE
+    weight: 30
+    bigSprite: 610
+    floorSprite: 372
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    battleType: 11
+    recover: false
+  - type: STR_ADEPTASB_CORPSE
+    name: STR_CORPSE
+    weight: 30
+    bigSprite: 616
+    floorSprite: 376
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    battleType: 11
+    recover: false
+  - type: STR_ADEPTASI_CORPSE
+    name: STR_CORPSE
+    weight: 30
+    bigSprite: 615
+    floorSprite: 375
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    battleType: 11
+    recover: false
+  - type: STR_ADEPTASD_CORPSE
+    name: STR_CORPSE
+    weight: 30
+    bigSprite: 617
+    floorSprite: 377
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    battleType: 11
+    recover: false
+  - type: STR_ADEPTASC_CORPSE
+    name: STR_CORPSE
+    weight: 30
+    bigSprite: 619
+    floorSprite: 378
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    battleType: 11
+    recover: false
+  - type: STR_ADEPTASCEL_CORPSE
+    name: STR_CORPSE
+    weight: 30
+    bigSprite: 622
+    floorSprite: 379
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    battleType: 11
+    recover: false
+  - type: STR_ADEPTASZ_CORPSE   #ZOMBIE
+    name: STR_CORPSE
+    weight: 30
+    bigSprite: 598
+    floorSprite: 622
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    battleType: 11
+    recover: false
+  - type: STR_CELZ_CORPSE       #ZOMBIE
+    name: STR_CORPSE
+    weight: 30
+    bigSprite: 599
+    floorSprite: 623
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    battleType: 11
+    recover: false
+  - type: STR_SKULL_CORPSE
+    weight: 5
+    bigSprite: 613
+    floorSprite: 374
+    invWidth: 2
+    invHeight: 2
+    armor: 10
+    battleType: 11
+    recover: false
+  - type: SUP_CORPSE1
+    floorSprite: 380
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: SUP_CORPSE2
+    floorSprite: 382
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: SUP_CORPSE3
+    floorSprite: 381
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: SUP_CORPSE4
+    floorSprite: 383
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: PEN_CORPSE1
+    floorSprite: 384
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: PEN_CORPSE2
+    floorSprite: 385
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: PEN_CORPSE3
+    floorSprite: 386
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: PEN_CORPSE4
+    floorSprite: 387
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: EXO_CORPSE1
+    floorSprite: 389
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: EXO_CORPSE2
+    floorSprite: 390
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: EXO_CORPSE3
+    floorSprite: 391
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: EXO_CORPSE4
+    floorSprite: 392
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: INC_CORPSE1
+    floorSprite: 393
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: INC_CORPSE2
+    floorSprite: 394
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: INC_CORPSE3
+    floorSprite: 395
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: INC_CORPSE4
+    floorSprite: 396
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+manufacture:
+  - name: STR_GK_SPAWNER
+    category: STR_EQUIPMENT
+    requires:
+      - STR_NAVY_COMUNICATIONS
+      - STR_INQOFF
+      - STR_ADEPTAS
+    space: 2
+    time: 100
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_HABITAT: 10
+      STR_ALIEN_ALLOYS: 2
+    listOrder: 3351
+    requiresBaseFunc: [LIB, COMU]
+  - name: STR_WEBBER_AMMO #                         MC
+    category: STR_AMMUNITION
+    requires:
+      - STR_SMALL_LAUNCHER
+      - STR_ADEPTAS
+    space: 2
+    time: 200
+    cost: 20000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_UFO_CONSTRUCTION: 20
+    producedItems:
+      STR_WEBBER_AMMO: 5
+  - name: STR_WEBBER
+    category: STR_WEAPON
+    requires:
+      - STR_SMALL_LAUNCHER
+      - STR_ADEPTAS
+    space: 3
+    time: 900
+    cost: 60000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+  - name: STR_PENITENT_ENGINE               #1 BADGE 1
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_ADEPTAS
+      - STR_PLASMA_CANNON
+      - STR_NEW_FIGHTER_CRAFT
+    space: 30
+    time: 1200
+    cost: 850000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_ELERIUM_115: 30
+      STR_ALIEN_HABITAT: 1
+  - name: STR_ADEPTAS_ARMORA                 #1 BADGE 1
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ADEPTAS
+      - STR_MEDI_KIT_PREREQ
+    space: 12
+    time: 800
+    cost: 22000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 40
+      STR_ALIEN_HABITAT: 1
+  - name: STR_ADEPTAS_ARMORB
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ADEPTAS_ARMORB
+    space: 12
+    time: 800
+    cost: 22000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 60
+  - name: STR_ADEPTAS_ARMORS
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ADEPTAS_ARMORS
+    space: 12
+    time: 800
+    cost: 22000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+  - name: STR_ADEPTAS_ARMORD               #1 BADGE 5          #ADEPTAS DOM
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ADEPTAS_ARMORD
+    space: 16
+    time: 6400
+    cost: 300000
+    requiresBaseFunc: [PSI]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 500
+      STR_ELERIUM_115: 160
+      STR_ALIEN_HABITAT: 5
+  - name: STR_ADEPTAS_ARMORCEL                 #1 BADGE 1
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ADEPTAS_ARMOR
+      - STR_ADEPTAS_ARMORCEL
+    space: 16
+    time: 800
+    cost: 28000
+    requiresBaseFunc: [PSI]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 300
+      STR_ELERIUM_115: 40
+      STR_ALIEN_HABITAT: 1
+  - name: STR_ADEPTAS_ARMORI                  #1 BADGE 5
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ADEPTAS_ARMOR
+      - STR_PSI_AMP
+    space: 12
+    time: 800
+    cost: 42000
+    requiresBaseFunc: [LIB]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 100
+      STR_ALIEN_HABITAT: 5
+  - name: STR_ADEPTAS_ARMORC                  #1 BADGE 5           #ADEPTAS BARRONESS
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ADEPTAS_ARMORC
+    space: 12
+    time: 800
+    cost: 400000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 200
+      STR_ALIEN_HABITAT: 5
+      STR_ELERIUM_115: 50
+  - name: STR_ADEPTAS_ARMOR_HONOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ADEPTAS_ARMOR_HONOR
+    space: 12
+    time: 800
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_HABITAT: 5
+      STR_ALIEN_ALLOYS: 5
+#--------------------------------------------------------------- CRAFT --------------------------------
+  - name: STR_ADEPTAS_THUNDERHAWNK #thunderhawnk Type 1
+    category: STR_CRAFT
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_ADEPTAS
+    space: 34
+    time: 18000
+    cost: 600000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 850
+      STR_UFO_POWER_SOURCE: 1
+      STR_UFO_NAVIGATION: 1
+    producedItems:
+      STR_ADEPTAS_THUNDERHAWNK: 1
+  - name: STR_STORMEAGLE_ADEPTAS
+    category: STR_CRAFT
+    requires:
+      - STR_STORMEAGLE_INTERCEPTOR
+      - STR_ADEPTAS
+    space: 30
+    time: 20000
+    cost: 800000
+    listOrder: 3350
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1000
+      STR_UFO_POWER_SOURCE: 4
+      STR_UFO_NAVIGATION: 2
+  - name: STR_STORMRAVEN_ADEPTAS
+    category: STR_CRAFT
+    requires:
+      - STR_ADEPTAS
+      - STR_NEW_FIGHTER_CRAFT
+    space: 30
+    time: 14000
+    cost: 400000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 650
+      STR_UFO_POWER_SOURCE: 1
+      STR_UFO_NAVIGATION: 1
+  - name: STR_LANDRAIDER
+    category: STR_CRAFT
+    requires:
+      - STR_LANDRAIDER_ADEPTAS
+    space: 40
+    time: 30000
+    cost: 1000000
+    listOrder: 3350
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1500
+      STR_UFO_POWER_SOURCE: 6
+      STR_UFO_NAVIGATION: 6
+  - name: STR_TTA #thunderhawnk Transport ASS
+    category: STR_CRAFT
+    requires:
+      - STR_HIGHTIER_PREREQ
+      - STR_ADEPTAS
+    space: 36
+    time: 34000
+    cost: 900000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1200
+      STR_UFO_POWER_SOURCE: 2
+      STR_UFO_NAVIGATION: 1
+#
+extraSprites:
+  - type: AINVZ.SPK #INV
+    singleImage: true
+    files:
+      0: Resources/Adeptas/AINVZ.png
+  - type: CINVZ.SPK #INV
+    singleImage: true
+    files:
+      0: Resources/Adeptas/CINVZ.png
+  - type: PENI.SPK #INV
+    singleImage: true
+    files:
+      0: Resources/Adeptas/PENI.png
+  - type: EXOI.SPK #INV
+    singleImage: true
+    files:
+      0: Resources/Adeptas/EXOI.png
+  - type: INCI.SPK #INV
+    singleImage: true
+    files:
+      0: Resources/Adeptas/INCI.png
+  - type: STORMRAVENA.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Stormraven/BLACKT/Stormraven.png
+  - type: EXODR.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Adeptas/EXO.png
+  - type: INCDR.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Adeptas/INC.png
+  - type: SKULLDR.PCK
+    width: 512
+    height: 80
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Adeptas/battlesprite/DRSKULL.png
+  - type: SKULL.SPK
+    singleImage: true
+    files:
+      0: Resources/Adeptas/SKULLINV.png
+  - type: CELSUP.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Adeptas/battlesprite/SUPDR20.png
+  - type: PEN.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Adeptas/PEN.png
+#    Drawing routine
+  - type: ADEPTASZ.PCK #ADEPTAS ARMOR xcom33
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Zombies/ADEPTAS/ADEPTASZ.png
+  - type: CELESTIANZ.PCK #ADEPTAS ARMOR xcom33
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Zombies/ADEPTAS/CELESTIANZ.png
+  - type: XCOM_33.PCK #ADEPTAS ARMOR xcom33
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Adeptas/battlesprite/ADEPTASA.png
+  - type: XCOM_38.PCK #ADEPTAS ARMOR xcom38
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Adeptas/battlesprite/ADEPTASH.png
+  - type: XCOM_40.PCK #ADEPTAS ARMOR xcom40
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Adeptas/battlesprite/ADEPTASR.png
+  - type: XCOM_41.PCK #ADEPTAS ARMOR xcom41
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Adeptas/battlesprite/ADEPTASHP.png
+  - type: XCOM_42.PCK #ADEPTAS ARMOR xcom42
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Adeptas/battlesprite/ADEPTASS.png
+  - type: XCOM_43.PCK #ADEPTAS ARMOR xcom43
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Adeptas/battlesprite/ADEPTASB.png
+  - type: XCOM_44.PCK #ADEPTAS ARMOR xcom44
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Adeptas/battlesprite/ADEPTASI.png
+  - type: XCOM_45.PCK #ADEPTAS ARMOR xcom45
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Adeptas/battlesprite/ADEPTASD.png
+  - type: XCOM_46.PCK #ADEPTAS ARMOR xcom46
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Adeptas/battlesprite/ADEPTASC.png
+  - type: XCOM_47.PCK #ADEPTAS ARMOR xcom47
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Adeptas/battlesprite/CELESTIAN.png
+  - type: XCOM_49.PCK #ADEPTAS ARMOR xcom49
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Adeptas/battlesprite/HONOR.png
+#
+  - type: MAN_41F0.SPK #ADEPTAS INV 41 F
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHP/man_0f0.png
+  - type: MAN_41F1.SPK #ADEPTAS  INV 41
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHP/man_0f1.png
+  - type: MAN_41F2.SPK #ADEPTAS  INV 41
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHP/man_0f2.png
+  - type: MAN_41F3.SPK #ADEPTAS  INV 41
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHP/man_0f3.png
+  - type: MAN_41F4.SPK #ADEPTAS  INV 41
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHP/man_0f4.png
+  - type: MAN_41F5.SPK #ADEPTAS  INV 41
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHP/man_0f5.png
+  - type: MAN_41F6.SPK #ADEPTAS  INV 41
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHP/man_0f6.png
+  - type: MAN_41M0.SPK #ADEPTAS  INV 41 M
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHP/man_0m0.png
+  - type: MAN_41M1.SPK #ADEPTAS  INV 41
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHP/man_0m1.png
+  - type: MAN_41M2.SPK #ADEPTAS INV 41
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHP/man_0m2.png
+  - type: MAN_41M3.SPK #ADEPTAS  INV 41
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHP/man_0m3.png
+  - type: MAN_41M4.SPK #ADEPTAS  INV 41
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHP/man_0m4.png
+  - type: MAN_41M5.SPK #ADEPTAS  INV 41
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHP/man_0m5.png
+  - type: MAN_41M6.SPK #ADEPTAS  INV 41
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHP/man_0m6.png
+#
+  - type: MAN_42F0.SPK #ADEPTAS INV 42 F
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryS/man_0f0.png
+  - type: MAN_42F1.SPK #ADEPTAS  INV 42
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryS/man_0f1.png
+  - type: MAN_42F2.SPK #ADEPTAS  INV 42
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryS/man_0f2.png
+  - type: MAN_42F3.SPK #ADEPTAS  INV 42
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryS/man_0f3.png
+  - type: MAN_42F4.SPK #ADEPTAS  INV 42
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryS/man_0f4.png
+  - type: MAN_42F5.SPK #ADEPTAS  INV 42
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryS/man_0f5.png
+  - type: MAN_42F6.SPK #ADEPTAS  INV 42
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryS/man_0f6.png
+  - type: MAN_42M0.SPK #ADEPTAS  INV 42 M
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryS/man_0m0.png
+  - type: MAN_42M1.SPK #ADEPTAS  INV 42
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryS/man_0m1.png
+  - type: MAN_42M2.SPK #ADEPTAS INV 42
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryS/man_0m2.png
+  - type: MAN_42M3.SPK #ADEPTAS  INV 42
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryS/man_0m3.png
+  - type: MAN_42M4.SPK #ADEPTAS  INV 42
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryS/man_0m4.png
+  - type: MAN_42M5.SPK #ADEPTAS  INV 42
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryS/man_0m5.png
+  - type: MAN_42M6.SPK #ADEPTAS  INV 42
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryS/man_0m6.png
+# ASS 43
+  - type: MAN_43F0.SPK #ADEPTAS INV 43 F
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryA/man_0f0.png
+  - type: MAN_43F1.SPK #ADEPTAS  INV 43
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryA/man_0f1.png
+  - type: MAN_43F2.SPK #ADEPTAS  INV 43
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryA/man_0f2.png
+  - type: MAN_43F3.SPK #ADEPTAS  INV 43
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryA/man_0f3.png
+  - type: MAN_43F4.SPK #ADEPTAS  INV 43
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryA/man_0f4.png
+  - type: MAN_43F5.SPK #ADEPTAS  INV 43
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryA/man_0f5.png
+  - type: MAN_43F6.SPK #ADEPTAS  INV 43
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryA/man_0f6.png
+  - type: MAN_43M0.SPK #ADEPTAS  INV 43 M
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryA/man_0m0.png
+  - type: MAN_43M1.SPK #ADEPTAS  INV 43
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryA/man_0m1.png
+  - type: MAN_43M2.SPK #ADEPTAS INV 43
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryA/man_0m2.png
+  - type: MAN_43M3.SPK #ADEPTAS  INV 43
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryA/man_0m3.png
+  - type: MAN_43M4.SPK #ADEPTAS  INV 43
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryA/man_0m4.png
+  - type: MAN_43M5.SPK #ADEPTAS  INV 43
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryA/man_0m5.png
+  - type: MAN_43M6.SPK #ADEPTAS  INV 43
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryA/man_0m6.png
+# INQ 44
+  - type: MAN_44F0.SPK #ADEPTAS INV 44 F
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryI/man_0f0.png
+  - type: MAN_44F1.SPK #ADEPTAS  INV 44
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryI/man_0f1.png
+  - type: MAN_44F2.SPK #ADEPTAS  INV 44
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryI/man_0f2.png
+  - type: MAN_44F3.SPK #ADEPTAS  INV 44
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryI/man_0f3.png
+  - type: MAN_44F4.SPK #ADEPTAS  INV 44
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryI/man_0f4.png
+  - type: MAN_44F5.SPK #ADEPTAS  INV 44
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryI/man_0f5.png
+  - type: MAN_44F6.SPK #ADEPTAS  INV 44
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryI/man_0f6.png
+  - type: MAN_44M0.SPK #ADEPTAS  INV 44 M
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryI/man_0m0.png
+  - type: MAN_44M1.SPK #ADEPTAS  INV 44
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryI/man_0m1.png
+  - type: MAN_44M2.SPK #ADEPTAS INV 44
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryI/man_0m2.png
+  - type: MAN_44M3.SPK #ADEPTAS  INV 44
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryI/man_0m3.png
+  - type: MAN_44M4.SPK #ADEPTAS  INV 44
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryI/man_0m4.png
+  - type: MAN_44M5.SPK #ADEPTAS  INV 44
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryI/man_0m5.png
+  - type: MAN_44M6.SPK #ADEPTAS  INV 44
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryI/man_0m6.png
+# DOMI 45
+  - type: MAN_45F0.SPK #ADEPTAS INV 45 F
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryD/man_0f0.png
+  - type: MAN_45F1.SPK #ADEPTAS  INV 45
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryD/man_0f1.png
+  - type: MAN_45F2.SPK #ADEPTAS  INV 45
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryD/man_0f2.png
+  - type: MAN_45F3.SPK #ADEPTAS  INV 45
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryD/man_0f3.png
+  - type: MAN_45F4.SPK #ADEPTAS  INV 45
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryD/man_0f4.png
+  - type: MAN_45F5.SPK #ADEPTAS  INV 45
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryD/man_0f5.png
+  - type: MAN_45F6.SPK #ADEPTAS  INV 45
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryD/man_0f6.png
+  - type: MAN_45M0.SPK #ADEPTAS  INV 45 M
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryD/man_0m0.png
+  - type: MAN_45M1.SPK #ADEPTAS  INV 45
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryD/man_0m1.png
+  - type: MAN_45M2.SPK #ADEPTAS INV 45
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryD/man_0m2.png
+  - type: MAN_45M3.SPK #ADEPTAS  INV 45
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryD/man_0m3.png
+  - type: MAN_45M4.SPK #ADEPTAS  INV 45
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryD/man_0m4.png
+  - type: MAN_45M5.SPK #ADEPTAS  INV 45
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryD/man_0m5.png
+  - type: MAN_45M6.SPK #ADEPTAS  INV 45
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryD/man_0m6.png
+# BAR 46
+  - type: MAN_46F0.SPK #ADEPTAS INV 46 F
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryB/man_0f0.png
+  - type: MAN_46F1.SPK #ADEPTAS  INV 46
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryB/man_0f1.png
+  - type: MAN_46F2.SPK #ADEPTAS  INV 46
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryB/man_0f2.png
+  - type: MAN_46F3.SPK #ADEPTAS  INV 46
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryB/man_0f3.png
+  - type: MAN_46F4.SPK #ADEPTAS  INV 46
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryB/man_0f4.png
+  - type: MAN_46F5.SPK #ADEPTAS  INV 46
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryB/man_0f5.png
+  - type: MAN_46F6.SPK #ADEPTAS  INV 46
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryB/man_0f6.png
+  - type: MAN_46M0.SPK #ADEPTAS  INV 46 M
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryB/man_0m0.png
+  - type: MAN_46M1.SPK #ADEPTAS  INV 46
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryB/man_0m1.png
+  - type: MAN_46M2.SPK #ADEPTAS INV 46
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryB/man_0m2.png
+  - type: MAN_46M3.SPK #ADEPTAS  INV 46
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryB/man_0m3.png
+  - type: MAN_46M4.SPK #ADEPTAS  INV 46
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryB/man_0m4.png
+  - type: MAN_46M5.SPK #ADEPTAS  INV 46
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryB/man_0m5.png
+  - type: MAN_46M6.SPK #ADEPTAS  INV 46
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryB/man_0m6.png
+# CELES 47
+  - type: MAN_47F0.SPK #ADEPTAS INV 47 F
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryCEL/man_0f0.png
+  - type: MAN_47F1.SPK #ADEPTAS  INV 47
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryCEL/man_0f1.png
+  - type: MAN_47F2.SPK #ADEPTAS  INV 47
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryCEL/man_0f2.png
+  - type: MAN_47F3.SPK #ADEPTAS  INV 47
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryCEL/man_0f3.png
+  - type: MAN_47F4.SPK #ADEPTAS  INV 47
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryCEL/man_0f4.png
+  - type: MAN_47F5.SPK #ADEPTAS  INV 47
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryCEL/man_0f5.png
+  - type: MAN_47F6.SPK #ADEPTAS  INV 47
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryCEL/man_0f6.png
+  - type: MAN_47M0.SPK #ADEPTAS  INV 47 M
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryCEL/man_0m0.png
+  - type: MAN_47M1.SPK #ADEPTAS  INV 47
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryCEL/man_0m1.png
+  - type: MAN_47M2.SPK #ADEPTAS INV 47
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryCEL/man_0m2.png
+  - type: MAN_47M3.SPK #ADEPTAS  INV 47
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryCEL/man_0m3.png
+  - type: MAN_47M4.SPK #ADEPTAS  INV 47
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryCEL/man_0m4.png
+  - type: MAN_47M5.SPK #ADEPTAS  INV 47
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryCEL/man_0m5.png
+  - type: MAN_47M6.SPK #ADEPTAS  INV 47
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryCEL/man_0m6.png
+# SUP 48
+  - type: MAN_48F0.SPK #ADEPTAS INV 48 F
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventorySUP/man_0f0.png
+  - type: MAN_48F1.SPK #ADEPTAS  INV 48
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventorySUP/man_0f1.png
+  - type: MAN_48F2.SPK #ADEPTAS  INV 48
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventorySUP/man_0f2.png
+  - type: MAN_48F3.SPK #ADEPTAS  INV 48
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventorySUP/man_0f3.png
+  - type: MAN_48F4.SPK #ADEPTAS  INV 48
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventorySUP/man_0f4.png
+  - type: MAN_48F5.SPK #ADEPTAS  INV 48
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventorySUP/man_0f5.png
+  - type: MAN_48F6.SPK #ADEPTAS  INV 48
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventorySUP/man_0f6.png
+  - type: MAN_48M0.SPK #ADEPTAS  INV 48 M
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventorySUP/man_0m0.png
+  - type: MAN_48M1.SPK #ADEPTAS  INV 48
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventorySUP/man_0m1.png
+  - type: MAN_48M2.SPK #ADEPTAS INV 48
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventorySUP/man_0m2.png
+  - type: MAN_48M3.SPK #ADEPTAS  INV 48
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventorySUP/man_0m3.png
+  - type: MAN_48M4.SPK #ADEPTAS  INV 48
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventorySUP/man_0m4.png
+  - type: MAN_48M5.SPK #ADEPTAS  INV 48
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventorySUP/man_0m5.png
+  - type: MAN_48M6.SPK #ADEPTAS  INV 48
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventorySUP/man_0m6.png
+#Honor
+  - type: MAN_49F0.SPK #ADEPTAS INV 49 F
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHON/man_0f0.png
+  - type: MAN_49F1.SPK #ADEPTAS  INV 49
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHON/man_0f1.png
+  - type: MAN_49F2.SPK #ADEPTAS  INV 49
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHON/man_0f2.png
+  - type: MAN_49F3.SPK #ADEPTAS  INV 49
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHON/man_0f3.png
+  - type: MAN_49F4.SPK #ADEPTAS  INV 49
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHON/man_0f4.png
+  - type: MAN_49F5.SPK #ADEPTAS  INV 49
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHON/man_0f5.png
+  - type: MAN_49F6.SPK #ADEPTAS  INV 49
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHON/man_0f6.png
+  - type: MAN_49M0.SPK #ADEPTAS  INV 49 M
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHON/man_0m0.png
+  - type: MAN_49M1.SPK #ADEPTAS  INV 49
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHON/man_0m1.png
+  - type: MAN_49M2.SPK #ADEPTAS INV 49
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHON/man_0m2.png
+  - type: MAN_49M3.SPK #ADEPTAS  INV 49
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHON/man_0m3.png
+  - type: MAN_49M4.SPK #ADEPTAS  INV 49
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHON/man_0m4.png
+  - type: MAN_49M5.SPK #ADEPTAS  INV 49
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHON/man_0m5.png
+  - type: MAN_49M6.SPK #ADEPTAS  INV 49
+    singleImage: true
+    files:
+      0: Resources/Adeptas/InventoryHON/man_0m6.png
+soldiers:
+  - type: STR_CANONESS
+    flagOffset: 21
+    costSalary: 40000
+    minStats:
+      tu: 50
+      stamina: 40
+      health: 35
+      bravery: 60
+      reactions: 40
+      firing: 50
+      throwing: 40
+      strength: 20
+      psiStrength: 50
+      psiSkill: 0
+      melee: 50
+    maxStats:
+      tu: 60
+      stamina: 70
+      health: 45
+      bravery: 90
+      reactions: 60
+      firing: 70
+      throwing: 65
+      strength: 30
+      psiStrength: 100
+      psiSkill: 16
+      melee: 80
+    statCaps:
+      tu: 80
+      stamina: 100
+      health: 70
+      bravery: 110
+      reactions: 85
+      firing: 110
+      throwing: 80
+      strength: 65
+      psiStrength: 100
+      psiSkill: 100
+      melee: 130
+    trainingStatCaps:
+      tu: 60
+      stamina: 80
+      health: 60
+      firing: 70
+      throwing: 65
+      strength: 30
+      psiStrength: 100
+      psiSkill: 100
+      melee: 80
+    dogfightExperience:
+        bravery: 10
+        reactions: 30
+        firing: 25
+    armor: STR_ADEPTAS_ARMOR_UC
+    allowPiloting: true
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - AdeptasName/
+    deathMale: [749, 750, 751, 752]
+    deathFemale: [744, 745, 746, 747, 748]
+    rankStrings:
+      - STR_CANONESS_RANK_0
+      - STR_CANONESS_RANK_1
+      - STR_CANONESS_RANK_2
+      - STR_CANONESS_RANK_3
+      - STR_CANONESS_RANK_4
+      - STR_CANONESS_RANK_5
+    rankSprite: 850
+    rankBattleSprite: 233
+    rankTinySprite: 145
+
+  - type: STR_SAINT
+    costSalary: 40000
+    minStats:
+      tu: 60
+      stamina: 50
+      health: 50
+      bravery: 20
+      reactions: 40
+      firing: 50
+      throwing: 60
+      strength: 30
+      psiStrength: 10
+      psiSkill: 10
+      melee: 60
+    maxStats:
+      tu: 70
+      stamina: 80
+      health: 70
+      bravery: 70
+      reactions: 70
+      firing: 80
+      throwing: 90
+      strength: 50
+      psiStrength: 110
+      psiSkill: 26
+      melee: 90
+    statCaps:
+      tu: 110
+      stamina: 130
+      health: 100
+      bravery: 120
+      reactions: 120
+      firing: 140
+      throwing: 130
+      strength: 110
+      psiStrength: 110
+      psiSkill: 110
+      melee: 140
+    armor: STR_ADEPTAS_ARMORSUP_UC
+    #rank: 5
+    allowPiloting: false
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - AdeptasName/
+    deathMale: [749, 750, 751, 752]
+    deathFemale: [744, 745, 746, 747, 748]
+    rankStrings:
+      - STR_SAINT_RANK_0
+      - STR_SAINT_RANK_1
+      - STR_SAINT_RANK_2
+      - STR_SAINT_RANK_3
+      - STR_SAINT_RANK_4
+      - STR_SAINT_RANK_5
+    rankSprite: 127
+    rankBattleSprite: 227
+    rankTinySprite: 139
+
+soldierTransformation:
+  - name: STR_PROMOTE_TO_CANONESS
+    requires:
+      - STR_ADEPTAS
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_HABITAT: 1
+    producedSoldierType: STR_CANONESS
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsWoundedSoldiers: true
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_ADEPTAS
+    requiredMinStats:
+      psiSkill: 50
+
+  - name: STR_BLESSING_SPEED
+    requires:
+      - STR_ADEPTAS
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_HABITAT: 1
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsWoundedSoldiers: true
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_CANONESS
+    forbiddenPreviousTransformations:
+      - STR_BLESSING_SPEED
+      - STR_BLESSING_ACCURACY
+      - STR_BLESSING_STRENGTH
+    soldierBonusType: STR_BLESSING_SPEED
+
+  - name: STR_BLESSING_ACCURACY
+    requires:
+      - STR_ADEPTAS
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_HABITAT: 1
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsWoundedSoldiers: true
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_CANONESS
+    forbiddenPreviousTransformations:
+      - STR_BLESSING_SPEED
+      - STR_BLESSING_ACCURACY
+      - STR_BLESSING_STRENGTH
+    soldierBonusType: STR_BLESSING_ACCURACY
+
+  - name: STR_BLESSING_STRENGTH
+    requires:
+      - STR_ADEPTAS
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_HABITAT: 1
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsWoundedSoldiers: true
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_CANONESS
+    forbiddenPreviousTransformations:
+      - STR_BLESSING_SPEED
+      - STR_BLESSING_ACCURACY
+      - STR_BLESSING_STRENGTH
+    soldierBonusType: STR_BLESSING_STRENGTH
+
+  - name: STR_RESURRECT_SISTER
+    requires:
+      - STR_ADEPTAS
+      - STR_ADEPTAS_ARMORSUP
+    cost: 850000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 400
+      STR_ELERIUM_115: 30
+      STR_ALIEN_HABITAT: 20
+    producedSoldierType: STR_SAINT
+    producedSoldierArmor: STR_ADEPTAS_ARMORSUP_UC
+    allowsDeadSoldiers: true
+    allowsWoundedSoldiers: false
+    allowsLiveSoldiers: false
+    needsCorpseRecovered: true
+    minRank: 4
+    allowedSoldierTypes:
+      - STR_ADEPTAS
+      - STR_CANONESS
+      - STR_SAINT
+    transferTime: 24
+    recoveryTime: 0
+    lowerBoundAtMinStats: true
+    reset: true
+    soldierBonusType: STR_BLESSING_SAINT
+
+soldierBonuses:
+  - name: STR_BLESSING_SPEED
+    stats:
+      tu: 10
+      stamina: 20
+      reactions: 15
+
+  - name: STR_BLESSING_ACCURACY
+    stats:
+      reactions: 5
+      firing: 20
+      melee: 10
+
+  - name: STR_BLESSING_STRENGTH
+    stats:
+      health: 10
+      stamina: 10
+      throwing: 20
+      strength: 15
+
+  - name: STR_BLESSING_SAINT
+    stats:
+      tu: 10
+      stamina: 20
+      health: 10
+      reactions: 15
+      firing: 20
+      throwing: 20
+      strength: 15
+      melee: 10
+      psiSkill: 25
+
+extended:
+  tags:
+    RuleArmor:
+#*** Tags for handling energy shields on units ***
+      #ARMOR_ENERGY_SHIELD_CAPACITY: int
+      #ARMOR_ENERGY_SHIELD_PER_TURN: int
+      #ARMOR_ENERGY_SHIELD_FLASH_COLOR: int
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: int
+      ARMOR_ENERGY_SHIELD_DECAY: int
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: int

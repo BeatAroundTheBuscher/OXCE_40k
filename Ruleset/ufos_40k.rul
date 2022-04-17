@@ -1,0 +1,1240 @@
+﻿ufos:
+  - type: STR_DOOMSDAY_MONOLITH #NECRON
+    marker: 59
+    markerLand: 62
+    markerCrash: 63
+    size: STR_LARGE
+    alertSound: 38
+    modSprite: InterceptionUFO-19
+    damageMax: 8000
+    speedMax: 100
+    accel: 2
+    power: 150
+    range: 65
+    score: 1000
+    reload: 30
+    breakOffTime: 1000
+    battlescapeTerrainData:
+      name: MONOD
+      mapDataSets:
+        - BLANKS
+        - 05FLOORTOMB
+        - 05WALLTOMB
+        - 05DOORTOMB
+        - 05ITENSTOMB
+        - 05SHIPTOMB
+        - 05HWPTOMB
+      mapBlocks:
+        - name: MONO03
+          width: 20
+          length: 20
+          items:
+            STR_REQUISITION_BOUNTY_500K:
+              - [0, 0, 0]
+            STR_MONON_SPAWNER:
+              - [5, 3, 3]
+              - [2, 6, 3]
+            STR_MONOS_SPAWNER:
+              - [11, 15, 3]
+              - [14, 12, 3]
+            STR_MONOE_SPAWNER:
+              - [11, 3, 3]
+              - [14, 6, 3]
+            STR_MONOW_SPAWNER:
+              - [2, 12, 3]
+              - [5, 15, 3]
+          fuseTimers:
+            STR_MONOW_SPAWNER: [0, 0]
+            STR_MONOE_SPAWNER: [0, 0]
+            STR_MONON_SPAWNER: [0, 0]
+            STR_MONOS_SPAWNER: [0, 0]
+  - type: STR_MONOLITH #NECRON
+    marker: 60
+    markerLand: 61
+    markerCrash: 26
+    alertSound: 38
+    size: STR_MEDIUM_UC
+    modSprite: InterceptionUFO-18
+    damageMax: 1500
+    speedMax: 100
+    accel: 2
+    power: 45
+    range: 65
+    score: 350
+    reload: 30
+    breakOffTime: 1000
+    battlescapeTerrainData:
+      name: MONO
+      mapDataSets:
+        - BLANKS
+        - 05FLOORTOMB
+        - 05WALLTOMB
+        - 05DOORTOMB
+        - 05ITENSTOMB
+        - 05SHIPTOMB
+        - 05HWPTOMB
+      mapBlocks:
+        - name: MONO01
+          width: 20
+          length: 20
+          items:
+            STR_REQUISITION_BOUNTY_50K:
+              - [0, 0, 0]
+            STR_MONON_SPAWNER:
+              - [5, 6, 3]
+            STR_MONOS_SPAWNER:
+              - [11, 12, 3]
+            STR_MONOE_SPAWNER:
+              - [11, 6, 3]
+            STR_MONOW_SPAWNER:
+              - [5, 12, 3]
+          fuseTimers:
+            STR_MONOW_SPAWNER: [0, 0]
+            STR_MONOE_SPAWNER: [0, 0]
+            STR_MONON_SPAWNER: [0, 0]
+            STR_MONOS_SPAWNER: [0, 0]
+        - name: MONO02
+          width: 20
+          length: 20
+          items:
+            STR_REQUISITION_BOUNTY_50K:
+              - [0, 0, 0]
+            STR_MONON_SPAWNER:
+              - [5, 6, 3]
+            STR_MONOS_SPAWNER:
+              - [11, 12, 3]
+            STR_MONOE_SPAWNER:
+              - [11, 6, 3]
+            STR_MONOW_SPAWNER:
+              - [5, 12, 3]
+          fuseTimers:
+            STR_MONOW_SPAWNER: [0, 0]
+            STR_MONOE_SPAWNER: [0, 0]
+            STR_MONON_SPAWNER: [0, 0]
+            STR_MONOS_SPAWNER: [0, 0]
+  - type: STR_ORK_MIG_UFO #HK
+    marker: 15
+    markerLand: 20
+    markerCrash: 25
+    alertSound: 35
+    huntAlertSound: 33
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-15
+    damageMax: 140
+    speedMax: 1400
+    accel: 3
+    power: 15
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: ORKP
+      mapDataSets:
+        - BLANKS
+        - ORKT
+        - ORKP
+      mapBlocks:
+        - name: ORKP
+          width: 10
+          length: 10
+          items:
+            STR_REQUISITION_BOUNTY_50K:
+              - [0, 0, 0]
+    hunterKillerPercentage: 100
+    huntMode: 2
+    huntSpeed: 90
+    radarRange: 200
+    radarChance: 20
+    sightRange: 200
+    missionScore: 0
+  - type: STR_TRUKK_UFO
+    size: STR_VERY_SMALL
+    alertSound: 37
+    modSprite: InterceptionUFO-17
+    damageMax: 160
+    speedMax: 100
+    accel: 3
+    power: 5
+    range: 65
+    score: 35
+    reload: 12
+    breakOffTime: 600
+    missionScore: 0
+    battlescapeTerrainData:
+      name: ORKT
+      mapDataSets:
+        - BLANKS
+        - ORKT2
+        - ORKP
+      mapBlocks:
+        - name: ORKT3
+          width: 10
+          length: 10
+          height: 4
+          items:
+            STR_REQUISITION_BOUNTY_100K:
+              - [0, 0, 0]
+    missionCustomDeploy: STR_ORK_WAAAGH
+  - type: STR_WAGGON_UFO
+    size: STR_VERY_SMALL
+    alertSound: 38
+    modSprite: InterceptionUFO-14
+    damageMax: 160
+    speedMax: 100
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    missionScore: 0
+    battlescapeTerrainData:
+      name: ORKT
+      mapDataSets:
+        - BLANKS
+        - ORKT
+        - ORKP
+      mapBlocks:
+        - name: ORKT
+          width: 10
+          length: 10
+          height: 4
+          items:
+            STR_REQUISITION_BOUNTY_250K:
+              - [0, 0, 0]
+            STR_TURRET1_SPAWNER:
+              - [4, 2, 2]
+            STR_TURRET2_SPAWNER:
+              - [5, 4, 2]
+          fuseTimers:
+            STR_TURRET1_SPAWNER: [0, 0]
+            STR_TURRET2_SPAWNER: [0, 0]
+    missionCustomDeploy: STR_ORK_WAAAGH
+  - type: STR_WAGGON_CONVOY_UFO
+    size: STR_VERY_SMALL
+    alertSound: 38
+    modSprite: Interception_Ork_Convoy
+    damageMax: 160
+    speedMax: 100
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    missionScore: 0
+    battlescapeTerrainData:
+      name: ORKT
+      mapDataSets:
+        - BLANKS
+        - ORKT2
+        - ORKP
+        - ORKT
+      mapBlocks:
+        - name: ORK_CONVOY
+          width: 10
+          length: 20
+          height: 4
+          items:
+            STR_REQUISITION_BOUNTY_500K:
+              - [0, 0, 0]
+            STR_KILLA_SPAWNER:
+              - [0, 1, 0]
+              - [8, 7, 0]
+            STR_TURRET1_SPAWNER:
+              - [5, 12, 2]
+            STR_TURRET2_SPAWNER:
+              - [6, 14, 2]
+          fuseTimers:
+            STR_KILLA_SPAWNER: [0, 0]
+            STR_TURRET1_SPAWNER: [0, 0]
+            STR_TURRET2_SPAWNER: [0, 0]
+    missionCustomDeploy: STR_ORK_WAAAGH
+  - type: STR_WAGGON_UFO_INBASE
+    battlescapeTerrainData:
+      name: ORKT
+      mapDataSets:
+        - BLANKS
+        - ORKT
+        - ORKP
+      mapBlocks:
+        - name: ORKT
+          width: 10
+          length: 10
+          height: 4
+          items:
+            STR_TURRET1_SPAWNER:
+              - [4, 2, 3]
+            STR_TURRET2_SPAWNER:
+              - [5, 4, 3]
+          fuseTimers:
+            STR_TURRET1_SPAWNER: [0, 0]
+            STR_TURRET2_SPAWNER: [0, 0]
+
+  - type: STR_TRAITOR_CHIMERA
+    alertSound: 38
+    modSprite: Interception_Traitor_Chimera
+    marker: 45
+    markerLand: 46
+    markerCrash: 47
+    speedMax: 75
+    size: STR_SMALL
+    armor: 5
+    damageMax: 480
+    accel: 3
+    power: 15
+    range: 65
+    reload: 12
+    score: 75
+    missionScore: 0
+    battlescapeTerrainData:
+      name: CHIMERA_TRAITOR
+      mapDataSets:
+        - BLANKS
+        - CHIMERA_TRAITOR
+        - HIDRA_CHAOS
+      mapBlocks:
+        - name: CHIMERA_TRAITOR
+          width: 10
+          length: 20
+          items:
+            STR_REQUISITION_BOUNTY_500K:
+              - [0, 0, 0]
+            STR_TRAITOR_CHIMERA_TURRET_SPAWNER:
+              - [1, 4, 1]
+              - [2, 16, 1]
+          fuseTimers:
+            STR_TRAITOR_CHIMERA_TURRET_SPAWNER: [0, 0]
+
+  - type: STR_TRAITOR_CHIMERA_MAINTENANCE
+    battlescapeTerrainData:
+      name: CHIMERA_TRAITOR
+      mapDataSets:
+        - BLANKS
+        - CHIMERA_TRAITOR
+        - HIDRA_CHAOS
+      mapBlocks:
+        - name: CHIMERA_TRAITOR
+          width: 10
+          length: 20
+          items:
+            STR_REQUISITION_BOUNTY_250K:
+              - [0, 0, 0]
+
+  - type: STR_STORMRAVEN_UFO
+    alertSound: 36
+    marker: 43
+    markerLand: 21
+    markerCrash: 26
+    size: STR_MEDIUM_UC
+    modSprite: InterceptionUFO-10
+    damageMax: 1000
+    speedMax: 4100
+    accel: 9
+    power: 30
+    range: 65
+    score: 250
+    reload: 30
+    breakOffTime: 1000
+    battlescapeTerrainData:
+      name: ISTORMRAVEN
+      mapDataSets:
+        - BLANKS
+        - 0W0STORMRAVEN
+      mapBlocks:
+        - name: ISTORMRAVEN
+          width: 10
+          length: 20
+          items:
+            STR_STORMTURRETGK_SPAWNER:
+              - [4, 6, 2]
+          fuseTimers:
+            STR_STORMTURRETGK_SPAWNER: [0, 0]
+#TERRAIN PROPS---------------------------------------------------------------------
+  - type: STR_DEFILER_UFO
+    marker: 45
+    markerLand: 46
+    markerCrash: 47
+    size: STR_SMALL
+    modSprite: InterceptionUFO-20
+    missilePower: 10
+    alertSound: 41
+    damageMax: 1000
+    speedMax: 1800
+    accel: 3
+    power: 15
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: CHDEFILER
+      mapDataSets:
+        - BLANKS
+        - SUPORTCHAOSPRED
+        - DEFILER
+      mapBlocks:
+        - name: CHDEFILER
+          width: 20
+          length: 30
+          items:
+            STR_CHAOSDEFILER_R_SPAWNER:
+              - [9, 24, 1]
+              - [5, 7, 1]
+            STR_CHAOSDEFILER_L_SPAWNER:
+              - [5, 3, 1]
+              - [9, 20, 1]
+            STR_CHAOSPREDATORSIDE_SPAWNER:
+              - [16, 16, 0]
+              - [16, 13, 0]
+            STR_CHAOSPREDATOR_SPAWNER:
+              - [15, 14, 1]
+          fuseTimers:
+            STR_CHAOSDEFILER_R_SPAWNER: [0, 0]
+            STR_CHAOSDEFILER_L_SPAWNER: [0, 0]
+            STR_CHAOSPREDATORSIDE_SPAWNER: [0, 0]
+            STR_CHAOSPREDATOR_SPAWNER: [0, 0]
+  - type: STR_CONST_UFO
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-01
+    damageMax: 160
+    speedMax: 1
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: CONSUFO
+      mapDataSets:
+        - BLANKS
+        - CONST
+      mapBlocks:
+        - name: CONSUFO
+          width: 10
+          length: 10
+  - type: STR_MUNI_UFO
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-01
+    damageMax: 160
+    speedMax: 1
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: MUNIUFO
+      mapDataSets:
+        - BLANKS
+        - MUNI4
+      mapBlocks:
+        - name: MUNIUFO
+          width: 10
+          length: 10
+  - type: STR_MUNI2_UFO
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-01
+    damageMax: 160
+    speedMax: 1
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: MUNIUFO2
+      mapDataSets:
+        - BLANKS
+        - MUNI5
+      mapBlocks:
+        - name: MUNIUFO2
+          width: 10
+          length: 10
+  - type: STR_ARVUS_UFO
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-01
+    damageMax: 160
+    speedMax: 1
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: ARVUSUFO
+      mapDataSets:
+        - BLANKS
+        - ARVUS
+      mapBlocks:
+        - name: ARVUSUFO
+          width: 10
+          length: 10
+  - type: STR_VESSEL_UFO
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-01
+    damageMax: 160
+    speedMax: 1
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: VESSEL
+      mapDataSets:
+        - BLANKS
+        - 001
+        - 001EXTRA
+      mapBlocks:
+        - name: VESSEL
+          width: 10
+          length: 20
+  - type: STR_ARMY_UFO
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-01
+    damageMax: 160
+    speedMax: 1
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: ARMYUFO
+      mapDataSets:
+        - BLANKS
+        - SPEED
+      mapBlocks:
+        - name: ARMYUFO
+          width: 10
+          length: 20
+  - type: STR_LANDRAIDER_UFO
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-01
+    damageMax: 160
+    speedMax: 1
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: LANDRAIDERUFO
+      mapDataSets:
+        - BLANKS
+        - SPEED
+      mapBlocks:
+        - name: LANDRAIDER
+          width: 10
+          length: 20
+  - type: STR_CHIMERA_UFO
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-01
+    damageMax: 160
+    speedMax: 1
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: CHIMERAUFO
+      mapDataSets:
+        - BLANKS
+        - CHIMERAUFO
+      mapBlocks:
+        - name: CHIMERAUFO
+          width: 10
+          length: 10
+  - type: STR_VOSS_UFO
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-01
+    damageMax: 160
+    speedMax: 1
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: VOSS2
+      mapDataSets:
+        - BLANKS
+        - VOSS2
+      mapBlocks:
+        - name: VOSS2
+          width: 10
+          length: 10
+  - type: STR_VOSS_UFO_DESTRUCTIBLE
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-01
+    damageMax: 160
+    speedMax: 1
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: VOSS2
+      mapDataSets:
+        - BLANKS
+        - VOSS2
+      mapBlocks:
+        - name: VOSS2_OBJ
+          width: 10
+          length: 10
+          items:
+            STR_VOSS_ENGINE_SOUTH_SPAWNER:
+              - [4, 7, 0]
+          fuseTimers:
+            STR_VOSS_ENGINE_SOUTH_SPAWNER: [0, 0]
+  - type: STR_WAR_UFO
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-09
+    damageMax: 160
+    speedMax: 1
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: WARUFO
+      mapDataSets:
+        - BLANKS
+        - BATTLE
+        - SUPORTCHAOSPRED
+        - SUPORTPIECES
+      mapBlocks:
+        - name: WARUFO
+          width: 30
+          length: 30
+  - type: STR_PREDATOR_UFO
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-09
+    damageMax: 160
+    speedMax: 1
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: PREDATOR
+      mapDataSets:
+        - BLANKS
+        - SUPORTCHAOSPRED
+      mapBlocks:
+        - name: PREDATOR
+          width: 10
+          length: 10
+  - type: STR_CHAOS_VOSS #HK
+    marker: 15
+    markerLand: 20
+    markerCrash: 25
+    alertSound: 36
+    huntAlertSound: 34
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-13
+    damageMax: 140
+    speedMax: 1400
+    accel: 3
+    power: 15
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: VOSSC
+      mapDataSets:
+        - BLANKS
+        - VOSSC
+      mapBlocks:
+        - name: VOSSC
+          width: 10
+          length: 10
+    hunterKillerPercentage: 100
+    huntMode: 2
+    huntSpeed: 90
+    radarRange: 200
+    radarChance: 20
+    sightRange: 200
+    missionScore: 0
+  - type: STR_HELLT #hell talon HK
+    marker: 14
+    markerLand: 19
+    markerCrash: 24
+    alertSound: 36
+    huntAlertSound: 34
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-00
+    damageMax: 160
+    speedMax: 1800
+    accel: 3
+    power: 15
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: CH0A
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH001
+          width: 10
+          length: 10
+    hunterKillerPercentage: 100
+    huntMode: 2
+    huntSpeed: 90
+    radarRange: 300
+    radarChance: 20
+    sightRange: 300
+    missionScore: 0
+  - type: STR_SMALL_SCOUT2
+    marker: 14
+    markerLand: 19
+    markerCrash: 24
+    alertSound: 35
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-00
+    damageMax: 160
+    speedMax: 1200
+    accel: 3
+    power: 15
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: CH0A
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH0A
+          width: 10
+          length: 10
+  - type: STR_SMALL_SCOUT #hell Blade
+    marker: 14
+    markerLand: 19
+    markerCrash: 24
+    alertSound: 35
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-00
+    damageMax: 160
+    speedMax: 1200
+    accel: 3
+    power: 5
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: CH00
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH00
+          width: 10
+          length: 10
+          items:
+            STR_ELERIUM_115:
+              - [5, 2, 0]
+  - type: STR_MEDIUM_SCOUT #transport
+    marker: 15
+    markerLand: 20
+    markerCrash: 25
+    alertSound: 35
+    modSprite: InterceptionUFO-02
+    damageMax: 220
+    speedMax: 1600
+    accel: 5
+    power: 8
+    range: 65
+    score: 75
+    reload: 12
+    breakOffTime: 800
+    battlescapeTerrainData:
+      name: CH02
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH02
+          width: 10
+          length: 10
+          items:
+            STR_ELERIUM_115:
+              - [2, 3, 0]
+        - name: CH01
+          width: 10
+          length: 10
+          items:
+            STR_ELERIUM_115:
+              - [2, 3, 0]
+        - name: CH0A
+          width: 10
+          length: 10
+          items:
+            STR_ELERIUM_115:
+              - [2, 3, 0]
+    raceBonus:
+      STR_EARLY_CULTISTS_MARINES:
+        craftCustomDeploy: STR_MEDIUM_SCOUT_CULTISTS_MARINES
+      STR_EARLY_TRAITOR_GUARD_MARINES:
+        craftCustomDeploy: STR_MEDIUM_SCOUT_TRAITOR_GUARD_MARINES
+  - type: STR_LARGE_SCOUT #Hell Cruiser
+    marker: 15
+    markerLand: 20
+    markerCrash: 25
+    alertSound: 35
+    size: STR_SMALL
+    modSprite: InterceptionUFO-03
+    damageMax: 500
+    speedMax: 2000
+    accel: 5
+    power: 8
+    range: 65
+    score: 125
+    reload: 12
+    breakOffTime: 800
+    battlescapeTerrainData:
+      name: CH03
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH03
+          width: 20
+          length: 20
+          items:
+            STR_ELERIUM_115:
+              - [9, 3, 0]
+              - [10, 3, 0]
+        - name: CH03B
+          width: 20
+          length: 20
+          items:
+            STR_ELERIUM_115:
+              - [9, 3, 0]
+              - [10, 3, 0]
+    raceBonus:
+      STR_EARLY_CULTISTS_MARINES:
+        craftCustomDeploy: STR_LARGE_SCOUT_CULTISTS_MARINES
+      STR_EARLY_TRAITOR_GUARD_MARINES:
+        craftCustomDeploy: STR_LARGE_SCOUT_TRAITOR_GUARD_MARINES
+  - type: STR_HARVESTER
+    marker: 16
+    markerLand: 21
+    markerCrash: 26
+    alertSound: 35
+    size: STR_MEDIUM_UC
+    modSprite: InterceptionUFO-04
+    damageMax: 1000
+    speedMax: 800
+    accel: 8
+    power: 20
+    range: 65
+    score: 250
+    reload: 30
+    breakOffTime: 1000
+    battlescapeTerrainData:
+      name: CH04
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH04B
+          width: 20
+          length: 20
+          items:
+            STR_ELERIUM_115:
+              - [6, 10, 0]
+              - [7, 10, 0]
+              - [8, 10, 0]
+        - name: CH04
+          width: 20
+          length: 20
+          items:
+            STR_ELERIUM_115:
+              - [5, 7, 0]
+              - [3, 10, 0]
+              - [5, 10, 0]
+  - type: STR_ABDUCTOR
+    marker: 16
+    markerLand: 21
+    markerCrash: 26
+    alertSound: 35
+    size: STR_MEDIUM_UC
+    modSprite: InterceptionUFO-05
+    damageMax: 1400
+    speedMax: 1300
+    accel: 8
+    power: 20
+    range: 65
+    score: 250
+    reload: 30
+    breakOffTime: 1500
+    battlescapeTerrainData:
+      name: CH05
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH05
+          width: 20
+          length: 20
+          items:
+            STR_ELERIUM_115:
+              - [8, 4, 1]
+              - [9, 4, 1]
+              - [10, 4, 1]
+              - [11, 4, 1]
+        - name: CH05B
+          width: 20
+          length: 20
+          items:
+            STR_ELERIUM_115:
+              - [8, 4, 1]
+              - [9, 4, 1]
+              - [10, 4, 1]
+              - [11, 4, 1]
+  - type: STR_TERROR_SHIP
+    marker: 17
+    markerLand: 22
+    markerCrash: 27
+    size: STR_LARGE
+    alertSound: 36
+    modSprite: InterceptionUFO-08
+    damageMax: 3000
+    speedMax: 2800
+    accel: 6
+    power: 50
+    range: 65
+    score: 500
+    reload: 24
+    breakOffTime: 2000
+    battlescapeTerrainData:
+      name: CH06
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH06
+          width: 20
+          length: 30
+          items:
+            STR_ELERIUM_115:
+              - [8, 15, 0]
+              - [9, 15, 0]
+              - [11, 15, 0]
+              - [12, 15, 0]
+              - [3, 15, 1]
+              - [4, 15, 1]
+              - [5, 15, 1]
+              - [6, 15, 1]
+    raceBonus:
+      STR_EARLY_CULTISTS_MARINES:
+        craftCustomDeploy: STR_TERROR_SHIP_CULTISTS_MARINES
+        missionCustomDeploy: STR_TERROR_MISSION_CULTISTS_MARINES
+      STR_EARLY_TRAITOR_GUARD_MARINES:
+        craftCustomDeploy: STR_TERROR_SHIP_TRAITOR_GUARD_MARINES
+        missionCustomDeploy: STR_TERROR_MISSION_TRAITOR_GUARD_MARINES
+  - type: STR_BATTLESHIP
+    marker: 18
+    markerLand: 23
+    markerCrash: 28
+    alertSound: 36
+    size: STR_VERY_LARGE
+    modSprite: InterceptionUFO-07
+    damageMax: 7000
+    speedMax: 1000
+    accel: 2
+    power: 150
+    range: 65
+    score: 700
+    reload: 24
+    breakOffTime: 4000
+    battlescapeTerrainData:
+      name: CH07
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH07
+          width: 30
+          length: 30
+          items:
+            STR_ELERIUM_115:
+              - [12, 3, 0]
+              - [13, 3, 0]
+              - [14, 3, 0]
+              - [15, 3, 0]
+              - [16, 3, 0]
+              - [17, 3, 0]
+              - [2, 12, 0]
+              - [3, 12, 0]
+              - [26, 12, 0]
+              - [27, 12, 0]
+  - type: STR_SUPPLY_SHIP
+    marker: 17
+    markerLand: 22
+    markerCrash: 27
+    size: STR_LARGE
+    alertSound: 36
+    modSprite: InterceptionUFO-06
+    damageMax: 5400
+    speedMax: 1200
+    accel: 6
+    power: 30
+    range: 65
+    score: 400
+    reload: 24
+    breakOffTime: 3000
+    battlescapeTerrainData:
+      name: CH08
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH08
+          width: 20
+          length: 30
+          items:
+            STR_ELERIUM_115:
+              - [8, 3, 0]
+              - [9, 3, 0]
+              - [10, 3, 0]
+              - [11, 3, 0]
+        - name: CH08B
+          width: 20
+          length: 30
+          items:
+            STR_ELERIUM_115:
+              - [8, 3, 0]
+              - [9, 3, 0]
+              - [10, 3, 0]
+              - [11, 3, 0]
+        - name: CH08C
+          width: 20
+          length: 30
+          items:
+            STR_ELERIUM_115:
+              - [8, 3, 0]
+              - [9, 3, 0]
+              - [10, 3, 0]
+              - [11, 3, 0]
+  - type: STR_HELLS
+    marker: 17
+    markerLand: 22
+    markerCrash: 27
+    alertSound: 36
+    size: STR_LARGE
+    modSprite: InterceptionUFO-08
+    damageMax: 6000
+    speedMax: 3000
+    accel: 6
+    power: 140
+    range: 65
+    score: 700
+    reload: 24
+    breakOffTime: 4000
+    battlescapeTerrainData:
+      name: CH07B
+      mapDataSets:
+        - BLANKS
+        - CH2
+        - CH3
+        - CHI1
+        - CHI2
+        - CHI3
+        - CHI4
+        - CHI5
+      mapBlocks:
+        - name: CH07B
+          width: 20
+          length: 30
+          items:
+            STR_ELERIUM_115:
+              - [12, 8, 1]
+              - [7, 8, 1]
+              - [7, 10, 1]
+              - [9, 6, 1]
+              - [10, 6, 1]
+              - [12, 10, 1]
+              - [9, 5, 1]
+              - [10, 5, 1]
+  - type: STR_TRAIN_MISSION
+    size: STR_VERY_SMALL
+    marker: 1
+    markerLand: 33
+    modSprite: InterceptionUFO-09
+    damageMax: 1
+    speedMax: 50000
+    accel: 50000
+    power: 0
+    range: 0
+    score: 0
+    reload: 0
+    breakOffTime: 0
+    missionScore: 0
+    battlescapeTerrainData:
+      name: SM01
+      mapDataSets:
+        - BLANKS
+        - OUTPOSTSM
+        - OUTPOSTSM2
+      mapBlocks:
+        - name: SM01
+          width: 30
+          length: 30
+          revealedFloors: [0, 1, 2, 3, 4]
+          items:
+            STR_MGRENADE:
+              - [10, 23, 0]
+              - [13, 23, 0]
+              - [16, 23, 0]
+            STR_TATICALTRAININFO:
+              - [3, 22, 0]
+  - type: STR_CHOUT
+    size: STR_VERY_SMALL
+    marker: 1
+    markerLand: 33
+    modSprite: InterceptionUFO-09
+    damageMax: 1
+    speedMax: 50000
+    accel: 50000
+    power: 0
+    range: 0
+    score: 0
+    reload: 0
+    breakOffTime: 0
+    missionScore: 0
+    battlescapeTerrainData:
+      name: CHOUT
+      mapDataSets:
+        - BLANKS
+        - OUTPOSTCHAOS
+        - CHAOSITEMS
+        - C_PODS
+      mapBlocks:
+        - name: CHOUT
+          width: 30
+          length: 30
+          randomizedItems:
+              - position: [8, 9, 1]
+                amount: 2
+                mixed: true
+                itemList: [STR_MAP1, STR_MAP2, STR_MAP3]
+  - type: STR_CAT
+    marker: 1
+    markerLand: 33
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-09
+    damageMax: 1
+    speedMax: 50000
+    accel: 50000
+    power: 0
+    range: 0
+    score: 0
+    reload: 0
+    breakOffTime: 0
+    missionScore: 0
+    battlescapeTerrainData:
+      name: CAT
+      mapDataSets:
+        - BLANKS
+        - ACHURCH
+        - ACHURCH2
+        - ACHURCH3
+        - C_PODS
+        - CHAOSITEMS
+        - AGROUND
+        - ACHURCH4
+      ambience: 798
+      ambientVolume: 0.25
+      mapBlocks:
+        - name: CAT
+          width: 30
+          length: 60
+          items:
+            STR_RELICCASE:
+              - [14, 12, 1]

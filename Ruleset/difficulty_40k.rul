@@ -1,0 +1,52 @@
+difficultyCoefficient: [2, 2, 2, 2, 2]
+aimAndArmorMultipliers: [1.0, 1.0, 1.0, 1.0, 1.0]
+enableUnitResponseSounds: true     # set back to false once you get tired of the sounds :)
+unitResponseSoundsFrequency: [100, 100, 100, 100]
+statGrowthMultipliers:
+  tu: 4
+  stamina: 4
+  health: 0
+  bravery: 0
+  reactions: 6
+  firing: 6
+  throwing: 0
+  strength: 2
+  psiStrength: 2
+  psiSkill: 2
+  melee: 6
+# for more information on what these numbers mean, see
+# http://ufopaedia.org/index.php?title=Alien_Stats_(TFTD)#Calculating_Statistics
+# statGrowthMultipliers are the increments
+# difficultyCoefficients are MultiplierA
+# aimAndArmorMultipliers are MultiplierB
+turnAIUseGrenade: 1
+turnAIUseBlaster: 1
+maxViewDistance: 60
+#Penaltys:
+oneHandedPenaltyGlobal: 50
+flagByKills: [9,19,29,39,49,59,69,79,89,99,109,119,129,139,149,159,169,179,189,199]
+# bughunt stuff:
+bughuntMinTurn: 20
+bughuntMaxEnemies: 3
+bughuntRank: 0
+bughuntLowMorale: 0
+bughuntTimeUnitsLeft: 65
+constants:
+  damageRange: 100
+  explosiveDamageRange: 50
+  fireDamageRange: [5, 10]
+fixedUserOptions:
+  battleUFOExtenderAccuracy: true
+  canSellLiveAliens: true
+  battleExplosionHeight: 3
+  alienBleeding: true
+  battleInstantGrenade: false
+  weaponSelfDestruction: false
+  retainCorpses: false
+  allowPsiStrengthImprovement: false
+  allowPsionicCapture: true
+  bleedingIndicator: true
+  autoSell: true
+  playBriefingMusicDuringEquipment: true
+  nightVisionColor: 4
+  fullNightVision: false

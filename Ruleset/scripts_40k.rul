@@ -1,0 +1,2241 @@
+armors:
+  - type: STR_COMMISSAR_CARAPACE_UC
+    tags:
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: 40
+      ARMOR_ENERGY_SHIELD_DECAY: 50
+
+  - type: STR_SCION_CARAPACE_ARMOR_HELLGUN
+    tags:
+      ARMOR_BUILTIN_WEAPON_VARIANT: 1
+
+  - type: STR_SCION_CARAPACE_ARMOR_VOLLEYGUN
+    tags:
+      ARMOR_BUILTIN_WEAPON_VARIANT: 1
+
+  - type: STR_TELEKINE
+    tags:
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: 40
+      ARMOR_ENERGY_SHIELD_DECAY: 50
+
+  - type: SNAKEMAN_ARMORC
+    tags:
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: 150
+      ARMOR_ENERGY_SHIELD_DECAY: 75
+
+items:
+#*** Librarian Spells ***
+# Confuse: like panic attack, but sets morale to 0 if it succeeds
+# Using as the special weapon for all librarian armors, so it has the unarmed melee attached to it
+  - type: STR_LIBRARIAN_SPECIAL_WEAPON
+    weight: 0
+    accuracyUse: 20
+    hitSound: 36
+    hitAnimation: 170
+    battleType: 9
+    tuUse: 25
+    costUse:
+      energy: 25
+      stun: 10
+    tuPanic: 0
+    tuMindControl: 0
+    psiAttackName: STR_CONFUSE_SPELL
+    LOSRequired: true
+    flatRate: true
+    fixedWeapon: true
+    power: 100
+    damageType: 0
+    damageAlter:
+      RandomType: 3
+      ArmorEffectiveness: 0.0
+      ToHealth: 0.0
+      ToStun: 0.0
+      ToWound: 0.0
+      ToArmor: 0.0
+      ToMorale: 10.0
+    recover: false
+    clipSize: -1
+    meleeHitSound: 100
+    meleeAnimation: 0
+    meleePower: 50
+    meleeType: 7
+    accuracyMelee: 90
+    meleeMultiplier:
+      melee: 1.0
+    tuMelee: 12
+    specialIconSprite: 11
+    specialUseEmptyHand: true
+
+# Lockdown: immediately removes TUs from target and reduces TUs at the beginning of the turn until the effect wears off
+  - type: STR_LOCKDOWN_TOME
+    tags:
+      ITEM_CAUSES_LOCKDOWN: 100
+    weight: 10
+    accuracyUse: 20
+    hitSound: 778
+    hitAnimation: 160
+    bigSprite: 33
+    invWidth: 2
+    invHeight: 2
+    battleType: 9
+    tuUse: 25
+    costUse:
+      energy: 25
+      stun: 10
+    tuPanic: 0
+    tuMindControl: 0
+    psiAttackName: STR_LOCKDOWN_SPELL
+    LOSRequired: true
+    flatRate: true
+    fixedWeapon: true
+    power: 100
+    damageType: 0
+    damageAlter:
+      RandomType: 3
+      ArmorEffectiveness: 0.0
+      ToHealth: 0.0
+      ToStun: 0.0
+      ToWound: 0.0
+      ToArmor: 0.0
+      ToTime: 10.0
+    recover: false
+    clipSize: -1
+
+# Melee inspire: +melee acc, -enemy melee chance to hit
+  - type: STR_MELEE_INSPIRE_TOME
+    tags:
+      ITEM_MELEE_BUFF: 100
+      ITEM_MELEE_BUFF_DURATION: 1
+    weight: 10
+    accuracyUse: 0
+    accuracyMultiplier:
+      flatHundred: 1.30
+      psi: 0.0
+    dropoff: 0
+    hitSound: [779, 780, 781, 782, 783, 784, 785, 786]
+    hitAnimation: 1100
+    bigSprite: 33
+    invWidth: 2
+    invHeight: 2
+    battleType: 9
+    tuUse: 25
+    costUse:
+      energy: 25
+      stun: 10
+    tuPanic: 0
+    tuMindControl: 0
+    psiAttackName: STR_MELEE_INSPIRE_SPELL
+    #LOSRequired: true
+    targetMatrix: 5
+    flatRate: true
+    fixedWeapon: true
+    power: 25
+    damageBonus:
+      psi: 0.0025
+    damageType: 0
+    damageAlter:
+      RandomType: 3
+      ArmorEffectiveness: 0.0
+      ToHealth: 0.0
+      ToStun: 0.0
+      ToWound: 0.0
+      ToArmor: 0.0
+    recover: false
+    clipSize: -1
+
+# Force shield: gives temporary shield to target
+  - type: STR_SHIELD_TOME
+    tags:
+      ITEM_ADDS_ENERGY_SHIELD_FROM_POWER: 100
+      ITEM_SETS_ENERGY_SHIELD_DECAY: 60
+    weight: 10
+    accuracyUse: 0
+    accuracyMultiplier:
+      flatHundred: 1.30
+      psi: 0.0
+    dropoff: 0
+    hitSound: 778
+    hitAnimation: 100
+    bigSprite: 33
+    invWidth: 2
+    invHeight: 2
+    battleType: 9
+    tuUse: 25
+    costUse:
+      energy: 25
+      stun: 10
+    tuPanic: 0
+    tuMindControl: 0
+    psiAttackName: STR_SHIELD_SPELL
+    #LOSRequired: true
+    targetMatrix: 5
+    flatRate: true
+    fixedWeapon: true
+    power: 50
+    damageBonus:
+      psi: 0.01
+    damageType: 0
+    damageAlter:
+      RandomType: 3
+      ArmorEffectiveness: 0.0
+      ToHealth: 0.0
+      ToStun: 0.0
+      ToWound: 0.0
+      ToArmor: 0.0
+    recover: false
+    clipSize: -1
+    specialUseEmptyHand: true
+
+# Smite: armor-ignoring AoE, not super powerful but can have side effects
+  - type: STR_SMITE_TOME
+    weight: 10
+    accuracyUse: 20
+    hitSound: 864
+    hitAnimation: 1110
+    bigSprite: 33
+    invWidth: 2
+    invHeight: 2
+    battleType: 9
+    tuUse: 25
+    costUse:
+      energy: 25
+      stun: 10
+    tuPanic: 0
+    tuMindControl: 0
+    psiAttackName: STR_SMITE_SPELL
+    LOSRequired: true
+    flatRate: true
+    fixedWeapon: true
+    power: 15
+    damageBonus:
+      psi: 0.002
+    damageType: 0
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 0.0
+      ToArmor: 0.0
+    recover: false
+    clipSize: -1
+    specialUseEmptyHand: true
+
+# Stasis: unit immune to damage for one turn, but can't move or act
+  - type: STR_STASIS_TOME
+    tags:
+      ITEM_CAUSES_STASIS: 1
+    weight: 10
+    hitSound: 790
+    hitAnimation: 150
+    bigSprite: 33
+    invWidth: 2
+    invHeight: 2
+    battleType: 9
+    tuUse: 25
+    costUse:
+      energy: 25
+      stun: 10
+    tuPanic: 0
+    tuMindControl: 0
+    targetMatrix: 7
+    psiAttackName: STR_STASIS_SPELL
+    LOSRequired: true
+    flatRate: true
+    fixedWeapon: true
+    power: 100
+    damageType: 0
+    damageAlter:
+      RandomType: 3
+      ArmorEffectiveness: 0.0
+      ToHealth: 0.0
+      ToStun: 0.0
+      ToWound: 0.0
+      ToArmor: 0.0
+      ToTime: 2.0
+      ToMorale: 0.0
+    recover: false
+    clipSize: -1
+    specialUseEmptyHand: true
+
+  - type: STR_IMPULSOR_SHIELD_CW
+    tags:
+      ITEM_ADDS_ENERGY_SHIELD_FROM_POWER: 100
+      ITEM_SETS_ENERGY_SHIELD_DECAY: 60
+    weight: 10
+    accuracyUse: 0
+    accuracyMultiplier:
+      flatHundred: 1.30
+      psi: 0.0
+    dropoff: 0
+    hitSound: 778
+    hitAnimation: 100
+    bigSprite: 800
+    invWidth: 2
+    invHeight: 3
+    battleType: 9
+    tuUse: 1
+    costUse:
+      energy: 2
+    tuPanic: 0
+    tuMindControl: 0
+    psiAttackName: STR_SHIELD_SPELL
+    LOSRequired: true
+    targetMatrix: 5
+    flatRate: true
+    fixedWeapon: true
+    power: 50
+    damageBonus:
+      psi: 0.01
+    damageType: 0
+    damageAlter:
+      RandomType: 3
+      ArmorEffectiveness: 0.0
+      ToHealth: 0.0
+      ToStun: 0.0
+      ToWound: 0.0
+      ToArmor: 0.0
+    recover: false
+    clipSize: -1
+    specialUseEmptyHand: true
+
+  - type: STR_REPAIR #REPAIR NOT USED
+    confMelee:
+      name: STR_REPAIR
+    size: 0.2
+    weight: 5
+    bigSprite: 268
+    meleeSound: 698
+    meleeHitSound: 699
+    meleeAnimation: 32
+    power: 60
+    damageType: 0
+    accuracyMelee: 100
+    battleType: 3
+    twoHanded: false
+    invWidth: 2
+    invHeight: 3
+    armor: 52
+    skillApplied: false
+    #strengthApplied: true
+    fixedWeapon: true
+    attraction: 1
+    damageAlter: #REPAIR
+      RandomType: 7
+      ToHealth: 0.0
+      ToStun: 0.0
+      ToArmor: -1.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      ArmorEffectiveness: 0.0
+    flatRate: true
+    costMelee:
+      time: 15
+      energy: 40
+    recover: false
+    clipSize: -1
+    specialUseEmptyHand: true
+  - type: STR_ELDAR_LIGHT #PSY
+    weight: 0
+    bigSprite: 316
+    fireSound: [854, 855, 856, 857]
+    power: 20
+    damageType: 5
+    accuracyAimed: 90
+    accuracySnap: 70
+    confAimed:
+      shots: 1
+      name: STR_LH
+    battleType: 1
+    confSnap:
+      shots: 1
+      name: STR_LH
+    costAimed:
+      time: 50
+      energy: 20
+      morale: 10
+      stun: 10
+    costSnap:
+      time: 40
+      energy: 20
+      morale: 10
+      stun: 10
+    damageAlter: #LIGHT
+      RandomType: 2 #TFTD [50% - 150%]
+      ArmorEffectiveness: 0.0
+      ToArmorPre: 0.0
+      ToArmor: 0.0
+      ToHealth: 2.0
+      ToStun: 0.2
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    bulletSprite: 17
+    blastRadius: 1
+    explosionHitSound: 864
+    hitAnimation: 152
+    twoHanded: false
+    skillApplied: false
+    strengthApplied: false
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 6
+    specialUseEmptyHand: true
+  - type: STR_ELDAR_LIGHT_SAFE
+    weight: 0
+    bigSprite: 316
+    fireSound: [854, 855, 856, 857]
+    power: 20
+    damageType: 5
+    accuracyAimed: 90
+    confAimed:
+      shots: 1
+      name: STR_LH
+    tuAimed: 50
+    battleType: 1
+    damageAlter: #LIGHT
+      RandomType: 2 #TFTD [50% - 150%]
+      ArmorEffectiveness: 0.0
+      ToArmorPre: 0.0
+      ToArmor: 0.0
+      ToHealth: 2.0
+      ToStun: 0.2
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    bulletSprite: 17
+    blastRadius: 1
+    explosionHitSound: 864
+    hitAnimation: 152
+    twoHanded: false
+    skillApplied: false
+    strengthApplied: false
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 6
+    specialUseEmptyHand: false
+  - type: AUX_PROBE                                                 #TOME
+    #psiAttackName: STR_ANALYZE #string id of psi-amp attack name in the pop-up menu. Required to enable special attack.
+    weight: 0
+    hitSound: 37
+    battleType: 8
+    LOSRequired: true
+    tuUse: 5
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 5
+    specialUseEmptyHand: true
+    #*** Melee
+    tags:
+      ITEM_REPAIRS_ARMOR: 1
+    confMelee:
+      name: STR_REPAIR
+    meleeSound: 698
+    meleeHitSound: 699
+    meleeAnimation: 32
+    meleeType: 0
+    meleePower: 60
+    accuracyMelee: 100
+    meleeBonus:
+      strength: 0.5
+    meleeAlter: #REPAIR
+      RandomType: 3
+      ToHealth: 0.0
+      ToStun: 0.0
+      ToArmor: -1.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      ArmorEffectiveness: 0.0
+    meleeMultiplier:
+      melee: 0.8
+    costMelee:
+      time: 15
+      energy: 40
+  - type: STR_MFIST #special
+    weight: 0
+    bigSprite: 224
+    floorSprite: 111
+    handSprite: 256
+    meleeSound: 710 # 710 powerfist miss
+    meleeHitSound: 772 # 772 powerfist hit
+    meleeAnimation: 28 # 28 bolt anitmation
+    power: 100
+    damageAlter:     #DA POWER
+      ArmorEffectiveness: 0.7
+      ToArmorPre: 0.2
+      ToHealth: 0.9
+    damageType: 7
+    accuracyMelee: 80
+    tuMelee: 15
+    flatRate: true
+    clipSize: -1
+    battleType: 3
+    twoHanded: false
+    skillApplied: true
+    strengthApplied: false
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 4
+    specialUseEmptyHand: false
+    experienceTrainingMode: 13
+  - type: AUX_SEDUCE
+    tags:
+      ITEM_STUN_ON_LOW_MORALE: 1
+    confMelee:
+      name: STR_SEDUCE
+    weight: 0
+    bigSprite: 372
+    meleeSound: 834
+    meleeHitSound: 833
+    meleeAnimation: 52
+    power: 200
+    damageAlter:
+      RandomType: 3 #3-> Flat  [100% - 100%]
+      ToStun: 0.5
+      ToHealth: 0.0
+      ToWound: 0.0
+      ToMorale: 1.0
+      ToArmor: 0.0
+      ArmorEffectiveness: 0.0   #how effective armor is against this damage. Default `0.0` for smoke and stun, `1.0` rest.
+    damageType: 7
+    accuracyMelee: 110
+    tuMelee: 15
+    clipSize: -1
+    battleType: 3
+    twoHanded: false
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 3
+    specialUseEmptyHand: false
+  - type: SEDUCE_PSI_WEAPON
+    psiSound: 834          #override `hitSound` when used for MC or Panic attack.
+    # psiMissSound: 0        #override `hitMissSound` when used for MC or Panic attack.
+    psiAnimation: 52       #override `meleeAnimation` when used for MC or Panic attack. Use `HIT.PCK`
+    psiMissAnimation: 52    #override `meleeMissAnimation` when MC or Panic attack was unsuccessful. Use `HIT.PCK`
+    hitSound: 833
+    battleType: 9
+    tuUse: 25
+    flatRate: true
+    recover: false
+  - type: ALIEN_PSI_WEAPON
+    hitSound: 36
+    battleType: 9
+    tuUse: 25
+    flatRate: true
+    recover: false
+    LOSRequired: true
+
+  - type: STR_HEAVY_STUBBER
+    tags:
+      ITEM_RECOIL: 30
+      ITEM_HAS_BIPOD: 1
+
+  - type: STR_HEAVY_STUBBER_CHAOS
+    tags:
+      ITEM_RECOIL: 30
+
+  - type: STR_BOLTPISTOL_CHAOS
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_HAS_RANDOMIZED_SPRITES: 1
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_STUB_GUN
+    tags:
+      ITEM_HAS_RANDOMIZED_SPRITES: 3
+
+  - type: STR_STUB_GUN_CHAOS
+    tags:
+      ITEM_HAS_RANDOMIZED_SPRITES: 3
+
+  - type: AUX_REPAIR
+    tags:
+      ITEM_REPAIRS_ARMOR: 1
+
+  - type: STR_SERVITOR
+    tags:
+      ITEM_REPAIRS_ARMOR: 1
+
+  - type: STR_BOLTER_DEAZ
+    tags:
+      ITEM_RECOIL: 25
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_BOLTER_DEAZ_MC
+    tags:
+      ITEM_RECOIL: 25
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_BOLTER_ENFORCER
+    tags:
+      ITEM_RECOIL: 25
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_BOLTER_LOCKE
+    tags:
+      ITEM_RECOIL: 25
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_LIGHT_BOLTER_AMMO
+    tags:
+      ITEM_AMMO_COLOR: 0
+
+  - type: STR_LIGHT_BOLTER_AMMO_MC
+    tags:
+      ITEM_AMMO_COLOR: 15
+
+  - type: STR_BOLTERC
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_BOLTERN
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_BOLTERR
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_RIFLE
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_MCRIFLE
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_RIFLEB
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_RIFLEC
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_RIFLED
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_RIFLE_CLIP
+    tags:
+      ITEM_AMMO_COLOR: 0
+
+  - type: STR_RIFLE_CLIP_MC
+    tags:
+      ITEM_AMMO_COLOR: 15
+
+  - type: STR_RIFLE_CLIP_EX
+    tags:
+      ITEM_AMMO_COLOR: 2
+
+  - type: STR_RIFLE_CLIP_AP
+    tags:
+      ITEM_AMMO_COLOR: 1
+
+  - type: STR_RIFLE_CLIP_N
+    tags:
+      ITEM_AMMO_COLOR: 4
+
+  - type: STR_RIFLE_CLIP_R
+    tags:
+      ITEM_AMMO_COLOR: 13
+
+  - type: STR_BOLTPISTOL_DEAZ
+    tags:
+      ITEM_RECOIL: 20
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_MC_BOLTPISTOL_DEAZ
+    tags:
+      ITEM_RECOIL: 20
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_LIGHT_BOLTPISTOL_AMMO
+    tags:
+      ITEM_AMMO_COLOR: 0
+
+  - type: STR_LIGHT_BOLTPISTOL_AMMO_MC
+    tags:
+      ITEM_AMMO_COLOR: 15
+
+  - type: STR_PISTOL
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_PISTOLB
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_PISTOLS
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_PISTOLH
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      #ITEM_FIRING_SPRITE: 1
+
+  - type: STR_MCPISTOL
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+
+  - type: STR_PISTOL_CLIP
+    tags:
+      ITEM_AMMO_COLOR: 0
+
+  - type: STR_PISTOL_CLIP_MC
+    tags:
+      ITEM_AMMO_COLOR: 15
+
+  - type: STR_PISTOL_CLIP_EX
+    tags:
+      ITEM_AMMO_COLOR: 2
+
+  - type: STR_PISTOL_CLIP_AP
+    tags:
+      ITEM_AMMO_COLOR: 1
+
+  - type: STR_AUTO_CANNON
+    tags:
+      ITEM_RECOIL: 60
+
+  - type: STR_HEAVY_BOLTER_GUARD
+    tags:
+      ITEM_RECOIL: 60
+      ITEM_HAS_BIPOD: 1
+
+  - type: STR_HEAVY_CANNON
+    tags:
+      ITEM_RECOIL: 30
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+  - type: STR_HC_AP_AMMO
+    tags:
+      ITEM_AMMO_COLOR: 0
+  - type: STR_HC_HE_AMMO
+    tags:
+      ITEM_AMMO_COLOR: 1
+  - type: STR_HC_I_AMMO
+    tags:
+      ITEM_AMMO_COLOR: 2
+
+  - type: STR_ASSAULT_BOLTER
+    tags:
+      ITEM_RECOIL: 30
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
+  - type: STR_AC_AP_AMMO
+    tags:
+      ITEM_AMMO_COLOR: 0
+  - type: STR_AC_HE_AMMO
+    tags:
+      ITEM_AMMO_COLOR: 1
+  - type: STR_AC_I_AMMO
+    tags:
+      ITEM_AMMO_COLOR: 2
+  - type: STR_AC_MC_AMMO
+    tags:
+      ITEM_AMMO_COLOR: 15
+
+  - type: STR_SNIPER_CHAOS
+    tags:
+      ITEM_RECOIL: 30
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+
+  - type: STR_LASCAN
+    tags:
+      ITEM_RECOIL: 60
+
+  - type: STR_LASCANNON_HANDHELD
+    tags:
+      ITEM_RECOIL: 60
+      ITEM_HAS_BIPOD: 1
+
+  - type: STR_HB
+    tags:
+      ITEM_RECOIL: 75
+      ITEM_FIRING_SPRITE: 1
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+
+  - type: STR_HB_MC
+    tags:
+      ITEM_RECOIL: 75
+      ITEM_FIRING_SPRITE: 1
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+
+  - type: STR_CHB
+    tags:
+      ITEM_RECOIL: 75
+      ITEM_FIRING_SPRITE: 1
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+
+  - type: STR_GK_HB
+    tags:
+      ITEM_RECOIL: 75
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+
+  - type: STR_HFLAMER
+    tags:
+      ITEM_RECOIL: 100
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+
+  - type: STR_ASSC
+    tags:
+      ITEM_RECOIL: 100
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+
+  - type: STR_CASSC
+    tags:
+      ITEM_RECOIL: 100
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+
+  - type: STR_ASSCTZ
+    tags:
+      ITEM_RECOIL: 100
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+
+  - type: STR_AUTOCANNON_HANDHELD
+    tags:
+      ITEM_RECOIL: 100
+      ITEM_HAS_BIPOD: 1
+
+  - type: STR_POWERFIST
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 40
+
+  - type: STR_CHAINSWORD
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 25
+
+  - type: STR_CHAINSWORD_MC
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 25
+
+  - type: STR_AXE
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 25
+
+  - type: STR_EVISCERATOR
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 35
+
+  - type: STR_CPOWER_SWORD
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 80
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+
+  - type: STR_CPOWER_AXE
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 60
+
+  - type: STR_CPOWER_DAGGER
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 60
+
+  - type: STR_EPOWER_SWORD
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 60
+
+  - type: STR_POWER_SWORD
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 100
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+
+  - type: STR_POWER_SWORD_MC
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 100
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+
+  - type: STR_HAMMER
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 120
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+
+  - type: STR_HAMMER_MC
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 120
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+
+  - type: STR_HALLEBARD
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 120
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+
+  - type: STR_LONGLAS
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 14
+
+  - type: STR_LASGUN_LUCIUS
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 14
+
+  - type: STR_LONGLAS_TANITH
+    tags:
+      ITEM_COLOR_CHANGES_WITH_AMMO: 12
+
+  - type: STR_LASGUN_CLIP_HOTSHOT
+    tags:
+      ITEM_AMMO_COLOR: 2
+      ITEM_AMMO_SHADE: -3
+
+  - type: STR_HELLGUN
+    tags:
+      ITEM_CHANGES_SPRITE_WITH_ARMOR: 1
+
+  - type: STR_HOTSHOT_VOLLEY_GUN
+    tags:
+      ITEM_CHANGES_SPRITE_WITH_ARMOR: 1
+
+  - type: INV_NULL_STORM_TROOPER_BACKPACK
+    tags:
+      ITEM_CHANGES_SPRITE_WITH_ARMOR: 1
+
+  - type: STR_TELEKINETIC_SHIELD
+    tags:
+      ITEM_ADDS_ENERGY_SHIELD_FROM_POWER: 100
+      ITEM_SETS_ENERGY_SHIELD_DECAY: 60
+
+soldiers:
+  - type: STR_GUARDSM
+    tags:
+      SOLDIER_CAN_BE_TRAITOR: 1
+
+  - type: STR_GUARD_VETERAN
+    tags:
+      SOLDIER_CAN_BE_TRAITOR: 1
+
+  - type: STR_GUARD_OFFICER
+    tags:
+      SOLDIER_CAN_BE_TRAITOR: 1
+
+  - type: STR_COMMISSAR
+    tags:
+      SOLDIER_CAN_EXECUTE_TRAITORS: 1
+
+  - type: STR_STORMTROOPER
+    tags:
+      SOLDIER_CAN_BE_TRAITOR: 1
+
+  - type: STR_OGRYN
+    tags:
+      SOLDIER_WOUND_TIME_MULTIPLIER: 33
+      SOLDIER_CAN_BE_TRAITOR: 1
+
+  - type: STR_PSYKER
+    tags:
+      SOLDIER_CAN_BE_TRAITOR: 1
+
+  - type: STR_ADEPTAS
+    tags:
+      SOLDIER_CAN_BE_TRAITOR: 1
+
+  - type: STR_CANONESS
+    tags:
+      SOLDIER_CAN_BE_TRAITOR: 1
+
+extended:
+  tags:
+    RuleArmor:
+#*** Tag for terminator-like armors that treat weapons as one-handed ***
+      ARMOR_TREATS_ALL_WEAPONS_ONE_HANDED: int
+
+#*** Tag for changing sprites of weapons attached to armor ***
+      ARMOR_BUILTIN_WEAPON_VARIANT: int
+
+#*** Tags for energy shield on armor ***
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: int
+      ARMOR_ENERGY_SHIELD_DECAY: int
+
+#*** Tags for soldiers gaining devotion/psi skill as secondary experience ***
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: int
+
+    RuleItem:
+#*** Tag for number of cosmetic variants of items ***
+      ITEM_HAS_RANDOMIZED_SPRITES: int
+
+#*** Tag for techmarine/servitor armor repair ***
+      ITEM_REPAIRS_ARMOR: int
+
+#*** Tags for Librarian spells ***
+      ITEM_CAUSES_STASIS: int
+      ITEM_CAUSES_LOCKDOWN: int
+      ITEM_MELEE_BUFF: int
+      ITEM_MELEE_BUFF_DURATION: int
+
+#*** Tag for seductress spell causing stun when at low morale ***
+      ITEM_STUN_ON_LOW_MORALE: int
+
+#*** Tags for reducing accuracy when not enough strength to use a weapon ***
+      ITEM_RECOIL: int
+      ITEM_HAS_BIPOD: int
+      ITEM_STRENGTH_REQUIREMENT: int
+
+#*** Tag for weapons changing colors when a certain clip is loaded ***
+      ITEM_COLOR_CHANGES_WITH_AMMO: int
+      ITEM_AMMO_COLOR: int
+      ITEM_AMMO_SHADE: int
+
+#*** Tag for weapon changing hand sprite when firing ***
+      ITEM_FIRING_SPRITE: int
+
+#*** Tag for items built-in to armors that change sprite variants ***
+      ITEM_CHANGES_SPRITE_WITH_ARMOR: int
+
+#*** Tags for creating energy shields on hitting a unit ***
+      ITEM_ADDS_ENERGY_SHIELD_FROM_POWER: int
+      ITEM_SETS_ENERGY_SHIELD_DECAY: int
+
+#*** Tags for weapons that revert overweight penalty to TUs ***
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: int
+
+    RuleSoldier:
+#*** Tag for reducing wound time after battle ***
+      SOLDIER_WOUND_TIME_MULTIPLIER: int
+
+#*** Tags for traitor script ***
+      SOLDIER_CAN_EXECUTE_TRAITORS: int
+      SOLDIER_CAN_BE_TRAITOR: int
+
+    BattleGame:
+#*** Tags for traitor script ***
+      GAME_RETURN_MORALE_FROM_EXECUTED_TRAITOR: int
+      GAME_RETURN_MORALE_TURN: int
+
+    BattleItem:
+#*** Tag for cosmetic variants of weapons ***
+      ITEM_RANDOMIZED_SPRITE: int
+
+#*** Tag for cosmetic variants of weapons built-in to armor ***
+      ITEM_BUILTIN_SPRITE_VARIANT: int
+
+    BattleUnit:
+#*** Tags for librarian spells buffs/debuffs ***
+      UNIT_IS_IN_STASIS: int
+      UNIT_IS_IN_LOCKDOWN: int
+      UNIT_MELEE_BUFF: int
+      UNIT_MELEE_BUFF_DURATION: int
+
+#*** Tags for handling energy shields on units ***
+      UNIT_ENERGY_SHIELD_HP: int
+      UNIT_ENERGY_SHIELD_DECAY: int
+
+#*** Tags for handling recoloring of units ***
+      UNIT_RECOLOR_DESYNC: int
+      UNIT_RECOLOR_COLOR: int
+      UNIT_RECOLOR_BRIGHTNESS: int
+      UNIT_RECOLOR_START_FRAME: int
+      UNIT_RECOLOR_FRAME_LENGTH: int
+
+#*** Tag for remembering unit energy with deployed weapon ***
+      UNIT_ENERGY_HOLD_DEPLOYED_WEAPON: int
+
+#*** Tag for determining if a unit turned traitor ***
+      UNIT_TURNED_TRAITOR: int
+
+#*** Tag for determining if the unit holds a weapon that returns the overweight logic to a TU penalty ***
+      UNIT_HOLDS_TU_PENALTY_WEAPON: int
+
+  scripts:
+    newTurnItem:
+      #*** Sets a tag on units carrying weapons that revert the overweight logic to a TU penalty ***
+      - offset: 10
+        code: |
+          var ptr RuleItem itemRuleset;
+          var ptre BattleUnit unit;
+          var ptr RuleSoldier soldierRuleset;
+          var int weaponHasTuPenalty;
+
+          item.getRuleItem itemRuleset;
+          itemRuleset.getTag weaponHasTuPenalty Tag.ITEM_HAS_OVERWEIGHT_TU_PENALTY;
+          item.getOwner unit;
+          unit.getRuleSoldier soldierRuleset;
+          if or eq 0 weaponHasTuPenalty eq null unit eq null soldierRuleset;
+            return;
+          end;
+
+          unit.setTag Tag.UNIT_HOLDS_TU_PENALTY_WEAPON weaponHasTuPenalty;
+
+          return;
+
+    newTurnUnit:
+      #*** Script that changes the logic for TU loss on overweight to energy loss ***
+      - offset: 10
+        code: |
+          var ptr RuleSoldier soldierRuleset;
+          var int unitHoldsTUPenaltyWeapon;
+          var int maxStat;
+          var int percentStatLost;
+          var int unitIsKneeling;
+
+          # Only run this at the beginning of the player's turn
+          if neq 0 side;
+            return;
+          end;
+
+          # Only run this logic for player soldiers since we can only ensure their side
+          unit.getRuleSoldier soldierRuleset;
+          unit.getTag unitHoldsTUPenaltyWeapon Tag.UNIT_HOLDS_TU_PENALTY_WEAPON;
+          if or eq null soldierRuleset;
+            return;
+          end;
+
+          # Determine whether or not we've lost TUs
+          unit.getTimeUnits percentStatLost;
+          unit.getTimeUnitsMax maxStat;
+          sub percentStatLost maxStat;
+          muldiv percentStatLost -100 maxStat; # turn into subtractive loss
+          if eq 0 unitHoldsTUPenaltyWeapon; # set TUs back to normal if we're not holding a penalized weapon
+            unit.setTimeUnits maxStat;
+          end;
+
+          # Reduce energy lost by half when kneeling
+          unit.isKneeled unitIsKneeling;
+          if neq 0 unitIsKneeling;
+            div percentStatLost 2;
+          end;
+
+          # Now apply the loss to energy
+          unit.getEnergyMax maxStat;
+          sub percentStatLost 100; # turn back into multiplicative loss
+          mul percentStatLost -1;
+          muldiv maxStat percentStatLost 100;
+
+          unit.getEnergy percentStatLost;
+          limit_upper percentStatLost maxStat;
+          unit.setEnergy percentStatLost;
+
+          return;
+
+      #*** Resets tag that checks for weapons that revert the overweight logic to TU penalty ***
+      - offset: 11
+        code: |
+          unit.setTag Tag.UNIT_HOLDS_TU_PENALTY_WEAPON 0;
+
+          return;
+
+      #*** Returns morale from executing a traitor ***
+      - offset: 12
+        code: |
+          var ptr RuleSoldier soldierRuleset;
+          var int traitorValue;
+          var int temp;
+
+          unit.getRuleSoldier soldierRuleset;
+          battle_game.getTag traitorValue Tag.GAME_RETURN_MORALE_TURN;
+
+          if and neq null soldierRuleset lt turn traitorValue eq side 0;
+
+            battle_game.getTag traitorValue Tag.GAME_RETURN_MORALE_FROM_EXECUTED_TRAITOR;
+
+          else;
+
+            return;
+
+          end;
+
+          unit.reduceByBravery traitorValue;
+          unit.getMorale temp;
+          add traitorValue temp;
+          unit.setMorale traitorValue;
+
+          return;
+
+      #*** Handles decay of energy shields and shield HP added by armors ***
+      - offset: 13
+        code: |
+          var ptr RuleArmor armorRuleset;
+          var int shieldHP;
+          var int shieldDecay;
+          var int shieldAdded;
+
+          # Make sure this doesn't run an extra third time if there's a neutral side
+          if eq side 2;
+            return;
+          end;
+
+          # Check armor first for decay parameter
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getTag shieldDecay Tag.ARMOR_ENERGY_SHIELD_DECAY;
+
+          # Next comes decay set by an item
+          if eq shieldDecay 0;
+
+            unit.getTag shieldDecay Tag.UNIT_ENERGY_SHIELD_DECAY;
+
+          end;
+
+          # Apply the decay, treating it like the percent lost per turn
+          unit.getTag shieldHP Tag.UNIT_ENERGY_SHIELD_HP;
+          sub shieldDecay 100;
+          mul shieldDecay -1;
+          muldiv shieldHP shieldDecay 100;
+
+          # Now add the per-turn amount from armor, to be balanced by decay parameter
+          armorRuleset.getTag shieldAdded Tag.ARMOR_ENERGY_SHIELD_HP_PER_TURN;
+          add shieldHP shieldAdded;
+
+          if eq shieldHP 0;
+
+            unit.setTag Tag.UNIT_ENERGY_SHIELD_DECAY 0;
+
+          end;
+
+          unit.setTag Tag.UNIT_ENERGY_SHIELD_HP shieldHP;
+
+          return;
+
+      #*** Stasis spell: remove TUs and decrement the tag
+      - offset: 14
+        code: |
+          var int unitIsInStasis;
+
+          unit.getTag unitIsInStasis Tag.UNIT_IS_IN_STASIS;
+
+          if and neq 0 unitIsInStasis neq 2 side;
+
+            unit.setTimeUnits 0;
+
+            sub unitIsInStasis 1;
+            unit.setTag Tag.UNIT_IS_IN_STASIS unitIsInStasis;
+
+          end;
+
+          return;
+
+      #*** Lockdown spell: reduce TUs and decay the tag
+      - offset: 15
+        code: |
+          var int unitIsInLockdown;
+          var int unitTUs;
+
+          unit.getTag unitIsInLockdown Tag.UNIT_IS_IN_LOCKDOWN;
+
+          if and neq 0 unitIsInLockdown neq 2 side;
+
+            muldiv unitIsInLockdown 71 100; # decay to ~50% every full turn
+            unit.setTag Tag.UNIT_IS_IN_LOCKDOWN unitIsInLockdown;
+
+            unit.getTimeUnits unitTUs;
+            muldiv unitIsInLockdown unitTUs 100;
+            sub unitTUs unitIsInLockdown;
+            unit.setTimeUnits unitTUs;
+
+          end;
+
+          return;
+
+      #*** Melee inspire spell: check if the buff is over
+      - offset: 16
+        code: |
+          var int unitMeleeBuff;
+          var int unitMeleeBuffDuration;
+
+          unit.getTag unitMeleeBuff Tag.UNIT_MELEE_BUFF;
+          unit.getTag unitMeleeBuffDuration Tag.UNIT_MELEE_BUFF_DURATION;
+
+          if and neq 0 unitMeleeBuff eq 0 unitMeleeBuffDuration neq 2 side;
+
+            unit.setTag Tag.UNIT_MELEE_BUFF 0;
+
+          end;
+
+          if and neq 0 unitMeleeBuffDuration neq 2 side;
+
+            sub unitMeleeBuffDuration 1;
+            unit.setTag Tag.UNIT_MELEE_BUFF_DURATION unitMeleeBuffDuration;
+
+          end;
+
+          return;
+
+    createUnit:
+      #*** Sets the frequency and offset for periodic unit recolors for buffs and debuffs ***
+      - offset: 10
+        code: |
+          var int recolorPeriod;
+          var int desync;
+
+          set recolorPeriod 32; # units flash every 32 frames
+          unit.getId desync;
+          offsetmod desync 11 0 recolorPeriod; # creates a desynchronization between unit flashes
+          unit.setTag Tag.UNIT_RECOLOR_DESYNC desync;
+
+          return;
+
+      #*** Sets energy shields from unit armors at the beginning of the battlescape ***
+      - offset: 11
+        code: |
+          var ptr RuleArmor armorRuleset;
+          var int shieldAdded;
+          var int shieldDecay;
+
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getTag shieldAdded Tag.ARMOR_ENERGY_SHIELD_HP_PER_TURN;
+
+          if eq shieldAdded 0;
+
+            return;
+
+          end;
+
+          armorRuleset.getTag shieldDecay Tag.ARMOR_ENERGY_SHIELD_DECAY;
+
+          # sets shield at max value (when flat addition = percent decay)
+          if neq 0 shieldDecay;
+
+            muldiv shieldAdded 100 shieldDecay;
+
+          end;
+
+          unit.setTag Tag.UNIT_ENERGY_SHIELD_HP shieldAdded;
+
+          return;
+
+    createItem:
+      #*** Sets sprites for items that have randomized cosmetic variants ***
+      - offset: 10
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int randomizedSprite;
+
+          item.getRuleItem itemRuleset;
+          itemRuleset.getTag randomizedSprite Tag.ITEM_HAS_RANDOMIZED_SPRITES;
+          if neq 0 randomizedSprite;
+
+            battle_game.randomRange randomizedSprite 0 randomizedSprite;
+            item.setTag Tag.ITEM_RANDOMIZED_SPRITE randomizedSprite;
+
+          end;
+
+          return;
+
+      #*** Sets sprites for items that are built-in to muliple armor variants and should change look based on armor ***
+      - offset: 11
+        code: |
+          var ptr RuleItem itemRuleset;
+          var ptr BattleUnit itemOwner;
+          var ptr RuleArmor ownerArmor;
+          var int itemHasSpriteVariants;
+          var int armorHasItemSpriteVariants;
+
+          item.getRuleItem itemRuleset;
+          itemRuleset.getTag itemHasSpriteVariants Tag.ITEM_CHANGES_SPRITE_WITH_ARMOR;
+          item.getOwner itemOwner;
+          itemOwner.getRuleArmor ownerArmor;
+          ownerArmor.getTag armorHasItemSpriteVariants Tag.ARMOR_BUILTIN_WEAPON_VARIANT;
+
+          if or eq 0 itemHasSpriteVariants eq null itemOwner eq 0 armorHasItemSpriteVariants;
+
+            return;
+
+          end;
+
+          item.setTag Tag.ITEM_BUILTIN_SPRITE_VARIANT armorHasItemSpriteVariants;
+
+          return;
+
+    selectItemSprite:
+      #*** displays randomized bigob sprites for certain weapons ***
+      - offset: 10
+        code: |
+          var int randomizedSprite;
+
+          item.getTag randomizedSprite Tag.ITEM_RANDOMIZED_SPRITE;
+
+          if eq blit_part blit_item_big;
+
+            add sprite_index randomizedSprite;
+
+          end;
+
+          return sprite_index;
+
+      #*** gives bolt weapons muzzle flashes ***
+      - offset: 11
+        code: |
+          var ptr BattleUnit unit;
+          var ptr RuleItem itemRuleset;
+          var int itemFiringSprite;
+          var int unitIsAiming;
+
+          item.getOwner unit;
+
+          if neq null unit;
+
+            unit.isAiming unitIsAiming;
+            item.getRuleItem itemRuleset;
+            itemRuleset.getTag itemFiringSprite Tag.ITEM_FIRING_SPRITE;
+
+            if and neq 0 itemFiringSprite neq 0 unitIsAiming;
+
+              if or eq blit_part blit_item_lefthand eq blit_part blit_item_righthand;
+
+                set sprite_offset 8;
+                add sprite_index sprite_offset;
+
+              end;
+
+            end;
+
+          end;
+
+          return sprite_index;
+
+      #*** Sets bipod weapon sprites when kneeling ***
+      - offset: 12
+        code: |
+          var ptr RuleItem itemRuleset;
+          var ptr BattleUnit holdingUnit;
+          var int itemHasBipod;
+          var int unitIsKneeling;
+
+          item.getRuleItem itemRuleset;
+          itemRuleset.getTag itemHasBipod Tag.ITEM_HAS_BIPOD;
+          item.getOwner holdingUnit;
+          holdingUnit.isKneeled unitIsKneeling;
+
+          if and neq null holdingUnit neq 0 unitIsKneeling neq 0 itemHasBipod;
+
+            if or eq blit_part blit_item_big eq blit_part blit_item_floor;
+
+              set sprite_offset 1;
+
+            else;
+
+              set sprite_offset 8;
+
+            end;
+
+          else;
+
+            return sprite_index;
+
+          end;
+
+          add sprite_index sprite_offset;
+          return sprite_index;
+
+      #*** Sets sprite variants for built-in weapons shared across multiple armors
+      - offset: 13
+        code: |
+          var int itemBuiltinSpriteVariant;
+
+          item.getTag itemBuiltinSpriteVariant Tag.ITEM_BUILTIN_SPRITE_VARIANT;
+
+          if or eq blit_part blit_item_big eq blit_part blit_item_floor;
+
+            add sprite_index itemBuiltinSpriteVariant;
+
+          else or eq blit_part blit_item_lefthand eq blit_part blit_item_righthand;
+
+            mul itemBuiltinSpriteVariant 8;
+            add sprite_index itemBuiltinSpriteVariant;
+
+          end;
+
+          return sprite_index;
+
+    hitUnit:
+      #*** Handles tagging soldier-on-soldier attacks as traitors ***
+      - offset: 10
+        code: |
+          var ptr RuleSoldier attackingSoldier;
+          var ptr RuleSoldier victimSoldier;
+          var int canBeTraitor;
+          var int traitorValue;
+          var int faction;
+
+          attacker.getRuleSoldier attackingSoldier;
+          unit.getRuleSoldier victimSoldier;
+
+          # Blue on blue is counted by soldier-on-soldier
+          if or eq null attackingSoldier eq null victimSoldier;
+
+            return power part side;
+
+          else or eq damaging_type 0 eq damaging_type 6 eq damaging_type 9 eq damaging_type 10;
+
+            return power part side;
+
+          end;
+
+          attackingSoldier.getTag canBeTraitor Tag.SOLDIER_CAN_BE_TRAITOR;
+
+          if eq 0 canBeTraitor;
+
+            return power part side;
+
+          end;
+
+          set traitorValue 50;
+          battle_game.getTurnSide faction;
+
+          if neq 2 faction;
+
+            add faction 1;
+            mul traitorValue faction;
+
+          end;
+
+          attacker.setTag Tag.UNIT_TURNED_TRAITOR traitorValue;
+
+          return power part side;
+
+      #*** Handles execution of traitors ***
+      - offset: 11
+        code: |
+          var ptr RuleSoldier attackingSoldier;
+          var int traitorValue;
+          var int attackerIsExecutor;
+          var int faction;
+
+          unit.getTag traitorValue Tag.UNIT_TURNED_TRAITOR;
+          attacker.getRuleSoldier attackingSoldier;
+          attackingSoldier.getTag attackerIsExecutor Tag.SOLDIER_CAN_EXECUTE_TRAITORS;
+
+          battle_game.getTurnSide faction;
+
+          if or eq 0 traitorValue eq 0 attackerIsExecutor neq 0 faction;
+
+            return power part side;
+
+          end;
+
+          unit.getHealth traitorValue;
+
+          if and gt traitorValue 0 neq damaging_type 0 neq damaging_type 6 neq damaging_type 9 neq damaging_type 10;
+
+            set power 9999; # This should be enough over the threshold
+
+            attacker.Stats.getBravery attackerIsExecutor;
+            muldiv traitorValue attackerIsExecutor 100; # return morale equal to modified commissar bravery
+            battle_game.setTag Tag.GAME_RETURN_MORALE_FROM_EXECUTED_TRAITOR traitorValue;
+            battle_game.setTag Tag.GAME_RETURN_MORALE_TURN traitorValue;
+
+          end;
+
+          return power part side;
+
+      #*** Defense layer: does the unit have an energy shield? ***
+      - offset: 12
+        code: |
+          var int shieldHP;
+          var int shieldHPAfter;
+          var int frame;
+
+          unit.getTag shieldHP Tag.UNIT_ENERGY_SHIELD_HP;
+
+          if eq shieldHP 0;
+
+            return power part side;
+
+          else or eq damaging_type 0 eq damaging_type 2 eq damaging_type 9 eq damaging_type 10;
+
+            return power part side;
+
+          end;
+
+          set shieldHPAfter shieldHP;
+          sub shieldHPAfter power;
+          sub power shieldHP;
+          limit_lower shieldHPAfter 0;
+          limit_lower power 0;
+          unit.setTag Tag.UNIT_ENERGY_SHIELD_HP shieldHPAfter;
+
+          if and gt shieldHPAfter 0 eq power 0;
+
+            battle_game.getAnimFrame frame;
+            unit.setTag Tag.UNIT_RECOLOR_START_FRAME frame;
+            unit.setTag Tag.UNIT_RECOLOR_FRAME_LENGTH 3;
+            unit.setTag Tag.UNIT_RECOLOR_COLOR COLOR_X1_BLUE1;
+
+          end;
+
+          return power part side;
+
+      #*** Techmarine/servitor armor repair ***
+      - offset: 13
+        code: |
+          var ptr RuleItem weaponRuleset;
+          var int itemRepairsArmor;
+          var int currentArmor;
+          var int maxArmor;
+          var int compareArmor 100;
+
+          weapon_item.getRuleItem weaponRuleset;
+          weaponRuleset.getTag itemRepairsArmor Tag.ITEM_REPAIRS_ARMOR;
+
+          if or eq 0 itemRepairsArmor neq battle_action battle_action_hit neq 0 damaging_type;
+
+            return power part side;
+
+          end;
+
+          unit.getArmor currentArmor SIDE_FRONT;
+          unit.getArmorMax maxArmor SIDE_FRONT;
+          muldiv currentArmor 100 maxArmor;
+          if lt currentArmor compareArmor;
+
+            set side SIDE_FRONT;
+            set compareArmor currentArmor;
+
+          end;
+
+          unit.getArmor currentArmor SIDE_LEFT;
+          unit.getArmorMax maxArmor SIDE_LEFT;
+          muldiv currentArmor 100 maxArmor;
+          if lt currentArmor compareArmor;
+
+            set side SIDE_LEFT;
+            set compareArmor currentArmor;
+
+          end;
+
+          unit.getArmor currentArmor SIDE_RIGHT;
+          unit.getArmorMax maxArmor SIDE_RIGHT;
+          muldiv currentArmor 100 maxArmor;
+          if lt currentArmor compareArmor;
+
+            set side SIDE_RIGHT;
+            set compareArmor currentArmor;
+
+          end;
+
+          unit.getArmor currentArmor SIDE_REAR;
+          unit.getArmorMax maxArmor SIDE_REAR;
+          muldiv currentArmor 100 maxArmor;
+          if lt currentArmor compareArmor;
+
+            set side SIDE_REAR;
+            set compareArmor currentArmor;
+
+          end;
+
+          unit.getArmor currentArmor SIDE_UNDER;
+          unit.getArmorMax maxArmor SIDE_UNDER;
+          muldiv currentArmor 100 maxArmor;
+          if lt currentArmor compareArmor;
+
+            set side SIDE_UNDER;
+            set compareArmor currentArmor;
+
+          end;
+
+          return power part side;
+
+    damageUnit:
+      #*** Seductress spell: stun units that are low on morale ***
+      - offset: 10
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int targetMorale;
+          var int stunOnLowMorale;
+
+          damaging_item.getRuleItem itemRuleset;
+          itemRuleset.getTag stunOnLowMorale Tag.ITEM_STUN_ON_LOW_MORALE;
+
+          if eq stunOnLowMorale 0;
+            return;
+          end;
+
+          unit.getMorale targetMorale;
+          if neq targetMorale 0;
+            set to_stun 0;
+          end;
+
+          return;
+
+      #*** Spells that add to energy shields ***
+      - offset: 11
+        code: |
+          var ptr RuleItem weaponRuleset;
+          var int shieldAdded;
+          var int scalingFactor;
+          var int linearAddition;
+          var int diminishingAddition;
+          var int shieldHP;
+          var int shieldDecay;
+          var int currentDecay;
+
+          damaging_item.getRuleItem weaponRuleset;
+          weaponRuleset.getTag shieldAdded Tag.ITEM_ADDS_ENERGY_SHIELD_FROM_POWER;
+
+          if eq shieldAdded 0;
+
+            weapon_item.getRuleItem weaponRuleset;
+            weaponRuleset.getTag shieldAdded Tag.ITEM_ADDS_ENERGY_SHIELD_FROM_POWER;
+
+            if eq shieldAdded 0;
+
+              return;
+
+            end;
+
+          end;
+
+          set scalingFactor 50; # Percent factor for diminishing returns beyond the power of the item
+
+          set linearAddition currPower;
+          muldiv linearAddition shieldAdded 100;
+          set diminishingAddition linearAddition;
+
+          unit.getTag shieldHP Tag.UNIT_ENERGY_SHIELD_HP;
+          sub linearAddition shieldHP;
+
+          if gt linearAddition 0;
+
+            set diminishingAddition shieldHP;
+
+          else;
+
+            mul linearAddition -1;
+            muldiv linearAddition 100 diminishingAddition;
+            sub scalingFactor linearAddition;
+            limit_lower scalingFactor 0;
+            set linearAddition 0;
+
+          end;
+
+          muldiv diminishingAddition scalingFactor 100;
+          add linearAddition diminishingAddition;
+          add shieldHP linearAddition;
+          unit.setTag Tag.UNIT_ENERGY_SHIELD_HP shieldHP;
+
+          weaponRuleset.getTag shieldDecay Tag.ITEM_SETS_ENERGY_SHIELD_DECAY;
+          unit.getTag currentDecay Tag.UNIT_ENERGY_SHIELD_DECAY;
+
+          if gt shieldDecay currentDecay;
+
+            unit.setTag Tag.UNIT_ENERGY_SHIELD_DECAY shieldDecay;
+
+          end;
+
+          return;
+
+      #*** Stasis spell: do no damage if the target is in stasis ***
+      - offset: 12
+        code: |
+          var int unitIsInStasis;
+
+          unit.getTag unitIsInStasis Tag.UNIT_IS_IN_STASIS;
+
+          if neq 0 unitIsInStasis;
+
+            set to_health 0;
+            set to_armor 0;
+            set to_stun 0;
+            set to_time 0;
+            set to_energy 0;
+            set to_morale 0;
+            set to_wound 0;
+            set to_transform 0;
+            set to_mana 0;
+
+          end;
+
+          return;
+
+      #*** Statis spell: setting the tag ***
+      # Set the tag *after* the check for reducing all damage to 0 so the spell has a chance to remove TUs and such
+      - offset: 13
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int stasisValue;
+
+          damaging_item.getRuleItem itemRuleset;
+          itemRuleset.getTag stasisValue Tag.ITEM_CAUSES_STASIS;
+
+          # stasis won't be a melee spell
+          if and neq 0 stasisValue neq battle_action battle_action_hit;
+
+            unit.setTag Tag.UNIT_IS_IN_STASIS stasisValue;
+
+          end;
+
+          return;
+
+      #*** Lockdown spell: sets the tag ***
+      - offset: 14
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int lockdownValue;
+
+          damaging_item.getRuleItem itemRuleset;
+          itemRuleset.getTag lockdownValue Tag.ITEM_CAUSES_LOCKDOWN;
+
+          # lockdown won't be a melee spell
+          if and neq 0 lockdownValue neq battle_action battle_action_hit;
+
+            unit.setTag Tag.UNIT_IS_IN_LOCKDOWN lockdownValue;
+
+          end;
+
+          return;
+
+      #*** Melee buff spell: sets the tag ***
+      - offset: 15
+        code: |
+          var ptr RuleItem itemRuleset;
+          var int meleeBuffValue;
+          var int meleeBuffDuration;
+
+          damaging_item.getRuleItem itemRuleset;
+          itemRuleset.getTag meleeBuffValue Tag.ITEM_MELEE_BUFF;
+          itemRuleset.getTag meleeBuffDuration Tag.ITEM_MELEE_BUFF_DURATION;
+
+          # lockdown won't be a melee spell
+          if and neq 0 meleeBuffValue neq battle_action battle_action_hit;
+
+            muldiv meleeBuffValue currPower 100;
+            unit.setTag Tag.UNIT_MELEE_BUFF meleeBuffValue;
+            unit.setTag Tag.UNIT_MELEE_BUFF_DURATION meleeBuffDuration;
+
+          end;
+
+          return;
+
+    accuracyMultiplierBonusStats:
+      #*** recoil accuracy penalty on firing weapons with not enough strength ***
+      - offset: 10
+        code: |
+          var ptr RuleItem weaponRuleset;
+          var ptr BattleItem otherWeapon;
+          var int itemRecoil;
+          var int weaponHasBipod;
+          var int unitIsKneeling;
+          var int unitStrength;
+          var int accuracyFloor;
+
+          weapon.getRuleItem weaponRuleset;
+          weaponRuleset.getTag itemRecoil Tag.ITEM_RECOIL;
+
+          # bipod+kneeling = no recoil
+          weaponRuleset.getTag weaponHasBipod Tag.ITEM_HAS_BIPOD;
+          unit.isKneeled unitIsKneeling;
+
+          if eq 0 itemRecoil;
+            return bonus;
+          else and neq 0 weaponHasBipod neq 0 unitIsKneeling;
+            return bonus;
+          end;
+
+          # lower limit for penalty from recoil is 50% for snap/aimed, 0 for auto
+          set accuracyFloor bonus;
+          div accuracyFloor 2;
+
+          if eq battle_action BA_AUTOSHOT;
+
+            set accuracyFloor 0;
+
+          end;
+
+          # compare unit strength as percent of the recoil value
+          # less than 50% = full penalty
+          # 50% to 100% = scaling penalty
+          unit.Stats.getStrength unitStrength;
+          muldiv unitStrength 100 itemRecoil;
+
+          if lt unitStrength 100;
+
+            # autoshot gets twice the penalty (needs to reach 0 by half strength, not 50%)
+            if eq battle_action BA_AUTOSHOT;
+
+              sub unitStrength 50;
+              mul unitStrength 2;
+
+            end;
+
+            muldiv bonus unitStrength 100;
+            limit_lower bonus accuracyFloor;
+
+          end;
+
+          return bonus;
+
+      #*** ability for some armors to fire two-handed weapons as if one-handed
+      - offset: 11
+        code: |
+          var ptr RuleArmor unitArmor;
+          var ptr RuleItem weaponRuleset;
+          var ptr BattleItem otherWeapon;
+          var int armorTreatsAllWeaponsOneHanded;
+          var int weaponIsTwoHanded;
+
+          unit.getRuleArmor unitArmor;
+          unitArmor.getTag armorTreatsAllWeaponsOneHanded Tag.ARMOR_TREATS_ALL_WEAPONS_ONE_HANDED;
+
+          unit.getLeftHandWeapon otherWeapon;
+
+          if and neq null otherWeapon eq weapon otherWeapon;
+
+            unit.getRightHandWeapon otherWeapon;
+
+          end;
+
+          weapon.getRuleItem weaponRuleset;
+          weaponRuleset.isTwoHanded weaponIsTwoHanded;
+
+          if and neq null otherWeapon neq 0 weaponIsTwoHanded;
+
+            add armorTreatsAllWeaponsOneHanded 100;
+            muldiv bonus armorTreatsAllWeaponsOneHanded 100;
+
+          end;
+
+          return bonus;
+
+    meleeMultiplierBonusStats:
+      #*** strength requirement penalty on melee weapons ***
+      - offset: 10
+        code: |
+          var ptr RuleItem weaponRuleset;
+          var ptr BattleItem otherWeapon;
+          var int itemStrengthRequirement;
+          var int unitStrength;
+          var int accuracyFloor;
+          var int weaponIsTwoHanded;
+
+          weapon.getRuleItem weaponRuleset;
+          weaponRuleset.getTag itemStrengthRequirement Tag.ITEM_STRENGTH_REQUIREMENT;
+
+          if eq 0 itemStrengthRequirement;
+            return bonus;
+          end;
+
+          # lower limit for penalty is 50%
+          set accuracyFloor bonus;
+          div accuracyFloor 2;
+
+          # compare unit strength as percent of the strength requirement value
+          # less than 50% = full penalty
+          # 50% to 100% = scaling penalty
+          unit.Stats.getStrength unitStrength;
+          muldiv unitStrength 100 itemStrengthRequirement;
+
+          if lt unitStrength 100;
+
+            muldiv bonus unitStrength 100;
+            limit_lower bonus accuracyFloor;
+
+          end;
+
+          return bonus;
+
+      #*** melee buff spell: increase accuracy ***
+      - offset: 11
+        code: |
+          var int unitMeleeBuff;
+
+          unit.getTag unitMeleeBuff Tag.UNIT_MELEE_BUFF;
+          add bonus unitMeleeBuff;
+
+          return bonus;
+
+    meleeDodgeBonusStats:
+      #*** melee buff spell: increase dodge ***
+      - offset: 10
+        code: |
+          var int unitMeleeBuff;
+
+          unit.getTag unitMeleeBuff Tag.UNIT_MELEE_BUFF;
+          add bonus unitMeleeBuff;
+
+          return bonus;
+
+    recolorItemSprite:
+      #*** Handles recoloring weapons that change color based on ammo loaded ***
+      - offset: 10
+        code: |
+          var ptr BattleItem ammoItem;
+          var ptr RuleItem weaponRuleset;
+          var ptr RuleItem ammoRuleset;
+          var int weaponColor;
+          var int color;
+          var int ammoColor;
+
+          item.getRuleItem weaponRuleset;
+          weaponRuleset.getTag weaponColor Tag.ITEM_COLOR_CHANGES_WITH_AMMO;
+          if eq weaponColor 0;
+
+            return new_pixel;
+
+          end;
+
+          get_color color new_pixel;
+
+          item.getAmmoItem ammoItem;
+          ammoItem.getRuleItem ammoRuleset;
+          ammoRuleset.getTag ammoColor Tag.ITEM_AMMO_COLOR;
+
+          if eq color weaponColor;
+
+            if neq 0 ammoColor;
+
+              set_color new_pixel ammoColor;
+              ammoRuleset.getTag ammoColor Tag.ITEM_AMMO_SHADE;
+              add ammoColor shade;
+
+            else;
+
+              set_color new_pixel 0;
+              set ammoColor shade;
+
+            end;
+
+            add_shade new_pixel ammoColor;
+
+          end;
+
+          return new_pixel;
+
+    recolorUnitSprite:
+      #*** Handles periodic recolors due to buffs/debuffs on units ***
+      - offset: 10
+        code: |
+          var int frame;
+          var int frameLength;
+          var int recolorPeriod;
+          var int desync;
+          var int color;
+          var int newShade;
+          var int temp;
+
+          # Check to make sure this unit isn't set to be recolored by a hit first
+          unit.getTag frame Tag.UNIT_RECOLOR_START_FRAME;
+          unit.getTag frameLength Tag.UNIT_RECOLOR_FRAME_LENGTH;
+
+          if neq frame 0;
+
+            set temp anim_frame;
+            sub temp frame;
+
+            if lt temp frameLength;
+
+              return new_pixel;
+
+            end;
+
+          end;
+
+          set recolorPeriod 32;
+          set frameLength 4;
+
+          unit.getTag desync Tag.UNIT_RECOLOR_DESYNC;
+          set frame anim_frame;
+          add frame desync;
+          mod frame recolorPeriod;
+
+          # First, a blue flash if the unit has an energy shield
+          unit.getTag temp Tag.UNIT_ENERGY_SHIELD_HP;
+          set color COLOR_X1_BLUE1;
+          if and neq temp 0 lt frame frameLength;
+
+            set temp frameLength;
+            sub temp frame;
+            mul temp 2; # a parameter that creates a nice flash animation
+            get_shade newShade new_pixel;
+            sub newShade temp;
+
+            if and gt newShade 3 lt newShade 16;
+
+              set_shade new_pixel newShade;
+              set_color new_pixel color;
+
+            end;
+
+            return new_pixel;
+
+          end;
+
+          sub frame frameLength;
+          sub frame 1;
+
+          # Next, a red flash if the unit is a traitor
+          unit.getTag temp Tag.UNIT_TURNED_TRAITOR;
+
+          if and neq temp 0 lt frame frameLength;
+
+            set color COLOR_X1_RED;
+
+            set temp frameLength;
+            sub temp frame;
+            mul temp 2; # a parameter that creates a nice flash animation
+            get_shade newShade new_pixel;
+            sub newShade temp;
+
+            if and gt newShade 3 lt newShade 16;
+
+              set_shade new_pixel newShade;
+              set_color new_pixel color;
+
+            end;
+
+          end;
+
+          return new_pixel;
+
+      #*** Handles recolors due to hitting a unit ***
+      - offset: 11
+        code: |
+          var int frame;
+          var int frameLength;
+          var int color;
+          var int newShade;
+          var int temp;
+
+          unit.getTag frame Tag.UNIT_RECOLOR_START_FRAME;
+          unit.getTag frameLength Tag.UNIT_RECOLOR_FRAME_LENGTH;
+
+          if neq frame 0;
+
+            set temp anim_frame;
+            sub temp frame;
+
+            if lt temp frameLength;
+
+              # Check shade, add some darkening decay, but don't recolor if it'd go too dark
+              get_shade newShade new_pixel;
+              mul temp 4; # a parameter that creates a nice flash animation
+              sub newShade temp;
+
+              if or lt newShade 4 gt newShade 15;
+
+                return new_pixel;
+
+              end;
+
+              # Add some brightness if the tag is set
+              unit.getTag temp Tag.UNIT_RECOLOR_BRIGHTNESS;
+              sub newShade temp;
+              limit_lower newShade 1;
+
+              unit.getTag color Tag.UNIT_RECOLOR_COLOR;
+              set_color new_pixel color;
+              set_shade new_pixel newShade;
+
+            end;
+
+          end;
+
+          return new_pixel;
+
+    returnFromMissionUnit:
+      #*** Reduces wound times for certain soldier types ***
+      - offset: 10
+        code: |
+          var ptr RuleSoldier soldierRuleset;
+          var int woundTimeMultiplier;
+
+          unit.getRuleSoldier soldierRuleset;
+          soldierRuleset.getTag woundTimeMultiplier Tag.SOLDIER_WOUND_TIME_MULTIPLIER;
+
+          if and neq 0 recovery_time neq 0 woundTimeMultiplier;
+
+            muldiv recovery_time woundTimeMultiplier 100;
+
+          end;
+
+          return;
+
+      #*** Grants Devotion (psiskill) in addition to secondary stat gains on tagged armors ***
+      - offset: 11
+        code: |
+          var ptr RuleArmor soldierArmor;
+          var ptr RuleSoldier soldierRuleset;
+          var int extraExperience;
+          var int expTotal;
+          var int statCurrent;
+          var int statCap;
+          var int statBonus;
+          var int traitorValue;
+
+          unit.getRuleArmor soldierArmor;
+          soldierArmor.getTag extraExperience Tag.ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE;
+
+          set expTotal 0;
+
+          unit.Exp.getBravery statCurrent;
+          add expTotal statCurrent;
+
+          unit.Exp.getFiring statCurrent;
+          add expTotal statCurrent;
+
+          unit.Exp.getMelee statCurrent;
+          add expTotal statCurrent;
+
+          unit.Exp.getPsiSkill statCurrent;
+          add expTotal statCurrent;
+
+          unit.Exp.getPsiStrength statCurrent;
+          add expTotal statCurrent;
+
+          unit.Exp.getReactions statCurrent;
+          add expTotal statCurrent;
+
+          unit.Exp.getStrength statCurrent;
+          add expTotal statCurrent;
+
+          unit.Exp.getThrowing statCurrent;
+          add expTotal statCurrent;
+
+          if or eq 0 extraExperience;
+            return;
+          end;
+
+          # traitors lose devotion!
+          unit.getTag traitorValue Tag.UNIT_TURNED_TRAITOR;
+
+          if neq 0 traitorValue;
+
+            soldier.Stats.getPsiSkill statCurrent;
+            div traitorValue 50;
+            battle_game.randomRange statBonus 1 3;
+            mul traitorValue statBonus;
+            sub statCurrent traitorValue;
+            limit_lower statCurrent 1;
+            soldier.Stats.setPsiSkill statCurrent;
+
+          else neq 0 expTotal;
+
+            unit.getRuleSoldier soldierRuleset;
+            soldier.Stats.getPsiSkill statCurrent;
+            soldierRuleset.StatsCap.getPsiSkill statCap;
+            if le statCurrent statCap;
+              battle_game.randomRange statBonus 1 extraExperience;
+              add statBonus statCurrent;
+              soldier.Stats.setPsiSkill statBonus;
+            end;
+
+          end;
+
+          return;
