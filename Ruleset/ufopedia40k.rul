@@ -1712,7 +1712,8 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_LASCAN
-      - STR_MARINES_STRATEGY
+      #- STR_MARINES_STRATEGY
+      - STR_MARINES_AND_ADEPTAS
   - id: STR_HEAVY_PLASMA_TERRAN #2498
     type_id: 14
     section: STR_WEAPONS_AND_EQUIPMENT
