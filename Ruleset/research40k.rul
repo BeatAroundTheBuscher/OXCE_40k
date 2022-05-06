@@ -246,6 +246,7 @@ research:
     lookup: STR_CHOSEN_GREYKNIGHTS
     getOneFree:
       - STR_HB
+      - STR_HB_CLIP
     unlocks:
       - STR_MOTION_SCANNER
       - STR_APOTHECARY_GK
