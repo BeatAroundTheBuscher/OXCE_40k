@@ -1767,7 +1767,6 @@ ufopaedia:
     image_id: 1SB.SPK
     requires:
       - STR_HB
-      - STR_MASTER_CRAFTING
     listOrder: 13100
   - id: STR_GK_HB
     type_id: 14
@@ -1779,6 +1778,7 @@ ufopaedia:
     type_id: 14
     requires:
       - STR_HB
+      - STR_MASTER_CRAFTING
     section: STR_WEAPONS_AND_EQUIPMENT
     image_id: 1MCSB.SPK
     text: STR_HB_MC_UFOPEDIA
