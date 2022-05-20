@@ -2062,7 +2062,7 @@ items:
 
   - type: STR_OGRYN_CARAPACE_CORPSE
     name: STR_OGRYN_CORPSE
-    recover: false
+    recover: true
     recoverCorpse: false
     weight: 70
     bigSprite: 1302

@@ -118,9 +118,6 @@ research:
   - name: STR_GENERALLOCK
     needItem: true
 
-  - name: STR_DONTSHOWYET
-    needItem: true
-
   - name: STR_GAME_START
     unlockFinalMission: true
 
@@ -246,7 +243,6 @@ research:
     lookup: STR_CHOSEN_GREYKNIGHTS
     getOneFree:
       - STR_HB
-      - STR_HB_CLIP
     unlocks:
       - STR_MOTION_SCANNER
       - STR_APOTHECARY_GK
@@ -1994,7 +1990,32 @@ research:
     getOneFree:
       - STR_DOOMSDAY_MONOLITH
 
+  - name: STR_ORK_MIG_UFO_DATA
+    needItem: true
+    cost: 50
+    points: 50
+    getOneFree:
+      - STR_ORK_MIG_UFO
+
+  - name: STR_ELDAR_HEMLOCK_UFO_DATA
+    needItem: true
+    cost: 50
+    points: 50
+    getOneFree:
+      - STR_ELDAR_HEMLOCK_UFO
+  - name: STR_ELDAR_WAVESERPENT_UFO_DATA
+    needItem: true
+    cost: 50
+    points: 50
+    getOneFree:
+      - STR_ELDAR_WAVESERPENT_UFO
 #---CRAFTS------------------------------------------------------
+  - name: STR_ELDAR_HEMLOCK_UFO
+    points: 50
+    needItem: true
+  - name: STR_ELDAR_WAVESERPENT_UFO
+    points: 50
+    needItem: true
   - name: STR_CHAOS_VOSS
     points: 50
     needItem: true

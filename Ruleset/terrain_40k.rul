@@ -1202,6 +1202,90 @@ terrains:
         width: 20
         length: 20
         groups: 7
+  - name: ELDARGATEMAP
+    mapDataSets:
+      - BLANKS
+      - ELDARGATE
+      - WEBWAY
+    script: ELDARGATE_SCRIPT
+    mapBlocks:
+      - name: ELDARGATE
+        width: 20
+        length: 20
+  - name: CULTA
+    mapDataSets:
+      - BLANKS
+      - CULTIVAT
+      - BARN
+    mapBlocks:
+      - name: CULTA00
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULTA01
+        width: 10
+        length: 10
+      - name: CULTA02
+        width: 10
+        length: 10
+      - name: CULTA03
+        width: 10
+        length: 10
+      - name: CULTA04
+        width: 10
+        length: 10
+      - name: CULTA05
+        width: 10
+        length: 10
+      - name: CULTA06
+        width: 10
+        length: 10
+      - name: CULTA07
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULTA08
+        width: 10
+        length: 10
+      - name: CULTA09
+        width: 10
+        length: 10
+      - name: CULTA10
+        width: 10
+        length: 10
+      - name: CULTA11
+        width: 10
+        length: 10
+        groups: 1
+      - name: CULTA12
+        width: 10
+        length: 10
+      - name: CULTA13
+        width: 10
+        length: 10
+      - name: CULTA14
+        width: 10
+        length: 10
+      - name: CULTA15
+        width: 10
+        length: 10
+      - name: CULTA16
+        width: 10
+        length: 10
+      - name: CULTA17
+        width: 10
+        length: 10
+      - name: CULTA18
+        width: 10
+        length: 10
+      - name: CULTA19_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: CULTA20_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: ACULTA          #GOTHIC NORMAL
     enviroEffects: STR_FOREST_ENVIRO
     script: FARM
@@ -1274,6 +1358,14 @@ terrains:
       - name: AULTA18
         width: 10
         length: 10
+      - name: AULTA19_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: AULTA20_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: ACULTASAND      #GOTHIC SAND
     enviroEffects: STR_DESERT_ENVIRO
     script: FARM
@@ -1346,6 +1438,14 @@ terrains:
       - name: AULTA18
         width: 10
         length: 10
+      - name: AULTA19_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: AULTA20_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: ACULTASNOW      #GOTHIC SNOW
     enviroEffects: STR_SNOW_ENVIRO
     ambience: 896
@@ -1420,6 +1520,14 @@ terrains:
       - name: AULTA18
         width: 10
         length: 10
+      - name: AULTA19_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: AULTA20_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: POLAR #   NEW POLARHR
     enviroEffects: STR_SNOW_ENVIRO
     ambience: 891 #artic
@@ -1533,6 +1641,14 @@ terrains:
             - [8, 11, 0]
             - [8, 12, 0]
             - [8, 12, 0]
+      - name: POLAR15_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: POLAR16_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: JUNGLE
     enviroEffects: STR_FOREST_ENVIRO
     ambience: 887 #jungle
@@ -1640,6 +1756,14 @@ terrains:
             - [4, 4, 0]
             - [4, 5, 0]
             - [4, 5, 0]
+      - name: JUNGLE13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: JUNGLE14_2X2P
+        width: 20
+        length: 20
+        groups: [12]
   - name: FOREST
     enviroEffects: STR_FOREST_ENVIRO
     script: FOREST
@@ -1744,6 +1868,14 @@ terrains:
             - [8, 11, 0]
             - [8, 12, 0]
             - [8, 12, 0]
+      - name: FOREST14_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: FOREST15_2X2P
+        width: 20
+        length: 20
+        groups: [12]
   - name: MOUNT # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
     enviroEffects: STR_URBAN_ENVIRO
     mapDataSets:
@@ -1792,6 +1924,14 @@ terrains:
       - name: MOUNT12
         width: 20
         length: 20
+      - name: MOUNT13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: MOUNT14_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: MOUNTSNOW # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
     enviroEffects: STR_SNOW_ENVIRO
     ambience: 891 #artic
@@ -1842,6 +1982,14 @@ terrains:
       - name: MOUNT12
         width: 20
         length: 20
+      - name: MOUNT13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: MOUNT14_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: MOUNTMUDD # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
     mapDataSets:
       - BLANKS
@@ -1889,6 +2037,14 @@ terrains:
       - name: MOUNT12
         width: 20
         length: 20
+      - name: MOUNT13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: MOUNT14_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: MOUNTGRASS # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
     mapDataSets:
       - BLANKS
@@ -1936,6 +2092,14 @@ terrains:
       - name: MOUNT12
         width: 20
         length: 20
+      - name: MOUNT13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: MOUNT14_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: MOUNTSAND # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
     enviroEffects: STR_DESERT_ENVIRO
     mapDataSets:
@@ -1984,6 +2148,16 @@ terrains:
       - name: MOUNT12
         width: 20
         length: 20
+      - name: MOUNT13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: MOUNT14_3X3P
+        width: 30
+        length: 30
+        groups: [12]
+        width: 20
+        length: 20
   - name: MOUNTROCK # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
     enviroEffects: STR_FOREST_ENVIRO
     mapDataSets:
@@ -2030,6 +2204,16 @@ terrains:
         width: 20
         length: 20
       - name: MOUNT12
+        width: 20
+        length: 20
+      - name: MOUNT13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: MOUNT14_3X3P
+        width: 30
+        length: 30
+        groups: [12]
         width: 20
         length: 20
   - name: MOUNTTROP # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
@@ -2082,6 +2266,14 @@ terrains:
       - name: MOUNT12
         width: 20
         length: 20
+      - name: MOUNT13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: MOUNT14_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: PLAINS #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
     enviroEffects: STR_URBAN_ENVIRO
     mapDataSets:
@@ -2130,6 +2322,14 @@ terrains:
       - name: PLAINS12
         width: 20
         length: 20
+      - name: PLAINS13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: PLAINS14_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: PLAINSSNOW #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
     enviroEffects: STR_SNOW_ENVIRO
     ambience: 891 #artic
@@ -2180,6 +2380,14 @@ terrains:
       - name: PLAINS12
         width: 20
         length: 20
+      - name: PLAINS13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: PLAINS14_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: PLAINSMUDD #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
     mapDataSets:
       - BLANKS
@@ -2227,6 +2435,14 @@ terrains:
       - name: PLAINS12
         width: 20
         length: 20
+      - name: PLAINS13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: PLAINS14_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: PLAINSGRASS #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
     enviroEffects: STR_FOREST_ENVIRO
     mapDataSets:
@@ -2275,6 +2491,14 @@ terrains:
       - name: PLAINS12
         width: 20
         length: 20
+      - name: PLAINS13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: PLAINS14_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: PLAINSSAND #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
     enviroEffects: STR_DESERT_ENVIRO
     mapDataSets:
@@ -2323,6 +2547,14 @@ terrains:
       - name: PLAINS12
         width: 20
         length: 20
+      - name: PLAINS13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: PLAINS14_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: PLAINSROCK #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
     enviroEffects: STR_FOREST_ENVIRO
     mapDataSets:
@@ -2371,6 +2603,14 @@ terrains:
       - name: PLAINS12
         width: 20
         length: 20
+      - name: PLAINS13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: PLAINS14_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: PLAINSTROP #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
     enviroEffects: STR_FOREST_ENVIRO
     ambience: 888 #swamp
@@ -2421,6 +2661,14 @@ terrains:
       - name: PLAINS12
         width: 20
         length: 20
+      - name: PLAINS13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: PLAINS14_3X3P
+        width: 30
+        length: 30
+        groups: [12]
   - name: DESERT
     enviroEffects: STR_DESERT_ENVIRO
     mapDataSets:
@@ -2526,6 +2774,14 @@ terrains:
             - [7, 7, 0]
             - [7, 8, 0]
             - [7, 8, 0]
+      - name: DESERT13_2X2P
+        width: 20
+        length: 20
+        groups: [11]
+      - name: DESERT14_2X2P
+        width: 20
+        length: 20
+        groups: [12]
   - name: REFINERY
     enviroEffects: STR_URBAN_ENVIRO
     ambience: 889 #Pit
@@ -3164,7 +3420,7 @@ terrains:
       - 04STORAGE
       - 04PIPES
       - 04ENGINE
-    # script: CITY # script is defined in alienDeployment
+    script: CITY
     mapBlocks:
       - name: CITY00
         width: 20
@@ -3252,7 +3508,7 @@ terrains:
       - 04STORAGE
       - 04PIPES
       - 04ENGINE
-    # script: CITY # script is defined in alienDeployment
+    script: CITY
     mapBlocks:
       - name: RIG00
         width: 20
@@ -3418,11 +3674,11 @@ terrains:
           STR_CULTIST_RITUALIST_SUMMONING_SPAWNER:
             - [4, 3, 0]
             - [6, 6, 0]
-#        randomizedItems:
-#          - position: [4, 4, 0]
-#            amount: 1
-#            itemList:
-#              - STR_CULTIST_SUMMONING_DAEMON_SPAWNER
+        randomizedItems:
+          - position: [4, 4, 0]
+            amount: 1
+            itemList:
+              - STR_CULTIST_SUMMONING_DAEMON_SPAWNER
 
   - name: INDUSTRIALURBANDIO
     mapDataSets:
@@ -4310,7 +4566,7 @@ terrains:
       - OUTPOSTSM
       - OUTPOSTSM2
       - OUTPOSTSM3
-    # script: IDESERT # script is defined in alienDeployment
+    script: IDESERT
     mapBlocks:
       - name: IDESERT00
         width: 10

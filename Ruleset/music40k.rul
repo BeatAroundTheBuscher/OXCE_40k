@@ -13,7 +13,6 @@ musics:
   - type: FATE
   - type: KYRIE
   - type: gmwin
-  - type: HANGAR
     normalization: 1.0
   - type: BRIEFELDAR
     normalization: 1.5

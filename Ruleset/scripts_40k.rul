@@ -509,7 +509,7 @@ items:
     specialUseEmptyHand: false
   - type: SEDUCE_PSI_WEAPON
     psiSound: 834          #override `hitSound` when used for MC or Panic attack.
-    # psiMissSound: 0        #override `hitMissSound` when used for MC or Panic attack.
+    psiMissSound: 0        #override `hitMissSound` when used for MC or Panic attack.
     psiAnimation: 52       #override `meleeAnimation` when used for MC or Panic attack. Use `HIT.PCK`
     psiMissAnimation: 52    #override `meleeMissAnimation` when MC or Panic attack was unsuccessful. Use `HIT.PCK`
     hitSound: 833

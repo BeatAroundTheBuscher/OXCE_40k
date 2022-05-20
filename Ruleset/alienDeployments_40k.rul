@@ -3,9 +3,9 @@ alienDeployments:
     markerIcon: 75
     data:
       - alienRank: 5
-        lowQty: 9 #8
-        highQty: 9 #10
-        dQty: 3 #2
+        lowQty: 8
+        highQty: 10 #6
+        dQty: 2 #1
         percentageOutsideUfo: 70
         itemSets:
           -
@@ -16,8 +16,8 @@ alienDeployments:
             []
       - alienRank: 4
         lowQty: 2
-        highQty: 2 #3
-        dQty: 1 #2
+        highQty: 3 #2
+        dQty: 1 #0
         percentageOutsideUfo: 20
         itemSets:
           -
@@ -28,7 +28,7 @@ alienDeployments:
             []
       - alienRank: 3
         lowQty: 2
-        highQty: 2 #3
+        highQty: 3 #3
         dQty: 2 #1
         percentageOutsideUfo: 20
         itemSets:
@@ -40,8 +40,8 @@ alienDeployments:
             []
       - alienRank: 2
         lowQty: 1
-        highQty: 1
-        dQty: 1 #0
+        highQty: 2
+        dQty: 0
         percentageOutsideUfo: 20
         itemSets:
           -
@@ -63,9 +63,9 @@ alienDeployments:
           -
             []
       - alienRank: 6
-        lowQty: 2 #1
-        highQty: 2
-        dQty: 2 #3
+        lowQty: 1
+        highQty: 2 #2
+        dQty: 3 #2
         percentageOutsideUfo: 50
         itemSets:
           -
@@ -75,9 +75,9 @@ alienDeployments:
           -
             []
       - alienRank: 7
-        lowQty: 2 #1
-        highQty: 2
-        dQty: 2 #3
+        lowQty: 1
+        highQty: 2 #2
+        dQty: 3 #2
         percentageOutsideUfo: 50
         itemSets:
           -
@@ -122,13 +122,13 @@ alienDeployments:
             itemSets: [[], [], []]
           - alienRank: 0
             lowQty: 0
-            highQty: 0 #1
-            dQty: 2 #1
+            highQty: 1
+            dQty: 1
             itemSets: [[], [], []]
           - alienRank: 0
             lowQty: 0
-            highQty: 0 #1
-            dQty: 2 #1
+            highQty: 1
+            dQty: 1
             itemSets: [[], [], []]
       - type: GeneAwakeningMany
         briefing:
@@ -148,29 +148,29 @@ alienDeployments:
         mapBlockFilterType: 0 # all blocks, just go by node placement
         data:
           - alienRank: 5
-            lowQty: 2 #1
+            lowQty: 1
             highQty: 2
             dQty: 2
             itemSets: [[], [], []]
           - alienRank: 4
             lowQty: 0
-            highQty: 0 #1
-            dQty: 2 #1
+            highQty: 1
+            dQty: 1
             itemSets: [[], [], []]
           - alienRank: 3
             lowQty: 0
-            highQty: 0 #1
-            dQty: 2 #1
-            itemSets: [[], [], []]
-          - alienRank: 0
-            lowQty: 1
             highQty: 1
-            dQty: 2 #1
+            dQty: 1
             itemSets: [[], [], []]
           - alienRank: 0
-            lowQty: 1 #0
-            highQty: 1 #2
-            dQty: 2 #1
+            lowQty: 0
+            highQty: 2
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 0
+            lowQty: 0
+            highQty: 2
+            dQty: 1
             itemSets: [[], [], []]
     width: 40
     length: 40
@@ -192,6 +192,10 @@ alienDeployments:
     cheatTurn: 10
     markerName: STR_ALIEN_BASE
     genMissionFreq: 10
+    genMission:
+      STR_MONOLITH_PATROL: 50
+      STR_NECRON_TERROR: 25
+      STR_NECRON_BASE: 25
     points: 1
 
   - type: STR_TOMB_NECRON #NECRON
@@ -3136,6 +3140,128 @@ alienDeployments:
     duration: [96, 144]
     despawnPenalty: 25
 
+
+
+  - type: STR_ELDAR_BASE_LEVEL_1
+    markerIcon: 35
+      #ELDAR BASE
+    script: ELDARGATE_SCRIPT
+    alienBase: true
+    objectiveType: 100
+    objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
+    objectivePopup: STR_WEBWAY_DESTROYED
+    data:
+      - alienRank: 5
+        lowQty: 5
+        highQty: 5 #6
+        dQty: 2 #1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 2
+        highQty: 2 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 6
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 3 #2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 3 #2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    briefing:
+      cutscene: CULTBASE
+      music: gmstory2
+      title: STR_ALIEN_BASE_ASSAULT
+      textOffset: -16
+      background: BACK01.SCR
+      showTarget: false
+      desc: STR_CULTIST_BASE_ASSAULT_BRIEFING
+    missionBountyItem: STR_ALIEN_HABITAT
+    markerName: STR_ELDAR_SITE
+    genMission:
+      STR_CULTIST_SACRIFICES_LEVEL_1: 75
+      STR_CULTIST_SUMMONING_LEVEL_1: 25
+    genMissionFreq: 4
+    alienBaseUpgrades:
+      0:
+        STR_CULTIST_BASE_LEVEL_1: 100
+      1:
+        STR_CULTIST_BASE_LEVEL_1: 50
+        STR_CULTIST_BASE_LEVEL_2: 50
+      2:
+        STR_CULTIST_BASE_LEVEL_2: 100
+    width: 50
+    length: 50
+    height: 9
+    points: 1
+
   - type: STR_ELDAR_WEBWAY
     markerIcon: 35
     data:
@@ -3253,6 +3379,61 @@ alienDeployments:
     objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
     objectiveFailed: [STR_WEBWAY_DEVICE_FAILED, -500]
     objectivePopup: STR_WEBWAY_DESTROYED
+
+  - type: STR_ELDAR_HEMLOCK_UFO
+    data:
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_ELDAR_HEMLOCK_UFO_DATA
+    briefing:
+      cutscene: ORKP
+      music: gmstory2
+  - type: STR_ELDAR_WAVESERPENT_UFO
+    data:
+      - alienRank: 5
+        lowQty: 3 #2
+        highQty: 3 #4
+        dQty: 2
+        percentageOutsideUfo: 60
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 2 #1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_ELDAR_WAVESERPENT_UFO_DATA
+    briefing:
+      cutscene: ORKP
+      music: gmstory2
 
 #*** Using the Cydonia mission code to make a hangar mission for testing deployments ***
   - type: STR_HANGAR
@@ -5915,7 +6096,7 @@ alienDeployments:
     finalDestination: false # used for the hangar mission, not necessary since this is spawned as a base
 
   - type: STR_CHAOS_FINAL_ASSAULT                     # RANK0 # RANK1 STR_INSIDE_ENVIRO
-    enviroEffects: STR_INSIDE_ENVIRO
+    startingCondition: STR_INSIDE_ENVIRO
     music:
       - INMYSPIRIT
     data:
@@ -7163,7 +7344,7 @@ alienDeployments:
     briefing:
       title: STR_ALIEN_CONTACT_SITE_MISSION
       palette: 4
-      music: GMDEFEND
+      music: gmdefend
       background: BACK151.SCR
     markerName: STR_ARTIFACT_SITE
     objectiveType: 3
@@ -7821,6 +8002,7 @@ alienDeployments:
     script: WARRSCRIPT
     alert: STR_TANK_ALERT
     alertBackground: BACK03.SCR
+    alertSound: 43
     briefing:
       title: STR_TANK_TITLE
       palette: 4

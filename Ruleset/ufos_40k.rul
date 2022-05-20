@@ -1,4 +1,68 @@
 ﻿ufos:
+  - type: STR_ELDAR_HEMLOCK_UFO #HK
+    marker: 15
+    markerLand: 20
+    markerCrash: 25
+    alertSound: 35
+    huntAlertSound: 33
+    size: STR_SMALL
+    modSprite: Interception_eldar_wf
+    damageMax: 500
+    speedMax: 2000
+    accel: 4
+    power: 35
+    range: 65
+    score: 100
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: HEMLOCK
+      mapDataSets:
+        - BLANKS
+        - HEMLOCK
+      mapBlocks:
+        - name: HEMLOCK
+          width: 20
+          length: 20
+    hunterKillerPercentage: 100
+    huntMode: 2
+    huntSpeed: 90
+    radarRange: 200
+    radarChance: 20
+    sightRange: 200
+    missionScore: 0
+  - type: STR_ELDAR_WAVESERPENT_UFO
+    marker: 15
+    markerLand: 20
+    markerCrash: 25
+    alertSound: 35
+    huntAlertSound: 33
+    size: STR_SMALL
+    modSprite: Interception_eldar_ws
+    damageMax: 500
+    speedMax: 1000
+    accel: 4
+    power: 35
+    range: 65
+    score: 100
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: WAVESERPENT
+      mapDataSets:
+        - BLANKS
+        - WAVESERPENT
+      mapBlocks:
+        - name: WAVESERPENT
+          width: 20
+          length: 20
+          height: 4
+          items:
+            STR_ELDAR_WS_SPAWNER:
+              - [5, 9, 1]
+          fuseTimers:
+            STR_ELDAR_WS_SPAWNER: [0, 0]
+
   - type: STR_DOOMSDAY_MONOLITH #NECRON
     marker: 59
     markerLand: 62
@@ -1143,7 +1207,7 @@
               - [9, 5, 1]
               - [10, 5, 1]
   - type: STR_TRAIN_MISSION
-    size: STR_VERY_SMALL
+    size: STR_SIGNAL
     marker: 1
     markerLand: 33
     modSprite: InterceptionUFO-09
@@ -1175,7 +1239,7 @@
             STR_TATICALTRAININFO:
               - [3, 22, 0]
   - type: STR_CHOUT
-    size: STR_VERY_SMALL
+    size: STR_SIGNAL
     marker: 1
     markerLand: 33
     modSprite: InterceptionUFO-09
@@ -1207,7 +1271,7 @@
   - type: STR_CAT
     marker: 1
     markerLand: 33
-    size: STR_VERY_SMALL
+    size: STR_SIGNAL
     modSprite: InterceptionUFO-09
     damageMax: 1
     speedMax: 50000

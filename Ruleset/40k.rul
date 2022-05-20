@@ -1,13 +1,4 @@
-﻿extended:
-  tags:
-    RuleArmor:
-#*** Tags for energy shield on armor ***
-      ARMOR_ENERGY_SHIELD_HP_PER_TURN: int
-      ARMOR_ENERGY_SHIELD_DECAY: int
-#*** Tags for soldiers gaining devotion/psi skill as secondary experience ***
-      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: int
-
-units:
+﻿units:
   - delete: STR_TANK_CANNON
   - delete: STR_HOVERTANK_PLASMA
   - delete: STR_HOVERTANK_LAUNCHER
@@ -2193,6 +2184,38 @@ units:
     energyRecovery: 30
     moveSound: 845
     livingWeapon: true
+  - type: STR_ELDAR_TURRET     #ELDAR TURRET       race: STR_ELDAR
+    race: STR_ELDAR
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 12
+      stamina: 100
+      health: 200
+      bravery: 100
+      reactions: 30
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 250
+      psiSkill: 0
+      melee: 0
+    armor: ELDAR_TURRET_ARMOR
+    standHeight: 23
+    kneelHeight: 16
+    value: 25
+    deathSound: 23
+    intelligence: 4
+    specab: 1
+    aggression: 5
+    sniper: 50
+    spotter: 1
+    energyRecovery: 100
+    livingWeapon: true
+    builtInWeaponSets:
+      - - AUX_DOUBLE_STARCANNON
+      - - AUX_DOUBLE_STARCANNON
+      - - AUX_DOUBLE_STARCANNON
+    capturable: false
 #    ALL
   - type: STR_CHAOS_BEHEMOTH #Chaos BEHEMOTH
     race: STR_CHAOS_BEHEMOTH
@@ -6313,6 +6336,42 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 3
     allowsMoving: false
+  - type: ELDAR_TURRET_ARMOR
+    visibilityAtDay: 60
+    visibilityAtDark: 60
+    spriteSheet: ELDARTURRET1.PCK
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    corpseGeo:  STR_ELDARTURRET_CORPSE
+    corpseBattle:
+      - ELDART_CORPSE1
+      - ELDART_CORPSE2
+      - ELDART_CORPSE3
+      - ELDART_CORPSE4
+    frontArmor: 130
+    sideArmor: 130
+    rearArmor: 130
+    underArmor: 150
+    size: 2
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.4 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 3
+    allowsMoving: false
 
   - type: STR_MONO_N_ARMOR
     visibilityAtDay: 60
@@ -8831,7 +8890,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 30
     spriteSheet: XCOM_27.PCK
-    # spriteInv: MAN_27
+    spriteInv: MAN_27
     customArmorPreviewIndex: 13
     zombiImmune: true
     corpseBattle:

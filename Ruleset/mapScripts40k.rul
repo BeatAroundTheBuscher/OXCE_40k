@@ -129,6 +129,24 @@ mapScripts:
       groups: 7
       size: 2
     - type: fillArea
+  - type: ELDARGATE_SCRIPT
+    commands:
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addBlock
+      size: [2, 2, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [2, 2, 0]
+          terrain: globeTerrain
+          groups: [11] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [0]
+          size: [2, 2, 6]
+          terrain: ELDARGATEMAP
+    - type: fillArea
+      terrain: globeTerrain
   - type: XHANGAR
     commands:
     - type: addCraft

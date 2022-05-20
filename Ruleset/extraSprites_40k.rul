@@ -1455,6 +1455,13 @@
     height: 320
     files:
       0: Resources/ORK/orksmall.png
+  - type: ELDARTURRET1.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Eldar/eldarws.png
   - type: MONOE.PCK
     subX: 32
     subY: 40
@@ -2949,6 +2956,10 @@
       251: Resources/Eldar/floorob_251.gif
       252: Resources/Eldar/floorob_252.gif
       253: Resources/Eldar/floorob_253.gif
+      254: Resources/Eldar/floorob_254.gif
+      255: Resources/Eldar/floorob_255.gif
+      256: Resources/Eldar/floorob_256.gif
+      257: Resources/Eldar/floorob_257.gif
 #271 to 281 Chapter change
       282: Resources/Equip/floorob_282.gif
       283: Resources/Equip/floorob_283.gif
@@ -4785,6 +4796,18 @@
     height: 200
     files:
       0: Resources/CODEX/0CH9.png
+  - type: 0CWS.SPK                  #ELDAR SHIP10
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/0CWS.png
+  - type: 0CHL.SPK                  #ELDAR SHIP10
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/0CHL.png                  #ELDAR SHIP11
 
   - type: TRAITOR_CHIMERA.SPK
     singleImage: true
@@ -6227,7 +6250,18 @@
     height: 52
     files:
       0: Resources/CCraft/ORK_CONVOY.png
-
+  - type: Interception_eldar_ws
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/CCraft/UFOWS.png
+  - type: Interception_eldar_wf
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/CCraft/UFOWF.png
   - type: Interception_Traitor_Chimera
     singleImage: true
     width: 160
@@ -6284,9 +6318,6 @@
     subY: 32
     files:
       0: Resources/Geo/TEXTURES.PNG
-
-  - type: ExtendedPediaBackgroundPalBasescape # only referenced (from xcom1 Extended) for Pedro's yaml helper
-
   - type: ExtendedPediaBackgroundPalBasescape-InfoButton
     width: 320
     height: 200

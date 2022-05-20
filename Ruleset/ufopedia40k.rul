@@ -1712,8 +1712,7 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_LASCAN
-      #- STR_MARINES_STRATEGY
-      - STR_MARINES_AND_ADEPTAS
+      - STR_MARINES_STRATEGY
   - id: STR_HEAVY_PLASMA_TERRAN #2498
     type_id: 14
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1746,7 +1745,7 @@ ufopaedia:
     type_id: 14
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_LASER_WEAPONS
+      - STR_LASER_RIFLE
   - id: STR_LASPISTOL_CLIP
     type_id: 14
     section: STR_NOT_AVAILABLE
@@ -1754,7 +1753,7 @@ ufopaedia:
     type_id: 14
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_LASER_WEAPONS
+      - STR_LASER_PISTOL
   - id: STR_HB_CLIP
     type_id: 14
     section: STR_NOT_AVAILABLE
@@ -1767,6 +1766,7 @@ ufopaedia:
     image_id: 1SB.SPK
     requires:
       - STR_HB
+      - STR_MASTER_CRAFTING
     listOrder: 13100
   - id: STR_GK_HB
     type_id: 14
@@ -1778,7 +1778,6 @@ ufopaedia:
     type_id: 14
     requires:
       - STR_HB
-      - STR_MASTER_CRAFTING
     section: STR_WEAPONS_AND_EQUIPMENT
     image_id: 1MCSB.SPK
     text: STR_HB_MC_UFOPEDIA
@@ -3702,6 +3701,19 @@ ufopaedia:
     requires:
       - STR_TRAITOR_CHIMERA
     text: STR_TRAITOR_CHIMERA_UFOPEDIA
+  - id: STR_ELDAR_HEMLOCK_UFO
+    type_id: 17
+    section: STR_UFOS
+    image_id: 0CHL.SPK
+    requires:
+      - STR_ELDAR_HEMLOCK_UFO
+  - id: STR_ELDAR_WAVESERPENT_UFO
+    type_id: 17
+    section: STR_UFOS
+    image_id: 0CWS.SPK
+    requires:
+      - STR_ELDAR_HEMLOCK_UFO
+    
 #ALIEN MISSIONS
   - id: STR_CHAOS_PATH
     type_id: 10

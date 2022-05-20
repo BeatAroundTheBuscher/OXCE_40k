@@ -301,21 +301,6 @@ interfaces:
         color: *geoYellow
       - id: button
         color: *geoLightGrey
-  - type: noteMenu
-    elements:
-      - id: palette
-        color: *geoBackgroundPalette
-      - id: window
-        color: *geoDarkGrey
-      - id: text
-        color: *geoYellow
-        color2: *geoLightGrey
-      - id: list
-        color: *geoYellow
-        color2: *geoLightGrey
-        border: *geoLightGrey
-      - id: button
-        color: *geoLightGrey
   - type: errorMessages
     sound: 60
     elements:
@@ -362,7 +347,6 @@ interfaces:
         color: *geoYellow
       - id: list
         color: *geoYellow
-        color2: *geoTan
         border: *geoTan
       - id: button
         color: *geoLightGrey
@@ -909,16 +893,6 @@ interfaces:
         color2: *geoTan
       - id: button
         color: *geoLightGrey
-  - type: oxceLinks
-    elements:
-      - id: palette
-        color: *geoBackgroundPalette
-      - id: window
-        color: *geoDarkGrey
-      - id: text
-        color: *geoYellow
-      - id: button
-        color: *geoLightGrey
   - type: geoscapeEvent
     elements:
       - id: palette
@@ -966,6 +940,16 @@ interfaces:
         color: *geoLightGrey
       - id: button2
         color: *geoLightGrey
+#  - type: noContainment
+#    elements:
+#      - id: palette
+#        color: 0     # brown
+#      - id: window
+#        color: *geoDarkGrey
+#      - id: text
+#        color: *geoYellow
+#      - id: button
+#        color: *geoLightGrey
   - type: promotions
     elements:
       - id: palette
@@ -1248,6 +1232,22 @@ interfaces:
       - id: button
         color: 246   # purple
       - id: text
+        color: 218   # blue
+  - type: dependencyTree
+    backgroundImage: BACK13.SCR
+    palette: PAL_BASESCAPE
+    elements:
+      - id: palette
+        color: 0     # brown
+      - id: window
+        color: 218   # blue
+      - id: text
+        color: 218   # blue
+        color2: 208  # white
+      - id: list
+        color: 218   # blue
+        color2: 241  # pink
+      - id: button
         color: 218   # blue
   - type: manufactureMenu  #PAL_BATTLESCAPE
     palette: PAL_BASESCAPE
@@ -1571,21 +1571,6 @@ interfaces:
         border: 213  # gold
       - id: button
         color: 213   # gold
-  - type: soldierAvatar
-    backgroundImage: BACK14.SCR
-    palette: PAL_BASESCAPE
-    elements:
-      - id: palette
-        color: 4     # green
-      - id: window
-        color: 218   # blue
-      - id: text
-        color: 213   # gold
-      - id: list
-        color: 208   # white
-        border: 213  # gold
-      - id: button
-        color: 213   # gold
   - type: soldierMemorial  #PAL_BATTLESCAPE
     music: GMLOSE
     palette: PAL_BASESCAPE
@@ -1621,27 +1606,7 @@ interfaces:
         border: 241  # pink
       - id: button
         color: 246   # purple
-  - type: soldierDiaryPerformance
-    backgroundImage: BACK02.SCR
-    palette: PAL_BASESCAPE
-    elements:
-      - id: palette
-        color: 7     # violet
-      - id: window
-        color: 241   # pink
-      - id: text1
-        color: 218   # blue
-      - id: text2
-        color: 241   # pink
-        color2: 218  # blue
-      - id: list
-        color: 218   # blue
-        color2: 241   # pink
-        border: 241  # pink
-      - id: button
-        color: 246   # purple
-  - type: soldierDiaryMission
-    backgroundImage: BACK16.SCR
+  - type: soldierMission
     palette: PAL_BASESCAPE
     elements:
       - id: palette
@@ -1678,36 +1643,6 @@ interfaces:
         color: 2     # orange
       - id: errorMessage
         color: 241   # pink
-  - type: craftEquipmentSave
-    backgroundImage: BACK04.SCR
-    parent: craftEquipment
-    elements:
-      - id: window
-        color: 241   # pink
-      - id: text
-        color: 241   # pink
-        color2: 208  # white
-      - id: button
-        color: 241   # pink
-      - id: list
-        color: 218   # blue
-        color2: 208  # white
-        border: 241  # pink
-  - type: craftEquipmentLoad
-    backgroundImage: BACK04.SCR
-    parent: craftEquipment
-    elements:
-      - id: window
-        color: 241   # pink
-      - id: text
-        color: 241   # pink
-        color2: 208  # white
-      - id: button
-        color: 241   # pink
-      - id: list
-        color: 218   # blue
-        color2: 208  # white
-        border: 241  # pink
   - type: craftArmor  #PAL_BATTLESCAPE
     palette: PAL_BASESCAPE
     elements:
@@ -1770,38 +1705,6 @@ interfaces:
         color: 218   # blue
       - id: otherCraft
         color: 246   # purple
-  - type: craftPilots
-    backgroundImage: BACK02.SCR
-    palette: PAL_BASESCAPE
-    elements:
-      - id: palette
-        color: 6     # oxide
-      - id: window
-        color: 241   # pink
-      - id: text1
-        color: 241   # pink
-        color2: 218  # blue
-      - id: text2
-        color: 208   # white
-      - id: list
-        color: 218   # blue
-      - id: button
-        color: 241   # pink
-  - type: craftPilotsSelect
-    backgroundImage: BACK02.SCR
-    parent: craftPilots
-    elements:
-      - id: window
-        color: 241   # pink
-      - id: text1
-        color: 241   # pink
-        color2: 218  # blue
-      - id: text2
-        color: 208   # white
-      - id: list
-        color: 218   # blue
-      - id: button
-        color: 241   # pink
   - type: craftSelect #PAL_BATTLESCAPE
     palette: PAL_BASESCAPE
     elements:
@@ -2079,104 +1982,6 @@ interfaces:
       - id: list
         color: 239   # grey
         color2: 244  # light blue
-  - type: articleTFTD   # Meridian TFTD ARTICULES
-    palette: PAL_BASESCAPE
-    backgroundImage: ExtendedPediaBackgroundPalBasescape
-    elements:
-      - id: button
-        color: 208      # white
-      - id: text
-        color: 208      # white
-        color2: 218     # blue
-      - id: list
-        color: 208      # white
-        color2: 218     # blue
-  - type: articleCraftTFTD
-    palette: PAL_BASESCAPE
-    backgroundImage: ExtendedPediaBackgroundPalBasescape
-    elements:
-      - id: button
-        color: 208      # white
-      - id: text
-        color: 208      # white
-        color2: 218     # blue
-      - id: list
-        color: 208      # white
-        color2: 218     # blue
-  - type: articleCraftWeaponTFTD
-    palette: PAL_BASESCAPE
-    backgroundImage: ExtendedPediaBackgroundPalBasescape
-    elements:
-      - id: button
-        color: 208      # white
-      - id: text
-        color: 208      # white
-        color2: 218     # blue
-      - id: list
-        color: 208      # white
-        color2: 218     # blue
-  - type: articleVehicleTFTD
-    palette: PAL_BASESCAPE
-    backgroundImage: ExtendedPediaBackgroundPalBasescape
-    elements:
-      - id: button
-        color: 208      # white
-      - id: text
-        color: 208      # white
-        color2: 218     # blue
-      - id: list
-        color: 208      # white
-        color2: 218     # blue
-  - type: articleItemTFTD
-    palette: PAL_BASESCAPE
-    backgroundImage: ExtendedPediaBackgroundPalBasescape
-    elements:
-      - id: button
-        color: 208      # white
-      - id: text
-        color: 208      # white
-        color2: 213     #gold
-      - id: list
-        color: 208      # white
-        color2: 218     # blue
-      - id: ammoColor
-        color: 213      # gold
-  - type: articleArmorTFTD
-    palette: PAL_BASESCAPE
-    backgroundImage: ExtendedPediaBackgroundPalBasescape
-    elements:
-      - id: button
-        color: 208      # white
-      - id: text
-        color: 208      # white
-        color2: 218     # blue
-      - id: list
-        color: 208      # white
-        color2: 218     # blue
-  - type: articleBaseFacilityTFTD
-    palette: PAL_BASESCAPE
-    backgroundImage: ExtendedPediaBackgroundPalBasescape
-    elements:
-      - id: button
-        color: 208      # white
-      - id: text
-        color: 208      # white
-        color2: 218     # blue
-      - id: list
-        color: 208      # white
-        color2: 218     # blue
-  - type: articleUsoTFTD
-    palette: PAL_BASESCAPE
-    backgroundImage: ExtendedPediaBackgroundPalBasescape
-    elements:
-      - id: button
-        color: 208      # white
-      - id: text
-        color: 208      # white
-        color2: 218     # blue
-      - id: list
-        color: 208      # white
-        color2: 218     # blue
   - type: statsForNerds
     backgroundImage: BACK05.SCR
     palette: PAL_BASESCAPE
@@ -2220,22 +2025,3 @@ interfaces:
         border: 218  # blue
       - id: button
         color: 218   # blue
-  - type: transformationList
-    backgroundImage: BACK02.SCR
-    palette: PAL_BASESCAPE
-    elements:
-      - id: palette
-        color: 2     # orange
-      - id: window
-        color: 241   # pink
-      - id: text1
-        color: 218   # blue
-      - id: text2
-        color: 241   # pink
-      - id: list
-        color: 246   # purple
-        border: 241  # pink
-      - id: button
-        color: 218   # blue
-      - id: button2
-        color: 241   # pink

@@ -2,7 +2,6 @@ customPalettes:
   - type: PALETTE_MENUS_GEOSCAPE
     target: PAL_GEOSCAPE
     palette: &newUIColors
-      0: [0 ,0, 0]
       139: [188, 188, 96] # yellows 124, 116, 68 for compliment to primary background color
       140: [136, 152, 56]
       141: [96, 120, 40]
