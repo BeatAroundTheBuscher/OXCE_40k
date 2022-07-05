@@ -869,8 +869,8 @@ en-US:
   STR_ELDAR_BASE_LEVEL_2: "Eldar Gate"
   STR_ELDAR_HEMLOCK_UFO: "Hemlock Wraithfighter"
   STR_ELDAR_HEMLOCK_UFO_DATA: "Hemlock Scan Data"
-  STR_ELDAR_WAVESERPENT_UFO: "Waveserpent Transport"
-  STR_ELDAR_WAVESERPENT_UFO_DATA: "Waveserpent Scan Data"
+  STR_ELDAR_WAVESERPENT_UFO: "Wave Serpent Transport"
+  STR_ELDAR_WAVESERPENT_UFO_DATA: "Wave Serpent Scan Data"
   STR_ELDAR_WAVESERPENT_UFO_UFOPEDIA: "The Wave Serpent is the Craftworld Eldar's main troop transport. Based upon the Falcon grav-tank chassis, it uses powerful anti-gravitic engines to deliver its cargo to the battlefield"
   STR_ELDAR_HEMLOCK_UFO_UFOPEDIA: "The Hemlock Wraithfighter is a Craftworld Eldar psychically-empowered fighter aircraft. The Hemlock blends the psychic abilities of its Spiritseer pilot with the sinister gestalt energies of the Craftworld Eldar dead."
 
@@ -2144,7 +2144,7 @@ en-US:
   STR_ORK_ARDBOY: "Ork 'ard Boy"
   STR_ORK_NOBBOY: "Ork Nob"
   STR_ORK_KILLA: "Ork Killa Kan"
-  STR_ELDAR_TURRET: "Eldar Waveserpent"
+  STR_ELDAR_TURRET: "Eldar Wave Serpent"
   STR_ELDAR_GUARDIAN: "Eldar Guardian" #D
   STR_ELDAR_BANSHEE: "Eldar Banshee" #D
   STR_ELDAR_SEER: "Eldar Seer"
@@ -2264,8 +2264,8 @@ en-US:
   STR_BANSHEE_CORPSE: "Eldar Banshee Corpse"
   STR_SEER_CORPSE: "Eldar Seer Corpse"
   STR_PLAT_CORPSE: "Destroyed Grav Platform"
-  STR_ELDARTURRET_CORPSE: "Wrecked Waveserpent Turret"
-  STR_ELDARTURRET2_CORPSE: "Wrecked Waveserpent Turret"
+  STR_ELDARTURRET_CORPSE: "Wrecked Wave Serpent Turret"
+  STR_ELDARTURRET2_CORPSE: "Wrecked Wave Serpent Turret"
 #CHAOS Corpse-------------------------------------------------
   STR_KHORNECHAMP_CORPSE: "Khorne Champion Corpse"
   STR_BEHEMOTH_CORPSE: "Behemoth Corpse"
@@ -2330,7 +2330,7 @@ en-US:
   STR_ELDAR_ARMOR2: "Eldar Banshee" #D
   STR_ELDAR_ARMOR3: "Eldar Seer" #D
   STR_ELDAR_PLAT_ARMOR: "Grav Platform" #D
-  ELDAR_TURRET_ARMOR: "Eldar Waveserpent" #D
+  ELDAR_TURRET_ARMOR: "Eldar Wave Serpent" #D
   MUTON_ARMORSLAANESH: "Noise Marine" #D
   MUTON_ARMORHAVOCS: "Noise Marine Havoc" #D
   STR_CHAOS_SENTINEL_ARMOR: "Chaos Sentinel" #D
