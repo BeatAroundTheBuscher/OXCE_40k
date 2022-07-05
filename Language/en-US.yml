@@ -855,20 +855,36 @@ en-US:
   STR_ARTIFACT_SITE_P2: "SPACE HULK MISSION PURGE"
   STR_ALIEN_CONTACT_SITE_MISSION: "SPACE HULK MISSION"
   STR_ALIEN_ACTIVITY_DETECTED: "SPACE HULK DETECTED"
-  STR_ARTIFACT_SITE: "CRASH SITE-{0}"
+  STR_ARTIFACT_SITE_: "CRASH SITE-{0}"
   STR_CONTROL_CENTER_DESTROYED: "CONTROL CENTER DESTROYED"
   STR_ALIEN_SYNOMIUM_DEVICE_FAILED: "SPACE HULK CONTROL CENTER ACTIVE"
   STR_ALIEN_SYNOMIUM_DEVICE_DESTROYED: "SPACE HULK CONTROL CENTER DESTROYED"
   #STR_ALIEN_ACTIVITY_DETECTED: "SPACE CRASH LAND DETECTED"
   STR_ARTIFACT_SITE_P1_BRIEFING: "A Space Hulk crash-landed on the planet. The Emperor requires the immediate purge of the Hulk, for is it likely contaminated with xenos! Accept this journey and gain entrance to the fallen Hulk so we can destroy the control center - let none stop you on your quest!"
   STR_ARTIFACT_SITE_P2_BRIEFING: "Now that we have gained access to the infected Hulk, delve deep into its darkness and destroy the control center, as it will trigger the self-destruction mechanism. This serious threat must be eliminated. Glory to the Emperor!"
+
 #ELDAR MISSION
+
+  STR_ELDAR_BASE_LEVEL_1: "Eldar Gate"
+  STR_ELDAR_BASE_LEVEL_2: "Eldar Gate"
+  STR_ELDAR_HEMLOCK_UFO: "Hemlock Wraithfighter"
+  STR_ELDAR_HEMLOCK_UFO_DATA: "Hemlock Scan Data"
+  STR_ELDAR_WAVESERPENT_UFO: "Waveserpent Transport"
+  STR_ELDAR_WAVESERPENT_UFO_DATA: "Waveserpent Scan Data"
+  STR_ELDAR_WAVESERPENT_UFO_UFOPEDIA: "The Wave Serpent is the Craftworld Eldar's main troop transport. Based upon the Falcon grav-tank chassis, it uses powerful anti-gravitic engines to deliver its cargo to the battlefield"
+  STR_ELDAR_HEMLOCK_UFO_UFOPEDIA: "The Hemlock Wraithfighter is a Craftworld Eldar psychically-empowered fighter aircraft. The Hemlock blends the psychic abilities of its Spiritseer pilot with the sinister gestalt energies of the Craftworld Eldar dead."
+
+  STR_ELDAR_PATROL: "Eldar Patrol"
+  STR_ELDAR_AIR_PATROL: "Eldar Air Patrol"
+  STR_ELDAR_BASE_FROM_EXISTING: "Gate Creation"
+  STR_ELDAR_BASE: "Gate Creation"
+
   ELDARFOREST: "Eldar Forest"
   STR_ELDAR_WEBWAY: "Eldar WebWay"
   STR_WEBWAY_DESCRIPTION: "A small Eldar WebWay Portal has been activated in the area. Several xenos protect this hyper-dimensional construct. Take it down before more reinforcements can arrive and the xenos become an even deadlier threat. Glory to the Emperor!"
   STR_WEBWAY_TITLE: "WebWay Takedown"
   STR_WEBWAY_DETECTED: "ELDAR WEBWAY DETECTED"
-  STR_ELDAR_SITE: "WEBWAY SITE-{0}"
+  STR_ELDAR_SITE_: "WEBWAY SITE-{0}"
   STR_WEBWAY_DESTROYED: "WEBWAY DESTROYED"
   STR_WEBWAY_DEVICE_DESTROYED: "Primary objective completed"
   STR_WEBWAY_DEVICE_FAILED: "WebWay portal still active"
@@ -2128,6 +2144,7 @@ en-US:
   STR_ORK_ARDBOY: "Ork 'ard Boy"
   STR_ORK_NOBBOY: "Ork Nob"
   STR_ORK_KILLA: "Ork Killa Kan"
+  STR_ELDAR_TURRET: "Eldar Waveserpent"
   STR_ELDAR_GUARDIAN: "Eldar Guardian" #D
   STR_ELDAR_BANSHEE: "Eldar Banshee" #D
   STR_ELDAR_SEER: "Eldar Seer"
@@ -2247,6 +2264,8 @@ en-US:
   STR_BANSHEE_CORPSE: "Eldar Banshee Corpse"
   STR_SEER_CORPSE: "Eldar Seer Corpse"
   STR_PLAT_CORPSE: "Destroyed Grav Platform"
+  STR_ELDARTURRET_CORPSE: "Wrecked Waveserpent Turret"
+  STR_ELDARTURRET2_CORPSE: "Wrecked Waveserpent Turret"
 #CHAOS Corpse-------------------------------------------------
   STR_KHORNECHAMP_CORPSE: "Khorne Champion Corpse"
   STR_BEHEMOTH_CORPSE: "Behemoth Corpse"
@@ -2311,6 +2330,7 @@ en-US:
   STR_ELDAR_ARMOR2: "Eldar Banshee" #D
   STR_ELDAR_ARMOR3: "Eldar Seer" #D
   STR_ELDAR_PLAT_ARMOR: "Grav Platform" #D
+  ELDAR_TURRET_ARMOR: "Eldar Waveserpent" #D
   MUTON_ARMORSLAANESH: "Noise Marine" #D
   MUTON_ARMORHAVOCS: "Noise Marine Havoc" #D
   STR_CHAOS_SENTINEL_ARMOR: "Chaos Sentinel" #D

@@ -1174,6 +1174,65 @@ alienMissions:
         huntMode: 0
         huntBehavior: 0
 
+#*** ELDAR Base Missions ***
+  - type: STR_ELDAR_BASE
+    raceWeights:
+      0:
+        STR_ELDAR: 100
+    operationType: 3 # Creates a new base to start from if the region doesn't have one
+    operationSpawnZone: 4
+    operationBaseType: STR_ELDAR_BASE_LEVEL_1
+    objective: 2
+    spawnZone: 4
+    siteType: STR_ELDAR_BASE_LEVEL_1
+    points: 5
+    waves:
+      - ufo: STR_ELDAR_WAVESERPENT_UFO
+        count: 2
+        timer: 0
+        trajectory: DIRECT_TO_NEW_BASE_TRAJECTORY
+        objective: true
+
+  - type: STR_ELDAR_BASE_FROM_EXISTING
+    raceWeights: {}
+    operationType: 1
+    operationSpawnZone: 4
+    operationBaseType: STR_ELDAR_BASE_LEVEL_1
+    objective: 2
+    spawnZone: 4
+    siteType: STR_ELDAR_BASE_LEVEL_1
+    points: 0
+    waves:
+      - ufo: STR_ELDAR_WAVESERPENT_UFO
+        count: 1
+        timer: 0
+        trajectory: DIRECT_TO_NEW_BASE_TRAJECTORY
+      - ufo: STR_ELDAR_WAVESERPENT_UFO
+        count: 1
+        timer: 7200
+        objective: true
+        trajectory: DIRECT_TO_NEW_BASE_TRAJECTORY
+
+  - type: STR_ELDAR_PATROL
+    raceWeights: {}
+    operationType: 1
+    points: 5
+    waves:
+      - ufo: STR_ELDAR_WAVESERPENT_UFO
+        count: 1
+        timer: 0
+        trajectory: GROUND_PATROL_TRAJECTORY
+
+  - type: STR_ELDAR_AIR_PATROL
+    retaliationOdds: 0
+    raceWeights: {}
+    operationType: 6
+    waves:
+      - ufo: STR_ELDAR_HEMLOCK_UFO
+        count: 2
+        timer: 0
+        trajectory: AIR_PATROL_TRAJECTORY
+
 #*** Necron Base Missions ***
   - type: STR_NECRON_BASE
     raceWeights:

@@ -80,9 +80,21 @@ cutscenes:
     audioTracks:
       - gmstory2
 #UFOS
+  - type: HLOCK
+    videos:
+      - Resources/ANIMS/HLOCK.FLC
+    audioTracks:
+      - SECURELAND
+  - type: WAVES
+    videos:
+      - Resources/ANIMS/WAVES.FLC
+    audioTracks:
+      - SECURELAND
   - type: MONO
     videos:
       - Resources/ANIMS/MONO.FLC
+    audioTracks:
+      - SECURELAND
   - type: MONO2
     videos:
       - Resources/ANIMS/MONO2.FLC

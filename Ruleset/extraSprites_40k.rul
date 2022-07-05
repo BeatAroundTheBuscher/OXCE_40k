@@ -6306,7 +6306,7 @@
       0: Resources/Geo/globe_ufo.png
   - type: GlobeMarkers
     width: 252
-    height: 14
+    height: 21
     subX: 7
     subY: 7
     files:

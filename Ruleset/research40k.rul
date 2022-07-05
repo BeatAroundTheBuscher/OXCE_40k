@@ -1332,6 +1332,17 @@ research:
       - STR_MGRENADE
       - STR_MELTABOMB
 
+
+#---CHAOS-----------------------------------------------------
+  - name: STR_ELDAR_PATH #XENO ALLIANCE
+    cost: 1000
+    points: -500
+    dependencies:
+      - STR_ARBITES
+      - STR_GENERALLOCK
+      - STR_ELDAR_SEER
+      - STR_ELDAR_GUARDIAN
+      - STR_ELDAR_BANSHEE
 #---CHAOS-----------------------------------------------------
   - name: STR_ALIENS_ONLY #CHAOS PATH
     cost: 1000

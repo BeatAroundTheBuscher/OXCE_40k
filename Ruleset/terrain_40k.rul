@@ -1212,6 +1212,15 @@ terrains:
       - name: ELDARGATE
         width: 20
         length: 20
+  - name: ELDARGATEMAP2
+    mapDataSets:
+      - BLANKS
+      - ELDARGATE
+      - WEBWAY
+    mapBlocks:
+      - name: ELDARGATE2
+        width: 30
+        length: 30
   - name: CULTA
     mapDataSets:
       - BLANKS
@@ -1760,9 +1769,9 @@ terrains:
         width: 20
         length: 20
         groups: [11]
-      - name: JUNGLE14_2X2P
-        width: 20
-        length: 20
+      - name: JUNGLE14_3X3P
+        width: 30
+        length: 30
         groups: [12]
   - name: FOREST
     enviroEffects: STR_FOREST_ENVIRO
@@ -1872,9 +1881,9 @@ terrains:
         width: 20
         length: 20
         groups: [11]
-      - name: FOREST15_2X2P
-        width: 20
-        length: 20
+      - name: FOREST15_3X3P
+        width: 30
+        length: 30
         groups: [12]
   - name: MOUNT # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
     enviroEffects: STR_URBAN_ENVIRO
@@ -2778,9 +2787,9 @@ terrains:
         width: 20
         length: 20
         groups: [11]
-      - name: DESERT14_2X2P
-        width: 20
-        length: 20
+      - name: DESERT14_3X3P
+        width: 30
+        length: 30
         groups: [12]
   - name: REFINERY
     enviroEffects: STR_URBAN_ENVIRO
@@ -5540,6 +5549,19 @@ terrains:
       - name: STORMT4X4
         width: 40
         length: 40
+  - name: WAVESERPENT2
+    mapDataSets:
+      - BLANKS
+      - WAVESERPENT
+    mapBlocks:
+      - name: WAVESERPENT2
+        width: 30
+        length: 30
+        items:
+          STR_ELDAR_WS_SPAWNER:
+            - [10, 14, 1]
+        fuseTimers:
+          STR_ELDAR_WS_SPAWNER: [0, 0]            
   - name: ARVUS4X4
     mapDataSets:
       - BLANKS

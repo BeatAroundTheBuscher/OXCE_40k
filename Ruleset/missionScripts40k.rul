@@ -215,19 +215,16 @@ missionScripts:
     executionOdds: 30
     startDelay: 150
 
-  - type: Eldarsite
+  - type: EldarBASES
     missionWeights:
-      # 0 is just for safety
       0:
-        STR_ELDAR_ARTIFACT: 100
-    regionWeights:
-      0:
-         REGION_HULK_SITES: 100
-    varName: hulk
-    useTable: false
-    firstMonth: 10
+        STR_ELDAR_BASE: 100
+    firstMonth: 8
+    startDelay: 120
+    randomDelay: 40160 # Up to 4 weeks random delay
     executionOdds: 25
-    startDelay: 5000
+    researchTriggers:
+      STR_ELDAR_PATH: false
 
   - type: Mission1
     missionWeights:

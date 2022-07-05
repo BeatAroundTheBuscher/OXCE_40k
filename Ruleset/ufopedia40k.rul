@@ -3705,12 +3705,14 @@ ufopaedia:
     type_id: 17
     section: STR_UFOS
     image_id: 0CHL.SPK
+    text: STR_ELDAR_HEMLOCK_UFO_UFOPEDIA
     requires:
       - STR_ELDAR_HEMLOCK_UFO
   - id: STR_ELDAR_WAVESERPENT_UFO
     type_id: 17
     section: STR_UFOS
     image_id: 0CWS.SPK
+    text: STR_ELDAR_WAVESERPENT_UFO_UFOPEDIA
     requires:
       - STR_ELDAR_HEMLOCK_UFO
     

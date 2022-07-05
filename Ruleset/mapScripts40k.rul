@@ -147,6 +147,28 @@ mapScripts:
           terrain: ELDARGATEMAP
     - type: fillArea
       terrain: globeTerrain
+  - type: ELDARGATE_SCRIPT2
+    commands:
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addBlock
+      size: [3, 3, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [3, 3, 0]
+          terrain: globeTerrain
+          groups: [12] #<--- FLAT GROUP add this!
+        - type: middle
+          blocks: [0]
+          size: [3, 3, 0]
+          terrain: ELDARGATEMAP2
+        - type: middle
+          blocks: [0]
+          size: [3, 3, 6]
+          terrain: WAVESERPENT2
+    - type: fillArea
+      terrain: globeTerrain
   - type: XHANGAR
     commands:
     - type: addCraft

@@ -1,7 +1,7 @@
 ﻿ufos:
   - type: STR_ELDAR_HEMLOCK_UFO #HK
-    marker: 15
-    markerLand: 20
+    marker: 79
+    markerLand: 85
     markerCrash: 25
     alertSound: 35
     huntAlertSound: 33
@@ -32,8 +32,8 @@
     sightRange: 200
     missionScore: 0
   - type: STR_ELDAR_WAVESERPENT_UFO
-    marker: 15
-    markerLand: 20
+    marker: 78
+    markerLand: 85
     markerCrash: 25
     alertSound: 35
     huntAlertSound: 33
@@ -177,8 +177,8 @@
             STR_MONON_SPAWNER: [0, 0]
             STR_MONOS_SPAWNER: [0, 0]
   - type: STR_ORK_MIG_UFO #HK
-    marker: 15
-    markerLand: 20
+    marker: 84
+    markerLand: 85
     markerCrash: 25
     alertSound: 35
     huntAlertSound: 33
@@ -214,6 +214,8 @@
     missionScore: 0
   - type: STR_TRUKK_UFO
     size: STR_VERY_SMALL
+    marker: 82
+    markerLand: 83
     alertSound: 37
     modSprite: InterceptionUFO-17
     damageMax: 160
@@ -242,6 +244,8 @@
     missionCustomDeploy: STR_ORK_WAAAGH
   - type: STR_WAGGON_UFO
     size: STR_VERY_SMALL
+    marker: 82
+    markerLand: 83
     alertSound: 38
     modSprite: InterceptionUFO-14
     damageMax: 160
@@ -277,6 +281,8 @@
     missionCustomDeploy: STR_ORK_WAAAGH
   - type: STR_WAGGON_CONVOY_UFO
     size: STR_VERY_SMALL
+    marker: 45
+    markerLand: 46
     alertSound: 38
     modSprite: Interception_Ork_Convoy
     damageMax: 160
