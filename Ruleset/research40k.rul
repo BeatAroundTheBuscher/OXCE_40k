@@ -1142,12 +1142,12 @@ research:
     points: 25
     dependencies:
       - STR_MIDTIER_PREREQ
-      - STR_SCOUT
+      - STR_BLASTER_LAUNCHER #was STR_SCOUT, now dependent on Multimelta research
   - name: STR_MGRENADE
     cost: 100
     points: 25
     dependencies:
-      - STR_TATICAL
+      - STR_HEAVY_LASER #was STR_TATICAL, now dependent on Melta research
       - STR_MIDTIER_PREREQ
   - name: STR_HEAVY_PLASMA_MC
     cost: 100
