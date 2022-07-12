@@ -569,6 +569,10 @@
     singleImage: true
     files:
       0: Resources/Eldar/ELDAR03.gif
+  - type: ELDAR4.SPK #FOES INV
+    singleImage: true
+    files:
+      0: Resources/Eldar/ELDAR04.png
   - type: TGT.SPK #TARGET INV
     singleImage: true
     files:
@@ -1740,6 +1744,13 @@
     height: 1440
     files:
       0: Resources/Eldar/eldar3.gif
+  - type: ELDARDR4.PCK #ELDAR DIRE AVENGERS
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1440
+    files:
+      0: Resources/Eldar/eldar4.png
   - type: ELDARDR1.PCK #ELDAR SEER
     width: 256
     height: 520
@@ -2960,6 +2971,7 @@
       255: Resources/Eldar/floorob_255.gif
       256: Resources/Eldar/floorob_256.gif
       257: Resources/Eldar/floorob_257.gif
+      258: Resources/Eldar/floorob_258.png
 #271 to 281 Chapter change
       282: Resources/Equip/floorob_282.gif
       283: Resources/Equip/floorob_283.gif
@@ -3312,12 +3324,12 @@
       575: Resources/Stormeagle/ADEPTAS/Stormeagle_base.png
       576: Resources/Arvus/arvus_base.png   #GK
       577: Resources/Arvus/arvuspd_base.png         #ARBITES 1
-      578: Resources/CHIMERA/CHI_base.png
-      579: Resources/CHIMERA/CHI_base2.png
-      580: Resources/CHIMERA/CHI_base3.png
-      581: Resources/CHIMERA/CHIH_base.png
+      578: Resources/CHIMERA/CHI_base.png          #ARBITES 2
+      579: Resources/CHIMERA/CHI_base2.png          #ARBITES 3
+      580: Resources/CHIMERA/CHI_base3.png          #ARBITES 4
+      581: Resources/CHIMERA/CHIH_base.png          #ARBITES 5
       582: Resources/TAUROX/Taurox_base.png         #ARBITES 6
-      583: Resources/Arvus/arvus_base.png
+      583: Resources/Arvus/arvus_base.png            #ARBITES 7
       584: Resources/Thunderbolt/Basebits584.png    #ARBITES 8
 #Facility
       600: Resources/Basebits/OUT1.png          #Facility
@@ -3457,6 +3469,17 @@
       880: Resources/Rank/basebits880.png      #CHAMBER
       881: Resources/Rank/basebits881.png      #CHAMBER
       882: Resources/Rank/basebits882.png      #CHAMBER
+#  ADEPTA ADDON
+      1711: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 0
+      1712: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 1
+      1713: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 2
+      1714: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 3
+      1715: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 4
+      1716: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 5
+      1717: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 6
+      1718: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 7
+      1719: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 8
+      1720: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 9      
 # 914-921 CHAPTER CHANGE
       1811: Resources/Xiphon/GK/Xiphon_base.png          #CHAMBER 0
       1812: Resources/Xiphon/GK/Xiphon_base.png          #CHAMBER 1
@@ -3591,7 +3614,29 @@
       897: Resources/Impulsor/impulsor_dogfight.gif                         #MARINES 8
       898: Resources/Impulsor/repulsor_dogfight.gif                         #MARINES 9
       899: Resources/Impulsor/repulsord_dogfight.gif                        #MARINES 10
-#
+#  ADEPTA ADDON
+      1678: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 0 < - sprite index
+      1679: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 1
+      1680: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 2
+      1681: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 3
+      1682: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 4
+      1683: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 5
+      1684: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 6
+      1685: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 7   
+      1686: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 8  
+      1687: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 9        
+# PLUS 11 DOG FIGHT      
+      1689: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 0
+      1690: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 1
+      1691: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 2
+      1692: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 3
+      1693: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 4
+      1694: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 5
+      1695: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 6
+      1696: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 7
+      1697: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 8      
+      1698: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 9
+# CHAMBER Militante
       1778: Resources/Xiphon/Xiphon_minimised.png                     #CHAMBER 0
       1779: Resources/Xiphon/Xiphon_minimised.png                     #CHAMBER 1
       1780: Resources/Arvus/arvus_minimised.png                       #CHAMBER 2
@@ -6112,6 +6157,12 @@
     height: 200
     files:
       0: Resources/GENE/UPGENE4.png
+  - type: UP0164.SPK #GENE CULT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Eldar/UP164.png
   - type: GRAPHS.SPK #GRAPHICS MENU
     singleImage: true
     width: 320
