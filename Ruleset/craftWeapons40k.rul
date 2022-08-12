@@ -1,4 +1,59 @@
 craftWeapons:
+#ELDAR
+  - type: STR_LANCE_CANNON_UC        #R 30      A 10        D70      Acc  45
+    sprite: 762
+    sound: 8
+    damage: 70
+    range: 30
+    accuracy: 45
+    reloadCautious: 24
+    reloadStandard: 24
+    reloadAggressive: 24
+    ammoMax: 10
+    rearmRate: 50
+    launcher: STR_LANCE_CANNON
+    projectileType: 4
+  - type: STR_HEAVYDSCYTHES_UC               #R 50       A 4        D100     Acc 75
+    sprite: 764
+    sound: 5
+    damage: 100
+    range: 50
+    accuracy: 75
+    reloadCautious: 96
+    reloadStandard: 72
+    reloadAggressive: 48
+    ammoMax: 4
+    launcher: STR_HEAVYDSCYTHES
+    projectileType: 5
+    projectileSpeed: 8
+  - type: STR_COBRA_CANNON_UC      #R 40      A 6         D300     Acc 30
+    weaponType: 1
+    sprite: 763
+    sound: 32
+    damage: 300
+    range: 40
+    accuracy: 30
+    reloadCautious: 48
+    reloadStandard: 48
+    reloadAggressive: 48
+    ammoMax: 6
+    launcher: STR_COBRA_CANNON
+    projectileType: 2
+    projectileSpeed: 50
+  - type: STR_DSTARCANNON_UC         #R 40      A 5         D120     Acc 30
+    sprite: 765
+    sound: 9
+    damage: 120
+    range: 40
+    accuracy: 30
+    reloadCautious: 24
+    reloadStandard: 24
+    reloadAggressive: 24
+    ammoMax: 5
+    rearmRate: 50
+    launcher: STR_DSTARCANNON
+    projectileType: 5
+
   - type: STR_STINGRAY               #R 40       A 6        D 60     Acc 65
     sprite: 0
     sound: 5
@@ -237,6 +292,26 @@ craftWeapons:
       shieldRecharge: 0
       shieldRechargeInGeoscape: 10
       shieldBleedThrough: 100
+  - type: STR_ELDAR_SHIELD_UC
+    weaponType: 4
+    sprite: 761
+    sound: 0
+    damage: 0
+    range: 0
+    accuracy: 0
+    reloadCautious: 0
+    reloadStandard: 0
+    reloadAggressive: 0
+    ammoMax: 0
+    rearmRate: 0
+    launcher: STR_ELDAR_SHIELD
+    projectileType: 0
+    projectileSpeed: 0
+    stats:
+      shieldCapacity: 250
+      shieldRecharge: 0
+      shieldRechargeInGeoscape: 10
+      shieldBleedThrough: 100
 items: #craft Related
   - type: STR_THUNDER_CANNON              #S 3
     categories: [ STR_CRAFT_WEAPONS]
@@ -366,6 +441,36 @@ items: #craft Related
     costSell: 25000
     transferTime: 48
     listOrder: 1851
+  - type: STR_ELDAR_SHIELD
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 0.5
+    costSell: 25000
+    transferTime: 48
+    listOrder: 1852
+  - type: STR_LANCE_CANNON                      #S 1.5
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1.5
+    costSell: 22500
+    transferTime: 48
+    listOrder: 1853    
+  - type: STR_COBRA_CANNON                      #S 1.5
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1.5
+    costSell: 22500
+    transferTime: 48
+    listOrder: 1853     
+  - type: STR_HEAVYDSCYTHES                      #S 1.5
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1.5
+    costSell: 22500
+    transferTime: 48
+    listOrder: 1853 
+  - type: STR_DSTARCANNON                      #S 1.5
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1.5
+    costSell: 22500
+    transferTime: 48
+    listOrder: 1853
 manufacture:
   - name: STR_FUSION_BALL_LAUNCHER
     #category: STR_CRAFT_WEAPON

@@ -7294,6 +7294,7 @@
     bulletSpeed: 100
   - type: STR_LASCAN_CLIP #LASCANON CLIP               2018
     categories: [STR_CAT_LASGUN, STR_CAT_DEVASTATOR]
+    RandomType: 7 #50-200
     size: 0.2
     costSell: 1050
     weight: 10
@@ -10254,6 +10255,30 @@
     battleType: 11
     armor: 60
     listOrder: 19940
+  - type: STR_DAVENGER_CORPSE              #ELDAR 19941
+    size: 0.3
+    costSell: 20000
+    weight: 30
+    bigSprite: 399
+    floorSprite: 258
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 60
+    listOrder: 19941
+  - type: STR_SCORPION_CORPSE               #ELDAR 19942
+    size: 0.3
+    costSell: 20000
+    weight: 30
+    bigSprite: 403
+    floorSprite: 417
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 60
+    listOrder: 19942
   - type: STR_SEER_CORPSE                  #ELDAR 19950
     size: 0.3
     costSell: 20000
@@ -10314,7 +10339,36 @@
     invWidth: 0
     invHeight: 0
     recover: false
-
+  - type: STR_WRAITHGUARD_CORPSE  #WRAITHGUARD CORPSE
+    size: 1
+    costSell: 10000
+    battleType: 11
+  - type: ELDARWG_CORPSE1
+    name: STR_WRAITHGUARD_CORPSE
+    armor: 50
+    floorSprite: 412
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recoveryPoints: 30
+  - type: ELDARWG_CORPSE2
+    armor: 50
+    floorSprite: 413
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: ELDARWG_CORPSE3
+    armor: 50
+    floorSprite: 414
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: ELDARWG_CORPSE4
+    armor: 50
+    floorSprite: 415
+    invWidth: 0
+    invHeight: 0
+    recover: false
   - type: STR_NECRON_WARRIOR_CORPSE              #NECRON 19961
     size: 0.3
     costSell: 20000
@@ -11055,6 +11109,18 @@
     liveAlien: true
     costSell: 40000
     listOrder: 24000
+  - type: STR_ELDAR_SCORPION                                #24000
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+    listOrder: 24000
+  - type: STR_ELDAR_DAVENGER                               #24000
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+    listOrder: 24000
   - type: STR_HAVOC             #20200
     size: 0.0
     recover: true
@@ -11578,6 +11644,12 @@
   - type: STR_ELDAR_WAVESERPENT_UFO_DATA
     size: 0.0
     specialType: 1020
+  - type: STR_ELDAR_HORNET_UFO_DATA
+    size: 0.0
+    specialType: 1021
+  - type: STR_ELDAR_COBRA_UFO_DATA
+    size: 0.0
+    specialType: 1022
 
 #*** REQUISITION POINT BOUNTIES ***
   - type: STR_REQUISITION_BOUNTY_50K

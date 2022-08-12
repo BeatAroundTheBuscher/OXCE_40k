@@ -448,7 +448,7 @@
     buildCost: 1000000
     crafts: 1
     buildTime: 10
-    monthlyCost: 600000
+    monthlyCost: 300000
     personnel: 50
     storage: 100
     radarRange: 2577
@@ -486,7 +486,7 @@
     buildCost: 1000000
     crafts: 1
     buildTime: 10
-    monthlyCost: 600000
+    monthlyCost: 300000
     personnel: 50
     storage: 100
     radarRange: 2577
@@ -562,7 +562,7 @@
     buildCost: 1000000
     crafts: 1
     buildTime: 10
-    monthlyCost: 600000
+    monthlyCost: 300000
     personnel: 50
     storage: 100
     radarRange: 2577

@@ -1142,12 +1142,12 @@ research:
     points: 25
     dependencies:
       - STR_MIDTIER_PREREQ
-      - STR_BLASTER_LAUNCHER #was STR_SCOUT, now dependent on Multimelta research
+      - STR_BLASTER_LAUNCHER
   - name: STR_MGRENADE
     cost: 100
     points: 25
     dependencies:
-      - STR_HEAVY_LASER #was STR_TATICAL, now dependent on Melta research
+      - STR_HEAVY_LASER
       - STR_MIDTIER_PREREQ
   - name: STR_HEAVY_PLASMA_MC
     cost: 100
@@ -1501,6 +1501,26 @@ research:
     cost: 192
     points: 50
     needItem: true
+  - name: STR_ELDAR_DAVENGER
+    cost: 192
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+  - name: STR_DAVENGER_CORPSE
+    cost: 192
+    points: 50
+    needItem: true
+  - name: STR_ELDAR_SCORPION
+    cost: 192
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+  - name: STR_SCORPION_CORPSE
+    cost: 192
+    points: 50
+    needItem: true 
   - name: STR_ELDAR_BANSHEE
     cost: 192
     points: 50
@@ -2020,7 +2040,25 @@ research:
     points: 50
     getOneFree:
       - STR_ELDAR_WAVESERPENT_UFO
+  - name: STR_ELDAR_COBRA_UFO_DATA
+    needItem: true
+    cost: 50
+    points: 50
+    getOneFree:
+      - STR_ELDAR_COBRA_UFO
+  - name: STR_ELDAR_HORNET_UFO_DATA
+    needItem: true
+    cost: 50
+    points: 50
+    getOneFree:
+      - STR_ELDAR_HORNET_UFO
 #---CRAFTS------------------------------------------------------
+  - name: STR_ELDAR_COBRA_UFO
+    points: 50
+    needItem: true
+  - name: STR_ELDAR_HORNET_UFO
+    points: 50
+    needItem: true
   - name: STR_ELDAR_HEMLOCK_UFO
     points: 50
     needItem: true

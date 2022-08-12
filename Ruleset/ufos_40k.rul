@@ -1,4 +1,32 @@
 ﻿ufos:
+  - type: STR_ELDAR_COBRA_UFO
+    marker: 78
+    markerLand: 85
+    markerCrash: 25
+    alertSound: 35
+    huntAlertSound: 33
+    size: STR_MEDIUM_UC
+    modSprite: Interception_eldar_wc
+    missilePower: 10
+    damageMax: 750
+    speedMax: 800
+    accel: 4
+    power: 200
+    range: 65
+    score: 100
+    reload: 10
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: COBRA
+      mapDataSets:
+        - BLANKS
+        - COBRA
+        - COBRA2
+      mapBlocks:
+        - name: COBRA
+          width: 20
+          length: 20
+          height: 4
   - type: STR_ELDAR_HEMLOCK_UFO #HK
     marker: 79
     markerLand: 85
@@ -62,7 +90,41 @@
               - [5, 9, 1]
           fuseTimers:
             STR_ELDAR_WS_SPAWNER: [0, 0]
-
+  - type: STR_ELDAR_HORNET_UFO #HK
+    marker: 84
+    markerLand: 85
+    markerCrash: 25
+    alertSound: 35
+    huntAlertSound: 33
+    size: STR_VERY_SMALL
+    modSprite: Interception_eldar_wh
+    damageMax: 200
+    speedMax: 2100
+    accel: 3
+    power: 30
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: HORNET
+      mapDataSets:
+        - BLANKS
+        - HORNET
+      mapBlocks:
+        - name: HORNET
+          width: 10
+          length: 10
+          items:
+            STR_REQUISITION_BOUNTY_50K:
+              - [0, 0, 0]
+    hunterKillerPercentage: 100
+    huntMode: 2
+    huntSpeed: 90
+    radarRange: 200
+    radarChance: 20
+    sightRange: 200
+    missionScore: 0
   - type: STR_DOOMSDAY_MONOLITH #NECRON
     marker: 59
     markerLand: 62

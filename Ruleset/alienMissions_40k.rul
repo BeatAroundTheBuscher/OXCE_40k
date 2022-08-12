@@ -1232,6 +1232,28 @@ alienMissions:
         count: 2
         timer: 0
         trajectory: AIR_PATROL_TRAJECTORY
+  - type: STR_ELDAR_SUP_AIR_PATROL
+    retaliationOdds: 0
+    raceWeights: {}
+    operationType: 6
+    waves:
+      - ufo: STR_ELDAR_HORNET_UFO
+        count: 2
+        timer: 0
+        trajectory: AIR_PATROL_TRAJECTORY
+  - type: STR_ELDAR_COBRA_RETALIATION
+    points: 0
+    objective: 4
+    operationType: 4    # hunt mission
+    spawnUfo: STR_ELDAR_COBRA_UFO # Spawned for the final retaliation run
+    raceWeights: # In the case of a shootdown, race comes from the UFO that triggered the mission.
+      0:
+        STR_ELDAR: 100
+    waves:
+      - ufo: STR_ELDAR_COBRA_UFO
+        count: 1
+        trajectory: P8
+        timer: 3000
 
 #*** Necron Base Missions ***
   - type: STR_NECRON_BASE

@@ -2053,6 +2053,42 @@
     livingWeapon: false
     capturable: false
 #    ELDAR
+  - type: STR_ELDAR_DAVENGER #STR_ELDAR_ARMOR                        RANK 5 weapons done
+    race: STR_ELDAR
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 75
+      stamina: 96
+      health: 30
+      bravery: 80
+      reactions: 85
+      firing: 74
+      throwing: 80
+      strength: 40
+      psiStrength: 50
+      psiSkill: 0
+      melee: 85
+    armor: STR_ELDAR_ARMOR4
+    standHeight: 20
+    kneelHeight: 15
+    value: 20
+    deathSound: [848, 849, 850]
+    intelligence: 6
+    aggression: 1
+    spotter: 1
+    energyRecovery: 40
+    builtInWeaponSets:
+      - - STR_CATAPULT
+        - STR_SHURIKEN_CLIP
+        - STR_SHURIKEN_CLIP
+      - - STR_CATAPULT
+        - STR_SHURIKEN_CLIP
+        - STR_SHURIKEN_CLIP
+        - STR_ELDAR_GRENADE
+      - - STR_CATAPULT
+        - STR_SHURIKEN_CLIP
+        - STR_SHURIKEN_CLIP
+        - STR_ELDAR_GRENADE
   - type: STR_ELDAR_GUARDIAN #STR_ELDAR_ARMOR                        RANK 5 weapons done
     race: STR_ELDAR
     rank: STR_LIVE_SOLDIER
@@ -2105,6 +2141,42 @@
       psiSkill: 0
       melee: 85
     armor: STR_ELDAR_ARMOR2
+    standHeight: 20
+    kneelHeight: 15
+    value: 20
+    deathSound: [851, 852, 853]
+    intelligence: 6
+    aggression: 1
+    spotter: 1
+    energyRecovery: 40
+    builtInWeaponSets:
+      - - STR_EPOWER_SWORD
+        - STR_CATAPULT_PISTOL
+        - STR_SHURIKEN_CLIP
+      - - STR_EPOWER_SWORD
+        - STR_CATAPULT_PISTOL
+        - STR_SHURIKEN_CLIP
+        - STR_ELDAR_GRENADE
+      - - STR_EPOWER_SWORD
+        - STR_CATAPULT_PISTOL
+        - STR_SHURIKEN_CLIP
+        - STR_ELDAR_GRENADE
+  - type: STR_ELDAR_SCORPION  #STR_ELDAR_ARMOR5                      RANK 5 weapons done
+    race: STR_ELDAR
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 84
+      stamina: 96
+      health: 40
+      bravery: 80
+      reactions: 90
+      firing: 74
+      throwing: 80
+      strength: 60
+      psiStrength: 50
+      psiSkill: 0
+      melee: 85
+    armor: STR_ELDAR_ARMOR5
     standHeight: 20
     kneelHeight: 15
     value: 20
@@ -2215,6 +2287,32 @@
       - - AUX_DOUBLE_STARCANNON
       - - AUX_DOUBLE_STARCANNON
       - - AUX_DOUBLE_STARCANNON
+    capturable: false
+  - type: STR_ELDAR_WRAITHGUARD #ELDAR WRAITHGUARD
+    race: STR_ELDAR
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 62
+      stamina: 90
+      health: 50
+      bravery: 110
+      reactions: 64
+      firing: 60
+      throwing: 0
+      strength: 100
+      psiStrength: 100
+      psiSkill: 0
+      melee: 80
+    armor: STR_WRAITHGUARD_ARMOR
+    standHeight: 23
+    kneelHeight: 16
+    value: 30
+    deathSound: [859, 860]
+    intelligence: 5
+    aggression: 2
+    energyRecovery: 50
+    moveSound: 700
+    livingWeapon: true
     capturable: false
 #    ALL
   - type: STR_CHAOS_BEHEMOTH #Chaos BEHEMOTH
@@ -10819,6 +10917,62 @@ armors:
     loftempsSet: [ 3 ]
     builtInWeapons:
       - INV_NULL_3X3
+  - type: STR_ELDAR_ARMOR5       #SCORPION
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: ELDARDR5.PCK
+    spriteInv: ELDAR6
+    corpseBattle:
+      - STR_SCORPION_CORPSE
+    frontArmor: 60
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 45
+    drawingRoutine: 0
+    damageModifier: #ELDAR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.5 #FLAMES
+      - 1.0 #HE
+      - 0.7 #LASCANON
+      - 0.7 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    builtInWeapons:
+      - INV_NULL_3X3
+  - type: STR_ELDAR_ARMOR4       #DIRE AVANGER
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: ELDARDR4.PCK
+    spriteInv: ELDAR4
+    corpseBattle:
+      - STR_DAVENGER_CORPSE
+    frontArmor: 60
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 45
+    drawingRoutine: 0
+    damageModifier: #ELDAR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.5 #FLAMES
+      - 1.0 #HE
+      - 0.7 #LASCANON
+      - 0.7 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    builtInWeapons:
+      - INV_NULL_3X3
   - type: STR_ELDAR_ARMOR3       #SEER
     visibilityAtDay: 40
     visibilityAtDark: 30
@@ -10850,6 +11004,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 30
     spriteSheet: ELDARP.PCK
+    spriteInv: ELDAR11
     fearImmune: true
     bleedImmune: true
     scripts:
@@ -10878,10 +11033,10 @@ armors:
       - 7_PLAT3
       - 7_PLAT4
     corpseGeo: STR_PLAT_CORPSE
-    frontArmor: 50
+    frontArmor: 100
     sideArmor: 50
     rearArmor: 50
-    underArmor: 50
+    underArmor: 70
     drawingRoutine: 20
     constantAnimation: false
     movementType: 1
@@ -10902,6 +11057,42 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     builtInWeapons:
       - AUX_STARCANNON
+  - type: STR_WRAITHGUARD_ARMOR           #CENT
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: ELDARWG.PCK
+    spriteInv: ELDAR8
+    allowInv: true
+    corpseGeo: STR_WRAITHGUARD_CORPSE
+    corpseBattle:
+      - ELDARWG_CORPSE1
+      - ELDARWG_CORPSE2
+      - ELDARWG_CORPSE3
+      - ELDARWG_CORPSE4
+    frontArmor: 100
+    sideArmor: 100
+    rearArmor: 100
+    underArmor: 120
+    size: 2
+    moveSound: 700
+    damageModifier: #CENT ARMOR
+      - 1.0 #none
+      - 0.9 #AP
+      - 0.4 #FLAMES
+      - 0.9 #HE
+      - 0.9 #LASCANON
+      - 0.9 #PLASMA
+      - 0.9 #STUN
+      - 0.9 #MELEE
+      - 0.9 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 0.9 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 5
+    builtInWeapons:
+      - AUX_CENTURION_GRAVGUN
+      - INV_NULL_3X3
 #    ORK
   - type: STR_ORK_KILLA_ARMOR #KILLA
     visibilityAtDay: 40

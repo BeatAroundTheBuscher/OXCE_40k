@@ -2501,7 +2501,7 @@ items:
     fixedWeapon: true
   - type: STR_CMAS #Cyber MAS    2320
     categories: [STR_CAT_AUXILIARY]
-    requires:
+    requiresBuy:
       - STR_ARBITES
     size: 2
     customItemPreviewIndex: 28

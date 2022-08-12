@@ -738,6 +738,40 @@ ufopaedia:
     image_id: UP116.SPK
     text: STR_SEER_AUTOPSY_UFOPEDIA
     listOrder: 26800
+    
+  - id: STR_ELDAR_ARMOR4                                                #26610         ARMOR
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ELDAR_DAVENGER
+    image_id: UP164.SPK
+    text: STR_NURGLE_UFOPEDIA
+    listOrder: 26610
+  - id: STR_DAVENGER_AUTOPSY                                                #26611
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_DAVENGER_CORPSE
+    image_id: UP119.SPK
+    text: STR_DAVENGER_AUTOPSY_UFOPEDIA
+    listOrder: 26611
+  - id: STR_ELDAR_ARMOR5                                              #26612         ARMOR
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ELDAR_SCORPION
+    image_id: UP165.SPK
+    text: STR_NURGLE_UFOPEDIA
+    listOrder: 26612
+  - id: STR_SCORPION_AUTOPSY                                                #26613
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SCORPION_CORPSE
+    image_id: UP166.SPK
+    text: STR_DAVENGER_AUTOPSY_UFOPEDIA
+    listOrder: 26613
+
   - id: STR_ELDAR_PLAT_ARMOR                                            #26900         ARMOR
     type_id: 15
     section: STR_ALIEN_LIFE_FORMS
@@ -3714,8 +3748,21 @@ ufopaedia:
     image_id: 0CWS.SPK
     text: STR_ELDAR_WAVESERPENT_UFO_UFOPEDIA
     requires:
-      - STR_ELDAR_HEMLOCK_UFO
-    
+      - STR_ELDAR_WAVESERPENT_UFO
+  - id: STR_ELDAR_HORNET_UFO
+    type_id: 17
+    section: STR_UFOS
+    image_id: 0CHT.SPK
+    text: STR_ELDAR_HORNET_UFO_UFOPEDIA
+    requires:
+      - STR_ELDAR_HORNET_UFO
+  - id: STR_ELDAR_COBRA_UFO
+    type_id: 17
+    section: STR_UFOS
+    image_id: 0CCA.SPK
+    text: STR_ELDAR_COBRA_UFO_UFOPEDIA
+    requires:
+      - STR_ELDAR_COBRA_UFO
 #ALIEN MISSIONS
   - id: STR_CHAOS_PATH
     type_id: 10

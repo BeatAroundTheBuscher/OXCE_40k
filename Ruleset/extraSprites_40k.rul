@@ -573,6 +573,30 @@
     singleImage: true
     files:
       0: Resources/Eldar/ELDAR04.png
+  - type: ELDAR5.SPK #FOES INV
+    singleImage: true
+    files:
+      0: Resources/Eldar/ELDAR05.png
+  - type: ELDAR6.SPK #FOES INV
+    singleImage: true
+    files:
+      0: Resources/Eldar/ELDAR06.png
+  - type: ELDAR8.SPK #FOES INV
+    singleImage: true
+    files:
+      0: Resources/Eldar/ELDAR08.png
+  - type: ELDAR9.SPK #FOES INV
+    singleImage: true
+    files:
+      0: Resources/Eldar/ELDAR09.png
+  - type: ELDAR10.SPK #FOES INV
+    singleImage: true
+    files:
+      0: Resources/Eldar/ELDAR10.png
+  - type: ELDAR11.SPK #FOES INV
+    singleImage: true
+    files:
+      0: Resources/Eldar/ELDAR11.png
   - type: TGT.SPK #TARGET INV
     singleImage: true
     files:
@@ -1466,6 +1490,27 @@
     height: 320
     files:
       0: Resources/Eldar/eldarws.png
+  - type: ELDARTURRET1P.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Eldar/eldarwsP.png
+  - type: ELDARWG.PCK#ELDAR WRAITH GUARD DR
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Eldar/eldar8.png
+  - type: ELDARWG_P.PCK #ELDAR WRAITH GUARD DR
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Eldar/eldar9.png
   - type: MONOE.PCK
     subX: 32
     subY: 40
@@ -1730,6 +1775,20 @@
     files:
       0: Resources/ORK/ORK5.png
 #ELDAR DR
+  - type: ELDARDR21.PCK #ELDAR PLAYER GUARDIAN
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1440
+    files:
+      0: Resources/Eldar/eldar21.png
+  - type: ELDARDR22.PCK #ELDAR PLAYER HEALER
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1440
+    files:
+      0: Resources/Eldar/eldar22.png
   - type: ELDARDR2.PCK #ELDAR GUARDIAN
     subX: 32
     subY: 40
@@ -1751,6 +1810,13 @@
     height: 1440
     files:
       0: Resources/Eldar/eldar4.png
+  - type: ELDARDR5.PCK #ELDAR SCORPIONS
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1440
+    files:
+      0: Resources/Eldar/eldar5.png
   - type: ELDARDR1.PCK #ELDAR SEER
     width: 256
     height: 520
@@ -1765,6 +1831,13 @@
     height: 840
     files:
       0: Resources/Eldar/eldarP.png
+  - type: ELDARPP.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Eldar/eldarPP.png
 #PLAYER---CHAOS---DR
   - type: RAPTORPC.PCK #Chaos  RAPTOR PLAYER CHAOS
     width: 512
@@ -2198,6 +2271,17 @@
       263: Resources/Rank/smoke263.png  #CHAMBER
       264: Resources/Rank/smoke264.png  #CHAMBER
       265: Resources/Rank/smoke265.png  #CHAMBER
+      266: Resources/Rank/smoke266.png  #ELDAR
+      267: Resources/Rank/smoke267.png  #ELDAR
+      268: Resources/Rank/smoke268.png  #ELDAR
+      269: Resources/Rank/smoke269.png  #ELDAR
+      270: Resources/Rank/smoke270.png  #ELDAR
+      271: Resources/Rank/smoke271.png  #ELDAR
+      272: Resources/Rank/smoke272.png  #ELDAR      
+      273: Resources/Rank/smoke273.png  #ELDAR
+      274: Resources/Rank/smoke274.png  #ELDAR
+      275: Resources/Rank/smoke275.png  #ELDAR
+      276: Resources/Rank/smoke276.png  #ELDAR      
 ##221-226
   - type: HIT.PCK #HIT MELEE ANIMATION
     width: 128
@@ -2599,6 +2683,11 @@
       396: Resources/SONIC/396.gif
       397: Resources/Eldar/397.gif
       398: Resources/Eldar/398.gif
+      399: Resources/Eldar/399.png
+      400: Resources/Eldar/400.png
+      401: Resources/Eldar/401.png
+      402: Resources/Eldar/402.png
+      403: Resources/Eldar/403.png
       449: Resources/Adeptas/449.png
       450: Resources/Support/450.gif
 #451 CHAPTER CHANGE
@@ -2967,11 +3056,12 @@
       251: Resources/Eldar/floorob_251.gif
       252: Resources/Eldar/floorob_252.gif
       253: Resources/Eldar/floorob_253.gif
-      254: Resources/Eldar/floorob_254.gif
-      255: Resources/Eldar/floorob_255.gif
-      256: Resources/Eldar/floorob_256.gif
-      257: Resources/Eldar/floorob_257.gif
+      254: Resources/Eldar/floorob_254.png
+      255: Resources/Eldar/floorob_255.png
+      256: Resources/Eldar/floorob_256.png
+      257: Resources/Eldar/floorob_257.png
       258: Resources/Eldar/floorob_258.png
+      259: Resources/Eldar/floorob_259.png
 #271 to 281 Chapter change
       282: Resources/Equip/floorob_282.gif
       283: Resources/Equip/floorob_283.gif
@@ -3071,6 +3161,25 @@
       395: Resources/Adeptas/floorob_395.png
       396: Resources/Adeptas/floorob_396.png
       397: Resources/ISB/floorob_397.png
+#400 ELDAR NEW
+      400: Resources/Eldar/floorob_400.png
+      401: Resources/Eldar/floorob_401.png
+      402: Resources/Eldar/floorob_402.png
+      403: Resources/Eldar/floorob_403.png
+      404: Resources/Eldar/floorob_404.png
+      405: Resources/Eldar/floorob_405.png
+      406: Resources/Eldar/floorob_406.png
+      407: Resources/Eldar/floorob_407.png
+      408: Resources/Eldar/floorob_408.png
+      409: Resources/Eldar/floorob_409.png
+      410: Resources/Eldar/floorob_410.png
+      411: Resources/Eldar/floorob_411.png
+      412: Resources/Eldar/floorob_412.png
+      413: Resources/Eldar/floorob_413.png
+      414: Resources/Eldar/floorob_414.png
+      415: Resources/Eldar/floorob_415.png
+      416: Resources/Eldar/floorob_416.png
+      417: Resources/Eldar/floorob_417.png
       570: Resources/Laspistol/hellpistol_floorob.png
       575: Resources/Meltagun/floorob_inferno_pistol.png
       600: Resources/Boltpistol/floorob_boltpistol_chaos.png
@@ -3431,7 +3540,12 @@
       805: Resources/CW/SCANbase.png
       806: Resources/CW/RETbase.png
       807: Resources/CW/AUTObase.png
-      808: Resources/CW/Sbase.png
+      808: Resources/CW/Sbase.png 
+      809: Resources/CW/ESbase.png
+      810: Resources/CW/LANbase.png
+      811: Resources/CW/COBbase.png
+      812: Resources/CW/HEMbase.png
+      813: Resources/CW/WAVbase.png
 #RANK  Canoness
       850: Resources/Rank/basebits850.gif
       851: Resources/Rank/basebits851.gif
@@ -3469,6 +3583,12 @@
       880: Resources/Rank/basebits880.png      #CHAMBER
       881: Resources/Rank/basebits881.png      #CHAMBER
       882: Resources/Rank/basebits882.png      #CHAMBER
+      883: Resources/Rank/basebits883.png      #ELDAR
+      884: Resources/Rank/basebits884.png      #ELDAR      
+      885: Resources/Rank/basebits885.png      #ELDAR
+      886: Resources/Rank/basebits886.png      #ELDAR
+      887: Resources/Rank/basebits887.png      #ELDAR
+      888: Resources/Rank/basebits888.png      #ELDAR
 #  ADEPTA ADDON
       1711: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 0
       1712: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 1
@@ -3479,7 +3599,18 @@
       1717: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 6
       1718: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 7
       1719: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 8
-      1720: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 9      
+      1720: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 9
+#  ELDAR ADDON
+      1733: Resources/EPATH/waveserpent_base.png          #ELDAR ADDON 0
+      1734: Resources/EPATH/waveserpent_base.png          #ELDAR ADDON 1
+      1735: Resources/EPATH/hornet_base.png          #ELDAR ADDON 2
+      1736: Resources/EPATH/hornet_base.png          #ELDAR ADDON 3
+      1737: Resources/EPATH/hemlock_base.png          #ELDAR ADDON 4
+      1738: Resources/EPATH/hemlock_base.png          #ELDAR ADDON 5
+      1739: Resources/EPATH/waveserpent_base.png          #ELDAR ADDON 6
+      1740: Resources/EPATH/waveserpent_base.png          #ELDAR ADDON 7
+      1741: Resources/EPATH/waveserpent_base.png          #ELDAR ADDON 8
+      1742: Resources/EPATH/waveserpent_base.png          #ELDAR ADDON 9
 # 914-921 CHAPTER CHANGE
       1811: Resources/Xiphon/GK/Xiphon_base.png          #CHAMBER 0
       1812: Resources/Xiphon/GK/Xiphon_base.png          #CHAMBER 1
@@ -3589,7 +3720,12 @@
       762: Resources/CW/SCANdog.png
       763: Resources/CW/RETdog.png
       764: Resources/CW/AUTOdog.png
-      765: Resources/CW/Sdog.png
+      765: Resources/CW/Sdog.png      
+      766: Resources/CW/ESdog.png
+      767: Resources/CW/LANdog.png
+      768: Resources/CW/COBdog.png
+      769: Resources/CW/HEMdog.png      
+      770: Resources/CW/WAVdog.png   
 #
       878: Resources/Thunderhawk/Thunderhawk_minimised.gif             #MARINES  0
       879: Resources/Thunderhawk/Thunderhawk_minimised.gif             #MARINES  1
@@ -3636,6 +3772,28 @@
       1696: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 7
       1697: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 8      
       1698: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 9
+#  ELDAR ADDON
+      1700: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 0 < - sprite index
+      1701: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 1 < - sprite index
+      1702: Resources/EPATH/hornet_minimised.png                    #ELDAR ADDON 2
+      1703: Resources/EPATH/hornet_minimised.png                    #ELDAR ADDON 3
+      1704: Resources/EPATH/hemlock_minimised.png                    #ELDAR ADDON 4
+      1705: Resources/EPATH/hemlock_minimised.png                    #ELDAR ADDON 5
+      1706: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 6
+      1707: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 7
+      1708: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 8
+      1709: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 9      
+# PLUS 11 DOG FIGHT  ELDAR ADDON    
+      1711: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 0      
+      1712: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 1            
+      1713: Resources/EPATH/hornet_dogfight.png                   #ELDAR ADDON 2       
+      1714: Resources/EPATH/hornet_dogfight.png                   #ELDAR ADDON 3
+      1715: Resources/EPATH/hemlock_dogfight.png                   #ELDAR ADDON 4 
+      1716: Resources/EPATH/hemlock_dogfight.png                   #ELDAR ADDON 5  
+      1717: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 6  
+      1718: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 7  
+      1719: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 8
+      1720: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 9
 # CHAMBER Militante
       1778: Resources/Xiphon/Xiphon_minimised.png                     #CHAMBER 0
       1779: Resources/Xiphon/Xiphon_minimised.png                     #CHAMBER 1
@@ -4847,12 +5005,24 @@
     height: 200
     files:
       0: Resources/CODEX/0CWS.png
-  - type: 0CHL.SPK                  #ELDAR SHIP10
+  - type: 0CHL.SPK                  #ELDAR SHIP11
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/CODEX/0CHL.png                  #ELDAR SHIP11
+  - type: 0CHT.SPK                  #ELDAR SHIP12
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/0CHT.png                  #ELDAR SHIP12
+  - type: 0CCA.SPK                  #ELDAR SHIP13
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/0CCA.png                  #ELDAR SHIP13
 
   - type: TRAITOR_CHIMERA.SPK
     singleImage: true
@@ -5965,6 +6135,12 @@
     height: 200
     files:
       0: Resources/Eldar/UP118.GIF
+  - type: UP119.SPK #ELDAR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Eldar/UP119.png
   - type: UP120.SPK #ORK
     singleImage: true
     width: 320
@@ -6157,12 +6333,24 @@
     height: 200
     files:
       0: Resources/GENE/UPGENE4.png
-  - type: UP0164.SPK #GENE CULT
+  - type: UP164.SPK #ELDAR
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Eldar/UP164.png
+  - type: UP165.SPK #ELDAR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Eldar/UP165.png
+  - type: UP166.SPK #ELDAR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Eldar/UP166.png
   - type: GRAPHS.SPK #GRAPHICS MENU
     singleImage: true
     width: 320
@@ -6307,6 +6495,18 @@
     height: 52
     files:
       0: Resources/CCraft/UFOWS.png
+  - type: Interception_eldar_wc
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/CCraft/UFOWC.png
+  - type: Interception_eldar_wh
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/CCraft/UFOWH.png
   - type: Interception_eldar_wf
     singleImage: true
     width: 160
@@ -6441,6 +6641,8 @@
       163: Resources/UnitUI/Ranks_Small10.png
       169: Resources/UnitUI/Ranks_Small11.png
       175: Resources/UnitUI/Ranks_Small12.png
+      181: Resources/UnitUI/Ranks_Small13.png
+      187: Resources/UnitUI/Ranks_Small14.png
   - type: Commendations
     width: 31
     height: 48
@@ -7972,3 +8174,11 @@ extraSounds:
       87: Resources/Sound/EVENTS/UNABLE.ogg
       88: Resources/Sound/EVENTS/2GRE.ogg
       89: Resources/Sound/EVENTS/INFOR.ogg
+      90: Resources/Sound/EVENTS/EMOVESHIP1.ogg
+      91: Resources/Sound/EVENTS/EMOVESHIP2.ogg
+      92: Resources/Sound/EVENTS/EMOVESHIP3.ogg
+      93: Resources/Sound/EVENTS/EMOVESHIP4.ogg
+      94: Resources/Sound/EVENTS/EATTSHIP1.ogg
+      95: Resources/Sound/EVENTS/EATTSHIP2.ogg
+      96: Resources/Sound/EVENTS/EATTSHIP3.ogg
+      97: Resources/Sound/EVENTS/EATTSHIP4.ogg

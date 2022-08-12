@@ -1,0 +1,1042 @@
+﻿units:
+  - type: STR_ELDAR_PLAT_P     #STR_ELDAR_ARMOR2                        RANK 7
+    race: STR_ELDAR
+    stats:
+      tu: 60
+      stamina: 30
+      health: 80
+      bravery: 110
+      reactions: 64
+      firing: 80
+      throwing: 0
+      strength: 90
+      psiStrength: 150
+      psiSkill: 0
+      melee: 0
+    armor: STR_ELDAR_PLAT_ARMOR_P
+    standHeight: 23
+    kneelHeight: 16
+    value: 30
+    deathSound: [842, 843, 844]
+    intelligence: 4
+    specab: 1
+    aggression: 2
+    sniper: 50
+    spotter: 1
+    energyRecovery: 30
+    moveSound: 845
+    livingWeapon: true
+  - type: STR_ELDAR_TURRET_P     #ELDAR TURRET       race: STR_ELDAR
+    race: STR_ELDAR
+    stats:
+      tu: 12
+      stamina: 100
+      health: 200
+      bravery: 100
+      reactions: 30
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 250
+      psiSkill: 0
+      melee: 0
+    armor: ELDAR_TURRET_ARMOR_P
+    standHeight: 23
+    kneelHeight: 16
+    value: 25
+    deathSound: 23
+    intelligence: 4
+    specab: 1
+    aggression: 5
+    sniper: 50
+    spotter: 1
+    energyRecovery: 100
+    livingWeapon: true
+    builtInWeaponSets:
+      - - AUX_DOUBLE_STARCANNON
+      - - AUX_DOUBLE_STARCANNON
+      - - AUX_DOUBLE_STARCANNON
+    capturable: false
+#                 #                                        #                      #
+#                 #                                        #                      #
+armors:
+  - type: STR_WRAITHGUARD_ARMOR_P           #CENT
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: ELDARWG_P.PCK
+    spriteInv: ELDAR9.SPK
+    allowInv: true
+    corpseGeo: STR_WRAITHGUARD_CORPSE_P
+    corpseBattle:
+      - ELDARWG_CORPSE1_P
+      - ELDARWG_CORPSE2_P
+      - ELDARWG_CORPSE3_P
+      - ELDARWG_CORPSE4_P
+    frontArmor: 100
+    sideArmor: 100
+    rearArmor: 100
+    underArmor: 120
+    size: 2
+    moveSound: 700
+    damageModifier: #CENT ARMOR
+      - 1.0 #none
+      - 0.9 #AP
+      - 0.4 #FLAMES
+      - 0.9 #HE
+      - 0.9 #LASCANON
+      - 0.9 #PLASMA
+      - 0.9 #STUN
+      - 0.9 #MELEE
+      - 0.9 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 0.9 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 5
+    units:
+      - STR_ELDAR_FALLEN
+    builtInWeapons:
+      - AUX_WRAITHCANNON
+      - INV_NULL_3X3
+  - type: STR_ELDAR_ARMOR_M        #GUARDIAN
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: ELDARDR21.PCK
+    ufopediaType: STR_ELDAR_ARMOR
+    customArmorPreviewIndex: 261
+    corpseBattle:
+      - STR_GUARDIANP_CORPSE
+    frontArmor: 20
+    sideArmor: 18
+    rearArmor: 16
+    underArmor: 12
+    drawingRoutine: 0
+    damageModifier: #ELDAR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.5 #FLAMES
+      - 1.0 #HE
+      - 0.7 #LASCANON
+      - 0.7 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    units:
+      - STR_ELDAR_M
+    builtInWeapons:
+      - INV_NULL_3X3
+    layersDefaultPrefix: 70
+    layersSpecificPrefix:
+      70: ELDAR
+    layersDefinition:
+      M0: ["0", "ELDARM", "M0_FACE"]
+      M1: ["0", "ELDARM", "M1_FACE"]
+      M2: ["0", "ELDARM", "M2_FACE"]
+      M3: ["0", "ELDARM", "M3_FACE"]
+      M4: ["0", "ELDARM", "M4_FACE"]
+      M5: ["0", "ELDARM", "M5_FACE"]
+      F0: ["0", "ELDARM", "M0_FACE"]
+      F1: ["0", "ELDARM", "M1_FACE"]
+      F2: ["0", "ELDARM", "M2_FACE"]
+      F3: ["0", "ELDARM", "M3_FACE"]
+      F4: ["0", "ELDARM", "M4_FACE"]
+      F5: ["0", "ELDARM", "M5_FACE"]
+  - type: STR_ELDAR_ARMOR_F        #GUARDIAN
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: ELDARDR21.PCK
+    ufopediaType: STR_ELDAR_ARMOR
+    customArmorPreviewIndex: 261
+    corpseBattle:
+      - STR_GUARDIANP_CORPSE
+    frontArmor: 20
+    sideArmor: 18
+    rearArmor: 16
+    underArmor: 12
+    drawingRoutine: 0
+    damageModifier: #ELDAR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.5 #FLAMES
+      - 1.0 #HE
+      - 0.7 #LASCANON
+      - 0.7 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    units:
+      - STR_ELDAR_F
+    builtInWeapons:
+      - INV_NULL_3X3
+    layersDefaultPrefix: 70
+    layersSpecificPrefix:
+      70: ELDAR
+    layersDefinition:
+      M0: ["0", "ELDARF", "F0_FACE"]
+      M1: ["0", "ELDARF", "F1_FACE"]
+      M2: ["0", "ELDARF", "F2_FACE"]
+      M3: ["0", "ELDARF", "F3_FACE"]
+      M4: ["0", "ELDARF", "F4_FACE"]
+      M5: ["0", "ELDARF", "F5_FACE"]
+      F0: ["0", "ELDARF", "F0_FACE"]
+      F1: ["0", "ELDARF", "F1_FACE"]
+      F2: ["0", "ELDARF", "F2_FACE"]
+      F3: ["0", "ELDARF", "F3_FACE"]
+      F4: ["0", "ELDARF", "F4_FACE"]
+      F5: ["0", "ELDARF", "F5_FACE"]
+  - type: STR_ELDAR_ARMOR_FH        #GUARDIAN
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: ELDARDR22.PCK
+    ufopediaType: STR_ELDAR_ARMOR
+    customArmorPreviewIndex: 261
+    corpseBattle:
+      - STR_HEALER_CORPSE
+    frontArmor: 20
+    sideArmor: 18
+    rearArmor: 16
+    underArmor: 12
+    drawingRoutine: 0
+    damageModifier: #ELDAR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.5 #FLAMES
+      - 1.0 #HE
+      - 0.7 #LASCANON
+      - 0.7 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    units:
+      - STR_ELDAR_F
+    builtInWeapons:
+      - INV_NULL_3X3
+    layersDefaultPrefix: 70
+    layersSpecificPrefix:
+      70: ELDAR
+    layersDefinition:
+      M0: ["0", "ELDARH", "F0_FACE"]
+      M1: ["0", "ELDARH", "F1_FACE"]
+      M2: ["0", "ELDARH", "F2_FACE"]
+      M3: ["0", "ELDARH", "F3_FACE"]
+      M4: ["0", "ELDARH", "F4_FACE"]
+      M5: ["0", "ELDARH", "F5_FACE"]
+      F0: ["0", "ELDARH", "F0_FACE"]
+      F1: ["0", "ELDARH", "F1_FACE"]
+      F2: ["0", "ELDARH", "F2_FACE"]
+      F3: ["0", "ELDARH", "F3_FACE"]
+      F4: ["0", "ELDARH", "F4_FACE"]
+      F5: ["0", "ELDARH", "F5_FACE"]
+  - type: STR_ELDAR_ARMOR2_P       #BANSHEE
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: ELDARDR3.PCK
+    spriteInv: ELDAR2
+    corpseBattle:
+      - STR_BANSHEE_CORPSE
+    frontArmor: 60
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 45
+    drawingRoutine: 0
+    damageModifier: #ELDAR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.5 #FLAMES
+      - 1.0 #HE
+      - 0.7 #LASCANON
+      - 0.7 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    builtInWeapons:
+      - INV_NULL_3X3
+  - type: STR_ELDAR_ARMOR4_P       #DIRE AVANGER
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: ELDARDR4.PCK
+    spriteInv: ELDAR4
+    corpseBattle:
+      - STR_DAVENGER_CORPSE
+    frontArmor: 60
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 45
+    drawingRoutine: 0
+    damageModifier: #ELDAR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.5 #FLAMES
+      - 1.0 #HE
+      - 0.7 #LASCANON
+      - 0.7 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    builtInWeapons:
+      - INV_NULL_3X3
+  - type: STR_ELDAR_PLAT_ARMOR_P   #FLYING PLATFORM
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: ELDARPP.PCK
+    spriteInv: ELDAR10
+    fearImmune: true
+    bleedImmune: true
+    scripts:
+      selectUnitSprite: |
+        var int temp;
+        var int walking;
+        var int floating;
+        unit.isWalking walking;
+        unit.isFloating floating;
+        if and eq walking 0 eq floating 1;
+          unit.getId temp;
+          offsetmod temp 11 0 8; #desync animation of different units
+          add temp anim_frame;
+          wavegen_saw temp 4 4 4;
+          add sprite_offset 1;
+          add sprite_offset temp;
+          add sprite_index sprite_offset;
+        else;
+          add sprite_index sprite_offset;
+        end;
+        return sprite_index;
+    allowInv: false
+    corpseBattle:
+      - 7_PLAT1P
+      - 7_PLAT2P
+      - 7_PLAT3P
+      - 7_PLAT4P
+    corpseGeo: STR_PLAT_CORPSE_P
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 50
+    drawingRoutine: 20
+    constantAnimation: false
+    movementType: 1
+    size: 2
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.4 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.9 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+  - type: ELDAR_TURRET_ARMOR_P
+    visibilityAtDay: 60
+    visibilityAtDark: 60
+    spriteSheet: ELDARTURRET1P.PCK
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    corpseGeo:  STR_ELDARTURRET2_CORPSE
+    corpseBattle:
+      - ELDART_CORPSE1_P
+      - ELDART_CORPSE2_P
+      - ELDART_CORPSE3_P
+      - ELDART_CORPSE4_P
+    frontArmor: 130
+    sideArmor: 130
+    rearArmor: 130
+    underArmor: 150
+    size: 2
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.4 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 3
+    allowsMoving: false
+#                 #                                        #                      #
+crafts:
+  - type: STR_HEMLOCK
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [94, 95, 96, 97]  # ELDAR INTERCEPTOR SOUND
+    requires:
+      - STR_ARBITES
+    maxSkinIndex: 0              # default 0
+    marker: 91
+    sprite: 1704
+    fuelMax: 1800
+    damageMax: 400
+    speedMax: 600
+    accel: 2
+    weapons: 3         #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    fixedWeapons: [STR_HEAVYDSCYTHES_UC, STR_HEAVYDSCYTHES_UC, STR_ELDAR_SHIELD_UC]
+    soldiers: 1
+    pilots: 1
+    costBuy: 600000
+    costRent: 360000
+    refuelRate: 50
+    transferTime: 96
+    score: 300
+
+    battlescapeTerrainData:
+      name: HEMLOCKP
+      mapDataSets:
+        - BLANKS
+        - HEMLOCKP
+      mapBlocks:
+        - name: HEMLOCKP
+          width: 10
+          length: 20
+    deployment:
+      - [6, 11, 0, 2]
+    spacecraft: true
+    allowLanding: false
+    listOrder: 210
+  - type: STR_WAVESERPENT
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [90, 91, 92, 93]  # ELDAR TRANSP SOUND
+    requires:
+      - STR_ARBITES
+    marker: 90
+    maxSkinIndex: 0              # default 0
+    sprite: 1700
+    fuelMax: 1800
+    damageMax: 400
+    speedMax: 600
+    accel: 2
+    weapons: 2         #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_THREE
+    fixedWeapons: [STR_DSTARCANNON_UC, STR_ELDAR_SHIELD_UC]
+    soldiers: 10
+    vehicles: 1
+    pilots: 1
+    costBuy: 600000
+    costRent: 360000
+    refuelRate: 50
+    transferTime: 96
+    score: 300
+    listOrder: 210
+    battlescapeTerrainData:
+      name: WAVESERPENTP
+      mapDataSets:
+        - BLANKS
+        - WAVESERPENTP
+      mapBlocks:
+        - name: WAVESERPENTP
+          width: 10
+          length: 20
+          items:
+            STR_ELDAR_WS_SPAWNER_P:
+              - [4, 8, 1]
+          fuseTimers:
+            STR_ELDAR_WS_SPAWNER_P: [0, 0]
+    deployment:
+      - [4, 6, 0, 0]
+      - [5, 6, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 7, 0, 0]
+      - [4, 8, 0, 0]
+      - [5, 8, 0, 0]
+      - [4, 9, 0, 0]
+      - [5, 9, 0, 0]
+      - [4, 10, 0, 0]
+      - [5, 10, 0, 0]
+    spacecraft: true
+  - type: STR_HORNET #STORTALON
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [94, 95, 96, 97]  # ELDAR INTERCEPTOR SOUND
+    requires:
+      - STR_ARBITES
+    sprite: 1702
+    marker: 89
+    fuelMax: 1000
+    damageMax: 200
+    speedMax: 2100
+    accel: 3
+    weapons: 3         #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    fixedWeapons: [STR_LANCE_CANNON_UC, STR_LANCE_CANNON_UC, STR_ELDAR_SHIELD_UC]
+    costBuy: 600000
+    costRent: 300000
+    soldiers: 1
+    vehicles: 0
+    refuelRate: 200
+    transferTime: 96
+    score: 250
+    listOrder: 110
+    pilots: 1
+    battlescapeTerrainData:
+      name: HORNETP
+      mapDataSets:
+        - BLANKS
+        - HORNETP
+      mapBlocks:
+        - name: HORNETP
+          width: 10
+          length: 20
+    deployment:
+      - [6, 11, 0, 4]
+      - [2, 11, 0, 4]
+    spacecraft: true
+    allowLanding: false
+#                 #                                        #                      #
+items:
+  - type: AUX_WRAITHCANNON #WRAITH PLASMA
+    weight: 3
+    bigSprite: 402
+    fireSound: [846, 847]
+    hitSound: 858
+    hitAnimation: 100
+    power: 100
+    damageType: 5
+    accuracyAuto: 30
+    accuracySnap: 55
+    tuAuto: 35
+    tuSnap: 30
+    battleType: 1
+    damageAlter: #DA PLASMA
+      #ToHealth: 0.9
+      #ToArmor: 0.1
+      ArmorEffectiveness: 0.75
+      ToArmor: 0.2
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    bulletSprite: 17
+    recover: false
+#                 #              ARMOR                          #                      #
+
+#                 #              HWP                        #                      #
+  - type: STR_ELDAR_PLAT_P
+    categories: [STR_CAT_AUXILIARY]
+    customItemPreviewIndex: 28
+    size: 6
+    costSell: 340000
+    transferTime: 96
+    weight: 3
+    bigSprite: 394
+    fireSound: [846, 847]
+    hitSound: 858
+    hitAnimation: 100
+    power: 100
+    damageType: 5
+    accuracyAuto: 30
+    accuracySnap: 55
+    accuracyAimed: 90
+    tuAuto: 35
+    tuSnap: 30
+    tuAimed: 60
+    battleType: 1
+    damageAlter: #DA PLASMA
+      #ToHealth: 0.9
+      #ToArmor: 0.1
+      ArmorEffectiveness: 0.75
+      ToArmor: 0.2
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    bulletSprite: 17
+#*** Vehicle turrets spawned on maps ***
+  - type: STR_ELDAR_WS_SPAWNER_P
+    spawnUnit: STR_ELDAR_TURRET_P
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 5
+    recover: false
+    hiddenOnMinimap: true
+#                 #             HWP  CORPSE                        #                      #
+  - type: STR_PLAT_CORPSE_P                  #ELDAR
+    size: 1
+    battleType: 11
+    power: 5
+    blastRadius: 1
+    recover: false
+    damageAlter:
+      RandomType: 3
+      FixRadius: 1
+      ResistType: 10
+      ArmorEffectiveness: 0.2
+      ToArmor: 0.0
+      ToItem: 0.0
+      ToTile: 1.0
+      RadiusReduction: 0.0
+    hitAnimation: 144 #PLAT EX
+    explosionSpeed: 1
+  - type: 7_PLAT1P                          #PLAT CORPSE 19960
+    name: STR_PLAT_CORPSE
+    armor: 100
+    floorSprite: 400
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+    recoveryPoints: 30
+    listOrder: 19960
+  - type: 7_PLAT2P
+    name: STR_PLAT_CORPSE
+    armor: 100
+    floorSprite: 401
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: 7_PLAT3P
+    name: STR_PLAT_CORPSE
+    armor: 100
+    floorSprite: 402
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: 7_PLAT4P
+    name: STR_PLAT_CORPSE
+    armor: 100
+    floorSprite: 403
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_GUARDIANP_CORPSE
+    weight: 30
+    bigSprite: 400
+    floorSprite: 259
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recover: false
+    armor: 60
+  - type: STR_HEALER_CORPSE
+    weight: 30
+    bigSprite: 401
+    floorSprite: 146
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recover: false
+    armor: 60
+
+  - type: STR_ELDARTURRET2_CORPSE #explod
+    size: 1
+    costSell: 30000
+    battleType: 11
+    power: 15
+    blastRadius: 1
+    damageAlter:
+      RandomType: 3
+      FixRadius: 1
+      ResistType: 10
+      ArmorEffectiveness: 0.2
+      ToArmor: 0.0
+      ToItem: 0.0
+      ToTile: 10.0
+      RadiusReduction: 0.0
+  - type: ELDART_CORPSE1_P
+    name: STR_ELDARTURRET_CORPSE
+    armor: 50
+    floorSprite: 404
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recoveryPoints: 30
+  - type: ELDART_CORPSE2_P
+    armor: 50
+    floorSprite: 405
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: ELDART_CORPSE3_P
+    armor: 50
+    floorSprite: 406
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: ELDART_CORPSE4_P
+    armor: 50
+    floorSprite: 407
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
+  - type: STR_WRAITHGUARD_CORPSE_P  #WRAITHGUARD CORPSE
+    size: 1
+    costSell: 10000
+    battleType: 11
+    recover: false
+  - type: ELDARWG_CORPSE1_P
+    name: STR_WRAITHGUARD_CORPSE
+    armor: 50
+    floorSprite: 408
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recoveryPoints: 30
+  - type: ELDARWG_CORPSE2_P
+    armor: 50
+    floorSprite: 409
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: ELDARWG_CORPSE3_P
+    armor: 50
+    floorSprite: 410
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: ELDARWG_CORPSE4_P
+    armor: 50
+    floorSprite: 411
+    invWidth: 0
+    invHeight: 0
+    recover: false
+#--------------------------------------------------------------- NULL--------------------------------
+#                 #                                        #                      #
+soldiers:
+  - type: STR_ELDAR_M
+    flagOffset: 100
+    costBuy: 40000
+    costSalary: 20000
+    requires:
+      - STR_ELDAR_PATH
+    requiresBuyBaseFunc: [EGATE]
+    minStats:
+      tu: 40
+      stamina: 30
+      health: 35
+      bravery: 50
+      reactions: 30
+      firing: 40
+      throwing: 30
+      strength: 20
+      psiStrength: 50
+      psiSkill: 20
+      melee: 40
+    maxStats:
+      tu: 55
+      stamina: 65
+      health: 40
+      bravery: 80
+      reactions: 50
+      firing: 65
+      throwing: 60
+      strength: 25
+      psiStrength: 100
+      psiSkill: 10
+      melee: 50
+    statCaps:
+      tu: 80
+      stamina: 100
+      health: 60
+      bravery: 100
+      reactions: 80
+      firing: 100
+      throwing: 70
+      strength: 55
+      psiStrength: 100
+      psiSkill: 100
+      melee: 100
+    trainingStatCaps:
+      tu: 60
+      stamina: 80
+      health: 60
+      firing: 70
+      throwing: 65
+      strength: 30
+      psiStrength: 100
+      psiSkill: 100
+      melee: 80
+    dogfightExperience:
+        bravery: 10
+        reactions: 30
+        firing: 25
+    armor: STR_ELDAR_ARMOR_M
+    allowPiloting: true
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 0
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - EldarName/
+    deathMale: [749, 750, 751, 752]
+    deathFemale: [744, 745, 746, 747, 748]
+    rankStrings:
+      - STR_ELDAR_RANK_0
+      - STR_ELDAR_RANK_1
+      - STR_ELDAR_RANK_2
+      - STR_ELDAR_RANK_3
+      - STR_ELDAR_RANK_4
+      - STR_ELDAR_RANK_5
+    rankSprite: 883
+    rankBattleSprite: 266
+    rankTinySprite: 181
+  - type: STR_ELDAR_F
+    flagOffset: 100
+    costBuy: 40000
+    costSalary: 20000
+    requires:
+      - STR_ELDAR_PATH
+    requiresBuyBaseFunc: [EGATE]
+    minStats:
+      tu: 40
+      stamina: 30
+      health: 35
+      bravery: 50
+      reactions: 30
+      firing: 40
+      throwing: 30
+      strength: 20
+      psiStrength: 50
+      psiSkill: 20
+      melee: 40
+    maxStats:
+      tu: 55
+      stamina: 65
+      health: 40
+      bravery: 80
+      reactions: 50
+      firing: 65
+      throwing: 60
+      strength: 25
+      psiStrength: 100
+      psiSkill: 10
+      melee: 50
+    statCaps:
+      tu: 80
+      stamina: 100
+      health: 60
+      bravery: 100
+      reactions: 80
+      firing: 100
+      throwing: 70
+      strength: 55
+      psiStrength: 100
+      psiSkill: 100
+      melee: 100
+    trainingStatCaps:
+      tu: 60
+      stamina: 80
+      health: 60
+      firing: 70
+      throwing: 65
+      strength: 30
+      psiStrength: 100
+      psiSkill: 100
+      melee: 80
+    dogfightExperience:
+        bravery: 10
+        reactions: 30
+        firing: 25
+    armor: STR_ELDAR_ARMOR_FH
+    allowPiloting: true
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 100
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - EldarName/
+    deathMale: [749, 750, 751, 752]
+    deathFemale: [744, 745, 746, 747, 748]
+    rankStrings:
+      - STR_ELDAR_RANK_0
+      - STR_ELDAR_RANK_1
+      - STR_ELDAR_RANK_2
+      - STR_ELDAR_RANK_3
+      - STR_ELDAR_RANK_4
+      - STR_ELDAR_RANK_5
+    rankSprite: 883
+    rankBattleSprite: 266
+    rankTinySprite: 181
+  - type: STR_ELDAR_FALLEN
+    costSalary: 20000
+    minStats:
+      tu: 60
+      stamina: 50
+      health: 50
+      bravery: 20
+      reactions: 40
+      firing: 50
+      throwing: 60
+      strength: 30
+      psiStrength: 10
+      psiSkill: 10
+      melee: 60
+    maxStats:
+      tu: 70
+      stamina: 80
+      health: 70
+      bravery: 70
+      reactions: 70
+      firing: 80
+      throwing: 90
+      strength: 50
+      psiStrength: 110
+      psiSkill: 26
+      melee: 90
+    statCaps:
+      tu: 110
+      stamina: 130
+      health: 100
+      bravery: 120
+      reactions: 120
+      firing: 140
+      throwing: 130
+      strength: 110
+      psiStrength: 110
+      psiSkill: 110
+      melee: 140
+    armor: STR_WRAITHGUARD_ARMOR_P
+    allowPiloting: false
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 68
+    avatarOffsetY: 30
+    soldierNames:
+      - delete
+      - EldarName/
+    deathMale: [859, 860]
+    deathFemale: [859, 860]
+    rankStrings:
+      - STR_ELDAR_WS_RANK_0
+      - STR_ELDAR_WS_RANK_1
+      - STR_ELDAR_WS_RANK_2
+      - STR_ELDAR_WS_RANK_3
+      - STR_ELDAR_WS_RANK_4
+    rankSprite: 889
+    rankBattleSprite: 272
+    rankTinySprite: 187
+soldierTransformation:  ##############NOT DONE
+  - name: STR_PROMOTE_TO_JUDGE
+    requires:
+      - STR_ELDAR_PATH
+    cost: 20000
+    producedSoldierType: STR_JUDGE
+    keepSoldierArmor: false
+    allowsDeadSoldiers: false
+    allowsWoundedSoldiers: true
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_ELDAR
+    requiredMinStats:
+      bravery: 70
+      strength: 30
+      psiStrength: 50
+      psiSkill: 10
+      melee: 50
+  - name: STR_RESURRECT_ELDAR
+    requires:
+      - STR_ELDAR_PATH
+    cost: 850000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+      STR_ELERIUM_115: 30
+      STR_ALIEN_HABITAT: 1
+    producedSoldierType: STR_ELDAR_FALLEN
+    producedSoldierArmor: DREAD_ARMOR_UC
+    allowsDeadSoldiers: true
+    allowsLiveSoldiers: false
+    needsCorpseRecovered: true
+    allowedSoldierTypes:
+      - STR_ELDAR_M
+      - STR_ELDAR_F
+    transferTime: 24
+    recoveryTime: 0
+    lowerBoundAtMinStats: true
+#                 #                                        #                      #
+extraSprites:
+  - typeSingle: 70__1__ELDARH
+    fileSingle: Resources/EPATH/ELDARH.png
+  - typeSingle: 70__1__ELDARM
+    fileSingle: Resources/EPATH/ELDARM.png
+  - typeSingle: 70__1__ELDARF
+    fileSingle: Resources/EPATH/ELDARF.png
+  - typeSingle: 70__1__ELDARSF
+    fileSingle: Resources/EPATH/ELDARSF.png
+  - typeSingle: 70__1__ELDARSM
+    fileSingle: Resources/EPATH/ELDARSM.png
+#
+  - typeSingle: 70__2__M0_FACE
+    fileSingle: Resources/EPATH/2facem0.png
+  - typeSingle: 70__2__M1_FACE
+    fileSingle: Resources/EPATH/2facem1.png
+  - typeSingle: 70__2__M2_FACE
+    fileSingle: Resources/EPATH/2facem2.png
+  - typeSingle: 70__2__M3_FACE
+    fileSingle: Resources/EPATH/2facem3.png
+  - typeSingle: 70__2__M4_FACE
+    fileSingle: Resources/EPATH/2facem4.png
+  - typeSingle: 70__2__M5_FACE
+    fileSingle: Resources/EPATH/2facem5.png
+  - typeSingle: 70__2__F0_FACE
+    fileSingle: Resources/EPATH/2facef0.png
+  - typeSingle: 70__2__F1_FACE
+    fileSingle: Resources/EPATH/2facef1.png
+  - typeSingle: 70__2__F2_FACE
+    fileSingle: Resources/EPATH/2facef2.png
+  - typeSingle: 70__2__F3_FACE
+    fileSingle: Resources/EPATH/2facef3.png
+  - typeSingle: 70__2__F4_FACE
+    fileSingle: Resources/EPATH/2facef4.png
+  - typeSingle: 70__2__F5_FACE
+    fileSingle: Resources/EPATH/2facef5.png
+#
+  - typeSingle: 70__0__0
+    fileSingle: Resources/LAYER/0.gif

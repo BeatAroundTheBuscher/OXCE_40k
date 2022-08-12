@@ -1,4 +1,24 @@
 alienDeployments:
+  - type: STR_CRAFT_DEPLOYMENT_PREVIEW
+    isHidden: false
+    music:
+      - HANGAR
+    briefing:
+      title: STR_HANGAR_TITLE
+      palette: 4
+      desc: STR_HANGAR_DESCRIPTION
+      music: HANGAR
+      showCraft: true
+      showTarget: false
+      background: BACK16.SCR
+    shade: 1
+    terrains:
+      - XHANGAR
+    script: XHANGAR
+    width: 30
+    length: 20
+    height: 6
+
   - type: STR_GENE_HIVE #GENESTELLER CULT
     markerIcon: 75
     data:
@@ -3366,7 +3386,6 @@ alienDeployments:
             dQty: 1
             itemSets: [[], [], []]
 
-
   - type: STR_ELDAR_BASE_LEVEL_2      #ELDAR BASE2
     briefing:
       cutscene: ELDARBASE
@@ -3573,12 +3592,267 @@ alienDeployments:
       STR_ELDAR_AIR_PATROL: 40
       STR_ELDAR_BASE_FROM_EXISTING: 20      
     genMissionFreq: 4
+    alienBaseUpgrades:
+      0:
+        STR_ELDAR_BASE_LEVEL_2: 100
+      1:
+        STR_ELDAR_BASE_LEVEL_2: 100
+      2:
+        STR_ELDAR_BASE_LEVEL_2: 90
+        STR_ELDAR_BASE_LEVEL_3: 10
+      3:
+        STR_ELDAR_BASE_LEVEL_2: 90
+        STR_ELDAR_BASE_LEVEL_3: 10
+      4:
+        STR_ELDAR_BASE_LEVEL_2: 80
+        STR_ELDAR_BASE_LEVEL_3: 20
+      5:
+        STR_ELDAR_BASE_LEVEL_2: 70
+        STR_ELDAR_BASE_LEVEL_3: 30
+      6:
+        STR_ELDAR_BASE_LEVEL_2: 60
+        STR_ELDAR_BASE_LEVEL_3: 40
+      7:
+        STR_ELDAR_BASE_LEVEL_2: 50
+        STR_ELDAR_BASE_LEVEL_3: 50
+      8:
+        STR_ELDAR_BASE_LEVEL_2: 40
+        STR_ELDAR_BASE_LEVEL_3: 60
+      9:
+        STR_ELDAR_BASE_LEVEL_2: 30
+        STR_ELDAR_BASE_LEVEL_3: 70
+      11:
+        STR_ELDAR_BASE_LEVEL_2: 20
+        STR_ELDAR_BASE_LEVEL_3: 80
+      12:
+        STR_ELDAR_BASE_LEVEL_2: 10
+        STR_ELDAR_BASE_LEVEL_3: 90
+      13:
+        STR_ELDAR_BASE_LEVEL_3: 100
     baseDetectionRange: 850
     baseDetectionChance: 50
     huntMissionMaxFrequency: 300
     huntMissionWeights:
       0:
         STR_ELDAR_AIR_PATROL: 100
+    width: 60
+    length: 60
+    height: 9
+    points: 1
+
+  - type: STR_ELDAR_BASE_LEVEL_3      #ELDAR BASE3
+    briefing:
+      cutscene: ELDARBASE
+      desc: STR_WEBWAY_DESCRIPTION
+      music: gmstory2
+      showCraft: true
+      showTarget: false
+      background: BACK160.SCR
+      title: STR_WEBWAY_TITLE
+      palette: 4
+      #music: gmdefend
+    alert: STR_WEBWAY_DETECTED
+    cheatTurn: 10
+    alertBackground: BACK159.SCR
+    alertSound: 50
+    markerName: STR_ELDAR_SITE
+    objectiveType: 3 #target type
+    objectivesRequired: 5 #number of tiles to be dest
+    objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
+    objectiveFailed: [STR_WEBWAY_DEVICE_FAILED, -500]
+    objectivePopup: STR_WEBWAY_DESTROYED
+    missionBountyItem: STR_ALIEN_HABITAT
+  
+    reinforcements:
+      - type: necronReinforcementsFew
+        briefing:
+          palette: 4
+          textOffset: -32
+          title: STR_ELDAR_REINFORCEMENTS_TITLE
+          desc: STR_ELDAR_REINFORCEMENTS_DESC
+          background: BACK171.SCR
+          cutscene: ""
+          showCraft: false
+          showTarget: false
+        minTurn: 10
+        maxTurn: 19
+        executionOdds: 30
+        maxRuns: -1 # they just keep coming
+        useSpawnNodes: true
+        spawnNodeRanks: [4] # leader/commander nodes
+        mapBlockFilterType: 0 # all blocks, just go by node placement
+        data:
+          - alienRank: 5
+            lowQty: 1
+            highQty: 1
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 4
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 3
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 6
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 7
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+      - type: necronReinforcementsMany
+        briefing:
+          palette: 4
+          textOffset: -32
+          title: STR_ELDAR_REINFORCEMENTS_TITLE
+          desc: STR_ELDAR_REINFORCEMENTS_DESC
+          background: BACK159.SCR
+          cutscene: ""
+          showCraft: false
+          showTarget: false
+        minTurn: 20
+        executionOdds: 50
+        maxRuns: -1 # they just keep coming
+        useSpawnNodes: true
+        spawnNodeRanks: [4] # leader/commander nodes
+        mapBlockFilterType: 0 # all blocks, just go by node placement
+        data:
+          - alienRank: 5
+            lowQty: 5
+            highQty: 5
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 4
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 3
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 6
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 7
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]  
+  
+    markerIcon: 93
+    script: ELDARGATE_SCRIPT2
+    alienBase: true
+    objectiveType: 100
+    objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
+    objectivePopup: STR_WEBWAY_DESTROYED
+    data:
+      - alienRank: 5
+        lowQty: 5
+        highQty: 10 #6
+        dQty: 2 #1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 2
+        highQty: 4 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 6
+        lowQty: 1
+        highQty: 2 #2
+        dQty: 3 #2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 1
+        highQty: 2 #2
+        dQty: 3 #2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    genMission:
+      STR_ELDAR_PATROL: 40
+      STR_ELDAR_SUP_AIR_PATROL: 40
+      STR_ELDAR_BASE_FROM_EXISTING: 20
+      STR_ELDAR_COBRA_RETALIATION: 20
+    genMissionFreq: 4
+    baseDetectionRange: 850
+    baseDetectionChance: 50
+    huntMissionMaxFrequency: 300
+    huntMissionWeights:
+      0:
+        STR_ELDAR_SUP_AIR_PATROL: 100
     width: 60
     length: 60
     height: 9
@@ -3702,12 +3976,45 @@ alienDeployments:
     objectiveFailed: [STR_WEBWAY_DEVICE_FAILED, -500]
     objectivePopup: STR_WEBWAY_DESTROYED
 
+  - type: STR_ELDAR_COBRA_UFO
+    data:
+      - alienRank: 5
+        lowQty: 3 #2
+        highQty: 5 #4
+        dQty: 2
+        percentageOutsideUfo: 60
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2 #2
+        dQty: 2 #1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_ELDAR_COBRA_UFO_DATA
+    briefing:
+      cutscene: WAVES
+      music: gmstory2
   - type: STR_ELDAR_HEMLOCK_UFO
     data:
       - alienRank: 4
         lowQty: 1
         highQty: 1
-        dQty: 1
+        dQty: 0
         percentageOutsideUfo: 50
         itemSets:
           -
@@ -3753,6 +4060,27 @@ alienDeployments:
     length: 40
     height: 9
     missionBountyItem: STR_ELDAR_WAVESERPENT_UFO_DATA
+    briefing:
+      cutscene: WAVES
+      music: gmstory2
+  - type: STR_ELDAR_HORNET_UFO
+    data:
+      - alienRank: 5
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 60
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_ELDAR_HORNET_UFO_DATA
     briefing:
       cutscene: WAVES
       music: gmstory2
