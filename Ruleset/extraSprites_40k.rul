@@ -581,6 +581,10 @@
     singleImage: true
     files:
       0: Resources/Eldar/ELDAR06.png
+  - type: ELDAR7.SPK #FOES INV
+    singleImage: true
+    files:
+      0: Resources/Eldar/ELDAR07.png
   - type: ELDAR8.SPK #FOES INV
     singleImage: true
     files:
@@ -1039,6 +1043,12 @@
     height: 200
     files:
       0: Resources/DECALS/SERV.png
+  - type: MEDIELDAR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/DECALS/ELDARBORD.png
   - type: SCANBORD.PCK
     singleImage: true
     width: 320
@@ -1803,6 +1813,13 @@
     height: 1440
     files:
       0: Resources/Eldar/eldar3.gif
+  - type: ELDARDR32.PCK #ELDAR BANSHEE
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1440
+    files:
+      0: Resources/Eldar/eldar32.png
   - type: ELDARDR4.PCK #ELDAR DIRE AVENGERS
     subX: 32
     subY: 40
@@ -1817,6 +1834,13 @@
     height: 1440
     files:
       0: Resources/Eldar/eldar5.png
+  - type: ELDARDR6.PCK #ELDAR REAPER
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1440
+    files:
+      0: Resources/Eldar/eldar6.png
   - type: ELDARDR1.PCK #ELDAR SEER
     width: 256
     height: 520
@@ -2281,7 +2305,26 @@
       273: Resources/Rank/smoke273.png  #ELDAR
       274: Resources/Rank/smoke274.png  #ELDAR
       275: Resources/Rank/smoke275.png  #ELDAR
-      276: Resources/Rank/smoke276.png  #ELDAR      
+      276: Resources/Rank/smoke276.png  #ELDAR
+      277: Resources/Rank/smoke277.png  #ELDAR
+      278: Resources/Rank/smoke278.png  #ELDAR
+      279: Resources/Rank/smoke279.png  #ELDAR
+      280: Resources/Rank/smoke280.png  #ELDAR
+      281: Resources/Rank/smoke281.png  #ELDAR
+      282: Resources/Rank/smoke282.png  #ELDAR
+      283: Resources/Rank/smoke283.png  #ELDAR
+      284: Resources/Rank/smoke284.png  #ELDAR
+      285: Resources/Rank/smoke285.png  #ELDAR
+      286: Resources/Rank/smoke286.png  #ELDAR
+      287: Resources/Rank/smoke287.png  #ELDAR
+      288: Resources/Rank/smoke288.png  #ELDAR
+      289: Resources/Rank/smoke289.png  #ELDAR
+      290: Resources/Rank/smoke290.png  #ELDAR
+      291: Resources/Rank/smoke291.png  #ELDAR
+      292: Resources/Rank/smoke292.png  #ELDAR
+      293: Resources/Rank/smoke293.png  #ELDAR
+      294: Resources/Rank/smoke294.png  #ELDAR
+      295: Resources/Rank/smoke295.png  #ELDAR
 ##221-226
   - type: HIT.PCK #HIT MELEE ANIMATION
     width: 128
@@ -2688,6 +2731,10 @@
       401: Resources/Eldar/401.png
       402: Resources/Eldar/402.png
       403: Resources/Eldar/403.png
+      404: Resources/Eldar/404.png
+      405: Resources/Eldar/405.png
+      406: Resources/Eldar/406.png
+      407: Resources/Eldar/407.png
       449: Resources/Adeptas/449.png
       450: Resources/Support/450.gif
 #451 CHAPTER CHANGE
@@ -3180,6 +3227,9 @@
       415: Resources/Eldar/floorob_415.png
       416: Resources/Eldar/floorob_416.png
       417: Resources/Eldar/floorob_417.png
+      418: Resources/Eldar/floorob_418.png
+      419: Resources/Eldar/floorob_419.png
+      420: Resources/Eldar/floorob_420.png
       570: Resources/Laspistol/hellpistol_floorob.png
       575: Resources/Meltagun/floorob_inferno_pistol.png
       600: Resources/Boltpistol/floorob_boltpistol_chaos.png
@@ -3457,22 +3507,22 @@
       613: Resources/Basebits/OUT14.png
       614: Resources/Basebits/OUT15.png
       615: Resources/Basebits/OUT16.png
-      616: Resources/Basebits/C1.gif
-      617: Resources/Basebits/C2.gif
-      618: Resources/Basebits/C2.gif
-      619: Resources/Basebits/C3.gif
-      620: Resources/Basebits/C4.gif
-      621: Resources/Basebits/C5.gif
-      622: Resources/Basebits/C5.gif
-      623: Resources/Basebits/C6.gif
-      624: Resources/Basebits/C4.gif
-      625: Resources/Basebits/C5.gif
-      626: Resources/Basebits/C5.gif
-      627: Resources/Basebits/C6.gif
-      628: Resources/Basebits/C7.gif
-      629: Resources/Basebits/C8.gif
-      630: Resources/Basebits/C8.gif
-      631: Resources/Basebits/C9.gif
+      616: Resources/Basebits/COMB12.png
+      617: Resources/Basebits/basebits725.png
+      618: Resources/Basebits/basebits725.png
+      619: Resources/Basebits/COMB22.png
+      620: Resources/Basebits/basebits726.png
+      621: Resources/Basebits/basebits724.png
+      622: Resources/Basebits/basebits724.png
+      623: Resources/Basebits/basebits728.png
+      624: Resources/Basebits/basebits726.png
+      625: Resources/Basebits/basebits724.png
+      626: Resources/Basebits/basebits724.png
+      627: Resources/Basebits/basebits728.png
+      628: Resources/Basebits/COMB32.png
+      629: Resources/Basebits/basebits729.png
+      630: Resources/Basebits/basebits729.png
+      631: Resources/Basebits/COMB43.png
       632: Resources/Basebits/basebits632.png
       633: Resources/Basebits/basebits633.png
       634: Resources/Basebits/basebits634.png
@@ -3488,15 +3538,15 @@
       643: Resources/Basebits/TRA7.png
       644: Resources/Basebits/TRA8.png
       645: Resources/Basebits/TRA9.png
-      646: Resources/Basebits/C1.gif
-      647: Resources/Basebits/C2.gif
-      648: Resources/Basebits/C3.gif      #12
-      649: Resources/Basebits/C4.gif
-      650: Resources/Basebits/C5.gif
-      651: Resources/Basebits/C6.gif
-      652: Resources/Basebits/C7.gif
-      653: Resources/Basebits/C8.gif
-      654: Resources/Basebits/C9.gif
+      646: Resources/Basebits/COMB12.png
+      647: Resources/Basebits/basebits725.png
+      648: Resources/Basebits/COMB22.png      #12
+      649: Resources/Basebits/basebits726.png
+      650: Resources/Basebits/basebits724.png
+      651: Resources/Basebits/basebits728.png
+      652: Resources/Basebits/COMB32.png
+      653: Resources/Basebits/basebits729.png
+      654: Resources/Basebits/COMB43.png
       655: Resources/Basebits/MAR1.png       #18
       656: Resources/Basebits/MAR2.png        #19
       657: Resources/Basebits/MAR3.png       #20
@@ -3513,24 +3563,65 @@
       668: Resources/Basebits/MAR14.png       #30
       669: Resources/Basebits/MAR15.png      #31
       670: Resources/Basebits/MAR16.png         #32
-      671: Resources/Basebits/C1.gif         #33
-      672: Resources/Basebits/C2.gif         #34
-      673: Resources/Basebits/C2.gif         #35
-      674: Resources/Basebits/C3.gif         #36
-      675: Resources/Basebits/C4.gif         #36
-      676: Resources/Basebits/C5.gif         #36
-      677: Resources/Basebits/C5.gif         #36
-      678: Resources/Basebits/C6.gif         #36
-      679: Resources/Basebits/C4.gif         #36
-      680: Resources/Basebits/C5.gif         #36
-      681: Resources/Basebits/C5.gif         #36
-      682: Resources/Basebits/C6.gif         #36
-      683: Resources/Basebits/C7.gif         #36
-      684: Resources/Basebits/C8.gif         #36
-      685: Resources/Basebits/C8.gif         #36
-      686: Resources/Basebits/C9.gif         #36
+      671: Resources/Basebits/COMB12.png
+      672: Resources/Basebits/basebits725.png
+      673: Resources/Basebits/basebits725.png
+      674: Resources/Basebits/COMB22.png
+      675: Resources/Basebits/basebits726.png
+      676: Resources/Basebits/basebits724.png
+      677: Resources/Basebits/basebits724.png
+      678: Resources/Basebits/basebits728.png
+      679: Resources/Basebits/basebits726.png
+      680: Resources/Basebits/basebits724.png
+      681: Resources/Basebits/basebits724.png
+      682: Resources/Basebits/basebits728.png
+      683: Resources/Basebits/COMB32.png
+      684: Resources/Basebits/basebits729.png
+      685: Resources/Basebits/basebits729.png
+      686: Resources/Basebits/COMB43.png
       687: Resources/Basebits/basebits687.png
       688: Resources/Basebits/basebits688.png
+      689: Resources/Basebits/basebits689.png
+      690: Resources/Basebits/basebits690.png
+      691: Resources/Basebits/basebits691.png
+      692: Resources/Basebits/basebits692.png
+      693: Resources/Basebits/basebits693.png
+      694: Resources/Basebits/basebits694.png
+      695: Resources/Basebits/basebits695.png
+      696: Resources/Basebits/basebits696.png
+      697: Resources/Basebits/basebits697.png
+      698: Resources/Basebits/basebits698.png
+      699: Resources/Basebits/basebits699.png
+      700: Resources/Basebits/basebits700.png
+      701: Resources/Basebits/basebits701.png
+      702: Resources/Basebits/basebits702.png
+      703: Resources/Basebits/basebits703.png
+      704: Resources/Basebits/basebits704.png
+      705: Resources/Basebits/basebits705.png
+      706: Resources/Basebits/basebits706.png
+      707: Resources/Basebits/COMB12.png
+      708: Resources/Basebits/basebits725.png
+      709: Resources/Basebits/COMB22.png      #12
+      710: Resources/Basebits/basebits726.png
+      711: Resources/Basebits/basebits724.png
+      712: Resources/Basebits/basebits728.png
+      713: Resources/Basebits/COMB32.png
+      714: Resources/Basebits/basebits729.png
+      715: Resources/Basebits/COMB43.png
+      716: Resources/Basebits/basebits716.png
+      717: Resources/Basebits/basebits717.png
+      718: Resources/Basebits/basebits718.png
+      719: Resources/Basebits/basebits719.png
+      720: Resources/Basebits/COMB12.png
+      721: Resources/Basebits/COMB22.png
+      722: Resources/Basebits/COMB32.png
+      723: Resources/Basebits/COMB43.png
+      724: Resources/Basebits/basebits724.png
+      725: Resources/Basebits/basebits725.png
+      726: Resources/Basebits/basebits726.png
+      727: Resources/Basebits/basebits727.png
+      728: Resources/Basebits/basebits728.png
+      729: Resources/Basebits/basebits729.png
 #Facility2
       800: Resources/CW/CANbase.png
       801: Resources/CW/Tbase.png
@@ -3589,6 +3680,41 @@
       886: Resources/Rank/basebits886.png      #ELDAR
       887: Resources/Rank/basebits887.png      #ELDAR
       888: Resources/Rank/basebits888.png      #ELDAR
+      889: Resources/Rank/basebits889.png      #ELDAR
+      890: Resources/Rank/basebits890.png      #ELDAR
+      891: Resources/Rank/basebits891.png      #ELDAR
+      892: Resources/Rank/basebits892.png      #ELDAR
+      893: Resources/Rank/basebits893.png      #ELDAR
+      895: Resources/Rank/basebits895.png      #ELDAR
+      896: Resources/Rank/basebits896.png      #ELDAR
+      897: Resources/Rank/basebits897.png      #ELDAR
+      898: Resources/Rank/basebits898.png      #ELDAR
+      899: Resources/Rank/basebits899.png      #ELDAR
+      900: Resources/Rank/basebits900.png      #ELDAR 
+      901: Resources/Rank/basebits901.png      #ELDAR  
+      902: Resources/Rank/basebits902.png      #ELDAR
+      903: Resources/Rank/basebits903.png      #ELDAR
+      904: Resources/Rank/basebits904.png      #ELDAR
+      905: Resources/Rank/basebits905.png      #ELDAR
+      906: Resources/Rank/basebits906.png      #ELDAR
+# PLUS 911 to 921 marines Craft´s
+      951: Resources/Rank/basebits951.png      #ELDAR
+      952: Resources/Rank/basebits952.png      #ELDAR
+      953: Resources/Rank/basebits953.png      #ELDAR
+      954: Resources/Rank/basebits954.png      #ELDAR
+      955: Resources/Rank/basebits955.png      #ELDAR
+      956: Resources/Rank/basebits956.png      #ELDAR
+
+      960: Resources/Rank/basebits960.png      #ELDAR
+      961: Resources/Rank/basebits961.png      #ELDAR
+      962: Resources/Rank/basebits962.png      #ELDAR
+      963: Resources/Rank/basebits963.png      #ELDAR
+      964: Resources/Rank/basebits964.png      #ELDAR
+      965: Resources/Rank/basebits965.png      #ELDAR
+      
+      966: Resources/Rank/basebits965.png      #ELDAR
+      967: Resources/Rank/basebits965.png      #ELDAR
+      968: Resources/Rank/basebits965.png      #ELDAR
 #  ADEPTA ADDON
       1711: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 0
       1712: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 1
@@ -4533,6 +4659,24 @@
     height: 200
     files:
       0: Resources/Eldar/1EL6.png
+  - type: 1EL7.SPK              #UFOPEDIA WEAPONS
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Eldar/1EL7.png
+  - type: 1EL8.SPK              #UFOPEDIA WEAPONS
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Eldar/1EL8.png
+  - type: 1EL9.SPK              #UFOPEDIA WEAPONS
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Eldar/1EL9.png
   - type: 1OK1.SPK              #UFOPEDIA WEAPONS
     singleImage: true
     width: 320
@@ -5131,6 +5275,12 @@
     height: 200
     files:
       0: Resources/CODEX/3TILES.png
+  - type: 3XENO.SPK                  #HELP
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/3XENO.png
   - type: 3AIM.SPK                  #HELP
     singleImage: true
     width: 320
@@ -5523,6 +5673,36 @@
     height: 200
     files:
       0: Resources/Basebits/045.png
+  - type: 046.SPK #base2
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Basebits/046.png
+  - type: 047.SPK #base2
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Basebits/047.png
+  - type: 048.SPK #base2
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Basebits/048.png
+  - type: 049.SPK #base2
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Basebits/049.png
+  - type: 050.SPK #base2
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Basebits/050.png
   - type: C00.SPK #HWP
     singleImage: true
     width: 320
@@ -6351,6 +6531,30 @@
     height: 200
     files:
       0: Resources/Eldar/UP166.png
+  - type: UP167.SPK #ELDAR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Eldar/UP167.png
+  - type: UP168.SPK #ELDAR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Eldar/UP168.png
+  - type: UP170.SPK #ELDAR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Eldar/UP170.png
+  - type: UP171.SPK #ELDAR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Eldar/UP171.png
   - type: GRAPHS.SPK #GRAPHICS MENU
     singleImage: true
     width: 320
@@ -6643,6 +6847,10 @@
       175: Resources/UnitUI/Ranks_Small12.png
       181: Resources/UnitUI/Ranks_Small13.png
       187: Resources/UnitUI/Ranks_Small14.png
+      193: Resources/UnitUI/Ranks_Small15.png
+      199: Resources/UnitUI/Ranks_Small16.png
+      205: Resources/UnitUI/Ranks_Small17.png
+      211: Resources/UnitUI/Ranks_Small18.png
   - type: Commendations
     width: 31
     height: 48
@@ -8115,6 +8323,109 @@ extraSounds:
       1303: Resources/Sound/TECH/IDLE3.ogg
       1304: Resources/Sound/TECH/IDLE4.ogg
       1305: Resources/Sound/TECH/IDLE5.ogg
+#1306 to 1328 FARSEER
+      1306: Resources/Sound/FARSEERF/ATT1.ogg
+      1307: Resources/Sound/FARSEERF/ATT2.ogg
+      1308: Resources/Sound/FARSEERF/ATT3.ogg
+      1309: Resources/Sound/FARSEERF/ATT4.ogg
+      1310: Resources/Sound/FARSEERF/ATT5.ogg
+      1311: Resources/Sound/FARSEERF/MOVE1.ogg
+      1312: Resources/Sound/FARSEERF/MOVE2.ogg
+      1313: Resources/Sound/FARSEERF/MOVE3.ogg
+      1314: Resources/Sound/FARSEERF/MOVE4.ogg
+      1315: Resources/Sound/FARSEERF/MOVE5.ogg
+      1316: Resources/Sound/FARSEERF/SEL1.ogg
+      1317: Resources/Sound/FARSEERF/SEL2.ogg
+      1318: Resources/Sound/FARSEERF/SEL3.ogg
+      1319: Resources/Sound/FARSEERF/SEL4.ogg
+      1320: Resources/Sound/FARSEERF/SEL5.ogg
+      1321: Resources/Sound/FARSEERF/IDLE1.ogg
+      1322: Resources/Sound/FARSEERF/IDLE2.ogg
+      1323: Resources/Sound/FARSEERF/IDLE3.ogg
+      1324: Resources/Sound/FARSEERF/IDLE4.ogg
+      1325: Resources/Sound/FARSEERF/IDLE5.ogg
+      1326: Resources/Sound/FARSEERF/DIE1.ogg
+      1327: Resources/Sound/FARSEERF/DIE2.ogg
+      1328: Resources/Sound/FARSEERF/DIE3.ogg
+#1329 to 1352 GUARDIAN
+      1329: Resources/Sound/EGUARDM/ATT1.ogg
+      1330: Resources/Sound/EGUARDM/ATT2.ogg
+      1331: Resources/Sound/EGUARDM/ATT3.ogg
+      1332: Resources/Sound/EGUARDM/ATT4.ogg
+      1333: Resources/Sound/EGUARDM/ATT5.ogg
+      1334: Resources/Sound/EGUARDM/MOVE1.ogg
+      1335: Resources/Sound/EGUARDM/MOVE2.ogg
+      1336: Resources/Sound/EGUARDM/MOVE3.ogg
+      1337: Resources/Sound/EGUARDM/MOVE4.ogg
+      1338: Resources/Sound/EGUARDM/MOVE5.ogg
+      1339: Resources/Sound/EGUARDM/SEL1.ogg
+      1340: Resources/Sound/EGUARDM/SEL2.ogg
+      1341: Resources/Sound/EGUARDM/SEL3.ogg
+      1342: Resources/Sound/EGUARDM/SEL4.ogg
+      1343: Resources/Sound/EGUARDM/SEL5.ogg
+      1344: Resources/Sound/EGUARDM/IDLE1.ogg
+      1345: Resources/Sound/EGUARDM/IDLE2.ogg
+      1346: Resources/Sound/EGUARDM/IDLE3.ogg
+      1347: Resources/Sound/EGUARDM/IDLE4.ogg
+      1348: Resources/Sound/EGUARDM/IDLE5.ogg
+      1349: Resources/Sound/EGUARDM/DIE1.ogg
+      1350: Resources/Sound/EGUARDM/DIE2.ogg
+      1351: Resources/Sound/EGUARDM/DIE3.ogg
+      1352: Resources/Sound/EGUARDM/DIE4.ogg
+#1353 to 1352 GUARDIAN
+      1353: Resources/Sound/BANSHEE/ATT1.ogg
+      1354: Resources/Sound/BANSHEE/ATT2.ogg
+      1355: Resources/Sound/BANSHEE/ATT3.ogg
+      1356: Resources/Sound/BANSHEE/ATT4.ogg
+      1357: Resources/Sound/BANSHEE/ATT5.ogg
+      1358: Resources/Sound/BANSHEE/MOVE1.ogg
+      1359: Resources/Sound/BANSHEE/MOVE2.ogg
+      1360: Resources/Sound/BANSHEE/MOVE3.ogg
+      1361: Resources/Sound/BANSHEE/MOVE4.ogg
+      1362: Resources/Sound/BANSHEE/MOVE5.ogg
+      1363: Resources/Sound/BANSHEE/SEL1.ogg
+      1364: Resources/Sound/BANSHEE/SEL2.ogg
+      1365: Resources/Sound/BANSHEE/SEL3.ogg
+      1366: Resources/Sound/BANSHEE/SEL4.ogg
+      1367: Resources/Sound/BANSHEE/SEL5.ogg
+      1368: Resources/Sound/BANSHEE/IDLE1.ogg
+      1369: Resources/Sound/BANSHEE/IDLE2.ogg
+      1370: Resources/Sound/BANSHEE/IDLE3.ogg
+      1371: Resources/Sound/BANSHEE/IDLE4.ogg
+      1372: Resources/Sound/BANSHEE/IDLE5.ogg
+      1373: Resources/Sound/BANSHEE/DIE1.ogg
+      1374: Resources/Sound/BANSHEE/DIE2.ogg
+      1375: Resources/Sound/BANSHEE/DIE3.ogg
+#1376 to 1378 GRAVPLAT
+      1376: Resources/Sound/GRAV/ATT1.ogg
+      1377: Resources/Sound/GRAV/SEL1.ogg
+      1378: Resources/Sound/GRAV/SEL2.ogg
+#1378 to 1386 WRAITH
+      1379: Resources/Sound/WRAITH/SEL1.ogg
+      1380: Resources/Sound/WRAITH/SEL2.ogg
+      1381: Resources/Sound/WRAITH/SEL3.ogg
+      1382: Resources/Sound/WRAITH/SEL4.ogg
+      1383: Resources/Sound/WRAITH/IDLE1.ogg
+      1384: Resources/Sound/WRAITH/IDLE2.ogg
+      1385: Resources/Sound/WRAITH/DIE1.ogg
+      1386: Resources/Sound/WRAITH/DIE2.ogg
+#1387 to 1388 ELDAR TANK
+      1387: Resources/Sound/ETANK/SEL1.ogg
+      1388: Resources/Sound/ETANK/SEL2.ogg
+      1389: Resources/Sound/ETANK/SEL3.ogg
+      1390: Resources/Sound/ETANK/SEL4.ogg
+      1391: Resources/Sound/ETANK/SEL5.ogg
+      1392: Resources/Sound/ETANK/SEL6.ogg
+      1393: Resources/Sound/ETANK/ATT1.ogg
+      1394: Resources/Sound/ETANK/ATT2.ogg
+      1395: Resources/Sound/ETANK/ATT3.ogg
+      1396: Resources/Sound/ETANK/ATT4.ogg
+      1397: Resources/Sound/ETANK/ATT5.ogg
+      1398: Resources/Sound/ETANK/ATT6.ogg
+      1399: Resources/Sound/ETANK/MOVE1.ogg
+      1400: Resources/Sound/ETANK/MOVE2.ogg
+      1401: Resources/Sound/ETANK/MOVE3.ogg
+      1402: Resources/Sound/ETANK/MOVE4.ogg
   - type: GEO.CAT
     files:
       32: Resources/Sound/32CANFIRE.wav
@@ -8182,3 +8493,5 @@ extraSounds:
       95: Resources/Sound/EVENTS/EATTSHIP2.ogg
       96: Resources/Sound/EVENTS/EATTSHIP3.ogg
       97: Resources/Sound/EVENTS/EATTSHIP4.ogg
+      98: Resources/Sound/EVENTS/PLACE.ogg
+      99: Resources/Sound/EVENTS/PLACEOUT.ogg

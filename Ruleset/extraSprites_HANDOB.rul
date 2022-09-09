@@ -166,6 +166,8 @@ extraSprites:
       1296: Resources_IG/Handobs/handob_lascannon_bipod_deployed.png
       1304: Resources_IG/Handobs/handob_lascannon_clip_small.png
       1320: Resources_IG/Handobs/handob_officers_sword.png
+      1328: Resources/Eldar/1328.png
+      1336: Resources/Eldar/1336.png
       1400: Resources_IG/Handobs/handob_ripper_gun.png
       1408: Resources_IG/Handobs/handob_ripper_gun_drum.png
       1416: Resources_IG/Handobs/handob_slab_shield.png

@@ -772,6 +772,40 @@ ufopaedia:
     text: STR_DAVENGER_AUTOPSY_UFOPEDIA
     listOrder: 26613
 
+
+  - id: STR_ELDAR_ARMOR6                                              #26614         ARMOR
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ELDAR_REAPER
+    image_id: UP167.SPK
+    text: STR_NURGLE_UFOPEDIA
+    listOrder: 26614
+  - id: STR_ELDAR_REAPER_AUTOPSY                                                #26615
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ELDAR_REAPER_CORPSE
+    image_id: UP168.SPK
+    text: STR_DAVENGER_AUTOPSY_UFOPEDIA
+    listOrder: 26615
+
+  - id: STR_WRAITHGUARD_ARMOR                                             #26616         ARMOR
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_WRAITHGUARD_CORPSE
+    image_id: UP171.SPK
+    text: STR_NURGLE_UFOPEDIA
+    listOrder: 26616
+  - id: STR_WRAITHGUARD_AUTOPSY                                                #26617
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_WRAITHGUARD_CORPSE
+    image_id: UP170.SPK
+    text: STR_WRAITHGUARD_AUTOPSY_UFOPEDIA
+    listOrder: 26617
   - id: STR_ELDAR_PLAT_ARMOR                                            #26900         ARMOR
     type_id: 15
     section: STR_ALIEN_LIFE_FORMS
@@ -2052,6 +2086,20 @@ ufopaedia:
     requires:
       - STR_CATAPULT
     text: STR_CATAPULT_UFOPEDIA
+  - id: STR_ELDAR_LAUNCHER
+    type_id: 14
+    section: STR_ALIEN_ARTIFACTS
+    image_id: 1EL7.SPK
+    requires:
+      - STR_ELDAR_REAPER
+    text: STR_ELDAR_LAUNCHER_UFOPEDIA
+  - id: STR_ELDAR_CHAINSWORD
+    type_id: 14
+    section: STR_ALIEN_ARTIFACTS
+    image_id: 1EL8.SPK
+    requires:
+      - STR_ELDAR_CHAINSWORD
+    text: STR_ELDAR_CHAINSWORD_UFOPEDIA
   - id: STR_EPOWER_SWORD
     type_id: 14
     section: STR_ALIEN_ARTIFACTS
@@ -2424,6 +2472,49 @@ ufopaedia:
     section: STR_BASE_FACILITIES
     image_id: 045.SPK
     text: STR_POWERG_UFOPEDIA
+#OUTPOST
+  - id: STR_ELDARDIRT              #facility
+    requires:
+      - STR_ELDAR_PATH
+    type_id: 16
+    section: STR_BASE_FACILITIES
+    image_id: 040.SPK
+    text: STR_DIRT_UFOPEDIA
+  - id: STR_ELDARACCESS              #facility
+    requires:
+      - STR_ELDAR_PATH
+    type_id: 16
+    section: STR_BASE_FACILITIES
+    image_id: 048.SPK
+    text: STR_ELDARACCESS_UFOPEDIA
+  - id: STR_ELDARPOD              #facility
+    requires:
+      - STR_ELDAR_PATH
+    type_id: 16
+    section: STR_BASE_FACILITIES
+    image_id: 046.SPK
+    text: STR_ELDARPOD_UFOPEDIA
+  - id: STR_ELDARPORTAL              #facility
+    requires:
+      - STR_ELDAR_PATH
+    type_id: 16
+    section: STR_BASE_FACILITIES
+    image_id: 047.SPK
+    text: STR_ELDARPORTAL _UFOPEDIA
+  - id: STR_ELDARHANGAR            #facility
+    requires:
+      - STR_ELDAR_PATH
+    type_id: 16
+    section: STR_BASE_FACILITIES
+    image_id: 049.SPK
+    text: STR_ELDARHANGAR_UFOPEDIA
+  - id: STR_ELDARWALLN            #facility
+    requires:
+      - STR_ELDAR_PATH
+    type_id: 16
+    section: STR_BASE_FACILITIES
+    image_id: 050.SPK
+    text: STR_ELDARWALLN_UFOPEDIA
 #ARMOR
   - id: STR_A                             #5000 MENU INTRO
     type_id: 10
@@ -4257,6 +4348,14 @@ ufopaedia:
     image_id: 4DW.SPK
     text: STR_DEATHWATCH_TEXT
     listOrder: 85
+  - id: STR_CHOSEN_ELDAR         #89
+    requires:
+      - STR_ELDAR_PATH
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: 3XENO.SPK
+    text: STR_CHOSEN_ELDAR_INFO
+    listOrder: 89
 #HELP
   - id: STR_HELP1          #HELP 50000
     type_id: 10
@@ -4468,12 +4567,12 @@ ufopaedia:
     requires:
       - STR_VETERAN
 #heraldry
-  - id: STR_ULTRAMARINES            #45000
+  - id: STR_ULTRAMARINES            #45001
     type_id: 10
     section: STR_HERALDRY
     image_id: ULT.SPK
     text: STR_ULTRAMARINES_INFO
-    listOrder: 45000
+    listOrder: 45001
   - id: STR_IF            #45100
     type_id: 10
     section: STR_HERALDRY

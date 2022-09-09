@@ -53,9 +53,20 @@ alienRaces:
       - STR_ELDAR_SEER         #0 Commander deploy no weapons
       - STR_ELDAR_SEER             #1 leader  deploy no weapons
       - STR_ELDAR_BANSHEE            #2 Engineer deploy WITH weapons
-      - STR_ELDAR_DAVENGER            #3 MEDIC deploy WITH weapons
+      - STR_ELDAR_GUARDIAN            #3 MEDIC deploy WITH weapons
       - STR_ELDAR_SCORPION            #4 NAVIGATOR deploy no weapons
       - STR_ELDAR_GUARDIAN             #5 SOLDIER deploy no weapons
+      - STR_ELDAR_WRAITHGUARD
+      - STR_ELDAR_PLAT
+  - id: STR_ELDAR_ADV
+    retaliationAggression: -100
+    members:
+      - STR_ELDAR_SEER         #0 Commander deploy no weapons
+      - STR_ELDAR_SEER             #1 leader  deploy no weapons
+      - STR_ELDAR_REAPER            #2 Engineer deploy WITH weapons
+      - STR_ELDAR_DAVENGER            #3 MEDIC deploy WITH weapons
+      - STR_ELDAR_REAPER            #4 NAVIGATOR deploy no weapons
+      - STR_ELDAR_DAVENGER             #5 SOLDIER deploy no weapons
       - STR_ELDAR_WRAITHGUARD
       - STR_ELDAR_PLAT
   - id: STR_NECRON

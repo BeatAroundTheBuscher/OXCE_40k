@@ -1968,6 +1968,7 @@
     listOrder: 30400
   - type: STR_ELECTRO_FLARE                               #14100
     categories: [ STR_CAT_EQUIPMENT]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 60
     costSell: 40
@@ -2000,6 +2001,7 @@
     categories: [ STR_CAT_GRENADES, STR_CAT_TACTICAL]
     requiresBuy: #what tech is required for the item to be visible in the Hire/Purchase screen.
       - STR_SMOKE
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 1500
     costSell: 1200
@@ -2019,6 +2021,7 @@
     throwRange: 20
   - type: STR_PROXIMITY_GRENADE            #4007
     categories: [ STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 15000
     costSell: 7500
@@ -2112,6 +2115,7 @@
     specialUseEmptyHand: false
   - type: STR_HIGH_EXPLOSIVE #melta bomb    4009
     categories: [ STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     requiresBuy: #what tech is required for the item to be visible in the Hire/Purchase screen.
       - STR_MELTABOMB
     size: 0.2
@@ -2152,6 +2156,7 @@
     throwRange: 20
   - type: STR_MGRENADE #melta grenade      #4008
     categories: [ STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     weight: 4
     costSell: 15000
@@ -2172,6 +2177,7 @@
     throwRange: 20
   - type: STR_GRENADE #frag                #4006
     categories: [ STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 10000
     costSell: 5000
@@ -2188,6 +2194,7 @@
     listOrder: 13600
     throwRange: 20
   - type: STR_KRAK_GRENADE #krak
+    requiresBuyBaseFunc: [IMPERIUM]
     categories: [ STR_CAT_GRENADES, STR_CAT_TACTICAL]
     size: 0.1
     costBuy: 12000
@@ -2787,6 +2794,7 @@
 
   - type: STR_LASPISTOL_CLIP_HOTSHOT
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.05
     costBuy: 3000
     requiresBuy:
@@ -3276,12 +3284,46 @@
     strengthApplied: false
     attraction: 0
 #--- ELDAR  ------------------------------------------------------      dropoff: 5
+
+  - type: STR_ELDAR_LAUNCHER #                       12100                                  AIMED
+    categories: [ STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
+    requiresBuyBaseFunc: [ELDAROUT]
+    requires:
+      - STR_ELDAR_PATH
+    size: 0.4
+    dropoff: 5
+    weight: 30
+    bigSprite: 405
+    floorSprite: 419
+    handSprite: 1336
+    bulletSprite: 0
+    fireSound: 52
+    clipSize: -1
+    power: 100
+    damageType: 3
+    accuracySnap: 70
+    accuracyAimed: 115
+    accuracyAuto: 55
+    tuSnap: 55
+    tuAimed: 85
+    tuAuto: 55
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    listOrder: 12100
   - type: STR_CATAPULT_PISTOL  #              16000
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [ELDAROUT]
     requires:
-      - STR_ALIENS_ONLY
+      - STR_ELDAR_PATH
+    requiresBuy:
+      - STR_CATAPULT_PISTOL
     size: 0.2
     dropoff: 5
+    costBuy:  3500
     costSell: 1000
     weight: 15
     bigSprite: 390
@@ -3305,10 +3347,14 @@
     listOrder: 16000
   - type: STR_CATAPULT #                      16100
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [ELDAROUT]
     requires:
-      - STR_ALIENS_ONLY
+      - STR_ELDAR_PATH
+    requiresBuy:
+      - STR_CATAPULT
     size: 0.3
     dropoff: 5
+    costBuy:  6000
     costSell: 2750
     weight: 20
     bigSprite: 391
@@ -3333,9 +3379,13 @@
     listOrder: 16100
   - type: STR_SHURIKEN_CLIP #                 16200
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [ELDAROUT]
     requires:
-      - STR_ALIENS_ONLY
+      - STR_ELDAR_PATH
+    requiresBuy:
+      - STR_SHURIKEN_CLIP
     size: 0.1
+    costBuy:  500
     costSell: 250
     weight: 2
     bigSprite: 393
@@ -3410,9 +3460,13 @@
     recover: false
   - type: STR_EPOWER_SWORD #                  16300           DA POWER
     categories: [STR_CAT_MELEE, STR_CAT_ELDAR]
+    requiresBuyBaseFunc: [ELDAROUT]
     requires:
-      - STR_ALIENS_ONLY
+      - STR_ELDAR_PATH
+    requiresBuy:
+      - STR_EPOWER_SWORD
     size: 0.2
+    costBuy:  50000
     costSell: 15000
     weight: 10
     bigSprite: 392
@@ -3445,10 +3499,14 @@
     listOrder: 16300
   - type: STR_ELDAR_MGRENADE #melta grenade         16310
     categories: [ STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_ELDAR]
+    requiresBuyBaseFunc: [ELDAROUT]
     requires:
-      - STR_ALIENS_ONLY
+      - STR_ELDAR_PATH
+    requiresBuy:
+      - STR_ELDAR_MGRENADE
     size: 0.1
     weight: 4
+    costBuy:  50000
     costSell: 15000
     bigSprite: 398
     floorSprite: 253
@@ -3467,9 +3525,13 @@
     throwRange: 20
   - type: STR_ELDAR_GRENADE #Eldar Granade          16320
     categories: [ STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_ELDAR]
+    requiresBuyBaseFunc: [ELDAROUT]
     requires:
-      - STR_ALIENS_ONLY
+      - STR_ELDAR_PATH
+    requiresBuy:
+      - STR_ELDAR_GRENADE
     size: 0.1
+    costBuy:  20000
     costSell: 5000
     weight: 4
     bigSprite: 397
@@ -3488,6 +3550,45 @@
     hitAnimation: 112 #XPLASMA
     listOrder: 16320
     throwRange: 20
+  - type: STR_ELDAR_CHAINSWORD #         16301           DA CHAIN
+    categories: [STR_CAT_MELEE, STR_CAT_ASSAULT, STR_CAT_ELDAR]
+    requiresBuyBaseFunc: [ELDAROUT]
+    requires:
+      - STR_ELDAR_PATH
+    requiresBuy:
+      - STR_ELDAR_CHAINSWORD
+    size: 0.2
+    costBuy:  30000
+    costSell: 15000
+    weight: 15
+    bigSprite: 404
+    floorSprite: 418
+    handSprite: 1328
+    meleeSound: 753 #753 Powerswrod miss
+    meleeHitSound: 709 #709 chainhit
+    meleeAnimation: 44
+    power: 95
+    damageAlter: #DA CHAIN
+      ToArmorPre: 0.3
+      ToHealth: 0.9
+      RandomType: 2 #TFTD [50% - 150%]
+      ToWound: 0.3
+      ToEnergy: 0.5
+    damageType: 7
+    accuracyMelee: 90
+    tuMelee: 15
+    clipSize: -1
+    battleType: 3
+    twoHanded: false
+    invWidth: 2
+    invHeight: 3
+    armor: 20
+    skillApplied: true
+    meleeMultiplier:
+      melee: 1.0
+      flatHundred: 0.0
+    experienceTrainingMode: 13
+    listOrder: 16301
 #--- ORK ------------------------------------------------------      dropoff: 5
   - type: STR_GRETCHIN_BLASTA
     categories: [STR_CAT_ORK, STR_CAT_TACTICAL]
@@ -3937,9 +4038,6 @@
 
 #--- GENESTELLER CULT ------------------------------------------------------
   - type: STR_GENE_TANK
-    costBuy: 0
-    monthlySalary: 0
-    transferTime: 0
     categories: [STR_CAT_AUXILIARY]
     size: 6
     customItemPreviewIndex: 3
@@ -4017,6 +4115,7 @@
     categories: [STR_CAT_BOLTER]
     requiresBuy:
       - STR_LIGHT_BOLTERS
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     dropoff: 5
     costBuy: 3500
@@ -4070,6 +4169,7 @@
     categories: [STR_CAT_BOLTER]
     requiresBuy:
       - STR_LIGHT_BOLTERS
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 450
     costSell: 250
@@ -4123,6 +4223,7 @@
 #*** marine-size boltpistols ***
   - type: STR_PISTOL  #BOLTER PISTOL  10100
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     dropoff: 5
     costBuy: 3500
@@ -4265,6 +4366,7 @@
     listOrder: 10140
   - type: STR_PISTOL_CLIP #              10210                    ToStun
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 450
     costSell: 250
@@ -4371,6 +4473,7 @@
     requiresBuy:
       - STR_LIGHT_BOLTERS
       - STR_ADEPTAS
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.3
     dropoff: 5
     costBuy: 5000
@@ -4462,6 +4565,7 @@
     categories: [STR_CAT_BOLTER]
     requiresBuy:
       - STR_LIGHT_BOLTERS
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.3
     dropoff: 5
     costBuy: 5000
@@ -4493,6 +4597,7 @@
     categories: [STR_CAT_BOLTER]
     requiresBuy:
       - STR_LIGHT_BOLTERS
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.3
     dropoff: 5
     costBuy: 5000
@@ -4523,6 +4628,7 @@
     categories: [STR_CAT_BOLTER]
     requiresBuy:
       - STR_LIGHT_BOLTERS
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 300
     costSell: 150
@@ -4549,6 +4655,7 @@
     listOrder: 10295
   - type: STR_LIGHT_BOLTER_AMMO_MC
     categories: [STR_CAT_BOLTER]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     #costBuy: 300
     #costSell: 150
@@ -4577,6 +4684,7 @@
 #*** marine-sized bolters ***
   - type: STR_RIFLE #BOLTER #         10300
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.3
     dropoff: 5
     costBuy: 5000
@@ -4669,6 +4777,7 @@
     requiresBuy:
       - STR_PRIMARIS
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.3
     dropoff: 5
     costBuy: 10000
@@ -4798,6 +4907,7 @@
     listOrder: 10360
   - type: STR_RIFLE_CLIP #            10410                      ToStun
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 300
     costSell: 150
@@ -4977,6 +5087,7 @@
 
   - type: STR_STUN_ROD #           3004
     categories: [STR_CAT_MELEE, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     bigSprite: 282
     floorSprite: 156
     handSprite: 496
@@ -4998,6 +5109,7 @@
     categories: [ STR_CAT_EQUIPMENT]
     requiresBuy:
       - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.3
     costBuy: 1000000
     costSell: 500000
@@ -5044,6 +5156,7 @@
     listOrder: 30600
   - type: STR_POWERFIST            #12600           DA POWER
     categories: [STR_CAT_MELEE, STR_CAT_ASSAULT]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 5000
     costSell: 2500
@@ -5078,6 +5191,7 @@
     listOrder: 12600
   - type: STR_CHAINSWORD #         12400            DA CHAIN
     categories: [STR_CAT_MELEE, STR_CAT_ASSAULT]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     costBuy: 5000
     costSell: 2500
@@ -5417,6 +5531,7 @@
     listOrder: 15100
   - type: STR_KNIF #                3010
     categories: [STR_CAT_MELEE, STR_CAT_SCOUT]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     costBuy: 500
     costSell: 50
@@ -6290,6 +6405,7 @@
 #---Tatical------------------------------------------------------      dropoff: 5
   - type: STR_SHOTGUN #                               10600
     categories: [ STR_CAT_SHOTGUN, STR_CAT_SCOUT]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     costBuy: 10000
     costSell: 5000
@@ -6344,6 +6460,7 @@
 
   - type: STR_SHOTGUN_SHELLS #                        10710
     categories: [ STR_CAT_SHOTGUN, STR_CAT_SCOUT]
+    requiresBuyBaseFunc: [IMPERIUM]
     shotgunBehavior: 1   #*** makes the shotgun a bit more useful at range bit tightening the spread ***
     shotgunSpread: 25
     size: 0.1
@@ -6363,6 +6480,7 @@
     shotgunPellets: 6
   - type: STR_FLAMETHROWER #                          10500
     categories: [ STR_CAT_FLAMER, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     costBuy: 8000
     costSell: 6500
@@ -6446,6 +6564,7 @@
     listOrder: 10510
   - type: STR_FLAMETHROWER_CLIP #                     10520
     categories: [ STR_CAT_FLAMER, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     costBuy: 500
     costSell: 400
@@ -6474,6 +6593,7 @@
     listOrder: 10520
   - type: STR_ASSAULT_BOLTER #HEAVYBOLTER                12001
     categories: [STR_CAT_BOLTER, STR_CAT_DEVASTATOR]
+    requiresBuyBaseFunc: [IMPERIUM]
     requiresBuy:
       - STR_PRIMARIS
     size: 0.3
@@ -6510,6 +6630,7 @@
     listOrder: 12000
   - type: STR_AUTO_CANNON #HEAVYBOLTER                12000
     categories: [STR_CAT_BOLTER, STR_CAT_DEVASTATOR]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.3
     dropoff: 5
     costBuy: 13500
@@ -6547,6 +6668,7 @@
     listOrder: 12000
   - type: STR_AC_AP_AMMO #HEAVYBOLTER                 12010                           ToStun
     categories: [STR_CAT_BOLTER, STR_CAT_DEVASTATOR]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 1200
     costSell: 800
@@ -6573,6 +6695,7 @@
     listOrder: 12020
   - type: STR_AC_MC_AMMO  #HEAVYBOLTER                12020
     categories: [STR_CAT_BOLTER, STR_CAT_DEVASTATOR]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costSell: 1600
     weight: 20
@@ -6599,6 +6722,7 @@
     listOrder: 12020
   - type: STR_AC_HE_AMMO #HEAVYBOLTER                 12030
     categories: [STR_CAT_BOLTER, STR_CAT_DEVASTATOR]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 1500
     costSell: 1180
@@ -6618,6 +6742,7 @@
     listOrder: 12030
   - type: STR_AC_I_AMMO #HEAVYBOLTER                  12040
     categories: [STR_CAT_BOLTER, STR_CAT_DEVASTATOR]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 1400
     costSell: 1050
@@ -6637,6 +6762,7 @@
     listOrder: 12040
   - type: STR_HEAVY_CANNON #SNIPER                    11900                           AIMED
     categories: [STR_CAT_SNIPER, STR_CAT_SCOUT]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.3
     costBuy: 18400
     costSell: 4800
@@ -6695,6 +6821,7 @@
 
   - type: STR_HC_AP_AMMO #SNIPER AP                   11910
     categories: [STR_CAT_SNIPER, STR_CAT_SCOUT]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 300
     costSell: 225
@@ -6715,6 +6842,7 @@
     listOrder: 11910
   - type: STR_HC_HE_AMMO #SNIPER HE                   11920
     categories: [STR_CAT_SNIPER, STR_CAT_SCOUT]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 500
     costSell: 275
@@ -6734,6 +6862,7 @@
     listOrder: 11920
   - type: STR_HC_I_AMMO #SNIPER I                     11930
     categories: [STR_CAT_SNIPER, STR_CAT_SCOUT]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 400
     costSell: 300
@@ -6752,6 +6881,7 @@
     listOrder: 11930
   - type: STR_ROCKET_LAUNCHER #                       12100                                  AIMED
     categories: [ STR_CAT_ROCKETL, STR_CAT_DEVASTATOR]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.4
     dropoff: 5
     costBuy: 14000
@@ -6836,6 +6966,7 @@
     listOrder: 12120
   - type: STR_SMALL_ROCKET #                          12130
     categories: [ STR_CAT_ROCKETL, STR_CAT_DEVASTATOR]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     costBuy: 6000
     costSell: 4800
@@ -6883,6 +7014,7 @@
     listOrder: 12160
   - type: STR_LARGE_ROCKET #                          12140
     categories: [ STR_CAT_ROCKETL, STR_CAT_DEVASTATOR]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     costBuy: 9000
     costSell: 7200
@@ -6903,6 +7035,7 @@
     listOrder: 12140
   - type: STR_INCENDIARY_ROCKET #                     12150
     categories: [ STR_CAT_ROCKETL, STR_CAT_DEVASTATOR]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     costBuy: 7200
     costSell: 5760
@@ -6922,6 +7055,7 @@
     listOrder: 12150
 #---LASGUNS------------------------------------------------------      dropoff: 5 no amied
   - type: STR_LASER_PISTOL  #LASPISTOL                 10800
+    requiresBuyBaseFunc: [IMPERIUM]
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
     size: 0.1
     dropoff: 5
@@ -6977,6 +7111,7 @@
     listOrder: 10820
   - type: STR_LASER_PISTOLG  #LASPISTOL  GUARD         10810
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     dropoff: 5
     costBuy: 1500
@@ -7002,6 +7137,7 @@
     listOrder: 10810
   - type: STR_LASPISTOL_CLIP #LASPISTOL CLIP           10850
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.05
     costBuy: 75
     costSell: 40
@@ -7054,12 +7190,14 @@
   #  listOrder: 10860
   - type: STR_LASER_RIFLE #LASGUN                      10900
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     dropoff: 5
     costBuy: 7000
     requiresBuy:
       - STR_LASER_WEAPONS
       - STR_MARINES_AND_ADEPTAS
+    requiresBuyBaseFunc: [IMPERIUM]
     costSell: 2000
     weight: 8
     bigSprite: 0
@@ -7150,6 +7288,7 @@
       time: true
   - type: STR_LASER_RIFLEG #LASGUN GUARD               10910
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     dropoff: 5
     costBuy: 3500
@@ -7196,6 +7335,7 @@
       time: true
   - type: STR_LASGUN_CLIP #LASGUN CLIP                 11010
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.05
     costBuy: 125
     costSell: 75
@@ -7698,6 +7838,7 @@
     bulletSpeed: 50
   - type: STR_SERVITOR #UNIT                                    2100
     categories: [STR_CAT_AUXILIARY]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 1
     costBuy: 10000
     costSell: 5000
@@ -7954,6 +8095,7 @@
     recover: false
   - type: STR_TANK_ROCKET_LAUNCHER #Tarantula Sentry Weapon    2300
     categories: [STR_CAT_AUXILIARY]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 6
     customItemPreviewIndex: 3
     costBuy: 480000
@@ -7979,6 +8121,7 @@
     listOrder: 2300
   - type: STR_HWP_ROCKETS #Tarantula Sentry rockets            2310
     categories: [STR_CAT_AUXILIARY]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.6
     weight: 1
     costBuy: 3000
@@ -10279,6 +10422,18 @@
     battleType: 11
     armor: 60
     listOrder: 19942
+  - type: STR_ELDAR_REAPER_CORPSE               #ELDAR 19943
+    size: 0.3
+    costSell: 20000
+    weight: 30
+    bigSprite: 407
+    floorSprite: 420
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 60
+    listOrder: 19943
   - type: STR_SEER_CORPSE                  #ELDAR 19950
     size: 0.3
     costSell: 20000
@@ -10970,6 +11125,7 @@
   - type: STR_GUARD_ARMORH                 #20
     requiresBuy:
       - STR_GUARD_SUPORT
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.4
     listOrder: 6700
     costBuy: 20000
@@ -10982,6 +11138,7 @@
   - type: STR_SENTINEL_ARMOR                #6800
     requiresBuy:
       - STR_GUARD_SUPORT
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 2
     costBuy: 360000
     costSell: 140000
@@ -11121,6 +11278,12 @@
     liveAlien: true
     costSell: 40000
     listOrder: 24000
+  - type: STR_ELDAR_REAPER                              #24001
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 50000
+    listOrder: 24001
   - type: STR_HAVOC             #20200
     size: 0.0
     recover: true

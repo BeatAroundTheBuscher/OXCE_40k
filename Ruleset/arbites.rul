@@ -1477,6 +1477,7 @@ armors:
 #                 #                                        #                      #
 crafts:
   - type: STR_HIDRAPD
+    requiresBuyBaseFunc: [HANGAR]
     takeoffSound: 63 #TANKMOVE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     marker: 30
@@ -1532,6 +1533,7 @@ crafts:
     requires:
       - STR_ARBITES
       - STR_NEW_FIGHTER_PD
+    requiresBuyBaseFunc: [HANGAR]
     marker: 40
     sprite: 1882
     fuelMax: 1000
@@ -1561,6 +1563,7 @@ crafts:
   - type: STR_VULTURE
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    requiresBuyBaseFunc: [HANGAR]
     requires:
       - STR_ARBITES
     maxSkinIndex: 2              # default 0
@@ -1607,6 +1610,7 @@ crafts:
     takeoffSound: 63 #TANKMOVE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 30
+    requiresBuyBaseFunc: [HANGAR]
     requires:
       - STR_ARBITES_HIGHTIER
     sprite: 548
@@ -1762,6 +1766,7 @@ crafts:
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 30
+    requiresBuyBaseFunc: [HANGAR]
     requires:
       - STR_ARBITES
       - STR_NEW_TRANSPORT_PD
@@ -1824,6 +1829,7 @@ crafts:
     selectSound: [62, 63, 64] #REGULAR SOUND
     requires:
       - STR_ARBITES
+    requiresBuyBaseFunc: [HANGAR]
     marker: 36
     maxSkinIndex: 2              # default 0
     skinSprites: [1884,1885]   # default empty, contains all sprites except for the first (index zero)
@@ -1873,6 +1879,7 @@ crafts:
     takeoffSound: 63 #TANKMOVE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 30
+    requiresBuyBaseFunc: [HANGAR]
     requires:
       - STR_ARBITES
     maxSkinIndex: 2              # default 0
@@ -1958,6 +1965,7 @@ items:
     categories: [ STR_CAT_SHOTGUN, STR_CAT_SCOUT]
     requiresBuy:
       - STR_ARBITES
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     costBuy: 15000
     costSell: 7500
@@ -2048,6 +2056,7 @@ items:
     categories: [ STR_CAT_SHOTGUN, STR_CAT_SCOUT]
     requiresBuy:
       - STR_ARBITES
+    requiresBuyBaseFunc: [IMPERIUM]
     shotgunBehavior: 1   #*** makes the shotgun a bit more useful at range bit tightening the spread ***
     shotgunSpread: 25
     size: 0.1
@@ -2076,6 +2085,7 @@ items:
   - type: STR_SHOTGUN_SHELLS_INC #                       10612
     requiresBuy:
       - STR_ARBITES
+    requiresBuyBaseFunc: [IMPERIUM]
     categories: [ STR_CAT_SHOTGUN, STR_CAT_SCOUT]
     shotgunBehavior: 1   #*** makes the shotgun a bit more useful at range bit tightening the spread ***
     shotgunSpread: 25
@@ -2106,6 +2116,7 @@ items:
   - type: STR_SHOTGUN_SHELLS_MC #                        10613
     requiresBuy:
       - STR_ARBITES
+    requiresBuyBaseFunc: [IMPERIUM]
     categories: [ STR_CAT_SHOTGUN, STR_CAT_SCOUT]
     shotgunBehavior: 1   #*** makes the shotgun a bit more useful at range bit tightening the spread ***
     shotgunSpread: 25
@@ -2130,6 +2141,7 @@ items:
     categories: [STR_CAT_AUTO]
     requiresBuy:
       - STR_ARBITES
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.3
     dropoff: 5
     costBuy: 9000
@@ -2165,6 +2177,7 @@ items:
   - type: STR_SENTINELPD_ARMOR                #6800
     requiresBuy:
       - STR_ARBITES
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 2
     costBuy: 360000
     costSell: 140000
@@ -2173,6 +2186,7 @@ items:
   - type: STR_SENTINELPD_ARMOR_MISSILE               #6810
     requiresBuy:
       - STR_ARBITES
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 2
     costBuy: 420000
     costSell: 184000
@@ -2182,6 +2196,7 @@ items:
     categories: [STR_CAT_AUXILIARY]
     requiresBuy:
       - STR_ARBITES
+    requiresBuyBaseFunc: [IMPERIUM]
     costBuy: 2400
     costSell: 1920
     size: 0.5
@@ -2202,6 +2217,7 @@ items:
     categories: [STR_CAT_AUXILIARY]
     requiresBuy:
       - STR_ARBITES
+    requiresBuyBaseFunc: [IMPERIUM]
     costBuy: 3600
     costSell: 2840
     bigSprite: 1072
@@ -2223,6 +2239,7 @@ items:
   - type: STR_JUDGE_BIKE_ARMOR                #6650
     requiresBuy:
       - STR_ARBITES
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 2
     costSell: 140000
     transferTime: 20
@@ -2230,6 +2247,7 @@ items:
   - type: STR_GUARDPD_MEDIC_ARMOR                #6600
     requires:
       - STR_ARBITES
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     costBuy: 15000
     costSell: 7500
@@ -2503,6 +2521,7 @@ items:
     categories: [STR_CAT_AUXILIARY]
     requiresBuy:
       - STR_ARBITES
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 2
     customItemPreviewIndex: 28
     costBuy: 45000
@@ -2985,6 +3004,7 @@ soldiers:
     flagOffset: 62
     costBuy: 15000
     costSalary: 5000
+    requiresBuyBaseFunc: [IMPERIUM]
     requires:
       - STR_ARBITES
     minStats:
@@ -3063,6 +3083,7 @@ soldiers:
     flagOffset: 62
     costBuy: 70000
     costSalary: 40000
+    requiresBuyBaseFunc: [IMPERIUM]
     requires:
       - STR_ARBITES
     minStats:

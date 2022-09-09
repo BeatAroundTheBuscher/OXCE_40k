@@ -9,6 +9,7 @@ items:
   - type: STR_CRAFT_MULTILASER
     requires:
       - STR_GUARD_AND_ARBITES
+    requiresBuyBaseFunc: [HANGAR]
     size: 3.0
     costBuy: 72000
     costSell: 54000
@@ -113,6 +114,9 @@ items:
 
   - type: STR_STUB_GUN
     categories: [STR_CAT_AUTO]
+    requiresBuyBaseFunc: [IMPERIUM]
+    requiresBuy:
+      - STR_GUARD_AND_ARBITES
     size: 0.1
     dropoff: 5
     costBuy: 500
@@ -166,6 +170,9 @@ items:
 
   - type: STR_STUB_RIFLE
     categories: [STR_CAT_AUTO]
+    requiresBuyBaseFunc: [IMPERIUM]
+    requiresBuy:
+      - STR_GUARD_AND_ARBITES
     size: 0.2
     dropoff: 5
     costBuy: 1000
@@ -223,6 +230,9 @@ items:
 
   - type: STR_STUB_GUN_AMMO
     categories: [STR_CAT_AUTO]
+    requiresBuyBaseFunc: [IMPERIUM]
+    requiresBuy:
+      - STR_GUARD_AND_ARBITES
     size: 0.1
     costBuy: 150
     costSell: 50
@@ -247,6 +257,9 @@ items:
 
   - type: STR_AUTOPISTOL
     categories: [STR_CAT_AUTO]
+    requiresBuyBaseFunc: [IMPERIUM]
+    requiresBuy:
+      - STR_GUARD_AND_ARBITES
     size: 0.1
     dropoff: 5
     costBuy: 1500
@@ -309,6 +322,9 @@ items:
 
   - type: STR_AUTOPISTOL_CLIP
     categories: [STR_CAT_AUTO]
+    requiresBuyBaseFunc: [IMPERIUM]
+    requiresBuy:
+      - STR_GUARD_AND_ARBITES
     size: 0.1
     costBuy: 200
     costSell: 75
@@ -331,6 +347,9 @@ items:
 
   - type: STR_AUTOGUN
     categories: [STR_CAT_AUTO]
+    requiresBuyBaseFunc: [IMPERIUM]
+    requiresBuy:
+      - STR_GUARD_AND_ARBITES
     size: 0.2
     dropoff: 5
     costBuy: 3500
@@ -429,6 +448,9 @@ items:
 
   - type: STR_AUTOGUN_CLIP
     categories: [STR_CAT_AUTO]
+    requiresBuyBaseFunc: [IMPERIUM]
+    requiresBuy:
+      - STR_GUARD_AND_ARBITES
     size: 0.1
     costBuy: 300
     costSell: 105
@@ -451,6 +473,7 @@ items:
 
   - type: STR_HEAVY_STUBBER
     categories: [STR_CAT_AUTO]
+    requiresBuyBaseFunc: [IMPERIUM]
     requiresBuy:
         - STR_GUARD_SUPORT
     size: 0.3
@@ -482,6 +505,7 @@ items:
 
   - type: STR_HEAVY_STUBBER_CHAOS
     categories: [STR_CAT_AUTO]
+    requiresBuyBaseFunc: [IMPERIUM]
     requires:
       - STR_ALIENS_ONLY
     size: 0.3
@@ -517,6 +541,9 @@ items:
 
   - type: STR_HEAVY_STUBBER_CLIP
     categories: [STR_CAT_AUTO]
+    requiresBuyBaseFunc: [IMPERIUM]
+    requiresBuy:
+      - STR_GUARD_AND_ARBITES
     size: 0.1
     costBuy: 600
     costSell: 225
@@ -786,6 +813,7 @@ items:
 
   - type: STR_LONGLAS
     categories: [STR_CAT_LASGUN, STR_CAT_SNIPER]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     dropoff: 5
     costBuy: 28750
@@ -888,6 +916,7 @@ items:
 
   - type: STR_LASGUN_CLIP_HOTSHOT
     categories: [STR_CAT_LASGUN, STR_CAT_SNIPER]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 4000
     requiresBuy:
@@ -973,6 +1002,7 @@ items:
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
     categories: [STR_CAT_BOLTER]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.3
     dropoff: 3
     costBuy: 13500
@@ -1010,6 +1040,7 @@ items:
   - type: STR_GRENADE_LAUNCHER
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
+    requiresBuyBaseFunc: [IMPERIUM]
     categories: [STR_CAT_ROCKETL]
     size: 0.4
     dropoff: 5
@@ -1071,6 +1102,7 @@ items:
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
     categories: [STR_CAT_ROCKETL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 800
     costSell: 600
@@ -1091,6 +1123,7 @@ items:
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
     categories: [STR_CAT_ROCKETL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 800
     costSell: 600
@@ -1111,6 +1144,7 @@ items:
     requiresBuy:
       - STR_IMPERIAL_GUARD_OPERATIONS
     categories: [STR_CAT_ROCKETL]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 800
     costSell: 600
@@ -1129,6 +1163,7 @@ items:
 
   - type: STR_PHOTON_GRENADE
     categories: [ STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
     requiresBuy:
       - STR_PHOTON_GRENADE_REQUISITION
     size: 0.1
@@ -1198,6 +1233,7 @@ items:
     categories: [STR_CAT_AUXILIARY]
     requiresBuy:
       - STR_IMPERIAL_GUARD_MIDTIER
+    requiresBuyBaseFunc: [IMPERIUM]
     costBuy: 2400
     costSell: 1920
     size: 0.5
@@ -1217,6 +1253,7 @@ items:
 
   - type: STR_SENTINEL_KRAKK_MISSILES
     categories: [STR_CAT_AUXILIARY]
+    requiresBuyBaseFunc: [IMPERIUM]
     requiresBuy:
       - STR_IMPERIAL_GUARD_MIDTIER
     costBuy: 3600
@@ -1553,6 +1590,7 @@ items:
   - type: STR_COMMISSAR_CARAPACE
     requiresBuy:
       - STR_IMPERIAL_GUARD_MIDTIER
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.4
     listOrder: 7350
     costBuy: 50000
@@ -1575,6 +1613,7 @@ items:
   - type: STR_GUARD_ARMORS_MEDIC
     requiresBuy:
       - STR_GUARD_SUPORT
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     costBuy: 15000
     costSell: 7500
@@ -1583,6 +1622,7 @@ items:
   - type: STR_MEDIC_CARAPACE_ARMOR
     requiresBuy:
       - STR_GUARD_SUPORT
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.2
     costBuy: 35000
     costSell: 12500
@@ -2077,6 +2117,7 @@ items:
     categories: [STR_CAT_SHOTGUN]
     requiresBuy:
       - STR_OGRYN_REQUISITION
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.6
     dropoff: 5
     costBuy: 18000
@@ -2127,6 +2168,7 @@ items:
     categories: [STR_CAT_SHOTGUN]
     requiresBuy:
       - STR_OGRYN_REQUISITION
+    requiresBuyBaseFunc: [IMPERIUM]
     shotgunBehavior: 1
     shotgunSpread: 35
     size: 0.3
@@ -3284,15 +3326,18 @@ items:
   - type: STR_TANK_CANNON
     requiresBuy:
       - STR_MARINES_STRATEGY
-
+    requiresBuyBaseFunc: [IMPERIUM]
   - type: STR_HWP_CANNON_SHELLS
     requiresBuy:
       - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [IMPERIUM]
 
   - type: STR_BIKE_ARMOR
     requiresBuy:
       - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [IMPERIUM]
 
   - type: STR_BANNER
     requiresBuy:
       - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [IMPERIUM]

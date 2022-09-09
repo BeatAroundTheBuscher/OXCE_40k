@@ -1,5 +1,6 @@
 ﻿facilities:
   - type: STR_ACCESS_LIFT
+    placeSound: 98
     spriteShape: 2
     spriteFacility: 17
     lift: true
@@ -9,7 +10,9 @@
     monthlyCost: 4000
     mapName: XBASE_00
   - type: STR_LIVING_QUARTERS
+    placeSound: 98
     requiresBaseFunc: [BASE]
+    provideBaseFunc: [IMPERIUM]
     spriteShape: 1
     spriteFacility: 18
     buildCost: 400000
@@ -18,6 +21,7 @@
     personnel: 50
     mapName: XBASE_01
   - type: STR_LABORATORY
+    placeSound: 98
     requiresBaseFunc: [BASE]
     spriteShape: 1
     spriteFacility: 19
@@ -27,6 +31,7 @@
     labs: 25
     mapName: XBASE_02
   - type: STR_WORKSHOP
+    placeSound: 98
     requiresBaseFunc: [BASE]
     spriteShape: 1
     spriteFacility: 20
@@ -36,6 +41,7 @@
     workshops: 50
     mapName: XBASE_03
   - type: STR_SMALL_RADAR_SYSTEM
+    placeSound: 98
     requiresBaseFunc: [BASE]
     spriteShape: 2
     spriteFacility: 21
@@ -46,6 +52,7 @@
     radarChance: 10
     mapName: XBASE_04
   - type: STR_LARGE_RADAR_SYSTEM
+    placeSound: 98
     requiresBaseFunc: [BASE]
     spriteShape: 1
     spriteFacility: 22
@@ -56,6 +63,7 @@
     radarChance: 20
     mapName: XBASE_05
   - type: STR_MISSILE_DEFENSES
+    placeSound: 98
     requiresBaseFunc: [BASE]
     spriteShape: 2
     spriteFacility: 23
@@ -68,7 +76,9 @@
     hitSound: 10
     mapName: XBASE_06
   - type: STR_GENERAL_STORES
+    placeSound: 98
     requiresBaseFunc: [BASE]
+    provideBaseFunc: [IMPERIUM]
     spriteShape: 1
     spriteFacility: 24
     buildCost: 150000
@@ -77,6 +87,7 @@
     storage: 50
     mapName: XBASE_07
   - type: STR_ALIEN_CONTAINMENT
+    placeSound: 98
     requiresBaseFunc: [BASE]
     spriteShape: 1
     spriteFacility: 33
@@ -87,6 +98,7 @@
     provideBaseFunc: [PRISION]
     mapName: XBASE_26 #OLD 08
   - type: STR_PRISION
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_ARBITES
@@ -100,6 +112,7 @@
     provideBaseFunc: [PRISION]
     mapName: XBASE_36
   - type: STR_LASER_DEFENSES
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_LASER_DEFENSE
@@ -114,6 +127,7 @@
     hitSound: 10
     mapName: XBASE_09
   - type: STR_PLASMA_DEFENSES
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_PLASMA_DEFENSE
@@ -128,6 +142,7 @@
     hitSound: 10
     mapName: XBASE_10
   - type: STR_FUSION_BALL_DEFENSES
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_FUSION_DEFENSE
@@ -142,6 +157,7 @@
     hitSound: 10
     mapName: XBASE_11
   - type: STR_GRAV_SHIELD
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_GRAV_SHIELD
@@ -153,6 +169,7 @@
     monthlyCost: 15000
     mapName: XBASE_12
   - type: STR_MIND_SHIELD
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_MIND_SHIELD
@@ -164,6 +181,7 @@
     monthlyCost: 5000
     mapName: XBASE_13
   - type: STR_PSIONIC_LABORATORY
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_PSI_LAB
@@ -176,6 +194,7 @@
     provideBaseFunc: [PSI]
     mapName: XBASE_14
   - type: STR_HYPER_WAVE_DECODER
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_HYPER_WAVE_DECODER
@@ -189,7 +208,9 @@
     radarChance: 100
     mapName: XBASE_15
   - type: STR_HANGAR
+    placeSound: 98
     requiresBaseFunc: [BASE]
+    provideBaseFunc: [HANGAR, IMPERIUM]
     spriteShape: 9
     spriteFacility: 9
     size: 2
@@ -199,6 +220,7 @@
     crafts: 1
     mapName: XBASE_16
   - type: STR_COMUNICATIONS
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_NAVY_COMUNICATIONS
@@ -213,6 +235,7 @@
     mapName: XBASE_21
     listOrder: 800
   - type: STR_ARMORY
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_MT
@@ -224,10 +247,11 @@
     refundValue: 250000
     storage: 25
     maxAllowedPerBase: 1
-    provideBaseFunc: [ARMO]
+    provideBaseFunc: [ARMO, IMPERIUM]
     mapName: XBASE_25
     listOrder: 801
   - type: STR_ARMORY_ARBITES
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_ARBITES_MIDTIER
@@ -243,6 +267,7 @@
     mapName: XBASE_25
     listOrder: 801
   - type: STR_APOC_BAY
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_APOC_BAY
@@ -259,6 +284,7 @@
     mapName: XBASE_08
     listOrder: 802
   - type: STR_LIBRARY
+    placeSound: 98
     requires:
       - STR_LIBRARY
     spriteShape: 1
@@ -274,6 +300,7 @@
     mapName: XBASE_27
     listOrder: 803
   - type: STR_INQOFF
+    placeSound: 98
     requires:
       - STR_INQOFF
     spriteShape: 1
@@ -289,6 +316,7 @@
     mapName: XBASE_27
     listOrder: 803
   - type: STR_TEC_BAY
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_TEC_BAYR
@@ -305,6 +333,7 @@
     mapName: XBASE_28
     listOrder: 804
   - type: STR_TEC_BAY_CHAMBER
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_TEC_BAY_CHAMBER_R
@@ -321,6 +350,7 @@
     mapName: XBASE_28
     listOrder: 804
   - type: STR_DEFENSE_CORRIDOR
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_DEFENSE_CORRIDORR
@@ -333,6 +363,7 @@
     mapName: XBASE_29
     listOrder: 2
   - type: STR_DEFENSE_HALL
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_ARBITES
@@ -344,6 +375,7 @@
     mapName: XBASE_37
     listOrder: 2
   - type: STR_DEFENSE_CORRIDORB
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_DEFENSE_CORRIDORBR
@@ -356,6 +388,7 @@
     mapName: XBASE_38
     listOrder: 2
   - type: STR_DEFENSE_CORRIDORGK
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_DEFENSE_CORRIDORGK
@@ -368,6 +401,7 @@
     mapName: XBASE_77
     listOrder: 2
   - type: STR_CORRIDOR
+    placeSound: 98
     requiresBaseFunc: [BASE]
     spriteShape: 3
     spriteFacility: 03
@@ -377,6 +411,7 @@
     mapName: XBASE_31
     listOrder: 1
   - type: STR_STEELMILL
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_STEELMILLR
@@ -392,6 +427,7 @@
     mapName: XBASE_40
     listOrder: 800
   - type: STR_TRAINFACILITY
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_TRAINFACILITYR
@@ -406,6 +442,7 @@
     mapName: XBASE_32
     listOrder: 100
   - type: STR_CHAOS_SHRINE
+    placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
       - STR_ALIENS_ONLY
@@ -420,6 +457,7 @@
     mapName: XBASE_49
     listOrder: 850
   - type: STR_ACCESS_OUTP
+    placeSound: 98
     spriteShape: 0
     spriteFacility: 632
     lift: true
@@ -438,9 +476,11 @@
         blocks: [51] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
         size: [1, 1, 3] # if the craft is going on z = 1, the height here needs to be 1
   - type: STR_OUTPOST
+    placeSound: 98
     requires:
       - STR_ARBITES
     requiresBaseFunc: [OUTP]
+    provideBaseFunc: [HANGAR, IMPERIUM]
     connectorsDisabled: true
     spriteShape: 600
     spriteFacility: 600
@@ -476,9 +516,11 @@
         blocks: [0]
     listOrder: 800
   - type: STR_OUTPOST_MARINES
+    placeSound: 98
     requires:
       - STR_MARINES_STRATEGY
     requiresBaseFunc: [OUTP]
+    provideBaseFunc: [HANGAR, IMPERIUM]
     connectorsDisabled: true
     spriteShape: 600
     spriteFacility: 600
@@ -514,9 +556,10 @@
         blocks: [0]
     listOrder: 800
   - type: STR_OUTPOST_GUARD
+    placeSound: 98
     requires:
       - STR_IMPERIAL_GUARD_OPERATIONS
-    requiresBaseFunc: [OUTP]
+    requiresBaseFunc: [HANGAR, IMPERIUM]
     connectorsDisabled: true
     spriteShape: 600
     spriteFacility: 600
@@ -552,9 +595,51 @@
         blocks: [0]
     listOrder: 800
   - type: STR_OUTPOST_ADEPTAS
+    placeSound: 98
     requires:
       - STR_ADEPTAS
     requiresBaseFunc: [OUTP]
+    provideBaseFunc: [HANGAR, IMPERIUM]
+    connectorsDisabled: true
+    spriteShape: 600
+    spriteFacility: 600
+    size: 4
+    buildCost: 1000000
+    crafts: 1
+    buildTime: 10
+    monthlyCost: 300000
+    personnel: 50
+    storage: 100
+    radarRange: 2577
+    radarChance: 20
+    mapName: XBASE_60
+    storageTiles:
+            - [24, 6, 1]
+            - [25, 6, 1]
+            - [27, 6, 1]
+            - [22, 4, 1]
+            - [34, 10, 1]
+            - [28, 3, 1]
+            - [27, 3, 2]
+    verticalLevels:
+      - type: ground
+        terrain: baseTerrain
+        groups: [13]
+        size: [4, 4, 0]
+      - type: middle
+        blocks: [60] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
+        size: [4, 4, 1] # if the craft is going on z = 1, the height here needs to be 1
+      - type: ceiling
+        size: [4, 4, 3] # x and y need to match the size of the facility, and all of the heights should add up to the deployment height
+        terrain: VULTURE4X4 # needs a 40x40 map to match the outpost
+        blocks: [0]
+    listOrder: 800
+  - type: STR_OUTPOST_GK
+    placeSound: 98
+    requires:
+      - STR_GREYKNIGHTS
+    requiresBaseFunc: [OUTP]
+    provideBaseFunc: [HANGAR, IMPERIUM]
     connectorsDisabled: true
     spriteShape: 600
     spriteFacility: 600
@@ -590,6 +675,7 @@
         blocks: [0]
     listOrder: 800
   - type: STR_DIRT
+    placeSound: 99
     requiresBaseFunc: [OUTP]
     connectorsDisabled: true
     spriteShape: 0
@@ -607,10 +693,11 @@
       - type: ceiling
         blocks: [57] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
         size: [1, 1, 3] # if the craft is going on z = 1, the height here needs to be 1
-  - type: STR_EMPLACEMENT
+  - type: STR_EMPLACEMENT               #53
+    placeSound: 99
     requiresBaseFunc: [OUTP]
     connectorsDisabled: true
-    spriteShape: 0
+    spriteShape: 724
     spriteFacility: 687
     buildCost: 500000
     buildTime: 10
@@ -626,12 +713,13 @@
       - type: ceiling
         blocks: [53] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
         size: [1, 1, 3] # if the craft is going on z = 1, the height here needs to be 1
-  - type: STR_EMPLACEMENT_HEAVY
+  - type: STR_EMPLACEMENT_HEAVY                #53
+    placeSound: 99
     requires:
       - STR_ARBITES
     requiresBaseFunc: [OUTP]
     connectorsDisabled: true
-    spriteShape: 0
+    spriteShape: 724
     spriteFacility: 634
     buildCost: 600000
     buildTime: 10
@@ -647,7 +735,8 @@
       - type: ceiling
         blocks: [54] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
         size: [1, 1, 3] # if the craft is going on z = 1, the height here needs to be 1
-  - type: STR_MINEFIELD
+  - type: STR_MINEFIELD                #55
+    placeSound: 99
     requiresBaseFunc: [OUTP]
     connectorsDisabled: true
     spriteShape: 0
@@ -667,6 +756,7 @@
         blocks: [55] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
         size: [1, 1, 3] # if the craft is going on z = 1, the height here needs to be 1
   - type: STR_TRAINCAMP
+    placeSound: 99
     requiresBaseFunc: [OUTP]
     connectorsDisabled: true
     spriteShape: 637
@@ -678,7 +768,7 @@
     storage: 50
     monthlyCost: 60000
     trainingRooms: 50
-    provideBaseFunc: [TRAIN]
+    provideBaseFunc: [TRAIN, IMPERIUM]
     mapName: XBASE_59
     storageTiles:
             - [21, 6, 1]
@@ -698,6 +788,7 @@
         size: [4, 4, 1] # if the craft is going on z = 1, the height here needs to be 1
     listOrder: 100
   - type: STR_MARKET
+    placeSound: 99
     requiresBaseFunc: [OUTP]
     connectorsDisabled: true
     spriteShape: 655
@@ -716,7 +807,7 @@
             - [25, 17, 1]
             - [26, 17, 1]
             - [26, 13, 1]
-    provideBaseFunc: [TRADE]
+    provideBaseFunc: [TRADE, IMPERIUM]
     mapName: XBASE_58
     verticalLevels:
       - type: ground
@@ -732,9 +823,10 @@
         blocks: [0]
     listOrder: 100
   - type: STR_POWERG
+    placeSound: 99
     requiresBaseFunc: [OUTP]
     connectorsDisabled: true
-    spriteShape: 0
+    spriteShape: 724
     spriteFacility: 688
     buildCost: 1000000
     buildTime: 20
@@ -752,8 +844,260 @@
         size: [1, 1, 1] # if the craft is going on z = 1, the height here needs to be 1
       - type: ceiling
         size: [1, 1, 3] # x and y need to match the size of the facility, and all of the heights should add up to the deployment height
-        terrain: GENERATOR # needs a 40x40 map to match the outpost
+        terrain: GENERATOR
         blocks: [0]
+#ELDAR-----------------------------
+  - type: STR_ELDARWALLN
+    requires:
+      - STR_ELDAR_PATH
+    placeSound: 99
+    requiresBaseFunc: [ELDAROUT]
+    connectorsDisabled: true
+    spriteShape: 724
+    spriteFacility: 697
+    buildCost: 100000
+    buildTime: 5
+    monthlyCost: 10000
+    mapName: XBASE_57
+    listOrder: 4
+    verticalLevels:
+      - type: ground
+        terrain: baseTerrain
+        size: [1, 1, 0]
+        groups: [10]
+      - type: middle
+        blocks: [57]
+        size: [1, 1, 1] # if the craft is going on z = 1, the height here needs to be 1
+      - type: ceiling
+        terrain: ELDARWALLN
+        size: [1, 1, 3] # x and y need to match the size of the facility, and all of the heights should add up to the deployment height
+        blocks: [0]
+  - type: STR_ELDARWALLS
+    requires:
+      - STR_ELDAR_PATH
+    placeSound: 99
+    requiresBaseFunc: [ELDAROUT]
+    connectorsDisabled: true
+    spriteShape: 724
+    spriteFacility: 695
+    buildCost: 100000
+    buildTime: 5
+    monthlyCost: 10000
+    mapName: XBASE_57
+    listOrder: 4
+    verticalLevels:
+      - type: ground
+        terrain: baseTerrain
+        size: [1, 1, 0]
+        groups: [10]
+      - type: middle
+        blocks: [57]
+        size: [1, 1, 1] # if the craft is going on z = 1, the height here needs to be 1
+      - type: ceiling
+        terrain: ELDARWALLS
+        size: [1, 1, 3] # x and y need to match the size of the facility, and all of the heights should add up to the deployment height
+        blocks: [0]
+  - type: STR_ELDARWALLE
+    requires:
+      - STR_ELDAR_PATH
+    placeSound: 99
+    requiresBaseFunc: [ELDAROUT]
+    connectorsDisabled: true
+    spriteShape: 724
+    spriteFacility: 696
+    buildCost: 100000
+    buildTime: 5
+    monthlyCost: 10000
+    mapName: XBASE_57
+    listOrder: 4
+    verticalLevels:
+      - type: ground
+        terrain: baseTerrain
+        size: [1, 1, 0]
+        groups: [10]
+      - type: middle
+        blocks: [57]
+        size: [1, 1, 1] # if the craft is going on z = 1, the height here needs to be 1
+      - type: ceiling
+        terrain: ELDARWALLE
+        size: [1, 1, 3] # x and y need to match the size of the facility, and all of the heights should add up to the deployment height
+        blocks: [0]
+  - type: STR_ELDARWALLW
+    requires:
+      - STR_ELDAR_PATH
+    placeSound: 99
+    requiresBaseFunc: [ELDAROUT]
+    connectorsDisabled: true
+    spriteShape: 724
+    spriteFacility: 694
+    buildCost: 100000
+    buildTime: 5
+    monthlyCost: 10000
+    mapName: XBASE_57
+    listOrder: 4
+    verticalLevels:
+      - type: ground
+        terrain: baseTerrain
+        size: [1, 1, 0]
+        groups: [10]
+      - type: middle
+        blocks: [57]
+        size: [1, 1, 1] # if the craft is going on z = 1, the height here needs to be 1
+      - type: ceiling
+        terrain: ELDARWALLW
+        size: [1, 1, 3] # x and y need to match the size of the facility, and all of the heights should add up to the deployment height
+        blocks: [0]
+  - type: STR_ELDARDIRT
+    requires:
+      - STR_ELDAR_PATH
+    placeSound: 99
+    requiresBaseFunc: [ELDAROUT]
+    connectorsDisabled: true
+    spriteShape: 0
+    spriteFacility: 633
+    buildCost: 0
+    buildTime: 0
+    monthlyCost: 0
+    mapName: XBASE_57
+    listOrder: 4
+    verticalLevels:
+      - type: ground
+        terrain: baseTerrain
+        size: [1, 1, 0]
+        groups: [10]
+      - type: ceiling
+        blocks: [57] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
+        size: [1, 1, 3] # if the craft is going on z = 1, the height here needs to be 1      
+  - type: STR_ELDARHANGAR
+    requires:
+      - STR_ELDAR_PATH
+    placeSound: 99
+    requiresBaseFunc: [ELDAROUT]
+    connectorsDisabled: true
+    spriteShape: 698
+    spriteFacility: 698
+    size: 3
+    buildCost: 200000
+    buildTime: 25
+    crafts: 1
+    storage: 20
+    monthlyCost: 25000
+    provideBaseFunc: [TRAIN]
+    mapName: XBASE_64
+    storageTiles:
+            - [21, 6, 1]
+            - [20, 6, 1]
+            - [22, 3, 1]
+            - [21, 10, 1]
+            - [21, 12, 1]
+            - [21, 13, 1]
+            - [21, 4, 2]
+    verticalLevels:
+      - type: ground
+        terrain: baseTerrain
+        size: [3, 3, 0]
+        blocks: [2]
+      - type: middle
+        blocks: [64] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
+        size: [3, 3, 1] # if the craft is going on z = 1, the height here needs to be 1
+      - type: middle
+        terrain: HORNETP3X3
+        blocks: [0] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
+        size: [3, 3, 1] # if the craft is going on z = 1, the height here needs to be 1
+      - type: ceiling
+        terrain: ELDARHANGAR
+        blocks: [0] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
+        size: [3, 3, 3] # if the craft is going on z = 1, the height here needs to be 1
+    listOrder: 100 
+  - type: STR_ELDARPOD
+    requires:
+      - STR_ELDAR_PATH
+    placeSound: 99
+    requiresBaseFunc: [ELDAROUT]
+    connectorsDisabled: true
+    spriteShape: 724
+    spriteFacility: 689
+    size: 1
+    buildCost: 400000
+    buildTime: 10
+    monthlyCost: 150000
+    maxAllowedPerBase: 4
+    personnel: 6
+    storage: 25
+    mapName: XBASE_57
+    storageTiles:
+            - [3, 2, 1]
+            - [3, 3, 1]
+            - [3, 4, 1]
+            - [3, 5, 1]
+    listOrder: 8
+    verticalLevels:
+      - type: ground
+        terrain: baseTerrain
+        size: [1, 1, 0]
+        groups: [10]
+      - type: middle
+        blocks: [57]
+        size: [1, 1, 1] # if the craft is going on z = 1, the height here needs to be 1
+      - type: ceiling
+        terrain: ELDARPOD
+        size: [1, 1, 3] # x and y need to match the size of the facility, and all of the heights should add up to the deployment height
+        blocks: [0]
+  - type: STR_ELDARACCESS
+    requires:
+      - STR_ELDAR_PATH
+    placeSound: 99
+    spriteShape: 690
+    spriteFacility: 690
+    lift: true
+    size: 2
+    provideBaseFunc: [ELDAROUT]
+    connectorsDisabled: true
+    buildCost: 300000
+    buildTime: 1
+    monthlyCost: 1000
+    mapName: XBASE_63
+    verticalLevels:
+      - type: ground
+        terrain: baseTerrain
+        size: [2, 2, 0]
+        groups: [11]
+      - type: middle
+        blocks: [63] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
+        size: [2, 2, 1] # if the craft is going on z = 1, the height here needs to be 1
+      - type: ceiling
+        terrain: ELDARACESS
+        blocks: [0] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
+        size: [2, 2, 3] # if the craft is going on z = 1, the height here needs to be 1
+  - type: STR_ELDARPORTAL
+    requires:
+      - STR_ELDAR_PATH
+    placeSound: 99
+    spriteShape: 716
+    spriteFacility: 716
+    size: 2
+    hyper: true
+    radarRange: 2759
+    radarChance: 100
+    requiresBaseFunc: [ELDAROUT]
+    provideBaseFunc: [ASPECT]
+    connectorsDisabled: true
+    buildCost: 1400000
+    buildTime: 20
+    monthlyCost: 50000
+    mapName: XBASE_63
+    verticalLevels:
+      - type: ground
+        terrain: baseTerrain
+        size: [2, 2, 0]
+        groups: [11]
+      - type: middle
+        blocks: [63] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
+        size: [2, 2, 1] # if the craft is going on z = 1, the height here needs to be 1
+      - type: ceiling
+        terrain: ELDARWEB
+        blocks: [0] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
+        size: [2, 2, 3] # if the craft is going on z = 1, the height here needs to be 1
 terrains:
 #BASE TERRAIN CLIMATE
   - name: XBASE_FILL
@@ -3341,6 +3685,88 @@ terrains:
             - [12, 12, 0]
         fuseTimers:
           STR_MUNITORIUM_SPAWNER: [0, 0]
+#ELDAR-----------------------------
+  - name: ELDARACESS
+    mapDataSets:
+      - BLANKS
+      - ELDARGATE_P
+      - WEBWAY_P
+    mapBlocks:
+      - name: ELDARACESS
+        width: 20
+        length: 20
+  - name: ELDARHANGAR
+    mapDataSets:
+      - BLANKS
+      - ELDARGATE_P
+      - WEBWAY_P
+    mapBlocks:
+      - name: ELDARHANGAR
+        width: 30
+        length: 30
+  - name: ELDARPOD
+    mapDataSets:
+      - BLANKS
+      - ELDARB
+      - WEBWAY_P
+    mapBlocks:
+      - name: ELDARPOD
+        width: 10
+        length: 10
+  - name: ELDARWEB
+    mapDataSets:
+      - BLANKS
+      - ELDARGATE_P
+      - WEBWAY_P
+    mapBlocks:
+      - name: ELDARWEB
+        width: 20
+        length: 20
+  - name: ELDARWALLN
+    mapDataSets:
+      - BLANKS
+      - ELDARGATE_P
+      - WEBWAY_P
+    mapBlocks:
+      - name: ELDARWALLN
+        width: 10
+        length: 10
+  - name: ELDARWALLS
+    mapDataSets:
+      - BLANKS
+      - ELDARGATE_P
+      - WEBWAY_P
+    mapBlocks:
+      - name: ELDARWALLS
+        width: 10
+        length: 10
+  - name: ELDARWALLE
+    mapDataSets:
+      - BLANKS
+      - ELDARGATE_P
+      - WEBWAY_P
+    mapBlocks:
+      - name: ELDARWALLE
+        width: 10
+        length: 10
+  - name: ELDARWALLW
+    mapDataSets:
+      - BLANKS
+      - ELDARGATE_P
+      - WEBWAY_P
+    mapBlocks:
+      - name: ELDARWALLW
+        width: 10
+        length: 10
+  - name: HORNETP3X3
+    mapDataSets:
+      - BLANKS
+      - HORNETP
+    mapBlocks:
+      - name: HORNETP3X3
+        width: 30
+        length: 30
+#--------------------------------
 
   - name: HIVE
     enviroEffects: STR_URBAN_ENVIRO
@@ -4475,7 +4901,7 @@ terrains:
             - [4, 4, 1]
         fuseTimers:
           STR_LEMONRUSSB_SPAWNER: [0, 0]
-      - name: XBASE_55
+      - name: XBASE_55  #MINES
         width: 10
         length: 10
         items:
@@ -4513,12 +4939,12 @@ terrains:
       - name: XBASE_62
         width: 10
         length: 10
-      - name: XBASE_63
-        width: 10
-        length: 10
-      - name: XBASE_64
-        width: 10
-        length: 10
+      - name: XBASE_63 #EMPTY 20X20
+        width: 20
+        length: 20
+      - name: XBASE_64 #EMPTY 30X30
+        width: 30
+        length: 30
       - name: XBASE_65
         width: 10
         length: 10

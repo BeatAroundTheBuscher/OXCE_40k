@@ -1021,6 +1021,7 @@ items:
       - STR_MARINES_STRATEGY
       - STR_CHAPTER_PURITY
     size: 2
+    requiresBuyBaseFunc: [IMPERIUM]
     costBuy: 360000
     costSell: 140000
     transferTime: 50

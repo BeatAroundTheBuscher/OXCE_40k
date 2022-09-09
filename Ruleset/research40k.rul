@@ -1339,10 +1339,37 @@ research:
     points: -500
     dependencies:
       - STR_ARBITES
-      - STR_GENERALLOCK
       - STR_ELDAR_SEER
       - STR_ELDAR_GUARDIAN
       - STR_ELDAR_BANSHEE
+    getOneFree:
+      - STR_PLAT_CORPSE
+    lookup: STR_CHOSEN_ELDAR
+    spawnedItemList:
+      - STR_ELDAR_PLAT
+      - STR_PLAT_CORPSE
+      - STR_ELDAR_DAVENGER
+      - STR_DAVENGER_CORPSE
+      - STR_ELDAR_SCORPION
+      - STR_SCORPION_CORPSE
+      - STR_GUARDIAN_CORPSE
+      - STR_ELDAR_HEMLOCK_UFO_DATA
+      - STR_ELDAR_WAVESERPENT_UFO_DATA
+      - STR_ELDAR_COBRA_UFO_DATA
+      - STR_ELDAR_HORNET_UFO_DATA
+      - STR_WRAITHGUARD_CORPSE
+      - STR_CATAPULT_PISTOL
+      - STR_CATAPULT
+      - STR_SHURIKEN_CLIP
+      - STR_EPOWER_SWORD
+      - STR_ELDAR_MGRENADE
+      - STR_ELDAR_GRENADE
+      - STR_ELDAR_CHAINSWORD
+    spawnedItemCount: 1
+    lookup: STR_CHOSEN_ELDAR
+  - name: STR_CHOSEN_ELDAR
+    dependencies:
+      - STR_GENERALLOCK
 #---CHAOS-----------------------------------------------------
   - name: STR_ALIENS_ONLY #CHAOS PATH
     cost: 1000
@@ -1531,6 +1558,20 @@ research:
     cost: 192
     points: 50
     needItem: true
+  - name: STR_WRAITHGUARD_CORPSE
+    cost: 192
+    points: 50
+    needItem: true
+  - name: STR_ELDAR_REAPER
+    cost: 192
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+  - name: STR_ELDAR_REAPER_CORPSE
+    cost: 192
+    points: 50
+    needItem: true
   - name: STR_TZEENTCH_SOLDIER
     cost: 192
     points: 50
@@ -1704,6 +1745,10 @@ research:
     points: 25
     needItem: true
   - name: STR_EPOWER_SWORD
+    cost: 100
+    points: 25
+    needItem: true
+  - name: STR_ELDAR_CHAINSWORD
     cost: 100
     points: 25
     needItem: true

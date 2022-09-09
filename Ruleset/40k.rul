@@ -2053,6 +2053,30 @@
     livingWeapon: false
     capturable: false
 #    ELDAR
+  - type: STR_ELDAR_REAPER #STR_ELDAR_ARMOR                        RANK 5 weapons done
+    race: STR_ELDAR
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 75
+      stamina: 96
+      health: 30
+      bravery: 80
+      reactions: 85
+      firing: 74
+      throwing: 80
+      strength: 40
+      psiStrength: 50
+      psiSkill: 0
+      melee: 85
+    armor: STR_ELDAR_ARMOR6
+    standHeight: 20
+    kneelHeight: 15
+    value: 20
+    deathSound: [848, 849, 850]
+    intelligence: 6
+    aggression: 1
+    spotter: 1
+    energyRecovery: 40
   - type: STR_ELDAR_DAVENGER #STR_ELDAR_ARMOR                        RANK 5 weapons done
     race: STR_ELDAR
     rank: STR_LIVE_SOLDIER
@@ -2186,14 +2210,14 @@
     spotter: 1
     energyRecovery: 40
     builtInWeaponSets:
-      - - STR_EPOWER_SWORD
+      - - STR_ELDAR_CHAINSWORD
         - STR_CATAPULT_PISTOL
         - STR_SHURIKEN_CLIP
-      - - STR_EPOWER_SWORD
+      - - STR_ELDAR_CHAINSWORD
         - STR_CATAPULT_PISTOL
         - STR_SHURIKEN_CLIP
         - STR_ELDAR_GRENADE
-      - - STR_EPOWER_SWORD
+      - - STR_ELDAR_CHAINSWORD
         - STR_CATAPULT_PISTOL
         - STR_SHURIKEN_CLIP
         - STR_ELDAR_GRENADE
@@ -7260,6 +7284,7 @@ armors:
     spriteInv: CNINV
     allowInv: true
     bleedImmune: true
+    drawBubbles: true
     corpseBattle:
       - STR_NURGLES_CORPSE
     frontArmor: 90
@@ -7600,6 +7625,7 @@ armors:
     spriteSheet: CTERMINATORN.PCK
     spriteInv: CTN
     bleedImmune: true
+    drawBubbles: true
     corpseBattle:
       - STR_MUTONN_CORPSE
     frontArmor: 110
@@ -7627,6 +7653,7 @@ armors:
     spriteInv: CTNC
     bleedImmune: true
     fearImmune: true
+    drawBubbles: true
     corpseBattle:
       - STR_MUTONNC_CORPSE
     frontArmor: 110
@@ -10973,6 +11000,37 @@ armors:
     loftempsSet: [ 3 ]
     builtInWeapons:
       - INV_NULL_3X3
+  - type: STR_ELDAR_ARMOR6       #REAPER
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteHairGroup: 9
+    spriteHairColor: [164, 164, 164, 164, 164, 164, 164, 164, 164, 164]
+    spriteSheet: ELDARDR6.PCK
+    spriteInv: ELDAR7.SPK
+    corpseBattle:
+      - STR_ELDAR_REAPER_CORPSE
+    frontArmor: 110
+    sideArmor: 90
+    rearArmor: 80
+    underArmor: 70
+    drawingRoutine: 0
+    damageModifier: #ELDAR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.5 #FLAMES
+      - 1.0 #HE
+      - 0.7 #LASCANON
+      - 0.7 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    builtInWeapons:
+      - STR_ELDAR_LAUNCHER
+      - INV_NULL_3X3      
   - type: STR_ELDAR_ARMOR3       #SEER
     visibilityAtDay: 40
     visibilityAtDark: 30
@@ -11827,6 +11885,7 @@ crafts:
       - STR_PRIMARIS
     takeoffSound: 58 #MAGNETIC SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    requiresBuyBaseFunc: [HANGAR]
     costBuy: 900000
     costRent: 360000
     marker: 69
@@ -11880,6 +11939,7 @@ crafts:
     requires:
       - STR_PRIMARIS
       - STR_CRAFTADD
+    requiresBuyBaseFunc: [HANGAR]
     costBuy: 1200000
     costRent: 600000
     marker: 69
@@ -11937,6 +11997,7 @@ crafts:
     selectSound: [62, 63, 64] #REGULAR SOUND
     requires:
       - STR_GUARD_SUPORT
+    requiresBuyBaseFunc: [HANGAR]
     marker: 36
     sprite: 101
     fuelMax: 1800
@@ -11987,6 +12048,7 @@ crafts:
     requires:
       - STR_NOT_PRIMARIS
       - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [HANGAR]
     sprite: 28
     marker: 9
     fuelMax: 1800
@@ -12030,6 +12092,7 @@ crafts:
     requires:
       - STR_STORMEAGLE_INTERCEPTOR
       - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [HANGAR]
     sprite: 25
     fuelMax: 1000
     damageMax: 1500
@@ -12091,6 +12154,7 @@ crafts:
       - STR_NOT_PRIMARIS
       - STR_NEW_FIGHTER_CRAFT
       - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [HANGAR]
     sprite: 27
     marker: 11
     fuelMax: 1200
@@ -12147,6 +12211,7 @@ crafts:
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     requires:
       - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [HANGAR]
     sprite: 26
     marker: 10
     fuelMax: 1000
@@ -12189,6 +12254,7 @@ crafts:
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     requires:
       - STR_STORMHAWKR
+    requiresBuyBaseFunc: [HANGAR]
     sprite: 31
     marker: 29
     fuelMax: 1000
@@ -12575,6 +12641,7 @@ crafts:
     selectSound: [62, 63, 64] #REGULAR SOUND
     requires:
       - STR_SPEEDR
+    requiresBuyBaseFunc: [HANGAR]
     sprite: 30
     marker: 29
     fuelMax: 1000
@@ -12688,6 +12755,7 @@ crafts:
     requires:
       - STR_NOT_PRIMARIS
       - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [HANGAR]
     sprite: 23
     marker: 9
     fuelMax: 1800
@@ -12738,6 +12806,7 @@ crafts:
     requires:
       - STR_NEW_FIGHTER_TRANSPORTER
       - STR_THUNDERHAWKTYPE2
+    requiresBuyBaseFunc: [HANGAR]
     maxSkinIndex: 4            # default 0
     skinSprites: [878,879,880,881] # default empty, contains all sprites except for the first (index zero)
     sprite: 22
@@ -12868,6 +12937,7 @@ crafts:
     requires:
       - STR_NEW_FIGHTER_TRANSPORTER
       - STR_THUNDERHAWKTYPE1
+    requiresBuyBaseFunc: [HANGAR]
     maxSkinIndex: 4            # default 0
     skinSprites: [878,879,880,881] # default empty, contains all sprites except for the first (index zero)
     sprite: 22
@@ -12939,6 +13009,7 @@ crafts:
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     requires:
       - STR_NEW_FIGHTER_TRANSPORTER
+    requiresBuyBaseFunc: [HANGAR]
     sprite: 22
     fuelMax: 1400
     damageMax: 950

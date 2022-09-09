@@ -37,6 +37,7 @@ soldiers:
   - type: STR_PRIMARISLV1
     costBuy: 80000
     costSalary: 40000
+    requiresBuyBaseFunc: [IMPERIUM]
     requires:
       - STR_PRIMARIS
       - STR_MARINES_STRATEGY
@@ -467,6 +468,7 @@ soldiers:
     rankTinySprite: 127
 
   - type: STR_SOLDIER
+    requiresBuyBaseFunc: [IMPERIUM]
     costBuy: 60000
     costSalary: 30000
     requires:
@@ -536,6 +538,7 @@ soldiers:
     deathFemale: [744, 745, 746, 747, 748, 749, 750, 751, 752]
 
   - type: STR_ADEPTAS
+    requiresBuyBaseFunc: [IMPERIUM]
     flagOffset: 21
     costBuy: 70000
     costSalary: 40000
@@ -616,6 +619,7 @@ soldiers:
     rankTinySprite: 115
 
   - type: STR_GUARDSM
+    requiresBuyBaseFunc: [IMPERIUM]
     requires:
       - STR_GUARD_SUPORT
     flagOffset: 42

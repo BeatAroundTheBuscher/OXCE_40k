@@ -469,6 +469,7 @@ crafts:
   - type: STR_XIPHON_GK #STORTALON
     requires:
       - STR_CHAMBERMILITANT
+    requiresBuyBaseFunc: [HANGAR]
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     takeoffSound: 56 #TURBINE SOUND
     sprite: 1786
@@ -518,6 +519,7 @@ crafts:
     requires:
       - STR_GREYKNIGHTS
       - STR_NEW_FIGHTER_CRAFT
+    requiresBuyBaseFunc: [HANGAR]
     sprite: 1782
     marker: 11
     fuelMax: 600 # was 1200
@@ -576,6 +578,7 @@ crafts:
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     requires:
       - STR_GREYKNIGHTS
+    requiresBuyBaseFunc: [HANGAR]
     sprite: 1784
     marker: 12
     fuelMax: 1400
@@ -637,6 +640,7 @@ crafts:
     selectSound: [62, 63, 64] #REGULAR SOUND
     requires:
       - STR_GREYKNIGHTS
+    requiresBuyBaseFunc: [HANGAR]
     marker: 74
     sprite: 1780
     fuelMax: 1800
@@ -679,6 +683,7 @@ crafts:
     requires:
       - STR_STORMEAGLE_INTERCEPTOR
       - STR_GREYKNIGHTS
+    requiresBuyBaseFunc: [HANGAR]
     sprite: 1785
     fuelMax: 1000
     damageMax: 1500
@@ -737,6 +742,7 @@ crafts:
   - type: STR_THUNDERHAWNK_DW #thunderhawnk Type 1
     requires:
       - STR_DEATHWATCH
+    requiresBuyBaseFunc: [HANGAR]
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     sprite: 1784

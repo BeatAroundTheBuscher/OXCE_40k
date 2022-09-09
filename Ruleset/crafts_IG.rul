@@ -1,6 +1,7 @@
 crafts:
   - type: STR_VALKYRIE_GRAV_DROP
     marker: 36
+    requiresBuyBaseFunc: [HANGAR]
     requires:
       - STR_IMPERIAL_GUARD_OPERATIONS
     sprite: 1001
@@ -85,6 +86,7 @@ crafts:
     marker: 30
     requires:
       - STR_IMPERIAL_GUARD_OPERATIONS
+    requiresBuyBaseFunc: [HANGAR]
     sprite: 1002
     fuelMax: 1000
     damageMax: 1000
@@ -176,6 +178,7 @@ crafts:
 
   - type: STR_ARMOR_COLUMN
     marker: 30
+    requiresBuyBaseFunc: [HANGAR]
     requires:
       - STR_IMPERIAL_GUARD_MIDTIER
     sprite: 1009
@@ -239,6 +242,7 @@ crafts:
 
   - type: STR_TAUROX
     marker: 30
+    requiresBuyBaseFunc: [HANGAR]
     requires:
       - STR_IMPERIAL_GUARD_MIDTIER
     sprite: 1005
@@ -298,6 +302,7 @@ crafts:
 
   - type: STR_GORGON
     marker: 42
+    requiresBuyBaseFunc: [HANGAR]
     requires:
       - STR_IMPERIAL_GUARD_HIGHTIER
     sprite: 1008
@@ -406,6 +411,7 @@ crafts:
     marker: 36
     requires:
       - STR_IMPERIAL_GUARD_MISSION_ELYSIAN_DROP_COMPLETE
+    requiresBuyBaseFunc: [HANGAR]
     sprite: 1006
     fuelMax: 1800
     damageMax: 400
@@ -478,6 +484,7 @@ crafts:
   - type: STR_LIGHTNING_INTERCEPTOR
     requires:
       - STR_IMPERIAL_GUARD_OPERATIONS
+    requiresBuyBaseFunc: [HANGAR]
     marker: 39
     sprite: 1003
     fuelMax: 1000
@@ -508,6 +515,7 @@ crafts:
   - type: STR_THUNDERBOLT_INTERCEPTOR
     requires:
       - STR_IMPERIAL_GUARD_OPERATIONS
+    requiresBuyBaseFunc: [HANGAR]
     marker: 40
     sprite: 1004
     fuelMax: 1000
@@ -536,6 +544,7 @@ crafts:
     listOrder: 240
 
   - type: STR_MARAUDER
+    requiresBuyBaseFunc: [HANGAR]
     marker: 41
     sprite: 1007
     fuelMax: 2000

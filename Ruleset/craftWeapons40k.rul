@@ -332,6 +332,7 @@ items: #craft Related
   - type: STR_STINGRAY_LAUNCHER           #S 2
     categories: [ STR_CRAFT_WEAPONS]
     size: 0.8
+    requiresBuyBaseFunc: [HANGAR]
     costBuy: 16000
     costSell: 12000
     transferTime: 48
@@ -339,6 +340,7 @@ items: #craft Related
   - type: STR_STINGRAY_MISSILES           #S 0.4
     categories: [ STR_CRAFT_WEAPONS]
     size: 0.4
+    requiresBuyBaseFunc: [HANGAR]
     costBuy: 3000
     costSell: 2400
     transferTime: 48
@@ -347,6 +349,7 @@ items: #craft Related
   - type: STR_AVALANCHE_LAUNCHER          #S 1
     categories: [ STR_CRAFT_WEAPONS]
     size: 1
+    requiresBuyBaseFunc: [HANGAR]
     costBuy: 17000
     costSell: 12750
     transferTime: 48
@@ -354,6 +357,7 @@ items: #craft Related
   - type: STR_AVALANCHE_MISSILES          #S 1.5
     categories: [ STR_CRAFT_WEAPONS]
     size: 1.5
+    requiresBuyBaseFunc: [HANGAR]
     costBuy: 9000
     costSell: 7200
     transferTime: 48
@@ -362,12 +366,14 @@ items: #craft Related
   - type: STR_CANNON                      #S 1.5
     categories: [ STR_CRAFT_WEAPONS]
     size: 1.5
+    requiresBuyBaseFunc: [HANGAR]
     costBuy: 30000
     costSell: 22500
     transferTime: 48
     listOrder: 1300
   - type: STR_CANNON_ROUNDS_X50           #S 0.1
     categories: [ STR_CRAFT_WEAPONS]
+    requiresBuyBaseFunc: [HANGAR]
     size: 0.1
     costBuy: 1240
     costSell: 1012
