@@ -656,6 +656,12 @@ en-US:
   STR_LV2_TO_LV3_GK: "Promote to Castellan"
   STR_LV3_TO_LV4_GK: "Promote to Paladin"
   STR_LV4_TO_LV5_GK: "Promote to Captain"
+  STR_PROMOTE_TO_SCORPION: "Path of the Scorpion"
+  STR_PROMOTE_TO_BANSHEE: "Path of the Banshee"
+  STR_PROMOTE_TO_REAPER: "Path of the Reaper"
+  STR_PROMOTE_TO_DIREAVENGER: "Path of the Avenger"
+  STR_PROMOTE_TO_SEER: "Path of the Psyker"
+  STR_RESURRECT_ELDAR: "Wraithguard Spirit Stone Infuse"
 
 # Damage types
   STR_DAMAGE_NONE: "SUPPORT"
@@ -663,7 +669,14 @@ en-US:
   STR_DAMAGE_11: "MELTA"
 
 # Base text
-
+  STR_ELDAR_AVANGER_MF: "Aspect Warrior"
+  STR_ELDAR_SEER_F: "Eldar Psyker"
+  STR_ELDAR_BANSHEE_F: "Aspect Warrior"
+  STR_ELDAR_REAPER_M: "Aspect Warrior"
+  STR_ELDAR_SCORPION_M: "Aspect Warrior"
+  STR_ELDAR_M: "Eldar Male"
+  STR_ELDAR_F: "Eldar Female"
+  STR_ELDAR_FALLEN: "Wraithguard"
   STR_PENITENT: "Penitent"
   STR_GUARDPD: "Trooper"
   STR_JUDGE: "Arbitrator"
@@ -867,17 +880,29 @@ en-US:
 
   STR_ELDAR_BASE_LEVEL_1: "Eldar Gate"
   STR_ELDAR_BASE_LEVEL_2: "Eldar Gate"
+  STR_ELDAR_BASE_FROM_EXISTING: " Gate expansion"
+  STR_ELDAR_PATROL: "Patrol"
+  STR_ELDAR_BASE: "Gate Creation"
+  STR_ELDAR_AIR_PATROL: "Air Patrol"
+  STR_ELDAR_SUP_AIR_PATROL: "Air Patrol"
+  STR_ELDAR_COBRA_RETALIATION: "Bombardment"  
+
+  STR_HEMLOCK: "Hemlock Wraithfighter"  
   STR_ELDAR_HEMLOCK_UFO: "Hemlock Wraithfighter"
   STR_ELDAR_HEMLOCK_UFO_DATA: "Hemlock Scan Data"
+  STR_ELDAR_HEMLOCK_UFO_UFOPEDIA: "{NEWLINE} The Hemlock Wraithfighter is a Craftworld Eldar psychically-empowered fighter aircraft. The Hemlock blends the psychic abilities of its Spiritseer pilot with the sinister gestalt energies of the Craftworld Eldar dead."
+  STR_WAVESERPENT: "Wave Serpent Transport"
   STR_ELDAR_WAVESERPENT_UFO: "Wave Serpent Transport"
   STR_ELDAR_WAVESERPENT_UFO_DATA: "Wave Serpent Scan Data"
-  STR_ELDAR_WAVESERPENT_UFO_UFOPEDIA: "The Wave Serpent is the Craftworld Eldar's main troop transport. Based upon the Falcon grav-tank chassis, it uses powerful anti-gravitic engines to deliver its cargo to the battlefield"
-  STR_ELDAR_HEMLOCK_UFO_UFOPEDIA: "The Hemlock Wraithfighter is a Craftworld Eldar psychically-empowered fighter aircraft. The Hemlock blends the psychic abilities of its Spiritseer pilot with the sinister gestalt energies of the Craftworld Eldar dead."
-
-  STR_ELDAR_PATROL: "Eldar Patrol"
-  STR_ELDAR_AIR_PATROL: "Eldar Air Patrol"
-  STR_ELDAR_BASE_FROM_EXISTING: "Gate Creation"
-  STR_ELDAR_BASE: "Gate Creation"
+  STR_ELDAR_WAVESERPENT_UFO_UFOPEDIA: "{NEWLINE} The Wave Serpent is the Craftworld Eldar's main troop transport. Based upon the Falcon grav-tank chassis, it uses powerful anti-gravitic engines to deliver its cargo to the battlefield"
+  STR_HORNET: "Hornet Fighter"
+  STR_ELDAR_HORNET_UFO: "Hornet Fighter"
+  STR_ELDAR_HORNET_UFO_DATA: "Hornet Scan Data"
+  STR_ELDAR_HORNET_UFO_UFOPEDIA: "{NEWLINE} Operating in squadrons of one to three craft, the Hornet epitomize the use of speed and concentration of force common to Eldar warfare. Star Engines combined with its aerodynamic structure give this craft amazing straight-line speed, and allow for limited short-range atmospheric flight."
+  STR_COBRA: "Cobra Type I"
+  STR_ELDAR_COBRA_UFO: "Cobra Type I"
+  STR_ELDAR_COBRA_UFO_DATA: "Hornet Scan Data"
+  STR_ELDAR_COBRA_UFO_UFOPEDIA: "{NEWLINE} The Cobra is a Craftworld Aeldari super-heavy grav-tank that supports the craftworlds heavy armour assaults. This huge vehicle can unleash potent firepower, and is broadly comparable to the Astra Militarum's super-heavy tanks."
 
   ELDARFOREST: "Eldar Forest"
   STR_ELDAR_WEBWAY: "Eldar WebWay"
@@ -1062,6 +1087,22 @@ en-US:
   STR_TRAINCAMP: "Training Outpost"
   STR_TRAINCAMP_UFOPEDIA: "{NEWLINE} This large facility allows us to accommodate equipment and personnel and train up to 50 soldiers at a time."
 
+#*** ELDAR FACILITIES ***************************************************************
+  STR_ELDARWALLN: "Eldar Forcewall N"
+  STR_ELDARWALLN_UFOPEDIA: "{NEWLINE} A building that provides power generated walls that fire can´t pass, comes with four variants for each side the enemy can aproach"
+  STR_ELDARWALLS: "Eldar Forcewall S"
+  STR_ELDARWALLE: "Eldar Forcewall E"
+  STR_ELDARWALLW: "Eldar Forcewall W"
+  STR_ELDARHANGAR: "Webway Gate"
+  STR_ELDARHANGAR_UFOPEDIA: "{NEWLINE} The Portal allows the quick transportation of different craft´s from the Craftworld. It contains space for maintenance, refueling and repair of any Eldar craft. Each craft stationed at a base must have a free portal assigned to it which cannot be used by other crafts, even if the assigned craft is out on a mission."
+  STR_ELDARPORTAL: "Aspect Portal"
+  STR_ELDARPORTAL_UFOPEDIA: "{NEWLINE} A building that provides a webway link directly to the Craftworlds armoury, supplying the ground forces with more options. Can also detect enemy movements on the battlefield and decipher communications within its radius."
+  STR_ELDARPOD: "Support Pod"
+  STR_ELDARPOD_UFOPEDIA: "{NEWLINE} The support pod are a sturdy base constructions option deployed when the Craftworlds need to remain on the planet's surface for extended periods of time. granting living conditions on this planet for the Eldar."
+  STR_ELDARACCESS: "Support Portal"
+  STR_ELDARACCESS_UFOPEDIA: "{NEWLINE} This field portal is weaker than the webway gates of old, but can provide basic travel acess so a base can be established across great distances. The Support Portal also process the ability to shroud the area around them, cloaking the base."
+  STR_ELDARDIRT: "Clear Terrain"
+
   STR_ACCESS_LIFT_UFOPEDIA: "{NEWLINE} The access lift allows equipment and personnel to be transferred into or out of an underground base. It is always the first facility to be constructed on a new site. The lift area is vulnerable to intrusion from any potential hostile force."
   STR_LIVING_QUARTERS_UFOPEDIA: "{NEWLINE} Each accommodation block provides for up to 50 personnel. The facility provides basic recreation, food and sleeping areas."
   STR_WORKSHOP_UFOPEDIA: "{NEWLINE} A workshop contains all the equipment necessary to manufacture equipment based on designs from your adepts. Up to 50 servitors can occupy a workshop, although items under construction will also consume some space."
@@ -1103,7 +1144,7 @@ en-US:
   STR_ALIEN_DIES_NO_ALIEN_CONTAINMENT_FACILITY: "Captured enemy executed as there is no prison facility"
   STR_CONTAINMENT_EXCEEDED: "PRISON CELL LIMITS EXCEEDED!{SMALLLINE}Insufficient prison space at {0}. You must remove excess captives from from the prison."
   STR_HYPER_WAVE_DECODER: "Transmission Decoder"
-  STR_HYPER_WAVE_DECODER_UFOPEDIA: "{NEWLINE} This facility acts as a powerful energy sensor to detect enemy craft. It is able to decipher chaos communications within its radius, giving additional information about a detected craft."
+  STR_HYPER_WAVE_DECODER_UFOPEDIA: "{NEWLINE} This facility acts as a powerful energy sensor to detect enemy craft. It is able to decipher communications within its radius, giving additional information about a detected craft."
   STR_NAVY_COMUNICATIONS: "Orbital Communications"
   STR_COM_UFOPEDIA: "{NEWLINE} This facility is designed to establish direct communications with the Imperium's Navy in orbit of the planet, allowing for production of orbital bombardment beacons."
   STR_COMUNICATIONS: "Orbital Communications Center"
@@ -1255,6 +1296,7 @@ en-US:
   STR_CATAPULT: "Shuriken Catapult"
   STR_SHURIKEN_CLIP: "Monomolecular Shuriken"
   STR_EPOWER_SWORD: "Eldar Mirrorsword"
+  STR_ELDAR_CHAINSWORD: "Scorpion Chainsword"
   STR_ELDAR_GRENADE: "Eldar Plasma Grenade"
   STR_ELDAR_MGRENADE: "Eldar Melta Bomb"
   STR_CATAPULT_PISTOL_UFOPEDIA: "{NEWLINE} Also known in the Eldar Lexicon as murekh, this is a smaller one-handed pistol version of the Shuriken Catapult. The shorter barrel length and smaller capacity reduces the weapon's efficiency and so limits the range, rate of fire, and power."
@@ -2086,6 +2128,7 @@ en-US:
   STR_EARLY_TRAITOR_GUARD_MARINES: "Chaos Traitors"
   STR_ORK: "Orks"
   STR_ELDAR: "Eldar"
+  STR_ELDAR: "Eldar warriors"
   STR_NURGLE: "Nurgle Devotees"
   STR_TZEENTCH: "Tzeentch Devotees"
   STR_KHRONE: "Khorne Devotees"
@@ -2148,6 +2191,10 @@ en-US:
   STR_ELDAR_GUARDIAN: "Eldar Guardian" #D
   STR_ELDAR_BANSHEE: "Eldar Banshee" #D
   STR_ELDAR_SEER: "Eldar Seer"
+  STR_ELDAR_WRAITHGUARD: "Eldar Wraithguard" #D  
+  STR_ELDAR_SCORPION: "Eldar Scorpion" #D
+  STR_ELDAR_DAVENGER: "Eldar Davenger" #D
+  STR_ELDAR_REAPER: "Eldar Reaper" #D
   STR_ELDAR_LIGHT: "Eldar Light"
   STR_ELDAR_PLAT: "Eldar Grav Platform"
   STR_SLAANESH_SOLDIER: "Noise Marine"
@@ -2261,11 +2308,23 @@ en-US:
   STR_KILLA_CORPSE: "Wrecked Killa kan"
 #ELDAR Corpse-------------------------------------------------
   STR_GUARDIAN_CORPSE: "Eldar Guardian Corpse"
+  STR_GUARDIANP_CORPSE: "Eldar Guardian Corpse"
+  STR_HEALER_CORPSE: "Eldar Healer Corpse"
   STR_BANSHEE_CORPSE: "Eldar Banshee Corpse"
+  STR_BANSHEE_CORPSE_P: "Eldar Banshee Corpse"
   STR_SEER_CORPSE: "Eldar Seer Corpse"
+  STR_SEER_CORPSE_P: "Eldar Seer Corpse"
+  STR_SCORPION_CORPSE: "Eldar Scorpion Corpse"
+  STR_SCORPION_CORPSE_P: "Eldar Scorpion Corpse"
+  STR_ELDAR_REAPER_CORPSE: "Eldar Reaper Corpse"  
+  STR_ELDAR_REAPER_CORPSE_P: "Eldar Reaper Corpse"
+  STR_DAVENGER_CORPSE: "Eldar Dire Avenger Corpse"
+  STR_DAVENGER_CORPSE_P: "Eldar Dire Avenger Corpse"
   STR_PLAT_CORPSE: "Destroyed Grav Platform"
   STR_ELDARTURRET_CORPSE: "Wrecked Wave Serpent Turret"
   STR_ELDARTURRET2_CORPSE: "Wrecked Wave Serpent Turret"
+  STR_WRAITHGUARD_CORPSE: "Wrecked Wraithguard"
+  STR_WRAITHGUARD_CORPSE_P: "Wrecked Wraithguard"
 #CHAOS Corpse-------------------------------------------------
   STR_KHORNECHAMP_CORPSE: "Khorne Champion Corpse"
   STR_BEHEMOTH_CORPSE: "Behemoth Corpse"
@@ -2326,11 +2385,31 @@ en-US:
   STR_ORK_ARMORM: "Ork 'ard Boy"
   STR_ORK_ARMORH: "Ork Nob"
   STR_ORK_KILLA_ARMOR: "Killa Kan"
+  STR_WRAITHGUARD_ARMOR_P : "Eldar Wraithguard Armor" #D  
+  STR_WRAITHGUARD_ARMOR : "Eldar Wraithguard" #D
+  STR_ELDAR_SHIELD: "Eldar Personal Shield" #D
+  STR_ELDAR_ARMOR: "Eldar Guardian" #D
+  STR_ELDAR_ARMOR_M: "Guardian Armor" #D
+  STR_ELDAR_ARMOR_M_SHIELD: "S Guardian Armor" #D
+  STR_ELDAR_ARMOR_F: "Guardian Armor" #D
+  STR_ELDAR_ARMOR_FH: "Healer Armor" #D
   STR_ELDAR_ARMOR: "Eldar Guardian" #D
   STR_ELDAR_ARMOR2: "Eldar Banshee" #D
+  STR_ELDAR_ARMOR2_P: "Banshee Armor" #D
   STR_ELDAR_ARMOR3: "Eldar Seer" #D
+  STR_ELDAR_ARMOR3_P: "Seer Armor" #D
+  STR_ELDAR_ARMOR4: "Eldar Dire Avanger" #D
+  STR_ELDAR_ARMOR4_P: "Dire Avanger Armor" #D
+  STR_ELDAR_ARMOR5: "Eldar Scorpion" #D
+  STR_ELDAR_ARMOR5_P: "Scorpion Armor" #D
+  STR_ELDAR_ARMOR6: "Eldar Reaper" #D
+  STR_ELDAR_ARMOR6_P: "Reaper Armor" #D
+  STR_ELDAR_PLAT_ARMOR_P: "Grav Platform" #D
+  STR_ELDAR_PLAT_P: "Grav Platform" #D
   STR_ELDAR_PLAT_ARMOR: "Grav Platform" #D
   ELDAR_TURRET_ARMOR: "Eldar Wave Serpent" #D
+  ELDAR_TURRET_ARMOR_P: "Eldar Wave Serpent" #D
+  STR_ELDAR_TURRET_P: "Eldar Wave Serpent" #D
   MUTON_ARMORSLAANESH: "Noise Marine" #D
   MUTON_ARMORHAVOCS: "Noise Marine Havoc" #D
   STR_CHAOS_SENTINEL_ARMOR: "Chaos Sentinel" #D
@@ -2457,6 +2536,14 @@ en-US:
 #ELDAR UFOPEDIA AUTOPSY
   STR_GUARDIAN_AUTOPSY: "Eldar Guardian Origin"
   STR_BANSHEE_AUTOPSY: "Eldar Banshee Origin"
+  STR_DAVENGER_AUTOPSY: "Eldar Dire Avenger Origin"
+  STR_SCORPION_AUTOPSY: "Eldar Scorpion Origin"  
+  STR_ELDAR_REAPER_AUTOPSY : "Eldar Reaper Origin"
+  STR_WRAITHGUARD_AUTOPSY : "Eldar Wraithguard Origin"
+  STR_SCORPION_AUTOPSY_UFOPEDIA: "{NEWLINE} The Warrior Aspect of the Striking Scorpion epitomises the deadly attributes of their namesake, and they are the most potent of all the close assault aspects. They are merciless killers without exception, revelling in the hunt and the kill. When they launch their attack, they use shuriken pistols and scorpion chainswords."
+  STR_DAVENGER_AUTOPSY_UFOPEDIA: "{NEWLINE} The Dire Avengers are first amongst the Aspect Warriors of the Eldar. They represent the War God's unending thirst for vengeance upon a galaxy of woe, and as such they are merciless to their foes and unstinting in their devotion to their people."
+  STR_ELDAR_REAPER_AUTOPSY_UFOPEDIA: "{NEWLINE} The Dark Reapers are the most menacing of the Aeldari Aspect Warriors. They exemplify the Aeldari War God Kaela Mensha Khaine in his aspect as the Destroyer, and their skull-masked costume echoes that of their founder and Phoenix Lord, the Harvester of Souls, Maugan Ra. They specialise in the use of highly-destructive, long-range heavy weaponry."
+  STR_WRAITHGUARD_AUTOPSY_UFOPEDIA: "{NEWLINE} The Wraithguard of the Craftworld Eldar are not living warriors; they are artificial robotic constructs called Ghost Warriors created from the complex psycho-plastic material crafted by the Asuryani of the craftworlds known as wraithbone. Each Wraithguard has a Spirit Stone containing the soul of an elite Aeldari warrior that was drawn out of the Infinity Circuit of a craftworld."
   STR_SEER_AUTOPSY: "Eldar Seer Origin"
   STR_ELDAR_PLAT_AUTOPSY: "Grav Platform Origin"
   STR_GUARDIAN_AUTOPSY_UFOPEDIA: "{NEWLINE} The Guardians are the most common of all Eldar warriors, they providing vital support in battle. Guardian forces are equipped with Eldar Mesh Armor."
@@ -2548,6 +2635,14 @@ en-US:
   STR_ARBITES_BUST: "Ending the Warp"
   STR_ARBITES_BUST_UFOPEDIA: "It is now clear that the Chaos hordes are being transported through a warp portal, hidden beneath an section of an old imperial palace in a Hive city. The Relic Warp Stone creating the storm must be hidden there. This is the only way to stop the desolation - we must destroy it! Bring the your forces' finest heroes and equipment to bear! Assault the palace and unleash the Emperor's fury upon all the corrupted.{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}(1/2) >>"
   STR_ARBITES_BUST_UFOPEDIA_PAGE2: "The exact location of the palace is unknown. Therefore you must patrol the indicated area of Central Princeps to determine the coordinates before our forces can be brought to bear in a combined strike. It may take up to a month to our spies to be sure which is the temple's to storm.{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}(2/2)"
+
+#ELDAR
+  STR_ELDAR_ALLIANCE: "Xeno Proposal"
+  STR_ELDAR_SPEECH: "Eldar Proposal"  
+  STR_ELDAR_SPEECH_UFOPEDIA: "{NEWLINE} The Captured Eldar Seer has discussed the possibility of they help us in our cause since are enemy´s are common, she suggest bringing eldar by webway navigatin around the Warp Storm. Continuation of studies on this path is not advised, as the prencint forces may succumb to heresy! Capture a Guardian and an Banshhe if you wish to proceed."  
+  STR_ELDAR_PATH: "Eldar Alliance"
+  STR_CHOSEN_ELDAR_TEXT: "{NEWLINE} Our Alliance with the Eldar was been temporarily forged, we can now establish bases and use their forces to stop chaos from destroying this world."
+  STR_CHOSEN_ELDAR: "Eldar Path"
 
 #CORPSE TEXT
   STR_TERMINATOR_CORPSE: "Terminator Corpse"
@@ -3431,6 +3526,25 @@ en-US:
   STR_BLESSING_SAINT: "Blessing of the Emperor"
   STR_RESURRECT_SISTER: "Resurrect as Saint"
 
+#ELDAR
+  STR_ELDAR_RANK_0: "Guardian"
+  STR_ELDAR_RANK_1: "Storm Guardian"
+  STR_ELDAR_RANK_2: "Warrior"
+  STR_ELDAR_RANK_3: "Great Warrior"
+  STR_ELDAR_RANK_4: "Warlock"
+  STR_ELDAR_RANK_5: "High Warlock"
+  STR_SEER_RANK_0: "Guardian"
+  STR_SEER_RANK_1: "Warrior"
+  STR_SEER_RANK_2: "Seer"
+  STR_SEER_RANK_3: "Spiritseer"
+  STR_SEER_RANK_4: "Farseer"
+  STR_SEER_RANK_5: "High Farseer"
+  STR_ASPECT_RANK_0: "Guardian"
+  STR_ASPECT_RANK_1: "Aspect Warrior"
+  STR_ASPECT_RANK_2: "Exarch"
+  STR_ASPECT_RANK_3: "Autarch"
+  STR_ASPECT_RANK_4: "Phoenix Lord"
+  STR_ASPECT_RANK_5: "Phoenix Lord"
 #GK
   STR_GK_RANK_0: "Brother"
   STR_GK_RANK_1: "Battle Brother"
@@ -3677,7 +3791,7 @@ en-US:
   STR_ALIEN_BASE: "Chaos Base"
   STR_ALIEN_TERROR: "Blood Spread"
   STR_ALIEN_RETALIATION: "Retaliation"
-  STR_DEFILER_RETALIATION: "Retaliation"
+  STR_DEFILER_RETALIATION: "Bombardment"
   STR_ALIEN_SUPPLY: "Supply"
   STR_GUARD_PATROL_UFOPEDIA: "{NEWLINE}"
   STR_ALIEN_PATROL_UFOPEDIA: "{NEWLINE}"

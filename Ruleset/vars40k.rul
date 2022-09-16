@@ -10,6 +10,8 @@ startingTime:
   year: 40000
 costEngineer: 25000
 costScientist: 30000
+hireScientistsRequiresBaseFunc: [RESE]
+hireEngineersRequiresBaseFunc: [MANU]
 timePersonnel: 72
 initialFunding: 6000
 alienFuel: [STR_ELERIUM_115, 50]

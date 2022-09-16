@@ -1334,12 +1334,18 @@ research:
 
 
 #---CHAOS-----------------------------------------------------
-  - name: STR_ELDAR_PATH #XENO ALLIANCE
+  - name: STR_ELDAR_ALLIANCE #XENO ALLIANCE
     cost: 1000
     points: -500
     dependencies:
       - STR_ARBITES
       - STR_ELDAR_SEER
+  - name: STR_ELDAR_PATH #XENO ALLIANCE
+    cost: 1000
+    points: -500
+    dependencies:
+      - STR_ARBITES
+      - STR_ELDAR_ALLIANCE
       - STR_ELDAR_GUARDIAN
       - STR_ELDAR_BANSHEE
     getOneFree:

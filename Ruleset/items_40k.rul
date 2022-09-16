@@ -1427,6 +1427,27 @@
     blastRadius: 4
     recover: false
 #---MISC-----------------------------------------------------
+  - type: AUX_ELDAR_SHIELD        #AUX T Shield
+    weight: 5
+    bigSprite: 409
+    floorSprite: 113
+    hitSound: 0
+    meleeAnimation: 0
+    power: 60
+    damageType: 7
+    accuracyMelee: 110
+    tuMelee: 20
+    clipSize: -1
+    battleType: 3
+    twoHanded: false
+    invWidth: 2
+    invHeight: 3
+    armor: 12
+    fixedWeapon: true
+    recover: false
+    skillApplied: true
+    strengthApplied: false
+    attraction: 0
   - type: STR_GRAV_AUTOC
     weight: 1
     bigSprite: 921

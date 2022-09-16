@@ -1178,7 +1178,8 @@ alienMissions:
   - type: STR_ELDAR_BASE
     raceWeights:
       0:
-        STR_ELDAR: 100
+        STR_ELDAR: 80
+        STR_ELDAR_ADV: 20
     operationType: 3 # Creates a new base to start from if the region doesn't have one
     operationSpawnZone: 4
     operationBaseType: STR_ELDAR_BASE_LEVEL_1

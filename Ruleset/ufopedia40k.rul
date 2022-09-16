@@ -738,7 +738,7 @@ ufopaedia:
     image_id: UP116.SPK
     text: STR_SEER_AUTOPSY_UFOPEDIA
     listOrder: 26800
-    
+
   - id: STR_ELDAR_ARMOR4                                                #26610         ARMOR
     type_id: 15
     section: STR_ALIEN_LIFE_FORMS
@@ -769,7 +769,7 @@ ufopaedia:
     requires:
       - STR_SCORPION_CORPSE
     image_id: UP166.SPK
-    text: STR_DAVENGER_AUTOPSY_UFOPEDIA
+    text: STR_SCORPION_AUTOPSY_UFOPEDIA
     listOrder: 26613
 
 
@@ -787,7 +787,7 @@ ufopaedia:
     requires:
       - STR_ELDAR_REAPER_CORPSE
     image_id: UP168.SPK
-    text: STR_DAVENGER_AUTOPSY_UFOPEDIA
+    text: STR_ELDAR_REAPER_AUTOPSY_UFOPEDIA
     listOrder: 26615
 
   - id: STR_WRAITHGUARD_ARMOR                                             #26616         ARMOR
@@ -2500,7 +2500,7 @@ ufopaedia:
     type_id: 16
     section: STR_BASE_FACILITIES
     image_id: 047.SPK
-    text: STR_ELDARPORTAL _UFOPEDIA
+    text: STR_ELDARPORTAL_UFOPEDIA
   - id: STR_ELDARHANGAR            #facility
     requires:
       - STR_ELDAR_PATH
@@ -3970,6 +3970,13 @@ ufopaedia:
     requires:
       - STR_ALIEN_SUPPLY
     text: STR_ALIEN_SUPPLY_UFOPEDIA
+  - id: STR_ELDAR_SPEECH
+    requires:
+      - STR_ELDAR_ALLIANCE
+    type_id: 10
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: 3ELD.SPK
+    text: STR_ELDAR_SPEECH_UFOPEDIA
 #BOOKS OBJS
   - id: STR_BOOKSO                   #30000 MENU INTRO
     type_id: 10
@@ -4354,7 +4361,7 @@ ufopaedia:
     type_id: 10
     section: STR_STRATEGY
     image_id: 3XENO.SPK
-    text: STR_CHOSEN_ELDAR_INFO
+    text: STR_CHOSEN_ELDAR_TEXT
     listOrder: 89
 #HELP
   - id: STR_HELP1          #HELP 50000

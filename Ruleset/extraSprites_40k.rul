@@ -1792,6 +1792,13 @@
     height: 1440
     files:
       0: Resources/Eldar/eldar21.png
+  - type: ELDARDR21S.PCK #ELDAR PLAYER GUARDIAN
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1440
+    files:
+      0: Resources/Eldar/eldar21S.png
   - type: ELDARDR22.PCK #ELDAR PLAYER HEALER
     subX: 32
     subY: 40
@@ -1848,6 +1855,13 @@
     subY: 40
     files:
       0: Resources/Eldar/eldar1.png
+  - type: ELDARDR12.PCK #ELDAR SEER
+    width: 256
+    height: 520
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Eldar/eldar12.png #Player
   - type: ELDARP.PCK
     subX: 32
     subY: 40
@@ -2325,6 +2339,17 @@
       293: Resources/Rank/smoke293.png  #ELDAR
       294: Resources/Rank/smoke294.png  #ELDAR
       295: Resources/Rank/smoke295.png  #ELDAR
+      296: Resources/Rank/smoke296.png  #ELDAR
+      297: Resources/Rank/smoke297.png  #ELDAR
+      298: Resources/Rank/smoke298.png  #ELDAR
+      299: Resources/Rank/smoke299.png  #ELDAR
+      300: Resources/Rank/smoke300.png  #ELDAR
+      301: Resources/Rank/smoke301.png  #ELDAR
+      302: Resources/Rank/smoke302.png  #ELDAR
+      303: Resources/Rank/smoke303.png  #ELDAR
+      304: Resources/Rank/smoke304.png  #ELDAR
+      305: Resources/Rank/smoke305.png  #ELDAR
+      306: Resources/Rank/smoke306.png  #ELDAR
 ##221-226
   - type: HIT.PCK #HIT MELEE ANIMATION
     width: 128
@@ -2735,6 +2760,8 @@
       405: Resources/Eldar/405.png
       406: Resources/Eldar/406.png
       407: Resources/Eldar/407.png
+      408: Resources/Eldar/408.png
+      409: Resources/Eldar/409.png
       449: Resources/Adeptas/449.png
       450: Resources/Support/450.gif
 #451 CHAPTER CHANGE
@@ -3230,6 +3257,7 @@
       418: Resources/Eldar/floorob_418.png
       419: Resources/Eldar/floorob_419.png
       420: Resources/Eldar/floorob_420.png
+      421: Resources/Eldar/floorob_421.png
       570: Resources/Laspistol/hellpistol_floorob.png
       575: Resources/Meltagun/floorob_inferno_pistol.png
       600: Resources/Boltpistol/floorob_boltpistol_chaos.png
@@ -3711,10 +3739,11 @@
       963: Resources/Rank/basebits963.png      #ELDAR
       964: Resources/Rank/basebits964.png      #ELDAR
       965: Resources/Rank/basebits965.png      #ELDAR
-      
-      966: Resources/Rank/basebits965.png      #ELDAR
-      967: Resources/Rank/basebits965.png      #ELDAR
-      968: Resources/Rank/basebits965.png      #ELDAR
+      966: Resources/Rank/basebits966.png      #ELDAR
+      967: Resources/Rank/basebits967.png      #ELDAR
+      968: Resources/Rank/basebits968.png      #ELDAR
+      969: Resources/Rank/basebits969.png      #ELDAR
+      970: Resources/Rank/basebits970.png      #ELDAR
 #  ADEPTA ADDON
       1711: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 0
       1712: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 1
@@ -5281,6 +5310,12 @@
     height: 200
     files:
       0: Resources/CODEX/3XENO.png
+  - type: 3ELD.SPK                  #HELP
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/3ELD.png
   - type: 3AIM.SPK                  #HELP
     singleImage: true
     width: 320
@@ -6851,6 +6886,7 @@
       199: Resources/UnitUI/Ranks_Small16.png
       205: Resources/UnitUI/Ranks_Small17.png
       211: Resources/UnitUI/Ranks_Small18.png
+      217: Resources/UnitUI/Ranks_Small19.png
   - type: Commendations
     width: 31
     height: 48

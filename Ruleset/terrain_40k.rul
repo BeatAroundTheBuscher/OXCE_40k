@@ -29,10 +29,12 @@
     buildTime: 26
     monthlyCost: 30000
     labs: 25
+    provideBaseFunc: [RESE]
     mapName: XBASE_02
   - type: STR_WORKSHOP
     placeSound: 98
     requiresBaseFunc: [BASE]
+    provideBaseFunc: [MANU]
     spriteShape: 1
     spriteFacility: 20
     buildCost: 800000
@@ -231,7 +233,7 @@
     buildTime: 50
     monthlyCost: 300000
     workshops: 10
-    provideBaseFunc: [COMU]
+    provideBaseFunc: [COMU, MANU]
     mapName: XBASE_21
     listOrder: 800
   - type: STR_ARMORY
@@ -423,7 +425,7 @@
     monthlyCost: 300000
     workshops: 200
     storage: 50
-    provideBaseFunc: [MILL]
+    provideBaseFunc: [MILL, MANU]
     mapName: XBASE_40
     listOrder: 800
   - type: STR_TRAINFACILITY
@@ -1050,6 +1052,7 @@
     spriteShape: 690
     spriteFacility: 690
     lift: true
+    mind: true
     size: 2
     provideBaseFunc: [ELDAROUT]
     connectorsDisabled: true
