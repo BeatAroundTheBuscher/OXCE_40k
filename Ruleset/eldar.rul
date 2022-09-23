@@ -607,6 +607,7 @@ armors:
       - STR_ELDAR_SEER_F
     builtInWeapons:
       - INV_NULL_3X3
+      - AUX_ELDAR_SHIELD
     layersDefaultPrefix: 70
     layersSpecificPrefix:
       70: ELDAR
