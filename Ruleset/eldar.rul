@@ -2251,14 +2251,10 @@ soldierTransformation:  ##############NOT DONE
   - name: STR_RESURRECT_ELDAR
     requires:
       - STR_ELDAR_PATH
-    cost: 550000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 50
-      STR_ELERIUM_115: 30
-      STR_ALIEN_HABITAT: 1
+    cost: 1000000
     minRank: 0
     producedSoldierType: STR_ELDAR_FALLEN
-    producedSoldierArmor: DREAD_ARMOR_UC
+    producedSoldierArmor: STR_WRAITHGUARD_ARMOR_P
     allowsDeadSoldiers: true
     allowsLiveSoldiers: false
     needsCorpseRecovered: true

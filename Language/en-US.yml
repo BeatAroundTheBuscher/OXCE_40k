@@ -2391,7 +2391,7 @@ en-US:
   STR_ORK_ARMORH: "Ork Nob"
   STR_ORK_KILLA_ARMOR: "Killa Kan"
   STR_WRAITHGUARD_ARMOR_P : "Eldar Wraithguard Armor" #D  
-  STR_WRAITHGUARD_ARMOR_P : "FS Eldar Wraithguard Armor" #D 
+  STR_WRAITHGUARD_ARMOR_P_SHIELD : "FS Eldar Wraithguard Armor" #D 
   STR_WRAITHGUARD_ARMOR : "Eldar Wraithguard" #D
   STR_ELDAR_SHIELD: "Eldar Personal Shield" #D
   STR_ELDAR_ARMOR: "Eldar Guardian" #D
