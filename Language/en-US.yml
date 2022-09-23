@@ -1292,6 +1292,11 @@ en-US:
   STR_GAUSS_BLASTER_UFOPEDIA: "{NEWLINE} A Gauss Blaster is a type of horrifying Necron Gauss Weapon that can strip a target down molecule by molecule, reducing it to its constituent atoms in a matter of seconds."
   STR_HYPERPHASESWORD_UFOPEDIA: "{NEWLINE} A Hyperphase Sword is a Necron melee weapon whose energy blade vibrates across dimensional states and can easily slice through armour and flesh to sever the vital organs within. A Hyperphase Sword can be considered an advanced type of Power Weapon."
 #ITEMS eldar
+
+  AUX_ELDAR_SHIELD: "Force Shield"
+  STR_ELDAR_SHIELD_UFOPEDIA: "{NEWLINE} A Forceshield is a personal protective device utilised by the Craftworld Eldar. The Forceshield, as its name implies, projects a powerful defensive force field around its user. To Equip use the Armor with the S(Shield) Tag "
+  STR_WRAITH_MELEE_WEAPON: "Ghostaxe"
+  STR_WRAITH_MELEE_WEAPON_UFOPEDIA: "{NEWLINE} The melee weapon used by the wraith guard for close combat (equiped when using shielded variant armor)."
   STR_CATAPULT_PISTOL: "Shuriken Pistol"
   STR_CATAPULT: "Shuriken Catapult"
   STR_SHURIKEN_CLIP: "Monomolecular Shuriken"
@@ -2386,24 +2391,31 @@ en-US:
   STR_ORK_ARMORH: "Ork Nob"
   STR_ORK_KILLA_ARMOR: "Killa Kan"
   STR_WRAITHGUARD_ARMOR_P : "Eldar Wraithguard Armor" #D  
+  STR_WRAITHGUARD_ARMOR_P : "FS Eldar Wraithguard Armor" #D 
   STR_WRAITHGUARD_ARMOR : "Eldar Wraithguard" #D
   STR_ELDAR_SHIELD: "Eldar Personal Shield" #D
   STR_ELDAR_ARMOR: "Eldar Guardian" #D
   STR_ELDAR_ARMOR_M: "Guardian Armor" #D
-  STR_ELDAR_ARMOR_M_SHIELD: "S Guardian Armor" #D
+  STR_ELDAR_ARMOR_M_SHIELD: "FS Guardian Armor" #D
   STR_ELDAR_ARMOR_F: "Guardian Armor" #D
+  STR_ELDAR_ARMOR_F_SHIELD: "FS Guardian Armor" #D
   STR_ELDAR_ARMOR_FH: "Healer Armor" #D
   STR_ELDAR_ARMOR: "Eldar Guardian" #D
   STR_ELDAR_ARMOR2: "Eldar Banshee" #D
   STR_ELDAR_ARMOR2_P: "Banshee Armor" #D
+  STR_ELDAR_ARMOR2_P_SHIELD: "FS Banshee Armor" #D
   STR_ELDAR_ARMOR3: "Eldar Seer" #D
   STR_ELDAR_ARMOR3_P: "Seer Armor" #D
+  STR_ELDAR_ARMOR3_P_SHIELD: "FS Seer Armor" #D
   STR_ELDAR_ARMOR4: "Eldar Dire Avanger" #D
   STR_ELDAR_ARMOR4_P: "Dire Avanger Armor" #D
+  STR_ELDAR_ARMOR4_P_SHIELD: "FS Dire Avanger Armor" #D
   STR_ELDAR_ARMOR5: "Eldar Scorpion" #D
   STR_ELDAR_ARMOR5_P: "Scorpion Armor" #D
+  STR_ELDAR_ARMOR5_P_SHIELD: "FS Scorpion Armor" #D
   STR_ELDAR_ARMOR6: "Eldar Reaper" #D
   STR_ELDAR_ARMOR6_P: "Reaper Armor" #D
+  STR_ELDAR_ARMOR6_P_SHIELD: "FS Reaper Armor" #D
   STR_ELDAR_PLAT_ARMOR_P: "Grav Platform" #D
   STR_ELDAR_PLAT_P: "Grav Platform" #D
   STR_ELDAR_PLAT_ARMOR: "Grav Platform" #D
@@ -3437,7 +3449,8 @@ en-US:
   STR_HELP_WEAPONS: "{NEWLINE} Most weapons will have increased accuracy if the unit is a kneeling position.{NEWLINE}{NEWLINE} All two-handed weapons will have an accuracy penalty if the other hand is not free while using it. Terminator marines can fire two-handed weapons with the other hand full without the penalty. Some weapons cannot be fired at all unless the other hand is empty, even when wieled by a Terminator."
   STR_HELP10: "Armor Repair"
   STR_REPAIRPEDIA: "{NEWLINE} Servitors and techmarines can repair all types of damaged armor.{NEWLINE}{NEWLINE} In order to do so, they must be adjacent to the unit to be repaired. The facing of the unit to be repaired does not matter, as the most damage armor will be repaired first."
-
+  STR_HELP15: "Eldar Promotion"
+  STR_HELP_PROMO: "{NEWLINE} Eldar can be promoted to aspect warriors on soldier transformation, they require to be a certain rank and have certain atributes but also they can only choose the path dictated by their gender."
   STR_HELP11: "Contributors"
   STR_CONTRIBUTORS_T: "Contributors"
   STR_CONTRIBUTORS_P1: "{NEWLINE} This sections is specialy made for contributors that are not part of the team, but help the mod in a meaningful way, and there assistance is gratefully appreciated {NEWLINE}{NEWLINE} May the Emperor bless the Contributors!"
@@ -3527,6 +3540,11 @@ en-US:
   STR_RESURRECT_SISTER: "Resurrect as Saint"
 
 #ELDAR
+  STR_ELDAR_WS_RANK_0: "Wraith Guardian"
+  STR_ELDAR_WS_RANK_1: "Eternal Guardian"
+  STR_ELDAR_WS_RANK_2: "Ghost Warrior"
+  STR_ELDAR_WS_RANK_3: "Eternal Warrior"
+  STR_ELDAR_WS_RANK_4: "Wraith Lord"
   STR_ELDAR_RANK_0: "Guardian"
   STR_ELDAR_RANK_1: "Storm Guardian"
   STR_ELDAR_RANK_2: "Warrior"

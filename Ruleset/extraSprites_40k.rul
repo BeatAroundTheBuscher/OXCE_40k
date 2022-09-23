@@ -1521,6 +1521,13 @@
     height: 840
     files:
       0: Resources/Eldar/eldar9.png
+  - type: ELDARWG_PS.PCK #ELDAR WRAITH GUARD DR
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Eldar/eldar9S.png
   - type: MONOE.PCK
     subX: 32
     subY: 40
@@ -1827,6 +1834,13 @@
     height: 1440
     files:
       0: Resources/Eldar/eldar32.png
+  - type: ELDARDR32S.PCK #ELDAR BANSHEE
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1440
+    files:
+      0: Resources/Eldar/eldar32S.png
   - type: ELDARDR4.PCK #ELDAR DIRE AVENGERS
     subX: 32
     subY: 40
@@ -1834,6 +1848,13 @@
     height: 1440
     files:
       0: Resources/Eldar/eldar4.png
+  - type: ELDARDR4S.PCK #ELDAR DIRE AVENGERS
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1440
+    files:
+      0: Resources/Eldar/eldar4S.png
   - type: ELDARDR5.PCK #ELDAR SCORPIONS
     subX: 32
     subY: 40
@@ -1841,6 +1862,13 @@
     height: 1440
     files:
       0: Resources/Eldar/eldar5.png
+  - type: ELDARDR5S.PCK #ELDAR SCORPIONS
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1440
+    files:
+      0: Resources/Eldar/eldar5S.png
   - type: ELDARDR6.PCK #ELDAR REAPER
     subX: 32
     subY: 40
@@ -1848,6 +1876,13 @@
     height: 1440
     files:
       0: Resources/Eldar/eldar6.png
+  - type: ELDARDR6S.PCK #ELDAR REAPER
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1440
+    files:
+      0: Resources/Eldar/eldar6S.png
   - type: ELDARDR1.PCK #ELDAR SEER
     width: 256
     height: 520
@@ -1855,6 +1890,13 @@
     subY: 40
     files:
       0: Resources/Eldar/eldar1.png
+  - type: ELDARDR1S.PCK #ELDAR SEER
+    width: 256
+    height: 520
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Eldar/eldar1S.png
   - type: ELDARDR12.PCK #ELDAR SEER
     width: 256
     height: 520
@@ -1862,6 +1904,13 @@
     subY: 40
     files:
       0: Resources/Eldar/eldar12.png #Player
+  - type: ELDARDR12S.PCK #ELDAR SEER
+    width: 256
+    height: 520
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Eldar/eldar12S.png #Player
   - type: ELDARP.PCK
     subX: 32
     subY: 40
@@ -2762,6 +2811,7 @@
       407: Resources/Eldar/407.png
       408: Resources/Eldar/408.png
       409: Resources/Eldar/409.png
+      410: Resources/Eldar/410.png
       449: Resources/Adeptas/449.png
       450: Resources/Support/450.gif
 #451 CHAPTER CHANGE
@@ -4706,6 +4756,12 @@
     height: 200
     files:
       0: Resources/Eldar/1EL9.png
+  - type: 1EL10.SPK              #UFOPEDIA WEAPONS
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Eldar/1EL10.png
   - type: 1OK1.SPK              #UFOPEDIA WEAPONS
     singleImage: true
     width: 320
@@ -5274,6 +5330,12 @@
     height: 200
     files:
       0: Resources/CODEX/3HONOR.png
+  - type: 3PROMO.SPK                  #HELP
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/3PROMO.png
   - type: 3CRAFT.SPK                  #HELP
     singleImage: true
     width: 320
@@ -8462,6 +8524,31 @@ extraSounds:
       1400: Resources/Sound/ETANK/MOVE2.ogg
       1401: Resources/Sound/ETANK/MOVE3.ogg
       1402: Resources/Sound/ETANK/MOVE4.ogg
+#1403 to 1425 REAPER
+      1403: Resources/Sound/EREAPER/ATT1.ogg
+      1404: Resources/Sound/EREAPER/ATT2.ogg
+      1405: Resources/Sound/EREAPER/ATT3.ogg
+      1406: Resources/Sound/EREAPER/ATT4.ogg
+      1407: Resources/Sound/EREAPER/ATT5.ogg
+      1408: Resources/Sound/EREAPER/MOVE1.ogg
+      1409: Resources/Sound/EREAPER/MOVE2.ogg
+      1410: Resources/Sound/EREAPER/MOVE3.ogg
+      1411: Resources/Sound/EREAPER/MOVE4.ogg
+      1412: Resources/Sound/EREAPER/MOVE5.ogg
+      1413: Resources/Sound/EREAPER/SEL1.ogg
+      1414: Resources/Sound/EREAPER/SEL2.ogg
+      1415: Resources/Sound/EREAPER/SEL3.ogg
+      1416: Resources/Sound/EREAPER/SEL4.ogg
+      1417: Resources/Sound/EREAPER/SEL5.ogg
+      1418: Resources/Sound/EREAPER/IDLE1.ogg
+      1419: Resources/Sound/EREAPER/IDLE2.ogg
+      1420: Resources/Sound/EREAPER/IDLE3.ogg
+      1421: Resources/Sound/EREAPER/IDLE4.ogg
+      1422: Resources/Sound/EREAPER/IDLE5.ogg
+      1423: Resources/Sound/EREAPER/DIE1.ogg
+      1424: Resources/Sound/EREAPER/DIE2.ogg
+      1425: Resources/Sound/EREAPER/DIE3.ogg 
+      1426: Resources/Sound/EREAPER/DIE4.ogg    
   - type: GEO.CAT
     files:
       32: Resources/Sound/32CANFIRE.wav

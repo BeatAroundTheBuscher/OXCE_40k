@@ -2126,6 +2126,20 @@ ufopaedia:
     requires:
       - STR_ELDAR_MGRENADE
     text: STR_ELDAR_MGRENADE_UFOPEDIA
+  - id: AUX_ELDAR_SHIELD
+    type_id: 14
+    section: STR_ALIEN_ARTIFACTS
+    image_id: 1EL9.SPK
+    requires:
+      - STR_ELDAR_SHIELD
+    text: STR_ELDAR_SHIELD_UFOPEDIA
+  - id: STR_WRAITH_MELEE_WEAPON
+    type_id: 14
+    section: STR_ALIEN_ARTIFACTS
+    image_id: 1EL10.SPK
+    requires:
+      - STR_ELDAR_SHIELD
+    text: STR_WRAITH_MELEE_WEAPON_UFOPEDIA
   - id: STR_SLUGGA
     type_id: 14
     section: STR_ALIEN_ARTIFACTS
@@ -4453,6 +4467,14 @@ ufopaedia:
     image_id: CHAOS_CRAFT_HELP_PEDIA.SPK
     text: STR_HELP_CHAOS_CRAFT_SCAN_DATA_PEDIA
     listOrder: 51000
+  - id: STR_HELP15         #HELP 51010
+    type_id: 10
+    requires:
+      - STR_ELDAR_PATH
+    section: STR_HELP
+    image_id: 3PROMO.SPK
+    text: STR_HELP_PROMO
+    listOrder: 51010
 
   - id: STR_DEVOTION
     type_id: 10
