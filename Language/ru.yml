@@ -661,7 +661,7 @@ ru:
   STR_PROMOTE_TO_REAPER: "Путь Жнеца"
   STR_PROMOTE_TO_DIREAVENGER: "Путь Мстителя"
   STR_PROMOTE_TO_SEER: "Путь Провидца"
-  STR_RESURRECT_ELDAR: "Wraithguard Spirit Stone Infuse"
+  STR_RESURRECT_ELDAR: "Оживление Призрачного Стража"
 
 # Damage types
   STR_DAMAGE_NONE: "ПОДДЕРЖКА"
@@ -670,7 +670,7 @@ ru:
 
 # Base text
   STR_ELDAR_AVANGER_MF: "Воин Аспекта"
-  STR_ELDAR_SEER_F: "Провидец"
+  STR_ELDAR_SEER_F: "Видящая"
   STR_ELDAR_BANSHEE_F: "Воин Аспекта"
   STR_ELDAR_REAPER_M: "Воин Аспекта"
   STR_ELDAR_SCORPION_M: "Воин Аспекта"
@@ -1291,7 +1291,12 @@ ru:
   STR_SYNAPTIC_DISINTEGRATOR_UFOPEDIA: "{NEWLINE} Усовершенствованное снайперское оружие, которое используют только убийцы Некронов-Смертоуказатели в качестве излюбленного оружия, доставляющего смерть издалека. Эти длинноствольные винтовки стреляют сжатыми лептонными лучами субатомных частиц, которые разрушают нервную и синаптическую ткани."
   STR_GAUSS_BLASTER_UFOPEDIA: "{NEWLINE} Бластер Гаусса - это разновидность ужасающего оружия Некрона Гаусса, которое может разорвать цель от молекулы к молекуле, превращая ее в составляющие ее атомы за считанные секунды."
   STR_HYPERPHASESWORD_UFOPEDIA: "{NEWLINE} Гиперфазовый Клинок - это оружие ближнего боя Некронов, энергетический клинок которого вибрирует в различных состояниях и может легко прорезать броню и плоть, разрубая жизненно важные органы внутри. Гиперфазовый меч можно считать продвинутым типом силового оружия."
-#ITEMS ELDAR
+#ITEMS eldar
+
+  AUX_ELDAR_SHIELD: "Энергощит"
+  STR_ELDAR_SHIELD_UFOPEDIA: "{NEWLINE} Энергощит - это персональное защитное устройство, используемое эльдарами. энергощит, как следует из его названия, проецирует мощное защитное силовое поле вокруг своего пользователя. Для экипировки используйте броню с тегом /щит."
+  STR_WRAITH_MELEE_WEAPON: "Призрачная Секира"
+  STR_WRAITH_MELEE_WEAPON_UFOPEDIA: "{NEWLINE} Оружие ближнего боя, используемое призрачным стражем для ближнего боя (экипируется с вариантом брони-Э/щит)."
   STR_CATAPULT_PISTOL: "Сюрикеновый Пистолет"
   STR_CATAPULT: "Сюрикеновая Катапульта"
   STR_SHURIKEN_CLIP: "Мономолекулярный Сюрикен"
@@ -2191,7 +2196,7 @@ ru:
   STR_ELDAR_GUARDIAN: "Дозорный Эльдар" #D
   STR_ELDAR_BANSHEE: "Банши Эльдар" #D
   STR_ELDAR_SEER: "Видящая Эльдар"
-  STR_ELDAR_WRAITHGUARD: "Призрачный Страж Элдар" #D
+  STR_ELDAR_WRAITHGUARD: "Призрачный Страж Эльдар" #D
   STR_ELDAR_SCORPION: "Скорпион Эльдар" #D
   STR_ELDAR_DAVENGER: "Мститель Эльдар" #D
   STR_ELDAR_REAPER: "Жнец Эльдар" #D
@@ -2386,24 +2391,31 @@ ru:
   STR_ORK_ARMORH: "Орк Ноб"
   STR_ORK_KILLA_ARMOR: "Убойная Банка"
   STR_WRAITHGUARD_ARMOR_P : "Броня Призрач. Стража Эльдар" #D
+  STR_WRAITHGUARD_ARMOR_P_SHIELD : "Броня Призрач. Стража/щит Эльдар" #D
   STR_WRAITHGUARD_ARMOR : "Призрачный Страж Эльдар" #D
   STR_ELDAR_SHIELD: "Персональный Щит Эльдар" #D
   STR_ELDAR_ARMOR: "Дозорный Эльдар" #D
-  STR_ELDAR_ARMOR_M: "Броня Дозоного" #D
-  STR_ELDAR_ARMOR_M_SHIELD: "Броня Дозоного/Щит" #D
-  STR_ELDAR_ARMOR_F: "Броня Дозоного" #D
+  STR_ELDAR_ARMOR_M: "Броня Дозорного" #D
+  STR_ELDAR_ARMOR_M_SHIELD: "Броня Дозорного/Щит" #D
+  STR_ELDAR_ARMOR_F: "Броня Дозорного" #D
+  STR_ELDAR_ARMOR_F_SHIELD: "Броня Дозорного/Щит" #D
   STR_ELDAR_ARMOR_FH: "Броня Целителя" #D
   STR_ELDAR_ARMOR: "Дозорный Эльдар" #D
   STR_ELDAR_ARMOR2: "Банши Эльдар" #D
   STR_ELDAR_ARMOR2_P: "Броня Банши" #D
+  STR_ELDAR_ARMOR2_P_SHIELD: "Броня Банши/щит" #D
   STR_ELDAR_ARMOR3: "Провидец Эльдар" #D
   STR_ELDAR_ARMOR3_P: "Броня Провидца" #D
+  STR_ELDAR_ARMOR3_P_SHIELD: "Броня Провидца/щит" #D
   STR_ELDAR_ARMOR4: "Мститель Эльдар" #D
-  STR_ELDAR_ARMOR4_P: "Броня Мстителя " #D
+  STR_ELDAR_ARMOR4_P: "Броня Мстителя" #D
+  STR_ELDAR_ARMOR4_P_SHIELD: "Броня Мстителя/щит" #D
   STR_ELDAR_ARMOR5: "Скорпион Эльдар" #D
   STR_ELDAR_ARMOR5_P: "Броня Скорпиона" #D
+  STR_ELDAR_ARMOR5_P_SHIELD: "Броня Скорпиона/щит" #D
   STR_ELDAR_ARMOR6: "Жнец Эльдар" #D
   STR_ELDAR_ARMOR6_P: "Броня Жнеца" #D
+  STR_ELDAR_ARMOR6_P_SHIELD: "Броня Жнеца/щит" #D
   STR_ELDAR_PLAT_ARMOR_P: "Грави-Платформа" #D
   STR_ELDAR_PLAT_P: "Грави-Платформа" #D
   STR_ELDAR_PLAT_ARMOR: "Грави-Платформа" #D
@@ -3437,7 +3449,8 @@ ru:
   STR_HELP_WEAPONS: "{NEWLINE}Все оружие получает повышенную точность при стрельбе из положения сидя. {NEWLINE}Двуручное оружие получает штраф к точности если вторая рука стрелка занята каким-либо предметом. Это правило не распространяется на оружие Терминаторов, не смотря на то что оно является двуручным."
   STR_HELP10: "Ремонт Брони"
   STR_REPAIRPEDIA: "{NEWLINE}Сервиторы и Технодесантники могут ремонтировать все типы поврежденной брони. {NEWLINE}Для этого они должны находиться рядом с боевой единицей, которую необходимо отремонтировать. Направление, в котором повернута боевая единица, не имеет значения. В первую очередь будет отремонтирована наиболее поврежденная броня."
-
+  STR_HELP15: "Повышение Эльдар"
+  STR_HELP_PROMO: "{NEWLINE} Эльдары могут быть повышены до аспектных воинов через трансформацию в закладке солдаты, они должны быть определенного ранга и иметь определенные атрибуты, но также они могут выбирать только путь, доступный их полу."
   STR_HELP11: "Соавторы"
   STR_CONTRIBUTORS_T: "Соавторы"
   STR_CONTRIBUTORS_P1: "{NEWLINE} Этот раздел сделан специально для участников, не являющихся частью команды разработчиков, но оказавших значительную помощь в развитии проекта. Благодарим вас за содействие. {NEWLINE}{NEWLINE} Благослави вас Император!"
@@ -3527,6 +3540,11 @@ ru:
   STR_RESURRECT_SISTER: "Воскресить как Святую"
 
 #ELDAR
+  STR_ELDAR_WS_RANK_0: "Призрачный Страж"
+  STR_ELDAR_WS_RANK_1: "Эфирный Страж"
+  STR_ELDAR_WS_RANK_2: "Воин Призрак"
+  STR_ELDAR_WS_RANK_3: "Воин Вечности"
+  STR_ELDAR_WS_RANK_4: "Призрачный Лорд"
   STR_ELDAR_RANK_0: "Дозорный"
   STR_ELDAR_RANK_1: "Страж"
   STR_ELDAR_RANK_2: "Воин"
