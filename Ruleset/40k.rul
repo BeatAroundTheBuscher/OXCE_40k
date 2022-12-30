@@ -6013,6 +6013,7 @@ armors:
     bleedImmune: true
     fearImmune: true
     painImmune: true
+    allowsMoving: false
     spriteInv: RAZOR
     corpseGeo:  STR_DREAD_CORPSE
     corpseBattle:
