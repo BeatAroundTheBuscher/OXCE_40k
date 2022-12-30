@@ -576,7 +576,7 @@
   - type: ELDAR5.SPK #FOES INV
     singleImage: true
     files:
-      0: Resources/Eldar/ELDAR05.png
+      0: Resources/Eldar/ELDAR05.gif
   - type: ELDAR6.SPK #FOES INV
     singleImage: true
     files:
