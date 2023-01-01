@@ -1813,7 +1813,7 @@ ufopaedia:
     type_id: 14
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_LASER_RIFLE
+      - STR_LASER_WEAPONS
   - id: STR_LASPISTOL_CLIP
     type_id: 14
     section: STR_NOT_AVAILABLE
@@ -1821,7 +1821,7 @@ ufopaedia:
     type_id: 14
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_LASER_PISTOL
+      - STR_LASER_WEAPONS
   - id: STR_HB_CLIP
     type_id: 14
     section: STR_NOT_AVAILABLE

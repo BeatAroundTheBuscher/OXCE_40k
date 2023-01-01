@@ -1507,7 +1507,7 @@
     height: 320
     files:
       0: Resources/Eldar/eldarwsP.png
-  - type: ELDARWG.PCK#ELDAR WRAITH GUARD DR
+  - type: ELDARWG.PCK #ELDAR WRAITH GUARD DR
     subX: 32
     subY: 40
     width: 256

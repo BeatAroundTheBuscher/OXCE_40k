@@ -2512,8 +2512,6 @@ terrains:
         width: 30
         length: 30
         groups: [12]
-        width: 20
-        length: 20
   - name: MOUNTROCK # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
     enviroEffects: STR_FOREST_ENVIRO
     mapDataSets:
@@ -2570,8 +2568,6 @@ terrains:
         width: 30
         length: 30
         groups: [12]
-        width: 20
-        length: 20
   - name: MOUNTTROP # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
     enviroEffects: STR_FOREST_ENVIRO
     ambience: 888 #swamp
@@ -3858,7 +3854,7 @@ terrains:
       - 04STORAGE
       - 04PIPES
       - 04ENGINE
-    script: CITY
+    # script: CITY
     mapBlocks:
       - name: CITY00
         width: 20
@@ -3946,7 +3942,7 @@ terrains:
       - 04STORAGE
       - 04PIPES
       - 04ENGINE
-    script: CITY
+    # script: CITY
     mapBlocks:
       - name: RIG00
         width: 20
@@ -5004,7 +5000,7 @@ terrains:
       - OUTPOSTSM
       - OUTPOSTSM2
       - OUTPOSTSM3
-    script: IDESERT
+    # script: IDESERT
     mapBlocks:
       - name: IDESERT00
         width: 10

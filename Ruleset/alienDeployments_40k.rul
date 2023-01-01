@@ -3168,7 +3168,7 @@ alienDeployments:
     alertBackground: BACK159.SCR
     alertSound: 50
     markerName: STR_ELDAR_SITE
-    objectiveType: 3 #target type
+    objectiveType: 16 #target type
     objectivesRequired: 2 #number of tiles to be dest
     objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
     objectiveFailed: [STR_WEBWAY_DEVICE_FAILED, -500]
@@ -3179,9 +3179,6 @@ alienDeployments:
     markerIcon: 76
     script: ELDARGATE_SCRIPT
     alienBase: true
-    objectiveType: 100
-    objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
-    objectivePopup: STR_WEBWAY_DESTROYED
     data:
       - alienRank: 5
         lowQty: 5
@@ -3276,8 +3273,6 @@ alienDeployments:
       background: BACK160.SCR
       title: STR_WEBWAY_TITLE
       palette: 4
-    missionBountyItem: STR_ALIEN_HABITAT
-    markerName: STR_ELDAR_SITE
     genMission:
       STR_ELDAR_PATROL: 100
     genMissionFreq: 4
@@ -3402,8 +3397,8 @@ alienDeployments:
     alertBackground: BACK159.SCR
     alertSound: 50
     markerName: STR_ELDAR_SITE
-    objectiveType: 3 #target type
-    objectivesRequired: 5 #number of tiles to be dest
+    objectiveType: 16 #target type
+    objectivesRequired: 2 #number of tiles to be dest
     objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
     objectiveFailed: [STR_WEBWAY_DEVICE_FAILED, -500]
     objectivePopup: STR_WEBWAY_DESTROYED
@@ -3499,9 +3494,6 @@ alienDeployments:
     markerIcon: 77
     script: ELDARGATE_SCRIPT2
     alienBase: true
-    objectiveType: 100
-    objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
-    objectivePopup: STR_WEBWAY_DESTROYED
     data:
       - alienRank: 5
         lowQty: 5
@@ -3656,8 +3648,8 @@ alienDeployments:
     alertBackground: BACK159.SCR
     alertSound: 50
     markerName: STR_ELDAR_SITE
-    objectiveType: 3 #target type
-    objectivesRequired: 5 #number of tiles to be dest
+    objectiveType: 16 #target type
+    objectivesRequired: 2 #number of tiles to be dest
     objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
     objectiveFailed: [STR_WEBWAY_DEVICE_FAILED, -500]
     objectivePopup: STR_WEBWAY_DESTROYED
@@ -3753,9 +3745,6 @@ alienDeployments:
     markerIcon: 93
     script: ELDARGATE_SCRIPT2
     alienBase: true
-    objectiveType: 100
-    objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
-    objectivePopup: STR_WEBWAY_DESTROYED
     data:
       - alienRank: 5
         lowQty: 5
@@ -6746,7 +6735,7 @@ alienDeployments:
     finalDestination: false # used for the hangar mission, not necessary since this is spawned as a base
 
   - type: STR_CHAOS_FINAL_ASSAULT                     # RANK0 # RANK1 STR_INSIDE_ENVIRO
-    startingCondition: STR_INSIDE_ENVIRO
+    enviroEffects: STR_INSIDE_ENVIRO
     music:
       - INMYSPIRIT
     data:
@@ -8652,7 +8641,6 @@ alienDeployments:
     script: WARRSCRIPT
     alert: STR_TANK_ALERT
     alertBackground: BACK03.SCR
-    alertSound: 43
     briefing:
       title: STR_TANK_TITLE
       palette: 4
