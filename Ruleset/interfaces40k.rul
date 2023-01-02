@@ -1944,8 +1944,8 @@ interfaces:
       - id: numWounds
         color: 32
       - id: buttonEnd
-        pos: [220, 140]
-        size: [20, 20]
+        pos: [210, 142]
+        size: [12, 12]
   - type: systemMenu
     elements:
       - id: text
