@@ -5651,7 +5651,7 @@ alienDeployments:
     despawnPenalty: 1000
   - type: STR_ALIEN_WAR # WAR                     # RANK1
     markerIcon: 32
-    data: &WAR
+    data:
       - alienRank: 5
         lowQty: 5 #4
         highQty: 5 #6
@@ -5777,7 +5777,7 @@ alienDeployments:
     despawnPenalty: 1000
   - type: STR_ADEPTAS_WAR # WAR                     # RANK1
     markerIcon: 32
-    data: &WAR
+    data:
       - alienRank: 5
         lowQty: 5 #4
         highQty: 5 #6
@@ -6413,7 +6413,7 @@ alienDeployments:
         highQty: 2 #3
         dQty: 2
         percentageOutsideUfo: 100
-        itemSets: &cultistSeerEquip
+        itemSets: &cultistSeerEquip2
           -
             - STR_STUB_RIFLE
             - STR_STUB_GUN_AMMO
@@ -6435,7 +6435,7 @@ alienDeployments:
         highQty: 2 #3
         dQty: 2
         percentageOutsideUfo: 100
-        itemSets: &cultistStandardEquip
+        itemSets: &cultistStandardEquip2
           -
             - STR_STUB_GUN_CHAOS
             - STR_STUB_GUN_AMMO
