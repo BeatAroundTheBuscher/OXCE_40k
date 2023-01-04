@@ -781,6 +781,18 @@ extraSprites:
     files:
       0: Resources_IG/Pedia/bullgryn.png
 
+#*** Ogryn NPCs ***
+
+  - type: BULLGRYN_SLAB.SPK
+    singleImage: true
+    files:
+      0: Resources_IG/UnitSprites/Bullgryn_Slab_Inv/ogryn_psychosmooth.png
+
+  - type: BULLGRYN_BUCKLER.SPK
+    singleImage: true
+    files:
+      0: Resources_IG/UnitSprites/Bullgryn_Buckler_Inv/ogryn_psychosmooth.png
+
 #*** Psyker ***
   - type: PSYKER.PCK
     width: 512

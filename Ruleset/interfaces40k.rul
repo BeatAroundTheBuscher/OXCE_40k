@@ -1294,7 +1294,7 @@ interfaces:
         color: 241   # pink
       - id: list
         color: 208   # white
-        color2: 218	 # blue
+        color2: 218  # blue
         border: 241  # pink
       - id: button
         color: 218   # blue
@@ -1369,7 +1369,7 @@ interfaces:
         color: 218   # blue
       - id: list
         color: 208   # white
-        color2: 218	 # blue
+        color2: 218  # blue
         border: 218  # blue
       - id: button
         color: 246   # purple

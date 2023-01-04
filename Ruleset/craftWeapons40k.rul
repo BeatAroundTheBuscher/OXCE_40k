@@ -97,6 +97,7 @@ craftWeapons:
     clip: STR_CANNON_ROUNDS_X50
     projectileType: 2
     projectileSpeed: 8
+    bulletSaving: true
   - type: STR_FUSION_BALL_UC         #R 10       A 2        D230     Acc 90
     sprite: 3
     sound: 7
@@ -166,6 +167,7 @@ craftWeapons:
     clip: STR_CANNON_ROUNDS_X50
     projectileType: 2
     projectileSpeed: 8
+    bulletSaving: true
 #Addons
   - type: STR_THRUSTER_UC
     weaponType: 4

@@ -57,5 +57,9 @@
     listOrder: 202
   - type: STR_CAT_TAU #race 203
     listOrder: 203
+  - type: STR_CAT_NECRON # race 204
+    listOrder: 204
+  - type: STR_CAT_GRANADES
+    listOrder: 250
   - type: STR_BLANKS
     listOrder: 999

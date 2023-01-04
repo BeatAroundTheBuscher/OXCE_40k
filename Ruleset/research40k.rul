@@ -1372,7 +1372,6 @@ research:
       - STR_ELDAR_GRENADE
       - STR_ELDAR_CHAINSWORD
     spawnedItemCount: 1
-    lookup: STR_CHOSEN_ELDAR
   - name: STR_CHOSEN_ELDAR
     dependencies:
       - STR_GENERALLOCK
@@ -2151,3 +2150,7 @@ research:
   - name: STR_TRAITOR_CHIMERA
     points: 50
     needItem: true
+
+  - name: STR_DONTSHOWYET
+    dependencies:
+      - STR_GENERALLOCK
