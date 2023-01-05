@@ -110,7 +110,8 @@ extended:
     createItem:
 #*** Sets tags items to have a primed fuse at the beginning of battle ***
 #*** Mostly used for scripted missions ***
-      - offset: 1
+      - new: 40k_cI_prime_fuse_at_beginning
+        offset: 1
         code: |
           var ptr RuleItem itemRuleset;
           var int fuseTimer;
@@ -133,7 +134,8 @@ extended:
           return;
 
 #*** Sets a tag on the save game for timed objectives ***
-      - offset: 2
+      - new: 40k_cI_save_timed_objectives
+        offset: 2
         code: |
           var ptr RuleItem itemRuleset;
           var int itemSetsMissionTimer;
@@ -152,7 +154,8 @@ extended:
           return;
 
 #*** Primes items that are meant to be set according to the mission timer ***
-      - offset: 3
+      - new: 40k_cI_prime_fuse_for_mission_timer
+        offset: 3
         code: |
           var ptr RuleItem itemRuleset;
           var int itemPrimedByMissionTimer;
@@ -184,7 +187,8 @@ extended:
 
       #*** Sets timers for reinforcements spawned by items placed on battle maps ***
       #*** Start by picking a turn for all the spawners for a given mission ***
-      - offset: 4
+      - new: 40k_cI_map_placed_reinforcements_timer_tagger
+        offset: 4
         code: |
           var ptr RuleItem itemRuleset;
           var int earliestReinforcementTurn;
@@ -209,7 +213,8 @@ extended:
 
           return;
 
-      - offset: 5
+      - new: 40k_cI_map_placed_reinforcements_timer_prime_fuse
+        offset: 5
         code: |
           var ptr RuleItem itemRuleset;
           var int earliestReinforcementTurn;
@@ -244,7 +249,8 @@ extended:
 
     createUnit:
 #*** Immobilizes a unit at the start of battle when scripted to activate later by mission timer ***
-      - offset: 1
+      - new: 40k_cU_immobilize_till_mission_timer
+        offset: 1
         code: |
           var ptr RuleArmor armorRuleset;
           var int unitImmobilizedUntilMissionTimer;
@@ -262,7 +268,8 @@ extended:
 
     newTurnItem:
 #*** Changes the mission timer based on certain items existing ***
-      - offset: 1
+      - new: 40k_nTI_change_mission_timer_depending_on_items
+        offset: 1
         code: |
           var ptr RuleItem itemRuleset;
           var int itemNewTurnChangesMissionTimer;
@@ -289,7 +296,8 @@ extended:
           return;
 
       #*** Make sure we don't un-set the mission timer by making it 0 ***
-      - offset: 2
+      - new: 40k_nTI_change_mission_timer_sanity_check
+        offset: 2
         code: |
           var ptr RuleItem itemRuleset;
           var int itemNewTurnChangesMissionTimer;
@@ -314,7 +322,8 @@ extended:
           return;
 
 #*** Keeps fuses from reaching 0 until the mission timer is reached ***
-      - offset: 3
+      - new: 40k_nTI_prevent_fuses_cooking_off_till_mission_timer
+        offset: 3
         code: |
           var ptr RuleItem itemRuleset;
           var int itemFuseDelayedUntilMissionTimer;
@@ -361,7 +370,8 @@ extended:
     newTurnUnit:
 #*** Changes the mission timer based on certain units existing ***
 #*** Runs before any of the items change the timer ***
-      - offset: 1
+      - new: 40k_nTU_change_mission_timer_depending_on_items
+        offset: 1
         code: |
           var ptr RuleArmor armorRuleset;
           var int unitNewTurnChangesMissionTimer;
@@ -401,7 +411,8 @@ extended:
           return;
 
 #*** Immobilizes a unit by zeroing their time units until a turn related to the mission timer ***
-      - offset: 2
+      - new: 40k_nTU_immobilize_till_mission_timer
+        offset: 2
         code: |
           var ptr RuleArmor armorRuleset;
           var int unitImmobilizedUntilMissionTimer;

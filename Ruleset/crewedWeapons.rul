@@ -23,7 +23,8 @@ extended:
   scripts:
     createUnit:
 #*** Crewed weapons should have 0 energy so they only move when "pushed" ***
-      - offset: 10
+      - new: 40k_cU_crew_served_weapons
+        offset: 10
         code: |
           var ptr RuleArmor turretArmor;
           var int checkedTag;
@@ -41,7 +42,8 @@ extended:
 
     newTurnUnit:
 #*** Handles counting experience from crewed weapons ***
-      - offset: 10
+      - new: 40k_nTU_crew_served_weapons_experience
+        offset: 10
         code: |
           var int unitIsUsingCrewedWeapon;
           var int gameCrewedWeaponExperienceBitCounter;
@@ -75,7 +77,8 @@ extended:
           return;
 
 #*** Handles resetting crewed weapons ***
-      - offset: 11
+      - new: 40k_nTU_crew_served_weapons_reset
+        offset: 11
         code: |
           var ptr RuleArmor turretArmor;
           var int checkedTag;
@@ -108,7 +111,8 @@ extended:
 #*** Handles resetting BattleGame tags for crewed weapons ***
 #*** Using newTurnItem since it runs after newTurnUnit, which would reset these tags after the first unit otherwise
     newTurnItem:
-      - offset: 10
+      - new: 40k_nTI_crew_served_weapons
+        offset: 10
         code: |
           # Validation:
           #   1. Player's turn
@@ -127,7 +131,8 @@ extended:
 
     hitUnit:
 #*** Counts for experience tags when a crewed weapon hits a target ***
-      - offset: 10
+      - new: 40k_hU_crew_served_weapons_experience
+        offset: 10
         code: |
           var int crewedWeaponID;
           var int gameCrewedWeaponExperienceBitCounter;
@@ -141,7 +146,8 @@ extended:
           return power part side;
 
 #*** Handles interactions with crewed weapons ***
-      - offset: 11
+      - new: 40k_hU_crew_served_weapons_interaction
+        offset: 11
         code: |
           var ptr RuleArmor turretArmor;
           var ptr RuleItem interactingItem;
@@ -287,8 +293,8 @@ extended:
 #          return power part side;
 
     damageUnit:
-#*** Prevents soldiers who are using crew-served weapons from getting TUs back ***
-      - offset: 10
+      - new: 40k_dU_crew_served_weapons_crew_tu
+        offset: 10
         code: |
           var int unitIsUsingCrewedWeapon;
 
@@ -302,7 +308,8 @@ extended:
           return;
 
 #*** Handles using crewed weapon interaction items to assemble/disassemble crewed weapons
-      - offset: 11
+      - new: 40k_dU_crew_served_weapons_interaction
+        offset: 11
         code: |
           var ptr RuleArmor turretArmor;
           var ptr RuleItem interactingItem;
@@ -384,7 +391,8 @@ extended:
 
     returnFromMissionUnit:
 #*** Adds the experience gained from crewed weapons ***
-      - offset: 10
+      - new: 40k_rFMU_crew_served_weapons
+        offset: 10
         code: |
           var ptr RuleSoldier soldierRuleset;
           var int unitCrewedWeaponExperience;

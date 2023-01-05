@@ -1068,7 +1068,8 @@ extended:
   scripts:
     newTurnItem:
       #*** Sets a tag on units carrying weapons that revert the overweight logic to a TU penalty ***
-      - offset: 10
+      - new: 40k_nTI_overweight_affects_stamina_tagger
+        offset: 10
         code: |
           var ptr RuleItem itemRuleset;
           var ptre BattleUnit unit;
@@ -1089,7 +1090,8 @@ extended:
 
     newTurnUnit:
       #*** Script that changes the logic for TU loss on overweight to energy loss ***
-      - offset: 10
+      - new: 40k_nTU_overweight_affects_stamina_swap_tu_with_stamina
+        offset: 10
         code: |
           var ptr RuleSoldier soldierRuleset;
           var int unitHoldsTUPenaltyWeapon;
@@ -1137,14 +1139,16 @@ extended:
           return;
 
       #*** Resets tag that checks for weapons that revert the overweight logic to TU penalty ***
-      - offset: 11
+      - new: 40k_nTU_overweight_affects_stamina_untagger
+        offset: 11
         code: |
           unit.setTag Tag.UNIT_HOLDS_TU_PENALTY_WEAPON 0;
 
           return;
 
       #*** Returns morale from executing a traitor ***
-      - offset: 12
+      - new: 40k_nTU_traitor_execution_morale
+        offset: 12
         code: |
           var ptr RuleSoldier soldierRuleset;
           var int traitorValue;
@@ -1171,7 +1175,8 @@ extended:
           return;
 
       #*** Handles decay of energy shields and shield HP added by armors ***
-      - offset: 13
+      - new: 40k_nTU_personal_shields
+        offset: 13
         code: |
           var ptr RuleArmor armorRuleset;
           var int shieldHP;
@@ -1215,7 +1220,8 @@ extended:
           return;
 
       #*** Stasis spell: remove TUs and decrement the tag
-      - offset: 14
+      - new: 40k_nTU_spell_stasis
+        offset: 14
         code: |
           var int unitIsInStasis;
 
@@ -1233,7 +1239,8 @@ extended:
           return;
 
       #*** Lockdown spell: reduce TUs and decay the tag
-      - offset: 15
+      - new: 40k_nTU_spell_lockdown
+        offset: 15
         code: |
           var int unitIsInLockdown;
           var int unitTUs;
@@ -1255,7 +1262,8 @@ extended:
           return;
 
       #*** Melee inspire spell: check if the buff is over
-      - offset: 16
+      - new: 40k_nTU_spell_inspire_melee
+        offset: 16
         code: |
           var int unitMeleeBuff;
           var int unitMeleeBuffDuration;
@@ -1280,7 +1288,8 @@ extended:
 
     createUnit:
       #*** Sets the frequency and offset for periodic unit recolors for buffs and debuffs ***
-      - offset: 10
+      - new: 40k_cU_frequency_offset_recolor
+        offset: 10
         code: |
           var int recolorPeriod;
           var int desync;
@@ -1293,7 +1302,8 @@ extended:
           return;
 
       #*** Sets energy shields from unit armors at the beginning of the battlescape ***
-      - offset: 11
+      - new: 40k_cU_personal_shields
+        offset: 11
         code: |
           var ptr RuleArmor armorRuleset;
           var int shieldAdded;
@@ -1323,7 +1333,8 @@ extended:
 
     createItem:
       #*** Sets sprites for items that have randomized cosmetic variants ***
-      - offset: 10
+      - new: 40k_cI_cosmetic_sprites_randomized
+        offset: 10
         code: |
           var ptr RuleItem itemRuleset;
           var int randomizedSprite;
@@ -1340,7 +1351,8 @@ extended:
           return;
 
       #*** Sets sprites for items that are built-in to muliple armor variants and should change look based on armor ***
-      - offset: 11
+      - new: 40k_cI_cosmetic_sprites_based_on_armor
+        offset: 11
         code: |
           var ptr RuleItem itemRuleset;
           var ptr BattleUnit itemOwner;
@@ -1366,7 +1378,8 @@ extended:
 
     selectItemSprite:
       #*** displays randomized bigob sprites for certain weapons ***
-      - offset: 10
+      - new: 40k_sIS_cosmetic_sprites_randomized
+        offset: 10
         code: |
           var int randomizedSprite;
 
@@ -1381,7 +1394,8 @@ extended:
           return sprite_index;
 
       #*** gives bolt weapons muzzle flashes ***
-      - offset: 11
+      - new: 40k_sIS_cosmetic_sprites_muzzle_flash
+        offset: 11
         code: |
           var ptr BattleUnit unit;
           var ptr RuleItem itemRuleset;
@@ -1412,7 +1426,8 @@ extended:
           return sprite_index;
 
       #*** Sets bipod weapon sprites when kneeling ***
-      - offset: 12
+      - new: 40k_sIS_cosmetic_sprites_bipod
+        offset: 12
         code: |
           var ptr RuleItem itemRuleset;
           var ptr BattleUnit holdingUnit;
@@ -1446,7 +1461,8 @@ extended:
           return sprite_index;
 
       #*** Sets sprite variants for built-in weapons shared across multiple armors
-      - offset: 13
+      - new: 40k_sIS_cosmetic_sprites_based_on_armor
+        offset: 13
         code: |
           var int itemBuiltinSpriteVariant;
 
@@ -1467,7 +1483,8 @@ extended:
 
     hitUnit:
       #*** Handles tagging soldier-on-soldier attacks as traitors ***
-      - offset: 10
+      - new: 40k_hU_traitor_execution_morale_tagger
+        offset: 10
         code: |
           var ptr RuleSoldier attackingSoldier;
           var ptr RuleSoldier victimSoldier;
@@ -1512,7 +1529,8 @@ extended:
           return power part side;
 
       #*** Handles execution of traitors ***
-      - offset: 11
+      - new: 40k_hU_traitor_execution_morale_execution
+        offset: 11
         code: |
           var ptr RuleSoldier attackingSoldier;
           var int traitorValue;
@@ -1547,7 +1565,8 @@ extended:
           return power part side;
 
       #*** Defense layer: does the unit have an energy shield? ***
-      - offset: 12
+      - new: 40k_hU_personal_shields
+        offset: 12
         code: |
           var int shieldHP;
           var int shieldHPAfter;
@@ -1584,7 +1603,8 @@ extended:
           return power part side;
 
       #*** Techmarine/servitor armor repair ***
-      - offset: 13
+      - new: 40k_hU_repair_armor
+        offset: 13
         code: |
           var ptr RuleItem weaponRuleset;
           var int itemRepairsArmor;
@@ -1655,7 +1675,8 @@ extended:
 
     damageUnit:
       #*** Seductress spell: stun units that are low on morale ***
-      - offset: 10
+      - new: 40k_dU_spell_seductress
+        offset: 10
         code: |
           var ptr RuleItem itemRuleset;
           var int targetMorale;
@@ -1676,7 +1697,8 @@ extended:
           return;
 
       #*** Spells that add to energy shields ***
-      - offset: 11
+      - new: 40k_dU_spell_personal_shields
+        offset: 11
         code: |
           var ptr RuleItem weaponRuleset;
           var int shieldAdded;
@@ -1743,7 +1765,8 @@ extended:
           return;
 
       #*** Stasis spell: do no damage if the target is in stasis ***
-      - offset: 12
+      - new: 40k_dU_spell_stasis_no_damage
+        offset: 12
         code: |
           var int unitIsInStasis;
 
@@ -1767,7 +1790,8 @@ extended:
 
       #*** Statis spell: setting the tag ***
       # Set the tag *after* the check for reducing all damage to 0 so the spell has a chance to remove TUs and such
-      - offset: 13
+      - new: 40k_dU_spell_stasis_tagger
+        offset: 13
         code: |
           var ptr RuleItem itemRuleset;
           var int stasisValue;
@@ -1785,7 +1809,8 @@ extended:
           return;
 
       #*** Lockdown spell: sets the tag ***
-      - offset: 14
+      - new: 40k_dU_spell_lockdown_tagger
+        offset: 14
         code: |
           var ptr RuleItem itemRuleset;
           var int lockdownValue;
@@ -1803,7 +1828,8 @@ extended:
           return;
 
       #*** Melee buff spell: sets the tag ***
-      - offset: 15
+      - new: 40k_dU_spell_inspire_melee_tagger
+        offset: 15
         code: |
           var ptr RuleItem itemRuleset;
           var int meleeBuffValue;
@@ -1826,7 +1852,8 @@ extended:
 
     accuracyMultiplierBonusStats:
       #*** recoil accuracy penalty on firing weapons with not enough strength ***
-      - offset: 10
+      - new: 40k_aMBS_missing_strength_affects_accuracy
+        offset: 10
         code: |
           var ptr RuleItem weaponRuleset;
           var ptr BattleItem otherWeapon;
@@ -1883,7 +1910,8 @@ extended:
           return bonus;
 
       #*** ability for some armors to fire two-handed weapons as if one-handed
-      - offset: 11
+      - new: 40k_aMBS_treat_two_handed_as_one_handed
+        offset: 11
         code: |
           var ptr RuleArmor unitArmor;
           var ptr RuleItem weaponRuleset;
@@ -1916,7 +1944,8 @@ extended:
 
     meleeMultiplierBonusStats:
       #*** strength requirement penalty on melee weapons ***
-      - offset: 10
+      - new: 40k_mMBS_missing_strength_affects_accuracy
+        offset: 10
         code: |
           var ptr RuleItem weaponRuleset;
           var ptr BattleItem otherWeapon;
@@ -1952,7 +1981,8 @@ extended:
           return bonus;
 
       #*** melee buff spell: increase accuracy ***
-      - offset: 11
+      - new: 40k_mMBS_spell_inspire_melee
+        offset: 11
         code: |
           var int unitMeleeBuff;
 
@@ -1963,7 +1993,8 @@ extended:
 
     meleeDodgeBonusStats:
       #*** melee buff spell: increase dodge ***
-      - offset: 10
+      - new: 40k_mDBS_spell_inspire_melee
+        offset: 10
         code: |
           var int unitMeleeBuff;
 
@@ -1974,7 +2005,8 @@ extended:
 
     recolorItemSprite:
       #*** Handles recoloring weapons that change color based on ammo loaded ***
-      - offset: 10
+      - new: 40k_rIS_cosmetic_sprites_based_on_ammo
+        offset: 10
         code: |
           var ptr BattleItem ammoItem;
           var ptr RuleItem weaponRuleset;
@@ -2020,7 +2052,8 @@ extended:
 
     recolorUnitSprite:
       #*** Handles periodic recolors due to buffs/debuffs on units ***
-      - offset: 10
+      - new: 40k_rUS_buffs_debuffs_recolor
+        offset: 10
         code: |
           var int frame;
           var int frameLength;
@@ -2105,7 +2138,8 @@ extended:
           return new_pixel;
 
       #*** Handles recolors due to hitting a unit ***
-      - offset: 11
+      - new: 40k_rUS_hit_unit_recolor
+        offset: 11
         code: |
           var int frame;
           var int frameLength;
@@ -2151,7 +2185,8 @@ extended:
 
     returnFromMissionUnit:
       #*** Reduces wound times for certain soldier types ***
-      - offset: 10
+      - new: 40k_rFMU_reduce_wound_timer
+        offset: 10
         code: |
           var ptr RuleSoldier soldierRuleset;
           var int woundTimeMultiplier;
@@ -2168,7 +2203,8 @@ extended:
           return;
 
       #*** Grants Devotion (psiskill) in addition to secondary stat gains on tagged armors ***
-      - offset: 11
+      - new: 40k_psiskill_as_secondary_experience
+        offset: 11
         code: |
           var ptr RuleArmor soldierArmor;
           var ptr RuleSoldier soldierRuleset;
