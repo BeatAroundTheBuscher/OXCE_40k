@@ -3452,7 +3452,7 @@ en-US:
   STR_HELP_WEAPONS: "{NEWLINE} Most weapons will have increased accuracy if the unit is a kneeling position.{NEWLINE}{NEWLINE} All two-handed weapons will have an accuracy penalty if the other hand is not free while using it. Terminator marines can fire two-handed weapons with the other hand full without the penalty. Some weapons cannot be fired at all unless the other hand is empty, even when wieled by a Terminator."
   STR_HELP10: "Armor Repair"
   STR_REPAIRPEDIA: "{NEWLINE} Servitors and techmarines can repair all types of damaged armor.{NEWLINE}{NEWLINE} In order to do so, they must be adjacent to the unit to be repaired. The facing of the unit to be repaired does not matter, as the most damage armor will be repaired first."
-  STR_HELP17: "PERSONAL SHIELDS"
+  STR_HELP17: "Personal Shields"
   STR_SHIELDPEDIA: "{NEWLINE} Shields recharge along passing of time. They start with low charge and take time to be near maximum, never reaching full state"
   STR_HELP15: "Eldar Promotion"
   STR_HELP_PROMO: "{NEWLINE} Eldar can be promoted to aspect warriors on soldier transformation, they require to be a certain rank and have certain atributes but also they can only choose the path dictated by their gender."
