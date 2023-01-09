@@ -4461,6 +4461,12 @@ ufopaedia:
     image_id: 3REP.SPK
     text: STR_REPAIRPEDIA
     listOrder: 50900
+  - id: STR_HELP17         #HELP 50910
+    type_id: 10
+    section: STR_HELP
+    image_id: 3SHIELD.SPK
+    text: STR_SHIELDPEDIA
+    listOrder: 50910
   - id: STR_HELP_CHAOS_CRAFT_SCAN_DATA
     type_id: 10
     section: STR_HELP
