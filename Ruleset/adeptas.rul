@@ -1,4 +1,10 @@
-﻿units:
+﻿extended:
+  tags:
+    RuleItem:
+      ITEM_ADDS_ENERGY_SHIELD_FROM_POWER: int
+      ITEM_SETS_ENERGY_SHIELD_DECAY: int
+
+units:
 #------------  Zombie -------------------------
   - type: STR_ADEPTAS_ZOMBIE
     race: STR_ZOMBIEF
