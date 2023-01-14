@@ -2203,7 +2203,7 @@ extended:
           return;
 
       #*** Grants Devotion (psiskill) in addition to secondary stat gains on tagged armors ***
-      - new: 40k_psiskill_as_secondary_experience
+      - new: 40k_rFMU_psiskill_as_secondary_experience
         offset: 11
         code: |
           var ptr RuleArmor soldierArmor;
