@@ -508,7 +508,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 50
       STR_ELERIUM_115: 15
-  - name: STR_ASSCANNON
+  - name: STR_ASSCANNON_MANUFACTURE
     category: STR_CRAFT_WEAPON
     requires:
       - STR_ASSC
@@ -517,6 +517,8 @@ manufacture:
     cost: 100000
     requiredItems:
       STR_ALIEN_ALLOYS: 60
+    producedItems:
+      STR_ASSCANNON: 1
   - name: STR_RETICULE
     requires:
       - STR_CRAFTADD

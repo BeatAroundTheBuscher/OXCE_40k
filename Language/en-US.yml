@@ -3298,6 +3298,7 @@ en-US:
   STR_CANNON_UC: "CRAFT BOLTER"
   STR_CANNON: "Craft Bolter"
   STR_CANNON_ROUNDS_X50: "Craft Bolter Rounds (x50)"
+  STR_ASSCANNON_MANUFACTURE: "Craft Assault Cannon"
   STR_ASSCANNON_UC: "ASSAULT CANNON"
   STR_ASSCANNON: "Assault Cannon"
   STR_ASSCANNON_UFOPEDIA: "{NEWLINE} A ballistic six-barreled, self-loading rotary Assault Cannon. The weapon's size and fire rate requires a special mounting, so the Assault Cannon is normally only seen on Imperial ground vehicles, combat walkers, and aircraft.{NEWLINE}{NEWLINE}Slot: Weapon{NEWLINE}Ammo: Craft Bolter Rounds (x50)"
