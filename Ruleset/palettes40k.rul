@@ -22,7 +22,7 @@ customPalettes:
 
   - type: PALETTE_BASESCAPE_UICOLORS
     target: PALETTE_BASESCAPE_UICOLORS
-    file: Resources/PAL_BASESCAPE_SAFE.pal
+    file: Resources/PAL_BASESCAPE.pal
 
   - type: PALETTE_JUST_UICOLORS
     target: PALETTE_BASESCAPE_UICOLORS
