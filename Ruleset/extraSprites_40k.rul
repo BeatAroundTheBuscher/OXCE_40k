@@ -1819,7 +1819,7 @@
     width: 256
     height: 1440
     files:
-      0: Resources/Eldar/eldar2.gif
+      0: Resources/Eldar/eldar2.png
   - type: ELDARDR3.PCK #ELDAR BANSHEE
     subX: 32
     subY: 40
