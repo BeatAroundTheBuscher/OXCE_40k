@@ -3,6 +3,14 @@
     RuleItem:
       ITEM_ADDS_ENERGY_SHIELD_FROM_POWER: int
       ITEM_SETS_ENERGY_SHIELD_DECAY: int
+    RuleArmor:
+#*** Tags for handling energy shields on units ***
+      #ARMOR_ENERGY_SHIELD_CAPACITY: int
+      #ARMOR_ENERGY_SHIELD_PER_TURN: int
+      #ARMOR_ENERGY_SHIELD_FLASH_COLOR: int
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: int
+      ARMOR_ENERGY_SHIELD_DECAY: int
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: int
 
 units:
 #------------  Zombie -------------------------
@@ -3475,14 +3483,3 @@ soldierBonuses:
       strength: 15
       melee: 10
       psiSkill: 25
-
-extended:
-  tags:
-    RuleArmor:
-#*** Tags for handling energy shields on units ***
-      #ARMOR_ENERGY_SHIELD_CAPACITY: int
-      #ARMOR_ENERGY_SHIELD_PER_TURN: int
-      #ARMOR_ENERGY_SHIELD_FLASH_COLOR: int
-      ARMOR_ENERGY_SHIELD_HP_PER_TURN: int
-      ARMOR_ENERGY_SHIELD_DECAY: int
-      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: int

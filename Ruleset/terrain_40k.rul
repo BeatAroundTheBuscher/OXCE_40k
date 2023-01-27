@@ -561,7 +561,7 @@
     placeSound: 98
     requires:
       - STR_IMPERIAL_GUARD_OPERATIONS
-    requiresBaseFunc: [HANGAR, IMPERIUM]
+    requiresBaseFunc: [OUTP]
     connectorsDisabled: true
     spriteShape: 600
     spriteFacility: 600

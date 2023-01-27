@@ -522,9 +522,6 @@ crafts:
     requiresBuyBaseFunc: [HANGAR]
     sprite: 1782
     marker: 11
-    fuelMax: 600 # was 1200
-    refuelRate: 10 # was 5
-    repairRate: 2 # was 1
     damageMax: 800
     speedMax: 4200
     accel: 9
@@ -544,7 +541,6 @@ crafts:
     pilots: 2
     vehicles: 1
     refuelItem: STR_ELERIUM_115
-    refuelRate: 5
     score: 250
     listOrder: 300
     battlescapeTerrainData:

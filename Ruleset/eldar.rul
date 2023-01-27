@@ -98,8 +98,6 @@ armors:
       - 0.9 #MELTA
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 5
-    units:
-      - STR_ELDAR_FALLEN
     builtInWeapons:
       - AUX_WRAITHCANNON
       - INV_NULL_3X3
@@ -147,8 +145,6 @@ armors:
       - 0.9 #MELTA
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 5
-    units:
-      - STR_ELDAR_FALLEN
     builtInWeapons:
       - INV_NULL_3X3
       - AUX_ELDAR_SHIELD
@@ -459,7 +455,7 @@ armors:
       F4: ["0", "ELDARB", "F4_FACE"]
       F5: ["0", "ELDARB", "F5_FACE"]
   - type: STR_ELDAR_ARMOR2_P_SHIELD       #BANSHEE PLAYER
-    storeItem: STR_NONE
+    # storeItem: STR_NONE
     visibilityAtDay: 40
     visibilityAtDark: 30
     spriteSheet: ELDARDR32S.PCK
