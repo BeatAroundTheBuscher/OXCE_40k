@@ -1342,7 +1342,6 @@
     deathMale:     [1349, 1350, 1351, 1352]
     deathFemale:   [1349, 1350, 1351, 1352]
 
-
   - type: STR_ELDAR_ARMOR4_P       #DIRE AVANGER BOTH F AND M
     selectUnitMale:     [1339, 1340, 1341, 1342, 1343]
     selectUnitFemale:   [1363, 1364, 1365, 1366, 1367]
@@ -1443,6 +1442,17 @@
     deathMale:     [1373, 1374, 1375]
     deathFemale:   [1373, 1374, 1375]
   - type: STR_ELDAR_ARMOR3_P        #SEER  PLAYER
+    selectUnitMale:     [1316, 1317, 1318, 1319, 1320]
+    selectUnitFemale:   [1316, 1317, 1318, 1319, 1320]
+    startMovingMale:    [1311, 1312, 1313, 1314, 1315]
+    startMovingFemale:  [1311, 1312, 1313, 1314, 1315]
+    selectWeaponMale:   [1306, 1307, 1308, 1309, 1310]
+    selectWeaponFemale: [1306, 1307, 1308, 1309, 1310]
+    annoyedMale:        [1321, 1322, 1323, 1324, 1325]
+    annoyedFemale:      [1321, 1322, 1323, 1324, 1325]
+    deathMale:     [1326, 1327, 1328]
+    deathFemale:   [1326, 1327, 1328]
+  - type: STR_ELDAR_ARMOR3_P_SHIELD        #SEER  PLAYER
     selectUnitMale:     [1316, 1317, 1318, 1319, 1320]
     selectUnitFemale:   [1316, 1317, 1318, 1319, 1320]
     startMovingMale:    [1311, 1312, 1313, 1314, 1315]
