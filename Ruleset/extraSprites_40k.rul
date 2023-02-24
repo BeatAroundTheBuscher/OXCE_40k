@@ -2399,6 +2399,18 @@
       304: Resources/Rank/smoke304.png  #ELDAR
       305: Resources/Rank/smoke305.png  #ELDAR
       306: Resources/Rank/smoke306.png  #ELDAR
+      307: Resources/Rank/smoke306.png  #ELDAR NOT USED
+      308: Resources/Rank/smoke306.png  #ELDAR NOT USED
+      309: Resources/Rank/smoke306.png  #ELDAR NOT USED
+      310: Resources/Rank/smoke306.png  #ELDAR NOT USED
+      311: Resources/Rank/smoke306.png  #ELDAR NOT USED
+      312: Resources/Rank/smoke306.png  #ELDAR NOT USED
+      313: Resources/Rank/smoke313.png  #BLACK TEMPLAR
+      314: Resources/Rank/smoke314.png  #BLACK TEMPLAR
+      315: Resources/Rank/smoke315.png  #BLACK TEMPLAR
+      316: Resources/Rank/smoke316.png  #BLACK TEMPLAR
+      317: Resources/Rank/smoke317.png  #BLACK TEMPLAR
+      318: Resources/Rank/smoke318.png  #BLACK TEMPLAR
 ##221-226
   - type: HIT.PCK #HIT MELEE ANIMATION
     width: 128
@@ -2960,6 +2972,9 @@
       827: Resources/NULL/Null_Void_4x2_Back.png
       828: Resources/NULL/Null_Void_4x2.png
       829: Resources/NULL/Null_Void_3x3.png
+      830: Resources/MK7-ARMOR/DWATCH/830.png
+      831: Resources/MK7-ARMOR/DWATCH/831.png
+      832: Resources/Terminator/DWATCH/832.png
       850: Resources/NULL/Null_Void_4x3.png
 #900-999 CHAPTER CHANGE
       1400: Resources_IG/Bigobs/traitor_chimera_multilaser.png
@@ -3400,6 +3415,9 @@
       713: Resources/Impulsor/floorob_713.png
       714: Resources/Impulsor/floorob_714.png
       715: Resources/Impulsor/floorob_715.png
+      716: Resources/MK7-ARMOR/DWATCH/floorob_716.png     #DW MK7
+      717: Resources/MK7-ARMOR/DWATCH/floorob_717.png     #SIGNAL
+      718: Resources/Terminator/DWATCH/floorob_718.png     #TER
 #900-999 CHAPTER CHANGE
 # Traitor guard chimera corpses
       1400: Resources_IG/Floorobs/floorob_traitor_chimera_turret_0.png
@@ -3794,6 +3812,21 @@
       968: Resources/Rank/basebits968.png      #ELDAR
       969: Resources/Rank/basebits969.png      #ELDAR
       970: Resources/Rank/basebits970.png      #ELDAR
+#RANK  ELDAR
+      971: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE
+      972: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE   
+      973: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE  
+      974: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE 
+      975: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE
+      976: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE
+#RANK  BT
+      977: Resources/Rank/basebits977.png      #RANK BT
+      978: Resources/Rank/basebits978.png      #RANK BT
+      979: Resources/Rank/basebits979.png      #RANK BT
+      980: Resources/Rank/basebits980.png      #RANK BT
+      981: Resources/Rank/basebits981.png      #RANK BT
+      982: Resources/Rank/basebits982.png      #RANK BT
+      
 #  ADEPTA ADDON
       1711: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 0
       1712: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 1
@@ -6913,7 +6946,7 @@
       0: Resources/UnitUI/Bleed.png
   - type: CustomArmorPreviews
     width: 360
-    height: 280
+    height: 540
     subX: 12
     subY: 20
     files:
