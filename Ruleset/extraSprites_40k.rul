@@ -576,7 +576,7 @@
   - type: ELDAR5.SPK #FOES INV
     singleImage: true
     files:
-      0: Resources/Eldar/ELDAR05.gif
+      0: Resources/Eldar/ELDAR05.png
   - type: ELDAR6.SPK #FOES INV
     singleImage: true
     files:
@@ -2411,6 +2411,18 @@
       316: Resources/Rank/smoke316.png  #BLACK TEMPLAR
       317: Resources/Rank/smoke317.png  #BLACK TEMPLAR
       318: Resources/Rank/smoke318.png  #BLACK TEMPLAR
+      319: Resources/Rank/smoke319.png  #WHITE SCAR
+      320: Resources/Rank/smoke320.png  #WHITE SCAR
+      321: Resources/Rank/smoke321.png  #WHITE SCAR
+      322: Resources/Rank/smoke322.png  #WHITE SCAR
+      324: Resources/Rank/smoke323.png  #WHITE SCAR
+      324: Resources/Rank/smoke324.png  #WHITE SCAR
+      325: Resources/Rank/smoke325.png  #DEATH WATCH
+      326: Resources/Rank/smoke326.png  #DEATH WATCH
+      327: Resources/Rank/smoke327.png  #DEATH WATCH
+      328: Resources/Rank/smoke328.png  #DEATH WATCH
+      329: Resources/Rank/smoke329.png  #DEATH WATCH
+      330: Resources/Rank/smoke330.png  #DEATH WATCH
 ##221-226
   - type: HIT.PCK #HIT MELEE ANIMATION
     width: 128
@@ -2975,6 +2987,9 @@
       830: Resources/MK7-ARMOR/DWATCH/830.png
       831: Resources/MK7-ARMOR/DWATCH/831.png
       832: Resources/Terminator/DWATCH/832.png
+      833: Resources/APOT/DWATCH/833.png
+      834: Resources/Tech/DWATCH/834.png
+      835: Resources/Terminator/DWATCH/835.png
       850: Resources/NULL/Null_Void_4x3.png
 #900-999 CHAPTER CHANGE
       1400: Resources_IG/Bigobs/traitor_chimera_multilaser.png
@@ -3418,6 +3433,9 @@
       716: Resources/MK7-ARMOR/DWATCH/floorob_716.png     #DW MK7
       717: Resources/MK7-ARMOR/DWATCH/floorob_717.png     #SIGNAL
       718: Resources/Terminator/DWATCH/floorob_718.png     #TER
+      719: Resources/APOT/DWATCH/floorob_719.png           #APOT
+      720: Resources/Tech/DWATCH/floorob_720.png           #APOT
+      721: Resources/Terminator/DWATCH/floorob_721.png     #TER
 #900-999 CHAPTER CHANGE
 # Traitor guard chimera corpses
       1400: Resources_IG/Floorobs/floorob_traitor_chimera_turret_0.png
@@ -3826,7 +3844,20 @@
       980: Resources/Rank/basebits980.png      #RANK BT
       981: Resources/Rank/basebits981.png      #RANK BT
       982: Resources/Rank/basebits982.png      #RANK BT
-      
+#RANK  WHITE SCAR
+      983: Resources/Rank/basebits983.png      #RANK WS
+      984: Resources/Rank/basebits984.png      #RANK WS
+      985: Resources/Rank/basebits985.png      #RANK WS
+      986: Resources/Rank/basebits986.png      #RANK WS
+      987: Resources/Rank/basebits987.png      #RANK WS
+      988: Resources/Rank/basebits988.png      #RANK WS
+#RANK  DEATH WATCH  
+      990: Resources/Rank/basebits990.png      #RANK DW
+      991: Resources/Rank/basebits991.png      #RANK DW
+      992: Resources/Rank/basebits992.png      #RANK DW
+      993: Resources/Rank/basebits995.png      #RANK DW
+      994: Resources/Rank/basebits994.png      #RANK DW
+      995: Resources/Rank/basebits995.png      #RANK DW
 #  ADEPTA ADDON
       1711: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 0
       1712: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 1
@@ -5081,6 +5112,12 @@
     height: 200
     files:
       0: Resources/CODEX/0CAP.png
+  - type: 0WM.SPK                  #ARMOR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/0WM.png
   - type: 0DEV.SPK                  #ARMOR
     singleImage: true
     width: 320
@@ -6946,7 +6983,7 @@
       0: Resources/UnitUI/Bleed.png
   - type: CustomArmorPreviews
     width: 360
-    height: 540
+    height: 600
     subX: 12
     subY: 20
     files:
@@ -6988,6 +7025,9 @@
       205: Resources/UnitUI/Ranks_Small17.png
       211: Resources/UnitUI/Ranks_Small18.png
       217: Resources/UnitUI/Ranks_Small19.png
+      223: Resources/UnitUI/Ranks_Small20.png
+      229: Resources/UnitUI/Ranks_Small21.png
+      235: Resources/UnitUI/Ranks_Small22.png
   - type: Commendations
     width: 31
     height: 48

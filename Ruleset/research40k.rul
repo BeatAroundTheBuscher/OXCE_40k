@@ -9,6 +9,7 @@ research:
     dependencies:
       - STR_GENERALLOCK
     unlocks:
+      - STR_MARINES_AND_DEATHWATCH
       - STR_MARINES_AND_ADEPTAS
       - STR_LIGHT_BOLTERS
       - STR_GUARD_SUPORT
@@ -99,6 +100,7 @@ research:
       - STR_GENERALLOCK
     unlocks:
       - STR_GREYKNIGHTS
+      - STR_DEATHWATCH
       - STR_XIPHON
     disables:
       - STR_ARBITES
@@ -132,7 +134,13 @@ research:
   - name: STR_MARINES_AND_ADEPTAS
     dependencies:
       - STR_GENERALLOCK
+  - name: STR_MARINES_AND_DEATHWATCH
+    dependencies:
+      - STR_GENERALLOCK
   - name: STR_PRIMARIS_AND_ADEPTAS
+    dependencies:
+      - STR_GENERALLOCK
+  - name: STR_PRIMARIS_AND_DEATHWATCH
     dependencies:
       - STR_GENERALLOCK
   - name: STR_GUARD_AND_ARBITES
@@ -325,9 +333,10 @@ research:
     points: 0
     dependencies:
       - STR_CHAMBERMILITANT
-      - STR_GENERALLOCK
-    lookup: STR_CHOSEN_PRIMARIS
+    lookup: STR_CHOSEN_DEATHWATCH
     unlocks:
+      - STR_PRIMARIS_AND_DEATHWATCH
+      - STR_MARINES_AND_DEATHWATCH
       - STR_LASER_WEAPONS
       - STR_CRAFTADD
       - STR_MOTION_SCANNER
@@ -349,6 +358,7 @@ research:
     lookup: STR_CHOSEN_PRIMARIS
     unlocks:
       - STR_PRIMARIS_AND_ADEPTAS
+      - STR_PRIMARIS_AND_DEATHWATCH
       - STR_MOTION_SCANNER
       - STR_APOTHECARY
       - STR_LASER_WEAPONS
@@ -528,15 +538,6 @@ research:
     unlocks:
       - STR_MEDI_KIT_PREREQ
     lookup: STR_MEDI_KIT_PREREQ
-  - name: STR_APOTHECARY_DW # apothecary for DEATHWATCH
-    cost: 210
-    points: 20
-    dependencies:
-      - STR_GENERALLOCK
-      - STR_DEATHWATCH
-    unlocks:
-      - STR_MEDI_KIT_PREREQ
-    lookup: STR_MEDI_KIT_PREREQ
 
   - name: STR_MEDI_KIT_PREREQ
     dependencies:
@@ -642,7 +643,7 @@ research:
     dependencies:
       - STR_ALIEN_ALLOYS
       - STR_THREAT_ONE
-      - STR_MARINES_STRATEGY
+      - STR_MARINES_AND_DEATHWATCH
   - name: STR_DEV_ARMOR
     cost: 180
     points: 20
@@ -662,7 +663,6 @@ research:
       - STR_PERSONAL_ARMOR
       - STR_ASS_ARMOR
       - STR_DEV_ARMOR
-      - STR_BERSERKER_CORPSE
   - name: STR_CHAP_ARMOR
     cost: 300
     points: 20
@@ -690,15 +690,14 @@ research:
     cost: 180
     points: 20
     dependencies:
-      - STR_PRIMARIS
+      - STR_PRIMARIS_AND_DEATHWATCH
       - STR_ALIEN_ALLOYS
       - STR_THREAT_ONE
-      - STR_MARINES_STRATEGY
   - name: STR_MKX_PHB_ARMOR
     cost: 180
     points: 20
     dependencies:
-      - STR_ALIEN_ALLOYS # necessary because Tactical Strategy unlocks STR_PERSONAL_ARMOR
+      - STR_ALIEN_ALLOYS
       - STR_PRIMARIS_ARMOR
   - name: STR_MKX_INC_ARMOR
     cost: 180
@@ -729,6 +728,65 @@ research:
     dependencies:
       - STR_MIDTIER_PREREQ
       - STR_GREYKNIGHTS
+      
+  # DEATHWATCH
+  - name: STR_DW_CAP_ARMOR
+    cost: 180
+    points: 20
+    dependencies:
+      - STR_PERSONAL_ARMOR_DW
+      - STR_ASS_ARMOR
+      - STR_DEV_ARMOR  
+  - name: STR_DW_WM_ARMOR
+    cost: 205
+    points: 20
+    dependencies:
+      - STR_DEATHWATCH
+      - STR_TER_ARMOR_DW
+      - STR_LORD_CORPSE
+      - STR_DW_CAP_ARMOR
+      
+  - name: STR_TER_ARMOR_DW
+    cost: 205
+    points: 20
+    dependencies:
+      - STR_ELERIUM_115
+      - STR_UFO_POWER_SOURCE
+      - STR_MIDTIER_PREREQ
+      - STR_PERSONAL_ARMOR_DW
+  - name: STR_TSARGENT_DW
+    cost: 205
+    points: 20
+    dependencies:
+      - STR_HIGHTIER_PREREQ
+      - STR_TER_ARMOR_DW
+
+  - name: STR_PERSONAL_ARMOR_DW
+    cost: 180
+    points: 20
+    dependencies:
+      - STR_ALIEN_ALLOYS
+      - STR_THREAT_ONE
+      - STR_DEATHWATCH
+  - name: STR_DEV_ARMOR_DW
+    cost: 180
+    points: 20
+    dependencies:
+      - STR_ALIEN_ALLOYS
+      - STR_PERSONAL_ARMOR_DW
+    getOneFree:
+      - STR_DEV_ARMOR
+    lookup: STR_DEV_ARMOR_UC
+  - name: STR_ASS_ARMOR_DW
+    cost: 180
+    points: 20
+    dependencies:
+      - STR_FLOATER_SOLDIER
+      - STR_PERSONAL_ARMOR_DW
+    getOneFree:
+      - STR_ASS_ARMOR
+    lookup: STR_ASS_ARMOR_UC
+
   # adeptas
   - name: STR_ADEPTAS_ARMOR
     cost: 180
@@ -1344,7 +1402,7 @@ research:
     cost: 1000
     points: -500
     dependencies:
-      - STR_ARBITES
+      - STR_GUARD_AND_ARBITES
       - STR_ELDAR_ALLIANCE
       - STR_ELDAR_GUARDIAN
       - STR_ELDAR_BANSHEE
@@ -1371,6 +1429,8 @@ research:
       - STR_ELDAR_MGRENADE
       - STR_ELDAR_GRENADE
       - STR_ELDAR_CHAINSWORD
+      - STR_ELDAR_REAPER
+      - STR_ELDAR_REAPER_CORPSE    
     spawnedItemCount: 1
   - name: STR_CHOSEN_ELDAR
     dependencies:

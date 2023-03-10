@@ -1639,6 +1639,27 @@
     skillApplied: true
     strengthApplied: false
     attraction: 0
+  - type: AUX_SHIELD_DW        #AUX T Shield
+    weight: 5
+    bigSprite: 232
+    floorSprite: 113
+    hitSound: 0
+    meleeAnimation: 0
+    power: 60
+    damageType: 7
+    accuracyMelee: 110
+    tuMelee: 20
+    clipSize: -1
+    battleType: 3
+    twoHanded: false
+    invWidth: 2
+    invHeight: 3
+    armor: 12
+    fixedWeapon: true
+    recover: false
+    skillApplied: true
+    strengthApplied: false
+    attraction: 0
   - type: AUX_RAM           #AUX   BIKE ARMOR AUX
     weight: 5
     confMelee:
@@ -5646,6 +5667,38 @@
   - type: STR_CLAWS #                              DA POWER
     weight: 10
     bigSprite: 261
+    meleeSound: 753 #753 Powersword miss
+    meleeHitSound: 754 #744 Powersword hit
+    meleeAnimation: 12
+    power: 65
+    damageType: 7
+    damageBonus:
+      strength: 0.3
+      melee: 0.5
+    damageAlter:     #DA POWER
+      ArmorEffectiveness: 0.7
+      ToArmorPre: 0.2
+      ToHealth: 0.9
+    accuracyMelee: 80
+    costMelee:
+      time: 7
+      energy: 5
+    flatRate: true
+    twoHanded: false
+    fixedWeapon: true
+    skillApplied: true
+    strengthApplied: false
+    meleeMultiplier:
+      melee: 1.0
+      flatHundred: 0.0
+    battleType: 3
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+    recover: false
+  - type: STR_CLAWS_DW #                              DA POWER
+    weight: 10
+    bigSprite: 835
     meleeSound: 753 #753 Powersword miss
     meleeHitSound: 754 #744 Powersword hit
     meleeAnimation: 12
@@ -11042,12 +11095,14 @@
     costSell: 10000
     listOrder: 6099
   - type: STR_POWER_SUIT                #6100
+    costSell: 100000
     listOrder: 6100
   - type: STR_FLYING_SUIT                #6200
+    costSell: 100000
     listOrder: 6200
   - type: STR_CAPTAIN_SUIT              #6400
     size: 0.8
-    costSell: 10000
+    costSell: 100000
     listOrder: 6400
   - type: STR_GK_SUIT                   #6450
     size: 0.8
@@ -11164,7 +11219,7 @@
     size: 2
     costSell: 50000
     listOrder: 6027
-  - type: STR_TATICAL_ARMOR                 #5200
+  - type: STR_TATICAL_ARMOR               #5200
     size: 0.8
     listOrder: 5200
   - type: STR_GUARD_ARMORH                 #20

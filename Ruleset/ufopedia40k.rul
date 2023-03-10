@@ -2579,7 +2579,7 @@ ufopaedia:
     requires:
       - STR_SCOUTH_RESEARCH
     listOrder: 5110
-  - id: STR_PERSONAL_ARMOR_UC              #5200
+  - id: STR_PERSONAL_ARMOR_UC               #5200
     type_id: 15
     section: STR_ARMORPEDIA
     image_id: 0TAT.SPK
@@ -2830,6 +2830,22 @@ ufopaedia:
     requires:
       - STR_CAPTAIN_SUIT
     listOrder: 6400
+  - id: STR_DW_CAP_ARMOR_ULTRA_UC          #6500   #ARMOR
+    type_id: 15
+    section: STR_ARMORPEDIA
+    image_id: 0CAP.SPK
+    text: STR_CAPTAIN_ARMOR_UFOPEDIA
+    requires:
+      - STR_DW_CAP_ARMOR
+    listOrder: 6500
+  - id: STR_DW_WM_ARMOR_ULTRA_UC           #6505   #ARMOR
+    type_id: 15
+    section: STR_ARMORPEDIA
+    image_id: 0WM.SPK
+    text: STR_CAPTAIN_ARMOR_UFOPEDIA
+    requires:
+      - STR_DW_WM_ARMOR
+    listOrder: 6505
   - id: BIKE_ARMOR_UC                     #6410   #ARMOR
     type_id: 15
     section: STR_ARMORPEDIA

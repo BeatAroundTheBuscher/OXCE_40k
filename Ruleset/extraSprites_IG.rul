@@ -515,14 +515,14 @@ extraSprites:
     files:
       0: Resources_IG/Pedia/stub_rifle.png
 
-  - type: CustomArmorPreviews
-    width: 360
-    height: 60
-    subX: 12
-    subY: 20
-    files:
+#  - type: CustomArmorPreviews
+    #width: 360
+    #height: 60
+    #subX: 12
+    #subY: 20
+    #files:
       #0: Resources_IG/UnitSprites/unit_preview.png
-      500: Resources_IG/UnitSprites/armor_previews_guard.png
+      #800: Resources_IG/UnitSprites/armor_previews_guard.png
 
 #*** Commissar ***
   - type: COMMISSAR.SPK
