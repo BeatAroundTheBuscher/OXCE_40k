@@ -734,7 +734,7 @@ research:
     cost: 180
     points: 20
     dependencies:
-      - STR_PERSONAL_ARMOR_DW
+      - STR_DEATHWATCH
       - STR_ASS_ARMOR
       - STR_DEV_ARMOR  
   - name: STR_DW_WM_ARMOR
@@ -742,51 +742,19 @@ research:
     points: 20
     dependencies:
       - STR_DEATHWATCH
-      - STR_TER_ARMOR_DW
+      - STR_POWER_SUIT
       - STR_LORD_CORPSE
-      - STR_DW_CAP_ARMOR
-      
-  - name: STR_TER_ARMOR_DW
+      - STR_DW_CAP_ARMOR    
+  - name: STR_DW_PRIMARIS
     cost: 205
     points: 20
     dependencies:
       - STR_ELERIUM_115
       - STR_UFO_POWER_SOURCE
       - STR_MIDTIER_PREREQ
-      - STR_PERSONAL_ARMOR_DW
-  - name: STR_TSARGENT_DW
-    cost: 205
-    points: 20
-    dependencies:
-      - STR_HIGHTIER_PREREQ
-      - STR_TER_ARMOR_DW
-
-  - name: STR_PERSONAL_ARMOR_DW
-    cost: 180
-    points: 20
-    dependencies:
-      - STR_ALIEN_ALLOYS
-      - STR_THREAT_ONE
       - STR_DEATHWATCH
-  - name: STR_DEV_ARMOR_DW
-    cost: 180
-    points: 20
-    dependencies:
-      - STR_ALIEN_ALLOYS
-      - STR_PERSONAL_ARMOR_DW
     getOneFree:
-      - STR_DEV_ARMOR
-    lookup: STR_DEV_ARMOR_UC
-  - name: STR_ASS_ARMOR_DW
-    cost: 180
-    points: 20
-    dependencies:
-      - STR_FLOATER_SOLDIER
-      - STR_PERSONAL_ARMOR_DW
-    getOneFree:
-      - STR_ASS_ARMOR
-    lookup: STR_ASS_ARMOR_UC
-
+      - STR_PRIMARIS_ARMOR
   # adeptas
   - name: STR_ADEPTAS_ARMOR
     cost: 180

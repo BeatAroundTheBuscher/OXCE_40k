@@ -7992,6 +7992,7 @@ alienDeployments:
     objectiveFailed: [STR_ALIEN_SYNOMIUM_DEVICE_FAILED, -750]
     objectivePopup: STR_CONTROL_CENTER_DESTROYED
   - type: STR_CHAOSOUT #MISSION 5 Fortress # RANK1
+    unlockedResearch: STR_GENESEED
     markerIcon: 33
     data:
       - alienRank: 5
@@ -8117,6 +8118,7 @@ alienDeployments:
     duration: [2400, 4800] #[min, max] in hours
     despawnPenalty: 0
     markerName: STR_FORTRESS_SITE
+    missionBountyItem: STR_GENESEED
   - type: STR_SPACESHIP_M7 #MISSION 7  1-Spaceship # RANK1
     markerIcon: 33
     missionBountyItem: STR_MISSION7REPORT

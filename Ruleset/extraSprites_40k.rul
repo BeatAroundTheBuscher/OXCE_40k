@@ -2990,6 +2990,14 @@
       833: Resources/APOT/DWATCH/833.png
       834: Resources/Tech/DWATCH/834.png
       835: Resources/Terminator/DWATCH/835.png
+      836: Resources/MKX-ARMOR/DWATCH/836.png
+      837: Resources/MKX-ARMOR/DWATCH/837.png
+      838: Resources/MKX-ARMOR/DWATCH/838.png
+      839: Resources/MKX-ARMOR/DWATCH/839.png
+      840: Resources/MKX-ARMOR/DWATCH/840.png
+      841: Resources/MKX-ARMOR/DWATCH/841.png
+      842: Resources/MKX-ARMOR/DWATCH/842.png
+      843: Resources/MKX-ARMOR/DWATCH/843.png
       850: Resources/NULL/Null_Void_4x3.png
 #900-999 CHAPTER CHANGE
       1400: Resources_IG/Bigobs/traitor_chimera_multilaser.png
@@ -8384,6 +8392,17 @@ extraSounds:
 #      1100: Resources/Sound/REP/DIE5.ogg#
 #      1110 to  1121 Comissar
 #      1121: Resources_IG/Sounds/Commissar_Order_12.wav
+      1130: Resources/Sound/KRUGER/ATT1.ogg
+      1131: Resources/Sound/KRUGER/ATT2.ogg
+      1132: Resources/Sound/KRUGER/ATT3.ogg
+      1133: Resources/Sound/KRUGER/SEL1.ogg
+      1134: Resources/Sound/KRUGER/SEL2.ogg
+      1135: Resources/Sound/KRUGER/MOVE1.ogg
+      1136: Resources/Sound/KRUGER/MOVE2.ogg
+      1137: Resources/Sound/KRUGER/MOVE3.ogg
+      1138: Resources/Sound/KRUGER/IDLE1.ogg
+      1139: Resources/Sound/KRUGER/IDLE2.ogg
+#1190 to 1195 ENFORCER DOG
       1190: Resources/Sound/DOG/ATT1.wav
       1191: Resources/Sound/DOG/ATT2.wav
       1192: Resources/Sound/DOG/SEL1.wav

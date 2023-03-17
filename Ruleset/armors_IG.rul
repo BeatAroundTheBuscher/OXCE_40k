@@ -27,7 +27,7 @@ armors:
     visibilityAtDark: 9
     spriteSheet: GUARD_MEDIC.PCK
     #spriteInv: MAN_31
-    customArmorPreviewIndex: 502
+    customArmorPreviewIndex: 802
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -68,7 +68,7 @@ armors:
     visibilityAtDark: 20
     spriteSheet: MEDIC_CARAPACE.PCK
     #spriteInv: MEDIC_CARAPACE
-    customArmorPreviewIndex: 503
+    customArmorPreviewIndex: 803
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -115,7 +115,7 @@ armors:
     camouflageAtDay: -15
     camouflageAtDark: -8
     spriteSheet: TANITH_CAMO.PCK
-    customArmorPreviewIndex: 515
+    customArmorPreviewIndex: 815
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -157,7 +157,7 @@ armors:
     camouflageAtDay: -15
     camouflageAtDark: -8
     spriteSheet: TANITH_CAMO.PCK
-    customArmorPreviewIndex: 516
+    customArmorPreviewIndex: 816
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -203,7 +203,7 @@ armors:
     instantWoundRecovery: true
     spriteSheet: SENTINEL_MISSILE.PCK
     #spriteInv: GUARD_SENTINEL_MISSILE
-    customArmorPreviewIndex: [563, 564, 565]
+    customArmorPreviewIndex: [863, 864, 865]
     storeItem: STR_GUARD_ARMORS_SENTINEL_MISSILE
     corpseGeo:  STR_BIKE_CORPSE
     corpseBattle:
@@ -262,7 +262,7 @@ armors:
     heatVision: 50
     instantWoundRecovery: true
     spriteSheet: SENTINEL_AUTOCANNON.PCK
-    customArmorPreviewIndex: [566, 567, 568]
+    customArmorPreviewIndex: [866, 867, 868]
     storeItem: STR_GUARD_ARMORS_SENTINEL_AUTOCANNON
     corpseGeo:  STR_BIKE_CORPSE
     corpseBattle:
@@ -320,7 +320,7 @@ armors:
     heatVision: 50
     instantWoundRecovery: true
     spriteSheet: SENTINEL_HEAVY_FLAMER.PCK
-    customArmorPreviewIndex: [569, 570, 571]
+    customArmorPreviewIndex: [869, 870, 871]
     storeItem: STR_GUARD_ARMORS_SENTINEL_HEAVY_FLAMER
     corpseGeo:  STR_BIKE_CORPSE
     corpseBattle:
@@ -378,7 +378,7 @@ armors:
     heatVision: 50
     instantWoundRecovery: true
     spriteSheet: SENTINEL_MULTIMELTA.PCK
-    customArmorPreviewIndex: [572, 573, 574]
+    customArmorPreviewIndex: [872, 873, 874]
     storeItem: STR_GUARD_ARMORS_SENTINEL_MULTIMELTA
     corpseGeo:  STR_BIKE_CORPSE
     corpseBattle:
@@ -435,7 +435,7 @@ armors:
     visibilityAtDark: 9
     spriteSheet: GUARD_MOUNTED_AUTOCANNON.PCK
     #spriteInv: GUARD_MOUNTED_LASCANNON
-    customArmorPreviewIndex: [530, 531]
+    customArmorPreviewIndex: [830, 831]
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -540,7 +540,7 @@ armors:
     visibilityAtDark: 9
     spriteSheet: GUARD_MOUNTED_AUTOCANNON.PCK
     #spriteInv: GUARD_MOUNTED_AUTOCANNON
-    customArmorPreviewIndex: [532, 533]
+    customArmorPreviewIndex: [832, 833]
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -623,7 +623,7 @@ armors:
     visibilityAtDark: 9
     spriteSheet: COMMISSAR.PCK
     #spriteInv: COMMISSAR
-    customArmorPreviewIndex: 507
+    customArmorPreviewIndex: 807
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -662,7 +662,7 @@ armors:
     visibilityAtDark: 9
     spriteSheet: COMMISSAR_CARAPACE.PCK
     #spriteInv: COMMISSAR
-    customArmorPreviewIndex: 517
+    customArmorPreviewIndex: 817
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -704,7 +704,7 @@ armors:
     visibilityAtDark: 9
     spriteSheet: OFFICER_FLAK.PCK
     #spriteInv: OFFICER_FLAK
-    customArmorPreviewIndex: 504
+    customArmorPreviewIndex: 804
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -750,7 +750,7 @@ armors:
     visibilityAtDark: 20
     spriteSheet: OFFICER_CARAPACE.PCK
     #spriteInv: OFFICER_CARAPACE
-    customArmorPreviewIndex: 505
+    customArmorPreviewIndex: 805
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -797,7 +797,7 @@ armors:
     visibilityAtDark: 20
     spriteSheet: STORMTROOPER_CARAPACE.PCK
     #spriteInv: STORMTROOPER_CARAPACE
-    customArmorPreviewIndex: 512
+    customArmorPreviewIndex: 812
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -837,7 +837,7 @@ armors:
     visibilityAtDark: 20
     spriteSheet: STORMTROOPER_CARAPACE.PCK
     #spriteInv: STORMTROOPER_CARAPACE
-    customArmorPreviewIndex: 512
+    customArmorPreviewIndex: 812
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -901,7 +901,7 @@ armors:
     visibilityAtDark: 20
     spriteSheet: STORMTROOPER_CARAPACE.PCK
     #spriteInv: STORMTROOPER_CARAPACE
-    customArmorPreviewIndex: 512
+    customArmorPreviewIndex: 812
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -964,7 +964,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 20
     spriteSheet: SCION_CARAPACE.PCK
-    customArmorPreviewIndex: 513
+    customArmorPreviewIndex: 813
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -1002,7 +1002,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 20
     spriteSheet: SCION_CARAPACE.PCK
-    customArmorPreviewIndex: 513
+    customArmorPreviewIndex: 813
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -1064,7 +1064,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 20
     spriteSheet: SCION_CARAPACE.PCK
-    customArmorPreviewIndex: 513
+    customArmorPreviewIndex: 813
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -1128,7 +1128,7 @@ armors:
     visibilityAtDark: 9
     spriteSheet: OGRYN.PCK
     #spriteInv: OGRYN
-    customArmorPreviewIndex: 508
+    customArmorPreviewIndex: 808
     corpseBattle:
       - STR_OGRYN_CORPSE
     storeItem: STR_NONE
@@ -1166,7 +1166,7 @@ armors:
     visibilityAtDark: 9
     spriteSheet: OGRYN_CARAPACE.PCK
     #spriteInv: OGRYN_CARAPACE
-    customArmorPreviewIndex: 509
+    customArmorPreviewIndex: 809
     corpseBattle:
       - STR_OGRYN_CARAPACE_CORPSE
     storeItem: STR_OGRYN_CARAPACE
@@ -1208,7 +1208,7 @@ armors:
     visibilityAtDark: 9
     spriteSheet: OGRYN_CARAPACE.PCK
     #spriteInv: BULLGRYN_SLAB
-    customArmorPreviewIndex: 510
+    customArmorPreviewIndex: 810
     corpseBattle:
       - STR_OGRYN_CARAPACE_CORPSE
     storeItem: STR_BULLGRYN_ARMOR
@@ -1255,7 +1255,7 @@ armors:
     visibilityAtDark: 9
     spriteSheet: OGRYN_CARAPACE.PCK
     #spriteInv: BULLGRYN_BUCKLER
-    customArmorPreviewIndex: 511
+    customArmorPreviewIndex: 811
     corpseBattle:
       - STR_OGRYN_CARAPACE_CORPSE
     storeItem: STR_BULLGRYN_ARMOR
@@ -1544,7 +1544,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 9
     spriteSheet: PSYKER.PCK
-    customArmorPreviewIndex: 514
+    customArmorPreviewIndex: 814
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     corpseBattle:
@@ -1586,7 +1586,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 9
     spriteSheet: PSYKER.PCK
-    customArmorPreviewIndex: 514
+    customArmorPreviewIndex: 814
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     corpseBattle:
@@ -1633,7 +1633,7 @@ armors:
     visibilityAtDark: 60
     psiVision: 15
     spriteSheet: PSYKER.PCK
-    customArmorPreviewIndex: 514
+    customArmorPreviewIndex: 814
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     corpseBattle:
@@ -1677,7 +1677,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 9
     spriteSheet: PSYKER.PCK
-    customArmorPreviewIndex: 514
+    customArmorPreviewIndex: 814
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     corpseBattle:
@@ -1721,7 +1721,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 9
     spriteSheet: PSYKER.PCK
-    customArmorPreviewIndex: 514
+    customArmorPreviewIndex: 814
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     corpseBattle:
@@ -1766,7 +1766,7 @@ armors:
     visibilityAtDark: 9
     psiVision: 5
     spriteSheet: PSYKER.PCK
-    customArmorPreviewIndex: 514
+    customArmorPreviewIndex: 814
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     corpseBattle:
