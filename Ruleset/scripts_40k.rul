@@ -635,6 +635,12 @@ items:
       ITEM_RECOIL: 40
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
       ITEM_FIRING_SPRITE: 1
+      
+  - type: STR_RIFLEDW
+    tags:
+      ITEM_RECOIL: 40
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      ITEM_FIRING_SPRITE: 1
 
   - type: STR_RIFLE_CLIP
     tags:

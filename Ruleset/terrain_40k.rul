@@ -562,6 +562,7 @@
     requires:
       - STR_IMPERIAL_GUARD_OPERATIONS
     requiresBaseFunc: [OUTP]
+    provideBaseFunc: [HANGAR, IMPERIUM]
     connectorsDisabled: true
     spriteShape: 600
     spriteFacility: 600
@@ -639,7 +640,7 @@
   - type: STR_OUTPOST_GK
     placeSound: 98
     requires:
-      - STR_GREYKNIGHTS
+      - STR_CHAMBERMILITANT
     requiresBaseFunc: [OUTP]
     provideBaseFunc: [HANGAR, IMPERIUM]
     connectorsDisabled: true
@@ -673,7 +674,7 @@
         size: [4, 4, 1] # if the craft is going on z = 1, the height here needs to be 1
       - type: ceiling
         size: [4, 4, 3] # x and y need to match the size of the facility, and all of the heights should add up to the deployment height
-        terrain: VULTURE4X4 # needs a 40x40 map to match the outpost
+        terrain: XIP4X4 # needs a 40x40 map to match the outpost
         blocks: [0]
     listOrder: 800
   - type: STR_DIRT
@@ -5956,6 +5957,14 @@ terrains:
       - VULTUREPD
     mapBlocks:
       - name: VULTURE4X4
+        width: 40
+        length: 40
+  - name: XIP4X4
+    mapDataSets:
+      - BLANKS
+      - XIP
+    mapBlocks:
+      - name: XIP4X4
         width: 40
         length: 40
   - name: VOSS4X4

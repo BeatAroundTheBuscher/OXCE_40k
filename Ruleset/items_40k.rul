@@ -24,6 +24,7 @@
 
 #*** Chamber millitant wargear packages ***
   - type: STR_CRATED_ARVUS_GK
+  - type: STR_CRATED_CORVUS
 
 #*** Cultist sacrifice mission ****
   - type: STR_CULTIST_RITUALIST_SACRIFICES_SPAWNER
@@ -4781,6 +4782,8 @@
     listOrder: 10300
   - type: STR_RIFLEB #BOLTER #        10310  TYPE BLUE
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    requiresBuy:
+      - STR_DEATHWATCH
     size: 0.3
     dropoff: 5
     costSell: 5000
@@ -4872,6 +4875,39 @@
     bulletSpeed: 30
     attraction: 1
     listOrder: 10330
+  - type: STR_RIFLEDW #BOLTER #        10331  TYPE RIFLE
+    requiresBuy:
+      - STR_DW_PRIMARIS
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    requiresBuyBaseFunc: [IMPERIUM]
+    size: 0.3
+    dropoff: 5
+    costBuy: 10000
+    costSell: 5000
+    weight: 25
+    bigSprite: 350
+    floorSprite: 204
+    handSprite: 1984
+    bulletSprite: 6
+    fireSound: 707
+    compatibleAmmo:
+      - STR_RIFLE_CLIP
+      - STR_RIFLE_CLIP_MC
+      - STR_RIFLE_CLIP_AP
+      - STR_RIFLE_CLIP_EX
+    accuracySnap: 80
+    accuracyAuto: 66
+    tuSnap: 25
+    tuAuto: 40
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    autoShots: 5
+    bulletSpeed: 30
+    attraction: 1
+    listOrder: 10331
   - type: STR_BOLTERC #BOLTER CHAOS   10340
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     requires:

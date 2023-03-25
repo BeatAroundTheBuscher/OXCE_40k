@@ -2725,7 +2725,7 @@ ufopaedia:
     text: STR_APOT_ARMOR_UFOPEDIA
     requires:
       - STR_NOT_PRIMARIS
-      - STR_MARINES_STRATEGY
+      - STR_MARINES_AND_DEATHWATCH
       - STR_MEDI_KIT_PREREQ
     listOrder: 5700
   - id: STR_MKX_APO_UC                     #5701
@@ -2734,8 +2734,7 @@ ufopaedia:
     image_id: 0MXC.SPK
     text: STR_APOT_ARMOR_UFOPEDIA
     requires:
-      - STR_PRIMARIS
-      - STR_MARINES_STRATEGY
+      - STR_PRIMARIS_AND_DEATHWATCH
       - STR_MEDI_KIT_PREREQ
     listOrder: 5701
   - id: STR_TECH_ARMOR_UC                  #5800
@@ -2754,9 +2753,8 @@ ufopaedia:
     image_id: 0MXB.SPK
     text: STR_TECH_ARMOR_UFOPEDIA
     requires:
-      - STR_PRIMARIS
+      - STR_PRIMARIS_AND_DEATHWATCH
       - STR_TEC_BAYR
-      - STR_MARINES_STRATEGY
     listOrder: 5801
   - id: STR_CHAP_ARMOR_UC                  #5900
     type_id: 15
@@ -2773,7 +2771,7 @@ ufopaedia:
     image_id: 0MXD.SPK
     text: STR_CHAP_ARMOR_UFOPEDIA
     requires:
-      - STR_PRIMARIS
+      - STR_PRIMARIS_AND_DEATHWATCH
       - STR_MKX_CHP_ARMOR
     listOrder: 5901
   - id: STR_LIB_ARMOR_UC                   #6000
@@ -4636,12 +4634,24 @@ ufopaedia:
     image_id: BA.SPK
     text: STR_BA_INFO
     listOrder: 45200
-  - id: STR_SALA           #45200
+  - id: STR_SALA           #45201
     type_id: 10
     section: STR_HERALDRY
     image_id: SALA.SPK
     text: STR_SALA_INFO
-    listOrder: 45200
+    listOrder: 45201
+  - id: STR_BT           #45202
+    type_id: 10
+    section: STR_HERALDRY
+    image_id: BT.SPK
+    text: STR_BT_INFO
+    listOrder: 45202
+  - id: STR_WS           #45203
+    type_id: 10
+    section: STR_HERALDRY
+    image_id: WS.SPK
+    text: STR_WS_INFO
+    listOrder: 45203
   - id: STR_HELP11         #HELP 45300 Contributors
     type_id: 10
     section: STR_HERALDRY

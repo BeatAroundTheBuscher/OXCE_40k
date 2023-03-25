@@ -1,0 +1,2238 @@
+crafts:
+#ADEPTAS
+  - type: STR_STORMRAVEN_ADEPTAS #STORMRAVEN
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    requires:
+      - STR_ADEPTAS
+      - STR_NEW_FIGHTER_CRAFT
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 540
+    marker: 11
+    fuelMax: 1200
+    damageMax: 800
+    speedMax: 4200
+    accel: 9
+    weapons: 4          #weapon number increased to 4.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+      - 0               #slot 4 accepts weapons with type 0.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+      - STR_WEAPON_FOURTH
+    fixedWeapons: ["", "", "", "STR_ASSCANNON_UC"]
+    soldiers: 10
+    pilots: 2
+    vehicles: 1
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    score: 250
+    listOrder: 300
+    battlescapeTerrainData:
+      name: STORMRAVEN
+      mapDataSets:
+        - BLANKS
+        - 0A0STORMRAVEN
+      mapBlocks:
+        - name: STORMRAVEN
+          width: 10
+          length: 20
+          items:
+            STR_STORMTURRET_ADEPTAS_SPAWNER:
+              - [4, 6, 2]
+          fuseTimers:
+            STR_STORMTURRET_ADEPTAS_SPAWNER: [0, 0]
+    deployment:
+      - [4, 6, 0, 0]
+      - [4, 7, 0, 0]
+      - [4, 8, 0, 0]
+      - [5, 8, 0, 0]
+      - [4, 9, 0, 0]
+      - [5, 9, 0, 0]
+      - [4, 6, 1, 0]
+      - [5, 6, 1, 0]
+      - [4, 7, 1, 0]
+      - [5, 7, 1, 0]
+    spacecraft: true
+  - type: STR_STORMEAGLE_ADEPTAS
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    marker: 13
+    requires:
+      - STR_STORMEAGLE_INTERCEPTOR
+      - STR_ADEPTAS
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 542
+    fuelMax: 1000
+    damageMax: 1500
+    speedMax: 6700
+    accel: 12
+    weapons: 4          #weapon number increased to 4.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [0, 4, 5]      #slot 3 accepts weapons with type 0, 4 and 5.
+      - 0               #slot 4 accepts weapons with type 0.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE_PLUS
+      - STR_WEAPON_FOURTH_PLUS
+    radarRange: 1000
+    costSell: 1500000
+    transferTime: 96
+    refuelItem: STR_ELERIUM_115
+    repairRate: 5
+    refuelRate: 5
+    score: 400
+    soldiers: 15
+    pilots: 2
+    vehicles: 1
+    listOrder: 600
+    battlescapeTerrainData:
+      name: STORMEAGLE
+      mapDataSets:
+        - BLANKS
+        - 0A0STORMEAGLE
+      mapBlocks:
+        - name: STORMEAGLE
+          width: 10
+          length: 20
+    deployment:
+      - [4, 11, 0, 0]
+      - [5, 11, 0, 0]
+      - [4, 10, 0, 0]
+      - [5, 10, 0, 0]
+      - [4, 9, 0, 0]
+      - [4, 8, 0, 0]
+      - [4, 7, 0, 0]
+      - [4, 6, 0, 0]
+      - [4, 5, 0, 0]
+      - [4, 4, 0, 0]
+      - [4, 7, 1, 0]
+      - [5, 7, 1, 0]
+      - [4, 8, 1, 0]
+      - [5, 8, 1, 0]
+      - [4, 9, 1, 0]
+      - [4, 9, 1, 0]
+    spacecraft: true
+  - type: STR_LANDRAIDER
+    takeoffSound: 63 #TANKMOVE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    marker: 30
+    requires:
+      - STR_ADEPTAS
+      - STR_LANDRAIDER_ADEPTAS
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 539
+    fuelMax: 12000
+    damageMax: 10000
+    speedMax: 20
+    maxAltitude: 1
+    costRent: 600000
+    accel: 10
+    weapons: 0
+    soldiers: 26
+    vehicles: 2
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 50
+    score: 800
+    listOrder: 700
+    battlescapeTerrainData:
+      name: LANDRAIDER
+      mapDataSets:
+        - BLANKS
+        - LANDRAIDER
+      mapBlocks:
+        - name: LANDRAIDER
+          width: 10
+          length: 20
+          items:
+            STR_IMMOLATOR_SPAWNER:
+              - [7, 15, 1]
+          fuseTimers:
+            STR_IMMOLATOR_SPAWNER: [0, 0]
+    deployment:
+      - [2, 4, 0, 4]
+      - [3, 4, 0, 4]
+      - [2, 5, 0, 4]
+      - [3, 5, 0, 4] # was duplicate of 2, 5
+      - [2, 3, 0, 4]
+      - [3, 3, 0, 4]
+      - [2, 2, 0, 4]
+      - [3, 2, 0, 4] # was duplicate of 2,2 #raider
+      - [1, 14, 0, 0]
+      - [2, 14, 0, 0]
+      - [1, 15, 0, 0]
+      - [2, 15, 0, 0]
+      - [1, 16, 0, 0]
+      - [2, 16, 0, 0] #rhino
+      - [7, 14, 0, 0]
+      - [8, 14, 0, 0]
+      - [7, 15, 0, 0]
+      - [8, 15, 0, 0]
+      - [7, 16, 0, 0]
+      - [8, 16, 0, 0] #rhino
+      - [7, 6, 0, 0]
+      - [8, 6, 0, 0]
+      - [7, 7, 0, 0]
+      - [8, 7, 0, 0]
+      - [7, 8, 0, 0]
+      - [8, 8, 0, 0] #rhino
+    spacecraft: true
+  - type: STR_CORVUS
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [62, 63, 64] #REGULAR SOUND
+    requires:
+      - STR_DEATHWATCH_AND_ADEPTAS
+    requiresBuyBaseFunc: [HANGAR]
+    marker: 36
+    sprite: 505
+    fuelMax: 1800
+    damageMax: 600
+    speedMax: 1000
+    accel: 4
+    weapons: 2         #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    soldiers: 14
+    vehicles: 1
+    pilots: 2
+    costBuy: 800000
+    costRent: 400000
+    refuelRate: 50
+    transferTime: 96
+    score: 300
+    listOrder: 210
+    battlescapeTerrainData:
+      name: CORVUS
+      mapDataSets:
+        - BLANKS
+        - CORVUS
+      mapBlocks:
+        - name: CORVUS
+          width: 10
+          length: 20
+    deployment:
+      - [3, 7, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 7, 0, 0]
+      - [6, 7, 0, 0]
+      - [3, 8, 0, 0]
+      - [4, 8, 0, 0]
+      - [5, 8, 0, 0]
+      - [6, 8, 0, 0]
+      - [3, 9, 0, 0]
+      - [4, 9, 0, 0]
+      - [5, 9, 0, 0]
+      - [6, 9, 0, 0]
+      - [4, 10, 0, 0]
+      - [5, 10, 0, 0]
+    spacecraft: true
+  - type: STR_ADEPTAS_THUNDERHAWNK #thunderhawnk ADEPTAS
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_ADEPTAS
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 506
+    marker: 12
+    fuelMax: 1400
+    damageMax: 950
+    speedMax: 1600
+    accel: 6
+    weapons: 4          #weapon number increased to 4.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+      - 1               #slot 4 accepts weapons with type 1.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+      - STR_THUNDER_CANNON
+    fixedWeapons: ["", "", "", "STR_THUNDER_CANNON_UC"]
+    soldiers: 18
+    pilots: 4
+    vehicles: 2
+    costSell: 650000
+    refuelRate: 5
+    radarRange: 850
+    transferTime: 72
+    score: 400
+    listOrder: 400
+    battlescapeTerrainData:
+      name: THUNDERHAWK
+      mapDataSets:
+        - BLANKS
+        - 0A0THUNDERHAWK
+      mapBlocks:
+        - name: THUNDERHAWK
+          width: 10
+          length: 20
+    deployment:
+      - [4, 13, 1, 4]
+      - [5, 13, 1, 4]
+      - [4, 12, 1, 4]
+      - [5, 12, 1, 4]
+      - [4, 11, 1, 4]
+      - [5, 11, 1, 4]
+      - [4, 10, 1, 4]
+      - [5, 10, 1, 4]
+      - [4, 9, 1, 4]
+      - [5, 9, 1, 4]
+      - [4, 8, 1, 4]
+      - [5, 8, 1, 4]
+      - [4, 7, 1, 4]
+      - [5, 7, 1, 4]
+      - [4, 6, 1, 4]
+      - [5, 6, 1, 4]
+      - [4, 5, 2, 4]
+      - [5, 5, 2, 4]
+      - [4, 4, 2, 4]
+      - [5, 4, 2, 4]
+    spacecraft: true
+  - type: STR_AVENGER_ADEPTAS #ligtning
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    requires:
+      - STR_ADEPTAS
+    requiresBuyBaseFunc: [HANGAR]
+    marker: 40
+    sprite: 508
+    fuelMax: 1000
+    damageMax: 150
+    speedMax: 2400
+    accel: 5
+    weapons: 3
+    weaponTypes:
+      - 0
+      - 0
+      - [4, 5, 13]
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    costBuy: 500000
+    costRent: 250000
+    costSell: 42500
+    soldiers: 2
+    vehicles: 0
+    refuelRate: 200
+    transferTime: 96
+    score: 250
+    pilots: 2
+    allowLanding: false
+    listOrder: 230
+  - type: STR_THUNDERBOLT_ADEPTAS
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    requires:
+      - STR_ADEPTAS
+    requiresBuyBaseFunc: [HANGAR]
+    marker: 40
+    sprite: 507
+    fuelMax: 1000
+    damageMax: 450
+    speedMax: 2000
+    accel: 5
+    weapons: 3
+    weaponTypes:
+      - 0
+      - 0
+      - [4, 5, 13]
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    costBuy: 700000
+    costRent: 400000
+    costSell: 600000
+    soldiers: 1
+    vehicles: 0
+    refuelRate: 200
+    transferTime: 96
+    score: 250
+    pilots: 1
+    allowLanding: false
+    listOrder: 240
+  - type: STR_TTA #thunderhawnk Transport Adeptas
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    keepCraftAfterFailedMission: true
+    requires:
+      - STR_HIGHTIER_PREREQ
+      - STR_ADEPTAS
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 541
+    marker: 13
+    fuelMax: 1400
+    damageMax: 1200
+    speedMax: 1400
+    accel: 10
+    weapons: 0
+    soldiers: 16
+    vehicles: 0
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    score: 400
+    listOrder: 500
+    battlescapeTerrainData:
+      name: RHINOA
+      mapDataSets:
+        - BLANKS
+        - 0A0THUNDERHAWKTEX
+        - 0A0RHINO
+      mapBlocks:
+        - name: RHINOA
+          width: 10
+          length: 20
+          items:
+            STR_IMMOLATOR_SPAWNER:
+              - [6, 12, 1]
+              - [6, 3, 1]
+            STR_THUNDER_CHARGE:
+              - [5, 10, 3]
+            STR_THUNDER_CHARGE2:
+              - [4, 3, 3]
+          fuseTimers:
+            STR_THUNDER_CHARGE: [1, 1]
+            STR_THUNDER_CHARGE2: [1, 1]
+            STR_IMMOLATOR_SPAWNER: [0, 0]
+    deployment:
+      - [6, 13, 0, 0]
+      - [7, 13, 0, 0]
+      - [6, 12, 0, 0]
+      - [7, 12, 0, 0]
+      - [6, 11, 0, 0]
+      - [7, 11, 0, 0]
+      - [6, 4, 0, 0]
+      - [7, 4, 0, 0]
+      - [6, 3, 0, 0]
+      - [7, 3, 0, 0]
+      - [6, 2, 0, 0]
+      - [7, 2, 0, 0]
+      - [4, 16, 2, 4]
+      - [5, 16, 2, 4]
+      - [4, 15, 2, 4]
+      - [5, 15, 2, 4]
+    spacecraft: true
+#MARINES
+  - type: STR_ARMY_P
+    marker: 30
+    takeoffSound: 63 #TANKMOVE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    requires:
+      - STR_CHAPTERARMYR
+    sprite: 882
+    fuelMax: 12000
+    damageMax: 2000
+    speedMax: 300
+    maxAltitude: 1
+    costRent: 0
+    accel: 10
+    weapons: 4          #weapon number increased to 4.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [0, 4, 5]      #slot 3 accepts weapons with type 0, 4 and 5.
+      - 0               #slot 4 accepts weapons with type 0.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE_PLUS
+      - STR_WEAPON_FOURTH_PLUS
+    soldiers: 22
+    vehicles: 2
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 50
+    score: 800
+    listOrder: 700
+    battlescapeTerrainData:
+      name: PARMY
+      mapDataSets:
+        - BLANKS
+        - IMPULSOR
+        - REPULSOR
+        - TURRET
+      mapBlocks:
+        - name: PARMY
+          width: 10
+          length: 20
+    deployment:
+      - [3, 2, 1, 4]
+      - [4, 2, 1, 4]
+      - [5, 2, 1, 4]
+      - [3, 3, 1, 4]
+      - [4, 3, 1, 4]
+      - [5, 3, 1, 4]
+      - [3, 4, 1, 4]
+      - [4, 4, 1, 4]
+      - [5, 4, 1, 0]
+      - [3, 5, 1, 0]
+      - [4, 5, 1, 0]
+      - [5, 5, 1, 0] #REPULSPR 12
+      - [2, 4, 1, 0] #REPULSPR 12
+      - [6, 4, 1, 0] #REPULSPR 14
+      - [3, 13, 1, 0]
+      - [4, 13, 1, 0]
+      - [3, 14, 1, 0]
+      - [4, 14, 1, 0]
+      - [3, 15, 1, 0]
+      - [4, 15, 1, 0]
+      - [3, 16, 1, 0]
+      - [4, 16, 1, 0] #IMPULSOR 8
+    spacecraft: true
+  - type: STR_REPULSOR
+    takeoffSound: 58 #MAGNETIC SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    marker: 70
+    sprite: 888
+    fuelMax: 1800
+    damageMax: 1000
+    speedMax: 300
+    accel: 2
+    weapons: 4          #weapon number increased to 4.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+      - 1               #slot 4 accepts weapons with type 1.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+      - STR_THUNDER_CANNON
+    fixedWeapons: ["", "", "", "STR_THUNDER_CANNON_UC"]
+    soldiers: 5
+    vehicles: 0
+    pilots: 3
+    refuelRate: 50
+    transferTime: 96
+    score: 300
+    listOrder: 210
+    battlescapeTerrainData:
+      name: REPULSORD
+      mapDataSets:
+        - BLANKS
+        - REPULSOR
+        - TURRET
+      mapBlocks:
+        - name: REPULSORD
+          width: 10
+          length: 20
+    deployment:
+      - [4, 5, 1, 0]
+      - [4, 6, 1, 0]
+      - [4, 7, 1, 0]
+      - [5, 7, 1, 0]
+      - [3, 7, 1, 0]
+    spacecraft: true
+  - type: STR_REPULSOR_T
+    takeoffSound: 58 #MAGNETIC SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    marker: 70
+    sprite: 887
+    fuelMax: 1800
+    damageMax: 1000
+    speedMax: 300
+    accel: 2
+    weapons: 2        #weapon number increased to 2.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    soldiers: 14
+    vehicles: 1
+    pilots: 2
+    refuelRate: 50
+    transferTime: 96
+    score: 300
+    listOrder: 210
+    battlescapeTerrainData:
+      name: REPULSOR
+      mapDataSets:
+        - BLANKS
+        - REPULSOR
+      mapBlocks:
+        - name: REPULSOR
+          width: 10
+          length: 20
+    deployment:
+      - [3, 5, 1, 0]
+      - [4, 5, 1, 0]
+      - [5, 5, 1, 0]
+      - [3, 6, 1, 0]
+      - [4, 6, 1, 0]
+      - [5, 6, 1, 0]
+      - [3, 7, 1, 0]
+      - [4, 7, 1, 0]
+      - [5, 7, 1, 0]
+      - [3, 8, 1, 0]
+      - [4, 8, 1, 0]
+      - [5, 8, 1, 0]
+      - [2, 7, 1, 0]
+      - [6, 7, 1, 0]
+    spacecraft: true
+  - type: STR_IMPULSOR
+    requires:
+      - STR_PRIMARIS
+    takeoffSound: 58 #MAGNETIC SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    requiresBuyBaseFunc: [HANGAR]
+    costBuy: 900000
+    costRent: 360000
+    marker: 69
+    sprite: 886
+    fuelMax: 1800
+    damageMax: 1000
+    speedMax: 300
+    accel: 2
+    weapons: 3         #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    fixedWeapons: [STR_CANNON_UC, STR_CANNON_UC]
+    soldiers: 10
+    vehicles: 1
+    pilots: 2
+    refuelRate: 50
+    transferTime: 96
+    score: 300
+    listOrder: 210
+    battlescapeTerrainData:
+      name: IMPULSOR
+      mapDataSets:
+        - BLANKS
+        - IMPULSOR
+      mapBlocks:
+        - name: IMPULSOR
+          width: 10
+          length: 20
+    deployment:
+      - [4, 5, 1, 0]
+      - [5, 5, 1, 0]
+      - [4, 6, 1, 0]
+      - [5, 6, 1, 0]
+      - [4, 7, 1, 0]
+      - [5, 7, 1, 0]
+      - [4, 8, 1, 0]
+      - [5, 8, 1, 0]
+      - [4, 9, 1, 0]
+      - [5, 9, 1, 0]
+    craftInventoryTile: [4,6,1]
+    spacecraft: true
+  - type: STR_IMPULSORS
+    takeoffSound: 58 #MAGNETIC SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    requires:
+      - STR_PRIMARIS
+      - STR_CRAFTADD
+    requiresBuyBaseFunc: [HANGAR]
+    costBuy: 1200000
+    costRent: 600000
+    marker: 69
+    sprite: 886
+    fuelMax: 1800
+    damageMax: 1000
+    speedMax: 300
+    accel: 2
+    weapons: 3         #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    fixedWeapons: [STR_CANNON_UC, STR_CANNON_UC, STR_CRAFT_SHIELD_UC]
+    soldiers: 10
+    vehicles: 1
+    pilots: 2
+    refuelRate: 50
+    transferTime: 96
+    score: 300
+    listOrder: 210
+    battlescapeTerrainData:
+      name: IMPULSOR
+      mapDataSets:
+        - BLANKS
+        - IMPULSOR
+      mapBlocks:
+        - name: IMPULSORS
+          width: 10
+          length: 20
+          items:
+            STR_IMPULSOR_SPAWNER:
+              - [3, 8, 2]
+          fuseTimers:
+            STR_IMPULSOR_SPAWNER: [0, 0]
+    deployment:
+      - [4, 5, 1, 0]
+      - [5, 5, 1, 0]
+      - [4, 6, 1, 0]
+      - [5, 6, 1, 0]
+      - [4, 7, 1, 0]
+      - [5, 7, 1, 0]
+      - [4, 8, 1, 0]
+      - [5, 8, 1, 0]
+      - [4, 9, 1, 0]
+      - [5, 9, 1, 0]
+    craftInventoryTile: [4,6,1]
+    spacecraft: true
+  - type: STR_VALKYRIE
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [62, 63, 64] #REGULAR SOUND
+    requires:
+      - STR_GUARD_SUPORT
+    requiresBuyBaseFunc: [HANGAR]
+    marker: 36
+    sprite: 101
+    fuelMax: 1800
+    damageMax: 400
+    speedMax: 600
+    accel: 2
+    weapons: 3         #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    soldiers: 10
+    vehicles: 1
+    pilots: 2
+    costBuy: 600000
+    costRent: 360000
+    refuelRate: 50
+    transferTime: 96
+    score: 300
+    listOrder: 210
+    battlescapeTerrainData:
+      name: VALK
+      mapDataSets:
+        - BLANKS
+        - VH
+      mapBlocks:
+        - name: VALK
+          width: 10
+          length: 20
+    deployment:
+      - [3, 7, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 7, 0, 0]
+      - [3, 8, 0, 0]
+      - [4, 8, 0, 0]
+      - [5, 8, 0, 0]
+      - [3, 9, 0, 0]
+      - [4, 9, 0, 0]
+      - [5, 9, 0, 0]
+      - [4, 10, 0, 0]
+    spacecraft: true
+  - type: STR_DROP #dropod´s
+    takeoffSound: 59 #POD SOUND
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 28
+    marker: 9
+    fuelMax: 1800
+    damageMax: 35
+    speedMax: 20000
+    accel: 20
+    weapons: 0
+    costBuy: 50000
+    costRent: 5000
+    soldiers: 4
+    vehicles: 1
+    refuelRate: 50
+    transferTime: 10
+    score: 0
+    listOrder: 130
+    mapVisible: false
+    battlescapeTerrainData:
+      name: DROP_GUARD
+      mapDataSets:
+        - BLANKS
+        - DROPPOD_GUARD
+      mapBlocks:
+        - name: DROP_GUARD
+          width: 10
+          length: 20
+          items:
+            STR_DROPPOD_DEPLOY_CHARGE:
+              - [5, 8, 0]
+          fuseTimers:
+            STR_DROPPOD_DEPLOY_CHARGE: [1, 1]
+    deployment:
+      - [4, 8, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 8, 0, 0]
+      - [5, 7, 0, 0]
+    spacecraft: true
+  - type: STR_STORMEAGLE
+    marker: 13
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    requires:
+      - STR_STORMEAGLE_INTERCEPTOR
+      - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 25
+    fuelMax: 1000
+    damageMax: 1500
+    speedMax: 6700
+    accel: 12
+    weapons: 4          #weapon number increased to 4.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [0, 4, 5]      #slot 3 accepts weapons with type 0, 4 and 5.
+      - 0               #slot 4 accepts weapons with type 0.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE_PLUS
+      - STR_WEAPON_FOURTH_PLUS
+    radarRange: 1000
+    costSell: 1500000
+    transferTime: 96
+    refuelItem: STR_ELERIUM_115
+    repairRate: 5
+    refuelRate: 5
+    score: 400
+    soldiers: 15
+    pilots: 2
+    vehicles: 1
+    listOrder: 600
+    battlescapeTerrainData:
+      name: STORMEAGLE
+      mapDataSets:
+        - BLANKS
+        - STORMEAGLE
+      mapBlocks:
+        - name: STORMEAGLE
+          width: 10
+          length: 20
+    deployment:
+      - [4, 11, 0, 0]
+      - [5, 11, 0, 0]
+      - [4, 10, 0, 0]
+      - [5, 10, 0, 0]
+      - [4, 9, 0, 0]
+      - [4, 8, 0, 0]
+      - [4, 7, 0, 0]
+      - [4, 6, 0, 0]
+      - [4, 5, 0, 0]
+      - [4, 4, 0, 0]
+      - [4, 7, 1, 0]
+      - [5, 7, 1, 0]
+      - [4, 8, 1, 0]
+      - [5, 8, 1, 0]
+      - [4, 9, 1, 0]
+      - [4, 9, 1, 0]
+    spacecraft: true
+  - type: STR_FIRESTORM #STORMRAVEN
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_NEW_FIGHTER_CRAFT
+      - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 27
+    marker: 11
+    fuelMax: 1200
+    damageMax: 800
+    speedMax: 4200
+    accel: 9
+    weapons: 4          #weapon number increased to 4.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+      - 0               #slot 4 accepts weapons with type 0.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+      - STR_WEAPON_FOURTH
+    fixedWeapons: ["", "", "", "STR_ASSCANNON_UC"]
+    soldiers: 10
+    pilots: 2
+    vehicles: 1
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    score: 250
+    listOrder: 300
+    battlescapeTerrainData:
+      name: STORMRAVEN
+      mapDataSets:
+        - BLANKS
+        - STORMRAVEN
+      mapBlocks:
+        - name: STORMRAVEN
+          width: 10
+          length: 20
+          items:
+            STR_STORMTURRET_SPAWNER:
+              - [4, 6, 2]
+          fuseTimers:
+            STR_STORMTURRET_SPAWNER: [0, 0]
+    deployment:
+      - [4, 6, 0, 0]
+      - [4, 7, 0, 0]
+      - [4, 8, 0, 0]
+      - [5, 8, 0, 0]
+      - [4, 9, 0, 0]
+      - [5, 9, 0, 0]
+      - [4, 6, 1, 0]
+      - [5, 6, 1, 0]
+      - [4, 7, 1, 0]
+      - [5, 7, 1, 0]
+    spacecraft: true
+  - type: STR_INTERCEPTOR #STORTALON
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    requires:
+      - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 26
+    marker: 10
+    fuelMax: 1000
+    damageMax: 200
+    speedMax: 2100
+    accel: 3
+    weapons: 3
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    costBuy: 600000
+    costRent: 300000
+    soldiers: 1
+    vehicles: 0
+    refuelRate: 200
+    transferTime: 96
+    score: 250
+    listOrder: 110
+    pilots: 1
+    allowLanding: false # this craft cannot land (and go on missions)
+    battlescapeTerrainData:
+      name: STORMT
+      mapDataSets:
+        - BLANKS
+        - STORMT
+      mapBlocks:
+        - name: STORMT
+          width: 10
+          length: 20
+    deployment:
+      - [5, 10, 0, 4]
+    spacecraft: true
+  - type: STR_STORMHAWK
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    requires:
+      - STR_STORMHAWKR
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 31
+    marker: 29
+    fuelMax: 1000
+    damageMax: 400
+    speedMax: 2100
+    accel: 3
+    weapons: 3
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    costBuy: 700000
+    costRent: 400000
+    costSell: 600000
+    soldiers: 1
+    vehicles: 0
+    refuelRate: 50
+    transferTime: 96
+    score: 250
+    listOrder: 100
+    pilots: 1
+    allowLanding: false # this craft cannot land (and go on missions)
+    battlescapeTerrainData:
+      name: STORMH
+      mapDataSets:
+        - BLANKS
+        - STORMT
+        - STORMH
+      mapBlocks:
+        - name: STORMH
+          width: 10
+          length: 20
+    deployment:
+      - [5, 10, 0, 4]
+    spacecraft: true
+  - type: STR_STORMHAWKS
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    sprite: 100
+    marker: 29
+    fuelMax: 1200
+    damageMax: 600
+    speedMax: 2200
+    accel: 3
+    weapons: 3
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    costRent: 400000
+    costSell: 600000
+    soldiers: 1
+    vehicles: 0
+    refuelRate: 50
+    transferTime: 96
+    score: 450
+    listOrder: 105
+    pilots: 1
+    allowLanding: false # this craft cannot land (and go on missions)
+    battlescapeTerrainData:
+      name: STORMHI
+      mapDataSets:
+        - BLANKS
+        - STORMT
+        - STORMH
+      mapBlocks:
+        - name: STORMHI
+          width: 10
+          length: 20
+    deployment:
+      - [5, 10, 0, 4]
+    spacecraft: true
+  - type: STR_AVENGER #thunderhawnk Transport
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    keepCraftAfterFailedMission: true
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_HIGHTIER_PREREQ
+      - STR_MARINES_STRATEGY
+    sprite: 24
+    marker: 13
+    fuelMax: 1400
+    damageMax: 1200
+    speedMax: 1400
+    accel: 10
+    weapons: 0
+    soldiers: 20
+    vehicles: 0
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    score: 400
+    listOrder: 500
+    battlescapeTerrainData:
+      name: RHINO
+      mapDataSets:
+        - BLANKS
+        - THUNDERHAWKTEX
+        - RHINO
+      mapBlocks:
+        - name: RHINO
+          width: 10
+          length: 20
+          items:
+            STR_THUNDER_CHARGE:
+              - [5, 9, 3]
+            STR_THUNDER_CHARGE2:
+              - [4, 2, 3]
+          fuseTimers:
+            STR_THUNDER_CHARGE: [1, 1]
+            STR_THUNDER_CHARGE2: [1, 1]
+    deployment:
+      - [6, 12, 0, 0]
+      - [7, 12, 0, 0]
+      - [6, 11, 0, 0]
+      - [7, 11, 0, 0]
+      - [6, 10, 0, 0]
+      - [7, 10, 0, 0]
+      - [6, 9, 0, 0]
+      - [7, 9, 0, 0]
+      - [3, 5, 0, 0]
+      - [4, 5, 0, 0]
+      - [3, 4, 0, 0]
+      - [4, 4, 0, 0]
+      - [3, 3, 0, 0]
+      - [4, 3, 0, 0]
+      - [3, 2, 0, 0]
+      - [4, 2, 0, 0]
+      - [4, 15, 2, 4]
+      - [5, 15, 2, 4]
+      - [4, 14, 2, 4]
+      - [5, 14, 2, 4]
+    spacecraft: true
+  - type: STR_TTASS #thunderhawnk Transport ASS
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    keepCraftAfterFailedMission: true
+    requires:
+      - STR_HIGHTIER_PREREQ
+      - STR_MARINES_STRATEGY
+    sprite: 500
+    marker: 13
+    fuelMax: 1400
+    damageMax: 1200
+    speedMax: 1400
+    accel: 10
+    weapons: 0
+    soldiers: 16
+    vehicles: 0
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    score: 400
+    listOrder: 500
+    battlescapeTerrainData:
+      name: RHINOASS
+      mapDataSets:
+        - BLANKS
+        - THUNDERHAWKTEX
+        - RHINO
+      mapBlocks:
+        - name: RHINOASS
+          width: 10
+          length: 20
+          items:
+            STR_RAZORBACK_SPAWNER:
+              - [6, 11, 1]
+              - [6, 2, 1]
+            STR_THUNDER_CHARGE:
+              - [5, 10, 3]
+            STR_THUNDER_CHARGE2:
+              - [4, 3, 3]
+          fuseTimers:
+            STR_THUNDER_CHARGE: [1, 1]
+            STR_THUNDER_CHARGE2: [1, 1]
+            STR_RAZORBACK_SPAWNER: [0, 0]
+    deployment:
+      - [6, 13, 0, 0]
+      - [7, 13, 0, 0]
+      - [6, 12, 0, 0]
+      - [7, 12, 0, 0]
+      - [6, 11, 0, 0]
+      - [7, 11, 0, 0]
+      - [6, 4, 0, 0]
+      - [7, 4, 0, 0]
+      - [6, 3, 0, 0]
+      - [7, 3, 0, 0]
+      - [6, 2, 0, 0]
+      - [7, 2, 0, 0]
+      - [4, 16, 2, 4]
+      - [5, 16, 2, 4]
+      - [4, 15, 2, 4]
+      - [5, 15, 2, 4]
+    spacecraft: true
+  - type: STR_TTDEV #thunderhawnk Transport DEV
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    keepCraftAfterFailedMission: true
+    requires:
+      - STR_HIGHTIER_PREREQ
+      - STR_MARINES_STRATEGY
+    sprite: 501
+    marker: 13
+    fuelMax: 1400
+    damageMax: 1200
+    speedMax: 1400
+    accel: 10
+    weapons: 0
+    soldiers: 16
+    vehicles: 0
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    score: 400
+    listOrder: 500
+    battlescapeTerrainData:
+      name: RHINODEV
+      mapDataSets:
+        - BLANKS
+        - THUNDERHAWKTEX
+        - RHINO
+      mapBlocks:
+        - name: RHINODEV
+          width: 10
+          length: 20
+          items:
+            STR_WHIRLWIND_SPAWNER:
+              - [6, 11, 1]
+              - [6, 2, 1]
+            STR_THUNDER_CHARGE:
+              - [5, 10, 3]
+            STR_THUNDER_CHARGE2:
+              - [4, 3, 3]
+          fuseTimers:
+            STR_THUNDER_CHARGE: [1, 1]
+            STR_THUNDER_CHARGE2: [1, 1]
+            STR_WHIRLWIND_SPAWNER: [0, 0]
+    deployment:
+      - [6, 13, 0, 0]
+      - [7, 13, 0, 0]
+      - [6, 12, 0, 0]
+      - [7, 12, 0, 0]
+      - [6, 11, 0, 0]
+      - [7, 11, 0, 0]
+      - [6, 4, 0, 0]
+      - [7, 4, 0, 0]
+      - [6, 3, 0, 0]
+      - [7, 3, 0, 0]
+      - [6, 2, 0, 0]
+      - [7, 2, 0, 0]
+      - [4, 16, 2, 4]
+      - [5, 16, 2, 4]
+      - [4, 15, 2, 4]
+      - [5, 15, 2, 4]
+    spacecraft: true
+  - type: STR_TTSCT #thunderhawnk Transport SCOUT
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    keepCraftAfterFailedMission: true
+    requires:
+      - STR_HIGHTIER_PREREQ
+      - STR_MARINES_STRATEGY
+    sprite: 502
+    marker: 13
+    fuelMax: 1400
+    damageMax: 1200
+    speedMax: 1400
+    accel: 10
+    weapons: 0
+    soldiers: 16
+    vehicles: 0
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    score: 400
+    listOrder: 500
+    battlescapeTerrainData:
+      name: RHINODEV
+      mapDataSets:
+        - BLANKS
+        - THUNDERHAWKTEX
+        - RHINO
+      mapBlocks:
+        - name: RHINODEV
+          width: 10
+          length: 20
+          items:
+            STR_DAMOCLES_SPAWNER:
+              - [6, 11, 1]
+              - [6, 2, 1]
+            STR_THUNDER_CHARGE:
+              - [5, 10, 3]
+            STR_THUNDER_CHARGE2:
+              - [4, 3, 3]
+          fuseTimers:
+            STR_THUNDER_CHARGE: [1, 1]
+            STR_THUNDER_CHARGE2: [1, 1]
+            STR_DAMOCLES_SPAWNER: [0, 0]
+    deployment:
+      - [6, 13, 0, 0]
+      - [7, 13, 0, 0]
+      - [6, 12, 0, 0]
+      - [7, 12, 0, 0]
+      - [6, 11, 0, 0]
+      - [7, 11, 0, 0]
+      - [6, 4, 0, 0]
+      - [7, 4, 0, 0]
+      - [6, 3, 0, 0]
+      - [7, 3, 0, 0]
+      - [6, 2, 0, 0]
+      - [7, 2, 0, 0]
+      - [4, 16, 2, 4]
+      - [5, 16, 2, 4]
+      - [4, 15, 2, 4]
+      - [5, 15, 2, 4]
+    spacecraft: true
+  - type: STR_TTCHAOS #thunderhawnk Transport CHAOS
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    keepCraftAfterFailedMission: true
+    requires:
+      - STR_HIGHTIER_PREREQ
+      - STR_ALIENS_ONLY
+    sprite: 503
+    marker: 13
+    fuelMax: 1400
+    damageMax: 1200
+    speedMax: 1400
+    accel: 10
+    weapons: 0
+    soldiers: 20
+    vehicles: 0
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    score: 400
+    listOrder: 500
+    battlescapeTerrainData:
+      name: RHINOCHAOS
+      mapDataSets:
+        - BLANKS
+        - 0C0THUNDERHAWKTEX
+        - RHINOCHAOS
+      mapBlocks:
+        - name: RHINOCHAOS
+          width: 10
+          length: 20
+          items:
+            STR_THUNDER_CHARGE:
+              - [5, 9, 3]
+            STR_THUNDER_CHARGE2:
+              - [4, 2, 3]
+          fuseTimers:
+            STR_THUNDER_CHARGE: [1, 1]
+            STR_THUNDER_CHARGE2: [1, 1]
+    deployment:
+      - [6, 12, 0, 0]
+      - [7, 12, 0, 0]
+      - [6, 11, 0, 0]
+      - [7, 11, 0, 0]
+      - [6, 10, 0, 0]
+      - [7, 10, 0, 0]
+      - [6, 9, 0, 0]
+      - [7, 9, 0, 0]
+      - [3, 5, 0, 0]
+      - [4, 5, 0, 0]
+      - [3, 4, 0, 0]
+      - [4, 4, 0, 0]
+      - [3, 3, 0, 0]
+      - [4, 3, 0, 0]
+      - [3, 2, 0, 0]
+      - [4, 2, 0, 0]
+      - [4, 15, 2, 4]
+      - [5, 15, 2, 4]
+      - [4, 14, 2, 4]
+      - [5, 14, 2, 4]
+    spacecraft: true
+  - type: STR_SPEEDC
+    takeoffSound: 58 #MAGNETIC SOUND
+    selectSound: [62, 63, 64] #REGULAR SOUND
+    requires:
+      - STR_SPEEDR
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 30
+    marker: 29
+    fuelMax: 1000
+    damageMax: 200
+    speedMax: 2100
+    maxAltitude: 2
+    costBuy: 600000
+    costRent: 600000
+    costSell: 300000
+    accel: 10
+    weapons: 3
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    radarRange: 500
+    soldiers: 14
+    vehicles: 0
+    refuelRate: 50
+    transferTime: 96
+    score: 200
+    listOrder: 200
+    pilots: 2
+    battlescapeTerrainData:
+      name: SPEED
+      mapDataSets:
+        - BLANKS
+        - SPEED
+      mapBlocks:
+        - name: SPEED
+          width: 10
+          length: 20
+    deployment:
+      - [3, 3, 1, 2]
+      - [2, 3, 1, 6]
+      - [2, 4, 1, 4]
+      - [3, 4, 1, 4]
+      - [1, 3, 1, 6]
+      - [4, 3, 1, 2]
+      - [4, 2, 1, 4]
+      - [7, 11, 1, 2]
+      - [6, 11, 1, 6]
+      - [6, 12, 1, 4]
+      - [7, 12, 1, 4]
+      - [5, 11, 1, 6]
+      - [8, 11, 1, 2]
+      - [8, 10, 1, 4]
+    spacecraft: true
+  - type: STR_CHAPTERARMY
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    marker: 30
+    requires:
+      - STR_CHAPTERARMYR
+    sprite: 32
+    fuelMax: 12000
+    damageMax: 10000
+    speedMax: 20
+    maxAltitude: 1
+    costRent: 600000
+    accel: 10
+    weapons: 0
+    soldiers: 26
+    vehicles: 2
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 50
+    score: 800
+    listOrder: 700
+    battlescapeTerrainData:
+      name: ARMY
+      mapDataSets:
+        - BLANKS
+        - SPEED
+      mapBlocks:
+        - name: ARMY
+          width: 10
+          length: 20
+    deployment:
+      - [2, 4, 0, 4]
+      - [3, 4, 0, 4]
+      - [2, 5, 0, 4]
+      - [2, 5, 0, 4]
+      - [2, 3, 0, 4]
+      - [3, 3, 0, 4]
+      - [2, 2, 0, 4]
+      - [2, 2, 0, 4] #raider
+      - [1, 15, 0, 0]
+      - [2, 15, 0, 0]
+      - [1, 16, 0, 0]
+      - [2, 16, 0, 0]
+      - [1, 17, 0, 0]
+      - [2, 17, 0, 0] #rhino
+      - [7, 14, 0, 0]
+      - [8, 14, 0, 0]
+      - [7, 15, 0, 0]
+      - [8, 15, 0, 0]
+      - [7, 16, 0, 0]
+      - [8, 16, 0, 0] #rhino
+      - [7, 9, 1, 4]
+      - [8, 9, 1, 4]
+      - [6, 8, 1, 6]
+      - [7, 8, 1, 6]
+      - [8, 8, 1, 2]
+      - [9, 8, 1, 2] #speeder
+    spacecraft: true
+  - type: STR_SKYRANGER #dropod´s
+    takeoffSound: 59 #POD SOUND
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 23
+    marker: 9
+    fuelMax: 1800
+    damageMax: 200
+    speedMax: 20000
+    accel: 20
+    weapons: 0
+    soldiers: 12
+    vehicles: 1
+    refuelRate: 50
+    transferTime: 10
+    score: 200
+    listOrder: 120
+    mapVisible: false
+    battlescapeTerrainData:
+      name: DROPPOD_GUARD
+      mapDataSets:
+        - BLANKS
+        - DROPPOD_GUARD
+      mapBlocks:
+        - name: DROPPOD_GUARD
+          width: 10
+          length: 20
+          items:
+            STR_DROPPOD_DEPLOY_CHARGE:
+              - [2, 2, 0]
+              - [5, 8, 0]
+              - [2, 15, 0]
+          fuseTimers:
+            STR_DROPPOD_DEPLOY_CHARGE: [1, 1]
+    deployment:
+      - [1, 15, 0, 0]
+      - [1, 14, 0, 0]
+      - [2, 15, 0, 0]
+      - [2, 14, 0, 0]
+      - [4, 8, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 8, 0, 0]
+      - [5, 7, 0, 0]
+      - [1, 1, 0, 0]
+      - [1, 2, 0, 0]
+      - [2, 1, 0, 0]
+      - [2, 2, 0, 0]
+    spacecraft: true
+  - type: STR_LIGHTNING #thunderhawnk Type 2
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_THUNDERHAWKTYPE2
+    requiresBuyBaseFunc: [HANGAR]
+    maxSkinIndex: 4            # default 0
+    skinSprites: [878,879,880,881] # default empty, contains all sprites except for the first (index zero)
+    sprite: 22
+    marker: 12
+    fuelMax: 1400
+    damageMax: 950
+    speedMax: 1600
+    accel: 6
+    weapons: 4          #weapon number increased to 4.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+      - 1               #slot 4 accepts weapons with type 1.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+      - STR_THUNDER_CANNON
+    fixedWeapons: ["", "", "", "STR_THUNDER_CANNON_UC"]
+    soldiers: 18
+    pilots: 4
+    vehicles: 2
+    costSell: 650000
+    refuelRate: 5
+    radarRange: 850
+    transferTime: 72
+    score: 400
+    listOrder: 400
+    battlescapeTerrainData:
+      name: THUNDERHAWK
+      mapDataSets:
+        - BLANKS
+        - THUNDERHAWK
+      mapBlocks:
+        - name: THUNDERHAWK
+          width: 10
+          length: 20
+    deployment:
+      - [4, 13, 1, 4]
+      - [5, 13, 1, 4]
+      - [4, 12, 1, 4]
+      - [5, 12, 1, 4]
+      - [4, 11, 1, 4]
+      - [5, 11, 1, 4]
+      - [4, 10, 1, 4]
+      - [5, 10, 1, 4]
+      - [4, 9, 1, 4]
+      - [5, 9, 1, 4]
+      - [4, 8, 1, 4]
+      - [5, 8, 1, 4]
+      - [4, 7, 1, 4]
+      - [5, 7, 1, 4]
+      - [4, 6, 1, 4]
+      - [5, 6, 1, 4]
+      - [4, 5, 2, 4]
+      - [5, 5, 2, 4]
+      - [4, 4, 2, 4]
+      - [5, 4, 2, 4]
+    spacecraft: true
+  - type: STR_CHAOS_THUNDERHAWNK #thunderhawnk CHAOS
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_ALIENS_ONLY
+    sprite: 504
+    marker: 12
+    fuelMax: 1400
+    damageMax: 950
+    speedMax: 1600
+    accel: 6
+    weapons: 4          #weapon number increased to 4.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+      - 1               #slot 4 accepts weapons with type 1.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+      - STR_THUNDER_CANNON
+    fixedWeapons: ["", "", "", "STR_THUNDER_CANNON_UC"]
+    soldiers: 18
+    pilots: 4
+    vehicles: 2
+    costSell: 650000
+    refuelRate: 5
+    radarRange: 850
+    transferTime: 72
+    score: 400
+    listOrder: 400
+    battlescapeTerrainData:
+      name: THUNDERHAWK
+      mapDataSets:
+        - BLANKS
+        - 0C0THUNDERHAWK
+      mapBlocks:
+        - name: THUNDERHAWK
+          width: 10
+          length: 20
+    deployment:
+      - [4, 13, 1, 4]
+      - [5, 13, 1, 4]
+      - [4, 12, 1, 4]
+      - [5, 12, 1, 4]
+      - [4, 11, 1, 4]
+      - [5, 11, 1, 4]
+      - [4, 10, 1, 4]
+      - [5, 10, 1, 4]
+      - [4, 9, 1, 4]
+      - [5, 9, 1, 4]
+      - [4, 8, 1, 4]
+      - [5, 8, 1, 4]
+      - [4, 7, 1, 4]
+      - [5, 7, 1, 4]
+      - [4, 6, 1, 4]
+      - [5, 6, 1, 4]
+      - [4, 5, 2, 4]
+      - [5, 5, 2, 4]
+      - [4, 4, 2, 4]
+      - [5, 4, 2, 4]
+    spacecraft: true
+  - type: STR_THUNDERHAWNK #thunderhawnk Type 1
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_THUNDERHAWKTYPE1
+    requiresBuyBaseFunc: [HANGAR]
+    maxSkinIndex: 4            # default 0
+    skinSprites: [878,879,880,881] # default empty, contains all sprites except for the first (index zero)
+    sprite: 22
+    marker: 12
+    fuelMax: 1400
+    damageMax: 950
+    speedMax: 1600
+    accel: 6
+    weapons: 4          #weapon number increased to 4.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+      - 1               #slot 4 accepts weapons with type 1.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+      - STR_THUNDER_CANNON
+    fixedWeapons: ["", "", "", "STR_THUNDER_CANNON_UC"]
+    soldiers: 16
+    pilots: 4
+    vehicles: 2
+    costSell: 650000
+    refuelRate: 5
+    radarRange: 850
+    transferTime: 72
+    score: 400
+    listOrder: 400
+    battlescapeTerrainData:
+      name: THUNDERHAWK2
+      mapDataSets:
+        - BLANKS
+        - THUNDERHAWK
+      mapBlocks:
+        - name: THUNDERHAWK2
+          width: 10
+          length: 20
+          items:
+            STR_LEFT_THUNDERHAWK_SPAWNER:
+              - [3, 12, 1]
+            STR_RIGHT_THUNDERHAWK_SPAWNER:
+              - [6, 12, 1]
+          fuseTimers:
+            STR_LEFT_THUNDERHAWK_SPAWNER: [0, 0]
+            STR_RIGHT_THUNDERHAWK_SPAWNER: [0, 0]
+    deployment:
+      - [4, 13, 1, 4]
+      - [5, 13, 1, 4]
+      - [4, 12, 1, 4]
+      - [5, 12, 1, 4]
+      - [4, 11, 1, 4]
+      - [5, 11, 1, 4]
+      - [4, 10, 1, 4]
+      - [5, 10, 1, 4]
+      - [4, 9, 1, 4]
+      - [5, 9, 1, 4]
+      - [4, 8, 1, 4]
+      - [5, 8, 1, 4]
+      - [4, 7, 1, 4]
+      - [5, 7, 1, 4]
+      - [4, 6, 1, 4]
+      - [5, 6, 1, 4]
+      - [4, 5, 2, 4]
+      - [5, 5, 2, 4]
+    spacecraft: true
+  - type: STR_OLDTHUNDERHAWNK # OLD thunderhawnk
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 22
+    fuelMax: 1400
+    damageMax: 950
+    speedMax: 1600
+    accel: 6
+    weapons: 4          #weapon number increased to 4.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+      - 1               #slot 4 accepts weapons with type 1.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+      - STR_THUNDER_CANNON
+    fixedWeapons: ["", "", "", "STR_THUNDER_CANNON_UC"]
+    soldiers: 16
+    pilots: 2
+    vehicles: 4
+    costSell: 650000
+    refuelRate: 5
+    radarRange: 850
+    transferTime: 72
+    score: 400
+    listOrder: 401
+    battlescapeTerrainData:
+      name: AVENGER2
+      mapDataSets:
+        - BLANKS
+        - AVENGER2
+      mapBlocks:
+        - name: AVENGER2
+          width: 10
+          length: 20
+    deployment:
+      - [4, 15, 1, 4]
+      - [5, 15, 1, 4]
+      - [4, 14, 1, 4]
+      - [5, 14, 1, 4]
+      - [4, 13, 1, 4]
+      - [5, 13, 1, 4]
+      - [4, 8, 2, 4]
+      - [5, 8, 2, 4]
+      - [4, 9, 2, 4]
+      - [5, 9, 2, 4]
+      - [4, 10, 1, 4]
+      - [5, 10, 1, 4]
+      - [4, 12, 1, 4]
+      - [5, 12, 1, 4]
+      - [4, 11, 1, 4]
+      - [5, 11, 1, 4]
+    spacecraft: true
+#                 #                                        #                      #
+#ARBITES
+  - type: STR_HIDRAPD
+    requiresBuyBaseFunc: [HANGAR]
+    takeoffSound: 63 #TANKMOVE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    marker: 30
+    sprite: 1880
+    requires:
+      - STR_ARBITES
+      - STR_MIDTIER_PREREQ
+    fuelMax: 1000
+    damageMax: 1000
+    speedMax: 90
+    maxAltitude: 1
+    accel: 2
+    weapons: 4
+    weaponTypes:
+      - 3
+      - 3
+      - 3
+      - 3
+    weaponStrings:
+      - STR_ANTI_AIR_WEAPONS
+    soldiers: 4
+    pilots: 4
+    vehicles: 0
+    costBuy: 900000
+    costRent: 480000
+    refuelRate: 1000
+    transferTime: 96
+    score: 250
+    repairRate: 4
+    battlescapeTerrainData:
+      name: CHIMERAPDH
+      mapDataSets:
+        - BLANKS
+        - CHIMERAPDH
+        - HIDRAPD
+        - INTERIORPD
+      mapBlocks:
+        - name: HIDRAPD # CHIMERA
+          width: 10
+          length: 20
+    craftInventoryTile: [1, 2, 0] #[5, 4, 0]
+    deployment:
+      - [4, 4, 0, 0]
+      - [5, 4, 0, 0]
+      - [3, 14, 0, 0]
+      - [4, 14, 0, 0]
+    listOrder: 800
+    spacecraft: true
+    allowLanding: false
+  - type: STR_THUNDERBOLTPD
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    requires:
+      - STR_ARBITES
+      - STR_NEW_FIGHTER_PD
+    requiresBuyBaseFunc: [HANGAR]
+    marker: 40
+    sprite: 1882
+    fuelMax: 1000
+    damageMax: 450
+    speedMax: 2000
+    accel: 5
+    weapons: 3
+    weaponTypes:
+      - 0
+      - 0
+      - [4, 5, 13]
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    costBuy: 700000
+    costRent: 400000
+    costSell: 600000
+    soldiers: 1
+    vehicles: 0
+    refuelRate: 200
+    transferTime: 96
+    score: 250
+    pilots: 1
+    allowLanding: false
+    listOrder: 240
+  - type: STR_VULTURE
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
+    requiresBuyBaseFunc: [HANGAR]
+    requires:
+      - STR_ARBITES
+    maxSkinIndex: 2              # default 0
+    skinSprites: [1887,1888]   # default empty, contains all sprites except for the first (index zero)
+    marker: 36
+    sprite: 1886
+    fuelMax: 1800
+    damageMax: 400
+    speedMax: 600
+    accel: 2
+    weapons: 3         #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    soldiers: 2
+    pilots: 2
+    costBuy: 600000
+    costRent: 360000
+    refuelRate: 50
+    transferTime: 96
+    score: 300
+
+    battlescapeTerrainData:
+      name: VULTURE
+      mapDataSets:
+        - BLANKS
+        - VULTUREPD
+      mapBlocks:
+        - name: VULTURE
+          width: 10
+          length: 20
+    deployment:
+      - [6, 13, 0, 4]
+      - [6, 12, 0, 4]
+    spacecraft: true
+    allowLanding: false
+    listOrder: 210
+  - type: STR_CHIMERAPDH
+    takeoffSound: 63 #TANKMOVE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    marker: 30
+    requiresBuyBaseFunc: [HANGAR]
+    requires:
+      - STR_ARBITES_HIGHTIER
+    sprite: 548
+    fuelMax: 1000
+    damageMax: 1000
+    speedMax: 90
+    maxAltitude: 1
+    accel: 2
+    weapons: 1
+    weaponTypes:
+      - 3
+    weaponStrings:
+      - STR_ANTI_AIR_WEAPONS
+    soldiers: 16
+    vehicles: 2
+    refuelRate: 1000
+    transferTime: 96
+    score: 250
+    repairRate: 4
+    battlescapeTerrainData:
+      name: CHIMERAPDH
+      mapDataSets:
+        - BLANKS
+        - CHIMERAPDH
+      mapBlocks:
+        - name: CHIMERAPDH # CHIMERA
+          width: 10
+          length: 20
+          items:
+            STR_WHIRLWINDPD_SPAWNER:
+              - [2, 4, 1]
+              - [1, 16, 1]
+            STR_CHIMERAPDH_TURRET_SPAWNER:
+              - [6, 11, 1]
+          fuseTimers:
+            STR_WHIRLWINDPD_SPAWNER: [0, 0]
+            STR_CHIMERAPDH_TURRET_SPAWNER: [0, 0]
+    craftInventoryTile: [1, 2, 0] #[5, 4, 0]
+    deployment:
+      - [1, 2, 0, 0]
+      - [2, 2, 0, 0]
+      - [1, 3, 0, 0]
+      - [2, 3, 0, 0]
+      - [1, 14, 0, 0]
+      - [2, 14, 0, 0]
+      - [1, 15, 0, 0]
+      - [2, 15, 0, 0]
+      - [6, 9, 0, 0]
+      - [7, 9, 0, 0]
+      - [6, 10, 0, 0]
+      - [7, 10, 0, 0]
+      - [2, 4, 0, 0]
+      - [3, 4, 0, 0]
+      - [2, 5, 0, 0]
+      - [3, 5, 0, 0]
+      - [1, 16, 0, 0]
+      - [2, 16, 0, 0]
+      - [1, 17, 0, 0]
+      - [2, 17, 0, 0]
+      - [6, 10, 0, 0]
+      - [7, 10, 0, 0]
+      - [6, 11, 0, 0]
+      - [7, 11, 0, 0]
+    listOrder: 800
+    spacecraft: true
+  - type: STR_ARMYPD
+    takeoffSound: 63 #TANKMOVE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    marker: 30
+    requires:
+      - STR_LANDRAIDER_ARBITES
+    sprite: 1878
+    fuelMax: 1000
+    damageMax: 1000
+    speedMax: 90
+    maxAltitude: 1
+    accel: 2
+    weapons: 1
+    weaponTypes:
+      - 3
+    weaponStrings:
+      - STR_ANTI_AIR_WEAPONS
+    soldiers: 30
+    vehicles: 2
+#    costBuy: 9000000
+    costRent: 480000
+    refuelRate: 1000
+    transferTime: 96
+    score: 250
+    repairRate: 4
+    battlescapeTerrainData:
+      name: ARMYPD
+      mapDataSets:
+        - BLANKS
+        - TAUROXPD
+        - CHIMERAPDH
+        - WAGPD
+        - HIDRAPD
+      mapBlocks:
+        - name: ARMYPD
+          width: 10
+          length: 20
+          items:
+            STR_TTURRETPD_SPAWNER:
+              - [4, 16, 2]
+            STR_WHIRLWINDPD_SPAWNER:
+              - [1, 8, 1]
+            STR_DAMOCLESPD_SPAWNER:
+              - [6, 2, 2]
+          fuseTimers:
+            STR_TTURRETPD_SPAWNER: [0, 0]
+            STR_WHIRLWINDPD_SPAWNER: [0, 0]
+            STR_DAMOCLESPD_SPAWNER: [0, 0]
+    craftInventoryTile: [6, 2, 1] #[5, 4, 0]
+    deployment:
+      - [1, 6, 0, 0]
+      - [2, 6, 0, 0]
+      - [1, 7, 0, 0]
+      - [2, 7, 0, 0]
+      - [1, 8, 0, 0]
+      - [2, 8, 0, 0]
+      - [1, 9, 0, 0]
+      - [2, 9, 0, 0]
+ #TAUROX
+      - [3, 13, 1, 0]
+      - [3, 14, 1, 0]
+      - [4, 14, 1, 0]
+      - [3, 15, 1, 0]
+      - [4, 15, 1, 0]
+      - [3, 16, 1, 0]
+      - [4, 16, 1, 0]
+      - [3, 17, 1, 0]
+      - [4, 17, 1, 0]
+      - [4, 18, 1, 0]
+ #PRECINT
+      - [6, 2, 1, 0]
+      - [7, 2, 1, 0]
+      - [6, 3, 1, 0]
+      - [7, 3, 1, 0]
+      - [6, 4, 1, 0]
+      - [7, 4, 1, 0]
+      - [6, 5, 1, 0]
+      - [7, 5, 1, 0]
+      - [6, 6, 1, 0]
+      - [7, 6, 1, 0]
+      - [6, 7, 1, 0]
+      - [7, 7, 1, 0]
+      - [6, 8, 1, 0]
+      - [7, 8, 1, 0]
+    listOrder: 800
+    spacecraft: true
+  - type: STR_TAUROXPD
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    marker: 30
+    requiresBuyBaseFunc: [HANGAR]
+    requires:
+      - STR_ARBITES
+      - STR_NEW_TRANSPORT_PD
+    sprite: 549
+    fuelMax: 1800
+    damageMax: 400
+    speedMax: 600
+    accel: 2
+    weapons: 0
+    soldiers: 16
+    vehicles: 0
+    refuelRate: 1000
+    transferTime: 96
+    score: 200
+    repairRate: 4
+    battlescapeTerrainData:
+      name: TAUROXPD
+      mapDataSets:
+        - BLANKS
+        - TAUROXPD
+        - VHTPDEX
+      mapBlocks:
+        - name: TAUROXPD
+          width: 10
+          length: 20
+          items:
+            STR_TTURRETPD_SPAWNER:
+              - [6, 5, 2]
+              - [4, 15, 2]
+            STR_VALK_CHARGE:
+              - [4, 6, 4]
+            STR_THUNDER_CHARGE2:
+              - [4, 2, 4]
+          fuseTimers:
+            STR_THUNDER_CHARGE2: [1, 1]
+            STR_VALK_CHARGE: [1, 1]
+            STR_TTURRETPD_SPAWNER: [0, 0]
+    craftInventoryTile: [5, 3, 1]
+    deployment:
+      - [5, 2, 1, 0]
+      - [5, 3, 1, 0]
+      - [6, 3, 1, 0]
+      - [5, 4, 1, 0]
+      - [6, 4, 1, 0]
+      - [5, 5, 1, 0]
+      - [6, 5, 1, 0]
+      - [6, 6, 1, 0]
+      - [3, 12, 1, 0]
+      - [3, 13, 1, 0]
+      - [4, 13, 1, 0]
+      - [3, 14, 1, 0]
+      - [4, 14, 1, 0]
+      - [3, 15, 1, 0]
+      - [4, 15, 1, 0]
+      - [4, 16, 1, 0]
+    listOrder: 810
+    spacecraft: true
+  - type: STR_ARVUS
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [62, 63, 64] #REGULAR SOUND
+    requires:
+      - STR_ARBITES
+    requiresBuyBaseFunc: [HANGAR]
+    marker: 36
+    maxSkinIndex: 2              # default 0
+    skinSprites: [1884,1885]   # default empty, contains all sprites except for the first (index zero)
+    sprite: 1883
+    fuelMax: 1800
+    damageMax: 400
+    speedMax: 600
+    accel: 2
+    weapons: 0
+    soldiers: 16
+    vehicles: 1
+    pilots: 2
+    costBuy: 600000
+    costRent: 360000
+    refuelRate: 50
+    transferTime: 96
+    score: 300
+    listOrder: 210
+    battlescapeTerrainData:
+      name: ARVUS
+      mapDataSets:
+        - BLANKS
+        - ARVUS
+      mapBlocks:
+        - name: ARVUS
+          width: 10
+          length: 20
+    deployment:
+      - [4, 14, 0, 0]
+      - [5, 14, 0, 0]
+      - [4, 15, 0, 0]
+      - [5, 15, 0, 0]
+      - [4, 16, 0, 0]
+      - [5, 16, 0, 0]
+      - [4, 17, 0, 0]
+      - [5, 17, 0, 0]
+      - [5, 3, 0, 0]
+      - [6, 3, 0, 0]
+      - [5, 4, 0, 0]
+      - [6, 4, 0, 0]
+      - [5, 5, 0, 0]
+      - [6, 5, 0, 0]
+      - [5, 6, 0, 0]
+      - [6, 6, 0, 0]
+    spacecraft: true
+  - type: STR_CHIMERAPD
+    takeoffSound: 63 #TANKMOVE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    marker: 30
+    requiresBuyBaseFunc: [HANGAR]
+    requires:
+      - STR_ARBITES
+    maxSkinIndex: 2              # default 0
+    skinSprites: [546,547]   # default empty, contains all sprites except for the first (index zero)
+    sprite: 545
+    fuelMax: 1000
+    damageMax: 1000
+    speedMax: 180
+    maxAltitude: 1
+    accel: 2
+    weapons: 1
+    weaponTypes:
+      - 3
+    weaponStrings:
+      - STR_ANTI_AIR_WEAPONS
+    soldiers: 16
+    vehicles: 2
+    costBuy: 900000
+    costRent: 480000
+    refuelRate: 1000
+    transferTime: 96
+    score: 250
+    repairRate: 4
+    battlescapeTerrainData:
+      name: CHIMERAPD
+      mapDataSets:
+        - BLANKS
+        - CHIMERAPD
+      mapBlocks:
+        - name: CHIMERAPD # CHIMERA
+          width: 10
+          length: 20
+          items:
+            STR_CHIMERAPD_TURRET_SPAWNER:
+              - [4, 5, 1]
+              - [3, 15, 1]
+          fuseTimers:
+            STR_CHIMERAPD_TURRET_SPAWNER: [0, 0]
+    craftInventoryTile: [1, 2, 0] #[5, 4, 0]
+    deployment:
+      - [3, 13, 0, 0]
+      - [4, 13, 0, 0]
+      - [3, 14, 0, 0]
+      - [4, 14, 0, 0]
+      - [4, 3, 0, 0]
+      - [5, 3, 0, 0]
+      - [4, 4, 0, 0]
+      - [5, 4, 0, 0]
+      - [3, 15, 0, 0]
+      - [4, 15, 0, 0]
+      - [3, 16, 0, 0]
+      - [4, 16, 0, 0]
+      - [4, 5, 0, 0]
+      - [5, 5, 0, 0]
+      - [4, 6, 0, 0]
+      - [5, 6, 0, 0]
+    listOrder: 800
+    spacecraft: true
+#                 #                                        #                      #

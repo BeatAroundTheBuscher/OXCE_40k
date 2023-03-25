@@ -93,11 +93,51 @@ items:
     recover: false
     battleType: 11
 
+  - type: STR_MKX_DW_CHP_CORPSE
+    name: STR_CORPSE
+    weight: 40
+    bigSprite: 849
+    floorSprite: 728
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    battleType: 11
+    recover: false
+  - type: STR_MKX_DW_LIB_CORPSE
+    name: STR_CORPSE
+    weight: 40
+    bigSprite: 851
+    floorSprite: 729
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    battleType: 11
+    recover: false
+  - type: STR_MKX_DW_TEC_CORPSE
+    name: STR_CORPSE
+    weight: 40
+    bigSprite: 848
+    floorSprite: 727
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    battleType: 11
+    recover: false
+  - type: STR_MKX_DW_APO_CORPSE
+    name: STR_CORPSE
+    weight: 40
+    bigSprite: 847
+    floorSprite: 726
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    battleType: 11
+    recover: false
   - type: STR_MKX_DW_TAC_CORPSE
     name: STR_CORPSE
     weight: 40
     bigSprite: 836
-    floorSprite: 905
+    floorSprite: 722
     invWidth: 2
     invHeight: 3
     armor: 80
@@ -106,8 +146,8 @@ items:
   - type: STR_MKX_DW_INC_CORPSE
     name: STR_CORPSE
     weight: 40
-    bigSprite: 907
-    floorSprite: 907
+    bigSprite: 838
+    floorSprite: 725
     invWidth: 2
     invHeight: 3
     armor: 80
@@ -116,8 +156,8 @@ items:
   - type: STR_MKX_DW_PHB_CORPSE
     name: STR_CORPSE
     weight: 40
-    bigSprite: 906
-    floorSprite: 905
+    bigSprite: 837
+    floorSprite: 723
     invWidth: 2
     invHeight: 3
     armor: 80
@@ -126,8 +166,8 @@ items:
   - type: STR_MKX_DW_GRV_CORPSE
     name: STR_CORPSE
     weight: 40
-    bigSprite: 907
-    floorSprite: 906
+    bigSprite: 838
+    floorSprite: 724
     invWidth: 2
     invHeight: 3
     armor: 80
@@ -144,7 +184,236 @@ items:
     listOrder: 6405
 
 armors:
-  - &STR_DW_CAP_ARMOR_UC #WATCH MASTER
+  - type: STR_DREAD_DW_ARMOR_UC           #DREAD ARMOR NORMAL
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: DREAD.PCK
+    instantWoundRecovery: true
+    allowInv: true
+    spriteInv: DREADINV4
+    customArmorPreviewIndex: [31, 32, 33]
+    storeItem: STR_NONE
+    corpseGeo: STR_DREAD_CORPSE
+    corpseBattle:
+      - DREAD_CORPSE1
+      - DREAD_CORPSE2
+      - DREAD_CORPSE3
+      - DREAD_CORPSE4
+    frontArmor: 180
+    sideArmor: 160
+    rearArmor: 120
+    underArmor: 150
+    size: 2
+    moveSound: 700
+    #deathSound: [859, 860]
+    units:
+      - STR_FALLEN_DW
+    damageModifier: #DREADNOUGHT ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.2 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 20
+    builtInWeapons:
+      - AUX_DREAD_FLAMER
+      - STR_DREAD_MELEE_WEAPON
+      - INV_NULL_3X3
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - INV_NULL_4X2
+  - type: STR_DREAD_DW_ARMOR2_UC          #DREAD ARMOR PLASMA
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: DREAD4.PCK
+    instantWoundRecovery: true
+    allowInv: true
+    spriteInv: DREADINV
+    customArmorPreviewIndex: [20, 21, 22]
+    storeItem: STR_DREAD2_ARMOR
+    corpseGeo: STR_DREAD_CORPSE
+    corpseBattle:
+      - DREAD_CORPSE1
+      - DREAD_CORPSE2
+      - DREAD_CORPSE3
+      - DREAD_CORPSE4
+    frontArmor: 180
+    sideArmor: 160
+    rearArmor: 120
+    underArmor: 150
+    size: 2
+    moveSound: 700
+    units:
+      - STR_FALLEN_DW
+    damageModifier: #DREADNOUGHT ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.2 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 20
+    builtInWeapons:
+      - AUX_HOVERTANK_PLASMA
+      - STR_DREAD_MELEE_WEAPON
+      - INV_NULL_3X3
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - INV_NULL_4X2
+  - type: STR_DREAD_DW_ARMOR3_UC          #DREAD ARMOR Launcher
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    instantWoundRecovery: true
+    spriteSheet: DREAD2.PCK
+    allowInv: true
+    spriteInv: DREADINV2
+    customArmorPreviewIndex: [34, 35, 36]
+    storeItem: STR_DREAD3_ARMOR
+    corpseGeo: STR_DREAD_CORPSE
+    corpseBattle:
+      - DREAD_CORPSE1
+      - DREAD_CORPSE2
+      - DREAD_CORPSE3
+      - DREAD_CORPSE4
+    frontArmor: 180
+    sideArmor: 160
+    rearArmor: 120
+    underArmor: 150
+    size: 2
+    moveSound: 700
+    units:
+      - STR_FALLEN_DW
+    damageModifier: #DREADNOUGHT ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.2 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 20
+    builtInWeapons:
+      - AUX_HOVERTANK_LAUNCHER
+      - STR_DREAD_MELEE_WEAPON
+      - INV_NULL_3X3
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - INV_NULL_4X2
+  - type: STR_DREAD_DW_ARMOR4_UC
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: DREAD3.PCK
+    instantWoundRecovery: true
+    allowInv: true
+    spriteInv: DREADINV3
+    customArmorPreviewIndex: [20, 21, 22]
+    storeItem: STR_DREAD4_ARMOR
+    corpseGeo: STR_DREAD_CORPSE
+    corpseBattle:
+      - DREAD_CORPSE1
+      - DREAD_CORPSE2
+      - DREAD_CORPSE3
+      - DREAD_CORPSE4
+    frontArmor: 180
+    sideArmor: 160
+    rearArmor: 120
+    underArmor: 150
+    size: 2
+    moveSound: 700
+    #deathSound: [859, 860]
+    units:
+      - STR_FALLEN_DW
+    damageModifier: #DREADNOUGHT ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.2 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 20
+    builtInWeapons:
+      - AUX_HOVERTANK_LASER
+      - STR_DREAD_MELEE_WEAPON
+      - INV_NULL_3X3
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - INV_NULL_4X2
+  - type: STR_DREAD_DW_ARMOR5_UC          #DREAD ARMOR VENERABLE
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: DREAD5.PCK
+    instantWoundRecovery: true
+    allowInv: true
+    spriteInv: DREADINV5
+    customArmorPreviewIndex: [26, 27, 28]
+    storeItem: STR_DREAD5_ARMOR
+    corpseGeo: STR_DREAD_CORPSE
+    corpseBattle:
+      - DREAD_CORPSE1
+      - DREAD_CORPSE2
+      - DREAD_CORPSE3
+      - DREAD_CORPSE4
+    frontArmor: 190
+    sideArmor: 170
+    rearArmor: 140
+    underArmor: 160
+    size: 2
+    moveSound: 700
+    #deathSound: [859, 860]
+    units:
+      - STR_FALLEN_DW
+    damageModifier: #DREADNOUGHT ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.2 #FLAMES
+      - 1.0 #HE
+      - 1.2 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 20
+    builtInWeapons:
+      - AUX_DREAD_ASSC
+      - AUX_DREAD_FLAMER
+      - INV_NULL_3X3
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - INV_NULL_4X2
+
+  - &STR_DW_CAP_ARMOR_UC #CAP MASTER
     type: STR_DW_CAP_ARMOR_ULTRA_UC
     selectUnitMale:     [511, 512, 513, 514, 515]
     selectUnitFemale:   [511, 512, 513, 514, 515]
@@ -263,7 +532,7 @@ armors:
   - type: STR_DW_CAP_ARMOR_SALA_UC #SALMANDER
     refNode: *STR_DW_CAP_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_SALAMANDAR
 #SPRITES
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -281,6 +550,48 @@ armors:
       F3: ["CAPE4", "CAPDW", "M3_FACES", "PLUM"]
       F4: ["CAPE4", "CAPDW", "M4_FACES", "PLUM"]
       F5: ["CAPE4", "CAPDW", "M5_FACES", "PLUM"]
+  - type: STR_DW_CAP_ARMOR_BT_UC #ULTRAMARINE
+    refNode: *STR_DW_CAP_ARMOR_UC
+    units:
+      - STR_BLACKT
+#SPRITES
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["CAPE4", "CAPDW", "M0_FACE", "PLUM"]
+      M1: ["CAPE4", "CAPDW", "M1_FACE", "PLUM"]
+      M2: ["CAPE4", "CAPDW", "M2_FACE", "PLUM"]
+      M3: ["CAPE4", "CAPDW", "M3_FACE", "PLUM"]
+      M4: ["CAPE4", "CAPDW", "M4_FACE", "PLUM"]
+      M5: ["CAPE4", "CAPDW", "M5_FACE", "PLUM"]
+      F0: ["CAPE4", "CAPDW", "M0_FACE", "PLUM"]
+      F1: ["CAPE4", "CAPDW", "M1_FACE", "PLUM"]
+      F2: ["CAPE4", "CAPDW", "M2_FACE", "PLUM"]
+      F3: ["CAPE4", "CAPDW", "M3_FACE", "PLUM"]
+      F4: ["CAPE4", "CAPDW", "M4_FACE", "PLUM"]
+      F5: ["CAPE4", "CAPDW", "M5_FACE", "PLUM"]
+  - type: STR_DW_CAP_ARMOR_WS_UC #ULTRAMARINE
+    refNode: *STR_DW_CAP_ARMOR_UC
+    units:
+      - STR_WHITES
+#SPRITES
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["CAPE4", "CAPDW", "M0_FACE", "PLUM"]
+      M1: ["CAPE4", "CAPDW", "M1_FACE", "PLUM"]
+      M2: ["CAPE4", "CAPDW", "M2_FACE", "PLUM"]
+      M3: ["CAPE4", "CAPDW", "M3_FACE", "PLUM"]
+      M4: ["CAPE4", "CAPDW", "M4_FACE", "PLUM"]
+      M5: ["CAPE4", "CAPDW", "M5_FACE", "PLUM"]
+      F0: ["CAPE4", "CAPDW", "M0_FACE", "PLUM"]
+      F1: ["CAPE4", "CAPDW", "M1_FACE", "PLUM"]
+      F2: ["CAPE4", "CAPDW", "M2_FACE", "PLUM"]
+      F3: ["CAPE4", "CAPDW", "M3_FACE", "PLUM"]
+      F4: ["CAPE4", "CAPDW", "M4_FACE", "PLUM"]
+      F5: ["CAPE4", "CAPDW", "M5_FACE", "PLUM"]
 
   - &STR_DW_WM_ARMOR_UC #WATCH MASTER
     type: STR_DW_WM_ARMOR_ULTRA_UC
@@ -297,7 +608,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 30
     forcedTorso: 1
-    customArmorPreviewIndex: 10
+    customArmorPreviewIndex: 478
     spriteSheet: WMDW.PCK
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
@@ -375,7 +686,7 @@ armors:
     spriteFaceGroup: 6
     spriteFaceColor: [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
     units:
-      - STR_ULTRAMARINE
+      - STR_SALAMANDAR
 #SPRITES
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -393,6 +704,14 @@ armors:
       F3: ["CAPE5", "WMDW", "M3_FACES", "PLUM"]
       F4: ["CAPE5", "WMDW", "M4_FACES", "PLUM"]
       F5: ["CAPE5", "WMDW", "M5_FACES", "PLUM"]
+  - type: STR_DW_WM_ARMOR_BT_UC #ULTRAMARINE
+    refNode: *STR_DW_WM_ARMOR_UC
+    units:
+      - STR_BLACKT
+  - type: STR_DW_WM_ARMOR_WS_UC #ULTRAMARINE
+    refNode: *STR_DW_WM_ARMOR_UC
+    units:
+      - STR_WHITES
 
   - &STR_DW_TAC_ARMOR_UC #TATICAL
     type: STR_DW_TAC_ARMOR_ULTRA_UC
@@ -462,7 +781,7 @@ armors:
   - type: STR_DW_TAC_ARMOR_SALA_UC #SALMANDER
     refNode: *STR_DW_TAC_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_SALAMANDAR
 #SPRITES
     spriteSheet: TACDWSALA.PCK
     customArmorPreviewIndex: 543
@@ -494,7 +813,7 @@ armors:
       - STR_BLOODANGELS
 #SPRITES
     spriteSheet: TACDWBA.PCK
-    customArmorPreviewIndex: 442
+    customArmorPreviewIndex: 542
     forcedTorso: 1
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -517,10 +836,10 @@ armors:
   - type: STR_DW_TAC_ARMOR_BT_UC #BLACK TEMPLARS
     refNode: *STR_DW_TAC_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_BLACKT
 #SPRITES
     spriteSheet: TACDWBT.PCK
-    customArmorPreviewIndex: 444
+    customArmorPreviewIndex: 544
     forcedTorso: 1
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -565,7 +884,7 @@ armors:
   - type: STR_DW_TAC_ARMOR_WS_UC #WHITE SCARS
     refNode: *STR_DW_TAC_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_WHITES
 #SPRITES
     spriteSheet: TACDWWS.PCK
     customArmorPreviewIndex: 545
@@ -648,7 +967,7 @@ armors:
       - STR_ULTRAMARINE
 #SPRITES
     spriteSheet: DEVDWULTRA.PCK
-    customArmorPreviewIndex: 420
+    customArmorPreviewIndex: 552
     forcedTorso: 1
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -669,10 +988,10 @@ armors:
   - type: STR_DW_DEV_ARMOR_SALA_UC
     refNode: *STR_DW_DEV_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_SALAMANDAR
 #SPRITES
     spriteSheet: DEVDWSALA.PCK
-    customArmorPreviewIndex: 420
+    customArmorPreviewIndex: 553
     forcedTorso: 1
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -696,7 +1015,7 @@ armors:
       - STR_BLOODANGELS
 #SPRITES
     spriteSheet: DEVDWBA.PCK
-    customArmorPreviewIndex: 420
+    customArmorPreviewIndex: 554
     forcedTorso: 1
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -717,10 +1036,10 @@ armors:
   - type: STR_DW_DEV_ARMOR_BT_UC
     refNode: *STR_DW_DEV_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_BLACKT
 #SPRITES
     spriteSheet: DEVDWBA.PCK
-    customArmorPreviewIndex: 420
+    customArmorPreviewIndex: 555
     forcedTorso: 1
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -744,7 +1063,7 @@ armors:
       - STR_IMPERIALF
 #SPRITES
     spriteSheet: DEVDWIF.PCK
-    customArmorPreviewIndex: 420
+    customArmorPreviewIndex: 456
     forcedTorso: 1
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -765,10 +1084,10 @@ armors:
   - type: STR_DW_DEV_ARMOR_WS_UC
     refNode: *STR_DW_DEV_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_WHITES
 #SPRITES
     spriteSheet: DEVDWWS.PCK
-    customArmorPreviewIndex: 420
+    customArmorPreviewIndex: 557
     forcedTorso: 1
     layersDefaultPrefix: 0
     layersSpecificPrefix:
@@ -851,7 +1170,7 @@ armors:
       - STR_ULTRAMARINE
 #SPRITES
     spriteSheet: ASSDWULTRA.PCK
-    customArmorPreviewIndex: 426
+    customArmorPreviewIndex: 546
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -874,7 +1193,7 @@ armors:
       - STR_IMPERIALF
 #SPRITES
     spriteSheet: ASSDWIF.PCK
-    customArmorPreviewIndex: 427
+    customArmorPreviewIndex: 547
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -897,7 +1216,7 @@ armors:
       - STR_BLOODANGELS
 #SPRITES
     spriteSheet: ASSDWBA.PCK
-    customArmorPreviewIndex: 428
+    customArmorPreviewIndex: 548
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -917,10 +1236,10 @@ armors:
   - type: STR_DW_ASS_ARMOR_SALA_UC #ASSAULT
     refNode: *STR_DW_ASS_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_SALAMANDAR
 #SPRITES
     spriteSheet: ASSDWSALA.PCK
-    customArmorPreviewIndex: 429
+    customArmorPreviewIndex: 549
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -940,10 +1259,10 @@ armors:
   - type: STR_DW_ASS_ARMOR_BT_UC #ASSAULT
     refNode: *STR_DW_ASS_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_BLACKT
 #SPRITES
     spriteSheet: ASSDWBT.PCK
-    customArmorPreviewIndex: 430
+    customArmorPreviewIndex: 550
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -963,10 +1282,10 @@ armors:
   - type: STR_DW_ASS_ARMOR_WS_UC #ASSAULT
     refNode: *STR_DW_ASS_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_WHITES
 #SPRITES
     spriteSheet: ASSDWWS.PCK
-    customArmorPreviewIndex: 431
+    customArmorPreviewIndex: 551
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -1112,10 +1431,12 @@ armors:
       F3: ["0", "TERDWBA", "M3_FACE"]
       F4: ["0", "TERDWBA", "M4_FACE"]
       F5: ["0", "TERDWBA", "M5_FACE"]
+#SPECIAL
+    instantWoundRecovery: true
   - type: STR_DW_TER_ARMOR_SALA_UC #TERMINATOR
     refNode: *STR_DW_TER_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_SALAMANDAR
 #SPRITES
     spriteSheet: TERDWSALA.PCK
     customArmorPreviewIndex: 513
@@ -1138,7 +1459,7 @@ armors:
   - type: STR_DW_TER_ARMOR_BT_UC #TERMINATOR
     refNode: *STR_DW_TER_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_BLACKT
 #SPRITES
     spriteSheet: TERDWBT.PCK
     customArmorPreviewIndex: 514
@@ -1161,7 +1482,7 @@ armors:
   - type: STR_DW_TER_ARMOR_WS_UC #TERMINATOR
     refNode: *STR_DW_TER_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_WHITES
 #SPRITES
     spriteSheet: TERDWWS.PCK
     customArmorPreviewIndex: 515
@@ -1301,10 +1622,12 @@ armors:
       F3: ["0", "TERDWBA", "M3_FACE"]
       F4: ["0", "TERDWBA", "M4_FACE"]
       F5: ["0", "TERDWBA", "M5_FACE"]
+#SPECIAL
+    instantWoundRecovery: true
   - type: STR_DW_TASS_ARMOR_SALA_UC #TERMINATOR
     refNode: *STR_DW_TASS_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_SALAMANDAR
 #SPRITES
     spriteSheet: TASSDWSALA.PCK
     customArmorPreviewIndex: 519
@@ -1327,7 +1650,7 @@ armors:
   - type: STR_DW_TASS_ARMOR_BT_UC #TERMINATOR
     refNode: *STR_DW_TASS_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_BLACKT
 #SPRITES
     spriteSheet: TASSDWSALA.PCK
     customArmorPreviewIndex: 520
@@ -1350,7 +1673,7 @@ armors:
   - type: STR_DW_TASS_ARMOR_WS_UC #TERMINATOR
     refNode: *STR_DW_TASS_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_WHITES
 #SPRITES
     spriteSheet: TASSDWWS.PCK
     customArmorPreviewIndex: 521
@@ -1498,10 +1821,12 @@ armors:
       F3: ["0", "TERSGTBA", "M3_FACE"]
       F4: ["0", "TERSGTBA", "M4_FACE"]
       F5: ["0", "TERSGTBA", "M5_FACE"]
+#SPECIAL
+    instantWoundRecovery: true
   - type: STR_DW_TSARGENT_ARMOR_SALA_UC #TERMINATOR SGT
     refNode: *STR_DW_TSARGENT_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_SALAMANDAR
 #SPRITES
     spriteSheet: TERSGTDWSALA.PCK
     customArmorPreviewIndex: 525
@@ -1524,7 +1849,7 @@ armors:
   - type: STR_DW_TSARGENT_ARMOR_BT_UC #TERMINATOR SGT
     refNode: *STR_DW_TSARGENT_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_BLACKT
 #SPRITES
     spriteSheet: TERSGTDWBT.PCK
     customArmorPreviewIndex: 526
@@ -1547,7 +1872,7 @@ armors:
   - type: STR_DW_TSARGENT_ARMOR_WS_UC #TERMINATOR SGT
     refNode: *STR_DW_TSARGENT_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_WHITES
 #SPRITES
     spriteSheet: TERSGTDWWS.PCK
     customArmorPreviewIndex: 527
@@ -1694,10 +2019,12 @@ armors:
       F3: ["0", "APOTDWBA", "M3_FACE"]
       F4: ["0", "APOTDWBA", "M4_FACE"]
       F5: ["0", "APOTDWBA", "M5_FACE"]
+#SPECIAL
+    instantWoundRecovery: true
   - type: STR_DW_APOT_ARMOR_SALA_UC
     refNode: *STR_DW_APOT_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_SALAMANDAR
 #SPRITES
     spriteSheet: APOTDWSALA.PCK
     customArmorPreviewIndex: 567
@@ -1720,7 +2047,7 @@ armors:
   - type: STR_DW_APOT_ARMOR_BT_UC
     refNode: *STR_DW_APOT_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_BLACKT
 #SPRITES
     spriteSheet: APOTDWBT.PCK
     customArmorPreviewIndex: 568
@@ -1743,7 +2070,7 @@ armors:
   - type: STR_DW_APOT_ARMOR_WS_UC
     refNode: *STR_DW_APOT_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_WHITES
 #SPRITES
     spriteSheet: APOTDWWS.PCK
     customArmorPreviewIndex: 569
@@ -1823,7 +2150,7 @@ armors:
       - STR_ULTRAMARINE
 #SPRITES
     spriteSheet: TECHDWULTRA.PCK
-    customArmorPreviewIndex: 528
+    customArmorPreviewIndex: 534
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -1846,7 +2173,7 @@ armors:
       - STR_IMPERIALF
 #SPRITES
     spriteSheet: TECHDWIF.PCK
-    customArmorPreviewIndex: 529
+    customArmorPreviewIndex: 535
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -1869,7 +2196,7 @@ armors:
       - STR_BLOODANGELS
 #SPRITES
     spriteSheet: TECHDWBA.PCK
-    customArmorPreviewIndex: 530
+    customArmorPreviewIndex: 536
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -1886,13 +2213,15 @@ armors:
       F3: ["0", "TECHDWBA", "M3_FACE"]
       F4: ["0", "TECHDWBA", "M4_FACE"]
       F5: ["0", "TECHDWBA", "M5_FACE"]
+#SPECIAL
+    instantWoundRecovery: true
   - type: STR_DW_TECH_ARMOR_SALA_UC
     refNode: *STR_DW_TECH_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_SALAMANDAR
 #SPRITES
     spriteSheet: TECHDWSALA.PCK
-    customArmorPreviewIndex: 531
+    customArmorPreviewIndex: 537
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -1912,10 +2241,10 @@ armors:
   - type: STR_DW_TECH_ARMOR_BT_UC
     refNode: *STR_DW_TECH_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_BLACKT
 #SPRITES
     spriteSheet: TECHDWBT.PCK
-    customArmorPreviewIndex: 532
+    customArmorPreviewIndex: 538
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -1935,10 +2264,10 @@ armors:
   - type: STR_DW_TECH_ARMOR_WS_UC
     refNode: *STR_DW_TECH_ARMOR_UC
     units:
-      - STR_ULTRAMARINE
+      - STR_WHITES
 #SPRITES
     spriteSheet: TECHDWWS.PCK
-    customArmorPreviewIndex: 533
+    customArmorPreviewIndex: 508
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -1960,6 +2289,844 @@ armors:
       basePercent: [100, 25] #overall move cost
 
 #PRIMARIS
+  - &STR_MKX_DW_LIB_UC
+    type: STR_MKX_DW_LIB_ULTRA_UC
+    selectUnitMale:     [1011, 1012, 1013, 1014, 1015]
+    selectUnitFemale:   [1011, 1012, 1013, 1014, 1015]
+    startMovingMale:    [1006, 1007, 1008, 1009, 1010]
+    startMovingFemale:  [1006, 1007, 1008, 1009, 1010]
+    selectWeaponMale:   [1001, 1002, 1003, 1004, 1005]
+    selectWeaponFemale: [1001, 1002, 1003, 1004, 1005]
+    annoyedMale:        [1016, 1017, 1018, 1019, 1020]
+    annoyedFemale:      [1016, 1017, 1018, 1019, 1020]
+    deathMale:     [1021, 1022, 1023, 1024, 1025]
+    deathFemale:   [1021, 1022, 1023, 1024, 1025]
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    ufopediaType: STR_MKX_LIB_LV1_UC
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    corpseBattle:
+      - STR_MKX_DW_LIB_CORPSE
+    storeItem: STR_MKX_LIB_ARMOR
+    corpseGeo: STR_FALLEN_CORPSE
+    specialWeapon: STR_LIBRARIAN_SPECIAL_WEAPON
+    stats:
+       tu: 0
+       stamina: 0
+       health: 0
+       bravery: 0 #always multiples of 10
+       reactions: 0
+       firing: 0
+       throwing: 0
+       strength: 0
+       melee: 0
+    frontArmor: 110
+    sideArmor: 90
+    rearArmor: 80
+    underArmor: 70
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    forcedTorso: 1
+    builtInWeapons:
+      - INV_NULL_3X3
+  - type: STR_MKX_DW_LIB_ULTRA_UC
+    units:
+      - STR_ULTRAMARINE_PRIMARIS
+#SPRITES
+    spriteSheet: MKXLIBDWULTRA.PCK
+    customArmorPreviewIndex: 623
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "CHPDWULTRA", "M0_FACE"]
+      M1: ["0", "CHPDWULTRA", "M1_FACE"]
+      M2: ["0", "CHPDWULTRA", "M2_FACE"]
+      M3: ["0", "CHPDWULTRA", "M3_FACE"]
+      M4: ["0", "CHPDWULTRA", "M4_FACE"]
+      M5: ["0", "CHPDWULTRA", "M5_FACE"]
+      F0: ["0", "CHPDWULTRA", "M0_FACE"]
+      F1: ["0", "CHPDWULTRA", "M1_FACE"]
+      F2: ["0", "CHPDWULTRA", "M2_FACE"]
+      F3: ["0", "CHPDWULTRA", "M3_FACE"]
+      F4: ["0", "CHPDWULTRA", "M4_FACE"]
+      F5: ["0", "CHPDWULTRA", "M5_FACE"]
+    builtInWeapons:
+      - STR_SHIELD_TOME
+      - INV_NULL_3X3
+  - type: STR_MKX_DW_LIB_IF_UC
+    refNode: *STR_MKX_DW_LIB_UC
+    units:
+      - STR_IMPERIALF_PRIMARIS
+#SPRITES
+    spriteSheet: MKXLIBDWIF.PCK
+    customArmorPreviewIndex: 624
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "LIBDWIF", "M0_FACE"]
+      M1: ["0", "LIBDWIF", "M1_FACE"]
+      M2: ["0", "LIBDWIF", "M2_FACE"]
+      M3: ["0", "LIBDWIF", "M3_FACE"]
+      M4: ["0", "LIBDWIF", "M4_FACE"]
+      M5: ["0", "LIBDWIF", "M5_FACE"]
+      F0: ["0", "LIBDWIF", "M0_FACE"]
+      F1: ["0", "LIBDWIF", "M1_FACE"]
+      F2: ["0", "LIBDWIF", "M2_FACE"]
+      F3: ["0", "LIBDWIF", "M3_FACE"]
+      F4: ["0", "LIBDWIF", "M4_FACE"]
+      F5: ["0", "LIBDWIF", "M5_FACE"]
+    builtInWeapons:
+      - STR_SHIELD_TOME
+      - INV_NULL_3X3
+  - type: STR_MKX_DW_LIB_BA_UC
+    refNode: *STR_MKX_DW_LIB_UC
+    units:
+      - STR_BLOODANGELS_PRIMARIS
+#SPRITES
+    spriteSheet: MKXLIBDWBA.PCK
+    customArmorPreviewIndex: 625
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "LIBDWBA", "M0_FACE"]
+      M1: ["0", "LIBDWBA", "M1_FACE"]
+      M2: ["0", "LIBDWBA", "M2_FACE"]
+      M3: ["0", "LIBDWBA", "M3_FACE"]
+      M4: ["0", "LIBDWBA", "M4_FACE"]
+      M5: ["0", "LIBDWBA", "M5_FACE"]
+      F0: ["0", "LIBDWBA", "M0_FACE"]
+      F1: ["0", "LIBDWBA", "M1_FACE"]
+      F2: ["0", "LIBDWBA", "M2_FACE"]
+      F3: ["0", "LIBDWBA", "M3_FACE"]
+      F4: ["0", "LIBDWBA", "M4_FACE"]
+      F5: ["0", "LIBDWBA", "M5_FACE"]
+    builtInWeapons:
+      - STR_SHIELD_TOME
+      - INV_NULL_3X3
+#SPECIAL
+    instantWoundRecovery: true
+  - type: STR_MKX_DW_LIB_SALA_UC
+    refNode: *STR_MKX_DW_LIB_UC
+    spriteFaceGroup: 6
+    spriteFaceColor: [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+    units:
+      - STR_SALAMANDAR_PRIMARIS
+#SPRITES
+    spriteSheet: MKXLIBDWSALA.PCK
+    customArmorPreviewIndex: 626
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "LIBDWSALA", "M0_FACES"]
+      M1: ["0", "LIBDWSALA", "M1_FACES"]
+      M2: ["0", "LIBDWSALA", "M2_FACES"]
+      M3: ["0", "LIBDWSALA", "M3_FACES"]
+      M4: ["0", "LIBDWSALA", "M4_FACES"]
+      M5: ["0", "LIBDWSALA", "M5_FACES"]
+      F0: ["0", "LIBDWSALA", "M0_FACES"]
+      F1: ["0", "LIBDWSALA", "M1_FACES"]
+      F2: ["0", "LIBDWSALA", "M2_FACES"]
+      F3: ["0", "LIBDWSALA", "M3_FACES"]
+      F4: ["0", "LIBDWSALA", "M4_FACES"]
+      F5: ["0", "LIBDWSALA", "M5_FACES"]
+    builtInWeapons:
+      - STR_SHIELD_TOME
+      - INV_NULL_3X3
+  - type: STR_MKX_DW_LIB_BT_UC
+    refNode: *STR_MKX_DW_LIB_UC
+    units:
+      - STR_BLACKT_PRIMARIS
+#SPRITES
+    spriteSheet: MKXLIBDWBT.PCK
+    customArmorPreviewIndex: 627
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "LIBDWBT", "M0_FACE"]
+      M1: ["0", "LIBDWBT", "M1_FACE"]
+      M2: ["0", "LIBDWBT", "M2_FACE"]
+      M3: ["0", "LIBDWBT", "M3_FACE"]
+      M4: ["0", "LIBDWBT", "M4_FACE"]
+      M5: ["0", "LIBDWBT", "M5_FACE"]
+      F0: ["0", "LIBDWBT", "M0_FACE"]
+      F1: ["0", "LIBDWBT", "M1_FACE"]
+      F2: ["0", "LIBDWBT", "M2_FACE"]
+      F3: ["0", "LIBDWBT", "M3_FACE"]
+      F4: ["0", "LIBDWBT", "M4_FACE"]
+      F5: ["0", "LIBDWBT", "M5_FACE"]
+    builtInWeapons:
+      - STR_SHIELD_TOME
+      - INV_NULL_3X3
+  - type: STR_MKX_DW_LIB_WS_UC
+    refNode: *STR_MKX_DW_LIB_UC
+    units:
+      - STR_WHITES_PRIMARIS
+#SPRITES
+    spriteSheet: MKXLIBDWWS.PCK
+    customArmorPreviewIndex: 628
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "LIBDWWS", "M0_FACE"]
+      M1: ["0", "LIBDWWS", "M1_FACE"]
+      M2: ["0", "LIBDWWS", "M2_FACE"]
+      M3: ["0", "LIBDWWS", "M3_FACE"]
+      M4: ["0", "LIBDWWS", "M4_FACE"]
+      M5: ["0", "LIBDWWS", "M5_FACE"]
+      F0: ["0", "LIBDWWS", "M0_FACE"]
+      F1: ["0", "LIBDWWS", "M1_FACE"]
+      F2: ["0", "LIBDWWS", "M2_FACE"]
+      F3: ["0", "LIBDWWS", "M3_FACE"]
+      F4: ["0", "LIBDWWS", "M4_FACE"]
+      F5: ["0", "LIBDWWS", "M5_FACE"]
+    builtInWeapons:
+      - STR_SHIELD_TOME
+      - INV_NULL_3X3
+#SPECIAL
+    moveCost:
+      basePercent: [100, 25] #overall move cost
+
+  - &STR_MKX_DW_CHP_UC
+    type: STR_MKX_DW_CHP_ULTRA_UC
+    selectUnitMale:     [1256, 1257, 1258, 1259, 1260]
+    selectUnitFemale:   [1256, 1257, 1258, 1259, 1260]
+    startMovingMale:    [1251, 1252, 1253, 1254, 1255]
+    startMovingFemale:  [1251, 1252, 1253, 1254, 1255]
+    selectWeaponMale:   [1246, 1247, 1248, 1249, 1250]
+    selectWeaponFemale: [1246, 1247, 1248, 1249, 1250]
+    annoyedMale:        [1261, 1262, 1263, 1264, 1265]
+    annoyedFemale:      [1261, 1262, 1263, 1264, 1265]
+    deathMale:     [380, 381, 382, 383, 384]
+    deathFemale:   [380, 381, 382, 383, 384]
+    ufopediaType: STR_MKX_CHP_UC
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    zombiImmune: true
+    corpseBattle:
+      - STR_MKX_DW_CHP_CORPSE
+    storeItem: STR_MKX_CHP_ARMOR
+    corpseGeo: STR_FALLEN_CORPSE
+    stats:
+       tu: 10
+       stamina: 10
+       health: 10
+       bravery: 0 #always multiples of 10
+       reactions: 0
+       firing: 0
+       throwing: 0
+       strength: 0
+       melee: 0
+    frontArmor: 110
+    sideArmor: 90
+    rearArmor: 80
+    underArmor: 70
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    forcedTorso: 1
+    builtInWeapons:
+      - AUX_CROZIUS
+      - INV_NULL_3X3
+    specialWeapon: STR_UNARMED_GAUNTLET_PLUS
+  - type: STR_MKX_DW_CHP_ULTRA_UC
+    units:
+      - STR_ULTRAMARINE_PRIMARIS
+#SPRITES
+    spriteSheet: MKXCHPDWULTRA.PCK
+    customArmorPreviewIndex: 617
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "CHPDWULTRA", "M0_FACE"]
+      M1: ["0", "CHPDWULTRA", "M1_FACE"]
+      M2: ["0", "CHPDWULTRA", "M2_FACE"]
+      M3: ["0", "CHPDWULTRA", "M3_FACE"]
+      M4: ["0", "CHPDWULTRA", "M4_FACE"]
+      M5: ["0", "CHPDWULTRA", "M5_FACE"]
+      F0: ["0", "CHPDWULTRA", "M0_FACE"]
+      F1: ["0", "CHPDWULTRA", "M1_FACE"]
+      F2: ["0", "CHPDWULTRA", "M2_FACE"]
+      F3: ["0", "CHPDWULTRA", "M3_FACE"]
+      F4: ["0", "CHPDWULTRA", "M4_FACE"]
+      F5: ["0", "CHPDWULTRA", "M5_FACE"]
+  - type: STR_MKX_DW_CHP_IF_UC
+    refNode: *STR_MKX_DW_CHP_UC
+    units:
+      - STR_IMPERIALF_PRIMARIS
+#SPRITES
+    spriteSheet: MKXCHPDWIF.PCK
+    customArmorPreviewIndex: 618
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "CHPDWIF", "M0_FACE"]
+      M1: ["0", "CHPDWIF", "M1_FACE"]
+      M2: ["0", "CHPDWIF", "M2_FACE"]
+      M3: ["0", "CHPDWIF", "M3_FACE"]
+      M4: ["0", "CHPDWIF", "M4_FACE"]
+      M5: ["0", "CHPDWIF", "M5_FACE"]
+      F0: ["0", "CHPDWIF", "M0_FACE"]
+      F1: ["0", "CHPDWIF", "M1_FACE"]
+      F2: ["0", "CHPDWIF", "M2_FACE"]
+      F3: ["0", "CHPDWIF", "M3_FACE"]
+      F4: ["0", "CHPDWIF", "M4_FACE"]
+      F5: ["0", "CHPDWIF", "M5_FACE"]
+  - type: STR_MKX_DW_CHP_BA_UC
+    refNode: *STR_MKX_DW_CHP_UC
+    units:
+      - STR_BLOODANGELS_PRIMARIS
+#SPRITES
+    spriteSheet: MKXCHPDWBA.PCK
+    customArmorPreviewIndex: 619
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "CHPDWBA", "M0_FACE"]
+      M1: ["0", "CHPDWBA", "M1_FACE"]
+      M2: ["0", "CHPDWBA", "M2_FACE"]
+      M3: ["0", "CHPDWBA", "M3_FACE"]
+      M4: ["0", "CHPDWBA", "M4_FACE"]
+      M5: ["0", "CHPDWBA", "M5_FACE"]
+      F0: ["0", "CHPDWBA", "M0_FACE"]
+      F1: ["0", "CHPDWBA", "M1_FACE"]
+      F2: ["0", "CHPDWBA", "M2_FACE"]
+      F3: ["0", "CHPDWBA", "M3_FACE"]
+      F4: ["0", "CHPDWBA", "M4_FACE"]
+      F5: ["0", "CHPDWBA", "M5_FACE"]
+#SPECIAL
+    instantWoundRecovery: true
+  - type: STR_MKX_DW_CHP_SALA_UC
+    refNode: *STR_MKX_DW_CHP_UC
+    units:
+      - STR_SALAMANDAR_PRIMARIS
+#SPRITES
+    spriteSheet: MKXCHPDWSALA.PCK
+    customArmorPreviewIndex: 620
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "CHPDWSALA", "M0_FACES"]
+      M1: ["0", "CHPDWSALA", "M1_FACES"]
+      M2: ["0", "CHPDWSALA", "M2_FACES"]
+      M3: ["0", "CHPDWSALA", "M3_FACES"]
+      M4: ["0", "CHPDWSALA", "M4_FACES"]
+      M5: ["0", "CHPDWSALA", "M5_FACES"]
+      F0: ["0", "CHPDWSALA", "M0_FACES"]
+      F1: ["0", "CHPDWSALA", "M1_FACES"]
+      F2: ["0", "CHPDWSALA", "M2_FACES"]
+      F3: ["0", "CHPDWSALA", "M3_FACES"]
+      F4: ["0", "CHPDWSALA", "M4_FACES"]
+      F5: ["0", "CHPDWSALA", "M5_FACES"]
+  - type: STR_MKX_DW_CHP_BT_UC
+    refNode: *STR_MKX_DW_CHP_UC
+    units:
+      - STR_BLACKT_PRIMARIS
+#SPRITES
+    spriteSheet: MKXCHPDWBT.PCK
+    customArmorPreviewIndex: 621
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "CHPDWBT", "M0_FACE"]
+      M1: ["0", "CHPDWBT", "M1_FACE"]
+      M2: ["0", "CHPDWBT", "M2_FACE"]
+      M3: ["0", "CHPDWBT", "M3_FACE"]
+      M4: ["0", "CHPDWBT", "M4_FACE"]
+      M5: ["0", "CHPDWBT", "M5_FACE"]
+      F0: ["0", "CHPDWBT", "M0_FACE"]
+      F1: ["0", "CHPDWBT", "M1_FACE"]
+      F2: ["0", "CHPDWBT", "M2_FACE"]
+      F3: ["0", "CHPDWBT", "M3_FACE"]
+      F4: ["0", "CHPDWBT", "M4_FACE"]
+      F5: ["0", "CHPDWBT", "M5_FACE"]
+  - type: STR_MKX_DW_CHP_WS_UC
+    refNode: *STR_MKX_DW_CHP_UC
+    units:
+      - STR_WHITES_PRIMARIS
+#SPRITES
+    spriteSheet: MKXCHPDWWS.PCK
+    customArmorPreviewIndex: 622
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "CHPDWWS", "M0_FACE"]
+      M1: ["0", "CHPDWWS", "M1_FACE"]
+      M2: ["0", "CHPDWWS", "M2_FACE"]
+      M3: ["0", "CHPDWWS", "M3_FACE"]
+      M4: ["0", "CHPDWWS", "M4_FACE"]
+      M5: ["0", "CHPDWWS", "M5_FACE"]
+      F0: ["0", "CHPDWWS", "M0_FACE"]
+      F1: ["0", "CHPDWWS", "M1_FACE"]
+      F2: ["0", "CHPDWWS", "M2_FACE"]
+      F3: ["0", "CHPDWWS", "M3_FACE"]
+      F4: ["0", "CHPDWWS", "M4_FACE"]
+      F5: ["0", "CHPDWWS", "M5_FACE"]
+#SPECIAL
+    moveCost:
+      basePercent: [100, 25] #overall move cost
+
+  - &STR_MKX_DW_TEC_UC #A PREVIEW D
+    type: STR_MKX_DW_TEC_ULTRA_UC
+    selectUnitMale:     [1296, 1297, 1298, 1299, 1300]
+    selectUnitFemale:   [1296, 1297, 1298, 1299, 1300]
+    startMovingMale:    [1291, 1292, 1293, 1294, 1295]
+    startMovingFemale:  [1291, 1292, 1293, 1294, 1295]
+    selectWeaponMale:   [1286, 1287, 1288, 1289, 1290]
+    selectWeaponFemale: [1286, 1287, 1288, 1289, 1290]
+    annoyedMale:        [1301, 1302, 1303, 1304, 1305]
+    annoyedFemale:      [1301, 1302, 1303, 1304, 1305]
+    deathMale:     [380, 381, 382, 383, 384]
+    deathFemale:   [380, 381, 382, 383, 384]
+    ufopediaType: STR_MKX_TEC_LV1_UC
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    corpseBattle:
+      - STR_MKX_DW_TEC_CORPSE
+    storeItem: STR_MKX_TEC_ARMOR
+    corpseGeo: STR_FALLEN_CORPSE
+    stats:
+       tu: 0
+       stamina: 0
+       health: 0
+       bravery: 0 #always multiples of 10
+       reactions: 0
+       firing: 0
+       throwing: 0
+       strength: 0
+       melee: 0
+    frontArmor: 110
+    sideArmor: 90
+    rearArmor: 80
+    underArmor: 70
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    forcedTorso: 1
+    specialWeapon: AUX_PROBE
+  - type: STR_MKX_DW_TEC_ULTRA_UC
+    units:
+      - STR_ULTRAMARINE_PRIMARIS
+#SPRITES
+    spriteSheet: MKXTECDWULTRA.PCK
+    customArmorPreviewIndex: 528
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "TECDWULTRA", "M0_FACE"]
+      M1: ["0", "TECDWULTRA", "M1_FACE"]
+      M2: ["0", "TECDWULTRA", "M2_FACE"]
+      M3: ["0", "TECDWULTRA", "M3_FACE"]
+      M4: ["0", "TECDWULTRA", "M4_FACE"]
+      M5: ["0", "TECDWULTRA", "M5_FACE"]
+      F0: ["0", "TECDWULTRA", "M0_FACE"]
+      F1: ["0", "TECDWULTRA", "M1_FACE"]
+      F2: ["0", "TECDWULTRA", "M2_FACE"]
+      F3: ["0", "TECDWULTRA", "M3_FACE"]
+      F4: ["0", "TECDWULTRA", "M4_FACE"]
+      F5: ["0", "TECDWULTRA", "M5_FACE"]
+    builtInWeapons:
+      - STR_TT_SPAWNER
+  - type: STR_MKX_DW_TEC_IF_UC
+    refNode: *STR_MKX_DW_TEC_UC
+    units:
+      - STR_IMPERIALF_PRIMARIS
+#SPRITES
+    spriteSheet: MKXTECDWIF.PCK
+    customArmorPreviewIndex: 529
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "TECDWIF", "M0_FACE"]
+      M1: ["0", "TECDWIF", "M1_FACE"]
+      M2: ["0", "TECDWIF", "M2_FACE"]
+      M3: ["0", "TECDWIF", "M3_FACE"]
+      M4: ["0", "TECDWIF", "M4_FACE"]
+      M5: ["0", "TECDWIF", "M5_FACE"]
+      F0: ["0", "TECDWIF", "M0_FACE"]
+      F1: ["0", "TECDWIF", "M1_FACE"]
+      F2: ["0", "TECDWIF", "M2_FACE"]
+      F3: ["0", "TECDWIF", "M3_FACE"]
+      F4: ["0", "TECDWIF", "M4_FACE"]
+      F5: ["0", "TECDWIF", "M5_FACE"]
+    builtInWeapons:
+      - STR_TF_SPAWNER
+      - STR_THUNDERFIRE_SHELL
+      - STR_THUNDERFIRE_SHELL
+  - type: STR_MKX_DW_TEC_BA_UC
+    refNode: *STR_MKX_DW_TEC_UC
+    units:
+      - STR_BLOODANGELS_PRIMARIS
+#SPRITES
+    spriteSheet: MKXTECDWBA.PCK
+    customArmorPreviewIndex: 530
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "TECDWBA", "M0_FACE"]
+      M1: ["0", "TECDWBA", "M1_FACE"]
+      M2: ["0", "TECDWBA", "M2_FACE"]
+      M3: ["0", "TECDWBA", "M3_FACE"]
+      M4: ["0", "TECDWBA", "M4_FACE"]
+      M5: ["0", "TECDWBA", "M5_FACE"]
+      F0: ["0", "TECDWBA", "M0_FACE"]
+      F1: ["0", "TECDWBA", "M1_FACE"]
+      F2: ["0", "TECDWBA", "M2_FACE"]
+      F3: ["0", "TECDWBA", "M3_FACE"]
+      F4: ["0", "TECDWBA", "M4_FACE"]
+      F5: ["0", "TECDWBA", "M5_FACE"]
+    builtInWeapons:
+      - STR_TT_SPAWNER
+#SPECIAL
+    instantWoundRecovery: true
+  - type: STR_MKX_DW_TEC_SALA_UC
+    refNode: *STR_MKX_DW_TEC_UC
+    units:
+      - STR_SALAMANDAR_PRIMARIS
+#SPRITES
+    spriteSheet: MKXTECDWSALA.PCK
+    customArmorPreviewIndex: 531
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "TECDWSALA", "M0_FACES"]
+      M1: ["0", "TECDWSALA", "M1_FACES"]
+      M2: ["0", "TECDWSALA", "M2_FACES"]
+      M3: ["0", "TECDWSALA", "M3_FACES"]
+      M4: ["0", "TECDWSALA", "M4_FACES"]
+      M5: ["0", "TECDWSALA", "M5_FACES"]
+      F0: ["0", "TECDWSALA", "M0_FACES"]
+      F1: ["0", "TECDWSALA", "M1_FACES"]
+      F2: ["0", "TECDWSALA", "M2_FACES"]
+      F3: ["0", "TECDWSALA", "M3_FACES"]
+      F4: ["0", "TECDWSALA", "M4_FACES"]
+      F5: ["0", "TECDWSALA", "M5_FACES"]
+    builtInWeapons:
+      - STR_TT_SPAWNER
+  - type: STR_MKX_DW_TEC_BT_UC
+    refNode: *STR_MKX_DW_TEC_UC
+    units:
+      - STR_BLACKT_PRIMARIS
+#SPRITES
+    spriteSheet: MKXTECDWBT.PCK
+    customArmorPreviewIndex: 532
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "TECDWBT", "M0_FACE"]
+      M1: ["0", "TECDWBT", "M1_FACE"]
+      M2: ["0", "TECDWBT", "M2_FACE"]
+      M3: ["0", "TECDWBT", "M3_FACE"]
+      M4: ["0", "TECDWBT", "M4_FACE"]
+      M5: ["0", "TECDWBT", "M5_FACE"]
+      F0: ["0", "TECDWBT", "M0_FACE"]
+      F1: ["0", "TECDWBT", "M1_FACE"]
+      F2: ["0", "TECDWBT", "M2_FACE"]
+      F3: ["0", "TECDWBT", "M3_FACE"]
+      F4: ["0", "TECDWBT", "M4_FACE"]
+      F5: ["0", "TECDWBT", "M5_FACE"]
+    builtInWeapons:
+      - STR_TT_SPAWNER
+  - type: STR_MKX_DW_TEC_WS_UC
+    refNode: *STR_MKX_DW_TEC_UC
+    units:
+      - STR_WHITES_PRIMARIS
+#SPRITES
+    spriteSheet: MKXTECDWWS.PCK
+    customArmorPreviewIndex: 533
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "TECDWWS", "M0_FACE"]
+      M1: ["0", "TECDWWS", "M1_FACE"]
+      M2: ["0", "TECDWWS", "M2_FACE"]
+      M3: ["0", "TECDWWS", "M3_FACE"]
+      M4: ["0", "TECDWWS", "M4_FACE"]
+      M5: ["0", "TECDWWS", "M5_FACE"]
+      F0: ["0", "TECDWWS", "M0_FACE"]
+      F1: ["0", "TECDWWS", "M1_FACE"]
+      F2: ["0", "TECDWWS", "M2_FACE"]
+      F3: ["0", "TECDWWS", "M3_FACE"]
+      F4: ["0", "TECDWWS", "M4_FACE"]
+      F5: ["0", "TECDWWS", "M5_FACE"]
+    builtInWeapons:
+      - STR_TT_SPAWNER
+#SPECIAL
+    moveCost:
+      basePercent: [100, 25] #overall move cost
+
+  - &STR_MKX_DW_APO_UC #A PREVIEW D
+    type: STR_MKX_DW_APO_ULTRA_UC
+    selectUnitMale:     [1276, 1277, 1278, 1279, 1280]
+    selectUnitFemale:   [1276, 1277, 1278, 1279, 1280]
+    startMovingMale:    [1271, 1272, 1273, 1274, 1275]
+    startMovingFemale:  [1271, 1272, 1273, 1274, 1275]
+    selectWeaponMale:   [1266, 1267, 1268, 1269, 1270]
+    selectWeaponFemale: [1266, 1267, 1268, 1269, 1270]
+    annoyedMale:        [1281, 1282, 1283, 1284, 1285]
+    annoyedFemale:      [1281, 1282, 1283, 1284, 1285]
+    deathMale:     [380, 381, 382, 383, 384]
+    deathFemale:   [380, 381, 382, 383, 384]
+    ufopediaType: STR_MKX_APO_UC
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    corpseBattle:
+      - STR_MKX_DW_APO_CORPSE
+    storeItem: STR_MKX_APO_ARMOR
+    corpseGeo: STR_FALLEN_CORPSE
+    specialWeapon: STR_UNARMED_GAUNTLET_PLUS
+    stats:
+       tu: 0
+       stamina: 30
+       health: 0
+       bravery: 0 #always multiples of 10
+       reactions: 0
+       firing: -20
+       throwing: 0
+       strength: 0
+       melee: 20
+    frontArmor: 110
+    sideArmor: 90
+    rearArmor: 80
+    underArmor: 70
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    forcedTorso: 1
+    builtInWeapons:
+      - INV_NULL_3X3
+      - AUX_MEDI_KIT
+  - type: STR_MKX_DW_APO_ULTRA_UC
+    units:
+      - STR_ULTRAMARINE_PRIMARIS
+#SPRITES
+    spriteSheet: MKXAPODWULTRA.PCK
+    customArmorPreviewIndex: 444
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "APODWULTRA", "M0_FACE"]
+      M1: ["0", "APODWULTRA", "M1_FACE"]
+      M2: ["0", "APODWULTRA", "M2_FACE"]
+      M3: ["0", "APODWULTRA", "M3_FACE"]
+      M4: ["0", "APODWULTRA", "M4_FACE"]
+      M5: ["0", "APODWULTRA", "M5_FACE"]
+      F0: ["0", "APODWULTRA", "M0_FACE"]
+      F1: ["0", "APODWULTRA", "M1_FACE"]
+      F2: ["0", "APODWULTRA", "M2_FACE"]
+      F3: ["0", "APODWULTRA", "M3_FACE"]
+      F4: ["0", "APODWULTRA", "M4_FACE"]
+      F5: ["0", "APODWULTRA", "M5_FACE"]
+  - type: STR_MKX_DW_APO_IF_UC
+    refNode: *STR_MKX_DW_APO_UC
+    units:
+      - STR_IMPERIALF_PRIMARIS
+#SPRITES
+    spriteSheet: MKXAPODWIF.PCK
+    customArmorPreviewIndex: 445
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "APODWIF", "M0_FACE"]
+      M1: ["0", "APODWIF", "M1_FACE"]
+      M2: ["0", "APODWIF", "M2_FACE"]
+      M3: ["0", "APODWIF", "M3_FACE"]
+      M4: ["0", "APODWIF", "M4_FACE"]
+      M5: ["0", "APODWIF", "M5_FACE"]
+      F0: ["0", "APODWIF", "M0_FACE"]
+      F1: ["0", "APODWIF", "M1_FACE"]
+      F2: ["0", "APODWIF", "M2_FACE"]
+      F3: ["0", "APODWIF", "M3_FACE"]
+      F4: ["0", "APODWIF", "M4_FACE"]
+      F5: ["0", "APODWIF", "M5_FACE"]
+  - type: STR_MKX_DW_APO_BA_UC
+    refNode: *STR_MKX_DW_APO_UC
+    units:
+      - STR_BLOODANGELS_PRIMARIS
+#SPRITES
+    spriteSheet: MKXAPODWBA.PCK
+    customArmorPreviewIndex: 446
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "APODWBA", "M0_FACE"]
+      M1: ["0", "APODWBA", "M1_FACE"]
+      M2: ["0", "APODWBA", "M2_FACE"]
+      M3: ["0", "APODWBA", "M3_FACE"]
+      M4: ["0", "APODWBA", "M4_FACE"]
+      M5: ["0", "APODWBA", "M5_FACE"]
+      F0: ["0", "APODWBA", "M0_FACE"]
+      F1: ["0", "APODWBA", "M1_FACE"]
+      F2: ["0", "APODWBA", "M2_FACE"]
+      F3: ["0", "APODWBA", "M3_FACE"]
+      F4: ["0", "APODWBA", "M4_FACE"]
+      F5: ["0", "APODWBA", "M5_FACE"]
+#SPECIAL
+    instantWoundRecovery: true
+  - type: STR_MKX_DW_APO_SALA_UC
+    refNode: *STR_MKX_DW_APO_UC
+    units:
+      - STR_SALAMANDAR_PRIMARIS
+#SPRITES
+    spriteSheet: MKXAPODWSALA.PCK
+    customArmorPreviewIndex: 447
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "APODWSALA", "M0_FACES"]
+      M1: ["0", "APODWSALA", "M1_FACES"]
+      M2: ["0", "APODWSALA", "M2_FACES"]
+      M3: ["0", "APODWSALA", "M3_FACES"]
+      M4: ["0", "APODWSALA", "M4_FACES"]
+      M5: ["0", "APODWSALA", "M5_FACES"]
+      F0: ["0", "APODWSALA", "M0_FACES"]
+      F1: ["0", "APODWSALA", "M1_FACES"]
+      F2: ["0", "APODWSALA", "M2_FACES"]
+      F3: ["0", "APODWSALA", "M3_FACES"]
+      F4: ["0", "APODWSALA", "M4_FACES"]
+      F5: ["0", "APODWSALA", "M5_FACES"]
+  - type: STR_MKX_DW_APO_BT_UC
+    refNode: *STR_MKX_DW_APO_UC
+    units:
+      - STR_BLACKT_PRIMARIS
+#SPRITES
+    spriteSheet: MKXAPODWBT.PCK
+    customArmorPreviewIndex: 448
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "APODWBT", "M0_FACE"]
+      M1: ["0", "APODWBT", "M1_FACE"]
+      M2: ["0", "APODWBT", "M2_FACE"]
+      M3: ["0", "APODWBT", "M3_FACE"]
+      M4: ["0", "APODWBT", "M4_FACE"]
+      M5: ["0", "APODWBT", "M5_FACE"]
+      F0: ["0", "APODWBT", "M0_FACE"]
+      F1: ["0", "APODWBT", "M1_FACE"]
+      F2: ["0", "APODWBT", "M2_FACE"]
+      F3: ["0", "APODWBT", "M3_FACE"]
+      F4: ["0", "APODWBT", "M4_FACE"]
+      F5: ["0", "APODWBT", "M5_FACE"]
+  - type: STR_MKX_DW_APO_WS_UC
+    refNode: *STR_MKX_DW_APO_UC
+    units:
+      - STR_WHITES_PRIMARIS
+#SPRITES
+    spriteSheet: MKXAPODWWS.PCK
+    customArmorPreviewIndex: 449
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "APODWWS", "M0_FACE"]
+      M1: ["0", "APODWWS", "M1_FACE"]
+      M2: ["0", "APODWWS", "M2_FACE"]
+      M3: ["0", "APODWWS", "M3_FACE"]
+      M4: ["0", "APODWWS", "M4_FACE"]
+      M5: ["0", "APODWWS", "M5_FACE"]
+      F0: ["0", "APODWWS", "M0_FACE"]
+      F1: ["0", "APODWWS", "M1_FACE"]
+      F2: ["0", "APODWWS", "M2_FACE"]
+      F3: ["0", "APODWWS", "M3_FACE"]
+      F4: ["0", "APODWWS", "M4_FACE"]
+      F5: ["0", "APODWWS", "M5_FACE"]
+#SPECIAL
+    moveCost:
+      basePercent: [100, 25] #overall move cost
 
   - &STR_MKX_DW_TAC_UC
     type: STR_MKX_DW_TAC_ULTRA_UC
@@ -2073,30 +3240,83 @@ armors:
       F3: ["0", "MKXDWBA", "M3_FACE"]
       F4: ["0", "MKXDWBA", "M4_FACE"]
       F5: ["0", "MKXDWBA", "M5_FACE"]
+#SPECIAL
+    instantWoundRecovery: true
   - type: STR_MKX_DW_TAC_SALA_UC
     refNode: *STR_MKX_DW_TAC_UC
     units:
       - STR_SALAMANDAR_PRIMARIS
 #SPRITES
     spriteSheet: MKXTACDWSALA.PCK
-    customArmorPreviewIndex: 422
+    customArmorPreviewIndex: 423
     forcedTorso: 1
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
     layersDefinition:
-      M0: ["0", "MKXDWSALA", "M0_FACE"]
-      M1: ["0", "MKXDWSALA", "M1_FACE"]
-      M2: ["0", "MKXDWSALA", "M2_FACE"]
-      M3: ["0", "MKXDWSALA", "M3_FACE"]
-      M4: ["0", "MKXDWSALA", "M4_FACE"]
-      M5: ["0", "MKXDWSALA", "M5_FACE"]
-      F0: ["0", "MKXDWSALA", "M0_FACE"]
-      F1: ["0", "MKXDWSALA", "M1_FACE"]
-      F2: ["0", "MKXDWSALA", "M2_FACE"]
-      F3: ["0", "MKXDWSALA", "M3_FACE"]
-      F4: ["0", "MKXDWSALA", "M4_FACE"]
-      F5: ["0", "MKXDWSALA", "M5_FACE"]
+      M0: ["0", "MKXDWSALA", "M0_FACES"]
+      M1: ["0", "MKXDWSALA", "M1_FACES"]
+      M2: ["0", "MKXDWSALA", "M2_FACES"]
+      M3: ["0", "MKXDWSALA", "M3_FACES"]
+      M4: ["0", "MKXDWSALA", "M4_FACES"]
+      M5: ["0", "MKXDWSALA", "M5_FACES"]
+      F0: ["0", "MKXDWSALA", "M0_FACES"]
+      F1: ["0", "MKXDWSALA", "M1_FACES"]
+      F2: ["0", "MKXDWSALA", "M2_FACES"]
+      F3: ["0", "MKXDWSALA", "M3_FACES"]
+      F4: ["0", "MKXDWSALA", "M4_FACES"]
+      F5: ["0", "MKXDWSALA", "M5_FACES"]
+  - type: STR_MKX_DW_TAC_BT_UC
+    refNode: *STR_MKX_DW_TAC_UC
+    units:
+      - STR_BLACKT_PRIMARIS
+#SPRITES
+    spriteSheet: MKXTACDWBT.PCK
+    customArmorPreviewIndex: 424
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "MKXDWBT", "M0_FACE"]
+      M1: ["0", "MKXDWBT", "M1_FACE"]
+      M2: ["0", "MKXDWBT", "M2_FACE"]
+      M3: ["0", "MKXDWBT", "M3_FACE"]
+      M4: ["0", "MKXDWBT", "M4_FACE"]
+      M5: ["0", "MKXDWBT", "M5_FACE"]
+      F0: ["0", "MKXDWBT", "M0_FACE"]
+      F1: ["0", "MKXDWBT", "M1_FACE"]
+      F2: ["0", "MKXDWBT", "M2_FACE"]
+      F3: ["0", "MKXDWBT", "M3_FACE"]
+      F4: ["0", "MKXDWBT", "M4_FACE"]
+      F5: ["0", "MKXDWBT", "M5_FACE"]
+  - type: STR_MKX_DW_TAC_WS_UC
+    refNode: *STR_MKX_DW_TAC_UC
+    units:
+      - STR_WHITES_PRIMARIS
+#SPRITES
+    spriteSheet: MKXTACDWWS.PCK
+    customArmorPreviewIndex: 425
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "MKXDWWS", "M0_FACE"]
+      M1: ["0", "MKXDWWS", "M1_FACE"]
+      M2: ["0", "MKXDWWS", "M2_FACE"]
+      M3: ["0", "MKXDWWS", "M3_FACE"]
+      M4: ["0", "MKXDWWS", "M4_FACE"]
+      M5: ["0", "MKXDWWS", "M5_FACE"]
+      F0: ["0", "MKXDWWS", "M0_FACE"]
+      F1: ["0", "MKXDWWS", "M1_FACE"]
+      F2: ["0", "MKXDWWS", "M2_FACE"]
+      F3: ["0", "MKXDWWS", "M3_FACE"]
+      F4: ["0", "MKXDWWS", "M4_FACE"]
+      F5: ["0", "MKXDWWS", "M5_FACE"]
+#SPECIAL
+    moveCost:
+      basePercent: [100, 25] #overall move cost
 
   - &STR_MKX_DW_PHB_UC
     type: STR_MKX_DW_PHB_ULTRA_UC
@@ -2154,7 +3374,7 @@ armors:
       - STR_ULTRAMARINE_PRIMARIS
 #SPRITES
     spriteSheet: MXPHBDWULTRA.PCK
-    customArmorPreviewIndex: 420
+    customArmorPreviewIndex: 426
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -2171,7 +3391,126 @@ armors:
       F3: ["0", "PHBDWULTRA", "M3_FACE"]
       F4: ["0", "PHBDWULTRA", "M4_FACE"]
       F5: ["0", "PHBDWULTRA", "M5_FACE"]
-      
+  - type: STR_MKX_DW_PHB_IF_UC
+    refNode: *STR_MKX_DW_PHB_UC
+    units:
+      - STR_IMPERIALF_PRIMARIS
+#SPRITES
+    spriteSheet: MXPHBDWIF.PCK
+    customArmorPreviewIndex: 427
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "PHBDWIF", "M0_FACE"]
+      M1: ["0", "PHBDWIF", "M1_FACE"]
+      M2: ["0", "PHBDWIF", "M2_FACE"]
+      M3: ["0", "PHBDWIF", "M3_FACE"]
+      M4: ["0", "PHBDWIF", "M4_FACE"]
+      M5: ["0", "PHBDWIF", "M5_FACE"]
+      F0: ["0", "PHBDWIF", "M0_FACE"]
+      F1: ["0", "PHBDWIF", "M1_FACE"]
+      F2: ["0", "PHBDWIF", "M2_FACE"]
+      F3: ["0", "PHBDWIF", "M3_FACE"]
+      F4: ["0", "PHBDWIF", "M4_FACE"]
+      F5: ["0", "PHBDWIF", "M5_FACE"]
+  - type: STR_MKX_DW_PHB_BA_UC
+    refNode: *STR_MKX_DW_PHB_UC
+    units:
+      - STR_BLOODANGELS_PRIMARIS
+#SPRITES
+    spriteSheet: MXPHBDWBA.PCK
+    customArmorPreviewIndex: 428
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "PHBDWBA", "M0_FACE"]
+      M1: ["0", "PHBDWBA", "M1_FACE"]
+      M2: ["0", "PHBDWBA", "M2_FACE"]
+      M3: ["0", "PHBDWBA", "M3_FACE"]
+      M4: ["0", "PHBDWBA", "M4_FACE"]
+      M5: ["0", "PHBDWBA", "M5_FACE"]
+      F0: ["0", "PHBDWBA", "M0_FACE"]
+      F1: ["0", "PHBDWBA", "M1_FACE"]
+      F2: ["0", "PHBDWBA", "M2_FACE"]
+      F3: ["0", "PHBDWBA", "M3_FACE"]
+      F4: ["0", "PHBDWBA", "M4_FACE"]
+      F5: ["0", "PHBDWBA", "M5_FACE"]
+#SPECIAL
+    instantWoundRecovery: true
+  - type: STR_MKX_DW_PHB_SALA_UC
+    refNode: *STR_MKX_DW_PHB_UC
+    units:
+      - STR_SALAMANDAR_PRIMARIS
+#SPRITES
+    spriteSheet: MXPHBDWSALA.PCK
+    customArmorPreviewIndex: 429
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "PHBDWSALA", "M0_FACES"]
+      M1: ["0", "PHBDWSALA", "M1_FACES"]
+      M2: ["0", "PHBDWSALA", "M2_FACES"]
+      M3: ["0", "PHBDWSALA", "M3_FACES"]
+      M4: ["0", "PHBDWSALA", "M4_FACES"]
+      M5: ["0", "PHBDWSALA", "M5_FACES"]
+      F0: ["0", "PHBDWSALA", "M0_FACES"]
+      F1: ["0", "PHBDWSALA", "M1_FACES"]
+      F2: ["0", "PHBDWSALA", "M2_FACES"]
+      F3: ["0", "PHBDWSALA", "M3_FACES"]
+      F4: ["0", "PHBDWSALA", "M4_FACES"]
+      F5: ["0", "PHBDWSALA", "M5_FACES"]
+  - type: STR_MKX_DW_PHB_BT_UC
+    refNode: *STR_MKX_DW_PHB_UC
+    units:
+      - STR_BLACKT_PRIMARIS
+#SPRITES
+    spriteSheet: MXPHBDWBT.PCK
+    customArmorPreviewIndex: 430
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "PHBDWBT", "M0_FACE"]
+      M1: ["0", "PHBDWBT", "M1_FACE"]
+      M2: ["0", "PHBDWBT", "M2_FACE"]
+      M3: ["0", "PHBDWBT", "M3_FACE"]
+      M4: ["0", "PHBDWBT", "M4_FACE"]
+      M5: ["0", "PHBDWBT", "M5_FACE"]
+      F0: ["0", "PHBDWBT", "M0_FACE"]
+      F1: ["0", "PHBDWBT", "M1_FACE"]
+      F2: ["0", "PHBDWBT", "M2_FACE"]
+      F3: ["0", "PHBDWBT", "M3_FACE"]
+      F4: ["0", "PHBDWBT", "M4_FACE"]
+      F5: ["0", "PHBDWBT", "M5_FACE"]
+  - type: STR_MKX_DW_PHB_WS_UC
+    refNode: *STR_MKX_DW_PHB_UC
+    units:
+      - STR_WHITES_PRIMARIS
+#SPRITES
+    spriteSheet: MXPHBDWWS.PCK
+    customArmorPreviewIndex: 431
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "PHBDWWS", "M0_FACE"]
+      M1: ["0", "PHBDWWS", "M1_FACE"]
+      M2: ["0", "PHBDWWS", "M2_FACE"]
+      M3: ["0", "PHBDWWS", "M3_FACE"]
+      M4: ["0", "PHBDWWS", "M4_FACE"]
+      M5: ["0", "PHBDWWS", "M5_FACE"]
+      F0: ["0", "PHBDWWS", "M0_FACE"]
+      F1: ["0", "PHBDWWS", "M1_FACE"]
+      F2: ["0", "PHBDWWS", "M2_FACE"]
+      F3: ["0", "PHBDWWS", "M3_FACE"]
+      F4: ["0", "PHBDWWS", "M4_FACE"]
+      F5: ["0", "PHBDWWS", "M5_FACE"]
+#SPECIAL
+    moveCost:
+      basePercent: [100, 25] #overall move cost
 
   - &STR_MKX_DW_GRV_UC
     type: STR_MKX_DW_GRV_ULTRA_UC
@@ -2222,12 +3561,11 @@ armors:
     loftempsSet: [ 3 ]
     forcedTorso: 1
   - type: STR_MKX_DW_GRV_ULTRA_UC
-    spriteSheet: PRIMGRVLV1.PCK
     units:
       - STR_ULTRAMARINE_PRIMARIS
 #SPRITES
     spriteSheet: MKXGRVDWULTRA.PCK
-    customArmorPreviewIndex: 420
+    customArmorPreviewIndex: 438
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -2251,12 +3589,11 @@ armors:
       - INV_NULL_3X3
   - type: STR_MKX_DW_GRV_IF_UC
     refNode: *STR_MKX_DW_GRV_UC
-    spriteSheet: PRIMGRVLV1.PCK
     units:
       - STR_IMPERIALF_PRIMARIS
 #SPRITES
     spriteSheet: MKXGRVDWIF.PCK
-    customArmorPreviewIndex: 420
+    customArmorPreviewIndex: 439
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -2280,12 +3617,11 @@ armors:
       - INV_NULL_3X3
   - type: STR_MKX_DW_GRV_BA_UC
     refNode: *STR_MKX_DW_GRV_UC
-    spriteSheet: PRIMGRVLV1.PCK
     units:
       - STR_BLOODANGELS_PRIMARIS
 #SPRITES
     spriteSheet: MKXGRVDWBA.PCK
-    customArmorPreviewIndex: 420
+    customArmorPreviewIndex: 440
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -2307,6 +3643,91 @@ armors:
       - STR_GRAV_BOLTER
       - STR_GRAV_BOLTER
       - INV_NULL_3X3
+  - type: STR_MKX_DW_GRV_SALA_UC
+    refNode: *STR_MKX_DW_GRV_UC
+    units:
+      - STR_SALAMANDAR_PRIMARIS
+#SPRITES
+    spriteSheet: MKXGRVDWSALA.PCK
+    customArmorPreviewIndex: 441
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "GRVDWSALA", "M0_FACES"]
+      M1: ["0", "GRVDWSALA", "M1_FACES"]
+      M2: ["0", "GRVDWSALA", "M2_FACES"]
+      M3: ["0", "GRVDWSALA", "M3_FACES"]
+      M4: ["0", "GRVDWSALA", "M4_FACES"]
+      M5: ["0", "GRVDWSALA", "M5_FACES"]
+      F0: ["0", "GRVDWSALA", "M0_FACES"]
+      F1: ["0", "GRVDWSALA", "M1_FACES"]
+      F2: ["0", "GRVDWSALA", "M2_FACES"]
+      F3: ["0", "GRVDWSALA", "M3_FACES"]
+      F4: ["0", "GRVDWSALA", "M4_FACES"]
+      F5: ["0", "GRVDWSALA", "M5_FACES"]
+    specialWeapon: STR_MFIST
+    builtInWeapons:
+      - STR_GRAV_FLAMER
+      - STR_GRAV_FLAMER
+      - INV_NULL_3X3
+  - type: STR_MKX_DW_GRV_BT_UC
+    refNode: *STR_MKX_DW_GRV_UC
+    units:
+      - STR_BLACKT_PRIMARIS
+#SPRITES
+    spriteSheet: MKXGRVDWBT.PCK
+    customArmorPreviewIndex: 442
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "GRVDWBT", "M0_FACE"]
+      M1: ["0", "GRVDWBT", "M1_FACE"]
+      M2: ["0", "GRVDWBT", "M2_FACE"]
+      M3: ["0", "GRVDWBT", "M3_FACE"]
+      M4: ["0", "GRVDWBT", "M4_FACE"]
+      M5: ["0", "GRVDWBT", "M5_FACE"]
+      F0: ["0", "GRVDWBT", "M0_FACE"]
+      F1: ["0", "GRVDWBT", "M1_FACE"]
+      F2: ["0", "GRVDWBT", "M2_FACE"]
+      F3: ["0", "GRVDWBT", "M3_FACE"]
+      F4: ["0", "GRVDWBT", "M4_FACE"]
+      F5: ["0", "GRVDWBT", "M5_FACE"]
+    specialWeapon: STR_MFIST
+    builtInWeapons:
+      - STR_GRAV_BOLTER
+      - INV_NULL_3X3
+  - type: STR_MKX_DW_GRV_WS_UC
+    refNode: *STR_MKX_DW_GRV_UC
+    units:
+      - STR_WHITES_PRIMARIS
+#SPRITES
+    spriteSheet: MKXGRVDWWS.PCK
+    customArmorPreviewIndex: 443
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "GRVDWWS", "M0_FACE"]
+      M1: ["0", "GRVDWWS", "M1_FACE"]
+      M2: ["0", "GRVDWWS", "M2_FACE"]
+      M3: ["0", "GRVDWWS", "M3_FACE"]
+      M4: ["0", "GRVDWWS", "M4_FACE"]
+      M5: ["0", "GRVDWWS", "M5_FACE"]
+      F0: ["0", "GRVDWWS", "M0_FACE"]
+      F1: ["0", "GRVDWWS", "M1_FACE"]
+      F2: ["0", "GRVDWWS", "M2_FACE"]
+      F3: ["0", "GRVDWWS", "M3_FACE"]
+      F4: ["0", "GRVDWWS", "M4_FACE"]
+      F5: ["0", "GRVDWWS", "M5_FACE"]
+    specialWeapon: STR_MFIST
+    builtInWeapons:
+      - STR_GRAV_BOLTER
+      - INV_NULL_3X3
+#SPECIAL
+    moveCost:
+      basePercent: [100, 25] #overall move cost
       
   - &STR_MKX_DW_INC_UC
     type: STR_MKX_DW_INC_ULTRA_UC
@@ -2355,7 +3776,7 @@ armors:
       - STR_ULTRAMARINE_PRIMARIS
 #SPRITES
     spriteSheet: MKXINCDWULTRA.PCK
-    customArmorPreviewIndex: 420
+    customArmorPreviewIndex: 432
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
@@ -2372,9 +3793,181 @@ armors:
       F3: ["0", "INCDWULTRA", "M3_FACE"]
       F4: ["0", "INCDWULTRA", "M4_FACE"]
       F5: ["0", "INCDWULTRA", "M5_FACE"]
+  - type: STR_MKX_DW_INC_IF_UC
+    refNode: *STR_MKX_DW_INC_UC
+    units:
+      - STR_IMPERIALF_PRIMARIS
+#SPRITES
+    spriteSheet: MKXINCDWIF.PCK
+    customArmorPreviewIndex: 433
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "INCDWIF", "M0_FACE"]
+      M1: ["0", "INCDWIF", "M1_FACE"]
+      M2: ["0", "INCDWIF", "M2_FACE"]
+      M3: ["0", "INCDWIF", "M3_FACE"]
+      M4: ["0", "INCDWIF", "M4_FACE"]
+      M5: ["0", "INCDWIF", "M5_FACE"]
+      F0: ["0", "INCDWIF", "M0_FACE"]
+      F1: ["0", "INCDWIF", "M1_FACE"]
+      F2: ["0", "INCDWIF", "M2_FACE"]
+      F3: ["0", "INCDWIF", "M3_FACE"]
+      F4: ["0", "INCDWIF", "M4_FACE"]
+      F5: ["0", "INCDWIF", "M5_FACE"]
+  - type: STR_MKX_DW_INC_BA_UC
+    refNode: *STR_MKX_DW_INC_UC
+    units:
+      - STR_BLOODANGELS_PRIMARIS
+#SPRITES
+    spriteSheet: MKXINCDWBA.PCK
+    customArmorPreviewIndex: 434
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "INCDWBA", "M0_FACE"]
+      M1: ["0", "INCDWBA", "M1_FACE"]
+      M2: ["0", "INCDWBA", "M2_FACE"]
+      M3: ["0", "INCDWBA", "M3_FACE"]
+      M4: ["0", "INCDWBA", "M4_FACE"]
+      M5: ["0", "INCDWBA", "M5_FACE"]
+      F0: ["0", "INCDWBA", "M0_FACE"]
+      F1: ["0", "INCDWBA", "M1_FACE"]
+      F2: ["0", "INCDWBA", "M2_FACE"]
+      F3: ["0", "INCDWBA", "M3_FACE"]
+      F4: ["0", "INCDWBA", "M4_FACE"]
+      F5: ["0", "INCDWBA", "M5_FACE"]
+#SPECIAL
+    instantWoundRecovery: true
+  - type: STR_MKX_DW_INC_SALA_UC
+    refNode: *STR_MKX_DW_INC_UC
+    units:
+      - STR_SALAMANDAR_PRIMARIS
+#SPRITES
+    spriteSheet: MKXINCDWSALA.PCK
+    customArmorPreviewIndex: 435
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "INCDWSALA", "M0_FACES"]
+      M1: ["0", "INCDWSALA", "M1_FACES"]
+      M2: ["0", "INCDWSALA", "M2_FACES"]
+      M3: ["0", "INCDWSALA", "M3_FACES"]
+      M4: ["0", "INCDWSALA", "M4_FACES"]
+      M5: ["0", "INCDWSALA", "M5_FACES"]
+      F0: ["0", "INCDWSALA", "M0_FACES"]
+      F1: ["0", "INCDWSALA", "M1_FACES"]
+      F2: ["0", "INCDWSALA", "M2_FACES"]
+      F3: ["0", "INCDWSALA", "M3_FACES"]
+      F4: ["0", "INCDWSALA", "M4_FACES"]
+      F5: ["0", "INCDWSALA", "M5_FACES"]
+  - type: STR_MKX_DW_INC_BT_UC
+    refNode: *STR_MKX_DW_INC_UC
+    units:
+      - STR_BLACKT_PRIMARIS
+#SPRITES
+    spriteSheet: MKXINCDWBT.PCK
+    customArmorPreviewIndex: 436
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "INCDWBT", "M0_FACE"]
+      M1: ["0", "INCDWBT", "M1_FACE"]
+      M2: ["0", "INCDWBT", "M2_FACE"]
+      M3: ["0", "INCDWBT", "M3_FACE"]
+      M4: ["0", "INCDWBT", "M4_FACE"]
+      M5: ["0", "INCDWBT", "M5_FACE"]
+      F0: ["0", "INCDWBT", "M0_FACE"]
+      F1: ["0", "INCDWBT", "M1_FACE"]
+      F2: ["0", "INCDWBT", "M2_FACE"]
+      F3: ["0", "INCDWBT", "M3_FACE"]
+      F4: ["0", "INCDWBT", "M4_FACE"]
+      F5: ["0", "INCDWBT", "M5_FACE"]
+  - type: STR_MKX_DW_INC_WS_UC
+    refNode: *STR_MKX_DW_INC_UC
+    units:
+      - STR_WHITES_PRIMARIS
+#SPRITES
+    spriteSheet: MKXINCDWWS.PCK
+    customArmorPreviewIndex: 437
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "INCDWWS", "M0_FACE"]
+      M1: ["0", "INCDWWS", "M1_FACE"]
+      M2: ["0", "INCDWWS", "M2_FACE"]
+      M3: ["0", "INCDWWS", "M3_FACE"]
+      M4: ["0", "INCDWWS", "M4_FACE"]
+      M5: ["0", "INCDWWS", "M5_FACE"]
+      F0: ["0", "INCDWWS", "M0_FACE"]
+      F1: ["0", "INCDWWS", "M1_FACE"]
+      F2: ["0", "INCDWWS", "M2_FACE"]
+      F3: ["0", "INCDWWS", "M3_FACE"]
+      F4: ["0", "INCDWWS", "M4_FACE"]
+      F5: ["0", "INCDWWS", "M5_FACE"]
+#SPECIAL
+    moveCost:
+      basePercent: [100, 25] #overall move cost
 #                 #                                        #                      # 
 extraSprites:
 #
+  - typeSingle: 0__1__LIBDWULTRA
+    fileSingle: Resources/LAYER/DW/LIBDWULTRA.png
+  - typeSingle: 0__1__LIBDWIF
+    fileSingle: Resources/LAYER/DW/LIBDWIF.png
+  - typeSingle: 0__1__LIBDWBA
+    fileSingle: Resources/LAYER/DW/LIBDWBA.png
+  - typeSingle: 0__1__LIBDWSALA
+    fileSingle: Resources/LAYER/DW/LIBDWSALA.png
+  - typeSingle: 0__1__LIBDWBT
+    fileSingle: Resources/LAYER/DW/LIBDWBT.png    
+  - typeSingle: 0__1__LIBDWWS
+    fileSingle: Resources/LAYER/DW/LIBDWWS.png
+
+  - typeSingle: 0__1__CHPDWULTRA
+    fileSingle: Resources/LAYER/DW/CHPDWULTRA.png
+  - typeSingle: 0__1__CHPDWIF
+    fileSingle: Resources/LAYER/DW/CHPDWIF.png
+  - typeSingle: 0__1__CHPDWBA
+    fileSingle: Resources/LAYER/DW/CHPDWBA.png
+  - typeSingle: 0__1__CHPDWSALA
+    fileSingle: Resources/LAYER/DW/CHPDWSALA.png
+  - typeSingle: 0__1__CHPDWBT
+    fileSingle: Resources/LAYER/DW/CHPDWBT.png    
+  - typeSingle: 0__1__CHPDWWS
+    fileSingle: Resources/LAYER/DW/CHPDWWS.png
+#
+  - typeSingle: 0__1__TECDWULTRA
+    fileSingle: Resources/LAYER/DW/TECDWULTRA.png
+  - typeSingle: 0__1__TECDWIF
+    fileSingle: Resources/LAYER/DW/TECDWIF.png
+  - typeSingle: 0__1__TECDWBA
+    fileSingle: Resources/LAYER/DW/TECDWBA.png
+  - typeSingle: 0__1__TECDWSALA
+    fileSingle: Resources/LAYER/DW/TECDWSALA.png
+  - typeSingle: 0__1__TECDWBT
+    fileSingle: Resources/LAYER/DW/TECDWBT.png    
+  - typeSingle: 0__1__TECDWWS
+    fileSingle: Resources/LAYER/DW/TECDWWS.png
+
+  - typeSingle: 0__1__APODWULTRA
+    fileSingle: Resources/LAYER/DW/APODWULTRA.png
+  - typeSingle: 0__1__APODWBIF
+    fileSingle: Resources/LAYER/DW/APODWIF.png
+  - typeSingle: 0__1__APODWBA
+    fileSingle: Resources/LAYER/DW/APODWBA.png
+  - typeSingle: 0__1__APODWSALA
+    fileSingle: Resources/LAYER/DW/APODWSALA.png
+  - typeSingle: 0__1__APODWBT
+    fileSingle: Resources/LAYER/DW/APODWBT.png
+  - typeSingle: 0__1__APODWWS
+    fileSingle: Resources/LAYER/DW/APODWWS.png
+
   - typeSingle: 0__1__PHBDWULTRA
     fileSingle: Resources/LAYER/DW/PHBDWULTRA.png
   - typeSingle: 0__1__PHBDWIF
@@ -2908,6 +4501,179 @@ extraSprites:
     files:
       0: Resources/CAPTAIN/DWATCH/WMDW.png
 
+#PRIMARIS
+  - type: MKXLIBDWULTRA.PCK #CHP ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXLIBDWULTRA.png
+  - type: MKXLIBDWIF.PCK #TEC IMPERIAL FISTS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXLIBDWIF.png
+  - type: MKXLIBDWBA.PCK #TEC BLOOD ANGELS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXLIBDWBA.png
+  - type: MKXLIBDWSALA.PCK #TEC SALA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXLIBDWSALA.png
+  - type: MKXLIBDWBT.PCK #TEC BT
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXLIBDWBT.png
+  - type: MKXLIBDWWS.PCK #TEC WS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXLIBDWWS.png
+
+  - type: MKXCHPDWULTRA.PCK #CHP ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXCHPDWULTRA.png
+  - type: MKXCHPDWIF.PCK #TEC IMPERIAL FISTS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXCHPDWIF.png
+  - type: MKXCHPDWBA.PCK #TEC BLOOD ANGELS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXCHPDWBA.png
+  - type: MKXCHPDWSALA.PCK #TEC SALA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXCHPDWSALA.png
+  - type: MKXCHPDWBT.PCK #TEC BT
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXCHPDWBT.png
+  - type: MKXCHPDWWS.PCK #TEC WS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXCHPDWWS.png
+
+  - type: MKXTECDWULTRA.PCK #TEC ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXTECDWULTRA.png
+  - type: MKXTECDWIF.PCK #TEC IMPERIAL FISTS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXTECDWIF.png
+  - type: MKXTECDWBA.PCK #TEC BLOOD ANGELS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXTECDWBA.png
+  - type: MKXTECDWSALA.PCK #TEC SALA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXTECDWSALA.png
+  - type: MKXTECDWBT.PCK #TEC BT
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXTECDWBT.png
+  - type: MKXTECDWWS.PCK #TEC WS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXTECDWWS.png
+
+  - type: MKXAPODWULTRA.PCK #TACTICAL ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXAPODWULTRA.png
+  - type: MKXAPODWIF.PCK #TACTICAL IMPERIAL FISTS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXAPODWIF.png
+  - type: MKXAPODWBA.PCK #TACTICAL BLOOD ANGELS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXAPODWBA.png
+  - type: MKXAPODWSALA.PCK #TACTICAL ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXAPODWSALA.png
+  - type: MKXAPODWBT.PCK #TACTICAL ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXAPODWBT.png
+  - type: MKXAPODWWS.PCK #TACTICAL ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXAPODWWS.png
+
   - type: MKXTACDWULTRA.PCK #TACTICAL ULTRA
     width: 512
     height: 720
@@ -3051,13 +4817,48 @@ extraSprites:
     subY: 40
     files:
       0: Resources/MKX-ARMOR/DWATCH/MXPHBDWULTRA.png
+  - type: MXPHBDWBA.PCK #INCPETOR ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MXPHBDWBA.png
+  - type: MXPHBDWIF.PCK #INCPETOR ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MXPHBDWIF.png
+  - type: MXPHBDWSALA.PCK #INCPETOR ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MXPHBDWSALA.png
+  - type: MXPHBDWBT.PCK #INCPETOR ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MXPHBDWBT.png
+  - type: MXPHBDWWS.PCK #INCPETOR ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MXPHBDWWS.png
 
 soldiers:
   - type: STR_ULTRAMARINE
     requiresBuyBaseFunc: [IMPERIUM]
     requires:
       - STR_DEATHWATCH
-      - STR_MARINES_STRATEGY
+      - STR_CHAPTER_PURITY
     costBuy: 60000
     costSalary: 30000
     monthlyBuyLimit: 1
@@ -3700,3 +5501,388 @@ soldiers:
     rankSprite: 990
     rankBattleSprite: 325
     rankTinySprite: 235
+  - type: STR_BLACKT
+    requiresBuyBaseFunc: [IMPERIUM]
+    costBuy: 60000
+    costSalary: 30000
+    monthlyBuyLimit: 1
+    requires:
+      - STR_DEATHWATCH
+      - STR_CHAPTER_PURITY
+    minStats:
+      tu: 50
+      stamina: 40
+      health: 50
+      bravery: 10
+      reactions: 30
+      firing: 40
+      throwing: 50
+      strength: 30
+      psiStrength: 10
+      psiSkill: 10
+      melee: 50
+    maxStats:
+      tu: 60
+      stamina: 70
+      health: 60
+      bravery: 60
+      reactions: 60
+      firing: 70
+      throwing: 80
+      strength: 40
+      psiStrength: 100
+      psiSkill: 20
+      melee: 80
+    statCaps:
+      tu: 100
+      stamina: 120
+      health: 90
+      bravery: 110
+      reactions: 110
+      firing: 130
+      throwing: 120
+      strength: 100
+      psiStrength: 100
+      psiSkill: 100
+      melee: 130
+    trainingStatCaps:
+      tu: 80
+      stamina: 100
+      health: 70
+      firing: 100
+      throwing: 80
+      strength: 80
+      psiStrength: 100
+      psiSkill: 100
+      melee: 100
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    allowPiloting: true
+    armor: STR_DW_TAC_ARMOR_BT_UC
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 0
+    avatarOffsetX: 67
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - MarineName/
+    deathMale: [713, 714, 715, 716, 717, 718, 719, 720, 721, 722]
+    deathFemale: [744, 745, 746, 747, 748, 749, 750, 751, 752]
+    rankStrings:
+      - STR_DW_BT_RANK_0
+      - STR_DW_BT_RANK_1
+      - STR_DW_BT_RANK_2
+      - STR_DW_BT_RANK_3
+      - STR_DW_BT_RANK_4
+      - STR_DW_BT_RANK_5
+    rankSprite: 990
+    rankBattleSprite: 325
+    rankTinySprite: 235
+  - type: STR_BLACKT_PRIMARIS
+    costBuy: 80000
+    costSalary: 40000
+    monthlyBuyLimit: 1
+    requiresBuyBaseFunc: [IMPERIUM]
+    requires:
+      - STR_DW_PRIMARIS
+      - STR_DEATHWATCH
+      - STR_CHAPTER_PURITY
+    minStats:
+      tu: 50
+      stamina: 40
+      health: 60
+      bravery: 20
+      reactions: 40
+      firing: 50
+      throwing: 50
+      strength: 40
+      psiStrength: 20
+      psiSkill: 20
+      melee: 50
+    maxStats:
+      tu: 60
+      stamina: 70
+      health: 70
+      bravery: 60
+      reactions: 60
+      firing: 70
+      throwing: 80
+      strength: 50
+      psiStrength: 70
+      psiSkill: 30
+      melee: 80
+    statCaps:
+      tu: 120
+      stamina: 120
+      health: 90
+      bravery: 110
+      reactions: 110
+      firing: 130
+      throwing: 120
+      strength: 120
+      psiStrength: 100
+      psiSkill: 100
+      melee: 130
+    trainingStatCaps:
+      tu: 80
+      stamina: 100
+      health: 70
+      firing: 100
+      throwing: 80
+      strength: 80
+      psiStrength: 100
+      psiSkill: 100
+      melee: 100
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    allowPiloting: true
+    armor: STR_MKX_DW_TAC_BT_UC
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 0
+    avatarOffsetX: 67
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - PrimarisName/
+    deathMale: [713, 714, 715, 716, 717, 718, 719, 720, 721, 722]
+    deathFemale: [744, 745, 746, 747, 748, 749, 750, 751, 752]
+    rankStrings:
+      - STR_DW_BT_RANK_0
+      - STR_DW_BT_RANK_1
+      - STR_DW_BT_RANK_2
+      - STR_DW_BT_RANK_3
+      - STR_DW_BT_RANK_4
+      - STR_DW_BT_RANK_5
+    rankSprite: 990
+    rankBattleSprite: 325
+    rankTinySprite: 235
+  - type: STR_WHITES
+    requiresBuyBaseFunc: [IMPERIUM]
+    costBuy: 60000
+    costSalary: 30000
+    monthlyBuyLimit: 1
+    requires:
+      - STR_DEATHWATCH
+      - STR_CHAPTER_PURITY
+    minStats:
+      tu: 50
+      stamina: 40
+      health: 50
+      bravery: 10
+      reactions: 30
+      firing: 40
+      throwing: 50
+      strength: 30
+      psiStrength: 10
+      psiSkill: 10
+      melee: 50
+    maxStats:
+      tu: 60
+      stamina: 70
+      health: 60
+      bravery: 60
+      reactions: 60
+      firing: 70
+      throwing: 80
+      strength: 40
+      psiStrength: 100
+      psiSkill: 20
+      melee: 80
+    statCaps:
+      tu: 100
+      stamina: 120
+      health: 90
+      bravery: 110
+      reactions: 110
+      firing: 130
+      throwing: 120
+      strength: 100
+      psiStrength: 100
+      psiSkill: 100
+      melee: 130
+    trainingStatCaps:
+      tu: 80
+      stamina: 100
+      health: 70
+      firing: 100
+      throwing: 80
+      strength: 80
+      psiStrength: 100
+      psiSkill: 100
+      melee: 100
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    allowPiloting: true
+    armor: STR_DW_TAC_ARMOR_WS_UC
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 0
+    avatarOffsetX: 67
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - MarineName/
+    deathMale: [713, 714, 715, 716, 717, 718, 719, 720, 721, 722]
+    deathFemale: [744, 745, 746, 747, 748, 749, 750, 751, 752]
+    rankStrings:
+      - STR_DW_WS_RANK_0
+      - STR_DW_WS_RANK_1
+      - STR_DW_WS_RANK_2
+      - STR_DW_WS_RANK_3
+      - STR_DW_WS_RANK_4
+      - STR_DW_WS_RANK_5
+    rankSprite: 990
+    rankBattleSprite: 325
+    rankTinySprite: 235
+  - type: STR_WHITES_PRIMARIS
+    costBuy: 80000
+    costSalary: 40000
+    monthlyBuyLimit: 1
+    requiresBuyBaseFunc: [IMPERIUM]
+    requires:
+      - STR_DW_PRIMARIS
+      - STR_DEATHWATCH
+      - STR_CHAPTER_PURITY
+    minStats:
+      tu: 50
+      stamina: 40
+      health: 60
+      bravery: 20
+      reactions: 40
+      firing: 50
+      throwing: 50
+      strength: 40
+      psiStrength: 20
+      psiSkill: 20
+      melee: 50
+    maxStats:
+      tu: 60
+      stamina: 70
+      health: 70
+      bravery: 60
+      reactions: 60
+      firing: 70
+      throwing: 80
+      strength: 50
+      psiStrength: 70
+      psiSkill: 30
+      melee: 80
+    statCaps:
+      tu: 120
+      stamina: 120
+      health: 90
+      bravery: 110
+      reactions: 110
+      firing: 130
+      throwing: 120
+      strength: 120
+      psiStrength: 100
+      psiSkill: 100
+      melee: 130
+    trainingStatCaps:
+      tu: 80
+      stamina: 100
+      health: 70
+      firing: 100
+      throwing: 80
+      strength: 80
+      psiStrength: 100
+      psiSkill: 100
+      melee: 100
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    allowPiloting: true
+    armor: STR_MKX_DW_TAC_WS_UC
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 0
+    avatarOffsetX: 67
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - PrimarisName/
+    deathMale: [713, 714, 715, 716, 717, 718, 719, 720, 721, 722]
+    deathFemale: [744, 745, 746, 747, 748, 749, 750, 751, 752]
+    rankStrings:
+      - STR_DW_WS_RANK_0
+      - STR_DW_WS_RANK_1
+      - STR_DW_WS_RANK_2
+      - STR_DW_WS_RANK_3
+      - STR_DW_WS_RANK_4
+      - STR_DW_WS_RANK_5
+    rankSprite: 990
+    rankBattleSprite: 325
+    rankTinySprite: 235
+    
+  - type: STR_FALLEN_DW
+    costSalary: 20000
+    minStats:
+      tu: 60
+      stamina: 50
+      health: 50
+      bravery: 20
+      reactions: 40
+      firing: 50
+      throwing: 60
+      strength: 30
+      psiStrength: 10
+      psiSkill: 10
+      melee: 60
+    maxStats:
+      tu: 70
+      stamina: 80
+      health: 70
+      bravery: 70
+      reactions: 70
+      firing: 80
+      throwing: 90
+      strength: 50
+      psiStrength: 110
+      psiSkill: 26
+      melee: 90
+    statCaps:
+      tu: 110
+      stamina: 130
+      health: 100
+      bravery: 120
+      reactions: 120
+      firing: 140
+      throwing: 130
+      strength: 110
+      psiStrength: 110
+      psiSkill: 110
+      melee: 140
+    armor: STR_DREAD_DW_ARMOR_UC
+    allowPiloting: false
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 68
+    avatarOffsetY: 54
+    soldierNames:
+      - delete
+      - MarineName/
+    deathMale: [713, 714, 715, 716, 717, 718, 719, 720, 721, 722]
+    deathFemale: [744, 745, 746, 747, 748, 749, 750, 751, 752]
+    allowPromotion: false
+    rankStrings:
+      - STR_DW_RANK_0
+      - STR_DW_RANK_1
+      - STR_DW_RANK_2
+      - STR_DW_RANK_3
+      - STR_DW_RANK_4
+      - STR_DW_RANK_5
+    rankSprite: 990
+    rankBattleSprite: 325
+    rankTinySprite: 235
+    

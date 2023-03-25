@@ -448,7 +448,118 @@ startingBaseSuperhuman: #*** Imperial Guard
   scientists: 10
   engineers: 10
 
+eventScripts:
+  - type: STR_DW_EVENT_SCRIPTIF
+    eventWeights:
+      0:
+        STR_IF_CARE_PACKAGE: 100
+    firstMonth: 0
+    lastMonth: 12
+    executionOdds: 100
+    researchTriggers:
+       STR_DEATHWATCH: true
+       STR_GREYKNIGHTS: false
+  - type: STR_DW_EVENT_SCRIPTBA
+    eventWeights:
+      0:
+        STR_BA_CARE_PACKAGE: 100
+    firstMonth: 0
+    lastMonth: 12
+    executionOdds: 100
+    researchTriggers:
+       STR_DEATHWATCH: true
+       STR_GREYKNIGHTS: false
+  - type: STR_DW_EVENT_SCRIPTSALA
+    eventWeights:
+      0:
+        STR_SALA_CARE_PACKAGE: 100
+    firstMonth: 0
+    lastMonth: 12
+    executionOdds: 100
+    researchTriggers:
+       STR_DEATHWATCH: true
+       STR_GREYKNIGHTS: false
+  - type: STR_DW_EVENT_SCRIPTBT
+    eventWeights:
+      0:
+        STR_BT_CARE_PACKAGE: 100
+    firstMonth: 0
+    lastMonth: 12
+    executionOdds: 100
+    researchTriggers:
+       STR_DEATHWATCH: true
+       STR_GREYKNIGHTS: false
+  - type: STR_DW_EVENT_SCRIPTWS
+    eventWeights:
+      0:
+        STR_WS_CARE_PACKAGE: 100
+    firstMonth: 0
+    lastMonth: 12
+    executionOdds: 100
+    researchTriggers:
+       STR_DEATHWATCH: true
+       STR_GREYKNIGHTS: false
+
 events:
+  - name: STR_DEATHWATCH_CARE_PACKAGE
+    description: STR_DEATHWATCH_REINFORCEMENTS
+    background: BACK13.SCR
+    everyMultiItemList:
+      STR_CRATED_CORVUS: 1
+      STR_POWER_SUIT: 1
+      STR_ASSC: 1
+      STR_ASSC_CLIP: 5
+      STR_RIFLEB: 2
+      STR_RIFLE_CLIP: 6
+    spawnedPersons: 2  
+    spawnedPersonType: STR_ULTRAMARINE
+
+  - name: STR_IF_CARE_PACKAGE
+    description: STR_IF_REINFORCEMENTS
+    timer: 1
+    lastMonth: 12
+    everyMultiItemList:
+      STR_RIFLEB: 2
+      STR_RIFLE_CLIP: 6
+    spawnedPersons: 2
+    spawnedPersonType: STR_IMPERIALF
+  - name: STR_BA_CARE_PACKAGE
+    description: STR_BA_REINFORCEMENTS
+    timer: 1
+    lastMonth: 12
+    everyMultiItemList:
+      STR_RIFLEB: 2
+      STR_RIFLE_CLIP: 6
+    spawnedPersons: 2
+    spawnedPersonType: STR_BLOODANGELS    
+  - name: STR_SALA_CARE_PACKAGE
+    description: STR_SALA_REINFORCEMENTS
+    timer: 1
+    lastMonth: 12
+    everyMultiItemList:
+      STR_RIFLEB: 2
+      STR_RIFLE_CLIP: 6
+    spawnedPersons: 2
+    spawnedPersonType: STR_SALAMANDAR
+  - name: STR_BT_CARE_PACKAGE
+    description: STR_BT_REINFORCEMENTS
+    timer: 1
+    lastMonth: 12
+    everyMultiItemList:
+      STR_RIFLEB: 2
+      STR_RIFLE_CLIP: 6
+    spawnedPersons: 2
+    spawnedPersonType: STR_BLACKT
+  - name: STR_WS_CARE_PACKAGE
+    description: STR_WS_REINFORCEMENTS
+    timer: 1
+    lastMonth: 12
+    everyMultiItemList:
+      STR_RIFLEB: 2
+      STR_RIFLE_CLIP: 6
+    spawnedPersons: 2
+    spawnedPersonType: STR_WHITES
+
   - name: STR_REINFORCEMENTS_GK
     description: STR_REINFORCEMENTS_GK_DESCRIPTION
     everyMultiItemList:

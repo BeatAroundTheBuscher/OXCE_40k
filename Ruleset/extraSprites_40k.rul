@@ -2764,7 +2764,7 @@
       336: Resources/Meltagun/336.gif
       337: Resources/Mlauncher/337.gif
       338: Resources/FOES/338.gif
-      339: Resources/Bolter/339.gif
+      339: Resources/Bolter/339.png
       340: Resources/Bolter/340.gif
       341: Resources/Boltpistol/341.gif
       342: Resources/Lplasma/342.gif
@@ -2998,7 +2998,14 @@
       841: Resources/MKX-ARMOR/DWATCH/841.png
       842: Resources/MKX-ARMOR/DWATCH/842.png
       843: Resources/MKX-ARMOR/DWATCH/843.png
+      844: Resources/Lascan/844.png      
+      845: Resources/Heavybolter/845.png
+      846: Resources/Bolter/846.png
+      847: Resources/MKX-ARMOR/DWATCH/847.png
+      848: Resources/MKX-ARMOR/DWATCH/848.png
+      849: Resources/MKX-ARMOR/DWATCH/849.png
       850: Resources/NULL/Null_Void_4x3.png
+      851: Resources/MKX-ARMOR/DWATCH/851.png
 #900-999 CHAPTER CHANGE
       1400: Resources_IG/Bigobs/traitor_chimera_multilaser.png
 #FLOOR
@@ -3444,6 +3451,15 @@
       719: Resources/APOT/DWATCH/floorob_719.png           #APOT
       720: Resources/Tech/DWATCH/floorob_720.png           #APOT
       721: Resources/Terminator/DWATCH/floorob_721.png     #TER
+      722: Resources/MKX-ARMOR/DWATCH/floorob_722.png     #DW MKX
+      723: Resources/MKX-ARMOR/DWATCH/floorob_723.png     #DW MKX
+      724: Resources/MKX-ARMOR/DWATCH/floorob_724.png     #DW MKX
+      725: Resources/MKX-ARMOR/DWATCH/floorob_725.png     #DW MKX
+      726: Resources/MKX-ARMOR/DWATCH/floorob_726.png     #DW MKX
+      727: Resources/MKX-ARMOR/DWATCH/floorob_727.png     #DW MKX
+      728: Resources/MKX-ARMOR/DWATCH/floorob_728.png     #DW MKX
+      729: Resources/MKX-ARMOR/DWATCH/floorob_729.png     #DW MKX
+      750: Resources/Bolter/floorob_750.png
 #900-999 CHAPTER CHANGE
 # Traitor guard chimera corpses
       1400: Resources_IG/Floorobs/floorob_traitor_chimera_turret_0.png
@@ -6088,6 +6104,18 @@
     height: 200
     files:
       0: Resources/CODEX/BA.png
+  - type: BT.SPK #HERALDRY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/BT.png
+  - type: WS.SPK #HERALDRY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/WS.png
   - type: SALA.SPK #HERALDRY
     singleImage: true
     width: 320
