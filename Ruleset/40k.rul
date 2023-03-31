@@ -13128,7 +13128,7 @@ manufacture:
   - name: STR_DREAD2_ARMOR               #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_MARINES_STRATEGY
+      - STR_MARINES_AND_DEATHWATCH
       - STR_PLASMA_CANNON
       - STR_NEW_FIGHTER_CRAFT
     space: 30
@@ -13141,7 +13141,7 @@ manufacture:
   - name: STR_DREAD3_ARMOR               #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_MARINES_STRATEGY
+      - STR_MARINES_AND_DEATHWATCH
       - STR_FUSION_MISSILE
       - STR_NEW_FIGHTER_CRAFT
     space: 30
@@ -13154,7 +13154,7 @@ manufacture:
   - name: STR_DREAD4_ARMOR               #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_MARINES_STRATEGY
+      - STR_MARINES_AND_DEATHWATCH
       - STR_PLASMA_CANNON
       - STR_NEW_FIGHTER_CRAFT
     space: 30
@@ -13167,7 +13167,7 @@ manufacture:
   - name: STR_DREAD5_ARMOR               #1 BADGE 5
     category: STR_PERSONAL_ARMOR
     requires:
-      - STR_MARINES_STRATEGY
+      - STR_MARINES_AND_DEATHWATCH
       - STR_PLASMA_CANNON
       - STR_NEW_FIGHTER_CRAFT
       - STR_VETERAN
@@ -13260,6 +13260,33 @@ manufacture:
       STR_ALIEN_ALLOYS: 650
       STR_UFO_POWER_SOURCE: 1
       STR_UFO_NAVIGATION: 1
+  - name: STR_DW_THUNDERHAWNK #thunderhawnk Type 1
+    category: STR_CRAFT
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_DEATHWATCH
+    space: 34
+    time: 18000
+    cost: 600000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 850
+      STR_UFO_POWER_SOURCE: 1
+      STR_UFO_NAVIGATION: 1
+    producedItems:
+      STR_DW_THUNDERHAWNK: 1
+  - name: STR_DW_LANDRAIDER
+    category: STR_CRAFT
+    requires:
+      - STR_LANDRAIDER_DW
+      - STR_DEATHWATCH
+    space: 40
+    time: 30000
+    cost: 1000000
+    listOrder: 3350
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1500
+      STR_UFO_POWER_SOURCE: 6
+      STR_UFO_NAVIGATION: 6
 
   - name: STR_LIGHTNING #thunderhawnk Type 2
     category: STR_CRAFT

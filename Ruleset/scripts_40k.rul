@@ -735,6 +735,11 @@ items:
   - type: STR_AUTO_CANNON
     tags:
       ITEM_RECOIL: 60
+      ITEM_FIRING_SPRITE: 1
+  - type: STR_AUTO_CANNON_DW
+    tags:
+      ITEM_RECOIL: 60
+      ITEM_FIRING_SPRITE: 1
 
   - type: STR_HEAVY_BOLTER_GUARD
     tags:
@@ -779,6 +784,9 @@ items:
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
   - type: STR_LASCAN
+    tags:
+      ITEM_RECOIL: 60
+  - type: STR_LASCAN_DW
     tags:
       ITEM_RECOIL: 60
 

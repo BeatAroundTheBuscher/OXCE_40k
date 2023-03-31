@@ -3006,6 +3006,14 @@
       849: Resources/MKX-ARMOR/DWATCH/849.png
       850: Resources/NULL/Null_Void_4x3.png
       851: Resources/MKX-ARMOR/DWATCH/851.png
+      860: Resources/dread/DWATCH/860.png
+      861: Resources/dread/DWATCH/861.png
+      862: Resources/dread/DWATCH/862.png
+      863: Resources/dread/DWATCH/863.png
+      864: Resources/dread/DWATCH/864.png
+      865: Resources/dread/DWATCH/865.png
+      866: Resources/CAPTAIN/DWATCH/866.png
+      867: Resources/CAPTAIN/DWATCH/867.png
 #900-999 CHAPTER CHANGE
       1400: Resources_IG/Bigobs/traitor_chimera_multilaser.png
 #FLOOR
@@ -3172,7 +3180,7 @@
       198: Resources/Mlauncher/floorob_198.gif
       199: Resources/FOES/floorob_199.gif
       200: Resources/Adeptas/floorob_200.png
-      201: Resources/BOLTER/floorob_201.gif
+      201: Resources/BOLTER/floorob_201.png
       202: Resources/Boltpistol/floorob_202.gif
       203: Resources/BOLTER/floorob_203.gif
       204: Resources/BOLTER/floorob_204.gif
@@ -3459,7 +3467,17 @@
       727: Resources/MKX-ARMOR/DWATCH/floorob_727.png     #DW MKX
       728: Resources/MKX-ARMOR/DWATCH/floorob_728.png     #DW MKX
       729: Resources/MKX-ARMOR/DWATCH/floorob_729.png     #DW MKX
+      730: Resources/dread/DWATCH/floorob_730.png     #DW dread
+      731: Resources/dread/DWATCH/floorob_731.png     #DW dread
+      732: Resources/dread/DWATCH/floorob_732.png     #DW dread
+      733: Resources/dread/DWATCH/floorob_733.png     #DW dread
+      734: Resources/MKX-ARMOR/DWATCH/floorob_734.png     #DW MKX
+      735: Resources/MKX-ARMOR/DWATCH/floorob_735.png     #DW MKX
+      736: Resources/CAPTAIN/DWATCH/floorob_736.png
+      737: Resources/CAPTAIN/DWATCH/floorob_737.png
+      749: Resources/Heavybolter/floorob_749.png
       750: Resources/Bolter/floorob_750.png
+      751: Resources/Lascan/floorob_751.png
 #900-999 CHAPTER CHANGE
 # Traitor guard chimera corpses
       1400: Resources_IG/Floorobs/floorob_traitor_chimera_turret_0.png
@@ -6961,6 +6979,9 @@
       184: Resources/Sprites/184EX.png
       192: Resources/Sprites/XSKULL.png
       200: Resources/Sprites/XMUNI.png
+      208: Resources/MKX-ARMOR/DWATCH/XTHUNDER.png
+      216: Resources/MKX-ARMOR/DWATCH/XBOLTER.png
+#CHAPTER CHANGE  1728-1736
   - type: GlobeMarkers
     width: 63
     height: 7
@@ -7686,6 +7707,8 @@ extraSounds:
       291: Resources/Sound/291necdie.ogg
       292: Resources/Sound/292deployt.ogg
       293: Resources/Sound/293TurretR.ogg
+      294: Resources/Sound/294TF.ogg
+      295: Resources/Sound/295TFR.ogg
 #301 to 320 SCouts MALE
       300: Resources/Sound/SCOUTS/SEARCH.ogg
       301: Resources/Sound/SCOUTS/ATTSM1.ogg

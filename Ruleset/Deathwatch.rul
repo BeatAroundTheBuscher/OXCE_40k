@@ -1,5 +1,5 @@
 ﻿units:
-  - type: STR_THUNDERFIRE_P
+  - type: STR_THUNDERFIRE_DW
     race: STR_THUNDERFIRE
     stats:
       tu: 70
@@ -12,7 +12,7 @@
       strength: 60
       psiStrength: 100
       psiSkill: 0
-    armor: THUNDERFIRE_ARMOR_P
+    armor: THUNDERFIRE_ARMOR_DW
     standHeight: 16
     kneelHeight: 16
     value: 20
@@ -21,7 +21,399 @@
     energyRecovery: 50
 #                 #                                        #                      #
 items:
+
+  - type: STR_THUNDERFIRE_DW
+    ignoreInCraftEquip: true
+    categories: [STR_CAT_AUXILIARY]
+    customItemPreviewIndex: 28
+    size: 6
+    costSell: 340000
+    transferTime: 96
+    weight: 1
+    bigSprite: 648
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 4
+    fireSound: 24
+    compatibleAmmo:
+      - STR_THUNDERFIRE_SHELL
+    accuracySnap: 60
+    accuracyAimed: 90
+    tuSnap: 33
+    tuAimed: 80
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+  - type: STR_TF_DW_SPAWNER
+    supportedInventorySections:
+      - STR_BACK_PACK
+    spawnUnit: STR_THUNDERFIRE_DW
+    primeActionName: STR_ACTIVATE
+    spawnUnitFaction: 0
+    categories: [ STR_CAT_EQUIPMENT]
+    costSell: 500000
+    size: 2
+    weight: 40
+    bigSprite: 842
+    floorSprite: 734
+    handSprite: 1728
+    power: 1
+    ignoreInCraftEquip: true
+    fuseType: -3
+    fuseTriggerEvents:
+     throwTrigger: true
+     proximityTrigger: true
+    damageType: 3
+    battleType: 4
+    blastRadius: 1
+    hitAnimation: 208
+    explosionHitSound: 293
+    invWidth: 3
+    invHeight: 3
+    recover: false
+    defaultInventorySlot: STR_LEFT_HAND
+  - type: STR_TT_DW_SPAWNER
+    supportedInventorySections:
+      - STR_BACK_PACK
+    spawnUnit: STR_T_ARBITES_BOLTER
+    primeActionName: STR_ACTIVATE
+    spawnUnitFaction: 0
+    categories: [ STR_CAT_EQUIPMENT]
+    costSell: 500000
+    size: 2
+    weight: 40
+    bigSprite: 843
+    floorSprite: 735
+    handSprite: 1736
+    power: 1
+    ignoreInCraftEquip: true
+    fuseType: -3
+    fuseTriggerEvents:
+     throwTrigger: true
+     proximityTrigger: true
+    damageType: 3
+    battleType: 4
+    blastRadius: 1
+    hitAnimation: 216
+    explosionHitSound: 292
+    invWidth: 3
+    invHeight: 3
+    recover: false
+
+  - type: STR_GRAV_AUTOC_DW
+    weight: 1
+    bigSprite: 840
+    handSprite: 360
+    bulletSprite: 6
+    fireSound: 12
+    explosionSpeed: 5
+    bulletSpeed: 50
+    hitSound: 13
+    hitAnimation: 26
+    accuracyAuto: 50
+    accuracySnap: 75
+    tuSnap: 20
+    tuAuto: 20
+    battleType: 1
+    damageType: 1
+    power: 110
+    damageAlter: #DA BOLTER
+      ToArmorPre: 0.05
+      ArmorEffectiveness: 0.9
+      ToArmor: 0.1
+      ToHealth: 1.0
+      ToStun: 0.5
+    autoShots: 2
+    sprayWaypoints: 2
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    twoHanded: false
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+    #Melee FIST
+    meleeSound: 710 # 710 powerfist miss
+    meleeHitSound: 772 # 772 powerfist hit
+    meleeAnimation: 28 # 28 bolt anitmation
+    meleeType: 7
+    meleePower: 80
+    accuracyMelee: 80
+    tuMelee: 15
+    flatMelee:
+      time: true
+    defaultInventorySlot: STR_LEFT_HAND
+  - type: STR_GRAV_BOLTER_DW
+    weight: 1
+    bigSprite: 839
+    handSprite: 360
+    bulletSprite: 6
+    fireSound: 707
+    explosionSpeed: 5
+    bulletSpeed: 50
+    hitAnimation: 26
+    hitSound: 13
+    accuracyAuto: 50
+    accuracySnap: 75
+    tuSnap: 15
+    tuAuto: 15
+    battleType: 1
+    damageType: 1
+    power: 60
+    damageAlter: #DA BOLTER
+      ToArmorPre: 0.05
+      ArmorEffectiveness: 0.9
+      ToArmor: 0.1
+      ToHealth: 1.0
+      ToStun: 0.5
+    autoShots: 3
+    sprayWaypoints: 2
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    twoHanded: false
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+    #Melee FIST
+    meleeSound: 710 # 710 powerfist miss
+    meleeHitSound: 772 # 772 powerfist hit
+    meleeAnimation: 28 # 28 bolt anitmation
+    meleeType: 7
+    meleePower: 80
+    accuracyMelee: 80
+    tuMelee: 15
+    flatMelee:
+      time: true
+    defaultInventorySlot: STR_LEFT_HAND
+  - type: STR_GRAV_FLAMER_DW
+    categories: [ STR_CAT_FLAMER, STR_CAT_TACTICAL]
+    handSprite: 360
+    weight: 1
+    bigSprite: 841
+    bulletSprite: 5
+    fireSound: 706
+    hitSound: 12
+    hitAnimation: 88 #XFIRE
+    vaporColorSurface: 0
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    battleType: 1
+    power: 60
+    damageType: 2
+    blastRadius: 2
+    accuracyAuto: 20
+    tuAuto: 20
+    bulletSpeed: 50
+    explosionSpeed: 10
+    experienceTrainingMode: 6
+    maxRange: 9
+    autoShots: 6
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+    twoHanded: false
+    #Melee FIST
+    meleeSound: 710 # 710 powerfist miss
+    meleeHitSound: 772 # 772 powerfist hit
+    meleeAnimation: 28 # 28 bolt anitmation
+    meleeType: 7
+    meleePower: 80
+    accuracyMelee: 80
+    tuMelee: 15
+    flatMelee:
+      time: true
+  - type: STR_DW_DREAD_MELEE
+    categories: [STR_CAT_AUXILIARY]
+    weight: 3
+    bigSprite: 860
+    meleeSound: 710 # 710 powerfist miss
+    meleeHitSound: 772 # 772 powerfist hit
+    meleeAnimation: 28 # 28 bolt anitmation
+    clipSize: -1
+    strengthApplied: false
+    power: 110
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    flatRate: true
+  - type: AUX_DW_DREAD_ASSC     #dread ASSAULT CAN
+    size: 0.6
+    dropoff: 5
+    weight: 10
+    bigSprite: 864
+    bulletSprite: 6
+    fireSound: 12
+    compatibleAmmo:
+      - STR_ASSC_CLIP
+    accuracyAuto: 50
+    tuAuto: 45
+    autoRange: 30
+    autoShots: 10
+    sprayWaypoints: 3
+    battleType: 1
+    hitSound: 13
+    hitAnimation: 26
+    power: 90
+    damageType: 1
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    twoHanded: false
+    fixedWeapon: true
+    bulletSpeed: 50
+  - type: AUX_DW_DREAD_FLAMER   #dread Flamer Palm
+    categories: [ STR_CAT_FLAMER, STR_CAT_TACTICAL]
+    weight: 1
+    bigSprite: 865
+    bulletSprite: 5
+    fireSound: 706
+    hitSound: 12
+    hitAnimation: 88 #XFIRE
+    vaporColorSurface: 0
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    battleType: 1
+    power: 60
+    damageType: 2
+    blastRadius: 2
+    accuracyAuto: 20
+    tuAuto: 35
+    bulletSpeed: 50
+    explosionSpeed: 10
+    experienceTrainingMode: 6
+    maxRange: 9
+    autoShots: 6
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+    fixedWeapon: true
+    recover: false
+    twoHanded: false
+    #Melee FIST
+    meleeSound: 710 # 710 powerfist miss
+    meleeHitSound: 772 # 772 powerfist hit
+    meleeAnimation: 28 # 28 bolt anitmation
+    meleeType: 7
+    meleePower: 110
+    accuracyMelee: 100
+    tuMelee: 15
+    flatMelee:
+      time: true
+  - type: AUX_DW_DREAD_PLASMA   #dread plasma                   2710
+    vaporColorSurface: 2
+    vaporDensitySurface: 6
+    vaporProbabilitySurface: 18
+    weight: 1
+    bigSprite: 863
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 17
+    fireSound: 18
+    #hitSound: 19 #*** PLASMA rebalance
+    explosionHitSound: 690 #*** PLASMA rebalance
+    hitAnimation: 112 #100 #*** PLASMA rebalance
+    powerForAnimation: 5 #100 #*** PLASMA rebalance
+    power: 110
+    damageType: 5
+    damageAlter: #DA PLASMA
+      #ToHealth: 0.9
+      #ToArmor: 0.1
+      FixRadius: 1 #*** PLASMA rebalance
+      ArmorEffectiveness: 0.75
+      ToArmor: 0.2
+      IgnoreDirection: false
+      RadiusReduction: 30.0
+    accuracySnap: 85
+    accuracyAimed: 100
+    tuSnap: 30
+    tuAimed: 60
+    snapRange: 24 #*** PLASMA rebalance
+    battleType: 1
+    fixedWeapon: true
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    listOrder: 2710
+  - type: AUX_DW_DREAD_LASER    #dread las                       2610
+    weight: 1
+    bigSprite: 861
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 12
+    bulletSpeed: 100
+    fireSound: 742
+    hitSound: 19
+    hitAnimation: 36
+    power: 100
+    damageType: 4
+    damageAlter: #DA LAS
+      ToArmorPre: 0.2
+      ToHealth: 1.0
+      ToArmor: 0.0
+      ToStun: 0.0
+    accuracySnap: 85
+    accuracyAuto: 50
+    tuAuto: 50
+    tuSnap: 30
+    autoShots: 2
+    battleType: 1
+    fixedWeapon: true
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    listOrder: 2610
+  - type: AUX_DW_DREAD_LAUNCHER #dread rocket                   2820
+    weight: 1
+    bigSprite: 862
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 702
+    compatibleAmmo:
+      - STR_HWP_FUSION_BOMB
+    accuracyAimed: 100
+    tuAimed: 66
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    listOrder: 2820
 #ARMOR CORPSE
+  - type: DREAD_DW_CORPSE1
+    floorSprite: 730
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: DREAD_DW_CORPSE2
+    floorSprite: 731
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: DREAD_DW_CORPSE3
+    floorSprite: 732
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: DREAD_DW_CORPSE4
+    floorSprite: 733
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
   - type: STR_MK7_DW_CORPSE
     name: STR_CORPSE
     weight: 40
@@ -65,8 +457,8 @@ items:
   - type: STR_CAP_DW_CORPSE
     name: STR_CORPSE
     weight: 50
-    bigSprite: 210
-    floorSprite: 98
+    bigSprite: 866
+    floorSprite: 736
     invWidth: 2
     invHeight: 3
     armor: 80
@@ -75,8 +467,8 @@ items:
   - type: STR_WM_DW_CORPSE
     name: STR_CORPSE
     weight: 50
-    bigSprite: 210
-    floorSprite: 98
+    bigSprite: 867
+    floorSprite: 737
     invWidth: 2
     invHeight: 3
     armor: 80
@@ -184,21 +576,56 @@ items:
     listOrder: 6405
 
 armors:
+  - type: THUNDERFIRE_ARMOR_DW
+    spriteSheet: THUNDERFIREDW.PCK
+    allowInv: true
+    spriteInv: TFINVPDW.SPK
+    corpseGeo: STR_BIKE_CORPSE
+    corpseBattle:
+      - 15_THUNDER
+      - 15_THUNDER2
+      - 15_THUNDER3
+      - 15_THUNDER4
+    frontArmor: 100
+    sideArmor: 85
+    rearArmor: 70
+    underArmor: 70
+    size: 2
+    damageModifier:
+      - 1.0
+      - 0.95
+      - 0.4
+      - 0.8
+      - 0.6
+      - 1.0
+      - 0.0
+      - 0.8
+      - 1.2
+      - 0.0
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 5
+    moveSound: 14
+    builtInWeapons:
+      - INV_NULL_HAND_L
+      - INV_NULL_3X3
+      - INV_NULL_TF_LL
+      - INV_NULL_TF_RL
+      - INV_NULL_4X2
   - type: STR_DREAD_DW_ARMOR_UC           #DREAD ARMOR NORMAL
     visibilityAtDay: 40
     visibilityAtDark: 30
-    spriteSheet: DREAD.PCK
+    spriteSheet: DWDREAD.PCK
     instantWoundRecovery: true
     allowInv: true
-    spriteInv: DREADINV4
+    spriteInv: DREADDWINV4
     customArmorPreviewIndex: [31, 32, 33]
     storeItem: STR_NONE
     corpseGeo: STR_DREAD_CORPSE
     corpseBattle:
-      - DREAD_CORPSE1
-      - DREAD_CORPSE2
-      - DREAD_CORPSE3
-      - DREAD_CORPSE4
+      - DREAD_DW_CORPSE1
+      - DREAD_DW_CORPSE2
+      - DREAD_DW_CORPSE3
+      - DREAD_DW_CORPSE4
     frontArmor: 180
     sideArmor: 160
     rearArmor: 120
@@ -224,8 +651,8 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 20
     builtInWeapons:
-      - AUX_DREAD_FLAMER
-      - STR_DREAD_MELEE_WEAPON
+      - AUX_DW_DREAD_FLAMER
+      - STR_DW_DREAD_MELEE
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
@@ -233,18 +660,18 @@ armors:
   - type: STR_DREAD_DW_ARMOR2_UC          #DREAD ARMOR PLASMA
     visibilityAtDay: 40
     visibilityAtDark: 30
-    spriteSheet: DREAD4.PCK
+    spriteSheet: DWDREAD4.PCK
     instantWoundRecovery: true
     allowInv: true
-    spriteInv: DREADINV
+    spriteInv: DREADDWINV
     customArmorPreviewIndex: [20, 21, 22]
     storeItem: STR_DREAD2_ARMOR
     corpseGeo: STR_DREAD_CORPSE
     corpseBattle:
-      - DREAD_CORPSE1
-      - DREAD_CORPSE2
-      - DREAD_CORPSE3
-      - DREAD_CORPSE4
+      - DREAD_DW_CORPSE1
+      - DREAD_DW_CORPSE2
+      - DREAD_DW_CORPSE3
+      - DREAD_DW_CORPSE4
     frontArmor: 180
     sideArmor: 160
     rearArmor: 120
@@ -269,8 +696,8 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 20
     builtInWeapons:
-      - AUX_HOVERTANK_PLASMA
-      - STR_DREAD_MELEE_WEAPON
+      - AUX_DW_DREAD_PLASMA
+      - STR_DW_DREAD_MELEE
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
@@ -279,17 +706,17 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 30
     instantWoundRecovery: true
-    spriteSheet: DREAD2.PCK
+    spriteSheet: DWDREAD2.PCK
     allowInv: true
-    spriteInv: DREADINV2
+    spriteInv: DREADDWINV2
     customArmorPreviewIndex: [34, 35, 36]
     storeItem: STR_DREAD3_ARMOR
     corpseGeo: STR_DREAD_CORPSE
     corpseBattle:
-      - DREAD_CORPSE1
-      - DREAD_CORPSE2
-      - DREAD_CORPSE3
-      - DREAD_CORPSE4
+      - DREAD_DW_CORPSE1
+      - DREAD_DW_CORPSE2
+      - DREAD_DW_CORPSE3
+      - DREAD_DW_CORPSE4
     frontArmor: 180
     sideArmor: 160
     rearArmor: 120
@@ -314,8 +741,8 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 20
     builtInWeapons:
-      - AUX_HOVERTANK_LAUNCHER
-      - STR_DREAD_MELEE_WEAPON
+      - AUX_DW_DREAD_LAUNCHER
+      - STR_DW_DREAD_MELEE
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
@@ -323,18 +750,18 @@ armors:
   - type: STR_DREAD_DW_ARMOR4_UC
     visibilityAtDay: 40
     visibilityAtDark: 30
-    spriteSheet: DREAD3.PCK
+    spriteSheet: DWDREAD3.PCK
     instantWoundRecovery: true
     allowInv: true
-    spriteInv: DREADINV3
+    spriteInv: DREADDWINV3
     customArmorPreviewIndex: [20, 21, 22]
     storeItem: STR_DREAD4_ARMOR
     corpseGeo: STR_DREAD_CORPSE
     corpseBattle:
-      - DREAD_CORPSE1
-      - DREAD_CORPSE2
-      - DREAD_CORPSE3
-      - DREAD_CORPSE4
+      - DREAD_DW_CORPSE1
+      - DREAD_DW_CORPSE2
+      - DREAD_DW_CORPSE3
+      - DREAD_DW_CORPSE4
     frontArmor: 180
     sideArmor: 160
     rearArmor: 120
@@ -360,8 +787,8 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 20
     builtInWeapons:
-      - AUX_HOVERTANK_LASER
-      - STR_DREAD_MELEE_WEAPON
+      - AUX_DW_DREAD_LASER
+      - STR_DW_DREAD_MELEE
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
@@ -369,18 +796,18 @@ armors:
   - type: STR_DREAD_DW_ARMOR5_UC          #DREAD ARMOR VENERABLE
     visibilityAtDay: 40
     visibilityAtDark: 30
-    spriteSheet: DREAD5.PCK
+    spriteSheet: DWDREAD5.PCK
     instantWoundRecovery: true
     allowInv: true
-    spriteInv: DREADINV5
+    spriteInv: DREADDWINV5
     customArmorPreviewIndex: [26, 27, 28]
     storeItem: STR_DREAD5_ARMOR
     corpseGeo: STR_DREAD_CORPSE
     corpseBattle:
-      - DREAD_CORPSE1
-      - DREAD_CORPSE2
-      - DREAD_CORPSE3
-      - DREAD_CORPSE4
+      - DREAD_DW_CORPSE1
+      - DREAD_DW_CORPSE2
+      - DREAD_DW_CORPSE3
+      - DREAD_DW_CORPSE4
     frontArmor: 190
     sideArmor: 170
     rearArmor: 140
@@ -406,8 +833,8 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 20
     builtInWeapons:
-      - AUX_DREAD_ASSC
-      - AUX_DREAD_FLAMER
+      - AUX_DW_DREAD_ASSC 
+      - AUX_DW_DREAD_FLAMER
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
@@ -529,6 +956,8 @@ armors:
       F3: ["CAPE4", "CAPDW", "M3_FACE", "PLUM"]
       F4: ["CAPE4", "CAPDW", "M4_FACE", "PLUM"]
       F5: ["CAPE4", "CAPDW", "M5_FACE", "PLUM"]
+#SPECIAL
+    instantWoundRecovery: true
   - type: STR_DW_CAP_ARMOR_SALA_UC #SALMANDER
     refNode: *STR_DW_CAP_ARMOR_UC
     units:
@@ -592,7 +1021,9 @@ armors:
       F3: ["CAPE4", "CAPDW", "M3_FACE", "PLUM"]
       F4: ["CAPE4", "CAPDW", "M4_FACE", "PLUM"]
       F5: ["CAPE4", "CAPDW", "M5_FACE", "PLUM"]
-
+#SPECIAL
+    moveCost:
+      basePercent: [100, 25] #overall move cost
   - &STR_DW_WM_ARMOR_UC #WATCH MASTER
     type: STR_DW_WM_ARMOR_ULTRA_UC
     selectUnitMale:     [1133, 1134]
@@ -677,10 +1108,25 @@ armors:
     refNode: *STR_DW_WM_ARMOR_UC
     units:
       - STR_IMPERIALF
+#SPECIAL
+    stats:
+       tu: 0
+       stamina: 0
+       health: 10
+       bravery: 10 #always multiples of 10
+       reactions: 0
+       firing: 0
+       throwing: 0
+       strength: 50
+       psiStrength: 0
+       psiSkill: 0
+       melee: 0
   - type: STR_DW_WM_ARMOR_BA_UC #ULTRAMARINE
     refNode: *STR_DW_WM_ARMOR_UC
     units:
       - STR_BLOODANGELS
+#SPECIAL
+    instantWoundRecovery: true
   - type: STR_DW_WM_ARMOR_SALA_UC #ULTRAMARINE
     refNode: *STR_DW_WM_ARMOR_UC
     spriteFaceGroup: 6
@@ -704,6 +1150,19 @@ armors:
       F3: ["CAPE5", "WMDW", "M3_FACES", "PLUM"]
       F4: ["CAPE5", "WMDW", "M4_FACES", "PLUM"]
       F5: ["CAPE5", "WMDW", "M5_FACES", "PLUM"]
+    damageModifier: #TERMINATOR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_DW_WM_ARMOR_BT_UC #ULTRAMARINE
     refNode: *STR_DW_WM_ARMOR_UC
     units:
@@ -712,6 +1171,9 @@ armors:
     refNode: *STR_DW_WM_ARMOR_UC
     units:
       - STR_WHITES
+#SPECIAL
+    moveCost:
+      basePercent: [100, 25] #overall move cost
 
   - &STR_DW_TAC_ARMOR_UC #TATICAL
     type: STR_DW_TAC_ARMOR_ULTRA_UC
@@ -1081,6 +1543,18 @@ armors:
       F3: ["0", "DEVDWIF", "M3_FACE"]
       F4: ["0", "DEVDWIF", "M4_FACE"]
       F5: ["0", "DEVDWIF", "M5_FACE"]
+    stats:
+       tu: 0
+       stamina: -10
+       health: 0
+       bravery: 0 #always multiples of 10
+       reactions: -20
+       firing: 10
+       throwing: 0
+       strength: 50
+       psiStrength: 0
+       psiSkill: 0
+       melee: -40
   - type: STR_DW_DEV_ARMOR_WS_UC
     refNode: *STR_DW_DEV_ARMOR_UC
     units:
@@ -1210,6 +1684,19 @@ armors:
       F3: ["0", "ASSDWIF", "M3_FACE"]
       F4: ["0", "ASSDWIF", "M4_FACE"]
       F5: ["0", "ASSDWIF", "M5_FACE"]
+#SPECIAL
+    stats:
+       tu: 20
+       stamina: 0
+       health: 0
+       bravery: 0 #always multiples of 10
+       reactions: 30
+       firing: -20
+       throwing: 0
+       strength: 0
+       psiStrength: 0
+       psiSkill: 0
+       melee: 50
   - type: STR_DW_ASS_ARMOR_BA_UC #ASSAULT
     refNode: *STR_DW_ASS_ARMOR_UC
     units:
@@ -1408,6 +1895,18 @@ armors:
       F3: ["0", "TERDWIF", "M3_FACE"]
       F4: ["0", "TERDWIF", "M4_FACE"]
       F5: ["0", "TERDWIF", "M5_FACE"]
+    stats:
+       tu: 0
+       stamina: -10
+       firing: 0
+       health: 0
+       bravery: 0 #always multiples of 10
+       reactions: -10
+       throwing: 0
+       strength: 100
+       psiStrength: 0
+       psiSkill: 0
+       melee: 10
   - type: STR_DW_TER_ARMOR_BA_UC #TERMINATOR
     refNode: *STR_DW_TER_ARMOR_UC
     units:
@@ -1456,6 +1955,19 @@ armors:
       F3: ["0", "TERDWSALA", "M3_FACES"]
       F4: ["0", "TERDWSALA", "M4_FACES"]
       F5: ["0", "TERDWSALA", "M5_FACES"]
+    damageModifier: #TERMINATOR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_DW_TER_ARMOR_BT_UC #TERMINATOR
     refNode: *STR_DW_TER_ARMOR_UC
     units:
@@ -1599,6 +2111,18 @@ armors:
       F3: ["0", "TERDWIF", "M3_FACE"]
       F4: ["0", "TERDWIF", "M4_FACE"]
       F5: ["0", "TERDWIF", "M5_FACE"]
+    stats:
+       tu: 0
+       stamina: -10
+       firing: 0
+       health: 0
+       bravery: 0 #always multiples of 10
+       reactions: -10
+       throwing: 0
+       strength: 100
+       psiStrength: 0
+       psiSkill: 0
+       melee: 10
   - type: STR_DW_TASS_ARMOR_BA_UC #TERMINATOR
     refNode: *STR_DW_TASS_ARMOR_UC
     units:
@@ -1647,6 +2171,19 @@ armors:
       F3: ["0", "TERDWSALA", "M3_FACES"]
       F4: ["0", "TERDWSALA", "M4_FACES"]
       F5: ["0", "TERDWSALA", "M5_FACES"]
+    damageModifier: #TERMINATOR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_DW_TASS_ARMOR_BT_UC #TERMINATOR
     refNode: *STR_DW_TASS_ARMOR_UC
     units:
@@ -1798,6 +2335,18 @@ armors:
       F3: ["0", "TERSGTIF", "M3_FACE"]
       F4: ["0", "TERSGTIF", "M4_FACE"]
       F5: ["0", "TERSGTIF", "M5_FACE"]
+    stats:
+       tu: 0
+       stamina: -10
+       firing: 0
+       health: 0
+       bravery: 0 #always multiples of 10
+       reactions: -10
+       throwing: 0
+       strength: 100
+       psiStrength: 0
+       psiSkill: 0
+       melee: 10
   - type: STR_DW_TSARGENT_ARMOR_BA_UC #TERMINATOR SGT
     refNode: *STR_DW_TSARGENT_ARMOR_UC
     units:
@@ -1846,6 +2395,19 @@ armors:
       F3: ["0", "TERSGTSALA", "M3_FACES"]
       F4: ["0", "TERSGTSALA", "M4_FACES"]
       F5: ["0", "TERSGTSALA", "M5_FACES"]
+    damageModifier: #TERMINATOR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.0 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_DW_TSARGENT_ARMOR_BT_UC #TERMINATOR SGT
     refNode: *STR_DW_TSARGENT_ARMOR_UC
     units:
@@ -1996,6 +2558,19 @@ armors:
       F3: ["0", "APOTDWULTRA", "M3_FACE"]
       F4: ["0", "APOTDWULTRA", "M4_FACE"]
       F5: ["0", "APOTDWULTRA", "M5_FACE"]
+#SPECIAL
+    stats:
+       tu: 0
+       stamina: 0
+       health: 30
+       bravery: 20 #always multiples of 10
+       reactions: 0
+       firing: 0
+       throwing: 0
+       strength: 0
+       psiStrength: 0
+       psiSkill: 0
+       melee: 20
   - type: STR_DW_APOT_ARMOR_BA_UC
     refNode: *STR_DW_APOT_ARMOR_UC
     units:
@@ -2044,6 +2619,19 @@ armors:
       F3: ["0", "APOTDWSALA", "M3_FACE"]
       F4: ["0", "APOTDWSALA", "M4_FACE"]
       F5: ["0", "APOTDWSALA", "M5_FACE"]
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_DW_APOT_ARMOR_BT_UC
     refNode: *STR_DW_APOT_ARMOR_UC
     units:
@@ -2090,8 +2678,11 @@ armors:
       F3: ["0", "APOTDWWS", "M3_FACE"]
       F4: ["0", "APOTDWWS", "M4_FACE"]
       F5: ["0", "APOTDWWS", "M5_FACE"]
+#SPECIAL
+    moveCost:
+      basePercent: [100, 25] #overall move cost
 
-  - &STR_DW_TECH_ARMOR_UC #ASSAULT
+  - &STR_DW_TECH_ARMOR_UC #TECHMARINE
     type: STR_DW_TECH_ARMOR_ULTRA_UC
     ufopediaType: STR_TECH_ARMOR_UC
     selectUnitMale:     [1296, 1297, 1298, 1299, 1300]
@@ -2190,6 +2781,19 @@ armors:
       F3: ["0", "TECHDWIF", "M3_FACE"]
       F4: ["0", "TECHDWIF", "M4_FACE"]
       F5: ["0", "TECHDWIF", "M5_FACE"]
+#SPECIAL
+    stats:
+       tu: 0
+       stamina: 20
+       health: 10
+       bravery: 10 #always multiples of 10
+       reactions: 0
+       firing: 0
+       throwing: 0
+       strength: 0
+       psiStrength: 0
+       psiSkill: 0
+       melee: 20
   - type: STR_DW_TECH_ARMOR_BA_UC
     refNode: *STR_DW_TECH_ARMOR_UC
     units:
@@ -2238,6 +2842,20 @@ armors:
       F3: ["0", "TECHDWSALA", "M3_FACES"]
       F4: ["0", "TECHDWSALA", "M4_FACES"]
       F5: ["0", "TECHDWSALA", "M5_FACES"]
+#SPECIAL
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_DW_TECH_ARMOR_BT_UC
     refNode: *STR_DW_TECH_ARMOR_UC
     units:
@@ -2455,6 +3073,20 @@ armors:
     builtInWeapons:
       - STR_SHIELD_TOME
       - INV_NULL_3X3
+#SPECIAL
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_MKX_DW_LIB_BT_UC
     refNode: *STR_MKX_DW_LIB_UC
     units:
@@ -2663,6 +3295,20 @@ armors:
       F3: ["0", "CHPDWSALA", "M3_FACES"]
       F4: ["0", "CHPDWSALA", "M4_FACES"]
       F5: ["0", "CHPDWSALA", "M5_FACES"]
+#SPECIAL
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_MKX_DW_CHP_BT_UC
     refNode: *STR_MKX_DW_CHP_UC
     units:
@@ -2788,7 +3434,7 @@ armors:
       F4: ["0", "TECDWULTRA", "M4_FACE"]
       F5: ["0", "TECDWULTRA", "M5_FACE"]
     builtInWeapons:
-      - STR_TT_SPAWNER
+      - STR_TT_DW_SPAWNER
   - type: STR_MKX_DW_TEC_IF_UC
     refNode: *STR_MKX_DW_TEC_UC
     units:
@@ -2814,7 +3460,7 @@ armors:
       F4: ["0", "TECDWIF", "M4_FACE"]
       F5: ["0", "TECDWIF", "M5_FACE"]
     builtInWeapons:
-      - STR_TF_SPAWNER
+      - STR_TF_DW_SPAWNER
       - STR_THUNDERFIRE_SHELL
       - STR_THUNDERFIRE_SHELL
   - type: STR_MKX_DW_TEC_BA_UC
@@ -2842,7 +3488,7 @@ armors:
       F4: ["0", "TECDWBA", "M4_FACE"]
       F5: ["0", "TECDWBA", "M5_FACE"]
     builtInWeapons:
-      - STR_TT_SPAWNER
+      - STR_TT_DW_SPAWNER
 #SPECIAL
     instantWoundRecovery: true
   - type: STR_MKX_DW_TEC_SALA_UC
@@ -2870,7 +3516,21 @@ armors:
       F4: ["0", "TECDWSALA", "M4_FACES"]
       F5: ["0", "TECDWSALA", "M5_FACES"]
     builtInWeapons:
-      - STR_TT_SPAWNER
+      - STR_TT_DW_SPAWNER
+#SPECIAL
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_MKX_DW_TEC_BT_UC
     refNode: *STR_MKX_DW_TEC_UC
     units:
@@ -2896,7 +3556,7 @@ armors:
       F4: ["0", "TECDWBT", "M4_FACE"]
       F5: ["0", "TECDWBT", "M5_FACE"]
     builtInWeapons:
-      - STR_TT_SPAWNER
+      - STR_TT_DW_SPAWNER
   - type: STR_MKX_DW_TEC_WS_UC
     refNode: *STR_MKX_DW_TEC_UC
     units:
@@ -2922,7 +3582,7 @@ armors:
       F4: ["0", "TECDWWS", "M4_FACE"]
       F5: ["0", "TECDWWS", "M5_FACE"]
     builtInWeapons:
-      - STR_TT_SPAWNER
+      - STR_TT_DW_SPAWNER
 #SPECIAL
     moveCost:
       basePercent: [100, 25] #overall move cost
@@ -3076,6 +3736,20 @@ armors:
       F3: ["0", "APODWSALA", "M3_FACES"]
       F4: ["0", "APODWSALA", "M4_FACES"]
       F5: ["0", "APODWSALA", "M5_FACES"]
+#SPECIAL
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_MKX_DW_APO_BT_UC
     refNode: *STR_MKX_DW_APO_UC
     units:
@@ -3266,6 +3940,20 @@ armors:
       F3: ["0", "MKXDWSALA", "M3_FACES"]
       F4: ["0", "MKXDWSALA", "M4_FACES"]
       F5: ["0", "MKXDWSALA", "M5_FACES"]
+#SPECIAL
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_MKX_DW_TAC_BT_UC
     refNode: *STR_MKX_DW_TAC_UC
     units:
@@ -3462,6 +4150,20 @@ armors:
       F3: ["0", "PHBDWSALA", "M3_FACES"]
       F4: ["0", "PHBDWSALA", "M4_FACES"]
       F5: ["0", "PHBDWSALA", "M5_FACES"]
+#SPECIAL
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_MKX_DW_PHB_BT_UC
     refNode: *STR_MKX_DW_PHB_UC
     units:
@@ -3584,8 +4286,8 @@ armors:
       F5: ["0", "GRVDWULTRA", "M5_FACE"]
     specialWeapon: STR_MFIST
     builtInWeapons:
-      - STR_GRAV_BOLTER
-      - STR_GRAV_BOLTER
+      - STR_GRAV_BOLTER_DW
+      - STR_GRAV_BOLTER_DW
       - INV_NULL_3X3
   - type: STR_MKX_DW_GRV_IF_UC
     refNode: *STR_MKX_DW_GRV_UC
@@ -3612,8 +4314,8 @@ armors:
       F5: ["0", "GRVDWIF", "M5_FACE"]
     specialWeapon: STR_MFIST
     builtInWeapons:
-      - STR_GRAV_AUTOC
-      - STR_GRAV_AUTOC
+      - STR_GRAV_AUTOC_DW
+      - STR_GRAV_AUTOC_DW
       - INV_NULL_3X3
   - type: STR_MKX_DW_GRV_BA_UC
     refNode: *STR_MKX_DW_GRV_UC
@@ -3640,9 +4342,11 @@ armors:
       F5: ["0", "GRVDWBA", "M5_FACE"]
     specialWeapon: STR_MFIST
     builtInWeapons:
-      - STR_GRAV_BOLTER
-      - STR_GRAV_BOLTER
+      - STR_GRAV_BOLTER_DW
+      - STR_GRAV_BOLTER_DW
       - INV_NULL_3X3
+#SPECIAL
+    instantWoundRecovery: true
   - type: STR_MKX_DW_GRV_SALA_UC
     refNode: *STR_MKX_DW_GRV_UC
     units:
@@ -3668,9 +4372,23 @@ armors:
       F5: ["0", "GRVDWSALA", "M5_FACES"]
     specialWeapon: STR_MFIST
     builtInWeapons:
-      - STR_GRAV_FLAMER
-      - STR_GRAV_FLAMER
+      - STR_GRAV_FLAMER_DW
+      - STR_GRAV_FLAMER_DW
       - INV_NULL_3X3
+#SPECIAL
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_MKX_DW_GRV_BT_UC
     refNode: *STR_MKX_DW_GRV_UC
     units:
@@ -3696,7 +4414,7 @@ armors:
       F5: ["0", "GRVDWBT", "M5_FACE"]
     specialWeapon: STR_MFIST
     builtInWeapons:
-      - STR_GRAV_BOLTER
+      - STR_GRAV_BOLTER_DW
       - INV_NULL_3X3
   - type: STR_MKX_DW_GRV_WS_UC
     refNode: *STR_MKX_DW_GRV_UC
@@ -3723,7 +4441,7 @@ armors:
       F5: ["0", "GRVDWWS", "M5_FACE"]
     specialWeapon: STR_MFIST
     builtInWeapons:
-      - STR_GRAV_BOLTER
+      - STR_GRAV_BOLTER_DW
       - INV_NULL_3X3
 #SPECIAL
     moveCost:
@@ -3864,6 +4582,20 @@ armors:
       F3: ["0", "INCDWSALA", "M3_FACES"]
       F4: ["0", "INCDWSALA", "M4_FACES"]
       F5: ["0", "INCDWSALA", "M5_FACES"]
+#SPECIAL
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_MKX_DW_INC_BT_UC
     refNode: *STR_MKX_DW_INC_UC
     units:
@@ -4853,6 +5585,75 @@ extraSprites:
     files:
       0: Resources/MKX-ARMOR/DWATCH/MXPHBDWWS.png
 
+  - type: DWDREAD.PCK    #FISTS
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/dread/DWATCH//dread.png
+  - type: DWDREAD2.PCK    #MISSELE
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/dread/DWATCH/dread2.png
+  - type: DWDREAD3.PCK    #LASGUN
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/dread/DWATCH/dread3.png
+  - type: DWDREAD4.PCK    #PLASMA
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/dread/DWATCH//dread4.png
+  - type: DWDREAD5.PCK    #VETERAN
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/dread/DWATCH/dread5.png
+
+  - type: DREADDWINV.SPK #DREAD INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/DREADI.png
+  - type: DREADDWINV2.SPK #DREAD INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/DREADI2.png
+  - type: DREADDWINV3.SPK #DREAD INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/DREADI3.png
+  - type: DREADDWINV4.SPK #DREAD INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/DREADI4.png
+  - type: DREADDWINV5.SPK #DREAD INV
+    singleImage: true
+    files:
+      0: Resources/LAYER/ULTRAMARINE/DREADI5.png
+
+  - type: THUNDERFIREDW.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/TFP.png
+  - type: TFINVPDW.SPK        #MKX
+    singleImage: true
+    files:
+      0: Resources/LAYER/DW/TFINVP.PNG
+
 soldiers:
   - type: STR_ULTRAMARINE
     requiresBuyBaseFunc: [IMPERIUM]
@@ -4866,8 +5667,8 @@ soldiers:
       - STR_DEATHWATCH
       - STR_CHAPTER_PURITY
     minStats:
-      tu: 50
-      stamina: 40
+      tu: 60
+      stamina: 50
       health: 50
       bravery: 10
       reactions: 30
@@ -4878,8 +5679,8 @@ soldiers:
       psiSkill: 10
       melee: 50
     maxStats:
-      tu: 60
-      stamina: 70
+      tu: 70
+      stamina: 80
       health: 60
       bravery: 60
       reactions: 60
@@ -4890,7 +5691,7 @@ soldiers:
       psiSkill: 20
       melee: 80
     statCaps:
-      tu: 100
+      tu: 120
       stamina: 120
       health: 90
       bravery: 110
@@ -4947,8 +5748,8 @@ soldiers:
       - STR_DEATHWATCH
       - STR_CHAPTER_PURITY
     minStats:
-      tu: 50
-      stamina: 40
+      tu: 60
+      stamina: 50
       health: 60
       bravery: 20
       reactions: 40
@@ -4959,8 +5760,8 @@ soldiers:
       psiSkill: 20
       melee: 50
     maxStats:
-      tu: 60
-      stamina: 70
+      tu: 70
+      stamina: 80
       health: 70
       bravery: 60
       reactions: 60
@@ -4971,8 +5772,8 @@ soldiers:
       psiSkill: 30
       melee: 80
     statCaps:
-      tu: 120
-      stamina: 120
+      tu: 130
+      stamina: 130
       health: 90
       bravery: 110
       reactions: 110
@@ -5520,7 +6321,7 @@ soldiers:
       strength: 30
       psiStrength: 10
       psiSkill: 10
-      melee: 50
+      melee: 80
     maxStats:
       tu: 60
       stamina: 70
@@ -5532,7 +6333,7 @@ soldiers:
       strength: 40
       psiStrength: 100
       psiSkill: 20
-      melee: 80
+      melee: 100
     statCaps:
       tu: 100
       stamina: 120
@@ -5601,7 +6402,7 @@ soldiers:
       strength: 40
       psiStrength: 20
       psiSkill: 20
-      melee: 50
+      melee: 80
     maxStats:
       tu: 60
       stamina: 70
@@ -5613,7 +6414,7 @@ soldiers:
       strength: 50
       psiStrength: 70
       psiSkill: 30
-      melee: 80
+      melee: 100
     statCaps:
       tu: 120
       stamina: 120

@@ -944,6 +944,13 @@ research:
       - STR_ADEPTAS
       - STR_HIGHTIER_PREREQ
       - STR_STORMEAGLE_INTERCEPTOR
+  - name: STR_LANDRAIDER_DW #DW
+    cost: 900
+    points: 30
+    dependencies:
+      - STR_DEATHWATCH
+      - STR_HIGHTIER_PREREQ
+      - STR_STORMEAGLE_INTERCEPTOR
   - name: STR_LANDRAIDER_ARBITES #ARBITES
     cost: 900
     points: 30
@@ -1221,7 +1228,7 @@ research:
       - STR_CHB
       - STR_CASSC
       - STR_MIDTIER_PREREQ
-      - STR_MARINES_STRATEGY
+      - STR_MARINES_AND_DEATHWATCH
   - name: STR_ASSC_CLIP
     cost: 120
     points: 10

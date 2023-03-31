@@ -4882,11 +4882,11 @@
     requiresBuyBaseFunc: [IMPERIUM]
     size: 0.3
     dropoff: 5
-    costBuy: 10000
+    costBuy: 25000
     costSell: 5000
     weight: 25
-    bigSprite: 350
-    floorSprite: 204
+    bigSprite: 846
+    floorSprite: 750
     handSprite: 1984
     bulletSprite: 6
     fireSound: 707
@@ -4895,8 +4895,8 @@
       - STR_RIFLE_CLIP_MC
       - STR_RIFLE_CLIP_AP
       - STR_RIFLE_CLIP_EX
-    accuracySnap: 80
-    accuracyAuto: 66
+    accuracySnap: 90
+    accuracyAuto: 76
     tuSnap: 25
     tuAuto: 40
     battleType: 1
@@ -6800,6 +6800,46 @@
     bulletSpeed: 50
     attraction: 4
     listOrder: 12000
+  - type: STR_AUTO_CANNON_DW #HEAVYBOLTER                12002
+    categories: [STR_CAT_BOLTER, STR_CAT_DEVASTATOR]
+    requiresBuyBaseFunc: [IMPERIUM]
+    requiresBuy:
+      - STR_DEATHWATCH
+    size: 0.3
+    dropoff: 5
+    costBuy: 20500
+    costSell: 10125
+    weight: 40
+    bigSprite: 845
+    floorSprite: 749
+    handSprite: 1960
+    bulletSprite: 6
+    fireSound: 707
+    compatibleAmmo:
+      - STR_AC_AP_AMMO
+      - STR_AC_MC_AMMO
+      - STR_AC_HE_AMMO
+      - STR_AC_I_AMMO
+    accuracyAimed: 0
+    accuracySnap: 60
+    accuracyAuto: 50
+    tuAimed: 0
+    tuSnap: 20
+    tuAuto: 40
+    snapRange: 20
+    autoRange: 20
+    kneelBonus: 133
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    autoShots: 5
+    sprayWaypoints: 2
+    bulletSpeed: 50
+    attraction: 4
+    listOrder: 12002
   - type: STR_AC_AP_AMMO #HEAVYBOLTER                 12010                           ToStun
     categories: [STR_CAT_BOLTER, STR_CAT_DEVASTATOR]
     requiresBuyBaseFunc: [IMPERIUM]
@@ -7515,7 +7555,7 @@
   #  invHeight: 1
   #  armor: 70
   #  listOrder: 11020
-  - type: STR_LASCAN #LASCANON                         2017  amied
+  - type: STR_LASCAN #LASCANON                         12200  amied
     categories: [STR_CAT_LASGUN, STR_CAT_DEVASTATOR]
     size: 0.4
     dropoff: 5
@@ -7540,6 +7580,36 @@
     invWidth: 2
     invHeight: 3
     listOrder: 12200
+    bulletSpeed: 100
+  - type: STR_LASCAN_DW #LASCANON                         12201  amied
+    categories: [STR_CAT_LASGUN, STR_CAT_DEVASTATOR]
+    size: 0.4
+    dropoff: 5
+    requiresBuy:
+      - STR_LASCAN
+      - STR_DEATHWATCH
+    costBuy: 70000
+    costSell: 35000
+    weight: 40
+    bigSprite: 844
+    floorSprite: 751
+    handSprite: 1952
+    bulletSprite: 12
+    fireSound: 742
+    compatibleAmmo:
+      - STR_LASCAN_CLIP
+      - STR_LASCANNON_CLIP_SMALL
+    accuracySnap: 70
+    accuracyAimed: 100
+    tuSnap: 45
+    tuAimed: 80
+    clipSize: 0
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    listOrder: 12201
     bulletSpeed: 100
   - type: AUX_LASCAN_CHAOS #LASCANON                         2017  amied
     categories: [STR_CAT_LASGUN, STR_CAT_DEVASTATOR]
