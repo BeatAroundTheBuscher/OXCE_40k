@@ -461,6 +461,21 @@ missionScripts:
     maxRuns: 1
     varName: finalMissionArbites
 
+  - type: finalMissionDeathwatch
+    missionWeights:
+      0:
+        STR_FINAL_MISSION_DEATHWATCH: 100
+    regionWeights:
+      0:
+        REGION_FINAL_MISSION_DEATHWATCH: 100
+    researchTriggers:
+      STR_DEATHWATCH_BUST: true
+      STR_DEATHWATCH: true
+    useTable: false
+    maxRuns: 1
+    varName: finalMissionDeathwatch
+
+
   - type: finalMissionChaos
     missionWeights:
       0:

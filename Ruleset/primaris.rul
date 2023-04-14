@@ -1022,7 +1022,7 @@ items:
       - STR_CHAPTER_PURITY
     size: 2
     requiresBuyBaseFunc: [IMPERIUM]
-    costBuy: 360000
+    costBuy: 300000
     costSell: 140000
     transferTime: 50
     listOrder: 5459

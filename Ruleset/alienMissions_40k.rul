@@ -831,6 +831,22 @@ alienMissions:
         timer: 0
         objective: true
 
+  - type: STR_FINAL_MISSION_DEATHWATCH
+    retaliationOdds: 0
+    raceWeights:
+      0:
+        STR_NECRON: 100
+    points: 0
+    siteType: STR_DW_FINAL_LANDING
+    spawnZone: 0
+    objective: 2
+    waves:
+      - ufo: STR_DW_FINAL_LANDING
+        count: 1
+        trajectory: P10
+        timer: 0
+        objective: true
+
 #*** Cultist Base Missions ***
   - type: STR_CULTIST_BASE_START
     retaliationOdds: 0

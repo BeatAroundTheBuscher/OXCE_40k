@@ -168,6 +168,15 @@ research:
       - STR_ARBITES
       - STR_COMMANDER_PLUS
     unlockFinalMission: false
+    
+  - name: STR_DEATHWATCH_BUST #cutcscene c3 STR_DEATHWATCH disables STR_CYDONIA_OR_BUST SO MISSION CAN DIFERE
+    cost: 600
+    cutscene: c3
+    points: 60
+    dependencies:
+      - STR_DEATHWATCH
+      - STR_COMMANDER_PLUS
+    unlockFinalMission: false
 
   - name: STR_SECTOID_COMMANDER
     unlocks:
@@ -347,6 +356,7 @@ research:
     getOneFree:
       - STR_PERSONAL_ARMOR
     disables:
+      - STR_CYDONIA_OR_BUST
       - STR_GREYKNIGHTS
       - STR_CHAOS_PATH
     spawnedEvent: STR_DEATHWATCH_CARE_PACKAGE
@@ -387,6 +397,7 @@ research:
     lookup: STR_CHOSEN_TATICAL
     unlocks:
       - STR_MARINES_AND_DEATHWATCH
+      - STR_NOT_PRIMARIS
       - STR_THUNDERHAWKTYPE1
       - STR_STORMHAWKR
       - STR_PERSONAL_ARMOR
@@ -1161,7 +1172,7 @@ research:
     unlocks:
       - STR_HIGHTIER_PREREQ
 
-  - name: STR_DW_HIGHTIER # GREY KNIGHTS chapter hightier
+  - name: STR_DW_HIGHTIER # DEATHWATCH chapter hightier
     cost: 900
     points: 30
     dependencies:
@@ -1228,7 +1239,6 @@ research:
       - STR_CHB
       - STR_CASSC
       - STR_MIDTIER_PREREQ
-      - STR_MARINES_AND_DEATHWATCH
   - name: STR_ASSC_CLIP
     cost: 120
     points: 10

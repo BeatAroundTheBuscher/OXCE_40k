@@ -6477,6 +6477,585 @@ alienDeployments:
     markerName: STR_RIOT_SITE
 
 #*** Final Mission Deployments ***
+  - type: STR_DW_FINAL_LANDING
+    music:
+      - INMYSPIRIT
+    data:
+      - alienRank: 5
+        lowQty: 5
+        highQty: 5 #6
+        dQty: 2 #1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 2
+        highQty: 2 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 6
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 3 #2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 3 #2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    reinforcements:
+      - type: necronReinforcementsFew
+        briefing:
+          palette: 4
+          textOffset: -32
+          title: STR_MONOLITH_REINFORCEMENTS_TITLE
+          desc: STR_MONOLITH_REINFORCEMENTS_DESC
+          background: BACK171.SCR
+          cutscene: ""
+          showCraft: false
+          showTarget: false
+        minTurn: 10
+        maxTurn: 19
+        executionOdds: 30
+        maxRuns: -1 # they just keep coming
+        useSpawnNodes: true
+        spawnNodeRanks: [4] # leader/commander nodes
+        mapBlockFilterType: 0 # all blocks, just go by node placement
+        data:
+          - alienRank: 5
+            lowQty: 1
+            highQty: 1
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 4
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 3
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 6
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 7
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+      - type: necronReinforcementsMany
+        briefing:
+          palette: 4
+          textOffset: -32
+          title: STR_MONOLITH_REINFORCEMENTS_TITLE
+          desc: STR_MONOLITH_REINFORCEMENTS_DESC
+          background: BACK171.SCR
+          cutscene: ""
+          showCraft: false
+          showTarget: false
+        minTurn: 20
+        executionOdds: 50
+        maxRuns: -1 # they just keep coming
+        useSpawnNodes: true
+        spawnNodeRanks: [4] # leader/commander nodes
+        mapBlockFilterType: 0 # all blocks, just go by node placement
+        data:
+          - alienRank: 5
+            lowQty: 2
+            highQty: 2
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 4
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 3
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 6
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 7
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+#    
+    width: 70
+    length: 70
+    height: 9
+    script: DW_FINAL_LANDING_SCRIPT
+    startingCondition: STR_FINAL_MISSION_DW
+    race: STR_NECRON
+    nextStage: STR_DW_FINAL_ENTRACE
+    loseCutscene: loseGame
+    briefing:
+      title: STR_DW_FINAL_LANDING_TITLE
+      desc: STR_DW_FINAL_LANDING_DESC
+      cutscene: c4
+      textOffset: -16
+      palette: 6
+      music: INMYSPIRIT
+      showTarget: false
+    markerIcon: 94
+    markerName: STR_FINAL_TOMB
+    finalDestination: false
+  - type: STR_DW_FINAL_ENTRACE #NECRON
+    data:
+      - alienRank: 5
+        lowQty: 5
+        highQty: 5 #6
+        dQty: 2 #1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 2
+        highQty: 2 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 6
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 3 #2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 3 #2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    reinforcements:
+      - type: necronsAwakeningFew
+        briefing:
+          palette: 4
+          textOffset: -32
+          title: STR_NECRON_REINFORCEMENTS_TITLE
+          desc: STR_NECRON_REINFORCEMENTS_DESC
+          background: BACK172.SCR
+          cutscene: ""
+          showCraft: false
+          showTarget: false
+        minTurn: 15
+        maxTurn: 19
+        executionOdds: 50
+        maxRuns: -1 # they just keep coming
+        useSpawnNodes: true
+        spawnNodeRanks: [4] # leader/commander nodes
+        mapBlockFilterType: 0 # all blocks, just go by node placement
+        data:
+          - alienRank: 5
+            lowQty: 2
+            highQty: 2
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 4
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 3
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 6
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 7
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+      - type: necronsAwakeningMany
+        briefing:
+          palette: 4
+          textOffset: -32
+          title: STR_NECRON_REINFORCEMENTS_TITLE
+          desc: STR_NECRON_REINFORCEMENTS_DESC
+          background: BACK172.SCR
+          cutscene: ""
+          showCraft: false
+          showTarget: false
+        minTurn: 20
+        executionOdds: 100
+        maxRuns: -1 # they just keep coming
+        useSpawnNodes: true
+        spawnNodeRanks: [4] # leader/commander nodes
+        mapBlockFilterType: 0 # all blocks, just go by node placement
+        data:
+          - alienRank: 5
+            lowQty: 3
+            highQty: 3
+            dQty: 2
+            itemSets: [[], [], []]
+          - alienRank: 4
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 3
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 6
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 7
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+    width: 30
+    length: 60
+    height: 7
+    terrains:
+      - TOMB
+    script: DW_FINAL_ENTRACE_SCRIPT
+    race: STR_NECRON
+    briefing:
+      cutscene: NECRONTOMB
+      desc: DW_FINAL_ENTRACE_DESCRIPTION
+      music: gmstory2
+      showCraft: true
+      showTarget: false
+      background: BACK172.SCR
+      title: STR_DW_FINAL_ENTRACE
+      textOffset: -16
+      palette: 4
+    nextStage: STR_DW_FINAL_ASSAULT
+    loseCutscene: loseGame
+    shade: 7
+    cheatTurn: 10
+  - type: STR_DW_FINAL_ASSAULT #NECRON
+    data:
+      - alienRank: 5
+        lowQty: 5
+        highQty: 5 #6
+        dQty: 2 #1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 2
+        highQty: 2 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 6
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 3 #2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 3 #2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    reinforcements:
+      - type: necronsAwakeningFew
+        briefing:
+          palette: 4
+          textOffset: -32
+          title: STR_NECRON_REINFORCEMENTS_TITLE
+          desc: STR_NECRON_REINFORCEMENTS_DESC
+          background: BACK172.SCR
+          cutscene: ""
+          showCraft: false
+          showTarget: false
+        minTurn: 15
+        maxTurn: 19
+        executionOdds: 50
+        maxRuns: -1 # they just keep coming
+        useSpawnNodes: true
+        spawnNodeRanks: [4] # leader/commander nodes
+        mapBlockFilterType: 0 # all blocks, just go by node placement
+        data:
+          - alienRank: 5
+            lowQty: 2
+            highQty: 2
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 4
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 3
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 6
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 7
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+      - type: necronsAwakeningMany
+        briefing:
+          palette: 4
+          textOffset: -32
+          title: STR_NECRON_REINFORCEMENTS_TITLE
+          desc: STR_NECRON_REINFORCEMENTS_DESC
+          background: BACK172.SCR
+          cutscene: ""
+          showCraft: false
+          showTarget: false
+        minTurn: 20
+        executionOdds: 100
+        maxRuns: -1 # they just keep coming
+        useSpawnNodes: true
+        spawnNodeRanks: [4] # leader/commander nodes
+        mapBlockFilterType: 0 # all blocks, just go by node placement
+        data:
+          - alienRank: 5
+            lowQty: 3
+            highQty: 3
+            dQty: 2
+            itemSets: [[], [], []]
+          - alienRank: 4
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 3
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 6
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+          - alienRank: 7
+            lowQty: 0
+            highQty: 0
+            dQty: 1
+            itemSets: [[], [], []]
+    width: 30
+    length: 60
+    height: 7
+    terrains:
+      - TOMB
+    script: DW_FINAL_ASSAULT_SCRIPT
+    race: STR_NECRON
+    briefing:
+      title: STR_DW_FINAL_ASSAULT_TITLE
+      desc: STR_DW_FINAL_ASSAULT_DESC
+      textOffset: -16
+      palette: 6
+      background: BACK172.SCR
+      music: INMYSPIRIT
+      showTarget: false
+    shade: 7
+    cheatTurn: 10
+    winCutscene: winGame
+    loseCutscene: loseGame
+    finalDestination: false # used for the hangar mission, not necessary since this is spawned as a base
 
   - type: STR_PALACE_LANDING_ARBITES
     music:
@@ -6731,7 +7310,7 @@ alienDeployments:
       music: INMYSPIRIT
       showTarget: false
     markerIcon: 58
-    markerName: STR_FINAL_BASE
+    markerName: STR_INQ_BASE
     finalDestination: false # used for the hangar mission, not necessary since this is spawned as a base
 
   - type: STR_CHAOS_FINAL_ASSAULT                     # RANK0 # RANK1 STR_INSIDE_ENVIRO

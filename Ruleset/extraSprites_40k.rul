@@ -557,6 +557,10 @@
     singleImage: true
     files:
       0: Resources/Necron/NEC05.png
+  - type: NECRON6.SPK #FOES INV
+    singleImage: true
+    files:
+      0: Resources/Necron/NEC06.png
   - type: ELDAR1.SPK #FOES INV
     singleImage: true
     files:
@@ -1077,6 +1081,7 @@
       9: Resources/DECALS/SPICONBLESS2.png
       10: Resources/DECALS/SPICONSMARK.png
       11: Resources/DECALS/SPICONSPELL.png
+      12: Resources/DECALS/SPICONFANG.png
   - type: INTERWIN.DAT # Interception window
     singleImage: true
     width: 160
@@ -1698,6 +1703,13 @@
     height: 840
     files:
       0: Resources/Necron/necron5.png
+  - type: NECRONDR6.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Necron/necron6.png
 #GENE DR
   - type: GENEDR1.PCK #GENESTELLER CULT
     subX: 32
@@ -2949,6 +2961,7 @@
       708: Resources/Necron/708.png
       709: Resources/Necron/709.png
       710: Resources/Necron/710.png
+      711: Resources/Necron/711.png
       750: Resources/GENE/750.png
       751: Resources/GENE/751.png
       752: Resources/GENE/752.png
@@ -3014,6 +3027,7 @@
       865: Resources/dread/DWATCH/865.png
       866: Resources/CAPTAIN/DWATCH/866.png
       867: Resources/CAPTAIN/DWATCH/867.png
+      868: Resources/Thammer/868.png
 #900-999 CHAPTER CHANGE
       1400: Resources_IG/Bigobs/traitor_chimera_multilaser.png
 #FLOOR
@@ -3478,6 +3492,7 @@
       749: Resources/Heavybolter/floorob_749.png
       750: Resources/Bolter/floorob_750.png
       751: Resources/Lascan/floorob_751.png
+      752: Resources/Necron/floorob_752.png
 #900-999 CHAPTER CHANGE
 # Traitor guard chimera corpses
       1400: Resources_IG/Floorobs/floorob_traitor_chimera_turret_0.png
@@ -3778,6 +3793,15 @@
       727: Resources/Basebits/basebits727.png
       728: Resources/Basebits/basebits728.png
       729: Resources/Basebits/basebits729.png
+      730: Resources/Basebits/basebits730.png
+      731: Resources/Basebits/basebits731.png
+      732: Resources/Basebits/basebits732.png
+      733: Resources/Basebits/basebits733.png
+      734: Resources/Basebits/basebits734.png
+      735: Resources/Basebits/basebits735.png
+      736: Resources/Basebits/basebits736.png
+      737: Resources/Basebits/basebits737.png
+      738: Resources/Basebits/basebits738.png
 #Facility2
       800: Resources/CW/CANbase.png
       801: Resources/CW/Tbase.png
@@ -3934,7 +3958,18 @@
       1819: Resources/Xiphon/GK/Xiphon_base.png              #CHAMBER 8
       1820: Resources/Xiphon/ULTRAMARINE/Xiphon_base.png     #CHAMBER 9
       1821: Resources/Xiphon/GK/Xiphon_base_2.png            #CHAMBER 10
-#
+#  DEATHWATCH 
+      1833: Resources/Thunderhawk/DW/Thunderhawk_base.png          #DEATHWATCH  0
+      1834: Resources/Thunderhawk/DW/Thunderhawk_base.png           #DEATHWATCH  1
+      1835: Resources/Impulsor/DW/impulsor_base.png          #DEATHWATCH  2
+      1836: Resources/Impulsor/DW/repulsor_base.png          #DEATHWATCH  3
+      1837: Resources/Impulsor/DW/repulsord_base.png          #DEATHWATCH  4
+      1838: Resources/Impulsor/DW/parmy_base.png              #DEATHWATCH  5
+      1839: Resources/Impulsor/DW/repulsor_base.png          #DEATHWATCH  6
+      1840: Resources/Impulsor/DW/repulsor_base.png          #DEATHWATCH  7
+      1841: Resources/Impulsor/DW/repulsor_base.png          #DEATHWATCH  8
+      1842: Resources/Impulsor/DW/impulsor_base.png          #DEATHWATCH  9
+#ARBITES
       1911: Resources/ARMYPD/Army_base.png           #ARBITES 0
       1912: Resources/ARMYPD/Army_base.png           #ARBITES 1
       1913: Resources/Hidra/Hidra_base.png           #ARBITES 2
@@ -4130,6 +4165,30 @@
       1798: Resources/Xiphon/Xiphon_dogfight.png                     #CHAMBER 9
       1799: Resources/Xiphon/Xiphon_dogfight.png                     #CHAMBER 10
 #
+#  DEATHWATCH
+      1800: Resources/Thunderhawk/Thunderhawk_minimised.gif                    #DEATHWATCH ADDON 0 < - sprite index
+      1801: Resources/Thunderhawk/Thunderhawk_minimised.gif                    #DEATHWATCH ADDON 1 < - sprite index
+      1802: Resources/Impulsor/impulsor_minimised.gif                     #DEATHWATCH ADDON 2
+      1803: Resources/Impulsor/repulsor_minimised.gif                    #DEATHWATCH ADDON 3
+      1804: Resources/Impulsor/repulsord_minimised.gif                      #DEATHWATCH ADDON 4
+      1805: Resources/Impulsor/repulsor_minimised.gif                      #DEATHWATCH ADDON 5
+      1806: Resources/Impulsor/repulsor_minimised.gif                      #DEATHWATCH ADDON 6
+      1807: Resources/Impulsor/repulsor_minimised.gif                     #DEATHWATCH ADDON 7
+      1808: Resources/Impulsor/repulsor_minimised.gif                    #DEATHWATCH ADDON 8
+      1809: Resources/Impulsor/repulsor_minimised.gif                    #DEATHWATCH ADDON 9      
+# PLUS 11 DOG FIGHT  DEATHWATCH    
+      1811: Resources/Thunderhawk/Thunderhawk_dogfight.gif                 #DEATHWATCH ADDON 0      
+      1812: Resources/Thunderhawk/Thunderhawk_dogfight.gif                 #DEATHWATCH ADDON 1   
+      1813: Resources/Impulsor/impulsor_dogfight.gif                   #DEATHWATCH ADDON 2       
+      1814: Resources/Impulsor/repulsor_dogfight.gif                     #DEATHWATCH ADDON 3
+      1815: Resources/Impulsor/repulsord_dogfight.gif                    #DEATHWATCH ADDON 4 
+      1816: Resources/Impulsor/repulsor_dogfight.gif             #DEATHWATCH ADDON 5  
+      1817: Resources/Impulsor/repulsor_dogfight.gif                   #DEATHWATCH ADDON 6  
+      1818: Resources/Impulsor/repulsor_dogfight.gif               #DEATHWATCH ADDON 7  
+      1819: Resources/Impulsor/repulsor_dogfight.gif                   #DEATHWATCH ADDON 8
+      1820: Resources/Impulsor/repulsor_dogfight.gif             #DEATHWATCH ADDON 9
+#
+# ARBITES
       1878: Resources/ARMYPD/Army_minimised.png                          #ARBITES 0
       1879: Resources/ARMYPD/Army_minimised.png                          #ARBITES 1
       1880: Resources/Hidra/Hidra_minimised.png                          #ARBITES 2
@@ -5918,6 +5977,12 @@
     height: 200
     files:
       0: Resources/Basebits/050.png
+  - type: 051.SPK #base2
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Basebits/051.png
   - type: C00.SPK #HWP
     singleImage: true
     width: 320
@@ -6134,6 +6199,24 @@
     height: 200
     files:
       0: Resources/CODEX/WS.png
+  - type: SW.SPK #HERALDRY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/SW.png
+  - type: DA.SPK #HERALDRY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/DA.png
+  - type: CF.SPK #HERALDRY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/CF.png
   - type: SALA.SPK #HERALDRY
     singleImage: true
     width: 320

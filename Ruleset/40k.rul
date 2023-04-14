@@ -1514,6 +1514,35 @@
     moveSound: 845
     energyRecovery: 40
     livingWeapon: true
+  - type: STR_NECRON_ARCHITECT #STR_NECRON_LYCHGUARD_ARMOR                        RANK 5 weapons done
+    race: STR_NECRON
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 150
+      stamina: 150
+      health: 200
+      bravery: 100
+      reactions: 65
+      firing: 100
+      throwing: 80
+      strength: 40
+      psiStrength: 200
+      psiSkill: 0
+      melee: 120
+    armor: STR_NECRON_ARCHITECT_ARMOR
+    standHeight: 20
+    kneelHeight: 15
+    value: 30
+    deathSound: [289, 290, 291]
+    intelligence: 6
+    aggression: 1
+    spotter: 1
+    energyRecovery: 40
+#    spawnUnit: STR_NECRON_IMORTAL
+    builtInWeaponSets:
+      - - STR_HYPERPHASESWORD
+      - - STR_HYPERPHASESWORD
+      - - STR_HYPERPHASESWORD
 #    ORK
   - type: STR_GRETCHIN     # STR_GROTS_ARMOR                       RANK 5 weapons done
     race: STR_ORK
@@ -10698,6 +10727,45 @@ armors:
       - INV_NULL_3X3
 
 #    NECRON
+  - type: STR_NECRON_ARCHITECT_ARMOR        #NECRON WARRIOR
+    tags:
+      #ARMOR_ENERGY_SHIELD_CAPACITY: 80
+      #ARMOR_ENERGY_SHIELD_PER_TURN: 10
+      #ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: 10
+      ARMOR_ENERGY_SHIELD_DECAY: 12
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+    visibilityAtDay: 40
+    visibilityAtDark: 40
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    zombiImmune: true
+    spriteSheet: NECRONDR6.PCK
+    spriteInv: NECRON6.SPK
+    corpseBattle:
+      - STR_NECRON_ARCHITECT_CORPSE
+    frontArmor: 170
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 70
+    drawingRoutine: 0
+    damageModifier: #NECRON ARMOR
+      - 1.0 #none
+      - 0.9 #AP
+      - 0.4 #FLAMES
+      - 1.0 #HE
+      - 1.1 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    builtInWeapons:
+      - INV_NULL_3X3
   - type: STR_NECRON_WARRIOR_ARMOR        #NECRON WARRIOR
     visibilityAtDay: 40
     visibilityAtDark: 40
@@ -13198,6 +13266,32 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_NEW_FIGHTER_TRANSPORTER
       - STR_PRIMARIS
+    space: 30
+    time: 14000
+    cost: 500000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 650
+      STR_UFO_POWER_SOURCE: 1
+      STR_UFO_NAVIGATION: 1
+  - name: STR_REPULSOR_DW
+    category: STR_CRAFT
+    requires:
+      - STR_DW_PRIMARIS
+      - STR_NEW_FIGHTER_CRAFT
+      - STR_DEATHWATCH
+    space: 30
+    time: 14000
+    cost: 500000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 650
+      STR_UFO_POWER_SOURCE: 1
+      STR_UFO_NAVIGATION: 1
+  - name: STR_REPULSOR_T_DW
+    category: STR_CRAFT
+    requires:
+      - STR_CHAPTER_PURITY
+      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_DW_PRIMARIS
     space: 30
     time: 14000
     cost: 500000

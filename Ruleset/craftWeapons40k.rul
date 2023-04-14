@@ -82,19 +82,19 @@ craftWeapons:
     clip: STR_AVALANCHE_MISSILES
     projectileType: 1
     projectileSpeed: 8
-  - type: STR_CANNON_UC              #R 30       A 100      D10      Acc 40
+  - type: STR_CANNON_UC              #R 30       A 50      D20      Acc 40
     sprite: 2
     sound: 4
-    damage: 10
+    damage: 20
     range: 30
     accuracy: 40
-    reloadCautious: 4
-    reloadStandard: 4
-    reloadAggressive: 4
-    ammoMax: 100
+    reloadCautious: 8
+    reloadStandard: 8
+    reloadAggressive: 8
+    ammoMax: 50
     rearmRate: 100
     launcher: STR_CANNON
-    clip: STR_CANNON_ROUNDS_X50
+    clip: STR_HWP_CANNON_SHELLS
     projectileType: 2
     projectileSpeed: 8
     bulletSaving: true
@@ -164,7 +164,7 @@ craftWeapons:
     ammoMax: 50
     rearmRate: 100
     launcher: STR_ASSCANNON
-    clip: STR_CANNON_ROUNDS_X50
+    clip: STR_ASSC_CLIP
     projectileType: 2
     projectileSpeed: 8
     bulletSaving: true
@@ -315,6 +315,7 @@ craftWeapons:
       shieldRechargeInGeoscape: 10
       shieldBleedThrough: 100
 items: #craft Related
+  - delete: STR_CANNON_ROUNDS_X50 
   - type: STR_THUNDER_CANNON              #S 3
     categories: [ STR_CRAFT_WEAPONS]
     requires:
@@ -373,15 +374,15 @@ items: #craft Related
     costSell: 22500
     transferTime: 48
     listOrder: 1300
-  - type: STR_CANNON_ROUNDS_X50           #S 0.1
-    categories: [ STR_CRAFT_WEAPONS]
-    requiresBuyBaseFunc: [HANGAR]
-    size: 0.1
-    costBuy: 1240
-    costSell: 1012
-    transferTime: 96
-    clipSize: 50
-    listOrder: 1350
+#  - type: STR_CANNON_ROUNDS_X50           #S 0.1
+#    categories: [ STR_CRAFT_WEAPONS]
+#    requiresBuyBaseFunc: [HANGAR]
+#    size: 0.1
+#    costBuy: 1240
+#    costSell: 1012
+#    transferTime: 96
+#    clipSize: 50
+#    listOrder: 1350
   - type: STR_FUSION_BALL_LAUNCHER        #S 2
     categories: [ STR_CRAFT_WEAPONS]
     size: 2.0

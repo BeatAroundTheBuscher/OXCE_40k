@@ -2244,6 +2244,13 @@ ufopaedia:
     section: STR_BASE_FACILITIES
     image_id: 01.SPK
     text: STR_LIVING_QUARTERS_UFOPEDIA
+  - id: STR_DW_QUARTERS #facility
+    type_id: 16
+    section: STR_BASE_FACILITIES
+    image_id: 051.SPK
+    text: STR_DW_QUARTERS_UFOPEDIA
+    requires:
+      - STR_DEATHWATCH
   - id: STR_LABORATORY #facility
     type_id: 16
     section: STR_BASE_FACILITIES
@@ -4652,6 +4659,24 @@ ufopaedia:
     image_id: WS.SPK
     text: STR_WS_INFO
     listOrder: 45203
+  - id: STR_SW           #45204
+    type_id: 10
+    section: STR_HERALDRY
+    image_id: SW.SPK
+    text: STR_SW_INFO
+    listOrder: 45204
+  - id: STR_DA          #45205
+    type_id: 10
+    section: STR_HERALDRY
+    image_id: DA.SPK
+    text: STR_DA_INFO
+    listOrder: 45205
+  - id: STR_CF           #45206
+    type_id: 10
+    section: STR_HERALDRY
+    image_id: CF.SPK
+    text: STR_CF_INFO
+    listOrder: 45206
   - id: STR_HELP11         #HELP 45300 Contributors
     type_id: 10
     section: STR_HERALDRY

@@ -1,4 +1,80 @@
 mapScripts:
+
+  - type: DW_FINAL_LANDING_SCRIPT
+    commands:
+    - type: addCraft
+    - type: addUFO
+      executions: 1
+      UFOName: STR_DOOMSDAY_MONOLITH
+    - type: addUFO
+      executions: 1
+      UFOName: STR_DOOMSDAY_MONOLITH
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: fillArea
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 15, 16]
+      freqs: [8, 8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 3, 3, 3]
+      maxUses: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 2, 1, 1, 1, 1]
+    - type: fillArea
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  - type: DW_FINAL_ENTRACE_SCRIPT
+    commands:
+    - type: addBlock #entrace
+      blocks: [11, 12]
+      rects:
+        - [1,0,1,1]
+      executions: 1
+      maxUses: [1]
+      size: [1, 1]
+    - type: addBlock #entrace LEFT
+      blocks: [4, 5, 6]
+      rects:
+        - [0,0,1,1]
+      executions: 1
+      maxUses: [1]
+      size: [1, 1]
+    - type: addBlock #entrace RIGHT
+      blocks: [4, 7]
+      rects:
+        - [2,0,1,1]
+      executions: 1
+      maxUses: [1]
+      size: [1, 1]
+    - type: addBlock #2x1 Chamber
+      blocks: [13, 14, 15]
+      rects:
+        - [2,1,1,2]
+      executions: 1
+      maxUses: [1]
+      size: [1, 2]
+    - type: addBlock #2x2 Chamber
+      size: [2, 2]
+      blocks: [0, 1, 2, 3]
+      rects:
+        - [0, 1, 2, 2]
+    - type: addBlock
+      size: [3, 3]
+      blocks: [18]
+      rects:
+        - [0, 3, 3, 3]
+    - type: fillArea
+      blocks: [4, 5, 6]
+      freqs: [1, 1, 1]
+  - type: DW_FINAL_ASSAULT_SCRIPT
+    commands:
+    - type: addBlock
+      size: [3, 3]
+      blocks: [17]
+      rects:
+        - [0, 0, 3, 3]
+    - type: addBlock
+      size: [3, 3]
+      blocks: [16]
+      rects:
+        - [0, 3, 3, 3]
+    - type: fillArea
+
   - type: HIVE_SCRIPT
     commands:
     - type: addBlock #entrace
@@ -82,6 +158,7 @@ mapScripts:
     - type: fillArea
       blocks: [4, 5, 6]
       freqs: [1, 1, 1]
+
 
   - type: XBASE
     commands:

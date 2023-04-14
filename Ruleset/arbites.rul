@@ -1776,6 +1776,7 @@ items:
       - STR_ARBITES
     requiresBuyBaseFunc: [IMPERIUM]
     size: 2
+    costBuy: 300000
     costSell: 140000
     transferTime: 20
     listOrder: 6650

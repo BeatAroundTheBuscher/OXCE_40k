@@ -509,6 +509,15 @@
     armor: 5
     recover: false
     hiddenOnMinimap: true
+  - type: STR_ARCHITECT_SPAWNER
+    spawnUnit: STR_NECRON_ARCHITECT
+    spawnUnitFaction: 1 # 1: Enemy faction
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 5
+    recover: false
+    hiddenOnMinimap: true
 #---ELDAR spawn-----------------------------------------------------
   - type: STR_ELDAR_WS_SPAWNER
     spawnUnit: STR_ELDAR_TURRET
@@ -1642,7 +1651,7 @@
     attraction: 0
   - type: AUX_SHIELD_DW        #AUX T Shield
     weight: 5
-    bigSprite: 232
+    bigSprite: 868
     floorSprite: 113
     hitSound: 0
     meleeAnimation: 0
@@ -5186,6 +5195,27 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
+  - type: STR_BLOOD_GAUNTLET_PLUS
+    weight: 0
+    bigSprite: 99
+    meleeHitSound: 48
+    meleeAnimation: 76
+    power: 50
+    damageType: 7
+    accuracyMelee: 90
+    meleeMultiplier:
+      melee: 1.0
+    tuMelee: 12
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    experienceTrainingMode: 13
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+    specialUseEmptyHand: true
+    specialIconSprite: 12
 
   - type: STR_STUN_ROD #           3004
     categories: [STR_CAT_MELEE, STR_CAT_TACTICAL]
@@ -8337,10 +8367,9 @@
     clipSize: 4
     battleType: 2
     listOrder: 2310
-  - type: STR_HWP_CANNON_SHELLS #HWP   Ammo   BIKE AMMOSistem  6610          Tostun
-    categories: [STR_CAT_AUXILIARY]
-    requiresBuy:
-      - STR_MARINES_STRATEGY
+  - type: STR_HWP_CANNON_SHELLS #HWP   Ammo   BIKE AMMOSistem  1350          Tostun
+    categories: [ STR_CRAFT_WEAPONS, STR_CAT_AUXILIARY]
+    requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 10000
     costSell: 100
@@ -8351,7 +8380,7 @@
     handSprite: 816
     hitSound: 13
     hitAnimation: 26
-    power: 60
+    power: 80
     damageAlter: #DA BOLTER  DOUBLE SHOT
       RandomType: 6
       ToArmorPre: 0.1
@@ -8365,7 +8394,7 @@
     battleType: 2
     invWidth: 2
     invHeight: 2
-    listOrder: 6610
+    listOrder: 1350
   - type: AUX_TANK_CANNON #          AUX for  BIKE ARMOR    AUX
     categories: [STR_CAT_AUXILIARY]
     weight: 1
@@ -10776,6 +10805,18 @@
     battleType: 11
     armor: 60
     listOrder: 19964
+  - type: STR_NECRON_ARCHITECT_CORPSE            #NECRON 19967
+    size: 0.3
+    costSell: 20000
+    weight: 30
+    bigSprite: 711
+    floorSprite: 752
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 100
+    battleType: 11
+    armor: 60
+    listOrder: 19967
   - type: STR_DESTROYER_CORPSE                   #NECRON 19965
     size: 1
     costSell: 20000

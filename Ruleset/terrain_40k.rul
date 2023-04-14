@@ -458,6 +458,157 @@
     provideBaseFunc: [CHAOS]
     mapName: XBASE_49
     listOrder: 850
+  - type: STR_DW_QUARTERS_ULTRA
+    placeSound: 98
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_DEATHWATCH
+    ufopediaType: STR_LIVING_QUARTERS
+    provideBaseFunc: [IMPERIUM, ULTRA]
+    spriteShape: 1
+    spriteFacility: 730
+    buildCost: 200000
+    buildTime: 10
+    monthlyCost: 5000
+    personnel: 10
+    rightClickActionType: 6
+    mapName: XBASE_65
+  - type: STR_DW_QUARTERS_IF
+    placeSound: 98
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_DEATHWATCH
+    ufopediaType: STR_LIVING_QUARTERS
+    provideBaseFunc: [IMPERIUM, IF]
+    spriteShape: 1
+    spriteFacility: 731
+    buildCost: 200000
+    buildTime: 10
+    monthlyCost: 5000
+    personnel: 10
+    rightClickActionType: 6
+    mapName: XBASE_65
+  - type: STR_DW_QUARTERS_BA
+    placeSound: 98
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_DEATHWATCH
+    ufopediaType: STR_LIVING_QUARTERS
+    provideBaseFunc: [IMPERIUM, BA]
+    spriteShape: 1
+    spriteFacility: 732
+    buildCost: 200000
+    buildTime: 10
+    monthlyCost: 5000
+    personnel: 10
+    rightClickActionType: 6
+    mapName: XBASE_65
+  - type: STR_DW_QUARTERS_SALA
+    placeSound: 98
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_DEATHWATCH
+    ufopediaType: STR_LIVING_QUARTERS
+    provideBaseFunc: [IMPERIUM, SALA]
+    spriteShape: 1
+    spriteFacility: 733
+    buildCost: 200000
+    buildTime: 10
+    monthlyCost: 5000
+    personnel: 10
+    rightClickActionType: 6
+    mapName: XBASE_65
+  - type: STR_DW_QUARTERS_BT
+    placeSound: 98
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_DEATHWATCH
+    ufopediaType: STR_LIVING_QUARTERS
+    provideBaseFunc: [IMPERIUM, BT]
+    spriteShape: 1
+    spriteFacility: 734
+    buildCost: 200000
+    buildTime: 10
+    monthlyCost: 5000
+    personnel: 10
+    rightClickActionType: 6
+    mapName: XBASE_65
+  - type: STR_DW_QUARTERS_WS
+    placeSound: 98
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_DEATHWATCH
+    ufopediaType: STR_LIVING_QUARTERS
+    provideBaseFunc: [IMPERIUM, WS]
+    spriteShape: 1
+    spriteFacility: 735
+    buildCost: 200000
+    buildTime: 10
+    monthlyCost: 5000
+    personnel: 10
+    rightClickActionType: 6
+    mapName: XBASE_65
+  - type: STR_DW_QUARTERS_SW
+    placeSound: 98
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_DEATHWATCH
+    ufopediaType: STR_LIVING_QUARTERS
+    provideBaseFunc: [IMPERIUM, SW]
+    spriteShape: 1
+    spriteFacility: 736
+    buildCost: 200000
+    buildTime: 10
+    monthlyCost: 5000
+    personnel: 10
+    rightClickActionType: 6
+    mapName: XBASE_65
+  - type: STR_DW_QUARTERS_DA
+    placeSound: 98
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_DEATHWATCH
+    ufopediaType: STR_LIVING_QUARTERS
+    provideBaseFunc: [IMPERIUM, DA]
+    spriteShape: 1
+    spriteFacility: 737
+    buildCost: 200000
+    buildTime: 10
+    monthlyCost: 5000
+    personnel: 10
+    rightClickActionType: 6
+    mapName: XBASE_65
+  - type: STR_DW_QUARTERS_CF
+    placeSound: 98
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_DEATHWATCH
+    ufopediaType: STR_LIVING_QUARTERS
+    provideBaseFunc: [IMPERIUM, CF]
+    spriteShape: 1
+    spriteFacility: 738
+    buildCost: 200000
+    buildTime: 10
+    monthlyCost: 5000
+    personnel: 10
+    rightClickActionType: 6
+    mapName: XBASE_65
+  - type: STR_DW_QUARTERS # PLACEHOLDER
+    placeSound: 98
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_DEATHWATCH
+      - STR_GENERALLOCK
+    ufopediaType: STR_LIVING_QUARTERS
+    provideBaseFunc: [IMPERIUM, ULTRA]
+    spriteShape: 1
+    spriteFacility: 730
+    buildCost: 200000
+    buildTime: 10
+    monthlyCost: 5000
+    personnel: 10
+    rightClickActionType: 6
+    mapName: XBASE_65
   - type: STR_ACCESS_OUTP
     placeSound: 98
     spriteShape: 0
@@ -771,6 +922,7 @@
     storage: 50
     monthlyCost: 60000
     trainingRooms: 50
+    rightClickActionType: 4
     provideBaseFunc: [TRAIN, IMPERIUM]
     mapName: XBASE_59
     storageTiles:
@@ -802,6 +954,7 @@
     personnel: 30
     storage: 100
     monthlyCost: 20000
+    rightClickActionType: 7
     storageTiles:
             - [23, 13, 1]
             - [12, 12, 1]
@@ -1482,17 +1635,29 @@ terrains:
         width: 10
         length: 20
       - name: TOMB16
-        width: 10
-        length: 10
-        groups: [0, 1]
+        width: 30
+        length: 30
+        items:
+          STR_MONOS_SPAWNER:
+            - [5, 1, 3]
+            - [5, 1, 5]
+          STR_MONOW_SPAWNER:
+            - [22, 1, 5]
+            - [22, 1, 3]
+        fuseTimers:
+          STR_MONOS_SPAWNER: [0, 0]
+          STR_MONOW_SPAWNER: [0, 0]
       - name: TOMB17
-        width: 10
-        length: 10
-        groups: [0, 1]
+        width: 30
+        length: 30
+        items:
+          STR_ARCHITECT_SPAWNER:
+            - [15, 15, 3]
+        fuseTimers:
+          STR_ARCHITECT_SPAWNER: [0, 0]
       - name: TOMB18
-        width: 10
-        length: 10
-        groups: [0, 1]
+        width: 30
+        length: 30
       - name: TOMB19
         width: 30
         length: 30

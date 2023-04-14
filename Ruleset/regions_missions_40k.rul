@@ -8,6 +8,11 @@ regions:
     missionZones:
       -
         - [309, 327, -8, 10] # CHAOSFinal mission box
+        
+  - type: REGION_FINAL_MISSION_DEATHWATCH
+    missionZones:
+      -
+        - [309, 327, -8, 10] # CHAOSFinal mission box
 
   - type: REGION_HULK_SITES
     missionZones:
