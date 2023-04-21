@@ -6661,7 +6661,7 @@ alienDeployments:
     nextStage: STR_DW_FINAL_ENTRACE
     loseCutscene: loseGame
     briefing:
-      title: STR_DW_FINAL_LANDING_TITLE
+      title: STR_DW_FINAL_LANDING
       desc: STR_DW_FINAL_LANDING_DESC
       cutscene: c4
       textOffset: -16
@@ -6852,7 +6852,7 @@ alienDeployments:
     race: STR_NECRON
     briefing:
       cutscene: NECRONTOMB
-      desc: DW_FINAL_ENTRACE_DESCRIPTION
+      desc: STR_DW_FINAL_ENTRACE_DESCRIPTION
       music: gmstory2
       showCraft: true
       showTarget: false
@@ -7044,7 +7044,7 @@ alienDeployments:
     script: DW_FINAL_ASSAULT_SCRIPT
     race: STR_NECRON
     briefing:
-      title: STR_DW_FINAL_ASSAULT_TITLE
+      title: STR_DW_FINAL_ASSAULT
       desc: STR_DW_FINAL_ASSAULT_DESC
       textOffset: -16
       palette: 6

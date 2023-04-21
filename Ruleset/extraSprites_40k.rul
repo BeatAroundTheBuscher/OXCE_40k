@@ -2274,7 +2274,75 @@
     subX: 32
     subY: 40
     files:
-      0: Resources/FOES/battlesprite/cultist2.png
+      0: Resources/FOES/battlesprite/cultist2.png    
+#     
+  - type: MKXDWTACZOMBIE.PCK  #MKX                                           ZOMBIESSSSSSSSSSSSS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Zombies/DWATCH/MKXTACDWZ.png
+  - type: MKXDWPHBZOMBIE.PCK  #MKX                                           ZOMBIESSSSSSSSSSSSS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Zombies/DWATCH/MXPHBDWZ.png
+  - type: MKXDWINCZOMBIE.PCK  #MKX                                           ZOMBIESSSSSSSSSSSSS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Zombies/DWATCH/MXINCDWZ.png
+  - type: MKXDWGRVZOMBIE.PCK  #MKX                                           ZOMBIESSSSSSSSSSSSS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Zombies/DWATCH/MXGRVDWZ.png
+  - type: TERMINATORDWZOMBIE.PCK  #TER                                     ZOMBIESSSSSSSSSSSSS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Zombies/DWATCH/TERDWZ.png
+  - type: MK7DWZOMBIE.PCK  #MK7                                            ZOMBIESSSSSSSSSSSSS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Zombies/DWATCH/MK7DWZ.png
+#
+  - type: TACDWZ.SPK        #MKX                                           ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/DW/TATICALZ.PNG
+  - type: TERDWZ.SPK        #MKX                                           ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/DW/TERMINATORZ.PNG
+  - type: GRVDWZ.SPK        #MKX                                           ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/DW/GRVDWZ.PNG
+  - type: INCDWZ.SPK        #MKX                                           ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/DW/INCDWZ.PNG
+  - type: MKXDWZ.SPK        #MKX                                           ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/DW/MKXTACDWZ.PNG
+  - type: PHBDWZ.SPK        #MKX                                           ZOMBIESSSSSSSSSSSSS
+    singleImage: true
+    files:
+      0: Resources/LAYER/DW/PHBDWZ.PNG
 #MISC
   - type: SMOKE.PCK # normal HIT ANIMATION
     width: 320
@@ -3028,6 +3096,9 @@
       866: Resources/CAPTAIN/DWATCH/866.png
       867: Resources/CAPTAIN/DWATCH/867.png
       868: Resources/Thammer/868.png
+      869: Resources/MKX-ARMOR/DWATCH/869.png
+      870: Resources/MKX-ARMOR/DWATCH/870.png
+      871: Resources/MKX-ARMOR/DWATCH/871.png
 #900-999 CHAPTER CHANGE
       1400: Resources_IG/Bigobs/traitor_chimera_multilaser.png
 #FLOOR
@@ -3493,6 +3564,11 @@
       750: Resources/Bolter/floorob_750.png
       751: Resources/Lascan/floorob_751.png
       752: Resources/Necron/floorob_752.png
+      753: Resources/MKX-ARMOR/DWATCH/floorob_753.png     #DW MKX
+      754: Resources/MKX-ARMOR/DWATCH/floorob_754.png     #DW MKX
+      755: Resources/MKX-ARMOR/DWATCH/floorob_755.png     #DW MKX
+      756: Resources/Zombies/DWATCH/floorob_756.png     #MK7
+      757: Resources/Zombies/DWATCH/floorob_757.png     #TER
 #900-999 CHAPTER CHANGE
 # Traitor guard chimera corpses
       1400: Resources_IG/Floorobs/floorob_traitor_chimera_turret_0.png

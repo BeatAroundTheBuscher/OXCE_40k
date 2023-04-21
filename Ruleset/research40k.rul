@@ -1,4 +1,5 @@
 research:
+  - delete: STR_NEW_FIGHTER_TRANSPORTER
   - delete: STR_LASER_PISTOL
   - delete: STR_LASER_RIFLE
 #---FACTIONS------------------------------------------------------
@@ -607,6 +608,24 @@ research:
 
 
 #*** armors ***
+  # DREAD
+  - name: STR_DREAD_R
+    cost: 180
+    points: 20
+    dependencies:
+      - STR_MEDI_KIT_PREREQ
+      - STR_MOTION_SCANNER
+      - STR_LASER_CANNON
+      - STR_MARINES_AND_DEATHWATCH
+  - name: STR_DREAD_R_GK
+    cost: 180
+    points: 20
+    dependencies:
+      - STR_MEDI_KIT_PREREQ
+      - STR_MOTION_SCANNER
+      - STR_LASER_CANNON
+      - STR_GREYKNIGHTS
+
   # marines
   - name: STR_SCOUTH_RESEARCH
     cost: 180
@@ -940,7 +959,20 @@ research:
     dependencies:
       - STR_UFO_CONSTRUCTION
       - STR_GREYKNIGHTS
+  - name: STR_STORMRAVEN_DW #Stormraven
+    dependencies:
+      - STR_UFO_CONSTRUCTION
+      - STR_DEATHWATCH
+    getOneFree:
+      - STR_NEW_FIGHTER_CRAFT
 #*** crafts ***
+  - name: STR_NEW_FIGHTER_TRANSPORTER
+    cost: 700
+    points: 30
+    dependencies:
+      - STR_NEW_FIGHTER_CRAFT
+      - STR_MARINES_AND_ADEPTAS
+
   - name: STR_CHAPTERARMYR #MARINES
     cost: 900
     points: 30
@@ -992,7 +1024,7 @@ research:
     cost: 900
     points: 30
     dependencies:
-      - STR_DW_HIGHTIER
+      - STR_MIDTIER_PREREQ
       - STR_DEATHWATCH
       - STR_HIGHTIER_PREREQ
 
@@ -1004,9 +1036,6 @@ research:
       - STR_GK_HIGHTIER
       - STR_GREYKNIGHTS
       - STR_HIGHTIER_PREREQ
-
-
-
 
 #*** miscellaneous ***
   - name: STR_SPELLSR

@@ -1775,12 +1775,20 @@ ufopaedia:
       - STR_MARINES_AND_ADEPTAS
     text: STR_LASCAN_UFOPEDIA
     listOrder: 12200
+  - id: STR_LASCAN_DW #2499
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1LC.SPK
+    requires:
+      - STR_LASCAN
+      - STR_DEATHWATCH
+    text: STR_LASCAN_UFOPEDIA
+    listOrder: 12200
   - id: STR_LASCAN_CLIP
     type_id: 14
     section: STR_NOT_AVAILABLE
     requires:
       - STR_LASCAN
-      - STR_MARINES_STRATEGY
   - id: STR_HEAVY_PLASMA_TERRAN #2498
     type_id: 14
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -2874,9 +2882,8 @@ ufopaedia:
     section: STR_ARMORPEDIA
     image_id: C08.SPK
     requires:
-      - STR_MARINES_STRATEGY
+      - STR_DREAD_R
       - STR_LASER_CANNON
-      - STR_NEW_FIGHTER_CRAFT
     text: STR_DREAD_ARMOR_UC_UFOPEDIA
     listOrder: 6420
   - id: DREAD_ARMOR2_UC
@@ -2884,9 +2891,8 @@ ufopaedia:
     section: STR_ARMORPEDIA
     image_id: C05.SPK
     requires:
-      - STR_MARINES_STRATEGY
+      - STR_DREAD_R
       - STR_PLASMA_CANNON
-      - STR_NEW_FIGHTER_CRAFT
     text: STR_DREAD_ARMOR2_UC_UFOPEDIA
     listOrder: 6430
   - id: DREAD_ARMOR3_UC
@@ -2894,9 +2900,8 @@ ufopaedia:
     section: STR_ARMORPEDIA
     image_id: C06.SPK
     requires:
-      - STR_MARINES_STRATEGY
+      - STR_DREAD_R
       - STR_FUSION_MISSILE
-      - STR_NEW_FIGHTER_CRAFT
     text: STR_DREAD_ARMOR3_UC_UFOPEDIA
     listOrder: 6440
   - id: DREAD_ARMOR4_UC
@@ -2904,9 +2909,8 @@ ufopaedia:
     section: STR_ARMORPEDIA
     image_id: C04.SPK
     requires:
-      - STR_MARINES_STRATEGY
+      - STR_DREAD_R
       - STR_PLASMA_CANNON
-      - STR_NEW_FIGHTER_CRAFT
     text: STR_DREAD_ARMOR4_UC_UFOPEDIA
     listOrder: 6450
   - id: DREAD_ARMOR5_UC
@@ -2914,10 +2918,17 @@ ufopaedia:
     section: STR_ARMORPEDIA
     image_id: C09.SPK
     requires:
-      - STR_MARINES_STRATEGY
+      - STR_DREAD_R
       - STR_PLASMA_CANNON
-      - STR_NEW_FIGHTER_CRAFT
       - STR_VETERAN
+    text: STR_DREAD_ARMOR5_UC_UFOPEDIA
+    listOrder: 6460
+  - id: STR_DREAD_GK_ARMOR_UC
+    type_id: 15
+    section: STR_ARMORPEDIA
+    image_id: C09.SPK
+    requires:
+      - STR_DREAD_R_GK
     text: STR_DREAD_ARMOR5_UC_UFOPEDIA
     listOrder: 6460
   - id: CENT_ARMOR_UC                      #6500   #ARMOR
@@ -3335,7 +3346,7 @@ ufopaedia:
     type_id: 11
     section: STR_XCOM_CRAFT_ARMAMENT
     requires:
-      - STR_ADEPTAS
+      - STR_DEATHWATCH_AND_ADEPTAS
       - STR_NEW_FIGHTER_CRAFT
     image_id: STORMRAVEN.SPK
     text: STR_FIRESTORM_UFOPEDIA
@@ -3587,7 +3598,7 @@ ufopaedia:
     type_id: 11
     section: STR_XCOM_CRAFT_ARMAMENT
     requires:
-      - STR_ADEPTAS
+      - STR_DEATHWATCH_AND_ADEPTAS
     image_id: CORVUS.SPK
     text: STR_CORVUS_UFOPEDIA
     listOrder: 505
@@ -3890,6 +3901,17 @@ ufopaedia:
     requires:
       - STR_ELDAR_COBRA_UFO
 #ALIEN MISSIONS
+  - id: STR_DEATHWATCH_BUST
+    type_id: 10
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: 2CH6.SPK
+    requires:
+      - STR_DEATHWATCH_BUST
+    pages:
+      - title: STR_DEATHWATCH_BUST
+        text: STR_DEATHWATCH_BUST_UFOPEDIA
+      - title: STR_DEATHWATCH_BUST
+        text: STR_DEATHWATCH_BUST_UFOPEDIA_PAGE2
   - id: STR_CHAOS_PATH
     type_id: 10
     section: STR_ALIEN_RESEARCH_UC

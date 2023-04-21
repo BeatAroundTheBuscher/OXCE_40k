@@ -1,8 +1,7 @@
 soldierTransformation:
   - name: STR_RESURRECT_MARINE
     requires:
-      - STR_LASER_CANNON
-      - STR_NEW_FIGHTER_CRAFT
+      - STR_DREAD_R
       - STR_MARINES_STRATEGY
     cost: 850000
     requiredItems:
@@ -134,8 +133,7 @@ soldierTransformation:
 #DEATHWATCH
   - name: STR_RESURRECT_MARINE_DW
     requires:
-      - STR_LASER_CANNON
-      - STR_NEW_FIGHTER_CRAFT
+      - STR_DREAD_R
       - STR_DEATHWATCH
     cost: 850000
     requiredItems:
@@ -160,6 +158,12 @@ soldierTransformation:
       - STR_BLACKT_PRIMARIS
       - STR_WHITES
       - STR_WHITES_PRIMARIS
+      - STR_SPACEW
+      - STR_SPACEW_PRIMARIS
+      - STR_DARKANGELS
+      - STR_DARKANGELS_PRIMARIS
+      - STR_CRISMONF
+      - STR_CRISMONF_PRIMARIS
     transferTime: 24
     recoveryTime: 0
     lowerBoundAtMinStats: true
@@ -167,8 +171,7 @@ soldierTransformation:
 #Grey Knights
   - name: STR_RESURRECT_MARINE_GK
     requires:
-      - STR_LASER_CANNON
-      - STR_MT_GK
+      - STR_DREAD_R_GK
       - STR_GREYKNIGHTS
     cost: 850000
     requiredItems:
