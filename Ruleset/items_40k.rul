@@ -5258,11 +5258,14 @@
   - type: STR_BLOOD_GAUNTLET_PLUS
     weight: 0
     bigSprite: 99
-    meleeHitSound: 48
+    meleeHitSound: 296
     meleeAnimation: 76
     power: 50
-    damageType: 7
+    damageType: 6
     accuracyMelee: 90
+    damageAlter: #DA LAS
+      ToHealth: 1.0
+      ToStun: 0.5      
     meleeMultiplier:
       melee: 1.0
     tuMelee: 12

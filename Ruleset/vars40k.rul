@@ -18,6 +18,7 @@ alienFuel: [STR_ELERIUM_115, 50]
 fontName: Font.dat
 allowCountriesToCancelAlienPact: true
 customTrainingFactor: 100
+extendedExperienceAwardSystem: true
 
 startingDifficulty: 0
 ai:
@@ -26,6 +27,7 @@ ai:
   pickUpWeaponsMoreActively: true
 selectBaseSound: 57   # indices into GEO.CAT
 startDogfightSound: 55   # indices into GEO.CAT
+
 
 constants:
   #extendedItemReloadCost: false

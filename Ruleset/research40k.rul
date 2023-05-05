@@ -104,6 +104,7 @@ research:
       - STR_DEATHWATCH
       - STR_XIPHON
     disables:
+      - STR_CYDONIA_OR_BUST
       - STR_ARBITES
       - STR_IMPERIAL_GUARD_OPERATIONS
       - STR_DEFENSE_CORRIDORBR
@@ -179,25 +180,6 @@ research:
       - STR_COMMANDER_PLUS
     unlockFinalMission: false
 
-  - name: STR_SECTOID_COMMANDER
-    unlocks:
-      - STR_LEADER_PLUS
-      - STR_ALIEN_ORIGINS
-      - STR_PSI_LAB
-
-  - name: STR_SNAKEMAN_COMMANDER
-    unlocks:
-      - STR_LEADER_PLUS
-      - STR_ALIEN_ORIGINS
-
-  - name: STR_COMMANDER_PLUS
-    unlocks:
-      - STR_CYDONIA_OR_BUST
-    requires:
-      - STR_THE_MARTIAN_SOLUTION
-    dependencies:
-      - STR_GENERALLOCK
-
   - name: STR_COMMANDER_PLUS
     unlocks:
       - STR_CYDONIA_OR_BUST
@@ -212,7 +194,18 @@ research:
       - STR_KHORNE_CHAMP
       - STR_TZEENTCH_LEADER
       - STR_NURGLE_CHAMP
+      - STR_GENERALLOCK
 
+
+  - name: STR_SECTOID_COMMANDER
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_ORIGINS
+      - STR_PSI_LAB
+  - name: STR_SNAKEMAN_COMMANDER
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_ORIGINS
   - name: STR_ETHEREAL_COMMANDER    # UNDIVIDED
     cost: 192
     points: 500
@@ -221,6 +214,7 @@ research:
       - STR_LEADER_PLUS
       - STR_COMMANDER_PLUS
       - STR_ALIEN_ORIGINS
+      - STR_PSI_LAB
   - name: STR_CHAOS_BEHEMOTH    # SLANESH
     cost: 192
     points: 500
@@ -237,6 +231,7 @@ research:
       - STR_LEADER_PLUS
       - STR_COMMANDER_PLUS
       - STR_ALIEN_ORIGINS
+      - STR_PSI_LAB
   - name: STR_KHORNE_CHAMP     # KHORNE
     cost: 192
     points: 500
@@ -271,6 +266,8 @@ research:
       - STR_PERSONAL_ARMOR
       - STR_DEATHWATCH
       - STR_CHAOS_PATH
+    reenables:
+      - STR_CYDONIA_OR_BUST
     spawnedEvent: STR_REINFORCEMENTS_GK
   - name: STR_CHOSEN_GREYKNIGHTS
     dependencies:
@@ -373,6 +370,7 @@ research:
       - STR_MARINES_STRATEGY
     lookup: STR_CHOSEN_PRIMARIS
     unlocks:
+      - STR_MARINES_AND_DEATHWATCH
       - STR_PRIMARIS_AND_ADEPTAS
       - STR_PRIMARIS_AND_DEATHWATCH
       - STR_MOTION_SCANNER
@@ -625,7 +623,6 @@ research:
       - STR_MOTION_SCANNER
       - STR_LASER_CANNON
       - STR_GREYKNIGHTS
-
   # marines
   - name: STR_SCOUTH_RESEARCH
     cost: 180
@@ -675,13 +672,14 @@ research:
     dependencies:
       - STR_POWER_SUIT
       - STR_LORD_CORPSE
+      - STR_MARINES_STRATEGY
   - name: STR_PERSONAL_ARMOR
     cost: 180
     points: 20
     dependencies:
       - STR_ALIEN_ALLOYS
       - STR_THREAT_ONE
-      - STR_MARINES_AND_DEATHWATCH
+      - STR_NOT_PRIMARIS
   - name: STR_DEV_ARMOR
     cost: 180
     points: 20
@@ -692,7 +690,7 @@ research:
     cost: 180
     points: 20
     dependencies:
-      - STR_FLOATER_SOLDIER
+      - STR_DEV_ARMOR
       - STR_PERSONAL_ARMOR
   - name: STR_SARGENT_ARMOR
     cost: 180
@@ -701,10 +699,12 @@ research:
       - STR_PERSONAL_ARMOR
       - STR_ASS_ARMOR
       - STR_DEV_ARMOR
+      - STR_MARINES_STRATEGY
   - name: STR_CHAP_ARMOR
     cost: 300
     points: 20
     dependencies:
+      - STR_MARINES_STRATEGY
       - STR_HIGHTIER_PREREQ
       - STR_SARGENT_ARMOR
   - name: STR_TSARGENT
@@ -713,7 +713,7 @@ research:
     dependencies:
       - STR_HIGHTIER_PREREQ
       - STR_POWER_SUIT
-      - STR_SARGENT_ARMOR
+      - STR_NOT_PRIMARIS
   - name: STR_CENT_ARMORR
     cost: 330
     points: 20
@@ -774,7 +774,7 @@ research:
     dependencies:
       - STR_DEATHWATCH
       - STR_ASS_ARMOR
-      - STR_DEV_ARMOR  
+      - STR_DEV_ARMOR
   - name: STR_DW_WM_ARMOR
     cost: 205
     points: 20
@@ -1044,7 +1044,7 @@ research:
     dependencies:
       - STR_MOTION_SCANNER
       - STR_MEDI_KIT_PREREQ
-      - STR_MARINES_STRATEGY
+      - STR_MARINES_AND_DEATHWATCH
     unlocks:
       - STR_SPELLS_PREREQ
     lookup: STR_SPELLS_PREREQ
@@ -1309,7 +1309,7 @@ research:
     cost: 100
     points: 15
     dependencies:
-      - STR_MARINES_STRATEGY
+      - STR_MARINES_AND_DEATHWATCH
       - STR_PSI_AMP
   - name: STR_LIBRARY_GK #facility
     cost: 100
@@ -1317,7 +1317,7 @@ research:
     getOneFree:
       - STR_LIBRARY
     dependencies:
-      - STR_CHAMBERMILITANT
+      - STR_GREYKNIGHTS
       - STR_PSI_AMP
   - name: STR_INQOFF #facility
     cost: 100
@@ -1330,7 +1330,7 @@ research:
     points: 15
     dependencies:
       - STR_MIDTIER_PREREQ
-      - STR_MARINES_STRATEGY
+      - STR_MARINES_AND_DEATHWATCH
       - STR_APOC_BAY
   - name: STR_TRAINFACILITYR #facility
     cost: 100
@@ -1343,7 +1343,7 @@ research:
     points: 15
     dependencies:
       - STR_MIDTIER_PREREQ
-      - STR_CHAMBERMILITANT
+      - STR_GREYKNIGHTS
       - STR_APOC_BAY
 #---MISSIONS------------------------------------------------------
   - name: STR_SIDEOPERATIONS # MISSION 1

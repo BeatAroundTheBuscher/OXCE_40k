@@ -79,6 +79,21 @@ cutscenes:
       - Resources/ANIMS/c4.FLC
     audioTracks:
       - gmstory2
+  - type: c5dw
+    videos:
+      - Resources/ANIMS/c5dw.FLC
+    audioTracks:
+      - HANGAR
+  - type: c6dw
+    videos:
+      - Resources/ANIMS/c6dw.FLC
+    audioTracks:
+      - HANGAR
+  - type: c7dw
+    videos:
+      - Resources/ANIMS/c7dw.FLC
+    audioTracks:
+      - HANGAR
 #UFOS
   - type: HLOCK
     videos:

@@ -517,7 +517,6 @@ events:
   - name: STR_IF_CARE_PACKAGE
     description: STR_IF_REINFORCEMENTS
     timer: 1
-    lastMonth: 12
     everyMultiItemList:
       STR_RIFLEB: 2
       STR_RIFLE_CLIP: 6
@@ -526,7 +525,6 @@ events:
   - name: STR_BA_CARE_PACKAGE
     description: STR_BA_REINFORCEMENTS
     timer: 1
-    lastMonth: 12
     everyMultiItemList:
       STR_RIFLEB: 2
       STR_RIFLE_CLIP: 6
@@ -535,7 +533,6 @@ events:
   - name: STR_SALA_CARE_PACKAGE
     description: STR_SALA_REINFORCEMENTS
     timer: 1
-    lastMonth: 12
     everyMultiItemList:
       STR_RIFLEB: 2
       STR_RIFLE_CLIP: 6
@@ -544,7 +541,6 @@ events:
   - name: STR_BT_CARE_PACKAGE
     description: STR_BT_REINFORCEMENTS
     timer: 1
-    lastMonth: 12
     everyMultiItemList:
       STR_RIFLEB: 2
       STR_RIFLE_CLIP: 6
@@ -553,7 +549,6 @@ events:
   - name: STR_WS_CARE_PACKAGE
     description: STR_WS_REINFORCEMENTS
     timer: 1
-    lastMonth: 12
     everyMultiItemList:
       STR_RIFLEB: 2
       STR_RIFLE_CLIP: 6

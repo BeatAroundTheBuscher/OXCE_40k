@@ -6,7 +6,5 @@ id: 40k
 master: xcom1
 isMaster: true
 resourceConfig: Ruleset/vars40k.rul
-loadResources:
-  - UFO
 reservedSpace: 2
 requiredExtendedVersion: "7.5.3"

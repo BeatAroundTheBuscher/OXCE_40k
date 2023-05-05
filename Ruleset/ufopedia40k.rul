@@ -2656,7 +2656,7 @@ ufopaedia:
     section: STR_ARMORPEDIA
     image_id: 0MXT.SPK
     requires:
-      - STR_PRIMARIS
+      - STR_PRIMARIS_AND_DEATHWATCH
     text: STR_MKX_TAC_UFOPEDIA
     listOrder: 5620
   - id: STR_MKX_PHB_LV1_UC              #5621
@@ -2664,7 +2664,7 @@ ufopaedia:
     section: STR_ARMORPEDIA
     image_id: 0MXR.SPK
     requires:
-      - STR_PRIMARIS
+      - STR_PRIMARIS_AND_DEATHWATCH
       - STR_MKX_PHB_ARMOR
     text: STR_MKX_PHB_UFOPEDIA
     listOrder: 5621
@@ -2673,7 +2673,7 @@ ufopaedia:
     section: STR_ARMORPEDIA
     image_id: 0MXA.SPK
     requires:
-      - STR_PRIMARIS
+      - STR_PRIMARIS_AND_DEATHWATCH
       - STR_MKX_GRV_ARMOR
     text: STR_MKX_GRV_UFOPEDIA
     listOrder: 5622
@@ -2682,7 +2682,7 @@ ufopaedia:
     section: STR_ARMORPEDIA
     image_id: 0MXI.SPK
     requires:
-      - STR_PRIMARIS
+      - STR_PRIMARIS_AND_DEATHWATCH
       - STR_MKX_INC_ARMOR
     text: STR_MKX_INC_UFOPEDIA
     listOrder: 5623
@@ -2760,7 +2760,7 @@ ufopaedia:
     requires:
       - STR_NOT_PRIMARIS
       - STR_TEC_BAYR
-      - STR_MARINES_STRATEGY
+      - STR_MARINES_AND_DEATHWATCH
     listOrder: 5800
   - id: STR_MKX_TEC_LV1_UC                 #5801
     type_id: 15
@@ -2805,8 +2805,7 @@ ufopaedia:
     image_id: 0MXL.SPK
     text: STR_LIB_ARMOR_UFOPEDIA
     requires:
-      - STR_PRIMARIS
-      - STR_MARINES_STRATEGY
+      - STR_PRIMARIS_AND_DEATHWATCH
       - STR_PSI_AMP
     listOrder: 6001
   - id: STR_TSARGENT_UC                    #6300   #ARMOR

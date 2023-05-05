@@ -7868,6 +7868,8 @@ extraSounds:
       293: Resources/Sound/293TurretR.ogg
       294: Resources/Sound/294TF.ogg
       295: Resources/Sound/295TFR.ogg
+#296vamp
+      296: Resources/Sound/296vamp.ogg
 #301 to 320 SCouts MALE
       300: Resources/Sound/SCOUTS/SEARCH.ogg
       301: Resources/Sound/SCOUTS/ATTSM1.ogg

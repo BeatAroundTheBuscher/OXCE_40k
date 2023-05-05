@@ -20,8 +20,42 @@
     moveSound: 12
     energyRecovery: 50
 #                 #                                        #                      #
-items:
+manufacture:
+  - name: STR_DW_WM_ARMOR_UC              #1 BADGE 5
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_DW_WM_ARMOR
+    space: 16
+    time: 6400
+    cost: 300000
+    requiresBaseFunc: [ARMO]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 500
+      STR_ELERIUM_115: 160
+      STR_ALIEN_HABITAT: 5
+  - name: STR_MKX_DW_CAP_ARMOR_UC                 #1 BADGE 1
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_DW_CAP_ARMOR
+      - STR_PRIMARIS_ARMOR
+    space: 12
+    time: 800
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 120
+      STR_ALIEN_HABITAT: 1
+  - name: STR_DW_CAP_ARMOR_UC                #1 BADGE 1
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_DW_CAP_ARMOR
+    space: 12
+    time: 800
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 120
+      STR_ALIEN_HABITAT: 1
 
+items:
   - type: STR_THUNDERFIRE_DW
     ignoreInCraftEquip: true
     categories: [STR_CAT_AUXILIARY]
@@ -570,10 +604,14 @@ items:
     size: 0.8
     costSell: 20000
     listOrder: 6404
-  - type: STR_DW_WM_ARMOR_UC                  #6405
+  - type: STR_MKX_DW_CAP_ARMOR_UC                 #6405
+    size: 0.8
+    costSell: 20000
+    listOrder: 6405
+  - type: STR_DW_WM_ARMOR_UC                  #6406
     size: 0.8
     costSell: 100000
-    listOrder: 6405
+    listOrder: 6406
 
 armors:
   - type: THUNDERFIRE_ARMOR_DW
@@ -856,6 +894,7 @@ armors:
     visibilityAtDark: 30
     spriteSheet: CAPDW.PCK
     customArmorPreviewIndex: 420
+    ufopediaType: STR_DW_CAP_ARMOR_ULTRA_UC
     forcedTorso: 1
     corpseBattle:
       - STR_CAP_DW_CORPSE
@@ -870,7 +909,7 @@ armors:
        reactions: 0
        firing: 0
        throwing: 0
-       strength: 0
+       strength: 50
        psiStrength: 0
        psiSkill: 0
        melee: 0
@@ -1109,6 +1148,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 30
     forcedTorso: 1
+    ufopediaType: STR_DW_WM_ARMOR_ULTRA_UC
     customArmorPreviewIndex: 478
     spriteSheet: WMDW.PCK
     zombiImmune: true
@@ -5995,6 +6035,262 @@ armors:
 #SPECIAL
     painImmune: true
     fearImmune: true
+
+  - &STR_MKX_DW_CAP_UC #CAP MASTER
+    type: STR_MKX_DW_CAP_ULTRA_UC
+    selectUnitMale:     [511, 512, 513, 514, 515]
+    selectUnitFemale:   [511, 512, 513, 514, 515]
+    startMovingMale:    [506, 507, 508, 509, 510]
+    startMovingFemale:  [506, 507, 508, 509, 510]
+    selectWeaponMale:   [501, 502, 503, 504, 505]
+    selectWeaponFemale: [501, 502, 503, 504, 505]
+    annoyedMale:        [516, 517, 518, 519, 520]
+    annoyedFemale:      [516, 517, 518, 519, 520]
+    deathMale:     [380, 381, 382, 383, 384]
+    deathFemale:   [380, 381, 382, 383, 384]
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: MKXCAPDW.PCK
+    customArmorPreviewIndex: 507
+    ufopediaType: STR_DW_CAP_ARMOR_ULTRA_UC
+    forcedTorso: 1
+    corpseBattle:
+      - STR_MKX_DW_TAC_CORPSE
+    storeItem: STR_MKX_DW_CAP_ARMOR_UC
+    corpseGeo: STR_FALLEN_CORPSE
+    specialWeapon: STR_UNARMED_GAUNTLET_PLUS
+    stats:
+       tu: 10
+       stamina: 10
+       health: 20
+       bravery: 10 #always multiples of 10
+       reactions: 0
+       firing: 0
+       throwing: 0
+       strength: 0
+       psiStrength: 50
+       psiSkill: 0
+       melee: 0
+    frontArmor: 110
+    sideArmor: 90
+    rearArmor: 80
+    underArmor: 70
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    builtInWeapons:
+      - INV_NULL_3X3
+  - type: STR_MKX_DW_CAP_ULTRA_UC #ULTRAMARINE
+    units:
+      - STR_ULTRAMARINE_PRIMARIS
+#SPRITES
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      M1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      M2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      M3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      M4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      M5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+      F0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      F1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      F2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      F3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      F4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      F5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+  - type: STR_MKX_DW_CAP_IF_UC #ULTRAMARINE
+    refNode: *STR_MKX_DW_CAP_UC
+    units:
+      - STR_IMPERIALF_PRIMARIS
+#SPRITES
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      M1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      M2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      M3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      M4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      M5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+      F0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      F1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      F2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      F3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      F4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      F5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+  - type: STR_MKX_DW_CAP_BA_UC #ULTRAMARINE
+    refNode: *STR_MKX_DW_CAP_UC
+    units:
+      - STR_BLOODANGELS_PRIMARIS
+#SPRITES
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      M1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      M2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      M3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      M4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      M5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+      F0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      F1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      F2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      F3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      F4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      F5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+#SPECIAL
+    instantWoundRecovery: true
+  - type: STR_MKX_DW_CAP_SALA_UC #SALMANDER
+    refNode: *STR_MKX_DW_CAP_UC
+    units:
+      - STR_SALAMANDAR_PRIMARIS
+#SPRITES
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["CAPEP", "MKXCAPDW", "M0_FACES", ""]
+      M1: ["CAPEP", "MKXCAPDW", "M1_FACES", ""]
+      M2: ["CAPEP", "MKXCAPDW", "M2_FACES", ""]
+      M3: ["CAPEP", "MKXCAPDW", "M3_FACES", ""]
+      M4: ["CAPEP", "MKXCAPDW", "M4_FACES", ""]
+      M5: ["CAPEP", "MKXCAPDW", "M5_FACES", ""]
+      F0: ["CAPEP", "MKXCAPDW", "M0_FACES", ""]
+      F1: ["CAPEP", "MKXCAPDW", "M1_FACES", ""]
+      F2: ["CAPEP", "MKXCAPDW", "M2_FACES", ""]
+      F3: ["CAPEP", "MKXCAPDW", "M3_FACES", ""]
+      F4: ["CAPEP", "MKXCAPDW", "M4_FACES", ""]
+      F5: ["CAPEP", "MKXCAPDW", "M5_FACES", ""]
+  - type: STR_MKX_DW_CAP_BT_UC #ULTRAMARINE
+    refNode: *STR_MKX_DW_CAP_UC
+    units:
+      - STR_BLACKT_PRIMARIS
+#SPRITES
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      M1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      M2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      M3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      M4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      M5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+      F0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      F1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      F2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      F3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      F4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      F5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+  - type: STR_MKX_DW_CAP_WS_UC #ULTRAMARINE
+    refNode: *STR_MKX_DW_CAP_UC
+    units:
+      - STR_WHITES_PRIMARIS
+#SPRITES
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      M1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      M2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      M3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      M4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      M5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+      F0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      F1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      F2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      F3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      F4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      F5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+#SPECIAL
+    moveCost:
+      basePercent: [100, 25] #overall move cost
+  - type: STR_MKX_DW_CAP_SW_UC #ULTRAMARINE
+    refNode: *STR_MKX_DW_CAP_UC
+    units:
+      - STR_SPACEW_PRIMARIS
+#SPRITES
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      M1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      M2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      M3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      M4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      M5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+      F0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      F1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      F2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      F3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      F4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      F5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+#SPECIAL
+    moveCost:
+      basePercent: [100, 25] #overall move cost
+  - type: STR_MKX_DW_CAP_DA_UC #ULTRAMARINE
+    refNode: *STR_MKX_DW_CAP_UC
+    units:
+      - STR_DARKANGELS_PRIMARIS
+#SPRITES
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      M1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      M2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      M3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      M4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      M5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+      F0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      F1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      F2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      F3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      F4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      F5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+  - type: STR_MKX_DW_CAP_CF_UC #ULTRAMARINE
+    refNode: *STR_MKX_DW_CAP_UC
+    units:
+      - STR_CRISMONF_PRIMARIS
+#SPRITES
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      M1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      M2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      M3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      M4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      M5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+      F0: ["CAPEP", "MKXCAPDW", "M0_FACE", ""]
+      F1: ["CAPEP", "MKXCAPDW", "M1_FACE", ""]
+      F2: ["CAPEP", "MKXCAPDW", "M2_FACE", ""]
+      F3: ["CAPEP", "MKXCAPDW", "M3_FACE", ""]
+      F4: ["CAPEP", "MKXCAPDW", "M4_FACE", ""]
+      F5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
+#SPECIAL
+    painImmune: true
+    fearImmune: true 
+
 #                 #                                        #                      # 
 extraSprites:
 #
@@ -6310,9 +6606,13 @@ extraSprites:
 
   - typeSingle: 0__1__CAPDW
     fileSingle: Resources/LAYER/DW/CAPTAIN.png
+  - typeSingle: 0__1__MKXCAPDW
+    fileSingle: Resources/LAYER/DW/MKXCAPDW.png
   - typeSingle: 0__1__WMDW
     fileSingle: Resources/LAYER/DW/WMASTER.png
   - typeSingle: 0__0__CAPE4
+    fileSingle: Resources/LAYER/CAPEP4.png
+  - typeSingle: 0__0__CAPEP
     fileSingle: Resources/LAYER/CAPEP4.png
   - typeSingle: 0__0__CAPE5
     fileSingle: Resources/LAYER/CAPEP5.png
@@ -6817,6 +7117,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/CAPTAIN/DWATCH/CAPDW.png
+  - type: MKXCAPDW.PCK #CAP GENERIC
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MKX-ARMOR/DWATCH/MKXCAPDW.png
   - type: WMDW.PCK #CAP GENERIC
     width: 512
     height: 720
@@ -8562,8 +8869,8 @@ soldiers:
       firing: 40
       throwing: 50
       strength: 30
-      psiStrength: 10
-      psiSkill: 10
+      psiStrength: 30
+      psiSkill: 30
       melee: 50
     maxStats:
       tu: 60
@@ -8575,7 +8882,7 @@ soldiers:
       throwing: 80
       strength: 40
       psiStrength: 100
-      psiSkill: 20
+      psiSkill: 40
       melee: 80
     statCaps:
       tu: 100
@@ -8643,8 +8950,8 @@ soldiers:
       firing: 50
       throwing: 50
       strength: 40
-      psiStrength: 20
-      psiSkill: 20
+      psiStrength: 30
+      psiSkill: 30
       melee: 50
     maxStats:
       tu: 60
@@ -8656,7 +8963,7 @@ soldiers:
       throwing: 80
       strength: 50
       psiStrength: 70
-      psiSkill: 30
+      psiSkill: 40
       melee: 80
     statCaps:
       tu: 120

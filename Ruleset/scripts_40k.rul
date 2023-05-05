@@ -997,10 +997,16 @@ extended:
 #*** Tags for soldiers gaining devotion/psi skill as secondary experience ***
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: int
 
+#*** (Unused) tags for vampiric damage from armor ***
+      YTAG_DAMAGE_RETURNED_RESIST_TYPE_ARMOR: int
+      YTAG_DAMAGE_RETURNED_AS_HP_BUFF: int
+
     RuleItem:
     
 #*** Tag for vampiric DAMAGE
       YTAG_DAMAGE_RETURNED_AS_HP: int
+      YTAG_DAMAGE_RETURNED_RESIST_TYPE: int
+
 #*** Tag for number of cosmetic variants of items ***
       ITEM_HAS_RANDOMIZED_SPRITES: int
 
@@ -1871,8 +1877,8 @@ extended:
 
           return;
 
-    damageUnit:
-      - offset: 3
+      - new: 40k_dU_vampirism
+        offset: 16
         code: |
           var ptre BattleUnit attackingUnit;
           var ptre BattleItem attackingItem;
@@ -1941,16 +1947,23 @@ extended:
             end;
           end;
 
+          # check if target not immune to vampirism
+          set temp 100;
+          unit.reduceByResistance temp damageReturnedResistType;
+          if eq temp 0;
+            return;
+          end;
+
+          # check if attacker has req. vampiric coeffs          
+          if and eq hpReturnedCoefficient 0;
+            return;
+          else;
+
             # set amount of HP drained, and that it can't be higher than target's total          
             unit.getHealth hpTarget;
             set hpDamageDone to_health;
             limit_upper hpDamageDone hpTarget;
             set hpReturned hpDamageDone;
-            set energyReturned hpDamageDone;
-            set timeReturned hpDamageDone;
-            set moraleReturned hpDamageDone;
-            set stunReturned hpDamageDone;
-
 
             # set the appropriate stats, respecting the maximum values
             attackingUnit.getHealth statAttacker;

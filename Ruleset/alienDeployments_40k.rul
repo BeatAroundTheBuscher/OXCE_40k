@@ -6663,7 +6663,7 @@ alienDeployments:
     briefing:
       title: STR_DW_FINAL_LANDING
       desc: STR_DW_FINAL_LANDING_DESC
-      cutscene: c4
+      cutscene: c5dw
       textOffset: -16
       palette: 6
       music: INMYSPIRIT
@@ -6851,7 +6851,7 @@ alienDeployments:
     script: DW_FINAL_ENTRACE_SCRIPT
     race: STR_NECRON
     briefing:
-      cutscene: NECRONTOMB
+      cutscene: c6dw
       desc: STR_DW_FINAL_ENTRACE_DESCRIPTION
       music: gmstory2
       showCraft: true
@@ -7044,6 +7044,7 @@ alienDeployments:
     script: DW_FINAL_ASSAULT_SCRIPT
     race: STR_NECRON
     briefing:
+      cutscene: c7dw
       title: STR_DW_FINAL_ASSAULT
       desc: STR_DW_FINAL_ASSAULT_DESC
       textOffset: -16

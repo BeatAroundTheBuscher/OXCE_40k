@@ -13236,9 +13236,8 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_CHAPTER_PURITY
-      - STR_MARINES_STRATEGY
       - STR_MEDI_KIT_PREREQ
-      - STR_PRIMARIS
+      - STR_PRIMARIS_AND_DEATHWATCH
     space: 12
     time: 800
     cost: 22000
@@ -13249,8 +13248,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_TEC_BAYR
-      - STR_MARINES_STRATEGY
-      - STR_PRIMARIS
+      - STR_PRIMARIS_ARMOR
     space: 12
     time: 800
     cost: 50000
@@ -13262,7 +13260,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_CHAPTER_PURITY
-      - STR_PRIMARIS
+      - STR_PRIMARIS_ARMOR
       - STR_PSI_AMP
     space: 12
     time: 800
@@ -13275,7 +13273,6 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_CHAPTER_PURITY
-      - STR_MARINES_STRATEGY
       - STR_MKX_CHP_ARMOR
     space: 12
     time: 800
@@ -13480,6 +13477,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_CAPTAIN_SUIT
+      - STR_MARINES_STRATEGY
     space: 16
     time: 6400
     cost: 300000
@@ -13519,7 +13517,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_DREAD_R
-      - STR_PLASMA_CANNON
+      - STR_LASCAN
     space: 30
     time: 1200
     cost: 850000

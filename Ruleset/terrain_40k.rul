@@ -240,7 +240,8 @@
     placeSound: 98
     requiresBaseFunc: [BASE]
     requires:
-      - STR_MT
+      - STR_MIDTIER_PREREQ
+      - STR_MARINES_AND_DEATHWATCH
     spriteShape: 1
     spriteFacility: 317
     buildCost: 450000
