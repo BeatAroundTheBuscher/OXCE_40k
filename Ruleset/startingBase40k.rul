@@ -454,7 +454,7 @@ eventScripts:
       0:
         STR_IF_CARE_PACKAGE: 100
     firstMonth: 0
-    lastMonth: 12
+    lastMonth: 1
     executionOdds: 100
     researchTriggers:
        STR_DEATHWATCH: true
@@ -464,7 +464,7 @@ eventScripts:
       0:
         STR_BA_CARE_PACKAGE: 100
     firstMonth: 0
-    lastMonth: 12
+    lastMonth: 1
     executionOdds: 100
     researchTriggers:
        STR_DEATHWATCH: true
@@ -474,7 +474,7 @@ eventScripts:
       0:
         STR_SALA_CARE_PACKAGE: 100
     firstMonth: 0
-    lastMonth: 12
+    lastMonth: 1
     executionOdds: 100
     researchTriggers:
        STR_DEATHWATCH: true
@@ -484,7 +484,7 @@ eventScripts:
       0:
         STR_BT_CARE_PACKAGE: 100
     firstMonth: 0
-    lastMonth: 12
+    lastMonth: 1
     executionOdds: 100
     researchTriggers:
        STR_DEATHWATCH: true
@@ -494,7 +494,37 @@ eventScripts:
       0:
         STR_WS_CARE_PACKAGE: 100
     firstMonth: 0
-    lastMonth: 12
+    lastMonth: 1
+    executionOdds: 100
+    researchTriggers:
+       STR_DEATHWATCH: true
+       STR_GREYKNIGHTS: false
+  - type: STR_DW_EVENT_SCRIPTSW
+    eventWeights:
+      0:
+        STR_SW_CARE_PACKAGE: 100
+    firstMonth: 0
+    lastMonth: 1
+    executionOdds: 100
+    researchTriggers:
+       STR_DEATHWATCH: true
+       STR_GREYKNIGHTS: false
+  - type: STR_DW_EVENT_SCRIPTDA
+    eventWeights:
+      0:
+        STR_DA_CARE_PACKAGE: 100
+    firstMonth: 0
+    lastMonth: 1
+    executionOdds: 100
+    researchTriggers:
+       STR_DEATHWATCH: true
+       STR_GREYKNIGHTS: false
+  - type: STR_DW_EVENT_SCRIPTCF
+    eventWeights:
+      0:
+        STR_CF_CARE_PACKAGE: 100
+    firstMonth: 0
+    lastMonth: 1
     executionOdds: 100
     researchTriggers:
        STR_DEATHWATCH: true
