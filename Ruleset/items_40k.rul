@@ -533,6 +533,15 @@
     hitAnimation: 150
     hitSound: 788
 #---NECRON spawn-----------------------------------------------------
+  - type: STR_SCARAB_SPAWNER
+    spawnUnit: STR_NECRON_SCARAB5
+    spawnUnitFaction: 1 # 1: Enemy faction
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 5
+    recover: false
+    hiddenOnMinimap: true
   - type: STR_MONON_SPAWNER
     spawnUnit: STR_MONO_N
     spawnUnitFaction: 1 # 1: Enemy faction
@@ -2324,6 +2333,58 @@
     listOrder: 13650
     throwRange: 20
 #---FOES WEAPONS----------------------------------------------------
+  - type: STR_SCARAB_L_WEAPON #Deamon Blade2
+    weight: 3
+    bigSprite: 714
+    bulletSprite: -1
+    fireSound: 753
+    hitSound: 754
+    meleeSound: 753
+    hitAnimation: 80
+    meleeAnimation: 4
+    power: 50
+    damageType: 7
+    damageAlter:
+      IgnoreSelfDestruct: false
+    accuracySnap: 75
+    accuracyAimed: 110
+    accuracyMelee: 80
+    tuMelee: 30
+    tuSnap: 30
+    tuAimed: 60
+    clipSize: -1
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    maxRange: 2
+    recover: false
+  - type: STR_SCARAB_R_WEAPON #Deamon Blade2
+    weight: 3
+    bigSprite: 716
+    bulletSprite: -1
+    fireSound: 753
+    hitSound: 754
+    meleeSound: 753
+    hitAnimation: 80
+    meleeAnimation: 4
+    power: 50
+    damageType: 7
+    damageAlter:
+      IgnoreSelfDestruct: false
+    accuracySnap: 75
+    accuracyAimed: 110
+    accuracyMelee: 80
+    tuMelee: 30
+    tuSnap: 30
+    tuAimed: 60
+    clipSize: -1
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    maxRange: 2
+    recover: false
   - type: STR_WRAITH_MELEE_WEAPON
     categories: [STR_CAT_AUXILIARY]
     weight: 3
@@ -5262,7 +5323,7 @@
     meleeAnimation: 76
     power: 50
     damageType: 6
-    accuracyMelee: 90
+    accuracyMelee: 100
     damageAlter: #DA LAS
       ToHealth: 1.0
       ToStun: 0.5      
@@ -10916,6 +10977,18 @@
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_NECRON_SCARAB_CORPSE              #NECRON 19968
+    size: 0.3
+    costSell: 20000
+    weight: 30
+    bigSprite: 713
+    floorSprite: 758
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 30
+    listOrder: 19968
 
   - type: STR_GATE_CORPSE  #GATE CORPSE JUST PRECATION
     size: 1
@@ -11501,6 +11574,30 @@
     liveAlien: true
     costSell: 80000
     listOrder: 25040
+  - type: STR_NECRON_ARCHITECT                                #25001
+    size: 0.1
+    recover: true
+    liveAlien: true
+    costSell: 40000
+    listOrder: 25001
+  - type: STR_NECRON_SCARAB5                                #25002
+    size: 0.1
+    recover: true
+    liveAlien: true
+    costSell: 30000
+    listOrder: 25002
+  - type: STR_NECRON_SCARAB3                               #25003
+    size: 0.1
+    recover: true
+    liveAlien: true
+    costSell: 30000
+    listOrder: 25003
+  - type: STR_NECRON_SCARAB1                                #25004
+    size: 0.1
+    recover: true
+    liveAlien: true
+    costSell: 30000
+    listOrder: 25004
 
   - type: STR_KHORNE_CHAMP       #20400
     size: 0.0

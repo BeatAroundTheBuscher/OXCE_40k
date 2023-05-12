@@ -41,4 +41,6 @@ musics:
     normalization: 1.5
   - type: BRIEFHIVE
     normalization: 1.5
+  - type: BRIEFGENERIC
+    normalization: 1.5
 ######

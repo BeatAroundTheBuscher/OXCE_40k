@@ -22,8 +22,8 @@ crafts:
     weaponStrings:
       - STR_WEAPON_ONE
       - STR_WEAPON_TWO
-      - STR_WEAPON_THREE
-      - STR_WEAPON_FOURTH
+      - STR_AUX_ONE
+      - STR_AUX_TWO
     costBuy: 800000
     costRent: 400000
     soldiers: 1
@@ -328,8 +328,7 @@ crafts:
       - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
     weaponStrings:
       - STR_WEAPON_ONE
-      - STR_WEAPON_TWO
-      - STR_WEAPON_THREE
+      - STR_AUX_ONE
     soldiers: 14
     vehicles: 1
     pilots: 2
@@ -415,7 +414,7 @@ crafts:
       - [5, 9, 1, 0]
     craftInventoryTile: [4,6,1]
     spacecraft: true
-  - type: STR_DW_TT # DEATHWATCH NOT USED
+  - type: STR_DW_TT #DEATHWATCH NOT USED
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     keepCraftAfterFailedMission: true
@@ -623,8 +622,7 @@ crafts:
       - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
     weaponStrings:
       - STR_WEAPON_ONE
-      - STR_WEAPON_TWO
-      - STR_WEAPON_THREE
+      - STR_AUX_ONE
     soldiers: 14
     vehicles: 1
     pilots: 2
@@ -1160,8 +1158,7 @@ crafts:
       - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
     weaponStrings:
       - STR_WEAPON_ONE
-      - STR_WEAPON_TWO
-      - STR_WEAPON_THREE
+      - STR_AUX_ONE
     soldiers: 14
     vehicles: 1
     pilots: 2

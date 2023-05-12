@@ -984,6 +984,28 @@ ufopaedia:
     image_id: UP159.SPK
     text: STR_NECRON_DESTROYER_UFOPEDIA
     listOrder: 27851
+    
+    
+  - id: STR_NECRON_SCARAB_ARMOR1                                            #27852         ARMOR
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_NECRON_SCARAB_CORPSE
+    image_id: UP148.SPK
+    text: STR_NURGLE_UFOPEDIA
+    listOrder: 27852
+  - id: STR_NECRON_SCARAB_AUTOPSY                                          #27853
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_NECRON_SCARAB_CORPSE
+    image_id: UP149.SPK
+    text: STR_NECRON_SCARAB_UFOPEDIA
+    listOrder: 27853
+    
+    
+    
+    
 
   - id: STR_GREYKNIGHT_ARMOR                                            #28000         ARMOR
     type_id: 15
@@ -3202,7 +3224,7 @@ ufopaedia:
     image_id: STORMEAGLE.SPK
     requires:
       - STR_STORMEAGLE_INTERCEPTOR
-      - STR_ADEPTAS
+      - STR_DEATHWATCH_AND_ADEPTAS
   - id: STR_STORMEAGLE_GK              #611
     type_id: 11
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -3247,6 +3269,15 @@ ufopaedia:
     image_id: 2REPULSOR2.SPK
     text: STR_ARMY_P_UFOPEDIA
     listOrder: 713
+  - id: STR_DW_LANDRAIDER              #714
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_LANDRAIDER_DW
+      - STR_DEATHWATCH
+    image_id: 2REPULSOR2.SPK
+    text: STR_ARMY_P_UFOPEDIA
+    listOrder: 714
   - id: STR_SPEEDC                     #200
     type_id: 11
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -3458,17 +3489,15 @@ ufopaedia:
     section: STR_XCOM_CRAFT_ARMAMENT
     image_id: 2IMPULSOR.SPK
     requires:
-      - STR_MARINES_STRATEGY
-      - STR_PRIMARIS
+      - STR_PRIMARIS_AND_DEATHWATCH
     text: STR_IMPULSOR_UFOPEDIA
     listOrder: 125
   - id: STR_REPULSOR                  #355
     type_id: 11
     section: STR_XCOM_CRAFT_ARMAMENT
     requires:
-      - STR_MARINES_STRATEGY
       - STR_NEW_FIGHTER_CRAFT
-      - STR_PRIMARIS
+      - STR_PRIMARIS_AND_DEATHWATCH
     image_id: 2REPULSOR3.SPK
     text: STR_REPULSOR_UFOPEDIA
     listOrder: 355
@@ -3477,7 +3506,7 @@ ufopaedia:
     section: STR_XCOM_CRAFT_ARMAMENT
     requires:
       - STR_NEW_FIGHTER_TRANSPORTER
-      - STR_PRIMARIS
+      - STR_PRIMARIS_AND_DEATHWATCH
     image_id: 2REPULSOR.SPK
     text: STR_REPULSOR_T_UFOPEDIA
     listOrder: 356
@@ -3537,7 +3566,7 @@ ufopaedia:
       width: 140
       height: 60
     listOrder: 401
-  - id: STR_THUNDERHAWNK_DW                 #402
+  - id: STR_DW_THUNDERHAWNK                 #402
     type_id: 11
     section: STR_XCOM_CRAFT_ARMAMENT
     requires:

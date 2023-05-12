@@ -561,6 +561,18 @@
     singleImage: true
     files:
       0: Resources/Necron/NEC06.png
+  - type: NECRON7.SPK #FOES INV
+    singleImage: true
+    files:
+      0: Resources/Necron/NEC07.png
+  - type: NECRON8.SPK #FOES INV
+    singleImage: true
+    files:
+      0: Resources/Necron/NEC08.png
+  - type: NECRON9.SPK #FOES INV
+    singleImage: true
+    files:
+      0: Resources/Necron/NEC09.png
   - type: ELDAR1.SPK #FOES INV
     singleImage: true
     files:
@@ -1710,6 +1722,27 @@
     height: 720
     files:
       0: Resources/Necron/necron6.png
+  - type: NECRONDR7.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Necron/necron7.png
+  - type: NECRONDR8.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Necron/necron8.png
+  - type: NECRONDR9.PCK  #DR 4
+    width: 512
+    height: 200
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Necron/necron9.png
 #GENE DR
   - type: GENEDR1.PCK #GENESTELLER CULT
     subX: 32
@@ -3030,6 +3063,11 @@
       709: Resources/Necron/709.png
       710: Resources/Necron/710.png
       711: Resources/Necron/711.png
+      712: Resources/Necron/712.png
+      713: Resources/Necron/713.png
+      714: Resources/Necron/714.png
+      715: Resources/Necron/715.png
+      716: Resources/Necron/716.png
       750: Resources/GENE/750.png
       751: Resources/GENE/751.png
       752: Resources/GENE/752.png
@@ -3569,6 +3607,7 @@
       755: Resources/MKX-ARMOR/DWATCH/floorob_755.png     #DW MKX
       756: Resources/Zombies/DWATCH/floorob_756.png     #MK7
       757: Resources/Zombies/DWATCH/floorob_757.png     #TER
+      758: Resources/Necron/floorob_758.png
 #900-999 CHAPTER CHANGE
 # Traitor guard chimera corpses
       1400: Resources_IG/Floorobs/floorob_traitor_chimera_turret_0.png
@@ -6815,6 +6854,18 @@
     height: 200
     files:
       0: Resources/ORK/UP137.png
+  - type: UP148.SPK #NECRON
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Necron/UP148.png
+  - type: UP149.SPK #NECRON
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Necron/UP149.png
   - type: UP150.SPK #NECRON
     singleImage: true
     width: 320

@@ -83,17 +83,17 @@ cutscenes:
     videos:
       - Resources/ANIMS/c5dw.FLC
     audioTracks:
-      - HANGAR
+      - BRIEFGENERIC
   - type: c6dw
     videos:
       - Resources/ANIMS/c6dw.FLC
     audioTracks:
-      - HANGAR
+      - BRIEFGENERIC
   - type: c7dw
     videos:
       - Resources/ANIMS/c7dw.FLC
     audioTracks:
-      - HANGAR
+      - BRIEFGENERIC
 #UFOS
   - type: HLOCK
     videos:

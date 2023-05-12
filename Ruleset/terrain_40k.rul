@@ -1611,13 +1611,28 @@ terrains:
       - name: TOMB08
         width: 30
         length: 30
+        items:
+          STR_SCARAB_SPAWNER:
+            - [15, 6, 3]
+        fuseTimers:
+          STR_SCARAB_SPAWNER: [0, 0]
       - name: TOMB09
         width: 30
         length: 30
+        items:
+          STR_SCARAB_SPAWNER:
+            - [15, 6, 3]
+        fuseTimers:
+          STR_SCARAB_SPAWNER: [0, 0]
       - name: TOMB10
         width: 30
         length: 30
         groups: 2
+        items:
+          STR_SCARAB_SPAWNER:
+            - [15, 6, 3]
+        fuseTimers:
+          STR_SCARAB_SPAWNER: [0, 0]
       - name: TOMB11
         width: 10
         length: 10
@@ -1639,6 +1654,9 @@ terrains:
         width: 30
         length: 30
         items:
+          STR_SCARAB_SPAWNER:
+            - [14, 18, 5]
+            - [16, 18, 5]
           STR_MONOS_SPAWNER:
             - [5, 1, 3]
             - [5, 1, 5]
@@ -1648,6 +1666,7 @@ terrains:
         fuseTimers:
           STR_MONOS_SPAWNER: [0, 0]
           STR_MONOW_SPAWNER: [0, 0]
+          STR_SCARAB_SPAWNER: [0, 0]
       - name: TOMB17
         width: 30
         length: 30

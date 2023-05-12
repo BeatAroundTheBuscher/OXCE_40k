@@ -766,7 +766,6 @@ research:
     dependencies:
       - STR_MIDTIER_PREREQ
       - STR_GREYKNIGHTS
-      
   # DEATHWATCH
   - name: STR_DW_CAP_ARMOR
     cost: 180
@@ -1012,6 +1011,28 @@ research:
       - STR_TERROR_SHIP
       - STR_HARVESTER
       - STR_SUPPLY_SHIP
+  - name: STR_STORMEAGLE_INTERCEPTOR_DW
+    cost: 600
+    points: 25
+    listOrder: 5050
+    dependencies:
+      - STR_DEATHWATCH
+      - STR_MIDTIER_PREREQ
+      - STR_BATTLESHIP
+      - STR_ABDUCTOR
+      - STR_TERROR_SHIP
+      - STR_HARVESTER
+      - STR_SUPPLY_SHIP
+    getOneFree:
+      - STR_STORMEAGLE_INTERCEPTOR
+  - name: STR_STORMEAGLE_INTERCEPTOR_GK
+    cost: 600
+    points: 25
+    listOrder: 5050
+    dependencies:
+      - STR_GK_HIGHTIER
+      - STR_GREYKNIGHTS
+      - STR_HIGHTIER_PREREQ
 
   - name: STR_THUNDERHAWK_GK_REQ # GREYKNIGHTS
     cost: 900
@@ -1024,18 +1045,10 @@ research:
     cost: 900
     points: 30
     dependencies:
-      - STR_MIDTIER_PREREQ
       - STR_DEATHWATCH
-      - STR_HIGHTIER_PREREQ
-
-  - name: STR_STORMEAGLE_INTERCEPTOR_GK
-    cost: 600
-    points: 25
-    listOrder: 5050
-    dependencies:
-      - STR_GK_HIGHTIER
-      - STR_GREYKNIGHTS
-      - STR_HIGHTIER_PREREQ
+      - STR_DW_HIGHTIER
+    getOneFree:
+      - STR_NEW_FIGHTER_TRANSPORTER
 
 #*** miscellaneous ***
   - name: STR_SPELLSR
@@ -1207,11 +1220,18 @@ research:
     dependencies:
       - STR_MIDTIER_PREREQ
       - STR_DEATHWATCH
-      - STR_CYDONIA_OR_BUST
+      - STR_DEATHWATCH_BUST
     unlocks:
       - STR_HIGHTIER_PREREQ
 
+
+
 #*** weapons ***
+
+  - name: STR_CASS_R #ASSAULT CANNON RESEARCH
+    dependencies:
+      - STR_GENERALLOCK
+
   - name: STR_CHAINSWORD_MC
     cost: 100
     points: 25
@@ -1239,6 +1259,15 @@ research:
       - STR_DEVASTATOR
       - STR_MIDTIER_PREREQ
       - STR_MASTER_CRAFTING
+  - name: STR_HB_DW
+    cost: 860
+    points: 20
+    dependencies:
+      - STR_CHB
+      - STR_MIDTIER_PREREQ
+      - STR_DEATHWATCH
+    getOneFree:
+      - STR_HB
   - name: STR_HB
     cost: 860
     points: 20
@@ -1266,7 +1295,7 @@ research:
     points: 20
     dependencies:
       - STR_CHB
-      - STR_CASSC
+      - STR_CASS_R
       - STR_MIDTIER_PREREQ
   - name: STR_ASSC_CLIP
     cost: 120
@@ -1277,7 +1306,7 @@ research:
     cost: 860
     points: 20
     dependencies:
-      - STR_CASSC
+      - STR_CASS_R
       - STR_MIDTIER_PREREQ
       - STR_PRIMARIS_AND_ADEPTAS
   - name: STR_POWER_SWORD
@@ -1291,9 +1320,16 @@ research:
     points: 20
     dependencies:
       - STR_HIGHTIER_PREREQ
-      - STR_MARINES_STRATEGY
+      - STR_MARINES_AND_DEATHWATCH
       - STR_HB
-
+  - name: STR_POWER_SWORD_CM
+    cost: 560
+    points: 20
+    dependencies:
+      - STR_HIGHTIER_PREREQ
+      - STR_CHAMBERMILITANT
+    getOneFree:
+      - STR_POWER_SWORD
 #*** midtier facilities ***
   - name: STR_NAVY_COMUNICATIONS
     cost: 100
@@ -1511,6 +1547,10 @@ research:
     needItem: true
   - name: STR_DESTROYER_CORPSE
     cost: 192
+    points: 50
+    needItem: true
+  - name: STR_NECRON_SCARAB_CORPSE
+    cost: 50
     points: 50
     needItem: true
 
@@ -1918,6 +1958,14 @@ research:
     cost: 200
     points: 25
     needItem: true
+    getOneFree:
+      - STR_CASS_R
+  - name: STR_ASSCTZ
+    cost: 200
+    points: 25
+    needItem: true
+    getOneFree:
+      - STR_CASS_R
   - name: STR_BLASTER_LAUNCHER
     cost: 900
     points: 30

@@ -458,6 +458,16 @@ items:
     armor: 80
     battleType: 11
     recover: false
+  - type: STR_MK7NH_DW_CORPSE #NO HELMET
+    name: STR_CORPSE
+    weight: 40
+    bigSprite: 831
+    floorSprite: 717
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    battleType: 11
+    recover: false
   - type: STR_TERMINATOR_DW_CORPSE
     name: STR_CORPSE
     weight: 50
@@ -1018,6 +1028,19 @@ armors:
       F3: ["CAPE4", "CAPDW", "M3_FACES", "PLUM"]
       F4: ["CAPE4", "CAPDW", "M4_FACES", "PLUM"]
       F5: ["CAPE4", "CAPDW", "M5_FACES", "PLUM"]
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_DW_CAP_ARMOR_BT_UC #ULTRAMARINE
     refNode: *STR_DW_CAP_ARMOR_UC
     units:
@@ -1407,11 +1430,36 @@ armors:
       - 1.0 #none
       - 1.0 #AP
       - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_DW_TAC_ARMOR_BA_UC #BLOOD ANGELS
     refNode: *STR_DW_TAC_ARMOR_UC
     units:
       - STR_BLOODANGELS
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    selectUnitMale:     [1231, 1232, 1233, 1234, 1235]
+    selectUnitMale:     [1231, 1232, 1233, 1234, 1235]
+    startMovingMale:    [1226, 1227, 1228, 1229, 1230]
+    startMovingMale:    [1226, 1227, 1228, 1229, 1230]
+    selectWeaponMale:   [1221, 1222, 1223, 1224, 1225]
+    selectWeaponMale:   [1221, 1222, 1223, 1224, 1225]
+    annoyedMale:        [1236, 1237, 1238, 1239, 1240]
+    annoyedMale:        [1236, 1237, 1238, 1239, 1240]
+    deathMale:     [1241, 1242, 1243, 1244, 1245]
+    deathMale:     [1241, 1242, 1243, 1244, 1245]
 #SPRITES
+    corpseBattle:
+      - STR_MK7NH_DW_CORPSE
     spriteSheet: TACDWBA.PCK
     customArmorPreviewIndex: 542
     forcedTorso: 1
@@ -1431,6 +1479,31 @@ armors:
       F3: ["0", "TACDWBA", "M3_FACE"]
       F4: ["0", "TACDWBA", "M4_FACE"]
       F5: ["0", "TACDWBA", "M5_FACE"]
+#SPECIAL
+    instantWoundRecovery: true
+    specialWeapon: STR_BLOOD_GAUNTLET_PLUS
+  - type: STR_DW_TAC_ARMOR_BAH_UC #BLOOD ANGELS HELMET
+    refNode: *STR_DW_TAC_ARMOR_UC
+#SPRITES
+    spriteSheet: TACDWBAH.PCK
+    customArmorPreviewIndex: 542
+    forcedTorso: 1
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "TACDWBAH", "M0_FACE"]
+      M1: ["0", "TACDWBAH", "M1_FACE"]
+      M2: ["0", "TACDWBAH", "M2_FACE"]
+      M3: ["0", "TACDWBAH", "M3_FACE"]
+      M4: ["0", "TACDWBAH", "M4_FACE"]
+      M5: ["0", "TACDWBAH", "M5_FACE"]
+      F0: ["0", "TACDWBAH", "M0_FACE"]
+      F1: ["0", "TACDWBAH", "M1_FACE"]
+      F2: ["0", "TACDWBAH", "M2_FACE"]
+      F3: ["0", "TACDWBAH", "M3_FACE"]
+      F4: ["0", "TACDWBAH", "M4_FACE"]
+      F5: ["0", "TACDWBAH", "M5_FACE"]
 #SPECIAL
     instantWoundRecovery: true
   - type: STR_DW_TAC_ARMOR_BT_UC #BLACK TEMPLARS
@@ -1686,6 +1759,20 @@ armors:
       F3: ["0", "DEVDWSALA", "M3_FACE"]
       F4: ["0", "DEVDWSALA", "M4_FACE"]
       F5: ["0", "DEVDWSALA", "M5_FACE"]
+#SPECIAL
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_DW_DEV_ARMOR_BA_UC
     refNode: *STR_DW_DEV_ARMOR_UC
     units:
@@ -1994,6 +2081,22 @@ armors:
     units:
       - STR_BLOODANGELS
 #SPRITES
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
+    selectUnitMale:     [1231, 1232, 1233, 1234, 1235]
+    selectUnitMale:     [1231, 1232, 1233, 1234, 1235]
+    startMovingMale:    [1226, 1227, 1228, 1229, 1230]
+    startMovingMale:    [1226, 1227, 1228, 1229, 1230]
+    selectWeaponMale:   [1221, 1222, 1223, 1224, 1225]
+    selectWeaponMale:   [1221, 1222, 1223, 1224, 1225]
+    annoyedMale:        [1236, 1237, 1238, 1239, 1240]
+    annoyedMale:        [1236, 1237, 1238, 1239, 1240]
+    deathMale:     [1241, 1242, 1243, 1244, 1245]
+    deathMale:     [1241, 1242, 1243, 1244, 1245]
+    corpseBattle:
+      - STR_MK7NH_DW_CORPSE
     spriteSheet: ASSDWBA.PCK
     customArmorPreviewIndex: 548
     layersDefaultPrefix: 0
@@ -2012,6 +2115,32 @@ armors:
       F3: ["0", "ASSDWBA", "M3_FACE"]
       F4: ["0", "ASSDWBA", "M4_FACE"]
       F5: ["0", "ASSDWBA", "M5_FACE"]
+#SPECIAL
+    instantWoundRecovery: true
+    specialWeapon: STR_BLOOD_GAUNTLET_PLUS
+  - type: STR_DW_ASS_ARMOR_BAH_UC #ASSAULT BLOOD ANGELS HELMET
+    refNode: *STR_DW_ASS_ARMOR_UC
+#SPRITES
+    spriteSheet: ASSDWBAH.PCK
+    customArmorPreviewIndex: 548
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      0: 0
+    layersDefinition:
+      M0: ["0", "ASSDWBAH", "M0_FACE"]
+      M1: ["0", "ASSDWBAH", "M1_FACE"]
+      M2: ["0", "ASSDWBAH", "M2_FACE"]
+      M3: ["0", "ASSDWBAH", "M3_FACE"]
+      M4: ["0", "ASSDWBAH", "M4_FACE"]
+      M5: ["0", "ASSDWBAH", "M5_FACE"]
+      F0: ["0", "ASSDWBAH", "M0_FACE"]
+      F1: ["0", "ASSDWBAH", "M1_FACE"]
+      F2: ["0", "ASSDWBAH", "M2_FACE"]
+      F3: ["0", "ASSDWBAH", "M3_FACE"]
+      F4: ["0", "ASSDWBAH", "M4_FACE"]
+      F5: ["0", "ASSDWBAH", "M5_FACE"]
+#SPECIAL
+    instantWoundRecovery: true
   - type: STR_DW_ASS_ARMOR_SALA_UC #ASSAULT
     refNode: *STR_DW_ASS_ARMOR_UC
     units:
@@ -2035,6 +2164,20 @@ armors:
       F3: ["0", "ASSDWSALA", "M3_FACE"]
       F4: ["0", "ASSDWSALA", "M4_FACE"]
       F5: ["0", "ASSDWSALA", "M5_FACE"]
+#SPECIAL
+    damageModifier: #ASS MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_DW_ASS_ARMOR_BT_UC #ASSAULT
     refNode: *STR_DW_ASS_ARMOR_UC
     units:
@@ -6176,6 +6319,20 @@ armors:
       F3: ["CAPEP", "MKXCAPDW", "M3_FACES", ""]
       F4: ["CAPEP", "MKXCAPDW", "M4_FACES", ""]
       F5: ["CAPEP", "MKXCAPDW", "M5_FACES", ""]
+#SPECIAL
+    damageModifier: #MARINE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.1 #PLASMA
+      - 1.1 #STUN
+      - 1.1 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
   - type: STR_MKX_DW_CAP_BT_UC #ULTRAMARINE
     refNode: *STR_MKX_DW_CAP_UC
     units:
@@ -6477,6 +6634,8 @@ extraSprites:
     fileSingle: Resources/LAYER/DW/ASSAULTSALA.png
   - typeSingle: 0__1__ASSDWBA
     fileSingle: Resources/LAYER/DW/ASSAULTBA.png
+  - typeSingle: 0__1__ASSDWBAH
+    fileSingle: Resources/LAYER/DW/ASSAULTBAH.png
   - typeSingle: 0__1__ASSDWBT
     fileSingle: Resources/LAYER/DW/ASSAULTBT.png
   - typeSingle: 0__1__ASSDWIF
@@ -6515,6 +6674,8 @@ extraSprites:
     fileSingle: Resources/LAYER/DW/TATICALSALA.png
   - typeSingle: 0__1__TACDWBA
     fileSingle: Resources/LAYER/DW/TATICALBA.png
+  - typeSingle: 0__1__TACDWBAH
+    fileSingle: Resources/LAYER/DW/TATICALBAH.png
   - typeSingle: 0__1__TACDWBT
     fileSingle: Resources/LAYER/DW/TATICALBT.png
   - typeSingle: 0__1__TACDWIF
@@ -6642,6 +6803,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Assault/DWATCH/ASSDWBA.png
+  - type: ASSDWBAH.PCK #ASSAULT BLOOD ANGELS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Assault/DWATCH/ASSDWBAH.png
   - type: ASSDWBT.PCK #ASSAULT BLACK TEMPLARS
     width: 512
     height: 720
@@ -6770,6 +6938,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/MK7-ARMOR/DWATCH/MK7DWBA.png
+  - type: TACDWBAH.PCK #TACTICAL BLOOD ANGELS
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/MK7-ARMOR/DWATCH/MK7DWBAH.png
   - type: TACDWBT.PCK #TACTICAL BLACK TEMPLARS
     width: 512
     height: 720

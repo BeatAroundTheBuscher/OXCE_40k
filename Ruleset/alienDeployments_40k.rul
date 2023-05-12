@@ -217,6 +217,7 @@ alienDeployments:
       STR_NECRON_TERROR: 25
       STR_NECRON_BASE: 25
     points: 1
+    enviroEffects: STR_INSIDE_ENVIRO
 
   - type: STR_TOMB_NECRON #NECRON
     markerIcon: 64
@@ -416,6 +417,7 @@ alienDeployments:
       STR_NECRON_TERROR: 25
       STR_NECRON_BASE: 25
     points: 1
+    enviroEffects: STR_TOMB
 
   - type: STR_MONOLITH    #NECRON
     data:
@@ -5901,6 +5903,7 @@ alienDeployments:
     duration: [24, 48] #[min, max] in hours
     despawnPenalty: 1000
   - type: STR_ALIEN_BASE_ASSAULT                       # RANK0  # RANK1
+    enviroEffects: STR_COLONY_ENVIRO
     alienBase: true    # this is only to tell new battle mode what to do with this deployment
     markerIcon: 7
     data:
@@ -6477,7 +6480,9 @@ alienDeployments:
     markerName: STR_RIOT_SITE
 
 #*** Final Mission Deployments ***
-  - type: STR_DW_FINAL_LANDING
+  - type: STR_DW_FINAL_LANDING #NECRON
+    music:
+      - INMYSPIRIT
     music:
       - INMYSPIRIT
     data:
@@ -6671,7 +6676,10 @@ alienDeployments:
     markerIcon: 94
     markerName: STR_FINAL_TOMB
     finalDestination: false
+    enviroEffects: STR_TOMB
   - type: STR_DW_FINAL_ENTRACE #NECRON
+    music:
+      - INMYSPIRIT
     data:
       - alienRank: 5
         lowQty: 5
@@ -6853,7 +6861,7 @@ alienDeployments:
     briefing:
       cutscene: c6dw
       desc: STR_DW_FINAL_ENTRACE_DESCRIPTION
-      music: gmstory2
+      music: INMYSPIRIT
       showCraft: true
       showTarget: false
       background: BACK172.SCR
@@ -6864,7 +6872,10 @@ alienDeployments:
     loseCutscene: loseGame
     shade: 7
     cheatTurn: 10
+    enviroEffects: STR_TOMB
   - type: STR_DW_FINAL_ASSAULT #NECRON
+    music:
+      - FATE
     data:
       - alienRank: 5
         lowQty: 5
@@ -7050,143 +7061,16 @@ alienDeployments:
       textOffset: -16
       palette: 6
       background: BACK172.SCR
-      music: INMYSPIRIT
+      music: FATE
       showTarget: false
     shade: 7
     cheatTurn: 10
     winCutscene: winGame
     loseCutscene: loseGame
     finalDestination: false # used for the hangar mission, not necessary since this is spawned as a base
+    enviroEffects: STR_TOMB
 
-  - type: STR_PALACE_LANDING_ARBITES
-    music:
-      - INMYSPIRIT
-    data:
-      - alienRank: 5
-        lowQty: 10 #4
-        highQty: 10 #6
-        dQty: 1
-        percentageOutsideUfo: 70
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 4
-        lowQty: 3
-        highQty: 3 #2
-        dQty: 1 #0
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 3
-        lowQty: 3
-        highQty: 3
-        dQty: 1
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_BOLTPISTOL_CHAOS
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-      - alienRank: 2
-        lowQty: 2
-        highQty: 2 #2
-        dQty: 1 #0
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_HEAVY_PLASMA_CLIP
-      - alienRank: 1
-        lowQty: 1
-        highQty: 1
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 6
-        lowQty: 5 #1
-        highQty: 5 #3
-        dQty: 2
-        percentageOutsideUfo: 50
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 7
-        lowQty: 5 #1
-        highQty: 5 #3
-        dQty: 2
-        percentageOutsideUfo: 50
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-    width: 60
-    length: 60
-    height: 9
-    terrains:
-      - CITY
-    startingCondition: STR_FINAL_MISSION_ARBITES
-    script: CITYFINAL
-    race: STR_ETHEREAL
-    nextStage: STR_MARS_THE_FINAL_ASSAULT
-    loseCutscene: loseGame
-    briefing:
-      title: STR_FINALLAND_TITLE_ARBITES
-      desc: STR_FINALLAND_DESC_ARBITES
-      cutscene: c4
-      textOffset: -16
-      palette: 6
-      music: INMYSPIRIT
-      showTarget: false
-    markerIcon: 57
-    markerName: STR_FINAL_BASE
-    finalDestination: false
-
-  - type: STR_CHAOS_FINAL_LANDING                     # RANK0 # RANK1
+  - type: STR_CHAOS_FINAL_LANDING #GREYKNIGHTS
     music:
       - INMYSPIRIT
     data:
@@ -7313,8 +7197,7 @@ alienDeployments:
     markerIcon: 58
     markerName: STR_INQ_BASE
     finalDestination: false # used for the hangar mission, not necessary since this is spawned as a base
-
-  - type: STR_CHAOS_FINAL_ASSAULT                     # RANK0 # RANK1 STR_INSIDE_ENVIRO
+  - type: STR_CHAOS_FINAL_ASSAULT #GREYKNIGHTS
     enviroEffects: STR_INSIDE_ENVIRO
     music:
       - INMYSPIRIT
@@ -7439,7 +7322,7 @@ alienDeployments:
       showTarget: false
     finalDestination: false # used for the hangar mission, not necessary since this is spawned as a base
 
-  - type: STR_MARS_CYDONIA_LANDING                     # RANK0 # RANK1
+  - type: STR_MARS_CYDONIA_LANDING
     music:
       - INMYSPIRIT
     data:
@@ -7567,7 +7450,6 @@ alienDeployments:
     markerIcon: 57
     markerName: STR_FINAL_BASE
     finalDestination: false # used for the hangar mission, not necessary since this is spawned as a base
-
   - type: STR_MARS_CYDONIA_LANDING_GUARD
     music:
       - INMYSPIRIT
@@ -7696,7 +7578,6 @@ alienDeployments:
     markerIcon: 57
     markerName: STR_FINAL_BASE
     finalDestination: false
-
   - type: STR_MARS_CYDONIA_LANDING_ADEPTAS
     music:
       - INMYSPIRIT
@@ -7953,6 +7834,134 @@ alienDeployments:
     markerIcon: 57
     markerName: STR_FINAL_BASE
     finalDestination: false
+  - type: STR_PALACE_LANDING_ARBITES #URBANPALACE
+    music:
+      - INMYSPIRIT
+    data:
+      - alienRank: 5
+        lowQty: 10 #4
+        highQty: 10 #6
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 3
+        highQty: 3 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 3
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_BOLTPISTOL_CHAOS
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+      - alienRank: 2
+        lowQty: 2
+        highQty: 2 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 6
+        lowQty: 5 #1
+        highQty: 5 #3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 5 #1
+        highQty: 5 #3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 60
+    length: 60
+    height: 9
+    terrains:
+      - CITY
+    startingCondition: STR_FINAL_MISSION_ARBITES
+    script: CITYFINAL
+    race: STR_ETHEREAL
+    nextStage: STR_MARS_THE_FINAL_ASSAULT
+    loseCutscene: loseGame
+    briefing:
+      title: STR_FINALLAND_TITLE_ARBITES
+      desc: STR_FINALLAND_DESC_ARBITES
+      cutscene: c4
+      textOffset: -16
+      palette: 6
+      music: INMYSPIRIT
+      showTarget: false
+    markerIcon: 57
+    markerName: STR_FINAL_BASE
+    finalDestination: false
+
 
   - type: STR_MARS_CYDONIA_ENTRANCE                    # RANK0 # RANK1
     music:
@@ -8024,7 +8033,6 @@ alienDeployments:
       palette: 6
       music: INMYSPIRIT
       showTarget: false
-
   - type: STR_MARS_CYDONIA_ENTRANCE_GUARD
     music:
       - KYRIE
@@ -8095,7 +8103,6 @@ alienDeployments:
       palette: 6
       music: INMYSPIRIT
       showTarget: false
-
   - type: STR_MARS_CYDONIA_ENTRANCE_ADEPTAS
     music:
       - KYRIE
@@ -8164,7 +8171,7 @@ alienDeployments:
       desc: STR_FINALENTRANCE_DESC
       textOffset: -16
       palette: 6
-      music: INMYSPIRIT
+      music: KYRIE
       showTarget: false
   - type: STR_MARS_CYDONIA_ENTRANCE_CHAMBER
     music:
@@ -8234,14 +8241,14 @@ alienDeployments:
       desc: STR_FINALENTRANCE_DESC
       textOffset: -16
       palette: 6
-      music: INMYSPIRIT
+      music: KYRIE
       showTarget: false
 
 
   - type: STR_MARS_THE_FINAL_ASSAULT                   # RANK0 # RANK1      STR_INSIDE_ENVIRO
     enviroEffects: STR_INSIDE_ENVIRO
     music:
-      - KYRIE
+      - FATE
     data:
       - alienRank: 0
         lowQty: 3 #2

@@ -475,7 +475,6 @@ missionScripts:
     maxRuns: 1
     varName: finalMissionDeathwatch
 
-
   - type: finalMissionChaos
     missionWeights:
       0:

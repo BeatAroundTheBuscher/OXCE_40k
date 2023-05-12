@@ -1371,6 +1371,83 @@
     livingWeapon: true
     capturable: false
 #    NECRON
+  - type: STR_NECRON_SCARAB5 #STR_NECRON_WARRIOR_ARMOR                        RANK 5 weapons done
+    race: STR_NECRON
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 75
+      stamina: 96
+      health: 30
+      bravery: 100
+      reactions: 85
+      firing: 74
+      throwing: 80
+      strength: 30
+      psiStrength: 200
+      psiSkill: 0
+      melee: 65
+    armor: STR_NECRON_SCARAB_ARMOR5
+    moveSound: 845
+    standHeight: 20
+    kneelHeight: 15
+    value: 30
+    deathSound: [289, 290, 291]
+    intelligence: 1
+    aggression: 3
+    spotter: 2
+    energyRecovery: 40
+    spawnUnit: STR_NECRON_SCARAB3
+  - type: STR_NECRON_SCARAB3 #STR_NECRON_WARRIOR_ARMOR                        RANK 5 weapons done
+    race: STR_NECRON
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 75
+      stamina: 96
+      health: 30
+      bravery: 100
+      reactions: 85
+      firing: 74
+      throwing: 80
+      strength: 30
+      psiStrength: 200
+      psiSkill: 0
+      melee: 65
+    armor: STR_NECRON_SCARAB_ARMOR3
+    moveSound: 845
+    standHeight: 20
+    kneelHeight: 15
+    value: 30
+    deathSound: [289, 290, 291]
+    intelligence: 1
+    aggression: 3
+    spotter: 2
+    energyRecovery: 40
+    spawnUnit: STR_NECRON_SCARAB1
+  - type: STR_NECRON_SCARAB1 #STR_NECRON_WARRIOR_ARMOR                        RANK 5 weapons done
+    race: STR_NECRON
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 75
+      stamina: 96
+      health: 15
+      bravery: 100
+      reactions: 85
+      firing: 74
+      throwing: 80
+      strength: 30
+      psiStrength: 200
+      psiSkill: 0
+      melee: 65
+    armor: STR_NECRON_SCARAB_ARMOR1
+    moveSound: 845
+    standHeight: 20
+    kneelHeight: 15
+    value: 30
+    deathSound: [289, 290, 291]
+    intelligence: 1
+    aggression: 3
+    spotter: 2
+    energyRecovery: 40
   - type: STR_NECRON_WARRIOR #STR_NECRON_WARRIOR_ARMOR                        RANK 5 weapons done
     race: STR_NECRON
     rank: STR_LIVE_SOLDIER
@@ -11049,7 +11126,7 @@ armors:
       - INV_NULL_3X3
 
 #    NECRON
-  - type: STR_NECRON_ARCHITECT_ARMOR        #NECRON WARRIOR
+  - type: STR_NECRON_ARCHITECT_ARMOR       #NECRON WARRIOR
     tags:
       #ARMOR_ENERGY_SHIELD_CAPACITY: 80
       #ARMOR_ENERGY_SHIELD_PER_TURN: 10
@@ -11088,7 +11165,7 @@ armors:
     loftempsSet: [ 3 ]
     builtInWeapons:
       - INV_NULL_3X3
-  - type: STR_NECRON_WARRIOR_ARMOR        #NECRON WARRIOR
+  - type: STR_NECRON_WARRIOR_ARMOR         #NECRON WARRIOR
     visibilityAtDay: 40
     visibilityAtDark: 40
     bleedImmune: true
@@ -11120,7 +11197,7 @@ armors:
     loftempsSet: [ 3 ]
     builtInWeapons:
       - INV_NULL_3X3
-  - type: STR_NECRON_LYCHGUARD_ARMOR        #NECRON WARRIOR
+  - type: STR_NECRON_LYCHGUARD_ARMOR       #NECRON WARRIOR
     tags:
       #ARMOR_ENERGY_SHIELD_CAPACITY: 80
       #ARMOR_ENERGY_SHIELD_PER_TURN: 10
@@ -11160,7 +11237,7 @@ armors:
     builtInWeapons:
       - INV_NULL_3X3
       - AUX_DISPERSIONSHIELD
-  - type: STR_NECRON_IMORTAL_ARMOR        #NECRON WARRIOR
+  - type: STR_NECRON_IMORTAL_ARMOR         #NECRON WARRIOR
     visibilityAtDay: 40
     visibilityAtDark: 40
     bleedImmune: true
@@ -11192,7 +11269,7 @@ armors:
     loftempsSet: [ 3 ]
     builtInWeapons:
       - INV_NULL_3X3
-  - type: STR_NECRON_DEATHMARK_ARMOR      #NECRON WARRIOR
+  - type: STR_NECRON_DEATHMARK_ARMOR       #NECRON WARRIOR
     visibilityAtDay: 60
     visibilityAtDark: 60
     bleedImmune: true
@@ -11224,7 +11301,7 @@ armors:
     loftempsSet: [ 3 ]
     builtInWeapons:
       - INV_NULL_3X3
-  - type: STR_DESTROYER_ARMOR             #NECRON WARRIOR
+  - type: STR_DESTROYER_ARMOR              #NECRON WARRIOR
     visibilityAtDay: 40
     visibilityAtDark: 30
     spriteSheet: NECRONDR5.PCK
@@ -11281,6 +11358,177 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     builtInWeapons:
       - STR_GAUSS_CANNON
+  - type: STR_NECRON_SCARAB_ARMOR3         #NECRON WARRIOR
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: NECRONDR7.PCK
+    fearImmune: true
+    bleedImmune: true
+    scripts:
+      selectUnitSprite: |
+        var int temp;
+        var int walking;
+        var int floating;
+        unit.isWalking walking;
+        unit.isFloating floating;
+        if and eq walking 0 eq floating 1;
+          unit.getId temp;
+          offsetmod temp 11 0 8; #desync animation of different units
+          add temp anim_frame;
+          wavegen_saw temp 4 4 4;
+          add sprite_offset 1;
+          add sprite_offset temp;
+          add sprite_index sprite_offset;
+        else;
+          add sprite_index sprite_offset;
+        end;
+        return sprite_index;
+    allowInv: false
+    spriteInv: NECRON8.SPK
+    corpseBattle:
+      - 100_NECRON1
+      - 100_NECRON2
+      - 100_NECRON3
+      - 100_NECRON4
+    corpseGeo: STR_DESTROYER_CORPSE
+    frontArmor: 30
+    sideArmor: 30
+    rearArmor: 20
+    underArmor: 35
+    drawingRoutine: 20
+    constantAnimation: false
+    movementType: 1
+    size: 2
+    damageModifier: #NECRON ARMOR
+      - 1.0 #none
+      - 0.9 #AP
+      - 0.4 #FLAMES
+      - 1.0 #HE
+      - 1.1 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    builtInWeapons:
+      - INV_NULL_3X3
+      - STR_SCARAB_R_WEAPON
+      - STR_SCARAB_L_WEAPON
+  - type: STR_NECRON_SCARAB_ARMOR5         #NECRON WARRIOR
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: NECRONDR8.PCK
+    fearImmune: true
+    bleedImmune: true
+    scripts:
+      selectUnitSprite: |
+        var int temp;
+        var int walking;
+        var int floating;
+        unit.isWalking walking;
+        unit.isFloating floating;
+        if and eq walking 0 eq floating 1;
+          unit.getId temp;
+          offsetmod temp 11 0 8; #desync animation of different units
+          add temp anim_frame;
+          wavegen_saw temp 4 4 4;
+          add sprite_offset 1;
+          add sprite_offset temp;
+          add sprite_index sprite_offset;
+        else;
+          add sprite_index sprite_offset;
+        end;
+        return sprite_index;
+    allowInv: false
+    spriteInv: NECRON7.SPK
+    corpseBattle:
+      - 100_NECRON1
+      - 100_NECRON2
+      - 100_NECRON3
+      - 100_NECRON4
+    corpseGeo: STR_DESTROYER_CORPSE
+    frontArmor: 30
+    sideArmor: 30
+    rearArmor: 20
+    underArmor: 35
+    drawingRoutine: 20
+    constantAnimation: false
+    movementType: 1
+    size: 2
+    damageModifier: #NECRON ARMOR
+      - 1.0 #none
+      - 0.9 #AP
+      - 0.4 #FLAMES
+      - 1.0 #HE
+      - 1.1 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    builtInWeapons:
+      - INV_NULL_3X3
+      - STR_SCARAB_R_WEAPON
+      - STR_SCARAB_L_WEAPON
+  - type: STR_NECRON_SCARAB_ARMOR1         #NECRON WARRIOR
+    visibilityAtDay: 40
+    visibilityAtDark: 40
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    zombiImmune: true
+    spriteSheet: NECRONDR9.PCK
+    spriteInv: NECRON9.SPK
+    scripts:
+      selectUnitSprite: |
+        var int temp;
+        var int walking;
+        unit.isWalking walking;
+        if eq walking 0;
+          unit.getId temp;
+          offsetmod temp 11 0 8; #desync animation of different units
+          add temp anim_frame;
+          wavegen_saw temp 8 8 7;
+          mul sprite_offset 8;
+          add sprite_offset 8;
+          add sprite_offset temp;
+          set sprite_index sprite_offset;
+        else;
+          add sprite_index sprite_offset;
+        end;
+        return sprite_index;
+    corpseBattle:
+      - STR_NECRON_SCARAB_CORPSE 
+    frontArmor: 30
+    sideArmor: 30
+    rearArmor: 20
+    underArmor: 35
+    drawingRoutine: 4
+    movementType: 1
+    damageModifier: #NECRON ARMOR
+      - 1.0 #none
+      - 0.9 #AP
+      - 0.4 #FLAMES
+      - 1.0 #HE
+      - 1.1 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 3 ]
+    builtInWeapons:
+      - INV_NULL_3X3
+      - STR_SCARAB_R_WEAPON
+      - STR_SCARAB_L_WEAPON
 #    ELDAR
   - type: STR_ELDAR_ARMOR        #GUARDIAN
     visibilityAtDay: 40
@@ -11543,8 +11791,7 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 5
     builtInWeapons:
-      - AUX_CENTURION_GRAVGUN
-      - INV_NULL_3X3
+      - AUX_WRAITHCANNON
 #    ORK
   - type: STR_ORK_KILLA_ARMOR #KILLA
     visibilityAtDay: 40
@@ -13382,7 +13629,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_TEC_BAYR
-      - STR_MARINES_STRATEGY
+      - STR_MARINES_AND_DEATHWATCH
       - STR_PERSONAL_ARMOR
     space: 12
     time: 800
@@ -13450,6 +13697,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_CHAPTER_PURITY
+      - STR_MARINES_STRATEGY
       - STR_PERSONAL_ARMOR
       - STR_PSI_AMP
     space: 12
@@ -13563,6 +13811,71 @@ manufacture:
       STR_ELERIUM_115: 30
       STR_ALIEN_HABITAT: 5
 #--------------------------------------------------------------- CRAFT --------------------------------
+#ADEPTAS
+  - name: STR_ADEPTAS_THUNDERHAWNK #thunderhawnk Type 1
+    category: STR_CRAFT
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_ADEPTAS
+    space: 34
+    time: 18000
+    cost: 600000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 850
+      STR_UFO_POWER_SOURCE: 1
+      STR_UFO_NAVIGATION: 1
+    producedItems:
+      STR_ADEPTAS_THUNDERHAWNK: 1
+  - name: STR_STORMEAGLE_ADEPTAS
+    category: STR_CRAFT
+    requires:
+      - STR_STORMEAGLE_INTERCEPTOR
+      - STR_DEATHWATCH_AND_ADEPTAS
+    space: 30
+    time: 20000
+    cost: 800000
+    listOrder: 3350
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1000
+      STR_UFO_POWER_SOURCE: 4
+      STR_UFO_NAVIGATION: 2
+  - name: STR_STORMRAVEN_ADEPTAS
+    category: STR_CRAFT
+    requires:
+      - STR_DEATHWATCH_AND_ADEPTAS
+      - STR_NEW_FIGHTER_CRAFT
+    space: 30
+    time: 14000
+    cost: 400000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 650
+      STR_UFO_POWER_SOURCE: 1
+      STR_UFO_NAVIGATION: 1
+  - name: STR_LANDRAIDER
+    category: STR_CRAFT
+    requires:
+      - STR_LANDRAIDER_ADEPTAS
+    space: 40
+    time: 30000
+    cost: 1000000
+    listOrder: 3350
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1500
+      STR_UFO_POWER_SOURCE: 6
+      STR_UFO_NAVIGATION: 6
+  - name: STR_TTA #thunderhawnk Transport ASS
+    category: STR_CRAFT
+    requires:
+      - STR_HIGHTIER_PREREQ
+      - STR_ADEPTAS
+    space: 36
+    time: 34000
+    cost: 900000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1200
+      STR_UFO_POWER_SOURCE: 2
+      STR_UFO_NAVIGATION: 1
+
   - name: STR_REPULSOR
     category: STR_CRAFT
     requires:
@@ -13621,6 +13934,19 @@ manufacture:
       - STR_CHAPTERARMYR
       - STR_CHAPTER_PURITY
       - STR_PRIMARIS
+    space: 40
+    time: 30000
+    cost: 1000000
+    listOrder: 3350
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1200
+      STR_UFO_POWER_SOURCE: 2
+      STR_UFO_NAVIGATION: 2
+  - name: STR_DW_LANDRAIDER
+    category: STR_CRAFT
+    requires:
+      - STR_LANDRAIDER_DW
+      - STR_DEATHWATCH
     space: 40
     time: 30000
     cost: 1000000

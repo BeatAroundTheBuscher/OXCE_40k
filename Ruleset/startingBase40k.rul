@@ -511,49 +511,73 @@ events:
       STR_ASSC_CLIP: 5
       STR_RIFLEB: 2
       STR_RIFLE_CLIP: 6
-    spawnedPersons: 2  
+    spawnedPersons: 2
     spawnedPersonType: STR_ULTRAMARINE
-
   - name: STR_IF_CARE_PACKAGE
     description: STR_IF_REINFORCEMENTS
     timer: 1
     everyMultiItemList:
-      STR_RIFLEB: 2
-      STR_RIFLE_CLIP: 6
-    spawnedPersons: 2
+      STR_RIFLEB: 1
+      STR_RIFLE_CLIP: 2
+    spawnedPersons: 1
     spawnedPersonType: STR_IMPERIALF
   - name: STR_BA_CARE_PACKAGE
     description: STR_BA_REINFORCEMENTS
     timer: 1
     everyMultiItemList:
-      STR_RIFLEB: 2
-      STR_RIFLE_CLIP: 6
-    spawnedPersons: 2
+      STR_RIFLEB: 1
+      STR_RIFLE_CLIP: 2
+    spawnedPersons: 1
     spawnedPersonType: STR_BLOODANGELS    
   - name: STR_SALA_CARE_PACKAGE
     description: STR_SALA_REINFORCEMENTS
     timer: 1
     everyMultiItemList:
-      STR_RIFLEB: 2
-      STR_RIFLE_CLIP: 6
-    spawnedPersons: 2
+      STR_RIFLEB: 1
+      STR_RIFLE_CLIP: 2
+    spawnedPersons: 1
     spawnedPersonType: STR_SALAMANDAR
   - name: STR_BT_CARE_PACKAGE
     description: STR_BT_REINFORCEMENTS
     timer: 1
     everyMultiItemList:
-      STR_RIFLEB: 2
-      STR_RIFLE_CLIP: 6
-    spawnedPersons: 2
+      STR_RIFLEB: 1
+      STR_RIFLE_CLIP: 2
+    spawnedPersons: 1
     spawnedPersonType: STR_BLACKT
   - name: STR_WS_CARE_PACKAGE
     description: STR_WS_REINFORCEMENTS
     timer: 1
     everyMultiItemList:
-      STR_RIFLEB: 2
-      STR_RIFLE_CLIP: 6
-    spawnedPersons: 2
+      STR_RIFLEB: 1
+      STR_RIFLE_CLIP: 2
+    spawnedPersons: 1
     spawnedPersonType: STR_WHITES
+    
+  - name: STR_SW_CARE_PACKAGE
+    description: STR_SW_REINFORCEMENTS
+    timer: 1
+    everyMultiItemList:
+      STR_RIFLEB: 1
+      STR_RIFLE_CLIP: 2
+    spawnedPersons: 1
+    spawnedPersonType: STR_SPACEW   
+  - name: STR_DA_CARE_PACKAGE
+    description: STR_DA_REINFORCEMENTS
+    timer: 1
+    everyMultiItemList:
+      STR_RIFLEB: 1
+      STR_RIFLE_CLIP: 2
+    spawnedPersons: 1
+    spawnedPersonType: STR_DARKANGELS
+  - name: STR_CF_CARE_PACKAGE
+    description: STR_CF_REINFORCEMENTS
+    timer: 1
+    everyMultiItemList:
+      STR_RIFLEB: 1
+      STR_RIFLE_CLIP: 2
+    spawnedPersons: 1
+    spawnedPersonType: STR_CRISMONF
 
   - name: STR_REINFORCEMENTS_GK
     description: STR_REINFORCEMENTS_GK_DESCRIPTION
