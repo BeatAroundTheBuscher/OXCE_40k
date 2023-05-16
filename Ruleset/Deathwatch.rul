@@ -1484,6 +1484,8 @@ armors:
     specialWeapon: STR_BLOOD_GAUNTLET_PLUS
   - type: STR_DW_TAC_ARMOR_BAH_UC #BLOOD ANGELS HELMET
     refNode: *STR_DW_TAC_ARMOR_UC
+    units:
+      - STR_BLOODANGELS    
 #SPRITES
     spriteSheet: TACDWBAH.PCK
     customArmorPreviewIndex: 542
