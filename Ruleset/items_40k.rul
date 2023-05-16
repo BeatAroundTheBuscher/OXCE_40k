@@ -4916,6 +4916,7 @@
       - STR_DEATHWATCH
     size: 0.3
     dropoff: 5
+    costBuy: 7000
     costSell: 5000
     weight: 25
     bigSprite: 339

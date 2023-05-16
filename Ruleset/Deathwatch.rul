@@ -622,6 +622,11 @@ items:
     size: 0.8
     costSell: 100000
     listOrder: 6406
+  - type: STR_DW_NOARMOR_UC                 #6407
+    name: STR_NULL
+    size: 0.8
+    costSell: 20000
+    listOrder: 6407
 
 armors:
   - type: THUNDERFIRE_ARMOR_DW
@@ -1484,9 +1489,8 @@ armors:
     specialWeapon: STR_BLOOD_GAUNTLET_PLUS
   - type: STR_DW_TAC_ARMOR_BAH_UC #BLOOD ANGELS HELMET
     refNode: *STR_DW_TAC_ARMOR_UC
-    units:
-      - STR_BLOODANGELS    
 #SPRITES
+    storeItem: STR_DW_NOARMOR_UC
     spriteSheet: TACDWBAH.PCK
     customArmorPreviewIndex: 542
     forcedTorso: 1
@@ -2123,6 +2127,7 @@ armors:
   - type: STR_DW_ASS_ARMOR_BAH_UC #ASSAULT BLOOD ANGELS HELMET
     refNode: *STR_DW_ASS_ARMOR_UC
 #SPRITES
+    storeItem: STR_DW_NOARMOR_UC
     spriteSheet: ASSDWBAH.PCK
     customArmorPreviewIndex: 548
     layersDefaultPrefix: 0
@@ -3725,84 +3730,80 @@ armors:
 #SPECIAL
     moveCost:
       basePercent: [100, 25] #overall move cost
-  - type: STR_DW_TECH_ARMOR_WS_UC
+  - type: STR_DW_TECH_ARMOR_SW_UC
     refNode: *STR_DW_TECH_ARMOR_UC
     units:
-      - STR_WHITES
+      - STR_SPACEW
 #SPRITES
-    spriteSheet: TECHDWWS.PCK
-    customArmorPreviewIndex: 508
+    spriteSheet: TECHDWSW.PCK
+    customArmorPreviewIndex: 535
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
     layersDefinition:
-      M0: ["0", "TECHDWWS", "M0_FACE"]
-      M1: ["0", "TECHDWWS", "M1_FACE"]
-      M2: ["0", "TECHDWWS", "M2_FACE"]
-      M3: ["0", "TECHDWWS", "M3_FACE"]
-      M4: ["0", "TECHDWWS", "M4_FACE"]
-      M5: ["0", "TECHDWWS", "M5_FACE"]
-      F0: ["0", "TECHDWWS", "M0_FACE"]
-      F1: ["0", "TECHDWWS", "M1_FACE"]
-      F2: ["0", "TECHDWWS", "M2_FACE"]
-      F3: ["0", "TECHDWWS", "M3_FACE"]
-      F4: ["0", "TECHDWWS", "M4_FACE"]
-      F5: ["0", "TECHDWWS", "M5_FACE"]
+      M0: ["0", "TECHDWSW", "M0_FACE"]
+      M1: ["0", "TECHDWSW", "M1_FACE"]
+      M2: ["0", "TECHDWSW", "M2_FACE"]
+      M3: ["0", "TECHDWSW", "M3_FACE"]
+      M4: ["0", "TECHDWSW", "M4_FACE"]
+      M5: ["0", "TECHDWSW", "M5_FACE"]
+      F0: ["0", "TECHDWSW", "M0_FACE"]
+      F1: ["0", "TECHDWSW", "M1_FACE"]
+      F2: ["0", "TECHDWSW", "M2_FACE"]
+      F3: ["0", "TECHDWSW", "M3_FACE"]
+      F4: ["0", "TECHDWSW", "M4_FACE"]
+      F5: ["0", "TECHDWSW", "M5_FACE"]
 #SPECIAL
-    moveCost:
-      basePercent: [100, 25] #overall move cost
-  - type: STR_DW_TECH_ARMOR_WS_UC
+    bleedImmune: true
+  - type: STR_DW_TECH_ARMOR_DA_UC
     refNode: *STR_DW_TECH_ARMOR_UC
     units:
-      - STR_WHITES
+      - STR_DARKANGELS
 #SPRITES
-    spriteSheet: TECHDWWS.PCK
-    customArmorPreviewIndex: 508
+    spriteSheet: TECHDWDA.PCK
+    customArmorPreviewIndex: 537
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
     layersDefinition:
-      M0: ["0", "TECHDWWS", "M0_FACE"]
-      M1: ["0", "TECHDWWS", "M1_FACE"]
-      M2: ["0", "TECHDWWS", "M2_FACE"]
-      M3: ["0", "TECHDWWS", "M3_FACE"]
-      M4: ["0", "TECHDWWS", "M4_FACE"]
-      M5: ["0", "TECHDWWS", "M5_FACE"]
-      F0: ["0", "TECHDWWS", "M0_FACE"]
-      F1: ["0", "TECHDWWS", "M1_FACE"]
-      F2: ["0", "TECHDWWS", "M2_FACE"]
-      F3: ["0", "TECHDWWS", "M3_FACE"]
-      F4: ["0", "TECHDWWS", "M4_FACE"]
-      F5: ["0", "TECHDWWS", "M5_FACE"]
-#SPECIAL
-    moveCost:
-      basePercent: [100, 25] #overall move cost
-  - type: STR_DW_TECH_ARMOR_WS_UC
+      M0: ["0", "TECHDWDA", "M0_FACE"]
+      M1: ["0", "TECHDWDA", "M1_FACE"]
+      M2: ["0", "TECHDWDA", "M2_FACE"]
+      M3: ["0", "TECHDWDA", "M3_FACE"]
+      M4: ["0", "TECHDWDA", "M4_FACE"]
+      M5: ["0", "TECHDWDA", "M5_FACE"]
+      F0: ["0", "TECHDWDA", "M0_FACE"]
+      F1: ["0", "TECHDWDA", "M1_FACE"]
+      F2: ["0", "TECHDWDA", "M2_FACE"]
+      F3: ["0", "TECHDWDA", "M3_FACE"]
+      F4: ["0", "TECHDWDA", "M4_FACE"]
+      F5: ["0", "TECHDWDA", "M5_FACE"]
+  - type: STR_DW_TECH_ARMOR_CF_UC
     refNode: *STR_DW_TECH_ARMOR_UC
     units:
-      - STR_WHITES
+      - STR_CRISMONF
 #SPRITES
-    spriteSheet: TECHDWWS.PCK
-    customArmorPreviewIndex: 508
+    spriteSheet: TECHDWCF.PCK
+    customArmorPreviewIndex: 534
     layersDefaultPrefix: 0
     layersSpecificPrefix:
       0: 0
     layersDefinition:
-      M0: ["0", "TECHDWWS", "M0_FACE"]
-      M1: ["0", "TECHDWWS", "M1_FACE"]
-      M2: ["0", "TECHDWWS", "M2_FACE"]
-      M3: ["0", "TECHDWWS", "M3_FACE"]
-      M4: ["0", "TECHDWWS", "M4_FACE"]
-      M5: ["0", "TECHDWWS", "M5_FACE"]
-      F0: ["0", "TECHDWWS", "M0_FACE"]
-      F1: ["0", "TECHDWWS", "M1_FACE"]
-      F2: ["0", "TECHDWWS", "M2_FACE"]
-      F3: ["0", "TECHDWWS", "M3_FACE"]
-      F4: ["0", "TECHDWWS", "M4_FACE"]
-      F5: ["0", "TECHDWWS", "M5_FACE"]
+      M0: ["0", "TECHDWCF", "M0_FACE"]
+      M1: ["0", "TECHDWCF", "M1_FACE"]
+      M2: ["0", "TECHDWCF", "M2_FACE"]
+      M3: ["0", "TECHDWCF", "M3_FACE"]
+      M4: ["0", "TECHDWCF", "M4_FACE"]
+      M5: ["0", "TECHDWCF", "M5_FACE"]
+      F0: ["0", "TECHDWCF", "M0_FACE"]
+      F1: ["0", "TECHDWCF", "M1_FACE"]
+      F2: ["0", "TECHDWCF", "M2_FACE"]
+      F3: ["0", "TECHDWCF", "M3_FACE"]
+      F4: ["0", "TECHDWCF", "M4_FACE"]
+      F5: ["0", "TECHDWCF", "M5_FACE"]
 #SPECIAL
-    moveCost:
-      basePercent: [100, 25] #overall move cost
+    painImmune: true
+    fearImmune: true
 
 #PRIMARIS
   - &STR_MKX_DW_LIB_UC
@@ -7287,6 +7288,27 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Tech/DWATCH/TECHDWWS.png
+  - type: TECHDWSW.PCK #TECH ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tech/DWATCH/TECHDWSW.png
+  - type: TECHDWDA.PCK #TECH ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tech/DWATCH/TECHDWDA.png
+  - type: TECHDWCF.PCK #TECH ULTRA
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tech/DWATCH/TECHDWCF.png
   - type: CAPDW.PCK #CAP GENERIC
     width: 512
     height: 720
