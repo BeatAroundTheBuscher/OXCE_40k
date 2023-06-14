@@ -1461,7 +1461,7 @@ ufopaedia:
   - id: STR_SHOTGUN                       #10600
     type_id: 14
     section: STR_WEAPONS_AND_EQUIPMENT
-    image_id: 1SG.SPK
+    image_id: 1LB.SPK
     text: STR_SHOTGUN_UFOPEDIA
     listOrder: 10600
   - id: STR_SHOTGUNPD                     #10610
