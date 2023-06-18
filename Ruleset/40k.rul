@@ -6640,6 +6640,7 @@ armors:
 
         return sprite_index;
     allowInv: false
+    allowsMoving: false
     zombiImmune: true
     bleedImmune: true
     fearImmune: true
