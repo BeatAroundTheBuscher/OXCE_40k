@@ -1453,15 +1453,15 @@ armors:
     spriteHairGroup: 9
     spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
     selectUnitMale:     [1231, 1232, 1233, 1234, 1235]
-    selectUnitMale:     [1231, 1232, 1233, 1234, 1235]
+    selectUnitFemale:     [1231, 1232, 1233, 1234, 1235]
     startMovingMale:    [1226, 1227, 1228, 1229, 1230]
-    startMovingMale:    [1226, 1227, 1228, 1229, 1230]
+    startMovingFemale:    [1226, 1227, 1228, 1229, 1230]
     selectWeaponMale:   [1221, 1222, 1223, 1224, 1225]
-    selectWeaponMale:   [1221, 1222, 1223, 1224, 1225]
+    selectWeaponFemale:   [1221, 1222, 1223, 1224, 1225]
     annoyedMale:        [1236, 1237, 1238, 1239, 1240]
-    annoyedMale:        [1236, 1237, 1238, 1239, 1240]
+    annoyedFemale:        [1236, 1237, 1238, 1239, 1240]
     deathMale:     [1241, 1242, 1243, 1244, 1245]
-    deathMale:     [1241, 1242, 1243, 1244, 1245]
+    deathFemale:     [1241, 1242, 1243, 1244, 1245]
 #SPRITES
     corpseBattle:
       - STR_MK7NH_DW_CORPSE
@@ -2092,15 +2092,15 @@ armors:
     spriteHairGroup: 9
     spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5
     selectUnitMale:     [1231, 1232, 1233, 1234, 1235]
-    selectUnitMale:     [1231, 1232, 1233, 1234, 1235]
+    selectUnitFemale:     [1231, 1232, 1233, 1234, 1235]
     startMovingMale:    [1226, 1227, 1228, 1229, 1230]
-    startMovingMale:    [1226, 1227, 1228, 1229, 1230]
+    startMovingFemale:    [1226, 1227, 1228, 1229, 1230]
     selectWeaponMale:   [1221, 1222, 1223, 1224, 1225]
-    selectWeaponMale:   [1221, 1222, 1223, 1224, 1225]
+    selectWeaponFemale:   [1221, 1222, 1223, 1224, 1225]
     annoyedMale:        [1236, 1237, 1238, 1239, 1240]
-    annoyedMale:        [1236, 1237, 1238, 1239, 1240]
+    annoyedFemale:        [1236, 1237, 1238, 1239, 1240]
     deathMale:     [1241, 1242, 1243, 1244, 1245]
-    deathMale:     [1241, 1242, 1243, 1244, 1245]
+    deathFemale:     [1241, 1242, 1243, 1244, 1245]
     corpseBattle:
       - STR_MK7NH_DW_CORPSE
     spriteSheet: ASSDWBA.PCK
@@ -2360,7 +2360,6 @@ armors:
       - 0.2 #IMPACT
       - 1.0 #MELTA
     loftempsSet: [ 3 ]
-    forcedTorso: 1
     specialWeapon: STR_MFIST
     builtInWeapons:
       - INV_NULL_3X3
@@ -7929,9 +7928,6 @@ soldiers:
     costBuy: 60000
     costSalary: 30000
     monthlyBuyLimit: 1
-    requires:
-      - STR_DEATHWATCH
-      - STR_CHAPTER_PURITY
     minStats:
       tu: 60
       stamina: 50

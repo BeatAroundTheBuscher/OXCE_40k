@@ -6483,8 +6483,6 @@ alienDeployments:
   - type: STR_DW_FINAL_LANDING #NECRON
     music:
       - INMYSPIRIT
-    music:
-      - INMYSPIRIT
     data:
       - alienRank: 5
         lowQty: 5
