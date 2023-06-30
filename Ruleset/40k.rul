@@ -9646,6 +9646,7 @@ armors:
   - type: STR_SCOUT_UC #SCOUT
     visibilityAtDay: 60
     visibilityAtDark: 60
+    customArmorPreviewIndex: 0
     spriteSheet: XCOM_0.PCK
     storeItem: STR_NONE
     corpseGeo: STR_FALLEN_CORPSE
