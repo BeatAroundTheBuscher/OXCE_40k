@@ -1,4 +1,4 @@
-﻿items:
+items:
   - delete: SECTOPOD_WEAPON
   - delete: STR_MEDI_KIT
   - delete: STR_PERSONAL_ARMOR
@@ -4944,6 +4944,7 @@
     listOrder: 10310
   - type: STR_RIFLEC #BOLTER #        10320  TYPE STALKER           AIMED
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    ufopediaType: STR_RIFLE
     size: 0.3
     dropoff: 5
     costSell: 5000
@@ -6721,6 +6722,7 @@
 
   - type: STR_SHOTGUN_CHAOS #                        10605
     categories: [STR_CAT_SHOTGUN, STR_CAT_CHAOS]
+    ufopediaType: STR_SHOTGUN
     requires:
       - STR_ALIENS_ONLY
     size: 0.2
@@ -7122,6 +7124,7 @@
     categories: [STR_CAT_SNIPER, STR_CAT_CHAOS]
     requires:
       - STR_ALIENS_ONLY
+    ufopediaType: STR_HEAVY_CANNON
     size: 0.3
     #costBuy: 18400
     costSell: 4800
@@ -7416,6 +7419,7 @@
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
     requires:
       - STR_ALIENS_ONLY
+    ufopediaType: STR_LASER_PISTOL
     size: 0.1
     dropoff: 5
     costSell: 500

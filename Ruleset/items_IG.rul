@@ -145,6 +145,7 @@ items:
     categories: [STR_CAT_AUTO]
     requires:
       - STR_ALIENS_ONLY
+    ufopediaType: STR_STUB_GUN
     size: 0.1
     dropoff: 5
     costSell: 360
@@ -292,6 +293,7 @@ items:
     categories: [STR_CAT_AUTO]
     requires:
       - STR_ALIENS_ONLY
+    ufopediaType: STR_AUTOPISTOL
     size: 0.1
     dropoff: 5
     #costBuy: 1500
@@ -400,6 +402,7 @@ items:
     categories: [STR_CAT_AUTO]
     requires:
       - STR_ALIENS_ONLY
+    ufopediaType: STR_AUTOGUN
     size: 0.2
     dropoff: 5
     #costBuy: 3500
