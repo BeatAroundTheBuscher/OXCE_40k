@@ -1,4 +1,4 @@
-﻿units:
+units:
   - delete: STR_TANK_CANNON
   - delete: STR_HOVERTANK_PLASMA
   - delete: STR_HOVERTANK_LAUNCHER
@@ -3462,7 +3462,7 @@
       throwing: 80
       strength: 60
       psiStrength: 50
-      psiSkill: 0
+      psiSkill: 1
       melee: 85
     armor: STR_MUTON_ARMOR0
     standHeight: 20
@@ -4151,7 +4151,7 @@
       throwing: 58
       strength: 40
       psiStrength: 50
-      psiSkill: 0 #50
+      psiSkill: 1 #50
       melee: 76
     standHeight: 21
     kneelHeight: 16
