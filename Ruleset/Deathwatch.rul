@@ -32,7 +32,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 500
       STR_ELERIUM_115: 160
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
   - name: STR_MKX_DW_CAP_ARMOR_UC                 #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
@@ -43,7 +43,7 @@ manufacture:
     cost: 50000
     requiredItems:
       STR_ALIEN_ALLOYS: 120
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_DW_CAP_ARMOR_UC                #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
@@ -53,7 +53,7 @@ manufacture:
     cost: 50000
     requiredItems:
       STR_ALIEN_ALLOYS: 120
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
 
 items:
   - type: STR_THUNDERFIRE_DW

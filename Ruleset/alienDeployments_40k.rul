@@ -976,7 +976,8 @@ alienDeployments:
       background: BACK01.SCR
       showTarget: false
       desc: STR_CULTIST_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
       STR_CULTIST_SACRIFICES_LEVEL_1: 75
@@ -1077,7 +1078,8 @@ alienDeployments:
       background: BACK01.SCR
       showTarget: false
       desc: STR_CULTIST_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
       STR_CULTIST_SACRIFICES_LEVEL_1: 60
@@ -1200,7 +1202,8 @@ alienDeployments:
       background: BACK01.SCR
       showTarget: false
       desc: STR_CULTIST_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
       STR_CULTIST_SACRIFICES_LEVEL_1: 50
@@ -1229,7 +1232,8 @@ alienDeployments:
       background: BACK01.SCR
       showTarget: false
       desc: STR_CULTIST_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
       STR_CULTIST_SACRIFICES_LEVEL_1: 60
@@ -1578,7 +1582,8 @@ alienDeployments:
       background: BACK163.SCR
       showTarget: false
       desc: STR_ORK_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
       STR_ORK_WAGGON_PATROL_SMALL: 75
@@ -1698,7 +1703,8 @@ alienDeployments:
       background: BACK163.SCR
       showTarget: false
       desc: STR_ORK_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
       STR_ORK_WAGGON_PATROL_SMALL: 25
@@ -1824,7 +1830,8 @@ alienDeployments:
       background: BACK163.SCR
       showTarget: false
       desc: STR_ORK_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
       STR_ORK_WAGGON_PATROL_SMALL: 20
@@ -1963,7 +1970,8 @@ alienDeployments:
       background: BACK163.SCR
       showTarget: false
       desc: STR_ORK_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
       STR_ORK_WAGGON_PATROL_SMALL: 5
@@ -2106,7 +2114,8 @@ alienDeployments:
       background: BACK163.SCR
       showTarget: false
       desc: STR_ORK_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
       STR_ORK_WAGGON_PATROL_MEDIUM: 10
@@ -2145,7 +2154,8 @@ alienDeployments:
       background: BACK163.SCR
       showTarget: false
       desc: STR_ORK_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
       #*** Game start base creation ***
@@ -2191,7 +2201,8 @@ alienDeployments:
       background: BACK163.SCR
       showTarget: false
       desc: STR_ORK_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ENEMY_OUTPOST
     genMission:
       STR_ORK_WAGGON_PATROL_SMALL: 75
@@ -2791,7 +2802,8 @@ alienDeployments:
       background: BACK01.SCR
       showTarget: false
       desc: STR_TRAITOR_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
       STR_CHIMERA_PATROL: 30
@@ -2861,7 +2873,8 @@ alienDeployments:
       background: BACK01.SCR
       showTarget: false
       desc: STR_TRAITOR_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
       STR_CHIMERA_PATROL: 45
@@ -2970,7 +2983,8 @@ alienDeployments:
       background: BACK01.SCR
       showTarget: false
       desc: STR_TRAITOR_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
       STR_CHIMERA_PATROL: 45
@@ -3039,7 +3053,8 @@ alienDeployments:
       background: BACK01.SCR
       showTarget: false
       desc: STR_TRAITOR_BASE_ASSAULT_BRIEFING
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
       #*** Game start base creation ***
@@ -3175,9 +3190,8 @@ alienDeployments:
     objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
     objectiveFailed: [STR_WEBWAY_DEVICE_FAILED, -500]
     objectivePopup: STR_WEBWAY_DESTROYED
-    missionBountyItem: STR_ALIEN_HABITAT
-  
-  
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     markerIcon: 76
     script: ELDARGATE_SCRIPT
     alienBase: true
@@ -3404,8 +3418,8 @@ alienDeployments:
     objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
     objectiveFailed: [STR_WEBWAY_DEVICE_FAILED, -500]
     objectivePopup: STR_WEBWAY_DESTROYED
-    missionBountyItem: STR_ALIEN_HABITAT
-  
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     reinforcements:
       - type: necronReinforcementsFew
         briefing:
@@ -3655,8 +3669,8 @@ alienDeployments:
     objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
     objectiveFailed: [STR_WEBWAY_DEVICE_FAILED, -500]
     objectivePopup: STR_WEBWAY_DESTROYED
-    missionBountyItem: STR_ALIEN_HABITAT
-  
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
     reinforcements:
       - type: necronReinforcementsFew
         briefing:

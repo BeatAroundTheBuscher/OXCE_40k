@@ -1922,7 +1922,7 @@ manufacture:
     time: 100
     cost: 10000
     requiredItems:
-      STR_ALIEN_HABITAT: 10
+      STR_KILLPOINT_TOKEN: 600
       STR_ALIEN_ALLOYS: 2
     listOrder: 3351
     requiresBaseFunc: [LIB, COMU]
@@ -1961,7 +1961,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 50
       STR_ELERIUM_115: 30
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_ADEPTAS_ARMORA                 #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
@@ -1972,7 +1972,7 @@ manufacture:
     cost: 22000
     requiredItems:
       STR_ALIEN_ALLOYS: 40
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_ADEPTAS_ARMORB
     category: STR_PERSONAL_ARMOR
     requires:
@@ -2002,7 +2002,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 500
       STR_ELERIUM_115: 160
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
   - name: STR_ADEPTAS_ARMORCEL                 #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
@@ -2015,7 +2015,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 300
       STR_ELERIUM_115: 40
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_ADEPTAS_ARMORI                  #1 BADGE 5
     category: STR_PERSONAL_ARMOR
     requires:
@@ -2027,7 +2027,7 @@ manufacture:
     requiresBaseFunc: [LIB]
     requiredItems:
       STR_ALIEN_ALLOYS: 100
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
   - name: STR_ADEPTAS_ARMORC                  #1 BADGE 5           #ADEPTAS BARRONESS
     category: STR_PERSONAL_ARMOR
     requires:
@@ -2037,7 +2037,7 @@ manufacture:
     cost: 400000
     requiredItems:
       STR_ALIEN_ALLOYS: 200
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
       STR_ELERIUM_115: 50
   - name: STR_ADEPTAS_ARMOR_HONOR
     category: STR_PERSONAL_ARMOR
@@ -2047,7 +2047,7 @@ manufacture:
     time: 800
     cost: 50000
     requiredItems:
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
       STR_ALIEN_ALLOYS: 5
 #
 extraSprites:
@@ -2868,7 +2868,7 @@ soldierTransformation:
       - STR_ADEPTAS
     cost: 100000
     requiredItems:
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
     producedSoldierType: STR_CANONESS
     keepSoldierArmor: true
     allowsDeadSoldiers: false
@@ -2884,7 +2884,7 @@ soldierTransformation:
       - STR_ADEPTAS
     cost: 100000
     requiredItems:
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
     keepSoldierArmor: true
     allowsDeadSoldiers: false
     allowsWoundedSoldiers: true
@@ -2902,7 +2902,7 @@ soldierTransformation:
       - STR_ADEPTAS
     cost: 100000
     requiredItems:
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
     keepSoldierArmor: true
     allowsDeadSoldiers: false
     allowsWoundedSoldiers: true
@@ -2920,7 +2920,7 @@ soldierTransformation:
       - STR_ADEPTAS
     cost: 100000
     requiredItems:
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
     keepSoldierArmor: true
     allowsDeadSoldiers: false
     allowsWoundedSoldiers: true
@@ -2941,7 +2941,7 @@ soldierTransformation:
     requiredItems:
       STR_ALIEN_ALLOYS: 400
       STR_ELERIUM_115: 30
-      STR_ALIEN_HABITAT: 20
+      STR_KILLPOINT_TOKEN: 1200
     producedSoldierType: STR_SAINT
     producedSoldierArmor: STR_ADEPTAS_ARMORSUP_UC
     allowsDeadSoldiers: true

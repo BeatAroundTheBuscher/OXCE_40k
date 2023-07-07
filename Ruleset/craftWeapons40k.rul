@@ -529,7 +529,7 @@ manufacture:
     cost: 50000
     requiredItems:
       STR_UFO_NAVIGATION: 3
-      STR_ALIEN_HABITAT: 2
+      STR_KILLPOINT_TOKEN: 120
     listOrder: 1
   - name: STR_THRUSTER
     requires:
@@ -540,7 +540,7 @@ manufacture:
     cost: 10000
     requiredItems:
       STR_UFO_POWER_SOURCE: 1
-      STR_ALIEN_HABITAT: 2
+      STR_KILLPOINT_TOKEN: 120
     listOrder: 1
   - name: STR_TARGETER
     requires:
@@ -551,7 +551,7 @@ manufacture:
     cost: 50000
     requiredItems:
       STR_UFO_NAVIGATION: 3
-      STR_ALIEN_HABITAT: 2
+      STR_KILLPOINT_TOKEN: 120
     listOrder: 1
   - name: STR_HULL_PLATING
     requires:
@@ -563,7 +563,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 100
       STR_UFO_CONSTRUCTION: 50
-      STR_ALIEN_HABITAT: 2
+      STR_KILLPOINT_TOKEN: 120
     listOrder: 1
   - name: STR_FLARE_LAUNCH
     requires:
@@ -574,7 +574,7 @@ manufacture:
     cost: 100000
     requiredItems:
       STR_ELERIUM_115: 150
-      STR_ALIEN_HABITAT: 2
+      STR_KILLPOINT_TOKEN: 120
     listOrder: 1
   - name: STR_SCANNER
     requires:

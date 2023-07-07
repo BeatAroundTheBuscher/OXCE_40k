@@ -69,7 +69,7 @@ startingBase: #*** Default, Marines
     STR_ROCKET_LAUNCHER: 1
     STR_SMALL_ROCKET: 4
     STR_SMOKE_GRENADE: 5
-    STR_ALIEN_HABITAT: 3   # for apoth armor
+    STR_KILLPOINT_TOKEN: 180   # for apoth armor
     STR_STINGRAY_LAUNCHER: 1
     STR_STINGRAY_MISSILES: 25
   scientists: 10
@@ -134,7 +134,7 @@ startingBaseExperienced: #*** Chamber militant
     STR_CANNON: 2
     STR_HWP_CANNON_SHELLS: 10
     STR_GRENADE: 8
-    STR_ALIEN_HABITAT: 3   # for apoth armor
+    STR_KILLPOINT_TOKEN: 180   # for apoth armor
     STR_STINGRAY_LAUNCHER: 1
     STR_STINGRAY_MISSILES: 25
   scientists: 10
@@ -250,7 +250,7 @@ startingBaseVeteran: #*** Arbites
     STR_ENFORCER_ARMOR: 2
     STR_ENFORCER_HEAVY_ARMOR: 2
     STR_ENFORCER_SHIELD_ARMOR: 2
-    STR_ALIEN_HABITAT: 3
+    STR_KILLPOINT_TOKEN: 180
     STR_STINGRAY_LAUNCHER: 1
     STR_STINGRAY_MISSILES: 25
   scientists: 10
@@ -340,7 +340,7 @@ startingBaseGenius: #*** Adeptas
     STR_ROCKET_LAUNCHER: 1
     STR_SMALL_ROCKET: 4
     STR_SMOKE_GRENADE: 5
-    STR_ALIEN_HABITAT: 3   # for apoth armor
+    STR_KILLPOINT_TOKEN: 180   # for apoth armor
     STR_STINGRAY_LAUNCHER: 1
     STR_STINGRAY_MISSILES: 25
   scientists: 10
@@ -442,7 +442,7 @@ startingBaseSuperhuman: #*** Imperial Guard
     STR_CHAINSWORD: 1
     STR_LASER_PISTOLG: 1
     STR_LASPISTOL_CLIP: 5
-    STR_ALIEN_HABITAT: 3
+    STR_KILLPOINT_TOKEN: 180
     STR_STINGRAY_LAUNCHER: 1
     STR_STINGRAY_MISSILES: 25
   scientists: 10

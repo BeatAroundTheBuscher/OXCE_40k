@@ -1302,7 +1302,8 @@ alienDeployments:
     despawnPenalty: 100
     markerName: STR_TANITH_MISSION_CONVOYAMBUSH_SITE
     unlockedResearch: STR_IMPERIAL_GUARD_MISSIONS_TANITH1_COMPLETE
-    missionBountyItem: STR_ALIEN_HABITAT
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
 
 terrains:
   - name: HILL_DEFENSE

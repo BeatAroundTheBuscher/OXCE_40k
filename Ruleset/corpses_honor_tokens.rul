@@ -1,0 +1,206 @@
+manufacture:
+
+  - name: STR_TURN_BADGES_TO_KILLTOKENS
+    category: STR_FOES_FOR_HONOR
+    time: 1
+    refund: true
+    requiredItems:
+      STR_ALIEN_HABITAT: 1
+    producedItems:
+      STR_KILLPOINT_TOKEN: 60
+
+items:
+
+  - type: STR_KILLPOINT_TOKEN
+    size: 0
+    listOrder: 18510
+
+  - type: STR_PRIEST_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [12]
+      STR_PRIEST_CORPSE: [1]
+
+  - type: STR_FLAMER_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [6]
+      STR_FLAMER_CORPSE: [1]
+
+  - type: STR_CHRYSSALID_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [6]
+      STR_CHRYSSALID_CORPSE: [1]
+
+  - type: STR_CYBERDISC_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [6]
+      STR_CYBERDISC_CORPSE: [1]
+
+  - type: STR_REAPER_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [6]
+      STR_REAPER_CORPSE: [1]
+
+  - type: STR_CSENTINEL_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [6]
+      STR_CSENTINEL_CORPSE: [1]
+
+  - type: STR_BEHEMOTH_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [12]
+      STR_BEHEMOTH_CORPSE: [1]
+
+  - type: STR_SILACOID_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [6]
+      STR_SILACOID_CORPSE: [1]
+
+  - type: STR_CELATID_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [6]
+      STR_CELATID_CORPSE: [1]
+
+  - type: STR_SECTOPOD_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [12]
+      STR_SECTOPOD_CORPSE: [1]
+
+  - type: STR_SECTOID_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [2]
+      STR_SECTOID_CORPSE: [1]
+
+  - type: STR_CULTIST_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [2]
+      STR_CULTIST_CORPSE: [1]
+
+  - type: STR_SNAKEMAN_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [3]
+      STR_SNAKEMAN_CORPSE: [1]
+
+  - type: STR_ETHEREAL_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_ETHEREAL_CORPSE: [1]
+
+  - type: STR_SLAANESHS_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_SLAANESHS_CORPSE: [1]
+
+  - type: STR_NURGLES_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_NURGLES_CORPSE: [1]
+
+  - type: STR_TZEENTCH_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_TZEENTCH_CORPSE: [1]
+
+  - type: STR_BERSERKER_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_BERSERKER_CORPSE: [1]
+
+  - type: STR_WARPTALON_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_WARPTALON_CORPSE: [1]
+
+  - type: STR_FLOATER_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_FLOATER_CORPSE: [1]
+
+  - type: STR_MUTON_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [6]
+      STR_MUTON_CORPSE: [1]
+
+  - type: STR_SORC_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [12]
+      STR_SORC_CORPSE: [1]
+
+  - type: STR_LORD_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [12]
+      STR_LORD_CORPSE: [1]
+
+  - type: STR_CHOSEN_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [12]
+      STR_CHOSEN_CORPSE: [1]
+
+  - type: STR_OBLITERATOR_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [12]
+      STR_OBLITERATOR_CORPSE: [1]
+
+  - type: STR_NAVIGATOR_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [12]
+      STR_NAVIGATOR_CORPSE: [1]
+
+  - type: STR_SISTERN_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_SISTERN_CORPSE: [1]
+
+  - type: STR_SISTERK_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_SISTERK_CORPSE: [1]
+
+  - type: STR_SISTERT_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_SISTERT_CORPSE: [1]
+
+  - type: STR_SISTERS_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_SISTERS_CORPSE: [1]
+
+  - type: STR_HAVOC_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_HAVOC_CORPSE: [1]
+
+  - type: STR_HAVOCN_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_HAVOCN_CORPSE: [1]
+
+  - type: STR_HAVOCS_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_HAVOCS_CORPSE: [1]
+
+  - type: STR_HAVOCTZ_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [4]
+      STR_HAVOCTZ_CORPSE: [1]
+
+  - type: STR_MUTONN_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [6]
+      STR_MUTONN_CORPSE: [1]
+
+  - type: STR_MUTONNC_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [12]
+      STR_MUTONNC_CORPSE: [1]
+
+  - type: STR_TZEENTCHS_CORPSE 
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [12]
+      STR_TZEENTCHS_CORPSE: [1]
+
+  - type: STR_KHORNECHAMP_CORPSE 
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [12]
+      STR_KHORNECHAMP_CORPSE: [1]
