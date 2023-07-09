@@ -11,9 +11,14 @@ manufacture:
 
 items:
 
+  - type: STR_ALIEN_HABITAT
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [60]
+
   - type: STR_KILLPOINT_TOKEN
     size: 0
     listOrder: 18510
+
 
   - type: STR_PRIEST_CORPSE
     recoveryTransformations:
