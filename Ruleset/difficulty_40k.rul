@@ -50,3 +50,8 @@ fixedUserOptions:
   playBriefingMusicDuringEquipment: true
   nightVisionColor: 4
   fullNightVision: false
+  strafe: true
+  oxceAutomaticPromotions: false
+  strictBlockedChecking: false
+  sneakyAI: false
+  oxceManualPromotions: true
