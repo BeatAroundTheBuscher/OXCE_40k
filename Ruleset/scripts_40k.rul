@@ -981,6 +981,30 @@ soldiers:
     tags:
       SOLDIER_CAN_BE_TRAITOR: 1
 
+  - type: STR_SOLDIER
+    tags: &SPACE_MARINE
+      SOLDIER_WOUND_TIME_MULTIPLIER: 33
+
+  - type: STR_PRIMARISLV1
+    tags: &PRIMARIS_MARINE
+      SOLDIER_WOUND_TIME_MULTIPLIER: 27
+
+  - type: STR_PRIMARISLV2
+    tags: *PRIMARIS_MARINE
+
+  - type: STR_PRIMARISLV3
+    tags: *PRIMARIS_MARINE
+
+  - type: STR_PRIMARISLV4
+    tags: *PRIMARIS_MARINE
+
+  - type: STR_PRIMARISLV5
+    tags: *PRIMARIS_MARINE
+
+  - type: STR_FALLEN
+    tags: &DREADNOUGHT
+      SOLDIER_WOUND_TIME_MULTIPLIER: 22
+
 extended:
   tags:
     RuleArmor:
