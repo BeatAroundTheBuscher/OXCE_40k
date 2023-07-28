@@ -978,7 +978,6 @@ items:
 
   - type: STR_LASCANNON_CLIP_SMALL
     categories: [STR_CAT_LASGUN]
-    RandomType: 2 #50-150
     size: 0.1
     costSell: 1000
     weight: 4
@@ -990,6 +989,7 @@ items:
     power: 200
     damageType: 4
     damageAlter:
+      RandomType: 2 #50-150
       ToArmorPre: 0.2
       ToHealth: 1.0
       ToArmor: 0.0
