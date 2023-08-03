@@ -949,7 +949,7 @@ manufacture:
     cost: 22000
     requiredItems:
       STR_ALIEN_ALLOYS: 120
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_GK_TEC_ARMOR                 #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
@@ -961,7 +961,7 @@ manufacture:
     requiresBaseFunc: [TEC]
     requiredItems:
       STR_ALIEN_ALLOYS: 120
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_GK_APO_ARMOR                #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
@@ -972,7 +972,7 @@ manufacture:
     cost: 22000
     requiredItems:
       STR_ALIEN_ALLOYS: 40
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_GK_LIB_ARMOR                  #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
@@ -984,7 +984,7 @@ manufacture:
     requiresBaseFunc: [LIB]
     requiredItems:
       STR_ALIEN_ALLOYS: 120
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
 #---------------------------------------------------------------  GK CRAFT --------------------------------
   - name: STR_STORMRAVEN_GK
     category: STR_CRAFT

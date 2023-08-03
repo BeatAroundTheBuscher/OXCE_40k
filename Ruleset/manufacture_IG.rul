@@ -49,7 +49,7 @@ manufacture:
     requiredItems:
       STR_REGIMENT_COMMISSIONS: 1
     producedItems:
-      STR_ALIEN_HABITAT: 3
+      STR_KILLPOINT_TOKEN: 180
 
   - name: STR_CONVERT_COMMISSION
     category: STR_ADVANCEMENT
@@ -59,7 +59,7 @@ manufacture:
     time: 500
     cost: 100000
     requiredItems:
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
     producedItems:
       STR_OFFICER_COMMISSION: 1
       STR_OFFICERS_SWORD: 1
@@ -74,7 +74,7 @@ manufacture:
     time: 500
     cost: 100000
     requiredItems:
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
     spawnedPersonType: STR_GUARD_OFFICER
     producedItems:
       STR_OFFICERS_SWORD: 1
@@ -89,7 +89,7 @@ manufacture:
     time: 500
     cost: 100000
     requiredItems:
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
     spawnedPersonType: STR_COMMISSAR
     producedItems:
       STR_CHAINSWORD: 1
@@ -106,7 +106,7 @@ manufacture:
     requiredItems:
       STR_STORMTROOPER_REQUISITION: 1
     producedItems:
-      STR_ALIEN_HABITAT: 4
+      STR_KILLPOINT_TOKEN: 240
 
   - name: STR_STORMTROOPER_REQUISITION
     category: STR_ADVANCEMENT
@@ -116,7 +116,7 @@ manufacture:
     time: 500
     cost: 100000
     requiredItems:
-      STR_ALIEN_HABITAT: 2
+      STR_KILLPOINT_TOKEN: 120
     spawnedPersonType: STR_STORMTROOPER
     producedItems:
       STR_STORMTROOPER_CARAPACE_ARMOR_HELLGUN: 1
@@ -131,7 +131,7 @@ manufacture:
     time: 500
     cost: 100000
     requiredItems:
-      STR_ALIEN_HABITAT: 2
+      STR_KILLPOINT_TOKEN: 120
     producedItems:
       STR_VETERAN_PROMOTION: 1
       STR_STORMTROOPER_CARAPACE_ARMOR_HELLGUN: 1
@@ -148,7 +148,7 @@ manufacture:
     requiredItems:
       STR_PSYKER_REQUISITION: 1
     producedItems:
-      STR_ALIEN_HABITAT: 4
+      STR_KILLPOINT_TOKEN: 240
 
   - name: STR_PSYKER_REQUISITION
     category: STR_ADVANCEMENT
@@ -158,7 +158,7 @@ manufacture:
     time: 500
     cost: 100000
     requiredItems:
-      STR_ALIEN_HABITAT: 2
+      STR_KILLPOINT_TOKEN: 120
     spawnedPersonType: STR_PSYKER
     producedItems:
       STR_LASER_PISTOL: 1
@@ -304,7 +304,7 @@ manufacture:
     time: 250
     cost: 50000
     requiredItems:
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
     producedItems:
       STR_TANITH_CAMO_ARMOR: 1
       STR_LONGLAS_TANITH: 1
@@ -317,7 +317,7 @@ manufacture:
     time: 250
     cost: 50000
     requiredItems:
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
     producedItems:
       STR_TANITH_MEDIC_ARMOR: 1
       STR_LASGUN_TANITH: 1

@@ -12438,349 +12438,6 @@ manufacture:
     producedItems:
       STR_CORVUS: 1
 
-#--------------------------------------------------------------- HONOR BADGES --------------------------------
-  - name: STR_PRIEST_TO_HONOR     #PRIEST TO HONOR CELATID
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_PRIEST_CORPSE: 5
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_FLAMER_TO_HONOR     #DREAD TO HONOR CELATID
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_FLAMER_CORPSE: 10
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_CHRYSSALID_TO_HONOR     #CHRYSSALID TO HONOR
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_CHRYSSALID_CORPSE: 10
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_CYBERDISC_TO_HONOR     #CYBERDISC TO HONOR
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_CYBERDISC_CORPSE: 10
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_REAPER_TO_HONOR     #REAPER TO HONOR
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_REAPER_CORPSE: 10
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_CSENTINEL_TO_HONOR     #SENTINEL TO HONOR
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_CSENTINEL_CORPSE: 10
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_BEHEMOTH_TO_HONOR     #BEHEMOTH TO HONOR
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_BEHEMOTH_CORPSE: 5
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_SILACOID_TO_HONOR     #DREAD TO HONOR CELATID
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_SILACOID_CORPSE: 10
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_CELATID_TO_HONOR     #DREAD TO HONOR CELATID
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_CELATID_CORPSE: 10
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_DREAD_TO_HONOR     #DREAD TO HONOR
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_SECTOPOD_CORPSE: 5
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_CULT_TO_HONOR     # CULTISTS
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_SECTOID_CORPSE: 30
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_CULTIST_TO_HONOR     # CULTISTS
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_CULTIST_CORPSE: 30
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_GUARD_TO_HONOR     # TRAITOR GUARD
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_SNAKEMAN_CORPSE: 20
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_TRAITORS_TO_HONOR     # UNDIVIDED
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_ETHEREAL_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_SLAANESH_TO_HONOR     # SLAANESH
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_SLAANESHS_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_NURGLE_TO_HONOR     # NURGLE
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_NURGLES_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_TZEENTCH_TO_HONOR     # TZEENTCH
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_TZEENTCH_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_BERSERKER_TO_HONOR     # KHORNE
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_BERSERKER_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_WARPTALON_TO_HONOR     # KHORNE
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_WARPTALON_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_RAPTOR_TO_HONOR     # RAPTOR
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_FLOATER_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_TERMINATOR_TO_HONOR     # TERMINATORS
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_MUTON_CORPSE: 10
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_SORC_TO_HONOR     # SORC
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_SORC_CORPSE: 5
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_LORD_TO_HONOR     # LORD
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_LORD_CORPSE: 5
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_CHOSEN_TO_HONOR     # LORD
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_CHOSEN_CORPSE: 5
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_OBLITERATOR_TO_HONOR     # LORD
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_OBLITERATOR_CORPSE: 5
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_NAVIGATOR_TO_HONOR     # NAVIGATOR
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_NAVIGATOR_CORPSE: 5
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_SISTERN_TO_HONOR     # SISTER
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_SISTERN_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_SISTERK_TO_HONOR     # SISTER
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_SISTERK_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_SISTERT_TO_HONOR     # SISTER
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_SISTERT_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_SISTERS_TO_HONOR     # SISTER
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_SISTERS_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_HAVOC_TO_HONOR     # HAVOC
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_HAVOC_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_HAVOCN_TO_HONOR     # HAVOC
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_HAVOCN_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_HAVOCS_TO_HONOR     # HAVOC
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_HAVOCS_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_HAVOCTZ_TO_HONOR     # HAVOC
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_HAVOCTZ_CORPSE: 15
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_MUTONN_TO_HONOR     # NURGLE
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_MUTONN_CORPSE: 10
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_MUTONNC_TO_HONOR     # NURGLE CHAMPION
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_MUTONNC_CORPSE: 5
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_TZEENTCHS_TO_HONOR     # Rubric Marine Sorcerrer
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_TZEENTCHS_CORPSE : 5
-    producedItems:
-      STR_ALIEN_HABITAT: 1
-  - name: STR_KC_TO_HONOR     # khrone champion
-    category: STR_FOES_FOR_HONOR
-    space: 2
-    time: 200
-    cost: 20000
-    requiredItems:
-      STR_KHORNECHAMP_CORPSE : 5
-    producedItems:
-      STR_ALIEN_HABITAT: 1
 #--------------------------------------------------------------- PROMOTION --------------------------------
   - name: STR_PROMOTE_JOAN
     category: STR_ADVANCEMENT
@@ -12804,7 +12461,7 @@ manufacture:
     cost: 100
     requiredItems:
       STR_ALIEN_ALLOYS: 50
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
       STR_STORMHAWK: 1
 #--------------------------------------------------------------- MISSION --------------------------------
   - name: STR_COMPLETRELIC
@@ -12981,7 +12638,7 @@ manufacture:
     cost: 25000
     requiredItems:
       STR_ALIEN_ALLOYS: 2
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_MCLASER_RIFLE #                         MC 2
     category: STR_WEAPON
     requires:
@@ -12991,7 +12648,7 @@ manufacture:
     cost: 25000
     requiredItems:
       STR_ALIEN_ALLOYS: 2
-      STR_ALIEN_HABITAT: 2
+      STR_KILLPOINT_TOKEN: 120
   - name: STR_MC_BOLTPISTOL_DEAZ #                         MC 2
     category: STR_WEAPON
     requires:
@@ -13001,7 +12658,7 @@ manufacture:
     cost: 122000
     requiredItems:
       STR_ALIEN_ALLOYS: 2
-      STR_ALIEN_HABITAT: 2
+      STR_KILLPOINT_TOKEN: 120
   - name: STR_MCPISTOL #                         MC 3
     category: STR_WEAPON
     requires:
@@ -13011,7 +12668,7 @@ manufacture:
     cost: 122000
     requiredItems:
       STR_ALIEN_ALLOYS: 2
-      STR_ALIEN_HABITAT: 3
+      STR_KILLPOINT_TOKEN: 180
   - name: STR_MC_BOLTER_DEAZ #                         MC 2
     category: STR_WEAPON
     requires:
@@ -13021,7 +12678,7 @@ manufacture:
     cost: 122000
     requiredItems:
       STR_ALIEN_ALLOYS: 2
-      STR_ALIEN_HABITAT: 2
+      STR_KILLPOINT_TOKEN: 120
   - name: STR_MCRIFLE #                         MC 3
     category: STR_WEAPON
     requires:
@@ -13031,7 +12688,7 @@ manufacture:
     cost: 122000
     requiredItems:
       STR_ALIEN_ALLOYS: 2
-      STR_ALIEN_HABITAT: 3
+      STR_KILLPOINT_TOKEN: 180
   - name: STR_MCSHOTGUN #                         MC 2
     category: STR_WEAPON
     requires:
@@ -13041,7 +12698,7 @@ manufacture:
     cost: 122000
     requiredItems:
       STR_ALIEN_ALLOYS: 2
-      STR_ALIEN_HABITAT: 2
+      STR_KILLPOINT_TOKEN: 120
   - name: STR_MCPLASMA_PISTOL #                         MC 3
     category: STR_WEAPON
     requires:
@@ -13053,7 +12710,7 @@ manufacture:
     cost: 122000
     requiredItems:
       STR_ALIEN_ALLOYS: 2
-      STR_ALIEN_HABITAT: 3
+      STR_KILLPOINT_TOKEN: 180
   - name: STR_MCPLASMA_RIFLE #                         MC 4
     category: STR_WEAPON
     requires:
@@ -13065,7 +12722,7 @@ manufacture:
     cost: 108000
     requiredItems:
       STR_ALIEN_ALLOYS: 2
-      STR_ALIEN_HABITAT: 4
+      STR_KILLPOINT_TOKEN: 240
   - name: STR_CHAINSWORD_MC #                         MC 3
     category: STR_WEAPON
     requires:
@@ -13075,7 +12732,7 @@ manufacture:
     cost: 108000
     requiredItems:
       STR_ALIEN_ALLOYS: 2
-      STR_ALIEN_HABITAT: 3
+      STR_KILLPOINT_TOKEN: 180
   - name: STR_HEAVY_PLASMA_MC #                         MC 5
     category: STR_WEAPON
     requires:
@@ -13085,7 +12742,7 @@ manufacture:
     cost: 108000
     requiredItems:
       STR_ALIEN_ALLOYS: 2
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
   - name: STR_GRAVGUN_MC
     category: STR_WEAPON
     requires:
@@ -13097,7 +12754,7 @@ manufacture:
     cost: 108000
     requiredItems:
       STR_ALIEN_ALLOYS: 2
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
   - name: STR_MGRENADE
     category: STR_WEAPON
     requires:
@@ -13247,7 +12904,7 @@ manufacture:
     cost: 102000
     requiredItems:
       STR_ALIEN_ALLOYS: 50
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
   - name: STR_POWER_SWORD
     category: STR_WEAPON
     requires:
@@ -13278,7 +12935,7 @@ manufacture:
     cost: 102000
     requiredItems:
       STR_ALIEN_ALLOYS: 75
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
   - name: STR_ASSC
     category: STR_WEAPON
     requires:
@@ -13316,7 +12973,7 @@ manufacture:
     cost: 72000
     requiredItems:
       STR_ALIEN_ALLOYS: 50
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
   - name: STR_HB_CLIP
     category: STR_AMMUNITION
     requires:
@@ -13491,7 +13148,7 @@ manufacture:
     cost: 22000
     requiredItems:
       STR_ALIEN_ALLOYS: 40
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_MKX_TEC_ARMOR                 #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
@@ -13503,7 +13160,7 @@ manufacture:
     requiresBaseFunc: [TEC]
     requiredItems:
       STR_ALIEN_ALLOYS: 120
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_MKX_LIB_ARMOR                  #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
@@ -13516,7 +13173,7 @@ manufacture:
     requiresBaseFunc: [LIB]
     requiredItems:
       STR_ALIEN_ALLOYS: 120
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_MKX_CHP_ARMOR               #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
@@ -13527,7 +13184,7 @@ manufacture:
     cost: 22000
     requiredItems:
       STR_ALIEN_ALLOYS: 120
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_MKX_PHB_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
@@ -13584,7 +13241,7 @@ manufacture:
     cost: 22000
     requiredItems:
       STR_ALIEN_ALLOYS: 40
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_DEV_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
@@ -13638,7 +13295,7 @@ manufacture:
     requiresBaseFunc: [TEC]
     requiredItems:
       STR_ALIEN_ALLOYS: 120
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_HONOR_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
@@ -13648,7 +13305,7 @@ manufacture:
     time: 800
     cost: 50000
     requiredItems:
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
       STR_ALIEN_ALLOYS: 5
   - name: STR_SCOUTH
     category: STR_PERSONAL_ARMOR
@@ -13659,7 +13316,7 @@ manufacture:
     time: 800
     cost: 50000
     requiredItems:
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
       STR_ALIEN_ALLOYS: 5
   - name: STR_SIGNAL_ARMOR
     category: STR_PERSONAL_ARMOR
@@ -13669,7 +13326,7 @@ manufacture:
     time: 800
     cost: 50000
     requiredItems:
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
       STR_ALIEN_ALLOYS: 5
   - name: STR_ASS_ARMOR_HONOR
     category: STR_PERSONAL_ARMOR
@@ -13680,7 +13337,7 @@ manufacture:
     time: 800
     cost: 50000
     requiredItems:
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
       STR_ALIEN_ALLOYS: 5
   - name: STR_TSARGENT                   #1 BADGE 5
     category: STR_PERSONAL_ARMOR
@@ -13693,7 +13350,7 @@ manufacture:
     requiresBaseFunc: [ARMO]
     requiredItems:
       STR_ALIEN_ALLOYS: 400
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
   - name: STR_LIB_ARMOR                  #1 BADGE 10
     category: STR_PERSONAL_ARMOR
     requires:
@@ -13707,7 +13364,7 @@ manufacture:
     requiresBaseFunc: [LIB]
     requiredItems:
       STR_ALIEN_ALLOYS: 200
-      STR_ALIEN_HABITAT: 10
+      STR_KILLPOINT_TOKEN: 600
   - name: STR_POWER_SUIT                 #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
@@ -13720,7 +13377,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 400
       STR_ELERIUM_115: 40
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_CAPTAIN_SUIT               #1 BADGE 5
     category: STR_PERSONAL_ARMOR
     requires:
@@ -13734,7 +13391,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 500
       STR_ELERIUM_115: 160
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
   - name: STR_FLYING_SUIT                #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
@@ -13747,7 +13404,7 @@ manufacture:
     requiresBaseFunc: [ARMO]
     requiredItems:
       STR_ALIEN_ALLOYS: 450
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
       STR_ELERIUM_115: 50
   - name: STR_CENT_ARMOR                 #1 BADGE 5
     category: STR_PERSONAL_ARMOR
@@ -13760,7 +13417,7 @@ manufacture:
     requiresBaseFunc: [ARMO]
     requiredItems:
       STR_ALIEN_ALLOYS: 550
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
       STR_ELERIUM_115: 50
   - name: STR_DREAD2_ARMOR               #1 BADGE 1
     category: STR_PERSONAL_ARMOR
@@ -13773,7 +13430,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 50
       STR_ELERIUM_115: 30
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_DREAD3_ARMOR               #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
@@ -13785,7 +13442,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 80
       STR_ELERIUM_115: 25
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_DREAD4_ARMOR               #1 BADGE 1
     category: STR_PERSONAL_ARMOR
     requires:
@@ -13797,7 +13454,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 50
       STR_ELERIUM_115: 30
-      STR_ALIEN_HABITAT: 1
+      STR_KILLPOINT_TOKEN: 60
   - name: STR_DREAD5_ARMOR               #1 BADGE 5
     category: STR_PERSONAL_ARMOR
     requires:
@@ -13810,7 +13467,7 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 50
       STR_ELERIUM_115: 30
-      STR_ALIEN_HABITAT: 5
+      STR_KILLPOINT_TOKEN: 300
 #--------------------------------------------------------------- CRAFT --------------------------------
 #ADEPTAS
   - name: STR_ADEPTAS_THUNDERHAWNK #thunderhawnk Type 1
