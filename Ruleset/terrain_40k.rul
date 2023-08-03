@@ -474,6 +474,7 @@
     personnel: 10
     rightClickActionType: 6
     mapName: XBASE_65
+    maxAllowedPerBase: 1
   - type: STR_DW_QUARTERS_IF
     placeSound: 98
     requiresBaseFunc: [BASE]
@@ -489,6 +490,7 @@
     personnel: 10
     rightClickActionType: 6
     mapName: XBASE_65
+    maxAllowedPerBase: 1
   - type: STR_DW_QUARTERS_BA
     placeSound: 98
     requiresBaseFunc: [BASE]
@@ -504,6 +506,7 @@
     personnel: 10
     rightClickActionType: 6
     mapName: XBASE_65
+    maxAllowedPerBase: 1
   - type: STR_DW_QUARTERS_SALA
     placeSound: 98
     requiresBaseFunc: [BASE]
@@ -519,6 +522,7 @@
     personnel: 10
     rightClickActionType: 6
     mapName: XBASE_65
+    maxAllowedPerBase: 1
   - type: STR_DW_QUARTERS_BT
     placeSound: 98
     requiresBaseFunc: [BASE]
@@ -534,6 +538,7 @@
     personnel: 10
     rightClickActionType: 6
     mapName: XBASE_65
+    maxAllowedPerBase: 1
   - type: STR_DW_QUARTERS_WS
     placeSound: 98
     requiresBaseFunc: [BASE]
@@ -549,6 +554,7 @@
     personnel: 10
     rightClickActionType: 6
     mapName: XBASE_65
+    maxAllowedPerBase: 1
   - type: STR_DW_QUARTERS_SW
     placeSound: 98
     requiresBaseFunc: [BASE]
@@ -564,6 +570,7 @@
     personnel: 10
     rightClickActionType: 6
     mapName: XBASE_65
+    maxAllowedPerBase: 1
   - type: STR_DW_QUARTERS_DA
     placeSound: 98
     requiresBaseFunc: [BASE]
@@ -579,6 +586,7 @@
     personnel: 10
     rightClickActionType: 6
     mapName: XBASE_65
+    maxAllowedPerBase: 1
   - type: STR_DW_QUARTERS_CF
     placeSound: 98
     requiresBaseFunc: [BASE]
@@ -594,6 +602,7 @@
     personnel: 10
     rightClickActionType: 6
     mapName: XBASE_65
+    maxAllowedPerBase: 1
   - type: STR_DW_QUARTERS # PLACEHOLDER
     placeSound: 98
     requiresBaseFunc: [BASE]

@@ -2126,6 +2126,8 @@ armors:
     specialWeapon: STR_BLOOD_GAUNTLET_PLUS
   - type: STR_DW_ASS_ARMOR_BAH_UC #ASSAULT BLOOD ANGELS HELMET
     refNode: *STR_DW_ASS_ARMOR_UC
+    units:
+      - STR_BLOODANGELS
 #SPRITES
     storeItem: STR_DW_NOARMOR_UC
     spriteSheet: ASSDWBAH.PCK
