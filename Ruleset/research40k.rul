@@ -1610,6 +1610,7 @@ research:
     needItem: true
     unlocks:
       - STR_INTERROGATION_COMPLETED
+      - STR_THREAT_ONE
   - name: STR_ORKARDBOY_CORPSE
     cost: 192
     points: 50
@@ -1619,6 +1620,7 @@ research:
     points: 50
     needItem: true
     unlocks:
+      - STR_THREAT_ONE
       - STR_INTERROGATION_COMPLETED
   - name: STR_ORKNOBBOY_CORPSE
     cost: 192
@@ -1648,6 +1650,7 @@ research:
       - STR_ELDAR_PLAT
     unlocks:
       - STR_INTERROGATION_COMPLETED
+      - STR_THREAT_ONE
   - name: STR_SEER_CORPSE
     cost: 192
     points: 50
@@ -1658,6 +1661,7 @@ research:
     needItem: true
     unlocks:
       - STR_INTERROGATION_COMPLETED
+      - STR_THREAT_ONE
   - name: STR_GUARDIAN_CORPSE
     cost: 192
     points: 50
@@ -1668,6 +1672,7 @@ research:
     needItem: true
     unlocks:
       - STR_INTERROGATION_COMPLETED
+      - STR_THREAT_ONE
   - name: STR_DAVENGER_CORPSE
     cost: 192
     points: 50
@@ -1678,6 +1683,7 @@ research:
     needItem: true
     unlocks:
       - STR_INTERROGATION_COMPLETED
+      - STR_THREAT_ONE
   - name: STR_SCORPION_CORPSE
     cost: 192
     points: 50
@@ -1688,6 +1694,7 @@ research:
     needItem: true
     unlocks:
       - STR_INTERROGATION_COMPLETED
+      - STR_THREAT_ONE
   - name: STR_BANSHEE_CORPSE
     cost: 192
     points: 50
@@ -1702,6 +1709,7 @@ research:
     needItem: true
     unlocks:
       - STR_INTERROGATION_COMPLETED
+      - STR_THREAT_ONE
   - name: STR_ELDAR_REAPER_CORPSE
     cost: 192
     points: 50
@@ -1712,18 +1720,21 @@ research:
     needItem: true
     unlocks:
       - STR_INTERROGATION_COMPLETED
+      - STR_THREAT_ONE
   - name: STR_SLAANESH_SOLDIER
     cost: 192
     points: 50
     needItem: true
     unlocks:
       - STR_INTERROGATION_COMPLETED
+      - STR_THREAT_ONE
   - name: STR_NURGLE_SOLDIER
     cost: 192
     points: 50
     needItem: true
     unlocks:
       - STR_INTERROGATION_COMPLETED
+      - STR_THREAT_ONE
   - name: STR_CSENTINEL_CORPSE
     points: 50
     needItem: true
@@ -1765,6 +1776,7 @@ research:
     needItem: true
     unlocks:
       - STR_INTERROGATION_COMPLETED
+      - STR_THREAT_ONE
   - name: STR_WARPTALON_CORPSE
     cost: 192
     points: 50
@@ -1775,6 +1787,7 @@ research:
     needItem: true
     unlocks:
       - STR_INTERROGATION_COMPLETED
+      - STR_THREAT_ONE
   - name: STR_OBLITERATOR_CORPSE
     cost: 192
     points: 100
@@ -1797,6 +1810,7 @@ research:
     needItem: true
     unlocks:
       - STR_INTERROGATION_COMPLETED
+      - STR_THREAT_ONE
   - name: STR_BERSERKER_CORPSE
     cost: 192
     points: 50

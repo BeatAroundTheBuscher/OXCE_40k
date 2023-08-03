@@ -145,6 +145,7 @@ items:
     categories: [STR_CAT_AUTO]
     requires:
       - STR_ALIENS_ONLY
+    ufopediaType: STR_STUB_GUN
     size: 0.1
     dropoff: 5
     costSell: 360
@@ -292,6 +293,7 @@ items:
     categories: [STR_CAT_AUTO]
     requires:
       - STR_ALIENS_ONLY
+    ufopediaType: STR_AUTOPISTOL
     size: 0.1
     dropoff: 5
     #costBuy: 1500
@@ -400,6 +402,7 @@ items:
     categories: [STR_CAT_AUTO]
     requires:
       - STR_ALIENS_ONLY
+    ufopediaType: STR_AUTOGUN
     size: 0.2
     dropoff: 5
     #costBuy: 3500
@@ -975,7 +978,6 @@ items:
 
   - type: STR_LASCANNON_CLIP_SMALL
     categories: [STR_CAT_LASGUN]
-    RandomType: 2 #50-150
     size: 0.1
     costSell: 1000
     weight: 4
@@ -987,6 +989,7 @@ items:
     power: 200
     damageType: 4
     damageAlter:
+      RandomType: 2 #50-150
       ToArmorPre: 0.2
       ToHealth: 1.0
       ToArmor: 0.0
