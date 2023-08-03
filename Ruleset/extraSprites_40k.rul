@@ -1419,6 +1419,35 @@
     files:
       0: Resources/Tarantula/Tarantulaguard.png
 #LARGE TANK DR
+#*** CASSIUM turrets ***
+  - type: CASSIUM_LEFT1.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/CASSIUM/CASSL1.png
+  - type: CASSIUM_LEFT2.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/CASSIUM/CASSL2.png
+  - type: CASSIUM_RIGHT1.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/CASSIUM/CASSR1.png
+  - type: CASSIUM_RIGHT2.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/CASSIUM/CASSR2.png
   - type: MUNI.PCK
     subX: 32
     subY: 40
@@ -3125,6 +3154,7 @@
       849: Resources/MKX-ARMOR/DWATCH/849.png
       850: Resources/NULL/Null_Void_4x3.png
       851: Resources/MKX-ARMOR/DWATCH/851.png
+      859: Resources/CASSIUM/859.png
       860: Resources/dread/DWATCH/860.png
       861: Resources/dread/DWATCH/861.png
       862: Resources/dread/DWATCH/862.png
@@ -3608,6 +3638,10 @@
       756: Resources/Zombies/DWATCH/floorob_756.png     #MK7
       757: Resources/Zombies/DWATCH/floorob_757.png     #TER
       758: Resources/Necron/floorob_758.png
+      759: Resources/CASSIUM/FL1.png
+      760: Resources/CASSIUM/FL2.png
+      761: Resources/CASSIUM/FR1.png
+      762: Resources/CASSIUM/FR2.png
 #900-999 CHAPTER CHANGE
 # Traitor guard chimera corpses
       1400: Resources_IG/Floorobs/floorob_traitor_chimera_turret_0.png
@@ -4046,10 +4080,10 @@
       1714: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 3
       1715: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 4
       1716: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 5
-      1717: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 6
-      1718: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 7
-      1719: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 8
-      1720: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 9
+      1717: Resources/CASSIUM/Cassium_base0.png        #ADEPTAS ADDON 6
+      1718: Resources/CASSIUM/Cassium_base.png        #GUARD ADDON 7
+      1719: Resources/CASSIUM/Cassium_base2.png        #GUARD ADDON 8
+      1720: Resources/CASSIUM/Cassium_base3.png        #GUARD ADDON 9
 #  ELDAR ADDON
       1733: Resources/EPATH/waveserpent_base.png          #ELDAR ADDON 0
       1734: Resources/EPATH/waveserpent_base.png          #ELDAR ADDON 1
@@ -4218,10 +4252,10 @@
       1681: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 3
       1682: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 4
       1683: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 5
-      1684: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 6
-      1685: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 7   
-      1686: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 8  
-      1687: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 9        
+      1684: Resources/CASSIUM/Cassium_minimised.png                #GUARD ADDON 6
+      1685: Resources/CASSIUM/Cassium_minimised.png                #GUARD ADDON 7 
+      1686: Resources/CASSIUM/Cassium_minimised.png                #GUARD ADDON 8  
+      1687: Resources/CASSIUM/Cassium_minimised.png                #GUARD ADDON 9        
 # PLUS 11 DOG FIGHT      
       1689: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 0
       1690: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 1
@@ -4229,10 +4263,10 @@
       1692: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 3
       1693: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 4
       1694: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 5
-      1695: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 6
-      1696: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 7
-      1697: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 8      
-      1698: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 9
+      1695: Resources/CASSIUM/Cassium_dogfight.png               #GUARD ADDON 6
+      1696: Resources/CASSIUM/Cassium_dogfight.png               #GUARD ADDON 7
+      1697: Resources/CASSIUM/Cassium_dogfight.png               #GUARD ADDON 8      
+      1698: Resources/CASSIUM/Cassium_dogfight.png               #GUARD ADDON 9
 #  ELDAR ADDON
       1700: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 0 < - sprite index
       1701: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 1 < - sprite index
@@ -4466,6 +4500,12 @@
     height: 200
     files:
       0: Resources/CODEX/2REPULSOR3.png
+  - type: 2CRASSUS.SPK                #ARBITES CRAFT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/2CRASSUS.png
   - type: M1.SPK                 #UFOPEDIA MISSIONS
     singleImage: true
     width: 320

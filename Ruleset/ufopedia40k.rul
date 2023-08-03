@@ -984,8 +984,6 @@ ufopaedia:
     image_id: UP159.SPK
     text: STR_NECRON_DESTROYER_UFOPEDIA
     listOrder: 27851
-    
-    
   - id: STR_NECRON_SCARAB_ARMOR1                                            #27852         ARMOR
     type_id: 15
     section: STR_ALIEN_LIFE_FORMS
@@ -1002,10 +1000,6 @@ ufopaedia:
     image_id: UP149.SPK
     text: STR_NECRON_SCARAB_UFOPEDIA
     listOrder: 27853
-    
-    
-    
-    
 
   - id: STR_GREYKNIGHT_ARMOR                                            #28000         ARMOR
     type_id: 15
@@ -3206,7 +3200,88 @@ ufopaedia:
     listOrder: 101
     requires:
       - STR_ARBITES
-#
+#GUARD
+  - id: STR_VALKYRIE_GRAV_DROP          #220
+    requires:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_VALKYRIE_GRAV_DROP_UFOPEDIA
+    listOrder: 220
+    image_id: VALK_GRAV_DROP.SPK
+  - id: STR_CHIMERA                       #800
+    requires:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_CHIMERA_UFOPEDIA
+    listOrder: 800
+    image_id: CHIMERA.SPK
+  - id: STR_ARMOR_COLUMN                       #801
+    requires:
+      - STR_IMPERIAL_GUARD_MIDTIER
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_ARMOR_COLUMN_UFOPEDIA
+    listOrder: 801
+    image_id: 2LEMON.SPK
+  - id: STR_TAUROX                       #810
+    requires:
+      - STR_IMPERIAL_GUARD_MIDTIER
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_TAUROX_UFOPEDIA
+    listOrder: 810
+    image_id: TAUROX.SPK
+  - id: STR_GORGON                        #820
+    requires:
+      - STR_IMPERIAL_GUARD_HIGHTIER
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_GORGON_UFOPEDIA
+    listOrder: 820
+    image_id: GORGON.SPK
+  - id: STR_TAUROS                        #830
+    requires:
+      - STR_IMPERIAL_GUARD_MIDTIER
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_TAUROS_UFOPEDIA
+    listOrder: 830
+    image_id: TAUROS.SPK
+  - id: STR_LIGHTNING_INTERCEPTOR          #230
+    requires:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_LIGHTNING_INTERCEPTOR_UFOPEDIA
+    listOrder: 230
+    image_id: LIGHTNING_INTERCEPTOR.SPK
+  - id: STR_THUNDERBOLT_INTERCEPTOR          #240
+    requires:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_THUNDERBOLT_INTERCEPTOR_UFOPEDIA
+    listOrder: 240
+    image_id: 2THUNDERBOLT.SPK #THUNDERBOLT_INTERCEPTOR.SPK
+  - id: STR_MARAUDER          #250
+    requires:
+      - STR_MARAUDER_REQUISITION
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_MARAUDER_UFOPEDIA
+    listOrder: 250
+    image_id: MARAUDER.SPK
+  - id: STR_CASSIUM                #819
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_IMPERIAL_GUARD_HIGHTIER 
+    image_id: 2CRASSUS.SPK
+    text: STR_CASSIUM_UFOPEDIA
+    listOrder: 819
+#REST
   - id: STR_STORMEAGLE                 #600
     type_id: 11
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -3362,6 +3437,15 @@ ufopaedia:
     image_id: 2MANTICORE.SPK
     text: STR_CHIMERAPDH_UFOPEDIA
     listOrder: 217
+  - id: STR_CASSIUMPD                #218
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_ARBITES
+      - STR_ARBITES_HIGHTIER
+    image_id: 2CRASSUS.SPK
+    text: STR_CASSIUMPD_UFOPEDIA
+    listOrder: 218
   - id: STR_FIRESTORM                  #300
     type_id: 11
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -3645,7 +3729,35 @@ ufopaedia:
       - STR_ADEPTAS
     image_id: 2THUNDERBOLT.SPK
     text: STR_THUNDERBOLT_INTERCEPTOR_UFOPEDIA
-    listOrder: 520
+    listOrder: 520  
+#  craft weapon
+  - id: STR_CRAFT_MULTILASER_UC      #1900
+    type_id: 12
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: CRAFT_MULTILASER.SPK
+    text: STR_CRAFT_MULTILASER_UFOPEDIA
+    requires:
+      - STR_GUARD_AND_ARBITES
+    listOrder: 1900
+  - id: STR_CRAFT_QUADLASER_UC       #1910
+    type_id: 12
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_GUARD_AND_ARBITES
+      - STR_CRAFT_QUADLASER
+    image_id: CRAFT_QUAD_LASCANNON.SPK
+    text: STR_CRAFT_QUADLASER_UFOPEDIA
+    listOrder: 1910
+  - id: STR_CRAFT_AUTOCANNON_UC       #1920
+    type_id: 12
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_GUARD_AND_ARBITES
+      - STR_CRAFT_AUTOCANNON
+    image_id: CRAFT_QUAD_AUTOCANNON.SPK
+    text: STR_CRAFT_AUTOCANNON_UFOPEDIA
+    listOrder: 1920
+
   - id: STR_VINDICATOR_WEAPON          #1000
     type_id: 10
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -3769,7 +3881,7 @@ ufopaedia:
     image_id: CC14.SPK
     text: STR_CRAFT_SHIELD_UFOPEDIA
     listOrder: 1850
-#UFOS
+#UFOS ####################################################
   - id: STR_CHAOS_VOSS
     type_id: 17
     section: STR_UFOS
@@ -3847,8 +3959,7 @@ ufopaedia:
     requires:
       - STR_HELLS
     text: STR_HELLS_UFOPEDIA
-
-
+#NECRON
   - id: STR_MONOLITH
     type_id: 17
     section: STR_UFOS
@@ -3856,7 +3967,6 @@ ufopaedia:
     requires:
       - STR_MONOLITH
     text: STR_MONOLITH_UFOPEDIA
-
   - id: STR_DOOMSDAY_MONOLITH
     type_id: 17
     section: STR_UFOS
@@ -3864,7 +3974,7 @@ ufopaedia:
     requires:
       - STR_DOOMSDAY_MONOLITH
     text: STR_DOOMSDAY_MONOLITH_UFOPEDIA
-
+#ORK
   - id: STR_TRUKK_UFO
     type_id: 17
     section: STR_UFOS
@@ -3893,6 +4003,7 @@ ufopaedia:
     requires:
       - STR_ORK_MIG_UFO
     text: STR_ORK_MIG_UFO_UFOPEDIA
+#TRAITOR GUARD
   - id: STR_TRAITOR_CHIMERA
     type_id: 17
     section: STR_UFOS
@@ -3900,6 +4011,7 @@ ufopaedia:
     requires:
       - STR_TRAITOR_CHIMERA
     text: STR_TRAITOR_CHIMERA_UFOPEDIA
+#OELDAR
   - id: STR_ELDAR_HEMLOCK_UFO
     type_id: 17
     section: STR_UFOS
@@ -3928,7 +4040,7 @@ ufopaedia:
     text: STR_ELDAR_COBRA_UFO_UFOPEDIA
     requires:
       - STR_ELDAR_COBRA_UFO
-#ALIEN MISSIONS
+#ALIEN MISSIONS ####################################################
   - id: STR_DEATHWATCH_BUST
     type_id: 10
     section: STR_ALIEN_RESEARCH_UC

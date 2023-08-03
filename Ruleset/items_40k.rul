@@ -668,6 +668,68 @@ items:
     recover: false
     hiddenOnMinimap: true
 #---vehiculum spawn-----------------------------------------------------
+  - type: STR_CASSIUM_BOLTER_LEFT1_SPAWNER
+    spawnUnit: STR_CASSIUM_BOLTER_LEFT1
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+  - type: STR_CASSIUM_BOLTER_LEFT2_SPAWNER
+    spawnUnit: STR_CASSIUM_BOLTER_LEFT2
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+  - type: STR_CASSIUM_BOLTER_RIGHT1_SPAWNER
+    spawnUnit: STR_CASSIUM_BOLTER_RIGHT1
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+  - type: STR_CASSIUM_BOLTER_RIGHT2_SPAWNER
+    spawnUnit: STR_CASSIUM_BOLTER_RIGHT2
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+
+  - type: STR_CASSIUM_BOLTER_LEFT1_CORPSE
+    floorSprite: 759
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_CASSIUM_BOLTER_LEFT2_CORPSE
+    floorSprite: 760
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_CASSIUM_BOLTER_RIGHT1_CORPSE
+    floorSprite: 761
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_CASSIUM_BOLTER_RIGHT2_CORPSE
+    floorSprite: 762
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+
   - type: STR_OBRITAL_SPAWNER
     spawnUnit: STR_TANK_LASER_CANNON
     spawnUnitFaction: 0
@@ -1613,6 +1675,38 @@ items:
     flatMelee:
       time: true
     defaultInventorySlot: STR_LEFT_HAND
+  - type: STR_CASSIUM_BOLTER
+    weight: 1
+    bigSprite: 859
+    handSprite: 360
+    bulletSprite: 6
+    fireSound: 707
+    explosionSpeed: 5
+    bulletSpeed: 50
+    hitAnimation: 26
+    hitSound: 13
+    accuracyAuto: 50
+    accuracySnap: 75
+    tuSnap: 15
+    tuAuto: 15
+    battleType: 1
+    damageType: 1
+    power: 60
+    damageAlter: #DA BOLTER
+      ToArmorPre: 0.05
+      ArmorEffectiveness: 0.9
+      ToArmor: 0.1
+      ToHealth: 1.0
+      ToStun: 0.5
+    autoShots: 3
+    sprayWaypoints: 2
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    twoHanded: false
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
   - type: STR_GRAV_FLAMER
     categories: [ STR_CAT_FLAMER, STR_CAT_TACTICAL]
     handSprite: 360
