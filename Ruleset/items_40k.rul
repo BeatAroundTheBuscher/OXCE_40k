@@ -7890,7 +7890,6 @@ items:
     bulletSpeed: 100
   - type: STR_LASCAN_CLIP #LASCANON CLIP               2018
     categories: [STR_CAT_LASGUN, STR_CAT_DEVASTATOR]
-    RandomType: 7 #50-200
     size: 0.2
     requiresBuy:
       - STR_LASCAN
@@ -7906,6 +7905,7 @@ items:
     power: 200
     damageType: 4
     damageAlter: #DA LAS
+      RandomType: 7 #50-200
       ToArmorPre: 0.2
       ToHealth: 1.0
       ToArmor: 0.0
