@@ -1448,6 +1448,36 @@
     height: 120
     files:
       0: Resources/CASSIUM/CASSR2.png
+
+  - type: CCASSIUM_LEFT1.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/CASSIUM/CCASSL1.png
+  - type: CCASSIUM_LEFT2.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/CASSIUM/CCASSL2.png
+  - type: CCASSIUM_RIGHT1.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/CASSIUM/CCASSR1.png
+  - type: CCASSIUM_RIGHT2.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/CASSIUM/CCASSR2.png
+
   - type: MUNI.PCK
     subX: 32
     subY: 40
@@ -3966,6 +3996,7 @@
       811: Resources/CW/COBbase.png
       812: Resources/CW/HEMbase.png
       813: Resources/CW/WAVbase.png
+      814: Resources/CW/MHbase.png
 #RANK  Canoness
       850: Resources/Rank/basebits850.gif
       851: Resources/Rank/basebits851.gif
@@ -4220,7 +4251,8 @@
       767: Resources/CW/LANdog.png
       768: Resources/CW/COBdog.png
       769: Resources/CW/HEMdog.png      
-      770: Resources/CW/WAVdog.png   
+      770: Resources/CW/WAVdog.png
+      771: Resources/CW/MHdog.png
 #
       878: Resources/Thunderhawk/Thunderhawk_minimised.gif             #MARINES  0
       879: Resources/Thunderhawk/Thunderhawk_minimised.gif             #MARINES  1
@@ -4440,6 +4472,12 @@
     height: 200
     files:
       0: Resources/CODEX/2CHIMERA.png
+  - type: 2CHIMERAL.SPK                #ARBITES CRAFT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/2CHIMERAL.png
   - type: 2MANTICORE.SPK                #ARBITES CRAFT
     singleImage: true
     width: 320
@@ -4506,6 +4544,12 @@
     height: 200
     files:
       0: Resources/CODEX/2CRASSUS.png
+  - type: 2LEMON.SPK                #ARBITES CRAFT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/2LEMON.png
   - type: M1.SPK                 #UFOPEDIA MISSIONS
     singleImage: true
     width: 320
@@ -5579,6 +5623,19 @@
     files:
       0: Resources/CODEX/0CCA.png                  #ELDAR SHIP13
 
+  - type: 0CHC.SPK                  #TRAITOR GUARD CASSIUM
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/0CHC.png                  #TRAITOR GUARD
+  - type: 0CHCCC.SPK                  #TRAITOR GUARD CONVOY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/0CHCC.png                  #TRAITOR GUARD
+
   - type: TRAITOR_CHIMERA.SPK
     singleImage: true
     width: 320
@@ -6324,6 +6381,12 @@
     height: 200
     files:
       0: Resources/CODEX/CC14.png
+  - type: CC15.SPK #CRAFT WEAPON
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/CC15.png
   - type: IF.SPK #HERALDRY
     singleImage: true
     width: 320
@@ -7200,6 +7263,30 @@
     height: 52
     files:
       0: Resources_IG/Crafts/traitor_chimera_interwin_sideview.png
+  - type: Interception_crassus
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/CCraft/UFOCRASSUS.png
+  - type: Interception_preator
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/CCraft/UFOPREATOR.png
+  - type: Interception_traitorconvoy
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/CCraft/UFOGUARDCONVOY.png
+  - type: Interception_rocket
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/CCraft/UFOMISSELE.png
 
   - type: CHAOS_CRAFT_HELP_PEDIA.SPK
     singleImage: true

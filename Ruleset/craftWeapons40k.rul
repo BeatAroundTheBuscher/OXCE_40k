@@ -1,4 +1,64 @@
 craftWeapons:
+#TANK
+  - type: STR_CRAFT_MULTILASER_UC
+    sprite: 1105
+    sound: 8
+    damage: 25
+    range: 15
+    accuracy: 35
+    reloadCautious: 8
+    reloadStandard: 8
+    reloadAggressive: 8
+    ammoMax: 100
+    rearmRate: 50
+    launcher: STR_CRAFT_MULTILASER
+    projectileType: 4
+    weaponType: 3
+  - type: STR_CRAFT_QUADLASER_UC
+    sprite: 1106
+    sound: 8
+    damage: 60
+    range: 40
+    accuracy: 40
+    reloadCautious: 12
+    reloadStandard: 12
+    reloadAggressive: 12
+    ammoMax: 40
+    rearmRate: 20
+    launcher: STR_CRAFT_QUADLASER
+    projectileType: 4
+    weaponType: 3
+  - type: STR_CRAFT_AUTOCANNON_UC
+    sprite: 1107
+    sound: 4
+    damage: 30
+    range: 35
+    accuracy: 40
+    reloadCautious: 6
+    reloadStandard: 6
+    reloadAggressive: 6
+    ammoMax: 300
+    rearmRate: 100
+    launcher: STR_CRAFT_AUTOCANNON
+    clip: STR_CRAFT_AUTOCANNON_ROUNDS
+    projectileType: 2
+    projectileSpeed: 8
+    weaponType: 3
+  - type: STR_CRAFT_HMISSILE_UC             #R 80       A 2        D500     Acc 30 Rua Eduardo Lobo
+    sprite: 766
+    sound: 5
+    damage: 500
+    range: 80
+    accuracy: 30
+    reloadCautious: 96
+    reloadStandard: 72
+    reloadAggressive: 48
+    ammoMax: 2
+    launcher: STR_HMISSILE_LAUNCHER
+    clip: STR_HEAVY_MISSILES
+    projectileType: 1
+    projectileSpeed: 8
+    weaponType: 3
 #ELDAR
   - type: STR_LANCE_CANNON_UC        #R 30      A 10        D70      Acc  45
     sprite: 762
@@ -315,7 +375,24 @@ craftWeapons:
       shieldRechargeInGeoscape: 10
       shieldBleedThrough: 100
 items: #craft Related
-  - delete: STR_CANNON_ROUNDS_X50 
+  - delete: STR_CANNON_ROUNDS_X50
+  - type: STR_HMISSILE_LAUNCHER         #S 1     Lo 1251 FIXED
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1
+    costSell: 12750
+    transferTime: 48
+    listOrder: 1251
+  - type: STR_HEAVY_MISSILES          #S 1.5   Lo 1252
+    categories: [ STR_CRAFT_WEAPONS]
+    requiresBuy:
+      - STR_GUARD_AND_ARBITES
+    size: 2
+    requiresBuyBaseFunc: [HANGAR]
+    costBuy: 18000
+    costSell: 14000
+    transferTime: 48
+    clipSize: 1
+    listOrder: 1252  
   - type: STR_THUNDER_CANNON              #S 3
     categories: [ STR_CRAFT_WEAPONS]
     requires:
@@ -332,7 +409,7 @@ items: #craft Related
     costSell: 50000
     transferTime: 48
     listOrder: 1750
-  - type: STR_STINGRAY_LAUNCHER           #S 2
+  - type: STR_STINGRAY_LAUNCHER           #S 2     Lo 1100
     categories: [ STR_CRAFT_WEAPONS]
     size: 0.8
     requiresBuyBaseFunc: [HANGAR]
@@ -340,7 +417,7 @@ items: #craft Related
     costSell: 12000
     transferTime: 48
     listOrder: 1100
-  - type: STR_STINGRAY_MISSILES           #S 0.4
+  - type: STR_STINGRAY_MISSILES           #S 0.4   Lo 1150
     categories: [ STR_CRAFT_WEAPONS]
     size: 0.4
     requiresBuyBaseFunc: [HANGAR]
@@ -349,7 +426,7 @@ items: #craft Related
     transferTime: 48
     clipSize: 1
     listOrder: 1150
-  - type: STR_AVALANCHE_LAUNCHER          #S 1
+  - type: STR_AVALANCHE_LAUNCHER          #S 1     Lo 1200
     categories: [ STR_CRAFT_WEAPONS]
     size: 1
     requiresBuyBaseFunc: [HANGAR]
@@ -357,7 +434,7 @@ items: #craft Related
     costSell: 12750
     transferTime: 48
     listOrder: 1200
-  - type: STR_AVALANCHE_MISSILES          #S 1.5
+  - type: STR_AVALANCHE_MISSILES          #S 1.5   Lo 1250
     categories: [ STR_CRAFT_WEAPONS]
     size: 1.5
     requiresBuyBaseFunc: [HANGAR]
@@ -366,7 +443,7 @@ items: #craft Related
     transferTime: 48
     clipSize: 1
     listOrder: 1250
-  - type: STR_CANNON                      #S 1.5
+  - type: STR_CANNON                      #S 1.5   Lo 1300
     categories: [ STR_CRAFT_WEAPONS]
     size: 1.5
     requiresBuyBaseFunc: [HANGAR]

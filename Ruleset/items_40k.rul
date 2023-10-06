@@ -532,6 +532,39 @@ items:
     hiddenOnMinimap: true
     hitAnimation: 150
     hitSound: 788
+#---TRAITOR GUARD -----------------------------------------------------    
+  - type: STR_CCASSIUM_BOLTER_LEFT1_SPAWNER
+    spawnUnit: STR_CCASSIUM_BOLTER_LEFT1
+    spawnUnitFaction: 1 # 1: Enemy faction
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+  - type: STR_CCASSIUM_BOLTER_LEFT2_SPAWNER
+    spawnUnit: STR_CCASSIUM_BOLTER_LEFT2
+    spawnUnitFaction: 1 # 1: Enemy faction
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+  - type: STR_CCASSIUM_BOLTER_RIGHT1_SPAWNER
+    spawnUnit: STR_CCASSIUM_BOLTER_RIGHT1
+    spawnUnitFaction: 1 # 1: Enemy faction
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+  - type: STR_CCASSIUM_BOLTER_RIGHT2_SPAWNER
+    spawnUnit: STR_CCASSIUM_BOLTER_RIGHT2
+    spawnUnitFaction: 1 # 1: Enemy faction
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
 #---NECRON spawn-----------------------------------------------------
   - type: STR_SCARAB_SPAWNER
     spawnUnit: STR_NECRON_SCARAB5

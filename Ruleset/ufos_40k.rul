@@ -1,4 +1,5 @@
 ﻿ufos:
+ #ELDAR
   - type: STR_ELDAR_COBRA_UFO
     marker: 78
     markerLand: 85
@@ -278,6 +279,7 @@
     size: STR_VERY_SMALL
     marker: 82
     markerLand: 83
+    markerCrash: 24
     alertSound: 37
     modSprite: InterceptionUFO-17
     damageMax: 160
@@ -403,6 +405,62 @@
           fuseTimers:
             STR_TURRET1_SPAWNER: [0, 0]
             STR_TURRET2_SPAWNER: [0, 0]
+
+ #TRAITOR GUARD
+  - type: STR_ROCKET
+    marker: 87
+    markerLand: 87
+    markerCrash: 87
+    size: STR_VERY_SMALL
+    modSprite: Interception_rocket
+    damageMax: 50
+    speedMax: 10000
+    accel: 100
+    score: 10
+    breakOffTime: 0
+    missilePower: 10
+    unmanned: true
+  - type: STR_CASSIUM_UFO
+    alertSound: 38
+    modSprite: Interception_crassus
+    marker: 82
+    markerLand: 83
+    markerCrash: 24
+    speedMax: 75
+    size: STR_MEDIUM_UC
+    armor: 5
+    damageMax: 1440
+    accel: 3
+    power: 15
+    range: 65
+    reload: 12
+    score: 75
+    missionScore: 0
+    battlescapeTerrainData:
+      name: CHIMERA_TRAITOR
+      mapDataSets:
+        - BLANKS
+        - CASSIUMCHAOS
+      mapBlocks:
+        - name: CASSIUMCHAOS
+          width: 20
+          length: 10
+          items:
+            STR_CCASSIUM_BOLTER_LEFT1_SPAWNER:
+              - [12, 1, 1]
+            STR_CCASSIUM_BOLTER_LEFT2_SPAWNER:
+              - [15, 6, 1]
+            STR_CCASSIUM_BOLTER_RIGHT1_SPAWNER:
+              - [12, 8, 1]
+            STR_CCASSIUM_BOLTER_RIGHT2_SPAWNER:
+              - [15, 3, 1]
+            STR_REQUISITION_BOUNTY_500K:
+              - [0, 0, 0]
+          fuseTimers:
+            STR_CCASSIUM_BOLTER_LEFT1_SPAWNER: [0, 0]
+            STR_CCASSIUM_BOLTER_LEFT2_SPAWNER: [0, 0]
+            STR_CCASSIUM_BOLTER_RIGHT1_SPAWNER: [0, 0]
+            STR_CCASSIUM_BOLTER_RIGHT2_SPAWNER: [0, 0]
 
   - type: STR_TRAITOR_CHIMERA
     alertSound: 38

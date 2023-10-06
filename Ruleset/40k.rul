@@ -609,6 +609,103 @@ units:
       - - STR_CASSIUM_BOLTER
       - - STR_CASSIUM_BOLTER
 
+  - type: STR_CCASSIUM_BOLTER_LEFT1
+    race: STR_CASSIUM
+    stats:
+      tu: 20
+      stamina: 100
+      health: 100
+      bravery: 100
+      reactions: 30
+      firing: 100
+      throwing: 0
+      strength: 100
+      psiStrength: 250
+      psiSkill: 0
+      melee: 0
+    armor: STR_CCASSIUM_BOLTER_LEFT1_ARMOR
+    standHeight: 10
+    kneelHeight: 10
+    deathSound: 23
+    energyRecovery: 100
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CASSIUM_BOLTER
+      - - STR_CASSIUM_BOLTER
+      - - STR_CASSIUM_BOLTER
+  - type: STR_CCASSIUM_BOLTER_LEFT2
+    race: STR_CASSIUM
+    stats:
+      tu: 20
+      stamina: 100
+      health: 100
+      bravery: 100
+      reactions: 30
+      firing: 100
+      throwing: 0
+      strength: 100
+      psiStrength: 250
+      psiSkill: 0
+      melee: 0
+    armor: STR_CCASSIUM_BOLTER_LEFT2_ARMOR
+    standHeight: 10
+    kneelHeight: 10
+    deathSound: 23
+    energyRecovery: 100
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CASSIUM_BOLTER
+      - - STR_CASSIUM_BOLTER
+      - - STR_CASSIUM_BOLTER
+  - type: STR_CCASSIUM_BOLTER_RIGHT1
+    race: STR_CASSIUM
+    stats:
+      tu: 20
+      stamina: 100
+      health: 100
+      bravery: 100
+      reactions: 30
+      firing: 100
+      throwing: 0
+      strength: 100
+      psiStrength: 250
+      psiSkill: 0
+      melee: 0
+    armor: STR_CCASSIUM_BOLTER_RIGHT1_ARMOR
+    standHeight: 10
+    kneelHeight: 10
+    deathSound: 23
+    energyRecovery: 100
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CASSIUM_BOLTER
+      - - STR_CASSIUM_BOLTER
+      - - STR_CASSIUM_BOLTER
+  - type: STR_CCASSIUM_BOLTER_RIGHT2
+    race: STR_CASSIUM
+    stats:
+      tu: 20
+      stamina: 100
+      health: 100
+      bravery: 100
+      reactions: 30
+      firing: 100
+      throwing: 0
+      strength: 100
+      psiStrength: 250
+      psiSkill: 0
+      melee: 0
+    armor: STR_CCASSIUM_BOLTER_RIGHT2_ARMOR
+    standHeight: 10
+    kneelHeight: 10
+    deathSound: 23
+    energyRecovery: 100
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CASSIUM_BOLTER
+      - - STR_CASSIUM_BOLTER
+      - - STR_CASSIUM_BOLTER
+
   - type: STR_STORMTURRET #STORMRAven TURRET
     race: STR_STORMRAVEN
     rank: STR_LIVE_TERRORIST
@@ -7133,6 +7230,147 @@ armors:
     visibilityAtDark: 20
     personalLight: 0
     spriteSheet: CASSIUM_RIGHT2.PCK
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    corpseGeo:  STR_GORGON_HEAVY_FLAMER_BACK_RIGHT_CORPSE
+    corpseBattle:
+      - STR_CASSIUM_BOLTER_RIGHT2_CORPSE
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 100
+    damageModifier: #VEICULE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 5 ]
+    drawingRoutine: 19
+    allowsKneeling: false
+    allowsRunning: false
+    allowsMoving: false
+
+  - type: STR_CCASSIUM_BOLTER_LEFT1_ARMOR
+    visibilityAtDay: 40
+    visibilityAtDark: 20
+    personalLight: 0
+    spriteSheet: CCASSIUM_LEFT1.PCK
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    corpseGeo:  STR_GORGON_HEAVY_FLAMER_FRONT_LEFT_CORPSE
+    corpseBattle:
+      - STR_CASSIUM_BOLTER_LEFT1_CORPSE
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 100
+    damageModifier: #VEICULE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 5 ]
+    drawingRoutine: 19
+    allowsKneeling: false
+    allowsRunning: false
+    allowsMoving: false
+  - type: STR_CCASSIUM_BOLTER_LEFT2_ARMOR
+    visibilityAtDay: 40
+    visibilityAtDark: 20
+    personalLight: 0
+    spriteSheet: CCASSIUM_LEFT2.PCK
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    corpseGeo:  STR_GORGON_HEAVY_FLAMER_BACK_LEFT_CORPSE
+    corpseBattle:
+      - STR_CASSIUM_BOLTER_LEFT2_CORPSE
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 100
+    damageModifier: #VEICULE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 5 ]
+    drawingRoutine: 19
+    allowsKneeling: false
+    allowsRunning: false
+    allowsMoving: false
+  - type: STR_CCASSIUM_BOLTER_RIGHT1_ARMOR
+    visibilityAtDay: 40
+    visibilityAtDark: 20
+    personalLight: 0
+    spriteSheet: CCASSIUM_RIGHT1.PCK
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    corpseGeo:  STR_GORGON_HEAVY_FLAMER_FRONT_RIGHT_CORPSE
+    corpseBattle:
+      - STR_CASSIUM_BOLTER_RIGHT1_CORPSE
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 100
+    damageModifier: #VEICULE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.1 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 5 ]
+    drawingRoutine: 19
+    allowsKneeling: false
+    allowsRunning: false
+    allowsMoving: false
+  - type: STR_CCASSIUM_BOLTER_RIGHT2_ARMOR
+    visibilityAtDay: 40
+    visibilityAtDark: 20
+    personalLight: 0
+    spriteSheet: CCASSIUM_RIGHT2.PCK
     allowInv: false
     zombiImmune: true
     bleedImmune: true

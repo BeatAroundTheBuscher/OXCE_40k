@@ -3201,7 +3201,15 @@ ufopaedia:
     requires:
       - STR_ARBITES
 #GUARD
-  - id: STR_VALKYRIE_GRAV_DROP          #220
+  - id: STR_VALKYRIE                   #210
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_VALKYRIE_UFOPEDIA
+    requires:
+      - STR_GUARD_SUPORT
+    listOrder: 210
+    image_id: VALK.SPK
+  - id: STR_VALKYRIE_GRAV_DROP            #220
     requires:
       - STR_IMPERIAL_GUARD_OPERATIONS
     type_id: 11
@@ -3216,8 +3224,8 @@ ufopaedia:
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_CHIMERA_UFOPEDIA
     listOrder: 800
-    image_id: CHIMERA.SPK
-  - id: STR_ARMOR_COLUMN                       #801
+    image_id: 2CHIMERA.SPK
+  - id: STR_ARMOR_COLUMN                  #801
     requires:
       - STR_IMPERIAL_GUARD_MIDTIER
     type_id: 11
@@ -3225,7 +3233,7 @@ ufopaedia:
     text: STR_ARMOR_COLUMN_UFOPEDIA
     listOrder: 801
     image_id: 2LEMON.SPK
-  - id: STR_TAUROX                       #810
+  - id: STR_TAUROX                        #810
     requires:
       - STR_IMPERIAL_GUARD_MIDTIER
     type_id: 11
@@ -3249,7 +3257,7 @@ ufopaedia:
     text: STR_TAUROS_UFOPEDIA
     listOrder: 830
     image_id: TAUROS.SPK
-  - id: STR_LIGHTNING_INTERCEPTOR          #230
+  - id: STR_LIGHTNING_INTERCEPTOR         #230
     requires:
       - STR_IMPERIAL_GUARD_OPERATIONS
     type_id: 11
@@ -3257,7 +3265,7 @@ ufopaedia:
     text: STR_LIGHTNING_INTERCEPTOR_UFOPEDIA
     listOrder: 230
     image_id: LIGHTNING_INTERCEPTOR.SPK
-  - id: STR_THUNDERBOLT_INTERCEPTOR          #240
+  - id: STR_THUNDERBOLT_INTERCEPTOR       #240
     requires:
       - STR_IMPERIAL_GUARD_OPERATIONS
     type_id: 11
@@ -3265,7 +3273,7 @@ ufopaedia:
     text: STR_THUNDERBOLT_INTERCEPTOR_UFOPEDIA
     listOrder: 240
     image_id: 2THUNDERBOLT.SPK #THUNDERBOLT_INTERCEPTOR.SPK
-  - id: STR_MARAUDER          #250
+  - id: STR_MARAUDER                      #250
     requires:
       - STR_MARAUDER_REQUISITION
     type_id: 11
@@ -3273,7 +3281,7 @@ ufopaedia:
     text: STR_MARAUDER_UFOPEDIA
     listOrder: 250
     image_id: MARAUDER.SPK
-  - id: STR_CASSIUM                #819
+  - id: STR_CASSIUM                       #819
     type_id: 11
     section: STR_XCOM_CRAFT_ARMAMENT
     requires:
@@ -3281,7 +3289,77 @@ ufopaedia:
     image_id: 2CRASSUS.SPK
     text: STR_CASSIUM_UFOPEDIA
     listOrder: 819
-#REST
+#ARBITES
+  - id: STR_VULTURE                    #212
+    type_id: 11
+    requires:
+      - STR_ARBITES
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_VULTURE_UFOPEDIA
+    listOrder: 213
+    image_id: 2VULTURE.SPK
+  - id: STR_CHIMERAPD                  #213
+    type_id: 11
+    requires:
+      - STR_ARBITES
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_CHIMERAPD_UFOPEDIA
+    listOrder: 213
+    image_id: 2CHIMERAL.SPK
+  - id: STR_THUNDERBOLTPD              #214
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_ARBITES
+      - STR_NEW_FIGHTER_PD
+    image_id: 2THUNDERBOLT.SPK
+    text: STR_THUNDERBOLT_INTERCEPTOR_UFOPEDIA
+    listOrder: 214
+  - id: STR_HIDRAPD                    #215
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_ARBITES
+      - STR_MIDTIER_PREREQ
+    image_id: 2HIDRA.SPK
+    text: STR_HIDRAPD_UFOPEDIA
+    listOrder: 215
+  - id: STR_TAUROXPD                   #216
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_ARBITES
+      - STR_NEW_TRANSPORT_PD
+    image_id: 2TAUROX.SPK
+    text: STR_TAUROXPD_UFOPEDIA
+    listOrder: 216
+  - id: STR_CHIMERAPDH                 #217
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_ARBITES
+      - STR_ARBITES_HIGHTIER
+    image_id: 2MANTICORE.SPK
+    text: STR_CHIMERAPDH_UFOPEDIA
+    listOrder: 217
+  - id: STR_CASSIUMPD                  #218
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_ARBITES
+      - STR_ARBITES_HIGHTIER
+    image_id: 2CRASSUS.SPK
+    text: STR_CASSIUMPD_UFOPEDIA
+    listOrder: 218
+  - id: STR_ARVUS                      #211
+    type_id: 11
+    requires:
+      - STR_ARBITES
+    section: STR_XCOM_CRAFT_ARMAMENT
+    text: STR_ARVUS_UFOPEDIA
+    listOrder: 211
+    image_id: 2ARVUS.SPK
+#STORMEAGLE
   - id: STR_STORMEAGLE                 #600
     type_id: 11
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -3309,6 +3387,7 @@ ufopaedia:
     requires:
       - STR_STORMEAGLE_INTERCEPTOR_GK
       - STR_GREYKNIGHTS
+#FINAL
   - id: STR_CHAPTERARMY                #700
     type_id: 11
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -3361,22 +3440,8 @@ ufopaedia:
     image_id: SPEED.SPK
     requires:
       - STR_SPEEDR
-  - id: STR_VALKYRIE                   #210
-    type_id: 11
-    section: STR_XCOM_CRAFT_ARMAMENT
-    text: STR_VALKYRIE_UFOPEDIA
-    requires:
-      - STR_GUARD_SUPORT
-    listOrder: 210
-    image_id: VALK.SPK
-  - id: STR_ARVUS                      #211
-    type_id: 11
-    requires:
-      - STR_ARBITES
-    section: STR_XCOM_CRAFT_ARMAMENT
-    text: STR_ARVUS_UFOPEDIA
-    listOrder: 211
-    image_id: 2ARVUS.SPK
+
+
   - id: STR_ARVUS_GK                   #211
     type_id: 11
     requires:
@@ -3385,67 +3450,7 @@ ufopaedia:
     text: STR_ARVUS_UFOPEDIA
     listOrder: 211
     image_id: 2ARVUS.SPK
-  - id: STR_VULTURE                    #212
-    type_id: 11
-    requires:
-      - STR_ARBITES
-    section: STR_XCOM_CRAFT_ARMAMENT
-    text: STR_VULTURE_UFOPEDIA
-    listOrder: 213
-    image_id: 2VULTURE.SPK
-  - id: STR_CHIMERAPD                  #213
-    type_id: 11
-    requires:
-      - STR_ARBITES
-    section: STR_XCOM_CRAFT_ARMAMENT
-    text: STR_CHIMERAPD_UFOPEDIA
-    listOrder: 213
-    image_id: 2CHIMERA.SPK
-  - id: STR_THUNDERBOLTPD              #214
-    type_id: 11
-    section: STR_XCOM_CRAFT_ARMAMENT
-    requires:
-      - STR_ARBITES
-      - STR_NEW_FIGHTER_PD
-    image_id: 2THUNDERBOLT.SPK
-    text: STR_THUNDERBOLT_INTERCEPTOR_UFOPEDIA
-    listOrder: 214
-  - id: STR_HIDRAPD                    #215
-    type_id: 11
-    section: STR_XCOM_CRAFT_ARMAMENT
-    requires:
-      - STR_ARBITES
-      - STR_MIDTIER_PREREQ
-    image_id: 2HIDRA.SPK
-    text: STR_HIDRAPD_UFOPEDIA
-    listOrder: 215
-  - id: STR_TAUROXPD                   #216
-    type_id: 11
-    section: STR_XCOM_CRAFT_ARMAMENT
-    requires:
-      - STR_ARBITES
-      - STR_NEW_TRANSPORT_PD
-    image_id: 2TAUROX.SPK
-    text: STR_TAUROXPD_UFOPEDIA
-    listOrder: 216
-  - id: STR_CHIMERAPDH                 #217
-    type_id: 11
-    section: STR_XCOM_CRAFT_ARMAMENT
-    requires:
-      - STR_ARBITES
-      - STR_ARBITES_HIGHTIER
-    image_id: 2MANTICORE.SPK
-    text: STR_CHIMERAPDH_UFOPEDIA
-    listOrder: 217
-  - id: STR_CASSIUMPD                #218
-    type_id: 11
-    section: STR_XCOM_CRAFT_ARMAMENT
-    requires:
-      - STR_ARBITES
-      - STR_ARBITES_HIGHTIER
-    image_id: 2CRASSUS.SPK
-    text: STR_CASSIUMPD_UFOPEDIA
-    listOrder: 218
+
   - id: STR_FIRESTORM                  #300
     type_id: 11
     section: STR_XCOM_CRAFT_ARMAMENT
