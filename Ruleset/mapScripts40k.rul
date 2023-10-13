@@ -1064,10 +1064,8 @@ mapScripts:
       - type: addBlock
         size: 2
         groups: 5
-
       #*** Place the player's craft ***
       - type: addCraft
-
       #*** Add roads/railroads ***
       - type: addLine
         direction: vertical
@@ -3366,6 +3364,22 @@ mapScripts:
 
       - type: fillArea
         terrain: globeTerrain
+
+  - type: STR_TRAITOR_FIREBASE
+    commands:
+    - type: addCraft
+    - type: addUFO
+      executions: 1
+      UFOName: STR_TRAITOR_CONVOY
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: fillArea
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 15, 16]
+      freqs: [8, 8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 3, 3, 3]
+      maxUses: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 2, 1, 1, 1, 1]
+    - type: fillArea
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
   - type: DESERT
     commands:

@@ -44,7 +44,7 @@ craftWeapons:
     projectileType: 2
     projectileSpeed: 8
     weaponType: 3
-  - type: STR_CRAFT_HMISSILE_UC             #R 80       A 2        D500     Acc 30 Rua Eduardo Lobo
+  - type: STR_CRAFT_HMISSILE_UC             #R 80       A 2        D500     Acc 30
     sprite: 766
     sound: 5
     damage: 500

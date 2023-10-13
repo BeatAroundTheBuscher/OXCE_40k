@@ -1102,7 +1102,7 @@ alienMissions:
     siteType: STR_TRAITOR_GUARD_BASE_LEVEL_1
     points: 5
     waves:
-      - ufo: STR_TRAITOR_CHIMERA
+      - ufo: STR_TRAITOR_CASSIUM
         count: 2
         timer: 0
         trajectory: TRAITOR_GUARD_BASE_CREATION
@@ -1118,15 +1118,47 @@ alienMissions:
     siteType: STR_TRAITOR_GUARD_BASE_LEVEL_1
     points: 0
     waves:
-      - ufo: STR_TRAITOR_CHIMERA
+      - ufo: STR_TRAITOR_CASSIUM
         count: 2
         timer: 0
         trajectory: DIRECT_TO_NEW_BASE_TRAJECTORY
-      - ufo: STR_TRAITOR_CHIMERA
+      - ufo: STR_TRAITOR_CASSIUM
         count: 1
         timer: 7200
         objective: true
         trajectory: DIRECT_TO_NEW_BASE_TRAJECTORY
+
+  - type: STR_TRAITOR_FIREBASE_FROM_EXISTING
+    raceWeights: {}
+    operationType: 1
+    operationSpawnZone: 4
+    operationBaseType: STR_TRAITOR_FIREBASE
+    objective: 2
+    spawnZone: 4
+    siteType: STR_TRAITOR_FIREBASE
+    points: 0
+    waves:
+      - ufo: STR_TRAITOR_CONVOY
+        count: 2
+        timer: 0
+        trajectory: DIRECT_TO_NEW_BASE_TRAJECTORY
+      - ufo: STR_TRAITOR_CONVOY
+        count: 1
+        timer: 7200
+        objective: true
+        trajectory: DIRECT_TO_NEW_BASE_TRAJECTORY
+
+  - type: STR_FIREBASE_RETALIATION
+    points: 0
+    objective: 4
+    operationType: 4    # hunt mission
+    spawnUfo: STR_GTGM # Spawned for the final retaliation run
+    raceWeights: {}
+    waves:
+      - ufo: STR_GTGM
+        count: 1
+        trajectory: P8
+        timer: 0
 
   - type: STR_CHIMERA_PATROL
     raceWeights: {}
@@ -1189,6 +1221,7 @@ alienMissions:
         hunterKillerPercentage: 100
         huntMode: 0
         huntBehavior: 0
+
 
 #*** ELDAR Base Missions ***
   - type: STR_ELDAR_BASE

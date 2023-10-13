@@ -5629,7 +5629,7 @@
     height: 200
     files:
       0: Resources/CODEX/0CHC.png                  #TRAITOR GUARD
-  - type: 0CHCCC.SPK                  #TRAITOR GUARD CONVOY
+  - type: 0CHCC.SPK                  #TRAITOR GUARD CONVOY
     singleImage: true
     width: 320
     height: 200

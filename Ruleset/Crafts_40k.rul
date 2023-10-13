@@ -57,7 +57,7 @@ crafts:
     marker: 42
     requiresBuyBaseFunc: [HANGAR]
     requires:
-      - STR_IMPERIAL_GUARD_HIGHTIER  
+      - STR_IMPERIAL_GUARD_HIGHTIER
     sprite: 1685
     maxSkinIndex: 2            # default 0
     skinSprites: [1686,1687] # default empty, contains all sprites except for the first (index zero)
@@ -284,14 +284,19 @@ crafts:
     score: 400
     listOrder: 400
     battlescapeTerrainData:
-      name: THUNDERHAWKGK
+      name: THUNDERHAWK
       mapDataSets:
         - BLANKS
-        - 0W0THUNDERHAWK
+        - THUNDERHAWKGK
       mapBlocks:
-        - name: THUNDERHAWKGK
+        - name: THUNDERHAWK
           width: 10
           length: 20
+          items:
+            STR_THUNDERHAWK_DEPLOY_CHARGE:
+              - [5, 13, 0]
+          fuseTimers:
+            STR_THUNDERHAWK_DEPLOY_CHARGE: [1, 1]
     deployment:
       - [4, 13, 1, 4]
       - [5, 13, 1, 4]
@@ -729,6 +734,11 @@ crafts:
         - name: THUNDERHAWK
           width: 10
           length: 20
+          items:
+            STR_THUNDERHAWK_DEPLOY_CHARGE:
+              - [5, 13, 0]
+          fuseTimers:
+            STR_THUNDERHAWK_DEPLOY_CHARGE: [1, 1]
     deployment:
       - [4, 13, 1, 4]
       - [5, 13, 1, 4]
@@ -1028,11 +1038,16 @@ crafts:
       name: THUNDERHAWK
       mapDataSets:
         - BLANKS
-        - 0A0THUNDERHAWK
+        - THUNDERHAWKA
       mapBlocks:
         - name: THUNDERHAWK
           width: 10
           length: 20
+          items:
+            STR_THUNDERHAWK_DEPLOY_CHARGE:
+              - [5, 13, 0]
+          fuseTimers:
+            STR_THUNDERHAWK_DEPLOY_CHARGE: [1, 1]
     deployment:
       - [4, 13, 1, 4]
       - [5, 13, 1, 4]
@@ -2254,6 +2269,11 @@ crafts:
         - name: THUNDERHAWK
           width: 10
           length: 20
+          items:
+            STR_THUNDERHAWK_DEPLOY_CHARGE:
+              - [5, 13, 0]
+          fuseTimers:
+            STR_THUNDERHAWK_DEPLOY_CHARGE: [1, 1]
     deployment:
       - [4, 13, 1, 4]
       - [5, 13, 1, 4]
@@ -2318,6 +2338,11 @@ crafts:
         - name: THUNDERHAWK
           width: 10
           length: 20
+          items:
+            STR_THUNDERHAWK_DEPLOY_CHARGE:
+              - [5, 13, 0]
+          fuseTimers:
+            STR_THUNDERHAWK_DEPLOY_CHARGE: [1, 1]
     deployment:
       - [4, 13, 1, 4]
       - [5, 13, 1, 4]
@@ -2386,6 +2411,8 @@ crafts:
           width: 10
           length: 20
           items:
+            STR_THUNDERHAWK_DEPLOY_CHARGE:
+              - [5, 13, 0]
             STR_LEFT_THUNDERHAWK_SPAWNER:
               - [3, 12, 1]
             STR_RIGHT_THUNDERHAWK_SPAWNER:
@@ -2393,6 +2420,7 @@ crafts:
           fuseTimers:
             STR_LEFT_THUNDERHAWK_SPAWNER: [0, 0]
             STR_RIGHT_THUNDERHAWK_SPAWNER: [0, 0]
+            STR_THUNDERHAWK_DEPLOY_CHARGE: [1, 1]
     deployment:
       - [4, 13, 1, 4]
       - [5, 13, 1, 4]
@@ -2566,7 +2594,6 @@ crafts:
       - [4, 16, 1, 0]
     listOrder: 820
     spacecraft: true
-
   - type: STR_HIDRAPD
     requiresBuyBaseFunc: [HANGAR]
     takeoffSound: 63 #TANKMOVE SOUND

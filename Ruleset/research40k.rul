@@ -2174,6 +2174,18 @@ research:
     points: 50
     getOneFree:
       - STR_TRAITOR_CHIMERA
+  - name: STR_TRAITOR_CASSIUM_DATA
+    needItem: true
+    cost: 50
+    points: 50
+    getOneFree:
+      - STR_TRAITOR_CASSIUM
+  - name: STR_TRAITOR_CONVOY_DATA
+    needItem: true
+    cost: 50
+    points: 50
+    getOneFree:
+      - STR_TRAITOR_CONVOY
 
   - name: STR_CHAOS_BASE_DATA
     needItem: true
@@ -2294,6 +2306,12 @@ research:
     points: 200
     needItem: true
   - name: STR_TRAITOR_CHIMERA
+    points: 50
+    needItem: true
+  - name: STR_TRAITOR_CASSIUM
+    points: 50
+    needItem: true
+  - name: STR_TRAITOR_CONVOY
     points: 50
     needItem: true
 

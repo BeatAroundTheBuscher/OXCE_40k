@@ -407,7 +407,7 @@
             STR_TURRET2_SPAWNER: [0, 0]
 
  #TRAITOR GUARD
-  - type: STR_ROCKET
+  - type: STR_GTGM #GROUND TO GROUND MISSELE
     marker: 87
     markerLand: 87
     markerCrash: 87
@@ -420,7 +420,7 @@
     breakOffTime: 0
     missilePower: 10
     unmanned: true
-  - type: STR_CASSIUM_UFO
+  - type: STR_TRAITOR_CASSIUM
     alertSound: 38
     modSprite: Interception_crassus
     marker: 82
@@ -437,7 +437,7 @@
     score: 75
     missionScore: 0
     battlescapeTerrainData:
-      name: CHIMERA_TRAITOR
+      name: STR_TRAITOR_CASSIUM
       mapDataSets:
         - BLANKS
         - CASSIUMCHAOS
@@ -454,6 +454,51 @@
               - [12, 8, 1]
             STR_CCASSIUM_BOLTER_RIGHT2_SPAWNER:
               - [15, 3, 1]
+            STR_REQUISITION_BOUNTY_500K:
+              - [0, 0, 0]
+          fuseTimers:
+            STR_CCASSIUM_BOLTER_LEFT1_SPAWNER: [0, 0]
+            STR_CCASSIUM_BOLTER_LEFT2_SPAWNER: [0, 0]
+            STR_CCASSIUM_BOLTER_RIGHT1_SPAWNER: [0, 0]
+            STR_CCASSIUM_BOLTER_RIGHT2_SPAWNER: [0, 0]
+  - type: STR_TRAITOR_CONVOY
+    alertSound: 38
+    modSprite: Interception_traitorconvoy
+    marker: 45
+    markerLand: 46
+    markerCrash: 47
+    speedMax: 75
+    size: STR_MEDIUM_UC
+    armor: 5
+    damageMax: 1440
+    accel: 3
+    power: 15
+    range: 65
+    reload: 12
+    score: 75
+    missionScore: 0
+    battlescapeTerrainData:
+      name: STR_TRAITOR_CONVOY
+      mapDataSets:
+        - BLANKS
+        - CASSIUMBOMBCHAOS
+        - CASSIUMTURRETCHAOS
+        - CASSIUMCHAOS
+      mapBlocks:
+        - name: CASSIUMCONVOY
+          width: 20
+          length: 20
+          items:
+            STR_CCASSIUM_BOLTER_LEFT1_SPAWNER:
+              - [10, 11, 1]
+            STR_CCASSIUM_BOLTER_LEFT2_SPAWNER:
+              - [16, 6, 1]
+              - [13, 16, 1]
+            STR_CCASSIUM_BOLTER_RIGHT1_SPAWNER:
+              - [10, 18, 1]
+            STR_CCASSIUM_BOLTER_RIGHT2_SPAWNER:
+              - [13, 13, 1]
+              - [16, 3, 1]
             STR_REQUISITION_BOUNTY_500K:
               - [0, 0, 0]
           fuseTimers:

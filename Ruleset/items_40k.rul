@@ -1289,6 +1289,26 @@ items:
     armor: 100
     recover: false
     hiddenOnMinimap: true
+  - type: STR_THUNDERHAWK_DEPLOY_CHARGE
+    power: 24
+    weight: 999
+    hitAnimation: 136 #XDROP
+    explosionHitSound: 835
+    damageType: 3
+    damageAlter:
+      FixRadius: 1
+      ResistType: 10
+      ArmorEffectiveness: 0.2
+      ToArmor: 0.0
+      ToItem: 0.0
+      ToTile: 10.0
+      RadiusReduction: 0.0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 100
+    recover: false
+    hiddenOnMinimap: true
   - type: STR_VALK_CHARGE
     power: 24
     weight: 999
@@ -2386,7 +2406,7 @@ items:
     listOrder: 14000
     throwRange: 20
   - type: STR_ALIEN_GRENADE                #4010
-    categories: [ STR_CAT_GRANADES, STR_CAT_TACTICAL]
+    categories: [ STR_CAT_GRENADES, STR_CAT_TACTICAL]
     requires:
       - STR_ALIENS_ONLY
       - STR_ALIEN_GRENADE
@@ -3393,7 +3413,6 @@ items:
       ArmorEffectiveness: 0.4
     explosionSpeed: 5
     listOrder: 18017
-
   - type: STR_HYPERPHASESWORD #         13000           DA POWER
     categories: [STR_CAT_NECRON, STR_CAT_ASSAULT]
     requires:
@@ -3608,7 +3627,6 @@ items:
     strengthApplied: false
     attraction: 0
 #--- ELDAR  ------------------------------------------------------      dropoff: 5
-
   - type: STR_ELDAR_LAUNCHER #                       12100                                  AIMED
     categories: [ STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
     requiresBuyBaseFunc: [ELDAROUT]
@@ -6846,7 +6864,6 @@ items:
     aimRange: 10
     snapRange: 8
     dropoff: 5
-
   - type: STR_SHOTGUN_CHAOS #                        10605
     categories: [STR_CAT_SHOTGUN, STR_CAT_CHAOS]
     ufopediaType: STR_SHOTGUN
@@ -6875,7 +6892,6 @@ items:
     aimRange: 10
     snapRange: 8
     dropoff: 5
-
   - type: STR_SHOTGUN_SHELLS #                        10710
     categories: [ STR_CAT_SHOTGUN, STR_CAT_SCOUT]
     requiresBuyBaseFunc: [IMPERIUM]
@@ -8628,7 +8644,7 @@ items:
     battleType: 2
     listOrder: 2310
   - type: STR_HWP_CANNON_SHELLS #HWP   Ammo   BIKE AMMOSistem  1350          Tostun
-    categories: [ STR_CRAFT_WEAPONS, STR_CAT_AUXILIARY]
+    categories: [STR_CAT_AUXILIARY]
     requiresBuyBaseFunc: [IMPERIUM]
     size: 0.1
     costBuy: 10000
@@ -9503,7 +9519,6 @@ items:
       ToItem: 0.0
       ToTile: 10.0
       RadiusReduction: 0.0
-
 
   - type: OT_CORPSE1 #Turret PREDATOR CORPSE
     name: STR_ORKTURRET_CORPSE
@@ -12313,6 +12328,12 @@ items:
     specialType: 1010
 
   - type: STR_TRAITOR_CHIMERA_DATA
+    size: 0.0
+    specialType: 1011
+  - type: STR_TRAITOR_CASSIUM_DATA
+    size: 0.0
+    specialType: 1011
+  - type: STR_TRAITOR_CONVOY_DATA
     size: 0.0
     specialType: 1011
 
