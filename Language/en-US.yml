@@ -1935,6 +1935,7 @@ en-US:
   STR_FLYING_SUIT: "Terminator Assault Armor"
   STR_CAPTAIN_SUIT: "Captain Armor"
   STR_CAPTAIN_UC: "Captain Armor"
+  STR_TERMINATOR_APOT_ARMOR: "Terminator Apothecary Armor"
   STR_DW_CAP_ARMOR: "MK7 Captain Armor"
   STR_DW_CAP_ARMOR_UC: "MK7 Captain Armor"
   STR_DW_CAP_ARMOR_ULTRA_UC: "MK7 Captain Armor"
@@ -2243,6 +2244,7 @@ en-US:
 #ARMOR -------------------------------------------------------------
   STR_FLYING_SUIT_UFOPEDIA: "The scarcity and expense to maintain Terminator suits means they are available only to the elite troops from the veteran companies of the Space Marine Chapters."
   STR_POWER_SUIT_UFOPEDIA: "Terminator Armor or Tactical Dreadnought Armor is the toughest and most powerful form of personal armor humanity has ever developed, used in Terminator units."
+  STR_TERMINATOR_APOT_ARMOR_UFOPEDIA: "Terminator Armor or Tactical Dreadnought Armor is the toughest and most powerful form of personal armor humanity has ever developed, used in Terminator units. {NEWLINE}{NEWLINE}{ALT}Apothecary variant"
   STR_PERSONAL_ARMOR_UFOPEDIA: "Mark VII armor, also known as the 'Aquila', 'Imperator' or 'Eagle' armor, was developed during the Horus Heresy, and remains in use as the most common form of power armor."
 #HWP AND CRAFTS ---------------------------------------
   STR_CASSIUM_BOLTER_LEFT1: "Bolter Sponson"

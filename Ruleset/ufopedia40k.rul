@@ -2842,6 +2842,15 @@ ufopaedia:
       - STR_POWER_SUIT
     text: STR_POWER_SUIT_UFOPEDIA
     listOrder: 6100
+  - id: STR_TERMINATOR_APOT_ARMOR                  #6250
+    type_id: 15
+    section: STR_ARMORPEDIA
+    image_id: 0TER.SPK
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_POWER_SUIT
+    text: STR_TERMINATOR_APOT_ARMOR_UFOPEDIA
+    listOrder: 6150
   - id: STR_FLYING_SUIT_UC                 #62   #ARMOR
     type_id: 15
     section: STR_ARMORPEDIA

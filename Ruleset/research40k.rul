@@ -660,6 +660,12 @@ research:
       - STR_UFO_POWER_SOURCE
       - STR_MIDTIER_PREREQ
       - STR_PERSONAL_ARMOR
+  - name: STR_TERMINATOR_APOT_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_POWER_SUIT
+      - STR_MEDI_KIT_PREREQ
   - name: STR_FLYING_SUIT
     cost: 330
     points: 20

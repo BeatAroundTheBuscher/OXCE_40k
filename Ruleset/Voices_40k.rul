@@ -1161,7 +1161,8 @@
     annoyedFemale:      [336, 337, 338, 339, 340]
     deathMale:     [385, 386, 387, 388]
     deathFemale:   [389, 390, 392, 392, 393]
-  - type: STR_POWER_SUIT_UC                 #TERMINATOR   --VOICE--
+  - &TERMINATOR_VOICE
+    type: STR_POWER_SUIT_UC                 #TERMINATOR   --VOICE--
     selectUnitMale:     [411, 412, 413, 414, 415]
     selectUnitFemale:   [431, 432, 433, 434, 435]
     startMovingMale:    [406, 407, 408, 409, 410]
@@ -1172,28 +1173,12 @@
     annoyedFemale:      [436, 437, 438, 439, 440]
     deathMale:     [396, 397, 398, 399]
     deathFemale:   [396, 397, 398, 399]
+  - type: STR_TERMINATOR_APOT_ARMOR
+    refNode: *TERMINATOR_VOICE
   - type: STR_TSARGENT_UC                   #TERMINATOR SARGENT   --VOICE--
-    selectUnitMale:     [411, 412, 413, 414, 415]
-    selectUnitFemale:   [431, 432, 433, 434, 435]
-    startMovingMale:    [406, 407, 408, 409, 410]
-    startMovingFemale:  [426, 427, 428, 429, 430]
-    selectWeaponMale:   [401, 402, 403, 404, 405]
-    selectWeaponFemale: [421, 422, 423, 424, 425]
-    annoyedMale:        [416, 417, 418, 419, 420]
-    annoyedFemale:      [436, 437, 438, 439, 440]
-    deathMale:     [396, 397, 398, 399]
-    deathFemale:   [396, 397, 398, 399]
+    refNode: *TERMINATOR_VOICE
   - type: STR_FLYING_SUIT_UC                #TERMINATOR ASSAULT  --VOICE--
-    selectUnitMale:     [411, 412, 413, 414, 415]
-    selectUnitFemale:   [431, 432, 433, 434, 435]
-    startMovingMale:    [406, 407, 408, 409, 410]
-    startMovingFemale:  [426, 427, 428, 429, 430]
-    selectWeaponMale:   [401, 402, 403, 404, 405]
-    selectWeaponFemale: [421, 422, 423, 424, 425]
-    annoyedMale:        [416, 417, 418, 419, 420]
-    annoyedFemale:      [436, 437, 438, 439, 440]
-    deathMale:     [396, 397, 398, 399]
-    deathFemale:   [396, 397, 398, 399]
+    refNode: *TERMINATOR_VOICE
   - type: CENT_ARMOR_UC            #CENT
     selectUnitMale:     [511, 512, 513, 514, 515]
     selectUnitFemale:   [531, 532, 533, 534, 535]

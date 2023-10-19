@@ -1551,6 +1551,23 @@ armors:
       F3: ["0", "TERMINATORSMF", "F3_FACE"]
       F4: ["0", "TERMINATORSMF", "F4_FACE"]
       F5: ["0", "TERMINATORSMF", "F5_FACE"]
+  - type: STR_TERMINATOR_APOT_ARMOR #TERMINATOR APOT
+    layersDefaultPrefix: 0
+    layersSpecificPrefix:
+      1: TERMINATOR
+    layersDefinition:
+      M0: ["0", "TERMINATORAPOTMF", "M0_FACE"]
+      M1: ["0", "TERMINATORAPOTMF", "M1_FACE"]
+      M2: ["0", "TERMINATORAPOTMF", "M2_FACE"]
+      M3: ["0", "TERMINATORAPOTMF", "M3_FACE"]
+      M4: ["0", "TERMINATORAPOTMF", "M4_FACE"]
+      M5: ["0", "TERMINATORAPOTMF", "M5_FACE"]
+      F0: ["0", "TERMINATORAPOTMF", "F0_FACE"]
+      F1: ["0", "TERMINATORAPOTMF", "F1_FACE"]
+      F2: ["0", "TERMINATORAPOTMF", "F2_FACE"]
+      F3: ["0", "TERMINATORAPOTMF", "F3_FACE"]
+      F4: ["0", "TERMINATORAPOTMF", "F4_FACE"]
+      F5: ["0", "TERMINATORAPOTMF", "F5_FACE"]
 #
 extraSprites:
 
@@ -1908,6 +1925,8 @@ extraSprites:
     fileSingle: Resources/LAYER/ULTRAMARINE/TERMINATORMF.gif
   - typeSingle: TSARGENT__1__TERMINATORSMF
     fileSingle: Resources/LAYER/ULTRAMARINE/TERMINATORSMF.gif
+  - typeSingle: TERMINATOR__1__TERMINATORAPOTMF
+    fileSingle: Resources/LAYER/SM/TERMINATORAPOTMF.png
   - typeSingle: CENT__1__CENTMF
     fileSingle: Resources/LAYER/ULTRAMARINE/CENTMF.gif
 #
@@ -2510,6 +2529,13 @@ extraSprites:
     subY: 40
     files:
       0: Resources/CAPTAIN/ULTRAMARINE/TERMINATOR-CAPTAIN.png
+  - type: TERMINATOR_APOT.PCK #TERMINATOR APOTHECARY ARMOR
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Terminator/APOT/TERMINATOR_APOTHECARY_UNITSPRITE.png
   - type: XCOM_21.PCK #Sargent ARMOR xcom21
     width: 512
     height: 720

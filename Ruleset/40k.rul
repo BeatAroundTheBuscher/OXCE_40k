@@ -10568,6 +10568,54 @@ armors:
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
+  - type: STR_TERMINATOR_APOT_ARMOR
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    spriteSheet: TERMINATOR_APOT.PCK
+    customArmorPreviewIndex: 37
+    corpseBattle:
+      - STR_TERMINATOR_CORPSE
+    storeItem: STR_POWER_SUIT
+    corpseGeo: STR_FALLEN_CORPSE
+    stats:
+      tu: -20
+      stamina: -30
+      firing: 0
+      health: 30
+      bravery: 20 #always multiples of 10
+      reactions: -20
+      throwing: -30
+      strength: 100
+      psiStrength: 0
+      psiSkill: 0
+      melee: 20
+    frontArmor: 150
+    sideArmor: 120
+    rearArmor: 100
+    underArmor: 90
+    damageModifier: #TERMINATOR ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.3 #FLAMES
+      - 1.0 #HE
+      - 0.8 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    units:
+      - STR_SOLDIER
+    loftempsSet: [ 3 ]
+    forcedTorso: 1
+    specialWeapon: STR_MFIST
+    builtInWeapons:
+      - INV_NULL_3X3
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - AUX_MEDI_KIT
   - type: CENT_ARMOR_UC            #CENT
     visibilityAtDay: 40
     visibilityAtDark: 30
@@ -13883,6 +13931,21 @@ manufacture:
       STR_ALIEN_ALLOYS: 450
       STR_KILLPOINT_TOKEN: 60
       STR_ELERIUM_115: 50
+  # - name: STR_TERMINATOR_APOT_ARMOR                #1 BADGE 1
+  #   category: STR_PERSONAL_ARMOR
+  #   requires:
+  #     - STR_CHAPTER_PURITY
+  #     - STR_POWER_SUIT
+  #     - STR_MEDI_KIT
+  #     - STR_MEDI_KIT_PREREQ
+  #   space: 16
+  #   time: 800
+  #   cost: 28000
+  #   requiresBaseFunc: [ARMO]
+  #   requiredItems:
+  #     STR_ALIEN_ALLOYS: 400
+  #     STR_ELERIUM_115: 40
+  #     STR_KILLPOINT_TOKEN: 120
   - name: STR_CENT_ARMOR                 #1 BADGE 5
     category: STR_PERSONAL_ARMOR
     requires:
