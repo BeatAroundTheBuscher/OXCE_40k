@@ -1478,6 +1478,14 @@
     files:
       0: Resources/CASSIUM/CCASSR2.png
 
+  - type: GENE_TURRET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/GENE/GTURRET.png
+ 
   - type: MUNI.PCK
     subX: 32
     subY: 40

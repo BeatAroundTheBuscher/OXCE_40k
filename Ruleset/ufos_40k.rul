@@ -126,6 +126,7 @@
     radarChance: 20
     sightRange: 200
     missionScore: 0
+#NECRON
   - type: STR_DOOMSDAY_MONOLITH #NECRON
     marker: 59
     markerLand: 62
@@ -239,6 +240,7 @@
             STR_MONOE_SPAWNER: [0, 0]
             STR_MONON_SPAWNER: [0, 0]
             STR_MONOS_SPAWNER: [0, 0]
+#ORK      
   - type: STR_ORK_MIG_UFO #HK
     marker: 84
     markerLand: 85
@@ -405,7 +407,40 @@
           fuseTimers:
             STR_TURRET1_SPAWNER: [0, 0]
             STR_TURRET2_SPAWNER: [0, 0]
-
+ #GENE
+  - type: STR_GOLIATH_UFO
+    size: STR_VERY_SMALL
+    marker: 82
+    markerLand: 83
+    markerCrash: 24
+    alertSound: 37
+    modSprite: InterceptionUFO-17
+    damageMax: 160
+    speedMax: 100
+    accel: 3
+    power: 5
+    range: 65
+    score: 35
+    reload: 12
+    breakOffTime: 600
+    missionScore: 0
+    battlescapeTerrainData:
+      name: GOLIATH
+      mapDataSets:
+        - BLANKS
+        - GOLIATH
+      mapBlocks:
+        - name: GOLIATH
+          width: 20
+          length: 10
+          items:
+            STR_REQUISITION_BOUNTY_100K:
+              - [0, 0, 0]
+            STR_GENE_TURRET_SPAWNER:
+              - [5, 4, 1]
+              - [15, 6, 1]
+          fuseTimers:
+            STR_GENE_TURRET_SPAWNER: [0, 0]
  #TRAITOR GUARD
   - type: STR_GTGM #GROUND TO GROUND MISSELE
     marker: 87
@@ -557,6 +592,39 @@
             STR_REQUISITION_BOUNTY_250K:
               - [0, 0, 0]
 
+  - type: STR_CHAOS_VOSS #HK
+    marker: 15
+    markerLand: 20
+    markerCrash: 25
+    alertSound: 36
+    huntAlertSound: 34
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUFO-13
+    damageMax: 140
+    speedMax: 1400
+    accel: 3
+    power: 15
+    range: 65
+    score: 50
+    reload: 12
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: VOSSC
+      mapDataSets:
+        - BLANKS
+        - VOSSC
+      mapBlocks:
+        - name: VOSSC
+          width: 10
+          length: 10
+    hunterKillerPercentage: 100
+    huntMode: 2
+    huntSpeed: 90
+    radarRange: 200
+    radarChance: 20
+    sightRange: 200
+    missionScore: 0
+ #INQ
   - type: STR_STORMRAVEN_UFO
     alertSound: 36
     marker: 43
@@ -878,38 +946,7 @@
         - name: PREDATOR
           width: 10
           length: 10
-  - type: STR_CHAOS_VOSS #HK
-    marker: 15
-    markerLand: 20
-    markerCrash: 25
-    alertSound: 36
-    huntAlertSound: 34
-    size: STR_VERY_SMALL
-    modSprite: InterceptionUFO-13
-    damageMax: 140
-    speedMax: 1400
-    accel: 3
-    power: 15
-    range: 65
-    score: 50
-    reload: 12
-    breakOffTime: 600
-    battlescapeTerrainData:
-      name: VOSSC
-      mapDataSets:
-        - BLANKS
-        - VOSSC
-      mapBlocks:
-        - name: VOSSC
-          width: 10
-          length: 10
-    hunterKillerPercentage: 100
-    huntMode: 2
-    huntSpeed: 90
-    radarRange: 200
-    radarChance: 20
-    sightRange: 200
-    missionScore: 0
+
   - type: STR_HELLT #hell talon HK
     marker: 14
     markerLand: 19

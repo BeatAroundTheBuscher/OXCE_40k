@@ -630,6 +630,16 @@ items:
     armor: 5
     recover: false
     hiddenOnMinimap: true
+#---GENE spawn-----------------------------------------------------
+  - type: STR_GENE_TURRET_SPAWNER
+    spawnUnit: STR_GENE_TURRET
+    spawnUnitFaction: 1 # 1: Enemy faction
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 5
+    recover: false
+    hiddenOnMinimap: true
 #---ORK spawn-----------------------------------------------------
   - type: STR_KILLA_SPAWNER
     spawnUnit: STR_ORK_KILLA
@@ -3111,6 +3121,31 @@ items:
     invWidth: 2
     invHeight: 3
     clipSize: -1
+    recover: false
+#---GENE WEAPONS----------------------------------------------------  
+  - type: STR_AUTOCANNON_GENE
+    weight: 85
+    bigSprite: 1060
+    bulletSprite: 6
+    fireSound: 12
+    compatibleAmmo:
+      - STR_AUTOCANNON_CLIP
+    accuracyAuto: 50
+    costAuto:
+      time: 1
+      energy: 50
+    flatUse:
+      time: true
+      energy: true
+    dropoff: 5
+    battleType: 1
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    autoRange: 20
+    autoShots: 3
+    bulletSpeed: 50
+    fixedWeapon: true
     recover: false
 #---MASTERCRAFT------------------------------------------------------ dropoff: 5
   - type: STR_HELLPISTOL
@@ -11136,6 +11171,38 @@ items:
     battleType: 11
     armor: 30
     listOrder: 19968
+
+
+  - type: STR_GENE_TURRET_CORPSE
+    battleType: 11
+    power: 60
+    blastRadius: 2
+  - type: STR_GENE_TURRET_CORPSE_1
+    floorSprite: 1315
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_GENE_TURRET_CORPSE_2
+    floorSprite: 1316
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_GENE_TURRET_CORPSE_3
+    floorSprite: 1317
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_GENE_TURRET_CORPSE_4
+    floorSprite: 1318
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    recover: false
+
 
   - type: STR_GATE_CORPSE  #GATE CORPSE JUST PRECATION
     size: 1

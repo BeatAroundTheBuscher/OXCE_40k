@@ -838,12 +838,13 @@ en-US:
   STR_TRAITOR_GUARD_BASE_LEVEL_1: "Traitor Guard Outpost"
   STR_TRAITOR_GUARD_BASE_LEVEL_2: "Traitor Guard Base"
   STR_TRAITOR_GUARD_BASE_LEVEL_3: "Traitor Guard HQ"
+  STR_TRAITOR_FIREBASE: "Traitor Guard Firebase"
   STR_TRAITOR_GUARD_BASE_START: "Traitor Guard Base"
   STR_TRAITOR_BASE_ASSAULT_BRIEFING: "Your troops have arrived at the location of fortifications inhabited by Traitor Guardsmen. Purge the traitors for their heresy! Destroying the communications equipment at the center of the outpost will render the base inoperative. The mission will terminate when all enemies are eliminated, or when your troops have returned to the craft (click on the 'abort mission' icon to escape)."
   TRAITOR_GUARD_OUTPOST: "Traitor Guard Outpost"
   STR_TRAITOR_GUARD_BASE_DESTROYED: "Enemy Base Destroyed"
   STR_COMMUNICATIONS_EQUIPMENT_DESTROYED: "COMMUNICATIONS EQUIPMENT DESTROYED"
- #*** ORK OUTPOSTS ***
+#*** ORK OUTPOSTS ***
   STR_ORKBASE_START: "Ork Stronghold"
   STR_ORK_OUTPOST: "Ork Camp"
   STR_ORKBASE1: "Ork Camp"
@@ -876,9 +877,9 @@ en-US:
   STR_ARTIFACT_SITE_P2_BRIEFING: "Now that we have gained access to the infected Hulk, delve deep into its darkness and destroy the control center, as it will trigger the self-destruction mechanism. This serious threat must be eliminated. Glory to the Emperor!"
 
 #ELDAR MISSION
-
   STR_ELDAR_BASE_LEVEL_1: "Eldar Gate"
   STR_ELDAR_BASE_LEVEL_2: "Eldar Gate"
+  STR_ELDAR_BASE_LEVEL_3: "Superior Eldar Gate"
   STR_ELDAR_BASE_FROM_EXISTING: " Gate expansion"
   STR_ELDAR_PATROL: "Patrol"
   STR_ELDAR_BASE: "Gate Creation"
@@ -3048,6 +3049,13 @@ en-US:
   STR_CRAFT_AUTOCANNON_ROUNDS: "Craft Autocannon Rounds (x50)"
   STR_CRAFT_AUTOCANNON_UFOPEDIA: "{NEWLINE} The Autocannon's rapid firing rate turns into a devastating storm of anti-aircraft shells when mounted in a quad-linked pattern on a ground-based vehicle.{NEWLINE}{NEWLINE}Slot: Anti-Air{NEWLINE}Ammo: Craft Autocannon Rounds (x50)"
 
+  STR_CRAFT_HMISSILE_UC: "HEAVY MISSILES"
+  STR_CRAFT_HMISSILE: "Heavy Missile"
+  STR_HMISSILE_LAUNCHER: "Heavy Missile Launcher"
+  STR_HEAVY_MISSILES: "Heavy Missile"
+  STR_CRAFT_HMISSILE_UFOPEDIA: "{NEWLINE} Missiles That are fully capable of engaging both land and air targets.{NEWLINE}{NEWLINE}Slot: Anti-Air{NEWLINE}Ammo: Heavy Missile"
+
+
   STR_CHIMERA_TURRET: "Chimera Turret"
   STR_MULTI_LASER: "Multi-Laser"
 
@@ -3511,6 +3519,7 @@ en-US:
   STR_CAT_ELDAR: "Eldar"
   STR_CAT_ORK: "Ork"
   STR_CAT_TAU: "Tau"
+  STR_CAT_NECRON: "Necron"
 
 #*** CRAFTS *******************************************************************
 #Names
@@ -4098,6 +4107,13 @@ en-US:
   STR_TRAITOR_CHIMERA: "Traitor Guard Chimera"
   STR_TRAITOR_CHIMERA_DATA: "Traitor Guard Chimera Scan Data"
   STR_TRAITOR_CHIMERA_UFOPEDIA: "{NEWLINE} The legions of Imperial Guard that turn traitor take their machines of war with them into their heresy, and the Chimera APC is no exception."
+  STR_TRAITOR_CASSIUM: "Traitor Guard Crassus"
+  STR_TRAITOR_CASSIUM_DATA: "Traitor Guard Crassus Scan Data"
+  STR_TRAITOR_CASSIUM_UFOPEDIA: "{NEWLINE} The legions of Imperial Guard that turn traitor take their machines of war with them into their heresy, and the Crassus is no exception."
+  STR_TRAITOR_CONVOY: "Traitor Guard Convoy"
+  STR_TRAITOR_CONVOY_DATA: "Traitor Guard Crassus Scan Data"
+  STR_TRAITOR_CONVOY_UFOPEDIA: "{NEWLINE}  The traitor guard commads two heavly heavily armored vehicles, the Crassus and the Praetor."
+
   STR_TRUKK_UFO: "Ork Expedition"
   STR_TRUKK_UFO_DATA: "Ork Expedition Scan Data"
   STR_TRUKK_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
@@ -4171,6 +4187,7 @@ en-US:
   STR_ALIEN_TERROR: "Blood Spread"
   STR_ALIEN_RETALIATION: "Retaliation"
   STR_DEFILER_RETALIATION: "Bombardment"
+  STR_FIREBASE_RETALIATION: "Bombardment"
   STR_ALIEN_SUPPLY: "Supply"
   STR_GUARD_PATROL_UFOPEDIA: "{NEWLINE}"
   STR_ALIEN_PATROL_UFOPEDIA: "{NEWLINE}"
@@ -4187,6 +4204,7 @@ en-US:
   # Traitor Guard Missions
   STR_TRAITOR_GUARD_BASE: "Base Creation"
   STR_TRAITOR_GUARD_BASE_FROM_EXISTING: "Base Creation"
+  STR_TRAITOR_FIREBASE_FROM_EXISTING: "Firebase Creation"
   STR_CHIMERA_PATROL: "Patrol"
   STR_TRAITOR_GUARD_HK_RETALIATION: "Retaliation"
   STR_CHIMERA_MAINTENANCE_PATROL: "Patrol"

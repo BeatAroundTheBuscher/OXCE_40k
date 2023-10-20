@@ -218,6 +218,72 @@ alienDeployments:
       STR_NECRON_BASE: 25
     points: 1
     enviroEffects: STR_INSIDE_ENVIRO
+  - type: STR_GOLIATH_UFO #GENESTELLER CULT
+    data:
+      - alienRank: 5
+        lowQty: 8
+        highQty: 10 #6
+        dQty: 2 #1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 2
+        highQty: 3 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 2
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_TRAITOR_CHIMERA_DATA
 
   - type: STR_TOMB_NECRON #NECRON
     markerIcon: 64
@@ -3490,7 +3556,7 @@ alienDeployments:
     alertBackground: BACK159.SCR
     alertSound: 50
     markerName: STR_ELDAR_SITE
-    objectiveType: 16 #target type
+    objectiveType: 3 #target type
     objectivesRequired: 2 #number of tiles to be dest
     objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
     objectiveFailed: [STR_WEBWAY_DEVICE_FAILED, -500]
@@ -3718,7 +3784,7 @@ alienDeployments:
     alertBackground: BACK159.SCR
     alertSound: 50
     markerName: STR_ELDAR_SITE
-    objectiveType: 16 #target type
+    objectiveType: 3 #target type
     objectivesRequired: 2 #number of tiles to be dest
     objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
     objectiveFailed: [STR_WEBWAY_DEVICE_FAILED, -500]
@@ -3969,7 +4035,7 @@ alienDeployments:
     alertBackground: BACK159.SCR
     alertSound: 50
     markerName: STR_ELDAR_SITE
-    objectiveType: 16 #target type
+    objectiveType: 3 #target type
     objectivesRequired: 2 #number of tiles to be dest
     objectiveComplete: [STR_WEBWAY_DEVICE_DESTROYED, 500]
     objectiveFailed: [STR_WEBWAY_DEVICE_FAILED, -500]
