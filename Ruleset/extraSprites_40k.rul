@@ -3205,6 +3205,7 @@
       869: Resources/MKX-ARMOR/DWATCH/869.png
       870: Resources/MKX-ARMOR/DWATCH/870.png
       871: Resources/MKX-ARMOR/DWATCH/871.png
+      872: Resources/Foes/872.png
 #900-999 CHAPTER CHANGE
       1400: Resources_IG/Bigobs/traitor_chimera_multilaser.png
 #FLOOR
@@ -5630,7 +5631,12 @@
     height: 200
     files:
       0: Resources/CODEX/0CCA.png                  #ELDAR SHIP13
-
+  - type: 0CG.SPK                  #GENECULT SHIP1
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/0CG.png                  #GENE SHIP1
   - type: 0CHC.SPK                  #TRAITOR GUARD CASSIUM
     singleImage: true
     width: 320

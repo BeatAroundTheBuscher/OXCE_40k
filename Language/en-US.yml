@@ -834,6 +834,11 @@ en-US:
   #STR_TOMB_DETECTED: "Necron Tomb Detected"
   #STR_TOMB_SITE: "Necron Tomb Location"
 
+#*** GENESTEALER CULT OUTPOSTS ***
+  STR_GENE_BASE: "Genestealer Cult Spread"
+  STR_GENE_INFILTRATION: "Genestealer Cult Infiltration"
+  STR_GENE_PATROL: "Genestealer Patrol"
+
 #*** TRAITOR GUARD OUTPOSTS ***
   STR_TRAITOR_GUARD_BASE_LEVEL_1: "Traitor Guard Outpost"
   STR_TRAITOR_GUARD_BASE_LEVEL_2: "Traitor Guard Base"
@@ -4111,8 +4116,12 @@ en-US:
   STR_TRAITOR_CASSIUM_DATA: "Traitor Guard Crassus Scan Data"
   STR_TRAITOR_CASSIUM_UFOPEDIA: "{NEWLINE} The legions of Imperial Guard that turn traitor take their machines of war with them into their heresy, and the Crassus is no exception."
   STR_TRAITOR_CONVOY: "Traitor Guard Convoy"
-  STR_TRAITOR_CONVOY_DATA: "Traitor Guard Crassus Scan Data"
+  STR_TRAITOR_CONVOY_DATA: "Traitor Guard Preator Scan Data"
   STR_TRAITOR_CONVOY_UFOPEDIA: "{NEWLINE}  The traitor guard commads two heavly heavily armored vehicles, the Crassus and the Praetor."
+
+  STR_GOLIATH_UFO: "Traitor Guard Convoy"
+  STR_GOLIATH_UFO_DATA: "Goliath Truck Scan Data"
+  STR_GOLIATH_UFO_UFOPEDIA: "{NEWLINE}  Infinitely adaptable, hard-wearing and rugged, the Goliath Truck is a mainstay of the Genestealer Cults. Fast and manoeuvrable, it bounces around the battlefield laying down walls of gunfire, heavy stubbers and autocannons ablaze. Once dedicated to the shadows, proudly emblazoned with insignia of the Cult "
 
   STR_TRUKK_UFO: "Ork Expedition"
   STR_TRUKK_UFO_DATA: "Ork Expedition Scan Data"

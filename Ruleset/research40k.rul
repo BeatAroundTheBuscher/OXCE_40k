@@ -2186,7 +2186,12 @@ research:
     points: 50
     getOneFree:
       - STR_TRAITOR_CONVOY
-
+  - name: STR_GOLIATH_UFO_DATA
+    needItem: true
+    cost: 50
+    points: 50
+    getOneFree:
+      - STR_GOLIATH_UFO
   - name: STR_CHAOS_BASE_DATA
     needItem: true
     cost: 50
@@ -2266,6 +2271,9 @@ research:
     getOneFree:
       - STR_ELDAR_HORNET_UFO
 #---CRAFTS------------------------------------------------------
+  - name: STR_GOLIATH_UFO
+    points: 50
+    needItem: true
   - name: STR_ELDAR_COBRA_UFO
     points: 50
     needItem: true

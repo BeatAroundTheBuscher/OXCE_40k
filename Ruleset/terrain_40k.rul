@@ -2079,7 +2079,7 @@ terrains:
         width: 30
         length: 30
         groups: [12]
-  - name: POLAR #   NEW POLARHR
+  - name: POLAR           #NEW POLARHR
     enviroEffects: STR_SNOW_ENVIRO
     ambience: 891 #artic
     ambientVolume: 0.25
@@ -2821,7 +2821,7 @@ terrains:
         width: 30
         length: 30
         groups: [12]
-  - name: PLAINS #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
+  - name: PLAINS #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS             BOMBARDMENT DONE
     enviroEffects: STR_URBAN_ENVIRO
     mapDataSets:
       - BLANKS
@@ -2877,6 +2877,15 @@ terrains:
         width: 30
         length: 30
         groups: [12]
+      - name: PLAINS15BOMB
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [0, 0]
+        groups: [77]
   - name: PLAINSSNOW #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
     enviroEffects: STR_SNOW_ENVIRO
     ambience: 891 #artic

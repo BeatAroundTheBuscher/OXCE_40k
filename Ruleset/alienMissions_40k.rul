@@ -1151,7 +1151,7 @@ alienMissions:
   - type: STR_FIREBASE_RETALIATION
     points: 0
     objective: 4
-    operationType: 4    # hunt mission
+    operationType: 1    # from an existing alien base in the mission region
     spawnUfo: STR_GTGM # Spawned for the final retaliation run
     raceWeights: {}
     waves:
@@ -1205,7 +1205,7 @@ alienMissions:
     raceWeights:
       0:
         STR_SNAKEMAN: 100
-    operationType: 6
+    operationType: 6 #a hunt mission spawned from an existing alien base
     waves:
       - ufo: STR_CHAOS_VOSS
         count: 2
@@ -1265,7 +1265,7 @@ alienMissions:
 
   - type: STR_ELDAR_PATROL
     raceWeights: {}
-    operationType: 1
+    operationType: 1 # from an existing alien base in the mission region
     points: 5
     waves:
       - ufo: STR_ELDAR_WAVESERPENT_UFO
@@ -1276,7 +1276,7 @@ alienMissions:
   - type: STR_ELDAR_AIR_PATROL
     retaliationOdds: 0
     raceWeights: {}
-    operationType: 6
+    operationType: 6 #a hunt mission spawned from an existing alien base
     waves:
       - ufo: STR_ELDAR_HEMLOCK_UFO
         count: 2
@@ -1285,7 +1285,7 @@ alienMissions:
   - type: STR_ELDAR_SUP_AIR_PATROL
     retaliationOdds: 0
     raceWeights: {}
-    operationType: 6
+    operationType: 6 #a hunt mission spawned from an existing alien base
     waves:
       - ufo: STR_ELDAR_HORNET_UFO
         count: 2
@@ -1294,7 +1294,7 @@ alienMissions:
   - type: STR_ELDAR_COBRA_RETALIATION
     points: 0
     objective: 4
-    operationType: 4    # hunt mission
+    operationType: 4    #mission from an existing alien base anywhere on Earth
     spawnUfo: STR_ELDAR_COBRA_UFO # Spawned for the final retaliation run
     raceWeights: # In the case of a shootdown, race comes from the UFO that triggered the mission.
       0:
@@ -1359,3 +1359,31 @@ alienMissions:
     spawnZone: 4
     siteType: STR_GENE_HIVE
     points: 5
+    waves:
+      - ufo: STR_GOLIATH_UFO
+        count: 1
+        timer: 0
+        trajectory: DIRECT_TO_NEW_BASE_TRAJECTORY
+        objective: true
+
+  - type: STR_GENE_PATROL
+    raceWeights: {}
+    operationType: 1 # from an existing alien base in the mission region
+    points: 5
+    waves:
+      - ufo: STR_GOLIATH_UFO
+        count: 1
+        timer: 0
+        trajectory: GROUND_PATROL_TRAJECTORY
+
+  - type: STR_GENE_INFILTRATION
+    raceWeights: {}
+    objective: 1
+    endlessInfiltration: true # default is true; if set to false, mission will end after the first pact/base
+    operationSpawnZone: 4 # Makes the craft spawn from the base
+    siteType: STR_GENE_HIVE
+    waves:
+      - ufo: STR_GOLIATH_UFO
+        count: 1
+        trajectory: DIRECT_TO_TERROR_SITE_TRAJECTORY
+        timer: 0

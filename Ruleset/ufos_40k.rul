@@ -409,20 +409,19 @@
             STR_TURRET2_SPAWNER: [0, 0]
  #GENE
   - type: STR_GOLIATH_UFO
-    size: STR_VERY_SMALL
-    marker: 82
-    markerLand: 83
-    markerCrash: 24
-    alertSound: 37
+    size: STR_SMALL
     modSprite: InterceptionUFO-17
-    damageMax: 160
-    speedMax: 100
+    marker: 45
+    markerLand: 46
+    markerCrash: 47
+    alertSound: 37
+    speedMax: 75
+    damageMax: 480
     accel: 3
-    power: 5
+    power: 15
     range: 65
-    score: 35
     reload: 12
-    breakOffTime: 600
+    score: 75
     missionScore: 0
     battlescapeTerrainData:
       name: GOLIATH

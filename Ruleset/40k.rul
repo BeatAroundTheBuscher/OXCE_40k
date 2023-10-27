@@ -519,7 +519,7 @@ units:
       stamina: 100
       health: 100
       bravery: 100
-      reactions: 30
+      reactions: 100
       firing: 100
       throwing: 0
       strength: 100
@@ -7167,7 +7167,7 @@ armors:
     frontArmor: 100
     sideArmor: 100
     rearArmor: 100
-    underArmor: 120
+    underArmor: 150
     size: 2
     damageModifier: #VEICULE ARMOR
       - 1.0 #none

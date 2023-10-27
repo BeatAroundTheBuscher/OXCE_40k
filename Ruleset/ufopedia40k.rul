@@ -4038,7 +4038,14 @@ ufopaedia:
     requires:
       - STR_TRAITOR_CONVOY
     text: STR_TRAITOR_CONVOY_UFOPEDIA
-
+#GENECULT
+  - id: STR_GOLIATH_UFO
+    type_id: 17
+    section: STR_UFOS
+    image_id: 0CG.SPK
+    requires:
+      - STR_GOLIATH_UFO
+    text: STR_GOLIATH_UFO_UFOPEDIA
 #ELDAR
   - id: STR_ELDAR_HEMLOCK_UFO
     type_id: 17
