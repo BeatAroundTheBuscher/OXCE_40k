@@ -1343,6 +1343,29 @@ items:
     battleType: 4
     armor: 255
     recover: false
+  - type: STR_TAUROS_CHARGE
+    power: 100
+    weight: 20
+    battleType: 4
+    damageType: 3
+    fuseType: -3
+    damageAlter:
+      RandomType: 3 #[100%]
+      FixRadius: 2
+      ResistType: 10
+      ArmorEffectiveness: 0.2
+      ToArmor: 0.0
+      ToItem: 0.0
+      ToTile: 2.0
+      RadiusReduction: 0.0
+      ToHealth: 0.0
+      ToStun: 0.2
+      FireThreshold: 1000         #how much damage is required to spawn fire on unit (after armor and ToHealth) or tile. Default `0` for fire, `1000.0` for rest.
+      SmokeThreshold: 1000        #how much damage is required to spawn smoke on tile. Default `0.0` for smoke, `1000.0` for rest.
+    invWidth: 0
+    invHeight: 0
+    armor: 255
+    recover: false
   - type: STR_THUNDER_CHARGE
     power: 24
     weight: 999

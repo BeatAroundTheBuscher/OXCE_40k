@@ -410,7 +410,7 @@
  #GENE
   - type: STR_GOLIATH_UFO
     size: STR_SMALL
-    modSprite: InterceptionUFO-17
+    modSprite: Interception_goliath
     marker: 45
     markerLand: 46
     markerCrash: 47
@@ -495,7 +495,7 @@
             STR_CCASSIUM_BOLTER_LEFT2_SPAWNER: [0, 0]
             STR_CCASSIUM_BOLTER_RIGHT1_SPAWNER: [0, 0]
             STR_CCASSIUM_BOLTER_RIGHT2_SPAWNER: [0, 0]
-  - type: STR_TRAITOR_CONVOY
+  - type: STR_TRAITOR_CONVOY #PREATOR
     alertSound: 38
     modSprite: Interception_traitorconvoy
     marker: 45

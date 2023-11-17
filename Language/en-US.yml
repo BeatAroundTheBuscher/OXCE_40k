@@ -980,6 +980,7 @@ en-US:
   STR_HANGAR: "Hangar"
   STR_HANGAR_TITLE: "HANGAR"
   STR_HANGAR_DESCRIPTION: "Test your craft's deployment in the hangar. The craft will immediately be returned to base with all units on board after one turn or upon aborting."
+  STR_INSPECTION_COMPLETED: "Inspection Completed"
 # MISSIONS 1 -----------------------------------------------
   STR_TRAIN_MISSION: "Training Mission"
   STR_TRAIN_MISSION_TITLE: "Training Mission"
@@ -3060,6 +3061,10 @@ en-US:
   STR_HEAVY_MISSILES: "Heavy Missile"
   STR_CRAFT_HMISSILE_UFOPEDIA: "{NEWLINE} Missiles That are fully capable of engaging both land and air targets.{NEWLINE}{NEWLINE}Slot: Anti-Air{NEWLINE}Ammo: Heavy Missile"
 
+  STR_LANCE_CANNON_UC: "LANCE CANNON"
+  STR_HEAVYDSCYTHES_UC: "HEAVY SCYTHES"
+  STR_COBRA_CANNON_UC: "LANCE CANNON"
+  STR_DSTARCANNON_UC: "STAR CANNON"
 
   STR_CHIMERA_TURRET: "Chimera Turret"
   STR_MULTI_LASER: "Multi-Laser"
@@ -4119,7 +4124,7 @@ en-US:
   STR_TRAITOR_CONVOY_DATA: "Traitor Guard Preator Scan Data"
   STR_TRAITOR_CONVOY_UFOPEDIA: "{NEWLINE}  The traitor guard commads two heavly heavily armored vehicles, the Crassus and the Praetor."
 
-  STR_GOLIATH_UFO: "Traitor Guard Convoy"
+  STR_GOLIATH_UFO: "Genestealer Convoy"
   STR_GOLIATH_UFO_DATA: "Goliath Truck Scan Data"
   STR_GOLIATH_UFO_UFOPEDIA: "{NEWLINE}  Infinitely adaptable, hard-wearing and rugged, the Goliath Truck is a mainstay of the Genestealer Cults. Fast and manoeuvrable, it bounces around the battlefield laying down walls of gunfire, heavy stubbers and autocannons ablaze. Once dedicated to the shadows, proudly emblazoned with insignia of the Cult "
 

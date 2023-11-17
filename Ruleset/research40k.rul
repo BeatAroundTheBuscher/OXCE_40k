@@ -921,6 +921,15 @@ research:
 
 
 #*** early crafts ***
+
+  - name: STR_PREATOR_R
+    dependencies:
+      - STR_IMPERIAL_GUARD_HIGHTIER
+  - name: STR_PREATOR_PD_R
+    dependencies:
+      - STR_ARBITES_HIGHTIER
+
+
   - name: STR_XIPHON
     dependencies:
       - STR_GENERALLOCK

@@ -4113,12 +4113,25 @@
       993: Resources/Rank/basebits995.png      #RANK DW
       994: Resources/Rank/basebits994.png      #RANK DW
       995: Resources/Rank/basebits995.png      #RANK DW
+      
+#  GUARD ADDON
+      1611: Resources/TAUROX/Taurox_base1.png          #GUARD ADDON 0
+      1612: Resources/TAUROX/Taurox_base2.png          #GUARD ADDON 1
+      1613: Resources/TAUROX/Taurox_base3.png          #GUARD ADDON 2
+      1614: Resources/TAUROX/Taurox_base4.png        #GUARD ADDON 3
+      1615: Resources/TAUROX/Taurox_base1.png        #GUARD ADDON 4
+      1616: Resources/TAUROX/Taurox_base1.png          #GUARD ADDON 5
+      1617: Resources/TAUROX/Taurox_base1.png        #GUARD ADDON 6
+      1618: Resources/VOSS/Voss_base1.png        #GUARD ADDON 7
+      1619: Resources/VOSS/Voss_base2.png        #GUARD ADDON 8
+      1620: Resources/VOSS/Voss_base3.png        #GUARD ADDON 9
+      1621: Resources/VOSS/Voss_base4.png        #GUARD ADDON 10
 #  ADEPTA ADDON
       1711: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 0
       1712: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 1
       1713: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 2
-      1714: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 3
-      1715: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 4
+      1714: Resources/CASSIUM/preator_base.png        #GUARD ADDON 3
+      1715: Resources/CASSIUM/preator_base0.png        #GUARD ADDON 4
       1716: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 5
       1717: Resources/CASSIUM/Cassium_base0.png        #ADEPTAS ADDON 6
       1718: Resources/CASSIUM/Cassium_base.png        #GUARD ADDON 7
@@ -4286,12 +4299,37 @@
       897: Resources/Impulsor/impulsor_dogfight.gif                         #MARINES 8
       898: Resources/Impulsor/repulsor_dogfight.gif                         #MARINES 9
       899: Resources/Impulsor/repulsord_dogfight.gif                        #MARINES 10
+#  
+#  GUARD ADDON
+      1578: Resources/TAUROX/Taurox_minimisedG.png                    #GUARD ADDON 0 < - sprite index
+      1579: Resources/TAUROX/Taurox_minimisedG.png                     #GUARD ADDON 1
+      1580: Resources/TAUROX/Taurox_minimisedG.png                    #GUARD ADDON 2
+      1581: Resources/TAUROX/Taurox_minimisedG.png                  #GUARD ADDON 3
+      1582: Resources/TAUROX/Taurox_minimisedG.png                  #GUARD ADDON 4
+      1583: Resources/TAUROX/Taurox_minimisedG.png                   #GUARD ADDON 5
+      1584: Resources/TAUROX/Taurox_minimisedG.png                  #GUARD ADDON 6
+      1585: Resources/VOSS/voss_minimised.png                  #GUARD ADDON 7 < - sprite index 
+      1586: Resources/VOSS/voss_minimised.png                 #GUARD ADDON 8  
+      1587: Resources/VOSS/voss_minimised.png                #GUARD ADDON 9 
+      1588: Resources/VOSS/voss_minimised.png                #GUARD ADDON 10   
+# GUARD PLUS 11 DOG FIGHT      
+      1589: Resources/TAUROX/Taurox_dogfightG.png                    #GUARD ADDON 0
+      1590: Resources/TAUROX/Taurox_dogfightG.png                     #GUARD ADDON 1
+      1591: Resources/TAUROX/Taurox_dogfightG.png                       #GUARD ADDON 2
+      1592: Resources/TAUROX/Taurox_dogfightG.png                #GUARD ADDON 3
+      1593: Resources/TAUROX/Taurox_dogfightG.png                  #GUARD ADDON 4
+      1594: Resources/TAUROX/Taurox_dogfightG.png                       #GUARD ADDON 5
+      1595: Resources/TAUROX/Taurox_dogfightG.png                  #GUARD ADDON 6
+      1596: Resources/VOSS/voss_dogfight.png              #GUARD ADDON 7
+      1597: Resources/VOSS/voss_dogfight.png                 #GUARD ADDON 8      
+      1598: Resources/VOSS/voss_dogfight.png              #GUARD ADDON 9
+      1599: Resources/VOSS/voss_dogfight.png              #GUARD ADDON 10
 #  ADEPTA ADDON
       1678: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 0 < - sprite index
       1679: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 1
       1680: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 2
-      1681: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 3
-      1682: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 4
+      1681: Resources/CASSIUM/preator_minimised.png                #GUARD ADDON 3
+      1682: Resources/CASSIUM/preator_minimised.png                #GUARD ADDON 4
       1683: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 5
       1684: Resources/CASSIUM/Cassium_minimised.png                #GUARD ADDON 6
       1685: Resources/CASSIUM/Cassium_minimised.png                #GUARD ADDON 7 
@@ -4301,8 +4339,8 @@
       1689: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 0
       1690: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 1
       1691: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 2
-      1692: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 3
-      1693: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 4
+      1692: Resources/CASSIUM/preator_dogfight.png               #GUARD ADDON 3
+      1693: Resources/CASSIUM/preator_dogfight.png               #GUARD ADDON 4
       1694: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 5
       1695: Resources/CASSIUM/Cassium_dogfight.png               #GUARD ADDON 6
       1696: Resources/CASSIUM/Cassium_dogfight.png               #GUARD ADDON 7
@@ -4547,12 +4585,31 @@
     height: 200
     files:
       0: Resources/CODEX/2REPULSOR3.png
-  - type: 2CRASSUS.SPK                #ARBITES CRAFT
+  - type: 2CRASSUS.SPK                #GUARD CRAFT
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/CODEX/2CRASSUS.png
+  - type: 2PREATOR.SPK                #GUARD CRAFT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/2PREATOR.png
+  - type: 2TAUROS.SPK                #GUARD CRAFT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/2TAUROS.png      
+  - type: 2GORGON.SPK                #GUARD CRAFT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/2GORGON.png
+
   - type: 2LEMON.SPK                #ARBITES CRAFT
     singleImage: true
     width: 320
@@ -7301,6 +7358,13 @@
     height: 52
     files:
       0: Resources/CCraft/UFOMISSELE.png
+  - type: Interception_goliath
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/CCraft/UFOGOLIATH.png
+
 
   - type: CHAOS_CRAFT_HELP_PEDIA.SPK
     singleImage: true
