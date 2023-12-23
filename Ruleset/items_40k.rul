@@ -1343,6 +1343,29 @@ items:
     battleType: 4
     armor: 255
     recover: false
+  - type: STR_TAUROS_CHARGE
+    power: 100
+    weight: 20
+    battleType: 4
+    damageType: 3
+    fuseType: -3
+    damageAlter:
+      RandomType: 3 #[100%]
+      FixRadius: 2
+      ResistType: 10
+      ArmorEffectiveness: 0.2
+      ToArmor: 0.0
+      ToItem: 0.0
+      ToTile: 2.0
+      RadiusReduction: 0.0
+      ToHealth: 0.0
+      ToStun: 0.2
+      FireThreshold: 1000         #how much damage is required to spawn fire on unit (after armor and ToHealth) or tile. Default `0` for fire, `1000.0` for rest.
+      SmokeThreshold: 1000        #how much damage is required to spawn smoke on tile. Default `0.0` for smoke, `1000.0` for rest.
+    invWidth: 0
+    invHeight: 0
+    armor: 255
+    recover: false
   - type: STR_THUNDER_CHARGE
     power: 24
     weight: 999
@@ -1629,6 +1652,20 @@ items:
     invWidth: 2
     invHeight: 1
     blastRadius: 4
+    recover: false
+  - type: STR_BOMBARDMENT #melta grenade
+    size: 0.1
+    weight: 4
+    bigSprite: 239
+    floorSprite: 160
+    power: 200
+    hiddenOnMinimap: true
+    damageAlter:
+      ArmorEffectiveness: 0.5
+    damageType: 3
+    battleType: 4
+    invWidth: 1
+    invHeight: 1
     recover: false
 #---MISC-----------------------------------------------------
   - type: AUX_ELDAR_SHIELD        #AUX T Shield
@@ -3125,13 +3162,19 @@ items:
 #---GENE WEAPONS----------------------------------------------------  
   - type: STR_AUTOCANNON_GENE
     weight: 85
-    bigSprite: 1060
+    bigSprite: 872
     bulletSprite: 6
     fireSound: 12
     compatibleAmmo:
       - STR_AUTOCANNON_CLIP
     accuracyAuto: 50
     costAuto:
+      time: 2
+      energy: 50
+    flatUse:
+      time: true
+      energy: true
+    costSnap:
       time: 1
       energy: 50
     flatUse:
@@ -12444,6 +12487,9 @@ items:
   - type: STR_ELDAR_COBRA_UFO_DATA
     size: 0.0
     specialType: 1022
+  - type: STR_GOLIATH_UFO_DATA
+    size: 0.0
+    specialType: 1011
 
 #*** REQUISITION POINT BOUNTIES ***
   - type: STR_REQUISITION_BOUNTY_50K

@@ -95,6 +95,26 @@ cutscenes:
     audioTracks:
       - BRIEFGENERIC
 #UFOS
+  - type: CASSIUM #new
+    videos:
+      - Resources/ANIMS/CASSIUM.FLC
+    audioTracks:
+      - SECURELAND
+  - type: CHIMERA #new
+    videos:
+      - Resources/ANIMS/CHIMERA.FLC
+    audioTracks:
+      - SECURELAND
+  - type: GOLIATH #new
+    videos:
+      - Resources/ANIMS/GOLIATH.FLC
+    audioTracks:
+      - SECURELAND
+  - type: PREATOR #new
+    videos:
+      - Resources/ANIMS/PREATOR.FLC
+    audioTracks:
+      - SECURELAND
   - type: HLOCK
     videos:
       - Resources/ANIMS/HLOCK.FLC
@@ -176,6 +196,11 @@ cutscenes:
     audioTracks:
       - SECURELAND
 #SITE
+  - type: WAA #ork wAAA
+    videos:
+      - Resources/ANIMS/TERROR.FLC
+    audioTracks:
+      - BRIEFTERROR
   - type: TRAITORGUARDBASE
     videos:
       - Resources/ANIMS/TGBASE.FLC

@@ -3248,7 +3248,7 @@ ufopaedia:
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_GORGON_UFOPEDIA
     listOrder: 820
-    image_id: GORGON.SPK
+    image_id: 2GORGON.SPK
   - id: STR_TAUROS                        #830
     requires:
       - STR_IMPERIAL_GUARD_MIDTIER
@@ -3256,7 +3256,7 @@ ufopaedia:
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_TAUROS_UFOPEDIA
     listOrder: 830
-    image_id: TAUROS.SPK
+    image_id: 2TAUROS.SPK
   - id: STR_LIGHTNING_INTERCEPTOR         #230
     requires:
       - STR_IMPERIAL_GUARD_OPERATIONS
@@ -3289,6 +3289,14 @@ ufopaedia:
     image_id: 2CRASSUS.SPK
     text: STR_CASSIUM_UFOPEDIA
     listOrder: 819
+  - id: STR_PREATOR                       #820
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_PREATOR_R
+    image_id: 2PREATOR.SPK
+    text: STR_CASSIUMPD_UFOPEDIA
+    listOrder: 820
 #ARBITES
   - id: STR_VULTURE                    #212
     type_id: 11
@@ -3351,6 +3359,16 @@ ufopaedia:
     image_id: 2CRASSUS.SPK
     text: STR_CASSIUMPD_UFOPEDIA
     listOrder: 218
+  - id: STR_PREATORPD                  #219
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_ARBITES
+      - STR_PREATOR_PD_R
+    image_id: 2PREATOR.SPK
+    text: STR_CASSIUMPD_UFOPEDIA
+    listOrder: 219
+
   - id: STR_ARVUS                      #211
     type_id: 11
     requires:
@@ -4038,7 +4056,14 @@ ufopaedia:
     requires:
       - STR_TRAITOR_CONVOY
     text: STR_TRAITOR_CONVOY_UFOPEDIA
-
+#GENECULT
+  - id: STR_GOLIATH_UFO
+    type_id: 17
+    section: STR_UFOS
+    image_id: 0CG.SPK
+    requires:
+      - STR_GOLIATH_UFO
+    text: STR_GOLIATH_UFO_UFOPEDIA
 #ELDAR
   - id: STR_ELDAR_HEMLOCK_UFO
     type_id: 17

@@ -409,20 +409,19 @@
             STR_TURRET2_SPAWNER: [0, 0]
  #GENE
   - type: STR_GOLIATH_UFO
-    size: STR_VERY_SMALL
-    marker: 82
-    markerLand: 83
-    markerCrash: 24
+    size: STR_SMALL
+    modSprite: Interception_goliath
+    marker: 45
+    markerLand: 46
+    markerCrash: 47
     alertSound: 37
-    modSprite: InterceptionUFO-17
-    damageMax: 160
-    speedMax: 100
+    speedMax: 75
+    damageMax: 480
     accel: 3
-    power: 5
+    power: 15
     range: 65
-    score: 35
     reload: 12
-    breakOffTime: 600
+    score: 75
     missionScore: 0
     battlescapeTerrainData:
       name: GOLIATH
@@ -496,7 +495,7 @@
             STR_CCASSIUM_BOLTER_LEFT2_SPAWNER: [0, 0]
             STR_CCASSIUM_BOLTER_RIGHT1_SPAWNER: [0, 0]
             STR_CCASSIUM_BOLTER_RIGHT2_SPAWNER: [0, 0]
-  - type: STR_TRAITOR_CONVOY
+  - type: STR_TRAITOR_CONVOY #PREATOR
     alertSound: 38
     modSprite: Interception_traitorconvoy
     marker: 45

@@ -11,6 +11,8 @@ alienDeployments:
       showCraft: true
       showTarget: false
       background: BACK16.SCR
+    missionCompleteText: STR_INSPECTION_COMPLETED
+    missionFailedText: STR_INSPECTION_COMPLETED
     shade: 1
     terrains:
       - XHANGAR
@@ -211,11 +213,11 @@ alienDeployments:
     shade: 7
     cheatTurn: 10
     markerName: STR_ALIEN_BASE
-    genMissionFreq: 10
+    genMissionFreq: 6 # average of 1.8/month
     genMission:
-      STR_MONOLITH_PATROL: 50
-      STR_NECRON_TERROR: 25
-      STR_NECRON_BASE: 25
+      STR_GENE_PATROL: 40
+      STR_GENE_INFILTRATION: 35
+      STR_GENE_BASE: 25
     points: 1
     enviroEffects: STR_INSIDE_ENVIRO
   - type: STR_GOLIATH_UFO #GENESTELLER CULT
@@ -283,7 +285,10 @@ alienDeployments:
     width: 50
     length: 50
     height: 9
-    missionBountyItem: STR_TRAITOR_CHIMERA_DATA
+    briefing:
+      cutscene: GOLIATH
+      music: gmstory2
+    missionBountyItem: STR_GOLIATH_UFO_DATA
 
   - type: STR_TOMB_NECRON #NECRON
     markerIcon: 64
@@ -2587,6 +2592,7 @@ alienDeployments:
     alertBackground: BACK165.SCR
     alertSound: 46
     briefing:
+      cutscene: WAA
       palette: 2
       music: GMENBASE
       desc: STR_TERROR_MISSION_BRIEFING
@@ -2795,6 +2801,9 @@ alienDeployments:
     width: 50
     length: 50
     height: 9
+    briefing:
+      cutscene: CASSIUM
+      music: gmstory2
     missionBountyItem: STR_TRAITOR_CASSIUM_DATA
   - type: STR_TRAITOR_CONVOY
     data:
@@ -2907,8 +2916,10 @@ alienDeployments:
     width: 50
     length: 50
     height: 9
+    briefing:
+      cutscene: PREATOR
+      music: gmstory2
     missionBountyItem: STR_TRAITOR_CONVOY_DATA
-
   - type: STR_TRAITOR_CHIMERA
     data:
       - alienRank: 5
@@ -3020,6 +3031,9 @@ alienDeployments:
     width: 50
     length: 50
     height: 9
+    briefing:
+      cutscene: CHIMERA
+      music: gmstory2
     missionBountyItem: STR_TRAITOR_CHIMERA_DATA
 
   - type: STR_TRAITOR_GUARD_BASE_LEVEL_1
@@ -3532,7 +3546,7 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets: *traitorGuardsmanScoutEquip
     briefing:
-      cutscene: TRAITORGUARDBASE
+      cutscene: PREATOR
       music: gmstory2
       title: STR_ALIEN_BASE_ASSAULT
       textOffset: -16
@@ -4494,6 +4508,8 @@ alienDeployments:
     width: 30
     length: 20
     height: 6
+    missionCompleteText: STR_INSPECTION_COMPLETED
+    missionFailedText: STR_INSPECTION_COMPLETED
     chronoTrigger: 2
     turnLimit: 1
     enviroEffects: STR_HANGAR_ENVIRO
@@ -4810,6 +4826,9 @@ alienDeployments:
     height: 9
     missionBountyItem: STR_SMALL_SCOUT_DATA
   - type: STR_SMALL_SCOUT
+    briefing:
+      cutscene: VERYSMALL
+      music: gmstory2
     data:
       - alienRank: 5
         lowQty: 2

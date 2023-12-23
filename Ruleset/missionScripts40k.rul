@@ -225,6 +225,17 @@ missionScripts:
     executionOdds: 25
     researchTriggers:
       STR_ELDAR_PATH: false
+      
+  - type: GeneBASES
+    missionWeights:
+      0:
+        STR_GENE_BASE: 100
+    firstMonth: 8
+    startDelay: 120
+    randomDelay: 40160 # Up to 4 weeks random delay
+    executionOdds: 25
+    researchTriggers:
+      STR_ELDAR_PATH: false
 
   - type: Mission1
     missionWeights:
