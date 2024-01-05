@@ -3062,9 +3062,13 @@ en-US:
   STR_CRAFT_HMISSILE_UFOPEDIA: "{NEWLINE} Missiles That are fully capable of engaging both land and air targets.{NEWLINE}{NEWLINE}Slot: Anti-Air{NEWLINE}Ammo: Heavy Missile"
 
   STR_LANCE_CANNON_UC: "LANCE CANNON"
+  STR_LANCE_CANNON: "Lance Cannon"
   STR_HEAVYDSCYTHES_UC: "HEAVY D-SCYTHES"
+  STR_HEAVYDSCYTHES: "Heavy D-Scythes"
   STR_COBRA_CANNON_UC: "COBRA CANNON"
+  STR_COBRA_CANNON: "Cobra Cannon"
   STR_DSTARCANNON_UC: "STAR CANNON"
+  STR_DSTARCANNON: "Star Cannon"
 
   STR_CHIMERA_TURRET: "Chimera Turret"
   STR_MULTI_LASER: "Multi-Laser"
