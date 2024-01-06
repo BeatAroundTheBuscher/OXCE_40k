@@ -2036,3 +2036,18 @@ interfaces:
         color: *geoYellow
       - id: button
         color: *geoLightGrey
+  - type: noteMenu
+    elements:
+      - id: palette
+        color: *geoBackgroundPalette
+      - id: window
+        color: *geoDarkGrey
+      - id: text
+        color: *geoYellow
+        color2: *geoLightGrey
+      - id: list
+        color: *geoYellow
+        color2: *geoLightGrey
+        border: *geoTan
+      - id: button
+        color: *geoLightGrey
