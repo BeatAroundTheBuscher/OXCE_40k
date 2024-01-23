@@ -12988,7 +12988,7 @@ manufacture:
     category: STR_ADVANCEMENT
     requires:
       - STR_UNLOCKED1
-    space: 1
+    space: 0
     time: 500
     cost: 1000
     requiredItems:
@@ -13001,7 +13001,7 @@ manufacture:
     requires:
       - STR_STORMHAWKR
     category: STR_CRAFT
-    space: 1
+    space: 0
     time: 500
     cost: 100
     requiredItems:
@@ -13013,7 +13013,7 @@ manufacture:
     category: STR_MISSIONS_MANUFACTURING
     requires:
       - STR_TATICALTRAININFO
-    space: 4
+    space: 0
     time: 1200
     cost: 300000
     requiredItems:
@@ -13022,7 +13022,7 @@ manufacture:
     category: STR_MISSIONS_MANUFACTURING
     requires:
       - STR_TATICALTRAININFO
-    space: 4
+    space: 0
     time: 1200
     cost: 300000
     requiredItems:
@@ -13033,7 +13033,7 @@ manufacture:
     category: STR_SPELLS
     requires:
       - STR_SPELLS_PREREQ
-    space: 4
+    space: 0
     time: 1200
     cost: 300000
     requiredItems:
@@ -13042,7 +13042,7 @@ manufacture:
     category: STR_SPELLS
     requires:
       - STR_SPELLS_PREREQ
-    space: 4
+    space: 0
     time: 1200
     cost: 300000
     requiredItems:
@@ -13051,7 +13051,7 @@ manufacture:
     category: STR_SPELLS
     requires:
       - STR_SPELLS_PREREQ
-    space: 4
+    space: 0
     time: 1200
     cost: 300000
     requiredItems:
@@ -13060,7 +13060,7 @@ manufacture:
     category: STR_SPELLS
     requires:
       - STR_MIND_PROBE
-    space: 4
+    space: 0
     time: 1200
     cost: 262000
     requiredItems:
@@ -13069,7 +13069,7 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_MASTER_CRAFTING_AMMO
-    space: 2
+    space: 0
     time: 200
     cost: 20000
     requiredItems:
@@ -13081,7 +13081,7 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_MASTER_CRAFTING_AMMO
-    space: 2
+    space: 0
     time: 200
     cost: 20000
     requiredItems:
@@ -13093,7 +13093,7 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_MASTER_CRAFTING_AMMO
-    space: 2
+    space: 0
     time: 200
     cost: 20000
     requiredItems:
@@ -13105,7 +13105,7 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_MASTER_CRAFTING_AMMO
-    space: 2
+    space: 0
     time: 200
     cost: 20000
     requiredItems:
@@ -13117,7 +13117,7 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_MASTER_CRAFTING_AMMO
-    space: 2
+    space: 0
     time: 200
     cost: 20000
     requiredItems:
@@ -13130,7 +13130,7 @@ manufacture:
     requires:
       - STR_SMALL_LAUNCHER
       - STR_STUN_BOMB
-    space: 3
+    space: 0
     time: 900
     cost: 60000
     requiredItems:
@@ -13140,7 +13140,7 @@ manufacture:
     requires:
       - STR_BLASTER_LAUNCHER
       - STR_BLASTER_BOMB
-    space: 5
+    space: 0
     time: 1200
     cost: 90000
     requiredItems:
@@ -13150,7 +13150,7 @@ manufacture:
     requires:
       - STR_LASCAN
       - STR_MARINES_AND_ADEPTAS
-    space: 4
+    space: 0
     time: 700
     cost: 32000
     requiredItems:
@@ -13160,7 +13160,7 @@ manufacture:
     requires:
       - STR_HEAVY_LASER
       - STR_ADEPTAS
-    space: 4
+    space: 0
     time: 400
     cost: 19200
     requiredItems:
@@ -13169,7 +13169,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_HEAVY_LASER
-    space: 4
+    space: 0
     time: 700
     cost: 32000
     requiredItems:
@@ -13178,7 +13178,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_MASTER_CRAFTING
-    space: 3
+    space: 0
     time: 400
     cost: 25000
     requiredItems:
@@ -13188,7 +13188,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_MASTER_CRAFTING
-    space: 3
+    space: 0
     time: 400
     cost: 25000
     requiredItems:
@@ -13198,7 +13198,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_MASTER_CRAFTING
-    space: 4
+    space: 0
     time: 2000
     cost: 122000
     requiredItems:
@@ -13208,7 +13208,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_MASTER_CRAFTING
-    space: 4
+    space: 0
     time: 2000
     cost: 122000
     requiredItems:
@@ -13218,7 +13218,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_MASTER_CRAFTING
-    space: 4
+    space: 0
     time: 2000
     cost: 122000
     requiredItems:
@@ -13228,7 +13228,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_MASTER_CRAFTING
-    space: 4
+    space: 0
     time: 2000
     cost: 122000
     requiredItems:
@@ -13238,7 +13238,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_MASTER_CRAFTING
-    space: 4
+    space: 0
     time: 2000
     cost: 122000
     requiredItems:
@@ -13250,7 +13250,7 @@ manufacture:
       - STR_MASTER_CRAFTING
       - STR_PLASMA_PISTOL
       - STR_PLASMA_PISTOL_CLIP
-    space: 4
+    space: 0
     time: 2000
     cost: 122000
     requiredItems:
@@ -13262,7 +13262,7 @@ manufacture:
       - STR_MASTER_CRAFTING
       - STR_PLASMA_RIFLE
       - STR_PLASMA_RIFLE_CLIP
-    space: 5
+    space: 0
     time: 820
     cost: 108000
     requiredItems:
@@ -13272,7 +13272,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_CHAINSWORD_MC
-    space: 5
+    space: 0
     time: 820
     cost: 108000
     requiredItems:
@@ -13282,7 +13282,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_HEAVY_PLASMA_MC
-    space: 5
+    space: 0
     time: 820
     cost: 108000
     requiredItems:
@@ -13294,7 +13294,7 @@ manufacture:
       - STR_SMALL_LAUNCHER
       - STR_MASTER_CRAFTING
       - STR_CHAOS_BASE_DATA
-    space: 5
+    space: 0
     time: 820
     cost: 108000
     requiredItems:
@@ -13304,7 +13304,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_MGRENADE
-    space: 2
+    space: 0
     time: 200
     cost: 50000
     requiredItems:
@@ -13317,7 +13317,7 @@ manufacture:
     requires:
       - STR_ALIEN_ALLOYS
       - STR_ELERIUM_115
-    space: 10
+    space: 0
     time: 100
     cost: 3000
     requiredItems:
@@ -13328,7 +13328,7 @@ manufacture:
     requires:
       - STR_LASCAN
       - STR_MARINES_AND_ADEPTAS
-    space: 2
+    space: 0
     time: 200
     cost: 5000
   - name: STR_INFERNO_PISTOL_AMMO
@@ -13336,21 +13336,21 @@ manufacture:
     requires:
       - STR_HEAVY_LASER
       - STR_ADEPTAS
-    space: 2
+    space: 0
     time: 200
     cost: 1200
   - name: STR_MELTA_AMMO
     category: STR_AMMUNITION
     requires:
       - STR_HEAVY_LASER
-    space: 2
+    space: 0
     time: 300
     cost: 2000
   - name: STR_HEAVY_PLASMA
     category: STR_WEAPON
     requires:
       - STR_ALIENS_ONLY
-    space: 4
+    space: 0
     time: 1000
     cost: 122000
     requiredItems:
@@ -13359,7 +13359,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_ALIENS_ONLY
-    space: 4
+    space: 0
     time: 820
     cost: 88000
     requiredItems:
@@ -13368,7 +13368,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_ALIENS_ONLY
-    space: 3
+    space: 0
     time: 600
     cost: 56000
     requiredItems:
@@ -13378,7 +13378,7 @@ manufacture:
     requires:
       - STR_HEAVY_PLASMA
       - STR_HEAVY_PLASMA_CLIP
-    space: 4
+    space: 0
     time: 1000
     cost: 122000
     requiredItems:
@@ -13390,7 +13390,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_PLASMA_INC_R
-    space: 4
+    space: 0
     time: 1000
     cost: 122000
     requiredItems:
@@ -13399,7 +13399,7 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_PLASMA_INC_R
-    space: 2
+    space: 0
     time: 300
     cost: 50000
     requiredItems:
@@ -13409,7 +13409,7 @@ manufacture:
     requires:
       - STR_PLASMA_RIFLE
       - STR_PLASMA_RIFLE_CLIP
-    space: 4
+    space: 0
     time: 820
     cost: 88000
     requiredItems:
@@ -13422,7 +13422,7 @@ manufacture:
     requires:
       - STR_PLASMA_PISTOL
       - STR_PLASMA_PISTOL_CLIP
-    space: 3
+    space: 0
     time: 600
     cost: 56000
     requiredItems:
@@ -13434,7 +13434,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_HAMMER
-    space: 4
+    space: 0
     time: 1000
     cost: 102000
     requiredItems:
@@ -13444,7 +13444,7 @@ manufacture:
     requires:
       - STR_MASTER_CRAFTING
       - STR_HAMMER
-    space: 4
+    space: 0
     time: 1000
     cost: 102000
     requiredItems:
@@ -13454,7 +13454,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_POWER_SWORD
-    space: 4
+    space: 0
     time: 1000
     cost: 102000
     requiredItems:
@@ -13465,7 +13465,7 @@ manufacture:
       - STR_HALLEBARD
       - STR_MASTER_CRAFTING
       - STR_GREYKNIGHTS
-    space: 4
+    space: 0
     time: 1000
     cost: 202000
     requiredItems:
@@ -13475,7 +13475,7 @@ manufacture:
     requires:
       - STR_MASTER_CRAFTING
       - STR_POWER_SWORD
-    space: 4
+    space: 0
     time: 1000
     cost: 102000
     requiredItems:
@@ -13485,7 +13485,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_ASSC
-    space: 4
+    space: 0
     time: 1000
     cost: 102000
     requiredItems:
@@ -13494,7 +13494,7 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_ASSC_CLIP
-    space: 4
+    space: 0
     time: 80
     cost: 6000
     requiredItems:
@@ -13503,7 +13503,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_HB
-    space: 4
+    space: 0
     time: 1000
     cost: 72000
     requiredItems:
@@ -13513,7 +13513,7 @@ manufacture:
     requires:
       - STR_MASTER_CRAFTING
       - STR_HB
-    space: 4
+    space: 0
     time: 1000
     cost: 72000
     requiredItems:
@@ -13523,7 +13523,7 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_HB_CLIP
-    space: 4
+    space: 0
     time: 80
     cost: 5000
     requiredItems:
@@ -13533,7 +13533,7 @@ manufacture:
     requires:
       - STR_MASTER_CRAFTING_AMMO
       - STR_GREYKNIGHTS
-    space: 4
+    space: 0
     time: 80
     cost: 5000
     requiredItems:
@@ -13546,7 +13546,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_HFLAMERR
-    space: 6
+    space: 0
     time: 2000
     cost: 150000
     requiredItems:
@@ -13555,7 +13555,7 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_HFLAMER_FUEL_MANUFACTURING
-    space: 6
+    space: 0
     time: 160
     cost: 10000
     requiredItems:
@@ -13565,7 +13565,7 @@ manufacture:
     category: STR_HWP_AMMUNITION
     requires:
       - STR_NAVY_COMUNICATIONS
-    space: 25
+    space: 0
     time: 400
     cost: 15000
     listOrder: 3351
@@ -13577,7 +13577,7 @@ manufacture:
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
       - STR_NAVY_COMUNICATIONS
-    space: 25
+    space: 0
     time: 1200
     cost: 500000
     requiresBaseFunc: [COMU]
@@ -13593,7 +13593,7 @@ manufacture:
     requires:
       - STR_ALIENS_ONLY
       - STR_CENT_ARMORR
-    space: 16
+    space: 0
     time: 1200
     cost: 32000
     requiresBaseFunc: [ARMO]
@@ -13607,7 +13607,7 @@ manufacture:
       - STR_ALIENS_ONLY
       - STR_PERSONAL_ARMOR
       - STR_PSI_AMP
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiresBaseFunc: [CHAOS]
@@ -13619,7 +13619,7 @@ manufacture:
     requires:
       - STR_ALIENS_ONLY
       - STR_PERSONAL_ARMOR
-    space: 12
+    space: 0
     time: 700
     cost: 22000
     requiredItems:
@@ -13630,7 +13630,7 @@ manufacture:
       - STR_ALIENS_ONLY
       - STR_PERSONAL_ARMOR
       - STR_SARGENT_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 50000
     requiredItems:
@@ -13640,7 +13640,7 @@ manufacture:
     requires:
       - STR_ALIENS_ONLY
       - STR_PERSONAL_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiredItems:
@@ -13650,7 +13650,7 @@ manufacture:
     requires:
       - STR_ALIENS_ONLY
       - STR_PERSONAL_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiredItems:
@@ -13660,7 +13660,7 @@ manufacture:
     requires:
       - STR_ALIENS_ONLY
       - STR_POWER_SUIT
-    space: 16
+    space: 0
     time: 700
     cost: 28000
     requiresBaseFunc: [ARMO]
@@ -13673,7 +13673,7 @@ manufacture:
     requires:
       - STR_ALIENS_ONLY
       - STR_POWER_SUIT
-    space: 16
+    space: 0
     time: 6400
     cost: 200000
     requiresBaseFunc: [ARMO]
@@ -13688,7 +13688,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_MEDI_KIT_PREREQ
       - STR_PRIMARIS_AND_DEATHWATCH
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiredItems:
@@ -13699,7 +13699,7 @@ manufacture:
     requires:
       - STR_TEC_BAYR
       - STR_PRIMARIS_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 50000
     requiresBaseFunc: [TEC]
@@ -13712,7 +13712,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_PRIMARIS_ARMOR
       - STR_PSI_AMP
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiresBaseFunc: [LIB]
@@ -13724,7 +13724,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_MKX_CHP_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiredItems:
@@ -13735,7 +13735,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_MKX_PHB_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiredItems:
@@ -13745,7 +13745,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_MKX_GRV_ARMOR
-    space: 16
+    space: 0
     time: 800
     cost: 28000
     requiresBaseFunc: [ARMO]
@@ -13756,7 +13756,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_MKX_INC_ARMOR
-    space: 16
+    space: 0
     time: 800
     cost: 28000
     requiresBaseFunc: [ARMO]
@@ -13770,7 +13770,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_PERSONAL_ARMOR
       - STR_MARINES_STRATEGY
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiredItems:
@@ -13781,7 +13781,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_MEDI_KIT
       - STR_MEDI_KIT_PREREQ
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiredItems:
@@ -13792,7 +13792,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_DEV_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiredItems:
@@ -13802,7 +13802,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_ASS_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiredItems:
@@ -13812,7 +13812,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_CHAP_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 400000
     requiredItems:
@@ -13823,7 +13823,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_SARGENT_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 50000
     requiredItems:
@@ -13834,7 +13834,7 @@ manufacture:
       - STR_TEC_BAYR
       - STR_MARINES_AND_DEATHWATCH
       - STR_PERSONAL_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 50000
     requiresBaseFunc: [TEC]
@@ -13846,7 +13846,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_HONOR_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 50000
     requiredItems:
@@ -13857,7 +13857,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_SCOUTH_RESEARCH
-    space: 12
+    space: 0
     time: 800
     cost: 50000
     requiredItems:
@@ -13867,7 +13867,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_SIGNAL_ARMOR_RESEARCH
-    space: 12
+    space: 0
     time: 800
     cost: 50000
     requiredItems:
@@ -13878,7 +13878,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_HONOR_ARMOR_RESEARCH
-    space: 12
+    space: 0
     time: 800
     cost: 50000
     requiredItems:
@@ -13889,7 +13889,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_TSARGENT
-    space: 16
+    space: 0
     time: 800
     cost: 28000
     requiresBaseFunc: [ARMO]
@@ -13903,7 +13903,7 @@ manufacture:
       - STR_MARINES_STRATEGY
       - STR_PERSONAL_ARMOR
       - STR_PSI_AMP
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiresBaseFunc: [LIB]
@@ -13915,7 +13915,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_POWER_SUIT
-    space: 16
+    space: 0
     time: 800
     cost: 28000
     requiresBaseFunc: [ARMO]
@@ -13929,7 +13929,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_CAPTAIN_SUIT
       - STR_MARINES_STRATEGY
-    space: 16
+    space: 0
     time: 6400
     cost: 300000
     requiresBaseFunc: [ARMO]
@@ -13943,7 +13943,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_PERSONAL_ARMOR
       - STR_FLYING_SUIT
-    space: 16
+    space: 0
     time: 1200
     cost: 32000
     requiresBaseFunc: [ARMO]
@@ -13956,7 +13956,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_CENT_ARMORR
-    space: 16
+    space: 0
     time: 1200
     cost: 32000
     requiresBaseFunc: [ARMO]
@@ -13969,7 +13969,7 @@ manufacture:
     requires:
       - STR_DREAD_R
       - STR_LASCAN
-    space: 30
+    space: 0
     time: 1200
     cost: 850000
     requiredItems:
@@ -13981,7 +13981,7 @@ manufacture:
     requires:
       - STR_DREAD_R
       - STR_FUSION_MISSILE
-    space: 30
+    space: 0
     time: 1200
     cost: 900000
     requiredItems:
@@ -13993,7 +13993,7 @@ manufacture:
     requires:
       - STR_DREAD_R
       - STR_PLASMA_CANNON
-    space: 30
+    space: 0
     time: 1200
     cost: 750000
     requiredItems:
@@ -14006,7 +14006,7 @@ manufacture:
       - STR_DREAD_R
       - STR_PLASMA_CANNON
       - STR_VETERAN
-    space: 30
+    space: 0
     time: 1200
     cost: 950000
     requiredItems:
@@ -14020,7 +14020,7 @@ manufacture:
     requires:
       - STR_NEW_FIGHTER_TRANSPORTER
       - STR_ADEPTAS
-    space: 34
+    space: 0
     time: 18000
     cost: 600000
     requiredItems:
@@ -14034,7 +14034,7 @@ manufacture:
     requires:
       - STR_STORMEAGLE_INTERCEPTOR
       - STR_DEATHWATCH_AND_ADEPTAS
-    space: 30
+    space: 0
     time: 20000
     cost: 800000
     listOrder: 3350
@@ -14047,7 +14047,7 @@ manufacture:
     requires:
       - STR_DEATHWATCH_AND_ADEPTAS
       - STR_NEW_FIGHTER_CRAFT
-    space: 30
+    space: 0
     time: 14000
     cost: 400000
     requiredItems:
@@ -14058,7 +14058,7 @@ manufacture:
     category: STR_CRAFT
     requires:
       - STR_LANDRAIDER_ADEPTAS
-    space: 40
+    space: 0
     time: 30000
     cost: 1000000
     listOrder: 3350
@@ -14071,7 +14071,7 @@ manufacture:
     requires:
       - STR_HIGHTIER_PREREQ
       - STR_ADEPTAS
-    space: 36
+    space: 0
     time: 34000
     cost: 900000
     requiredItems:
@@ -14085,7 +14085,7 @@ manufacture:
       - STR_PRIMARIS
       - STR_NEW_FIGHTER_CRAFT
       - STR_MARINES_STRATEGY
-    space: 30
+    space: 0
     time: 14000
     cost: 500000
     requiredItems:
@@ -14098,7 +14098,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_NEW_FIGHTER_TRANSPORTER
       - STR_PRIMARIS
-    space: 30
+    space: 0
     time: 14000
     cost: 500000
     requiredItems:
@@ -14111,7 +14111,7 @@ manufacture:
       - STR_DW_PRIMARIS
       - STR_NEW_FIGHTER_CRAFT
       - STR_DEATHWATCH
-    space: 30
+    space: 0
     time: 14000
     cost: 500000
     requiredItems:
@@ -14124,7 +14124,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_NEW_FIGHTER_TRANSPORTER
       - STR_DW_PRIMARIS
-    space: 30
+    space: 0
     time: 14000
     cost: 500000
     requiredItems:
@@ -14137,7 +14137,7 @@ manufacture:
       - STR_CHAPTERARMYR
       - STR_CHAPTER_PURITY
       - STR_PRIMARIS
-    space: 40
+    space: 0
     time: 30000
     cost: 1000000
     listOrder: 3350
@@ -14150,7 +14150,7 @@ manufacture:
     requires:
       - STR_LANDRAIDER_DW
       - STR_DEATHWATCH
-    space: 40
+    space: 0
     time: 30000
     cost: 1000000
     listOrder: 3350
@@ -14164,7 +14164,7 @@ manufacture:
     requires:
       - STR_MARINES_STRATEGY
       - STR_STORMEAGLE_INTERCEPTOR
-    space: 30
+    space: 0
     time: 20000
     cost: 800000
     listOrder: 3350
@@ -14178,7 +14178,7 @@ manufacture:
       - STR_NOT_PRIMARIS
       - STR_CHAPTERARMYR
       - STR_CHAPTER_PURITY
-    space: 40
+    space: 0
     time: 30000
     cost: 1000000
     listOrder: 3350
@@ -14192,7 +14192,7 @@ manufacture:
       - STR_NOT_PRIMARIS
       - STR_NEW_FIGHTER_CRAFT
       - STR_MARINES_STRATEGY
-    space: 30
+    space: 0
     time: 14000
     cost: 400000
     requiredItems:
@@ -14204,7 +14204,7 @@ manufacture:
     requires:
       - STR_NEW_FIGHTER_TRANSPORTER
       - STR_DEATHWATCH
-    space: 34
+    space: 0
     time: 18000
     cost: 600000
     requiredItems:
@@ -14218,7 +14218,7 @@ manufacture:
     requires:
       - STR_LANDRAIDER_DW
       - STR_DEATHWATCH
-    space: 40
+    space: 0
     time: 30000
     cost: 1000000
     listOrder: 3350
@@ -14233,7 +14233,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_NEW_FIGHTER_TRANSPORTER
       - STR_THUNDERHAWKTYPE2
-    space: 34
+    space: 0
     time: 18000
     cost: 600000
     requiredItems:
@@ -14248,7 +14248,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_NEW_FIGHTER_TRANSPORTER
       - STR_THUNDERHAWKTYPE1
-    space: 34
+    space: 0
     time: 18000
     cost: 600000
     requiredItems:
@@ -14262,7 +14262,7 @@ manufacture:
     requires:
       - STR_NEW_FIGHTER_TRANSPORTER
       - STR_ALIENS_ONLY
-    space: 34
+    space: 0
     time: 18000
     cost: 500000
     requiredItems:
@@ -14277,7 +14277,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_HIGHTIER_PREREQ
       - STR_TATICAL
-    space: 36
+    space: 0
     time: 34000
     cost: 900000
     requiredItems:
@@ -14290,7 +14290,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_HIGHTIER_PREREQ
       - STR_ASSAULT
-    space: 36
+    space: 0
     time: 34000
     cost: 900000
     requiredItems:
@@ -14303,7 +14303,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_HIGHTIER_PREREQ
       - STR_DEVASTATOR
-    space: 36
+    space: 0
     time: 34000
     cost: 900000
     requiredItems:
@@ -14316,7 +14316,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_HIGHTIER_PREREQ
       - STR_SCOUT
-    space: 36
+    space: 0
     time: 34000
     cost: 900000
     requiredItems:
@@ -14328,7 +14328,7 @@ manufacture:
     requires:
       - STR_HIGHTIER_PREREQ
       - STR_ALIENS_ONLY
-    space: 36
+    space: 0
     time: 34000
     cost: 900000
     requiredItems:

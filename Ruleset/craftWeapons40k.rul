@@ -562,7 +562,7 @@ manufacture:
     #category: STR_CRAFT_WEAPON
     #requires:
     #  - STR_FUSION_MISSILE
-    #space: 6
+    #space: 0
     #time: 400
     cost: 250000
     requiredItems:
@@ -571,7 +571,7 @@ manufacture:
     #category: STR_CRAFT_WEAPON
     #requires:
     #  - STR_LASER_CANNON
-    #space: 6
+    #space: 0
     #time: 300
     cost: 175000
     requiredItems:
@@ -580,7 +580,7 @@ manufacture:
     #category: STR_CRAFT_WEAPON
     #requires:
     #  - STR_PLASMA_CANNON
-    #space: 8
+    #space: 0
     #time: 500
     cost: 225000
     requiredItems:
@@ -590,7 +590,7 @@ manufacture:
     category: STR_CRAFT_WEAPON
     requires:
       - STR_ASSC
-    space: 6
+    space: 0
     time: 300
     cost: 100000
     requiredItems:
@@ -601,7 +601,7 @@ manufacture:
     requires:
       - STR_CRAFTADD
     category: STR_CRAFT_EQUIPMENT
-    space: 5
+    space: 0
     time: 2000
     cost: 50000
     requiredItems:
@@ -612,7 +612,7 @@ manufacture:
     requires:
       - STR_CRAFTADD
     category: STR_CRAFT_EQUIPMENT
-    space: 10
+    space: 0
     time: 1500
     cost: 10000
     requiredItems:
@@ -623,7 +623,7 @@ manufacture:
     requires:
       - STR_CRAFTADD
     category: STR_CRAFT_EQUIPMENT
-    space: 5
+    space: 0
     time: 2000
     cost: 50000
     requiredItems:
@@ -634,7 +634,7 @@ manufacture:
     requires:
       - STR_CRAFTADD
     category: STR_CRAFT_EQUIPMENT
-    space: 10
+    space: 0
     time: 3000
     cost: 50000
     requiredItems:
@@ -646,7 +646,7 @@ manufacture:
     requires:
       - STR_CRAFTADD
     category: STR_CRAFT_EQUIPMENT
-    space: 10
+    space: 0
     time: 4000
     cost: 100000
     requiredItems:
@@ -657,7 +657,7 @@ manufacture:
     requires:
       - STR_CRAFTADD
     category: STR_CRAFT_EQUIPMENT
-    space: 5
+    space: 0
     time: 2000
     cost: 50000
     requiredItems:
@@ -669,7 +669,7 @@ manufacture:
 #    requires:
 #      - STR_NEW_FIGHTER_TRANSPORTER
 #    category: STR_CRAFT_WEAPON
-#    space: 5
+#    space: 0
 #    time: 2000
 #    cost: 50000
 #    requiredItems:

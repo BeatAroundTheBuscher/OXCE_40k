@@ -944,7 +944,7 @@ manufacture:
     requires:
       - STR_GREYKNIGHTS
       - STR_GK_CHP_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiredItems:
@@ -955,7 +955,7 @@ manufacture:
     requires:
       - STR_TEC_BAY_CHAMBER_R
       - STR_GREYKNIGHTS
-    space: 12
+    space: 0
     time: 800
     cost: 50000
     requiresBaseFunc: [TEC]
@@ -967,7 +967,7 @@ manufacture:
     requires:
       - STR_MEDI_KIT_PREREQ
       - STR_GREYKNIGHTS
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiredItems:
@@ -978,7 +978,7 @@ manufacture:
     requires:
       - STR_GREYKNIGHTS
       - STR_PSI_AMP
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiresBaseFunc: [LIB]
@@ -991,7 +991,7 @@ manufacture:
     requires:
       - STR_GREYKNIGHTS
       - STR_STORMRAVEN_GK
-    space: 30
+    space: 0
     time: 14000
     cost: 400000
     requiredItems:
@@ -1002,7 +1002,7 @@ manufacture:
     category: STR_CRAFT
     requires:
       - STR_THUNDERHAWK_GK_REQ
-    space: 34
+    space: 0
     time: 18000
     cost: 600000
     requiredItems:
@@ -1016,7 +1016,7 @@ manufacture:
     requires:
       - STR_GREYKNIGHTS
       - STR_STORMEAGLE_INTERCEPTOR_GK
-    space: 30
+    space: 0
     time: 20000
     cost: 800000
     listOrder: 3350

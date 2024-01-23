@@ -2703,7 +2703,7 @@ manufacture:
     requires:
       - STR_ARBITES
       - STR_ENFORCER_ARMOR
-    space: 10
+    space: 0
     time: 200
     cost: 5000
     requiredItems:
@@ -2713,7 +2713,7 @@ manufacture:
     requires:
       - STR_ARBITES
       - STR_ENFORCER_ARMOR
-    space: 10
+    space: 0
     time: 200
     cost: 5000
     requiredItems:
@@ -2724,7 +2724,7 @@ manufacture:
       - STR_ARBITES
       - STR_ENFORCER_ARMOR
       - STR_ARBITES_MIDTIER
-    space: 10
+    space: 0
     time: 200
     cost: 5000
     requiredItems:
@@ -2734,7 +2734,7 @@ manufacture:
     requires:
       - STR_ARBITES
       - STR_ENFORCER_HEAVY_ARMOR
-    space: 20
+    space: 0
     time: 400
     cost: 10000
     requiredItems:
@@ -2744,7 +2744,7 @@ manufacture:
     requires:
       - STR_ARBITES
       - STR_ENFORCER_SHIELD_ARMOR_UC
-    space: 20
+    space: 0
     time: 400
     cost: 10000
     requiredItems:
@@ -2754,7 +2754,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_JUDGE_BIKE_ARMOR
-    space: 12
+    space: 0
     time: 600
     cost: 100000
     requiresBaseFunc: [ARMO]
@@ -2766,7 +2766,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_ARBITOR_ARMOR
-    space: 12
+    space: 0
     time: 600
     cost: 100000
     requiresBaseFunc: [ARMO]
@@ -2779,7 +2779,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_MARSHAL_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 200000
     requiresBaseFunc: [ARMO]
@@ -2793,7 +2793,7 @@ manufacture:
     category: STR_CRAFT
     requires:
       - STR_ARBITES_HIGHTIER
-    space: 36
+    space: 0
     time: 30000
     cost: 800000
     requiredItems:
@@ -2805,7 +2805,7 @@ manufacture:
     requires:
       - STR_LANDRAIDER_ARBITES
       - STR_ARBITES
-    space: 40
+    space: 0
     time: 30000
     cost: 1000000
     listOrder: 3350
@@ -2818,7 +2818,7 @@ manufacture:
     requires:
       - STR_ARBITES
       - STR_NEW_TRANSPORT_PD
-    space: 34
+    space: 0
     time: 18000
     cost: 600000
     requiredItems:
@@ -2833,7 +2833,7 @@ manufacture:
     requires:
       - STR_ARBITES
       - STR_NEW_FIGHTER_PD
-    space: 30
+    space: 0
     time: 1000
     cost: 550000
     requiredItems:
@@ -2845,7 +2845,7 @@ manufacture:
     requires:
       - STR_ARBITES
       - STR_NEW_FIGHTER_PD
-    space: 2
+    space: 0
     time: 200
     cost: 20000
     requiredItems:
@@ -2858,7 +2858,7 @@ manufacture:
     requires:
       - STR_ARBITES
       - STR_JUDGE_BIKE_ARMOR
-    space: 2
+    space: 0
     time: 200
     cost: 20000
     producedItems:
@@ -2869,7 +2869,7 @@ manufacture:
     requires:
       - STR_MASTER_CRAFTING
       - STR_ARBITES
-    space: 4
+    space: 0
     time: 2000
     cost: 122000
     requiredItems:
@@ -2880,7 +2880,7 @@ manufacture:
     requires:
       - STR_MASTER_CRAFTING_AMMO
       - STR_ARBITES
-    space: 2
+    space: 0
     time: 200
     cost: 20000
     requiredItems:

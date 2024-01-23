@@ -25,7 +25,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_DW_WM_ARMOR
-    space: 16
+    space: 0
     time: 6400
     cost: 300000
     requiresBaseFunc: [ARMO]
@@ -38,7 +38,7 @@ manufacture:
     requires:
       - STR_DW_CAP_ARMOR
       - STR_PRIMARIS_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 50000
     requiredItems:
@@ -48,7 +48,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_DW_CAP_ARMOR
-    space: 12
+    space: 0
     time: 800
     cost: 50000
     requiredItems:

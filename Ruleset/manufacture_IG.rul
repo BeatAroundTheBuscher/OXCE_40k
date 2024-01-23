@@ -3,7 +3,7 @@ manufacture:
     category: STR_CRAFT
     requires:
       - STR_MARAUDER_REQUISITION
-    space: 30
+    space: 0
     time: 12000
     cost: 400000
     requiredItems:
@@ -15,7 +15,7 @@ manufacture:
     category: STR_CRAFT_WEAPON
     requires:
       - STR_CRAFT_QUADLASER
-    space: 6
+    space: 0
     time: 300
     cost: 360000
     requiredItems:
@@ -25,7 +25,7 @@ manufacture:
     category: STR_CRAFT_WEAPON
     requires:
       - STR_CRAFT_AUTOCANNON
-    space: 6
+    space: 0
     time: 250
     cost: 288000
     requiredItems:
@@ -35,7 +35,7 @@ manufacture:
     category: STR_CRAFT_AMMUNITION
     requires:
       - STR_CRAFT_AUTOCANNON
-    space: 6
+    space: 0
     time: 50
     cost: 2000
 
@@ -170,7 +170,7 @@ manufacture:
     requires:
       - STR_LASCAN
       - STR_IMPERIAL_GUARD_OPERATIONS
-    space: 4
+    space: 0
     time: 700
     cost: 32000
     requiredItems:
@@ -181,7 +181,7 @@ manufacture:
     requires:
       - STR_LASCAN
       - STR_IMPERIAL_GUARD_OPERATIONS
-    space: 2
+    space: 0
     time: 40
     cost: 1250
 
@@ -189,7 +189,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_AUTOCANNON_GUARD
-    space: 4
+    space: 0
     time: 400
     cost: 40000
     requiredItems:
@@ -204,7 +204,7 @@ manufacture:
       STR_ELERIUM_115: 10
     producedItems:
       STR_STORMTROOPER_CARAPACE_ARMOR_VOLLEYGUN: 1
-    space: 4
+    space: 0
     time: 500
     cost: 64000
 
@@ -213,7 +213,7 @@ manufacture:
     requires:
       - STR_LASCAN
       - STR_IMPERIAL_GUARD_MIDTIER
-    space: 4
+    space: 0
     time: 500
     cost: 56000
     requiredItems:
@@ -223,7 +223,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_AUTOCANNON_GUARD
-    space: 4
+    space: 0
     time: 500
     cost: 56000
     requiredItems:
@@ -233,7 +233,7 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_AUTOCANNON_GUARD
-    space: 4
+    space: 0
     time: 80
     cost: 6000
     requiredItems:
@@ -244,7 +244,7 @@ manufacture:
     requires:
       - STR_AUTOCANNON_GUARD
       - STR_HEAVY_SENTINEL
-    space: 12
+    space: 0
     time: 600
     cost: 32000
     requiredItems:
@@ -255,7 +255,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_HEAVY_SENTINEL
-    space: 12
+    space: 0
     time: 600
     cost: 32000
     requiredItems:
@@ -268,7 +268,7 @@ manufacture:
       - STR_BLASTER_LAUNCHER
       - STR_BLASTER_BOMB
       - STR_HEAVY_SENTINEL
-    space: 12
+    space: 0
     time: 600
     cost: 32000
     requiredItems:
@@ -280,7 +280,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_OGRYN_REQUISITION
-    space: 8
+    space: 0
     time: 400
     cost: 17500
     requiredItems:
@@ -290,7 +290,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_BULLGRYN_ARMOR
-    space: 8
+    space: 0
     time: 600
     cost: 25000
     requiredItems:
@@ -300,7 +300,7 @@ manufacture:
     category: STR_ADVANCEMENT
     requires:
       - STR_TANITH_REQUISITIONS
-    space: 4
+    space: 0
     time: 250
     cost: 50000
     requiredItems:
@@ -313,7 +313,7 @@ manufacture:
     category: STR_ADVANCEMENT
     requires:
       - STR_TANITH_REQUISITIONS
-    space: 4
+    space: 0
     time: 250
     cost: 50000
     requiredItems:

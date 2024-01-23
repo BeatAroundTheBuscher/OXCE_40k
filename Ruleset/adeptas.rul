@@ -1918,7 +1918,7 @@ manufacture:
       - STR_NAVY_COMUNICATIONS
       - STR_INQOFF
       - STR_ADEPTAS
-    space: 2
+    space: 0
     time: 100
     cost: 10000
     requiredItems:
@@ -1931,7 +1931,7 @@ manufacture:
     requires:
       - STR_SMALL_LAUNCHER
       - STR_ADEPTAS
-    space: 2
+    space: 0
     time: 200
     cost: 20000
     requiredItems:
@@ -1944,7 +1944,7 @@ manufacture:
     requires:
       - STR_SMALL_LAUNCHER
       - STR_ADEPTAS
-    space: 3
+    space: 0
     time: 900
     cost: 60000
     requiredItems:
@@ -1955,7 +1955,7 @@ manufacture:
       - STR_ADEPTAS
       - STR_PLASMA_CANNON
       - STR_NEW_FIGHTER_CRAFT
-    space: 30
+    space: 0
     time: 1200
     cost: 850000
     requiredItems:
@@ -1967,7 +1967,7 @@ manufacture:
     requires:
       - STR_ADEPTAS
       - STR_MEDI_KIT_PREREQ
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiredItems:
@@ -1977,7 +1977,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_ADEPTAS_ARMORB
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiredItems:
@@ -1986,7 +1986,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_ADEPTAS_ARMORS
-    space: 12
+    space: 0
     time: 800
     cost: 22000
     requiredItems:
@@ -1995,7 +1995,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_ADEPTAS_ARMORD
-    space: 16
+    space: 0
     time: 6400
     cost: 300000
     requiresBaseFunc: [PSI]
@@ -2008,7 +2008,7 @@ manufacture:
     requires:
       - STR_ADEPTAS_ARMOR
       - STR_ADEPTAS_ARMORCEL
-    space: 16
+    space: 0
     time: 800
     cost: 28000
     requiresBaseFunc: [PSI]
@@ -2021,7 +2021,7 @@ manufacture:
     requires:
       - STR_ADEPTAS_ARMOR
       - STR_PSI_AMP
-    space: 12
+    space: 0
     time: 800
     cost: 42000
     requiresBaseFunc: [LIB]
@@ -2032,7 +2032,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_ADEPTAS_ARMORC
-    space: 12
+    space: 0
     time: 800
     cost: 400000
     requiredItems:
@@ -2043,7 +2043,7 @@ manufacture:
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_ADEPTAS_ARMOR_HONOR
-    space: 12
+    space: 0
     time: 800
     cost: 50000
     requiredItems:
