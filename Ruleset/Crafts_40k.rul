@@ -489,6 +489,7 @@ crafts:
     requiresBuyBaseFunc: [HANGAR]
     sprite: 1782
     marker: 11
+    fuelMax: 1200
     damageMax: 800
     speedMax: 4200
     accel: 9
