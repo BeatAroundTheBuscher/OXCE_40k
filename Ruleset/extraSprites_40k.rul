@@ -1354,6 +1354,12 @@
     height: 200
     files:
       0: Resources/Backgrounds/174.png
+  - type: BACK175.SCR #BOMBARD
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/175.png
 #HWP DR
   - type: IMPULSORSHIELD.PCK
     subX: 32
@@ -4006,6 +4012,7 @@
       812: Resources/CW/HEMbase.png
       813: Resources/CW/WAVbase.png
       814: Resources/CW/MHbase.png
+      815: Resources/CW/LAN2base.png
 #RANK  Canoness
       850: Resources/Rank/basebits850.gif
       851: Resources/Rank/basebits851.gif
@@ -4113,20 +4120,31 @@
       993: Resources/Rank/basebits995.png      #RANK DW
       994: Resources/Rank/basebits994.png      #RANK DW
       995: Resources/Rank/basebits995.png      #RANK DW
-      
+#  GUARD ADDON 2
+      1511: Resources/Thunderbolt/Basebits1511.png          #GUARD ADDON 11
+      1512: Resources/Thunderbolt/Basebits1512.png          #GUARD ADDON 12
+      1513: Resources/Thunderbolt/Basebits1513.png          #GUARD ADDON 13
+      1514: Resources/Thunderbolt/Basebits1514.png           #GUARD ADDON 14
+      1515: Resources/Thunderbolt/Basebits1515.png           #GUARD ADDON 15
+      1516: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 16
+      1517: Resources/Thunderbolt/Basebits584.png          #GUARD ADDON 17
+      1518: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 18 X
+      1519: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 19 X
+      1520: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 20 X
+      1521: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 21 X      
 #  GUARD ADDON
       1611: Resources/TAUROX/Taurox_base1.png          #GUARD ADDON 0
       1612: Resources/TAUROX/Taurox_base2.png          #GUARD ADDON 1
       1613: Resources/TAUROX/Taurox_base3.png          #GUARD ADDON 2
-      1614: Resources/TAUROX/Taurox_base4.png        #GUARD ADDON 3
-      1615: Resources/TAUROX/Taurox_base1.png        #GUARD ADDON 4
-      1616: Resources/TAUROX/Taurox_base1.png          #GUARD ADDON 5
-      1617: Resources/TAUROX/Taurox_base1.png        #GUARD ADDON 6
+      1614: Resources/TAUROX/Taurox_base4.png        #GUARD ADDON 3 3
+      1615: Resources/TAUROS/Tauros_base1.png        #GUARD ADDON 4 V
+      1616: Resources/TAUROS/Tauros_base2.png          #GUARD ADDON V
+      1617: Resources/TAUROS/Tauros_base3.png        #GUARD ADDON 6
       1618: Resources/VOSS/Voss_base1.png        #GUARD ADDON 7
       1619: Resources/VOSS/Voss_base2.png        #GUARD ADDON 8
       1620: Resources/VOSS/Voss_base3.png        #GUARD ADDON 9
       1621: Resources/VOSS/Voss_base4.png        #GUARD ADDON 10
-#  ADEPTA ADDON
+#  GUARD ADDON
       1711: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 0
       1712: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 1
       1713: Resources/Rhino/AdeptasRhino.png          #ADEPTAS ADDON 2
@@ -4144,8 +4162,8 @@
       1736: Resources/EPATH/hornet_base.png          #ELDAR ADDON 3
       1737: Resources/EPATH/hemlock_base.png          #ELDAR ADDON 4
       1738: Resources/EPATH/hemlock_base.png          #ELDAR ADDON 5
-      1739: Resources/EPATH/waveserpent_base.png          #ELDAR ADDON 6
-      1740: Resources/EPATH/waveserpent_base.png          #ELDAR ADDON 7
+      1739: Resources/EPATH/cobra_base.png          #ELDAR ADDON 6
+      1740: Resources/EPATH/scorpion_base.png          #ELDAR ADDON 7
       1741: Resources/EPATH/waveserpent_base.png          #ELDAR ADDON 8
       1742: Resources/EPATH/waveserpent_base.png          #ELDAR ADDON 9
 # 914-921 CHAPTER CHANGE
@@ -4275,6 +4293,7 @@
       769: Resources/CW/HEMdog.png      
       770: Resources/CW/WAVdog.png
       771: Resources/CW/MHdog.png
+      772: Resources/CW/LAN2dog.png
 #
       878: Resources/Thunderhawk/Thunderhawk_minimised.gif             #MARINES  0
       879: Resources/Thunderhawk/Thunderhawk_minimised.gif             #MARINES  1
@@ -4299,15 +4318,39 @@
       897: Resources/Impulsor/impulsor_dogfight.gif                         #MARINES 8
       898: Resources/Impulsor/repulsor_dogfight.gif                         #MARINES 9
       899: Resources/Impulsor/repulsord_dogfight.gif                        #MARINES 10
-#  
+#
+#  GUARD ADDON 2
+      1478: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 11 < - sprite index
+      1479: Resources/Thunderbolt/Thunderbolt_minimised.png                     #GUARD ADDON 12
+      1480: Resources/Thunderbolt/Thunderbolt_minimised.png                   #GUARD ADDON 13
+      1481: Resources/Thunderbolt/Thunderbolt_minimised.png                  #GUARD ADDON 14
+      1482: Resources/Thunderbolt/Thunderbolt_minimised.png                  #GUARD ADDON 15
+      1483: Resources/Thunderbolt/Thunderbolt_minimised.png                   #GUARD ADDON 16
+      1484: Resources/Thunderbolt/Thunderbolt_minimised.png                  #GUARD ADDON 17
+      1485: Resources/Thunderbolt/Thunderbolt_minimised.png                 #GUARD ADDON 18 < - sprite index 
+      1486: Resources/Thunderbolt/Thunderbolt_minimised.png                 #GUARD ADDON 19 
+      1487: Resources/Thunderbolt/Thunderbolt_minimised.png                #GUARD ADDON 20
+      1488: Resources/Thunderbolt/Thunderbolt_minimised.png                #GUARD ADDON 21   
+# GUARD  ADDON 2 PLUS 11 DOG FIGHT      
+      1489: Resources/Thunderbolt/Thunderbolt_dogfight.png                #GUARD ADDON 11
+      1490: Resources/Thunderbolt/Thunderbolt_dogfight.png                #GUARD ADDON 12
+      1491: Resources/Thunderbolt/Thunderbolt_dogfight.png                #GUARD ADDON 13
+      1492: Resources/Thunderbolt/Thunderbolt_dogfight.png                #GUARD ADDON 14
+      1493: Resources/Thunderbolt/Thunderbolt_dogfight.png                #GUARD ADDON 15
+      1494: Resources/Thunderbolt/Thunderbolt_dogfight.png                #GUARD ADDON 16
+      1495: Resources/Thunderbolt/Thunderbolt_dogfight.png         #GUARD ADDON 17
+      1496: Resources/Thunderbolt/Thunderbolt_dogfight.png              #GUARD ADDON 18
+      1497: Resources/Thunderbolt/Thunderbolt_dogfight.png              #GUARD ADDON 19      
+      1498: Resources/Thunderbolt/Thunderbolt_dogfight.png              #GUARD ADDON 20
+      1499: Resources/Thunderbolt/Thunderbolt_dogfight.png              #GUARD ADDON 21 
 #  GUARD ADDON
       1578: Resources/TAUROX/Taurox_minimisedG.png                    #GUARD ADDON 0 < - sprite index
       1579: Resources/TAUROX/Taurox_minimisedG.png                     #GUARD ADDON 1
       1580: Resources/TAUROX/Taurox_minimisedG.png                    #GUARD ADDON 2
       1581: Resources/TAUROX/Taurox_minimisedG.png                  #GUARD ADDON 3
-      1582: Resources/TAUROX/Taurox_minimisedG.png                  #GUARD ADDON 4
-      1583: Resources/TAUROX/Taurox_minimisedG.png                   #GUARD ADDON 5
-      1584: Resources/TAUROX/Taurox_minimisedG.png                  #GUARD ADDON 6
+      1582: Resources/TAUROS/Tauros_minimised.png                  #GUARD ADDON 4
+      1583: Resources/TAUROS/Tauros_minimised.png                   #GUARD ADDON 5
+      1584: Resources/TAUROS/Tauros_minimised.png                  #GUARD ADDON 6
       1585: Resources/VOSS/voss_minimised.png                  #GUARD ADDON 7 < - sprite index 
       1586: Resources/VOSS/voss_minimised.png                 #GUARD ADDON 8  
       1587: Resources/VOSS/voss_minimised.png                #GUARD ADDON 9 
@@ -4316,10 +4359,10 @@
       1589: Resources/TAUROX/Taurox_dogfightG.png                    #GUARD ADDON 0
       1590: Resources/TAUROX/Taurox_dogfightG.png                     #GUARD ADDON 1
       1591: Resources/TAUROX/Taurox_dogfightG.png                       #GUARD ADDON 2
-      1592: Resources/TAUROX/Taurox_dogfightG.png                #GUARD ADDON 3
-      1593: Resources/TAUROX/Taurox_dogfightG.png                  #GUARD ADDON 4
-      1594: Resources/TAUROX/Taurox_dogfightG.png                       #GUARD ADDON 5
-      1595: Resources/TAUROX/Taurox_dogfightG.png                  #GUARD ADDON 6
+      1592: Resources/TAUROX/Taurox_dogfightG.png                 #GUARD ADDON 3
+      1593: Resources/TAUROS/Tauros_dogfight.png                  #GUARD ADDON 4
+      1594: Resources/TAUROS/Tauros_dogfight.png                  #GUARD ADDON 5
+      1595: Resources/TAUROS/Tauros_dogfight.png                  #GUARD ADDON 6
       1596: Resources/VOSS/voss_dogfight.png              #GUARD ADDON 7
       1597: Resources/VOSS/voss_dogfight.png                 #GUARD ADDON 8      
       1598: Resources/VOSS/voss_dogfight.png              #GUARD ADDON 9
@@ -4353,8 +4396,8 @@
       1703: Resources/EPATH/hornet_minimised.png                    #ELDAR ADDON 3
       1704: Resources/EPATH/hemlock_minimised.png                    #ELDAR ADDON 4
       1705: Resources/EPATH/hemlock_minimised.png                    #ELDAR ADDON 5
-      1706: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 6
-      1707: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 7
+      1706: Resources/EPATH/cobra_minimised.png                    #ELDAR ADDON 6
+      1707: Resources/EPATH/scorpion_minimised.png                    #ELDAR ADDON 7
       1708: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 8
       1709: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 9      
 # PLUS 11 DOG FIGHT  ELDAR ADDON    
@@ -4364,8 +4407,8 @@
       1714: Resources/EPATH/hornet_dogfight.png                   #ELDAR ADDON 3
       1715: Resources/EPATH/hemlock_dogfight.png                   #ELDAR ADDON 4 
       1716: Resources/EPATH/hemlock_dogfight.png                   #ELDAR ADDON 5  
-      1717: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 6  
-      1718: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 7  
+      1717: Resources/EPATH/cobra_dogfight.png                   #ELDAR ADDON 6  
+      1718: Resources/EPATH/scorpion_dogfight.png                   #ELDAR ADDON 7  
       1719: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 8
       1720: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 9
 # CHAMBER Militante
@@ -4609,13 +4652,31 @@
     height: 200
     files:
       0: Resources/CODEX/2GORGON.png
-
+  - type: 2VOSS.SPK                #GUARD CRAFT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/2VOSS.png
   - type: 2LEMON.SPK                #ARBITES CRAFT
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/CODEX/2LEMON.png
+  - type: 2SCORPION.SPK                #ELDAR CRAFT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/2SCORP.png
+  - type: 2COBRA.SPK                #ELDAR CRAFT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/2COBRA.png
+      
   - type: M1.SPK                 #UFOPEDIA MISSIONS
     singleImage: true
     width: 320
@@ -5796,6 +5857,12 @@
     height: 200
     files:
       0: Resources/CODEX/3CRAFT.png
+  - type: 3BOMB.SPK                  #HELP
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/3BOMB.png
   - type: 3ESCORT.SPK                  #HELP
     singleImage: true
     width: 320
@@ -8305,6 +8372,9 @@ extraSounds:
       462: Resources/Sound/LORD/DIE2.ogg
       463: Resources/Sound/LORD/DIE3.ogg
       464: Resources/Sound/LORD/DIE4.ogg
+#EXPLOSION
+      465: Resources/Sound/465xplode.wav
+      466: Resources/Sound/466xplode.wav
 #GUARD TANK2
       471: Resources/Sound/FSENTINEL/ATT1.ogg
       472: Resources/Sound/FSENTINEL/ATT2.ogg

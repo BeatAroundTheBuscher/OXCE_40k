@@ -7,7 +7,6 @@ alienMissions:
   - delete: STR_ALIEN_TERROR
   - delete: STR_ALIEN_RETALIATION
 
-
   - type: STR_DEFILER_RETALIATION
     points: 0
     objective: 4
@@ -87,25 +86,24 @@ alienMissions:
         timer: 0
         huntMode: 0
         huntBehavior: 1
-  - type: STR_ALIEN_RESEARCH
+  - type: STR_ALIEN_RESEARCH   #UNDIVIDED only
     points: 0
     raceWeights:
       0:
-        STR_TZEENTCH: 100
+        STR_FLOATER: 100
       1:
-        STR_TZEENTCH: 100
+        STR_FLOATER: 100
       3:
-        STR_FLOATER: 20
-        STR_MUTON: 40
-        STR_TZEENTCH: 40
+        STR_FLOATER: 90
+        STR_ETHEREAL: 10
       5:
-        STR_FLOATER: 20
-        STR_MUTON: 30
-        STR_TZEENTCH: 50
-      7:
-        STR_TZEENTCH: 80
+        STR_FLOATER: 80
         STR_MUTON: 10
-        STR_FLOATER: 10
+        STR_ETHEREAL: 10
+      7:
+        STR_FLOATER: 70
+        STR_MUTON: 15
+        STR_ETHEREAL: 15
     waves:
       - ufo: STR_SMALL_SCOUT
         count: 1
@@ -123,23 +121,46 @@ alienMissions:
         count: 1
         trajectory: P4
         timer: 9000
-  - type: STR_ALIEN_HARVEST
+  - type: STR_ALIEN_RESEARCH_T
+    points: 0
+    raceWeights:
+      0:
+        STR_TZEENTCH: 100
+    waves:
+      - ufo: STR_SMALL_SCOUT_T
+        count: 1
+        trajectory: P0
+        timer: 9000
+      - ufo: STR_MEDIUM_SCOUT_T
+        count: 1
+        trajectory: P2
+        timer: 7800
+      - ufo: STR_LARGE_SCOUT_T
+        count: 2
+        trajectory: P4
+        timer: 9000
+      - ufo: STR_HELLS_T
+        count: 1
+        trajectory: P4
+        timer: 9000
+  - type: STR_ALIEN_HARVEST  #UNDIVIDED only
     points: 30
     raceWeights:
       0:
-        STR_NURGLE: 100
+        STR_FLOATER: 100
       1:
-        STR_NURGLE: 70
-        STR_FLOATER: 30
+        STR_FLOATER: 100
       3:
-        STR_NURGLE: 70
-        STR_FLOATER: 30
+        STR_FLOATER: 90
+        STR_ETHEREAL: 10
       5:
-        STR_NURGLE: 80
-        STR_FLOATER: 20
+        STR_FLOATER: 80
+        STR_MUTON: 10
+        STR_ETHEREAL: 10
       7:
-        STR_NURGLE: 90
-        STR_FLOATER: 10
+        STR_FLOATER: 70
+        STR_MUTON: 15
+        STR_ETHEREAL: 15
     waves:
       - ufo: STR_SMALL_SCOUT
         count: 1
@@ -173,24 +194,62 @@ alienMissions:
         count: 1
         trajectory: P2
         timer: 1500
-  - type: STR_ALIEN_ABDUCTION
+  - type: STR_ALIEN_HARVEST_N  #NURGLE only
+    points: 30
+    raceWeights:
+      0:
+        STR_NURGLE: 100
+    waves:
+      - ufo: STR_SMALL_SCOUT_N
+        count: 1
+        trajectory: P0
+        timer: 7800
+      - ufo: STR_SMALL_SCOUT_N
+        count: 1
+        trajectory: P2
+        timer: 7800
+      - ufo: STR_MEDIUM_SCOUT_N
+        count: 1
+        trajectory: P2
+        timer: 6000
+      - ufo: STR_LARGE_SCOUT_N
+        count: 1
+        trajectory: P0
+        timer: 7800
+      - ufo: STR_LARGE_SCOUT_N
+        count: 1
+        trajectory: P3
+        timer: 9000
+      - ufo: STR_HARVESTER_N
+        count: 1
+        trajectory: P4
+        timer: 3000
+      - ufo: STR_HARVESTER_N
+        count: 1
+        trajectory: P4
+        timer: 750
+      - ufo: STR_BATTLESHIP_N
+        count: 1
+        trajectory: P2
+        timer: 1500
+  - type: STR_ALIEN_ABDUCTION  #UNDIVIDED only
     points: 50
     raceWeights:
       0:
-        STR_KHRONE: 100
+        STR_FLOATER: 100
       1:
-        STR_KHRONE: 100
+        STR_FLOATER: 100
       3:
-        STR_FLOATER: 10
-        STR_KHRONE: 90
+        STR_FLOATER: 90
+        STR_ETHEREAL: 10
       5:
-        STR_FLOATER: 20
+        STR_FLOATER: 80
         STR_MUTON: 10
-        STR_KHRONE: 70
+        STR_ETHEREAL: 10
       7:
-        STR_FLOATER: 30
-        STR_MUTON: 20
-        STR_KHRONE: 50
+        STR_FLOATER: 70
+        STR_MUTON: 15
+        STR_ETHEREAL: 15
     waves:
       - ufo: STR_SMALL_SCOUT
         count: 1
@@ -212,7 +271,33 @@ alienMissions:
         count: 2
         trajectory: P4
         timer: 60
-  - type: STR_ALIEN_INFILTRATION
+  - type: STR_ALIEN_ABDUCTION_K #KHORNE only
+    points: 50
+    raceWeights:
+      0:
+        STR_KHRONE: 100
+    waves:
+      - ufo: STR_SMALL_SCOUT_K
+        count: 1
+        trajectory: P0
+        timer: 15000
+      - ufo: STR_MEDIUM_SCOUT_K
+        count: 1
+        trajectory: P1
+        timer: 18000
+      - ufo: STR_LARGE_SCOUT_K
+        count: 1
+        trajectory: P3
+        timer: 9000
+      - ufo: STR_ABDUCTOR_K
+        count: 1
+        trajectory: P3
+        timer: 9000
+      - ufo: STR_ABDUCTOR_K
+        count: 2
+        trajectory: P4
+        timer: 60
+  - type: STR_ALIEN_INFILTRATION  #UNDIVIDED only
     points: 0
     objective: 1
     endlessInfiltration: false # default is true; if set to false, mission will end after the first pact/base
@@ -220,26 +305,15 @@ alienMissions:
     siteType: STR_ALIEN_BASE_ASSAULT
     raceWeights:
       0:
-        STR_SLAANESH: 100
+        STR_ETHEREAL: 100
       1:
-        STR_SLAANESH: 100
+        STR_ETHEREAL: 100
       3:
-        STR_SLAANESH: 70
-        STR_FLOATER: 10
-        STR_NURGLE: 10
-        STR_TZEENTCH: 10
+        STR_FLOATER: 30
+        STR_ETHEREAL: 70
       5:
-        STR_ETHEREAL: 30
-        STR_SLAANESH: 40
-        STR_FLOATER: 10
-        STR_NURGLE: 10
-        STR_TZEENTCH: 10
-      7:
-        STR_ETHEREAL: 10
-        STR_SLAANESH: 60
-        STR_FLOATER: 10
-        STR_NURGLE: 10
-        STR_TZEENTCH: 10
+        STR_FLOATER: 50
+        STR_ETHEREAL: 50
     waves:
       - ufo: STR_SMALL_SCOUT
         count: 1
@@ -270,6 +344,48 @@ alienMissions:
         trajectory: P7
         timer: 16500
       - ufo: STR_BATTLESHIP
+        count: 1
+        trajectory: P7
+        timer: 16500
+  - type: STR_ALIEN_INFILTRATION_S #SLAANESH only
+    points: 0
+    objective: 1
+    endlessInfiltration: false # default is true; if set to false, mission will end after the first pact/base
+    spawnZone: 4 #Mission zone for alien bases
+    siteType: STR_ALIEN_BASE_ASSAULT
+    raceWeights:
+      0:
+        STR_SLAANESH: 100
+    waves:
+      - ufo: STR_SMALL_SCOUT_S
+        count: 1
+        trajectory: P0
+        timer: 9000
+      - ufo: STR_MEDIUM_SCOUT_S
+        count: 1
+        trajectory: P1
+        timer: 15000
+      - ufo: STR_MEDIUM_SCOUT_S
+        count: 1
+        trajectory: P6
+        timer: 13800
+      - ufo: STR_LARGE_SCOUT_S
+        count: 1
+        trajectory: P7
+        timer: 9000
+      - ufo: STR_LARGE_SCOUT_S
+        count: 1
+        trajectory: P7
+        timer: 9000
+      - ufo: STR_TERROR_SHIP_S
+        count: 1
+        trajectory: P7
+        timer: 16500
+      - ufo: STR_HELLS_S
+        count: 1
+        trajectory: P7
+        timer: 16500
+      - ufo: STR_BATTLESHIP_S
         count: 1
         trajectory: P7
         timer: 16500

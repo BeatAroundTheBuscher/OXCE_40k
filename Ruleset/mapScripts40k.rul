@@ -159,7 +159,6 @@ mapScripts:
       blocks: [4, 5, 6]
       freqs: [1, 1, 1]
 
-
   - type: XBASE
     commands:
     #*** normal facility placing happens here, before anything else
@@ -199,14 +198,14 @@ mapScripts:
       terrain: baseTerrain
       groups: [16]
 
-  - type: ELDARFOREST_SCRIPT #plus 12
+  - type: ELDARFOREST_SCRIPT #obsulet
     commands:
     - type: addCraft
     - type: addBlock
       groups: 7
       size: 2
     - type: fillArea
-  - type: ELDARGATE_SCRIPT
+  - type: ELDARGATE_SCRIPT #ELDAR BASE 1
     commands:
     - type: addCraft
       terrain: globeTerrain
@@ -222,9 +221,33 @@ mapScripts:
           blocks: [0]
           size: [2, 2, 6]
           terrain: ELDARGATEMAP
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [77]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [78]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [79]
+      executions: 1
+      UFOName: STR_HELPER_UFO
     - type: fillArea
       terrain: globeTerrain
-  - type: ELDARGATE_SCRIPT2
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      freqs: [8, 8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 3, 3]
+      maxUses: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1]
+    - type: fillArea
+      terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  - type: ELDARGATE_SCRIPT2 #ELDAR BASE 2&3
     commands:
     - type: addCraft
       terrain: globeTerrain
@@ -244,8 +267,32 @@ mapScripts:
           blocks: [0]
           size: [3, 3, 6]
           terrain: WAVESERPENT2
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [77]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [78]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [79]
+      executions: 1
+      UFOName: STR_HELPER_UFO
     - type: fillArea
       terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      freqs: [8, 8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 3, 3]
+      maxUses: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1]
+    - type: fillArea
+      terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8]
   - type: XHANGAR
     commands:
     - type: addCraft
@@ -253,14 +300,7 @@ mapScripts:
         - [1,0,1,4] #[y,x,mapSize_width,mapSize_heigth]
     - type: addBlock
       size: [3,2]
-  - type: JUNGLE #plus 12
-    commands:
-    - type: addUFO
-    - type: addCraft
-    - type: fillArea
-      blocks: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
-      freqs: [6, 6, 6, 6, 6, 6, 6, 3, 3, 4, 2, 2, 2, 2]
-      maxUses: [-1, -1, -1, -1, -1, -1, -1, 2, 1, 1, 1, 1]
+
   - type: REFINERYS
     commands:
     - type: addLine
@@ -276,6 +316,24 @@ mapScripts:
       rects:
         - [1, 1, 1, 4]
     - type: addCraft
+    - type: addBlock
+      craftGroups: [77]
+      blocks: [20]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [20]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [20]
+      executions: 10
+      maxUses: [1]
+      size: 1
     - type: addUFO
       size: 1
       executions: 1
@@ -310,6 +368,24 @@ mapScripts:
       direction: both
       rects:
         - [1, 1, 4, 4]
+    - type: addBlock
+      craftGroups: [77]
+      blocks: [20]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [20]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [20]
+      executions: 10
+      maxUses: [1]
+      size: 1
     - type: addUFO
       size: 1
       executions: 3
@@ -403,6 +479,24 @@ mapScripts:
       executions: 3
       executionChances: 100
       UFOName: STR_MUNI2_UFO
+    - type: addBlock
+      craftGroups: [77]
+      blocks: [20]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [20]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [20]
+      executions: 10
+      maxUses: [1]
+      size: 1
     - type: addBlock #3x3
       size: 3
       executions: 1
@@ -453,6 +547,24 @@ mapScripts:
         - [1, 1, 4, 4]
     - type: addUFO
     - type: addBlock
+      craftGroups: [77]
+      blocks: [20]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [20]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [20]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
       blocks: [0, 1, 2]
       freqs: [1, 1, 1]
       maxUses: [1, 1, 1]
@@ -492,18 +604,34 @@ mapScripts:
     commands:
     - type: addCraft
     - type: addBlock
+      craftGroups: [77]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
       size: 2
       executions: 4
     - type: fillArea
       blocks: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
       freqs: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
 
-
   - type: INDUSTRIALURBANDIO
     commands:
       #*** Add the player's craft ***
       - type: addCraft
-
       #*** Add roads/railroads ***
       - type: addLine
         direction: vertical
@@ -518,24 +646,20 @@ mapScripts:
         direction: both
         conditionals: [-1, -2]
         label: 3
-
       # sometimes replace vertical line with rails
       - type: fillArea # mask off the map for removeBlock
         groups: 10
         executionChances: 50
         conditionals: [-2]
         label: 4
-
       - type: removeBlock # remove the normal road
         groups: 3
         conditionals: [4]
         rects:
           - [0, 0, 10, 10]
-
       - type: fillArea # place the rails
         groups: 13
         conditionals: [4]
-
       - type: removeBlock # remove the crossing
         groups: [4]
         conditionals: [3, 4]
@@ -553,6 +677,22 @@ mapScripts:
           - [0, 0, 10, 10]
 
       #*** Fill in the area ***
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [77]
+        executions: 1
+        UFOName: STR_HELPER_UFO
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [78]
+        executions: 1
+        UFOName: STR_HELPER_UFO
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [79]
+        executions: 1
+        UFOName: STR_HELPER_UFO
+      - type: fillArea
       - type: addBlock
         size: 2
         executions: 4
@@ -807,12 +947,30 @@ mapScripts:
       blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
       freqs: [2, 1, 1, 2, 1, 2, 2, 2, 2, 2]
 
-  - type: BASEASSAULT
+  - type: BASEASSAULT         #Chaos Base lvl 1
     commands:
     - type: addBlock
       groups: 6
       size: 2
     - type: addCraft
+    - type: addBlock          #bombard
+      craftGroups: [77]
+      blocks: [12]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock          #bombard
+      craftGroups: [78]
+      blocks: [12]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock          #bombard
+      craftGroups: [79]
+      blocks: [12]
+      executions: 10
+      maxUses: [1]
+      size: 1
     - type: addBlock
       size: 2
       executions: 2
@@ -838,6 +996,24 @@ mapScripts:
       direction: both
       rects:
         - [1, 1, 4, 4]
+    - type: addBlock          #bombard
+      craftGroups: [77]
+      blocks: [16]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock          #bombard
+      craftGroups: [78]
+      blocks: [16]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock          #bombard
+      craftGroups: [79]
+      blocks: [16]
+      executions: 10
+      maxUses: [1]
+      size: 1
     - type: addUFO
       size: 1
       executions: 1
@@ -868,6 +1044,24 @@ mapScripts:
       rects:
         - [2, 0, 1, 4]#[y,x,mapSize_width,mapSize_heigth]
         - [1, 0, 1, 4]#[y,x,mapSize_width,mapSize_heigth]
+    - type: addBlock          #bombard
+      craftGroups: [77]
+      blocks: [17]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock          #bombard
+      craftGroups: [78]
+      blocks: [17]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock          #bombard
+      craftGroups: [79]
+      blocks: [17]
+      executions: 10
+      maxUses: [1]
+      size: 1
     - type: addLine
       label: 1
       direction: vertical
@@ -914,6 +1108,24 @@ mapScripts:
       rects:
         - [2, 0, 1, 4]#[y,x,mapSize_width,mapSize_heigth]
         - [1, 0, 1, 4]#[y,x,mapSize_width,mapSize_heigth]
+    - type: addBlock          #bombard
+      craftGroups: [77]
+      blocks: [18]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock          #bombard
+      craftGroups: [78]
+      blocks: [18]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock          #bombard
+      craftGroups: [79]
+      blocks: [18]
+      executions: 10
+      maxUses: [1]
+      size: 1
     - type: addLine
       label: 1
       direction: vertical
@@ -951,6 +1163,482 @@ mapScripts:
     - type: addBlock
       size: [5,5]
 
+  - type: TRAITORGUARDBASE_LEVEL1 #BD TRAITOR BASE 1
+    commands:
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addBlock  #HQ2x2
+      size: [2, 2, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [2, 2, 0]
+          terrain: globeTerrain
+          groups: [11] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [5, 6, 7, 8, 9]
+          size: [2, 2, 6]
+          terrain: TRAITORGUARDBASE
+    - type: addBlock #BLOCK1X1
+      size: [1, 1, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [1, 1, 0]
+          terrain: globeTerrain
+          groups: [1] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [4, 10, 11, 12, 13, 14]
+          size: [1, 1, 6]
+          terrain: TRAITORGUARDBASE
+    - type: addBlock #BLOCK1X1
+      size: [1, 1, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [1, 1, 0]
+          terrain: globeTerrain
+          groups: [1] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [4, 10, 11, 12, 13, 14]
+          size: [1, 1, 6]
+          terrain: TRAITORGUARDBASE
+    - type: addBlock  #CHIMERA
+      size: [1, 1, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [1, 1, 0]
+          terrain: globeTerrain
+          groups: [1] #<--- FLAT GROUP add this!
+        - type: middle
+          blocks: [0, 1, 2]
+          size: [1, 1, 0]
+          terrain: TRAITORGUARDBASE
+        - type: middle
+          blocks: [0]
+          size: [1, 1, 6]
+          terrain: CHIMERACHAOS
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [77]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [78]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [79]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: fillArea
+      terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14]
+      freqs: [8, 8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 3]
+      maxUses: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 2, 1, 1]
+    - type: fillArea
+      terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  - type: TRAITORGUARDBASE_LEVEL2 #BD TRAITOR BASE 2
+    commands:
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addBlock  #HQ2x2
+      size: [2, 2, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [2, 2, 0]
+          terrain: globeTerrain
+          groups: [11] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [5, 6, 7, 8, 9]
+          size: [2, 2, 6]
+          terrain: TRAITORGUARDBASE
+    - type: addBlock  #BLOCK1X1
+      size: [1, 1, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [1, 1, 0]
+          terrain: globeTerrain
+          groups: [1] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [4, 10, 11, 12, 13, 14]
+          size: [1, 1, 1]
+          terrain: TRAITORGUARDBASE
+    - type: addBlock #BLOCK1X1
+      size: [1, 1, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [1, 1, 0]
+          terrain: globeTerrain
+          groups: [1] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [4, 10, 11, 12, 13, 14]
+          size: [1, 1, 6]
+          terrain: TRAITORGUARDBASE
+    - type: addBlock  #SENTINEL HANGAR
+      size: [1, 1, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [1, 1, 0]
+          terrain: globeTerrain
+          groups: [1] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [16]
+          size: [1, 1, 1]
+          terrain: TRAITORGUARDBASE
+    - type: addBlock  #CHIMERA
+      size: [1, 1, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [1, 1, 0]
+          terrain: globeTerrain
+          groups: [1] #<--- FLAT GROUP add this!
+        - type: middle
+          blocks: [0, 1, 2]
+          size: [1, 1, 0]
+          terrain: TRAITORGUARDBASE
+        - type: middle
+          blocks: [0]
+          size: [1, 1, 6]
+          terrain: CHIMERACHAOS
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [77]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [78]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [79]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: fillArea
+      terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14]
+      freqs: [8, 8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 3]
+      maxUses: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 2, 1, 1]
+    - type: fillArea
+      terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  - type: TRAITORGUARDBASE_LEVEL3 #BD TRAITOR BASE 3
+    commands:
+    - type: addBlock #HQ2x2
+      size: [2, 2, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [2, 2, 0]
+          terrain: globeTerrain
+          groups: [11] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [5, 6, 7, 8, 9]
+          size: [2, 2, 6]
+          terrain: TRAITORGUARDBASE
+    - type: addBlock #AIRSTRIP
+      size: [2, 2, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [2, 2, 0]
+          terrain: globeTerrain
+          groups: [11] #<--- FLAT GROUP add this!
+        - type: middle
+          blocks: [18]
+          size: [2, 2, 0]
+          terrain: TRAITORGUARDBASE
+        - type: middle
+          blocks: [0]
+          size: [2, 2, 6]
+          terrain: VOSSC2X2
+    - type: addBlock #BLOCK1X1
+      size: [1, 1, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [1, 1, 0]
+          terrain: globeTerrain
+          groups: [1] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [4, 10, 11, 12, 13, 14]
+          size: [1, 1, 1]
+          terrain: TRAITORGUARDBASE
+    - type: addBlock #BLOCK1X1
+      size: [1, 1, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [1, 1, 0]
+          terrain: globeTerrain
+          groups: [1] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [4, 10, 11, 12, 13, 14]
+          size: [1, 1, 6]
+          terrain: TRAITORGUARDBASE
+    - type: addBlock  #CHIMERA
+      size: [1, 1, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [1, 1, 0]
+          terrain: globeTerrain
+          groups: [1] #<--- FLAT GROUP add this!
+        - type: middle
+          blocks: [0, 1, 2]
+          size: [1, 1, 0]
+          terrain: TRAITORGUARDBASE
+        - type: middle
+          blocks: [0]
+          size: [1, 1, 6]
+          terrain: CHIMERACHAOS
+    - type: addBlock  #SENTINEL HANGAR
+      size: [1, 1, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [1, 1, 0]
+          terrain: globeTerrain
+          groups: [1] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [16]
+          size: [1, 1, 1]
+          terrain: TRAITORGUARDBASE
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [77]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [78]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [79]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: fillArea
+      terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14]
+      freqs: [8, 8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 3]
+      maxUses: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 2, 1, 1]
+    - type: fillArea
+      terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  - type: TRAITORGUARDBASE_LEVEL4 #BD TRAITOR BASE 4
+    commands:
+    - type: addBlock #AIRSTRIP
+      size: [2, 2, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [2, 2, 0]
+          terrain: globeTerrain
+          groups: [11] #<--- FLAT GROUP add this!
+        - type: middle
+          blocks: [18]
+          size: [2, 2, 0]
+          terrain: TRAITORGUARDBASE
+        - type: middle
+          blocks: [0]
+          size: [2, 2, 6]
+          terrain: VOSSC2X2
+    - type: addBlock #BLOCK1X1
+      size: [1, 1, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [1, 1, 0]
+          terrain: globeTerrain
+          groups: [1] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [4, 10, 11, 12, 13, 14]
+          size: [1, 1, 1]
+          terrain: TRAITORGUARDBASE
+      terrain: globeTerrain
+    - type: addBlock #BLOCK1X1
+      size: [1, 1, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [1, 1, 0]
+          terrain: globeTerrain
+          groups: [1] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [4, 10, 11, 12, 13, 14]
+          size: [1, 1, 6]
+          terrain: TRAITORGUARDBASE
+    - type: addBlock  #CHIMERA
+      size: [1, 1, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [1, 1, 0]
+          terrain: globeTerrain
+          groups: [1] #<--- FLAT GROUP add this!
+        - type: middle
+          blocks: [0, 1, 2]
+          size: [1, 1, 0]
+          terrain: TRAITORGUARDBASE
+        - type: middle
+          blocks: [0]
+          size: [1, 1, 6]
+          terrain: CHIMERACHAOS
+    - type: addBlock #3x3 FORTRESS
+      size: [3, 3, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [3, 3, 0]
+          terrain: globeTerrain
+          groups: [12] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [19]
+          size: [3, 3, 6]
+          terrain: TRAITORGUARDBASE
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [77]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [78]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [79]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: fillArea
+      terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      freqs: [8, 8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 3, 3]
+      maxUses: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1]
+    - type: fillArea
+      terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+  - type: TRAITORGUARDBASE_REPAIRBAY #BD TRAITOR BASE 3
+    commands:
+    - type: addBlock
+      size: [3, 3, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [3, 3, 0]
+          terrain: globeTerrain
+          groups: [12] #<--- FLAT GROUP add this!
+        - type: middle
+          blocks: [15]
+          size: [3, 3, 0]
+          terrain: TRAITORGUARDBASE
+        - type: middle
+          blocks: [0]
+          size: [3, 3, 6]
+          terrain: CHIMERACONVOY3X3
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [77]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [78]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [79]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: fillArea
+      terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      freqs: [8, 8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 3, 3]
+      maxUses: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1]
+    - type: fillArea
+      terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  - type: TRAITORGUARDBASE_RANGE #BD TRAITOR BASE 1
+    commands:
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addBlock  #RANGE
+      size: [2, 2, 6]
+      executions: 1
+      verticalLevels:
+        - type: ground
+          size: [2, 2, 0]
+          terrain: globeTerrain
+          groups: [11] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [3]
+          size: [2, 2, 6]
+          terrain: TRAITORGUARDBASE
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [77]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [78]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      terrain: globeTerrain
+      size: 1
+      craftGroups: [79]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: fillArea
+      terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      freqs: [8, 8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 3, 3]
+      maxUses: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1]
+    - type: fillArea
+      terrain: globeTerrain
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+
   - type: CULTIST_BASE_LEVEL_1
     commands:
       #*** Place the temple ***
@@ -959,6 +1647,21 @@ mapScripts:
         groups: 5
       #*** Place the player's craft ***
       - type: addCraft
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [77]
+        executions: 1
+        UFOName: STR_HELPER_UFO
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [78]
+        executions: 1
+        UFOName: STR_HELPER_UFO
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [79]
+        executions: 1
+        UFOName: STR_HELPER_UFO
       #*** Add roads/railroads ***
       - type: addLine
         direction: vertical
@@ -1031,6 +1734,21 @@ mapScripts:
 
       #*** Place the player's craft ***
       - type: addCraft
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [77]
+        executions: 1
+        UFOName: STR_HELPER_UFO
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [78]
+        executions: 1
+        UFOName: STR_HELPER_UFO
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [79]
+        executions: 1
+        UFOName: STR_HELPER_UFO
 
       #*** Add roads/railroads ***
       - type: addLine
@@ -1107,6 +1825,21 @@ mapScripts:
 
       #*** Place the player's craft ***
       - type: addCraft
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [77]
+        executions: 1
+        UFOName: STR_HELPER_UFO
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [78]
+        executions: 1
+        UFOName: STR_HELPER_UFO
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [79]
+        executions: 1
+        UFOName: STR_HELPER_UFO
 
       #*** Add roads/railroads ***
       - type: addLine
@@ -1180,6 +1913,21 @@ mapScripts:
 
       #*** Add the player's craft ***
       - type: addCraft
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [77]
+        executions: 1
+        UFOName: STR_HELPER_UFO
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [78]
+        executions: 1
+        UFOName: STR_HELPER_UFO
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [79]
+        executions: 1
+        UFOName: STR_HELPER_UFO
 
       #*** Add roads/railroads ***
       - type: addLine
@@ -1246,6 +1994,21 @@ mapScripts:
 
       #*** Add the player's craft ***
       - type: addCraft
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [77]
+        executions: 1
+        UFOName: STR_HELPER_UFO
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [78]
+        executions: 1
+        UFOName: STR_HELPER_UFO
+      - type: addUFO                #BOMBARDMENT UFO
+        size: 1
+        craftGroups: [79]
+        executions: 1
+        UFOName: STR_HELPER_UFO
 
       #*** Add roads/railroads ***
       - type: addLine
@@ -1310,6 +2073,25 @@ mapScripts:
 
     #*** Add the player craft and fill the remaining area
     - type: addCraft
+    - type: addBlock         #***BOMBARDMENT***
+      craftGroups: [77]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock         #***BOMBARDMENT***
+      craftGroups: [78]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock         #***BOMBARDMENT***
+      craftGroups: [79]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+
     - type: addBlock
       size: 2
       executions: 2
@@ -1330,6 +2112,24 @@ mapScripts:
 
     #*** Add the player craft and fill the remaining area
     - type: addCraft
+    - type: addBlock
+      craftGroups: [77]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
     - type: addBlock
       size: 2
       executions: 2
@@ -1474,6 +2274,25 @@ mapScripts:
     #*** Add the player craft and fill in everywhere else ***
     - type: addCraft
     - type: addBlock
+      craftGroups: [77]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+
+    - type: addBlock
       size: 2
       executions: 2
       groups: 0
@@ -1616,6 +2435,25 @@ mapScripts:
 
     #*** Add the player craft and fill in everywhere else ***
     - type: addCraft
+    - type: addBlock
+      craftGroups: [77]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+
     - type: addBlock
       size: 2
       executions: 2
@@ -2247,6 +3085,24 @@ mapScripts:
     #*** Add the player craft and fill in everywhere else ***
     - type: addCraft
     - type: addBlock
+      craftGroups: [77]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [22]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
       size: 2
       executions: 2
       groups: 0
@@ -2256,7 +3112,7 @@ mapScripts:
       maxUses: [2, 2, 2, 2, 2, 2, 2]
     - type: fillArea
 
-  - type: TRAITOR_GUARD_BASE_LEVEL_1
+  - type: TRAITOR_GUARD_BASE_LEVEL_1 #NOT USED
     commands:
       #*** Place a road through the base and put the player's craft on it
       - type: addCraft
@@ -2381,12 +3237,28 @@ mapScripts:
       - type: addBlock
         size: 2
         groups: 5
-
+      - type: addBlock         #***BOMBARDMENT***
+        craftGroups: [77]
+        blocks: [21]
+        executions: 10
+        maxUses: [1]
+        size: 1
+      - type: addBlock         #***BOMBARDMENT***
+        craftGroups: [78]
+        blocks: [21]
+        executions: 10
+        maxUses: [1]
+        size: 1
+      - type: addBlock         #***BOMBARDMENT***
+        craftGroups: [79]
+        blocks: [21]
+        executions: 10
+        maxUses: [1]
+        size: 1
       #*** Try placing some filler blocks
       - type: addBlock
         size: 2
         groups: 8
-
       - type: addBlock
         size: 1
         groups: 8
@@ -2400,8 +3272,7 @@ mapScripts:
 
       - type: fillArea
         groups: 9
-
-  - type: TRAITOR_GUARD_BASE_LEVEL_2
+  - type: TRAITOR_GUARD_BASE_LEVEL_2 #NOT USED
     commands:
       #*** Place a road through the base and put the player's craft on it
       - type: addCraft
@@ -2676,7 +3547,7 @@ mapScripts:
       - type: addBlock
         size: 2
         groups: [5]
-
+      #*** Try placing some filler blocks
       #*** Place a motor pool next to the road
       - type: addBlock
         rects:
@@ -2722,8 +3593,7 @@ mapScripts:
 
       - type: fillArea
         groups: 9
-
-  - type: TRAITOR_GUARD_BASE_LEVEL_3
+  - type: TRAITOR_GUARD_BASE_LEVEL_3 #NOT USED
     commands:
       #*** Place the player craft and put a road under it
       - type: addCraft
@@ -3033,7 +3903,7 @@ mapScripts:
       - type: fillArea
         groups: 9
 
-  - type: TRAITOR_GUARD_CHIMERA_MAINTENANCE
+  - type: TRAITOR_GUARD_CHIMERA_MAINTENANCE #NOT USED
     commands:
       #*** Place a road through the base and put a Chimera on it
       - type: addUFO
@@ -3145,13 +4015,13 @@ mapScripts:
 
       #*** Add the player craft and fill in the area
       - type: addCraft
+      #*** Try placing some filler blocks
       - type: addBlock
         size: 2
         groups: 9
       - type: fillArea
         groups: [0, 1, 9]
-
-  - type: TRAITOR_GUARD_FIRING_RANGE
+  - type: TRAITOR_GUARD_FIRING_RANGE #NOT USED
     commands:
       #*** Place a road and put the player's craft on it
       - type: addCraft
@@ -3260,17 +4130,42 @@ mapScripts:
 
   - type: STR_TRAITOR_FIREBASE
     commands:
+
     - type: addCraft
-    - type: addUFO
+    - type: addBlock
+      size: [2, 2, 6]
       executions: 1
-      UFOName: STR_TRAITOR_CONVOY
+      verticalLevels:
+        - type: ground
+          size: [2, 2, 0]
+          groups: [11] #<--- FLAT GROUP add this!
+        - type: ceiling
+          blocks: [0]
+          size: [2, 2, 6]
+          terrain: STR_TRAITOR_FIREBASE
+      #*** Try placing some filler blocks
+    - type: addUFO                #BOMBARDMENT UFO
+      size: 1
+      craftGroups: [77]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      size: 1
+      craftGroups: [78]
+      executions: 1
+      UFOName: STR_HELPER_UFO
+    - type: addUFO                #BOMBARDMENT UFO
+      size: 1
+      craftGroups: [79]
+      executions: 1
+      UFOName: STR_HELPER_UFO
     - type: addBlock
       size: 2
       executions: 3
     - type: fillArea
-      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 15, 16]
-      freqs: [8, 8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 3, 3, 3]
-      maxUses: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 2, 1, 1, 1, 1]
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14]
+      freqs: [8, 8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 3]
+      maxUses: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 2, 1, 1]
     - type: fillArea
       blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
@@ -3279,19 +4174,54 @@ mapScripts:
     - type: addUFO
     - type: addCraft
     - type: addBlock
+      craftGroups: [77]
+      blocks: [19]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [19]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [19]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
       size: 2
-      executions: 3
+      executions: 2
     - type: fillArea
       blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 15, 16]
       freqs: [8, 8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 3, 3, 3]
       maxUses: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 2, 1, 1, 1, 1]
     - type: fillArea
       blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8]
-
   - type: FOREST
     commands:
     - type: addUFO
     - type: addCraft
+    - type: addBlock
+      craftGroups: [77]
+      blocks: [19]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [19]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [19]
+      executions: 10
+      maxUses: [1]
+      size: 1
     - type: addBlock
       size: 2
       executions: 2
@@ -3299,13 +4229,173 @@ mapScripts:
       freqs: [3, 3, 2, 1, 1, 1, 1]
       maxUses: [-1, -1, 2, 1, 1, 1, 1]
     - type: fillArea
-
+  - type: JUNGLE #plus 12
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      craftGroups: [77]
+      blocks: [19]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [19]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [19]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: fillArea
+      blocks: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+      freqs: [6, 6, 6, 6, 6, 6, 6, 3, 3, 4, 2, 2, 2, 2]
+      maxUses: [-1, -1, -1, -1, -1, -1, -1, 2, 1, 1, 1, 1]
   - type: POLAR
     commands:
     - type: addUFO
     - type: addCraft
     - type: addBlock
+      craftGroups: [77]
+      blocks: [21]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [21]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [21]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
       size: 2
       blocks: [12, 13, 14, 15, 16, 17, 18]
       freqs: [3, 3, 2, 1, 1, 1]
+    - type: fillArea
+
+  - type: DEFAULT #
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: fillArea
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14]
+      freqs: [8, 8, 8, 8, 8, 8, 8, 8, 8, 6, 3, 3]
+      maxUses: [-1, -1, -1, -1, -1, -1, -1, -1, -1, 2, 1, 1]
+    - type: fillArea
+      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+  - type: FARM
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      craftGroups: [77]
+      blocks: [21]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [21]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [21]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: fillArea
+      blocks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+      maxUses: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  - type: GOTHIC
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      craftGroups: [77]
+      blocks: [21]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [21]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [21]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: fillArea
+      blocks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+      maxUses: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  - type: PLAINS
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      craftGroups: [77]
+      blocks: [15]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [15]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [15]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      size: 2
+      executions: 1
+    - type: fillArea
+  - type: MOUNT
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      craftGroups: [77]
+      blocks: [15]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [78]
+      blocks: [15]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      craftGroups: [79]
+      blocks: [15]
+      executions: 10
+      maxUses: [1]
+      size: 1
+    - type: addBlock
+      size: 2
+      executions: 1
     - type: fillArea

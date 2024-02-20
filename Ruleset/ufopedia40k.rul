@@ -2502,6 +2502,13 @@ ufopaedia:
     text: STR_OUTPOST_UFOPEDIA
     requires:
       - STR_ADEPTAS
+  - id: STR_OUTPOST_GK                 #facility
+    type_id: 16
+    section: STR_BASE_FACILITIES
+    image_id: 042.SPK
+    text: STR_OUTPOST_UFOPEDIA
+    requires:
+      - STR_CHAMBERMILITANT
   - id: STR_TRAINCAMP           #facility
     type_id: 16
     section: STR_BASE_FACILITIES
@@ -3264,7 +3271,7 @@ ufopaedia:
     section: STR_XCOM_CRAFT_ARMAMENT
     text: STR_LIGHTNING_INTERCEPTOR_UFOPEDIA
     listOrder: 230
-    image_id: LIGHTNING_INTERCEPTOR.SPK
+    image_id: 2VOSS.SPK
   - id: STR_THUNDERBOLT_INTERCEPTOR       #240
     requires:
       - STR_IMPERIAL_GUARD_OPERATIONS
@@ -3295,7 +3302,7 @@ ufopaedia:
     requires:
       - STR_PREATOR_R
     image_id: 2PREATOR.SPK
-    text: STR_CASSIUMPD_UFOPEDIA
+    text: STR_PREATOR_UFOPEDIA
     listOrder: 820
 #ARBITES
   - id: STR_VULTURE                    #212
@@ -3366,7 +3373,7 @@ ufopaedia:
       - STR_ARBITES
       - STR_PREATOR_PD_R
     image_id: 2PREATOR.SPK
-    text: STR_CASSIUMPD_UFOPEDIA
+    text: STR_PREATOR_UFOPEDIA
     listOrder: 219
 
   - id: STR_ARVUS                      #211
@@ -3458,8 +3465,6 @@ ufopaedia:
     image_id: SPEED.SPK
     requires:
       - STR_SPEEDR
-
-
   - id: STR_ARVUS_GK                   #211
     type_id: 11
     requires:
@@ -3752,7 +3757,24 @@ ufopaedia:
       - STR_ADEPTAS
     image_id: 2THUNDERBOLT.SPK
     text: STR_THUNDERBOLT_INTERCEPTOR_UFOPEDIA
-    listOrder: 520  
+    listOrder: 520
+  - id: STR_COBRA                      #545
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_ELDAR_PATH
+      - STR_ELDAR_COBRA_UFO_DATA
+    image_id: 2COBRA.SPK
+    text: STR_ELDAR_COBRA_UFOPEDIA
+    listOrder: 545
+  - id: STR_SCORPION                   #550
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_SCORPION_R
+    image_id: 2SCORPION.SPK
+    text: STR_ELDAR_SCORPION_UFOPEDIA
+    listOrder: 550
 #  craft weapon
   - id: STR_CRAFT_MULTILASER_UC      #1900
     type_id: 12
@@ -4697,6 +4719,12 @@ ufopaedia:
     image_id: 3REP.SPK
     text: STR_REPAIRPEDIA
     listOrder: 50900
+  - id: STR_HELP12         #HELP 50905
+    type_id: 10
+    section: STR_HELP
+    image_id: 3BOMB.SPK
+    text: STR_BOMBARD_INFO
+    listOrder: 50905
   - id: STR_HELP17         #HELP 50910
     type_id: 10
     section: STR_HELP
@@ -4718,13 +4746,14 @@ ufopaedia:
     text: STR_HELP_PROMO
     listOrder: 51010
 
-  - id: STR_DEVOTION
+
+  - id: STR_DEVOTION         #HELP 51100
     type_id: 10
     section: STR_HELP
     image_id: 3DEV.SPK
     text: STR_DEVOTION_UFOPEDIA
     listOrder: 51100
-  - id: STR_PROMOTE_TO_CANONESS
+  - id: STR_PROMOTE_TO_CANONESS         #HELP 51200
     type_id: 10
     section: STR_HELP
     image_id: 3DAA.SPK

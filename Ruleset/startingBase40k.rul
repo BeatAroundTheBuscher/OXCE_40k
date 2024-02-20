@@ -534,8 +534,8 @@ events:
   - name: STR_DEATHWATCH_CARE_PACKAGE
     description: STR_DEATHWATCH_REINFORCEMENTS
     background: BACK13.SCR
+    spawnedCraftType: STR_CORVUS 
     everyMultiItemList:
-      STR_CRATED_CORVUS: 1
       STR_POWER_SUIT: 1
       STR_ASSC: 1
       STR_ASSC_CLIP: 5
@@ -611,8 +611,8 @@ events:
 
   - name: STR_REINFORCEMENTS_GK
     description: STR_REINFORCEMENTS_GK_DESCRIPTION
+    spawnedCraftType: STR_ARVUS_GK
     everyMultiItemList:
-      STR_CRATED_ARVUS_GK: 1
       STR_HWP_CANNON_SHELLS: 4
       STR_HB_CLIP: 50
     spawnedPersons: 8
@@ -637,8 +637,8 @@ events:
 #*** Events to handle the starting gear for the various Marine strategies ***
   - name: STR_PRIMARIS_CARE_PACKAGE
     description: STR_PRIMARIS_CARE_PACKAGE_DESCRIPTION
+    spawnedCraftType: STR_IMPULSOR
     everyMultiItemList:
-      STR_CRATED_IMPULSOR: 1
       STR_HWP_CANNON_SHELLS: 4
       STR_ASSAULT_BOLTER: 4
       STR_AC_AP_AMMO: 10
@@ -653,8 +653,8 @@ events:
 
   - name: STR_TACTICAL_CARE_PACKAGE
     description: STR_TACTICAL_CARE_PACKAGE_DESCRIPTION
+    spawnedCraftType: STR_SKYRANGER
     everyMultiItemList:
-      STR_CRATED_DROPPODS: 1
       STR_TATICAL_ARMOR: 2 # (22000 + 40 * 6500 = 282000)
       STR_RIFLEB: 2 # ~8000 * 2
       STR_RIFLE_CLIP_EX: 10 # 300 * 10
@@ -666,8 +666,8 @@ events:
 
   - name: STR_ASSAULT_CARE_PACKAGE
     description: STR_ASSAULT_CARE_PACKAGE_DESCRIPTION
+    spawnedCraftType: STR_SKYRANGER
     everyMultiItemList:
-      STR_CRATED_DROPPODS: 1
       STR_ASS_ARMOR: 2 # (22000 + 50 * 6500 = 347000)
       STR_CHAINSWORD: 2 # 5000 * 2
       STR_PISTOLB: 2 # 3500 * 2 (assume ~normal bolter pistol)
@@ -680,8 +680,8 @@ events:
 
   - name: STR_DEVASTATOR_CARE_PACKAGE
     description: STR_DEVASTATOR_CARE_PACKAGE_DESCRIPTION
+    spawnedCraftType: STR_SKYRANGER
     everyMultiItemList:
-      STR_CRATED_DROPPODS: 1
       STR_DEV_ARMOR: 2 # (22000 + 60 * 6500 = 412000) * 2
       STR_AUTO_CANNON: 1 # 13500
       STR_AC_AP_AMMO: 5 # 1200 * 5
@@ -694,8 +694,8 @@ events:
 
   - name: STR_SCOUT_CARE_PACKAGE
     description: STR_SCOUT_CARE_PACKAGE_DESCRIPTION
+    spawnedCraftType: STR_SPEEDC
     everyMultiItemList:
-      STR_CRATED_LANDSPEEDER: 1 # 600000
       STR_HEAVY_CANNON: 1 # 18400
       STR_HC_AP_AMMO: 5 # 300 * 5
       STR_SHOTGUN: 2 # 10000 * 2

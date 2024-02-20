@@ -1344,7 +1344,7 @@ items:
     armor: 255
     recover: false
   - type: STR_TAUROS_CHARGE
-    power: 100
+    power: 10
     weight: 20
     battleType: 4
     damageType: 3
@@ -1356,7 +1356,7 @@ items:
       ArmorEffectiveness: 0.2
       ToArmor: 0.0
       ToItem: 0.0
-      ToTile: 2.0
+      ToTile: 1.0
       RadiusReduction: 0.0
       ToHealth: 0.0
       ToStun: 0.2
@@ -1659,7 +1659,7 @@ items:
     bigSprite: 239
     floorSprite: 160
     power: 200
-    hiddenOnMinimap: true
+    hiddenOnMinimap: false
     damageAlter:
       ArmorEffectiveness: 0.5
     damageType: 3

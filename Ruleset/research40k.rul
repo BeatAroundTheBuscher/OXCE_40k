@@ -921,14 +921,12 @@ research:
 
 
 #*** early crafts ***
-
   - name: STR_PREATOR_R
     dependencies:
       - STR_IMPERIAL_GUARD_HIGHTIER
   - name: STR_PREATOR_PD_R
     dependencies:
       - STR_ARBITES_HIGHTIER
-
 
   - name: STR_XIPHON
     dependencies:
@@ -1509,6 +1507,16 @@ research:
     points: 50
     dependencies:
       - STR_ELDAR_PATH
+
+  - name: STR_SCORPION_R #XENO craft
+    cost: 1000
+    points: 500
+    dependencies:
+      - STR_ELDAR_HEMLOCK_UFO_DATA
+      - STR_ELDAR_WAVESERPENT_UFO_DATA
+      - STR_ELDAR_COBRA_UFO_DATA
+      - STR_ELDAR_HORNET_UFO_DATA
+
 #---CHAOS-----------------------------------------------------
   - name: STR_ALIENS_ONLY #CHAOS PATH
     cost: 1000

@@ -3,6 +3,29 @@ units:
   - delete: STR_HOVERTANK_PLASMA
   - delete: STR_HOVERTANK_LAUNCHER
   - delete: STR_HOVERTANK_LASER
+#*** TRAINING Missions ***
+  - type: STR_TARGET_SOLDIER_GUARD
+    race: STR_TARGETH
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 1
+      stamina: 1
+      health: 300
+      bravery: 200
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 200
+      psiSkill: 0
+      melee: 0
+    armor: TARGET_INVINCIBLE
+    standHeight: 21
+    kneelHeight: 16
+    value: 1
+    intelligence: 1
+    aggression: 1
+    energyRecovery: 40
 #*** Cultists for Ritual Missions ***
   - &CULTIST_RITUALIST
     type: STR_CULTIST_RITUALIST_SACRIFICES
@@ -66,7 +89,6 @@ units:
       - []
       - - STR_SACRIFICE_FLAMER_SPAWNER
     capturable: false
-
   - type: STR_CIVILIAN_SACRIFICE_M0
     race: STR_CIVILIAN
     stats:
@@ -94,7 +116,6 @@ units:
       - []
       - - STR_SACRIFICE_BLOODLETTER_SPAWNER
     capturable: false
-
   - type: STR_CIVILIAN_SACRIFICE_F1
     race: STR_CIVILIAN
     stats:
@@ -122,7 +143,6 @@ units:
       - []
       - - STR_SACRIFICE_DAEMONETTE_SPAWNER
     capturable: false
-
   - type: STR_CIVILIAN_SACRIFICE_M1
     race: STR_CIVILIAN
     stats:
@@ -150,7 +170,6 @@ units:
       - []
       - - STR_SACRIFICE_PLAGUEBEARER_SPAWNER
     capturable: false
-
 #*** Stuff to be destroyed by rioters incited by cultists ***
   - type: STR_PIPELINE_DESTRUCTIBLE
     race: STR_IMPERIAL_INFRASTRUCTURE
@@ -259,7 +278,6 @@ units:
     energyRecovery: 1
     liveAlien: ""
     capturable: false
-
 #  CIVILIANS
   - type: STR_MONK1
     race: STR_CIVILIAN
@@ -540,7 +558,6 @@ units:
       - - STR_AUTOCANNON_GENE
         - STR_AUTOCANNON_CLIP
     specab: 1
-
   - type: STR_CASSIUM_BOLTER_LEFT1
     race: STR_CASSIUM
     stats:
@@ -5153,6 +5170,39 @@ units:
 armors:
   - delete: STR_NONE_UC
 #*** Cultists for Ritual Missions ***
+  - type: TARGET_INVINCIBLE
+    spriteSheet: TARGET.PCK
+    spriteInv: TGT
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    #stunImmune: true
+    painImmune: true
+    corpseBattle:
+      - STR_DISABLEMODULE
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    size: 1
+    damageModifier:
+      - 0.0 #none
+      - 0.0 #AP
+      - 0.0 #FLAMES
+      - 0.0 #HE
+      - 0.0 #LASCANON
+      - 0.0 #PLASMA
+      - 0.0 #STUN
+      - 0.0 #MELEE
+      - 0.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 0.0 #MELTA
+    loftempsSet: [ 3 ]
+    drawingRoutine: 16
+    constantAnimation: true
+    movementType: 2
+#*** Cultists for Ritual Missions ***
   - &CULTIST_RITUAL_ARMOR
     type: CULTIST_RITUAL_SACRIFICE_ARMOR
     visibilityAtDay: 40
@@ -7626,6 +7676,7 @@ armors:
   - type: STR_TRAITOR_CHIMERA_TURRET_ARMOR
     visibilityAtDay: 60
     visibilityAtDark: 60
+    spriteInv: CHIMC.SPK
     spriteSheet: TRAITOR_CHIMERA_TURRET.PCK
     allowInv: false
     zombiImmune: true
@@ -12922,67 +12973,6 @@ manufacture:
   - delete: STR_HOVERTANK_LASER
   - delete: STR_HOVERTANK_LAUNCHER
   - delete: STR_HOVERTANK_PLASMA
-#*** Marine strategy wargear packages ***
-  - name: STR_CRATED_IMPULSOR
-    category: STR_CRAFT
-    requires:
-      - STR_PRIMARIS
-    space: 0
-    time: 100
-    cost: 1000
-    requiredItems:
-      STR_CRATED_IMPULSOR: 1
-    producedItems:
-      STR_IMPULSOR: 1
-
-  - name: STR_CRATED_DROPPODS
-    category: STR_CRAFT
-    requires:
-      - STR_CRATED_DROPPODS
-    space: 0
-    time: 100
-    cost: 1000
-    requiredItems:
-      STR_CRATED_DROPPODS: 1
-    producedItems:
-      STR_SKYRANGER: 1
-
-  - name: STR_CRATED_LANDSPEEDER
-    category: STR_CRAFT
-    requires:
-      - STR_SCOUT
-    space: 0
-    time: 100
-    cost: 1000
-    requiredItems:
-      STR_CRATED_LANDSPEEDER: 1
-    producedItems:
-      STR_SPEEDC: 1
-
-#*** Chamber millitant wargear packages ***
-  - name: STR_CRATED_ARVUS_GK
-    category: STR_CRAFT
-    requires:
-      - STR_GREYKNIGHTS
-    space: 0
-    time: 100
-    cost: 1000
-    requiredItems:
-      STR_CRATED_ARVUS_GK: 1
-    producedItems:
-      STR_ARVUS_GK: 1
-  - name: STR_CRATED_CORVUS
-    category: STR_CRAFT
-    requires:
-      - STR_DEATHWATCH
-    space: 0
-    time: 100
-    cost: 1000
-    requiredItems:
-      STR_CRATED_CORVUS: 1
-    producedItems:
-      STR_CORVUS: 1
-
 #--------------------------------------------------------------- PROMOTION --------------------------------
   - name: STR_PROMOTE_JOAN
     category: STR_ADVANCEMENT
@@ -14336,3 +14326,60 @@ manufacture:
       STR_UFO_POWER_SOURCE: 2
       STR_UFO_NAVIGATION: 1
 #
+#*** CRAFT packages ***
+#  - name: STR_CRATED_IMPULSOR
+#    category: STR_CRAFT
+#    requires:
+#      - STR_PRIMARIS
+#    space: 0
+#    time: 100
+#   cost: 1000
+#   requiredItems:
+#      STR_CRATED_IMPULSOR: 1
+#    producedItems:
+#      STR_IMPULSOR: 1
+#  - name: STR_CRATED_DROPPODS
+#    category: STR_CRAFT
+#    requires:
+#      - STR_CRATED_DROPPODS
+#    space: 0
+#    time: 100
+#    cost: 1000
+#    requiredItems:
+#      STR_CRATED_DROPPODS: 1
+#    producedItems:
+#      STR_SKYRANGER: 1
+#  - name: STR_CRATED_LANDSPEEDER
+#    category: STR_CRAFT
+#    requires:
+#      - STR_SCOUT
+#    space: 0
+#   time: 100
+#    cost: 1000
+#    requiredItems:
+#      STR_CRATED_LANDSPEEDER: 1
+#    producedItems:
+#      STR_SPEEDC: 1
+#*** Chamber millitant wargear packages ***
+#  - name: STR_CRATED_ARVUS_GK
+#    category: STR_CRAFT
+#    requires:
+#      - STR_GREYKNIGHTS
+#    space: 0
+#    time: 100
+#    cost: 1000
+#    requiredItems:
+#      STR_CRATED_ARVUS_GK: 1
+#    producedItems:
+#      STR_ARVUS_GK: 1
+#  - name: STR_CRATED_CORVUS
+#    category: STR_CRAFT
+#    requires:
+#     - STR_DEATHWATCH
+#    space: 0
+#    time: 100
+#    cost: 1000
+#    requiredItems:
+#      STR_CRATED_CORVUS: 1
+#    producedItems:
+#      STR_CORVUS: 1
