@@ -588,11 +588,9 @@ research:
     points: 30
     dependencies:
       - STR_MASTER_CRAFTING
-
   - name: STR_LIGHT_BOLTERS
     dependencies:
       - STR_GENERALLOCK
-
 #*** armors ***
   - name: STR_THREAT_ONE #THREAT_ONE ARMOR PATH
     cost: 0
@@ -624,6 +622,12 @@ research:
       - STR_LASER_CANNON
       - STR_GREYKNIGHTS
   # marines
+  - name: STR_ADV_DROPPODS
+    cost: 500
+    points: 50
+    dependencies:
+      - STR_MARINES_STRATEGY
+      - STR_NOT_PRIMARIS
   - name: STR_SCOUTH_RESEARCH
     cost: 180
     points: 20
@@ -1830,6 +1834,22 @@ research:
       - STR_THREAT_ONE
   - name: STR_BERSERKER_CORPSE
     cost: 192
+    points: 50
+    needItem: true
+  - name: STR_FLAMER_CORPSE
+    cost: 100
+    points: 50
+    needItem: true
+  - name: STR_SCREAMER_CORPSE 
+    cost: 100
+    points: 50
+    needItem: true
+  - name: STR_SCREAMER_TERRORIST
+    cost: 100
+    points: 50
+    needItem: true
+  - name: STR_FLAMER_TERRORIST
+    cost: 100
     points: 50
     needItem: true
   - name: STR_SECTOID

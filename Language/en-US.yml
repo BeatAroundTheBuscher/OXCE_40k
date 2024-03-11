@@ -405,7 +405,14 @@ en-US:
   STR_CRAFT_RENTAL: "Craft Maintenance"
   STR_SALARIES: "Salaries"
   STR_BASE_MAINTENANCE: "Base maintenance"
-
+  STR_SOLDIER_GROUP_NOT_ALLOWED: "This soldier type is not allowed onboard."
+  STR_SOLDIER_GROUP_NOT_SAME: "This soldier type is not compatible with other soldiers onboard."
+  STR_COUNTRY_HAS_CANCELLED_A_SECRET_PACT: "{0} have regained clarity and return to the righteous path."
+  STR_COUNTRIES_HAVE_CANCELLED_A_SECRET_PACT: "{0} have regained clarity and  return to the righteous path."
+#BaseDestroyedState.cpp
+  STR_ALIEN_MISSILES_HAVE_DAMAGED_OUR_BASE: "Hostile Bombardment have damaged our base {0}"
+  STR_ALIEN_MISSILES_HAVE_DESTROYED_OUR_BASE: "Hostile Bombardment have destroyed our base {0}"
+  STR_GTGM: "G.T.G.M."
 #INVENTORY TEXT
   STR_GROUND: " "
   STR_RIGHT_HAND: " "
@@ -2346,6 +2353,8 @@ en-US:
   STR_LEMONRUSS_WEAPON: "Battle Cannon"
   STR_LEMANRUSS_BOLTER: "Heavy Bolter"
   STR_SKYRANGER: "DROPPODS"
+  STR_DROPPODS: "ADVANCED DROPPODS"
+  STR_ADV_DROPPODS: "Firestorm Droppods Requisition"
   STR_DROPPOD_UFOPEDIA: "{NEWLINE} Drop Pods are atmospheric assault transports primarily used by the Adeptus Astartes for orbital insertion and planetary assaults. Use by non-Astartes units such as Imperial Guardsmen is not recommended."
   STR_NEW_FIGHTER_TRANSPORTER: "Assault Transport Requisition"
   STR_LIGHTNING: "THUNDERHAWK"
@@ -2369,6 +2378,9 @@ en-US:
   STR_ARMY_P: "PRIMARIS DETACHMENT"
   STR_ARMY_P_UFOPEDIA: "{NEWLINE} The Detachment makes use of an repulsor and an impulsor capable of delivering a large force of primaris marines into battle."
 #TANKS & SYSTEMS
+  STR_DROPPOD: "Firestorm Droppod"
+  STR_DROPPOD_ARMOR: "Firestorm Droppod"
+  STR_DROPPOD_WEAPON: "Missile Pod"
   STR_LEMONRUSSB: "Heavy Emplacement"
   LEMONRUSS_ARMORB: "Heavy Emplacement"
   STR_EMPLACEMENT_TURRET: "Light Emplacement"
@@ -2491,6 +2503,7 @@ en-US:
   STR_SLAANESH_SOLDIER: "Noise Marine"
   STR_HAVOC_SLAANESH: "Noise Havoc"
   STR_FLAMER_TERRORIST: "Tzeentch Flamer"
+  STR_SCREAMER_TERRORIST: "Tzeentch Screamer"
   STR_TZEENTCH_LEADER: "Tzeentch Sorcerer"
   STR_TZEENTCH_SISTER: "Chaos Rubric Sister"
   STR_SLAANESH_SISTER: "Chaos Corrupted Sister"
@@ -2625,6 +2638,7 @@ en-US:
   STR_SLAANESHS_CORPSE: "Noise Marine Corpse"
   STR_CSENTINEL_CORPSE: "Chaos Sentinel Corpse"
   STR_FLAMER_CORPSE: "Tzeentch Flamer Corpse"
+  STR_SCREAMER_CORPSE: "Tzeentch Screamer Corpse"
   STR_SISTERS_CORPSE: "Rubric Sister Corpse"
   STR_SISTERT_CORPSE: "Corrupted Sister Corpse"
   STR_SISTERK_CORPSE: "Blood Sister Corpse"
@@ -2716,6 +2730,7 @@ en-US:
   MUTON_ARMORHAVOCS: "Noise Marine Havoc" #D
   STR_CHAOS_SENTINEL_ARMOR: "Chaos Sentinel" #D
   STR_FLAMER_ARMOR: "Tzeentch Flamer" #D
+  STR_SCREAMER_ARMOR: "Tzeentch Screamer" #D
   MUTON_ARMORTZS: "Tzeentch Sorcerer Corpse" #D
   STR_ADEPTAS_TZEENTCH: "Chaos Rubric Sister" #D
   #STR_SLAANESH_SISTER: "Chaos Corrupted Sister" #D
@@ -2767,6 +2782,7 @@ en-US:
   STR_SILACOID_ARMORT: "Chaos Daemon" #D
   BEHEMOTH_ARMOR: "Behemoth"
 #UFOPEDIA
+  STR_FEAR_IMMUNE_UFOPEDIA:  "{NEWLINE} Reports show this enemy is Fear Immune {NEWLINE} CODEX ARMOR DETAIL"
   STR_NOT_DONE: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   STR_BEHEMOTH_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   STR_NURGLE_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
@@ -2815,7 +2831,8 @@ en-US:
   STR_PRIEST_AUTOPSY_UFOPEDIA: "The Cult priests have been acting in concert with the highest levels of the Traitors leadership. While some cult priests served as advisors in matters of prophecy and the Warp, others acted as high priests under whom multiple cult bodies could be gathered together. All were schooled in the darkest arts of Warpcraft and were able to call upon and wield the most terrible of Warp-born powers and aberrant psyker abilities, making them one of the most dangerous classes outside of the Traitor Legions."
   STR_BEHEMOTH_AUTOPSY_UFOPEDIA: "One of the most dangerous threats to our forces. Once a marine in a Centurion Warsuit, seduced by Slaanesh and bound in their corrupted armor."
   STR_GREYKNIGHT_AUTOPSY_UFOPEDIA: "The Ordo Malleus assumes our chapter wields the corruption of the Chaos Gods, so they have sent this mysterious Loyalist Chapter to eliminate our forces."
-
+  STR_FLAMER_AUTOPSY_UFOPEDIA: "Flamers excel at leading assaults on defensive positions, since there is no fortification that can offer protection against their magical fire. They attack by unleashing roaring gouts of alchemical fire from their arms."                                               #
+  STR_SCREAMER_AUTOPSY_UFOPEDIA: "Screamers are very agile due to their ability of flight and possess a feral but cunning intellect. Though they are able to use magic-based attacks, their greatest weapons are their so-called Warp Jaws which allow them to chew through all kinds of solid matter, even the armoured hide of a space ship. In a direct confrontation there are few that can withstand their jaws or outrun their wings"                                               #
 
 #GENESTEALER CULTS
   STR_GENE_CULTIST_AUTOPSY: "Brood Brother Origin"
@@ -2890,6 +2907,8 @@ en-US:
   STR_CYBERDISC_AUTOPSY: "Winged Daemon Origin"
   STR_SECTOPOD_AUTOPSY: "Chaos Dreadnought Origin"
   STR_REAPER_AUTOPSY: "Chaos Juggernaut Origin"
+  STR_FLAMER_AUTOPSY: "Tzeentch Flamer Origin"
+  STR_SCREAMER_AUTOPSY: "Tzeentch Screamer Origin"
   STR_XENO_AUTOPSY: "Genestealer Origin"
   STR_CARNI_AUTOPSY: "Carnifex  Origin"
   STR_MEDI_KIT: "Apothecary Requisition"

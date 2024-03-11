@@ -1267,6 +1267,7 @@ alienMissions:
   - type: STR_FIREBASE_RETALIATION
     points: 0
     objective: 4
+    skipScoutingPhase: true
     operationType: 1    # from an existing alien base in the mission region
     spawnUfo: STR_GTGM # Spawned for the final retaliation run
     raceWeights: {}

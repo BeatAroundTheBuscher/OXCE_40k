@@ -1555,7 +1555,7 @@ alienDeployments:
     markerIcon: 37
     terrains:
       - ORK_BASE
-    script: ORK1SCRIPT
+    script: ORKBASESCRIPT1
     alienBase: true
     #objectiveType: 100 # not used until we have the tiles for it
     objectiveComplete: [STR_ORK_BASE_DESTROYED, 250]
@@ -1676,7 +1676,7 @@ alienDeployments:
     markerIcon: 37
     terrains:
       - ORK_BASE
-    script: ORK2SCRIPT
+    script: ORKBASESCRIPT2
     alienBase: true
     #objectiveType: 100 # not used until we have the tiles for it
     objectiveComplete: [STR_ORK_BASE_DESTROYED, 250]
@@ -1803,7 +1803,7 @@ alienDeployments:
     markerIcon: 37
     terrains:
       - ORK_BASE
-    script: ORK3SCRIPT
+    script: ORKBASESCRIPT3
     alienBase: true
     #objectiveType: 100 # not used until we have the tiles for it
     objectiveComplete: [STR_ORK_BASE_DESTROYED, 500]
@@ -1943,7 +1943,7 @@ alienDeployments:
     markerIcon: 37
     terrains:
       - ORK_BASE
-    script: ORK4SCRIPT
+    script: ORKBASESCRIPT4
     alienBase: true
     #objectiveType: 100 # not used until we have the tiles for it
     objectiveComplete: [STR_ORK_BASE_DESTROYED, 750]
@@ -2087,7 +2087,7 @@ alienDeployments:
     markerIcon: 37
     terrains:
       - ORK_BASE
-    script: ORK5SCRIPT
+    script: ORKBASESCRIPT5
     alienBase: true
     #objectiveType: 100 # not used until we have the tiles for it
     objectiveComplete: [STR_ORK_BASE_DESTROYED, 1000]
@@ -2211,7 +2211,7 @@ alienDeployments:
     markerIcon: 37
     terrains:
       - ORK_BASE
-    script: ORK4SCRIPT
+    script: ORKBASESCRIPT4
     alienBase: true
     #objectiveType: 100 # not used until we have the tiles for it
     objectiveComplete: [STR_ORK_BASE_DESTROYED, 750]

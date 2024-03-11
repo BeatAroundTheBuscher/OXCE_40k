@@ -709,6 +709,10 @@
     singleImage: true
     files:
       0: Resources/FOES/Inventory/CTZS.gif
+  - type: CTZSCREAMER.SPK #FOES INV         TEZENCH SORCERRER
+    singleImage: true
+    files:
+      0: Resources/FOES/Inventory/CTZSCREAMER.png
   - type: OBL.SPK #FOES INV       Obliterator
     singleImage: true
     files:
@@ -1491,7 +1495,14 @@
     height: 320
     files:
       0: Resources/GENE/GTURRET.png
- 
+
+  - type: DROPPOD.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Droppod/drop.png 
   - type: MUNI.PCK
     subX: 32
     subY: 40
@@ -2094,6 +2105,13 @@
     files:
       0: Resources/CPATH/PCHAOSC.png
 #FOES DR
+  - type: SCREAMER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 680
+    files:
+      0: Resources/FOES/battlesprite/SCREAMER.png
   - type: CTERMINATORN.PCK #CHAOS TERMINATOR NURGLE
     width: 512
     height: 720
@@ -3212,6 +3230,9 @@
       870: Resources/MKX-ARMOR/DWATCH/870.png
       871: Resources/MKX-ARMOR/DWATCH/871.png
       872: Resources/Foes/872.png
+      873: Resources/Foes/873.png
+      874: Resources/Droppod/874.png
+      
 #900-999 CHAPTER CHANGE
       1400: Resources_IG/Bigobs/traitor_chimera_multilaser.png
 #FLOOR
@@ -3687,6 +3708,14 @@
       760: Resources/CASSIUM/FL2.png
       761: Resources/CASSIUM/FR1.png
       762: Resources/CASSIUM/FR2.png
+      763: Resources/FOES/floorob_763.png
+      764: Resources/FOES/floorob_764.png
+      765: Resources/FOES/floorob_765.png
+      766: Resources/FOES/floorob_766.png
+      767: Resources/Droppod/floorob_767.png
+      768: Resources/Droppod/floorob_768.png
+      769: Resources/Droppod/floorob_769.png
+      770: Resources/Droppod/floorob_770.png
 #900-999 CHAPTER CHANGE
 # Traitor guard chimera corpses
       1400: Resources_IG/Floorobs/floorob_traitor_chimera_turret_0.png
@@ -4299,9 +4328,9 @@
       879: Resources/Thunderhawk/Thunderhawk_minimised.gif             #MARINES  1
       880: Resources/Thunderhawk/Thunderhawk_minimised.gif             #MARINES  2
       881: Resources/Thunderhawk/Thunderhawk_minimised.gif             #MARINES  3
-      882: Resources/Impulsor/repulsor_minimised.gif                   #MARINES  4
+      882: Resources/Impulsor/repulsor_minimised.gif                   #MARINES  4  < - sprite index
       883: Resources/Impulsor/repulsor_minimised.gif                   #MARINES  5
-      884: Resources/Impulsor/repulsor_minimised.gif                   #MARINES  6
+      884: Resources/Droppod/Droppod_minimised.gif                     #MARINES  6 DROPPODS NEW
       885: Resources/Xiphon/Xiphon_minimised.png                       #MARINES  7
       886: Resources/Impulsor/impulsor_minimised.gif                   #MARINES  8
       887: Resources/Impulsor/repulsor_minimised.gif                   #MARINES  9
@@ -4313,7 +4342,7 @@
       892: Resources/Thunderhawk/Thunderhawk_dogfight.gif                   #MARINES 3
       893: Resources/Impulsor/repulsor_dogfight.gif                         #MARINES 4
       894: Resources/Impulsor/repulsor_dogfight.gif                         #MARINES 5
-      895: Resources/Impulsor/repulsor_dogfight.gif                         #MARINES 6
+      895: Resources/Droppod/Droppod_dogfight.gif                           #MARINES 6  DROPPODS NEW
       896: Resources/Xiphon/Xiphon_dogfight.png                             #MARINES 7
       897: Resources/Impulsor/impulsor_dogfight.gif                         #MARINES 8
       898: Resources/Impulsor/repulsor_dogfight.gif                         #MARINES 9
@@ -4923,18 +4952,24 @@
     height: 200
     files:
       0: Resources/CODEX/1MB3.png
-  - type: 1MB2.SPK                 #UFOPEDIA WEAPONS
+  - type: 1MB4.SPK                 #UFOPEDIA WEAPONS
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/CODEX/1MB2.png
-  - type: 1MB3.SPK                 #UFOPEDIA WEAPONS
+      0: Resources/CODEX/1MB4.png
+  - type: 1MB5.SPK                 #UFOPEDIA WEAPONS
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/CODEX/1MB3.png
+      0: Resources/CODEX/1MB5.png
+  - type: 1MB6.SPK                 #UFOPEDIA WEAPONS
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/1MB6.png
   - type: 1BP.SPK                 #UFOPEDIA WEAPONS
     singleImage: true
     width: 320
@@ -7233,6 +7268,30 @@
     height: 200
     files:
       0: Resources/Eldar/UP171.png
+  - type: UP172.SPK #TZ SCREAMER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FOESPEDIA/UP172.png
+  - type: UP173.SPK #TZ SCREAMER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FOESPEDIA/UP173.png
+  - type: UP174.SPK #TZ FLAMER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FOESPEDIA/UP174.png
+  - type: UP175.SPK #TZ FLAMER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FOESPEDIA/UP175.png
   - type: GRAPHS.SPK #GRAPHICS MENU
     singleImage: true
     width: 320

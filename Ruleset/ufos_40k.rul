@@ -442,12 +442,14 @@
             STR_GENE_TURRET_SPAWNER: [0, 0]
  #TRAITOR GUARD
   - type: STR_GTGM #GROUND TO GROUND MISSELE
+    hitImage: BACK175.SCR  # funding bg
+    hitSound: 11          # ufo explosion (GEO.CAT)
     marker: 87
     markerLand: 87
     markerCrash: 87
     size: STR_VERY_SMALL
     modSprite: Interception_rocket
-    damageMax: 50
+    damageMax: 10
     speedMax: 10000
     accel: 100
     score: 10
@@ -788,46 +790,7 @@
         - name: CONSUFO
           width: 10
           length: 10
-  - type: STR_MUNI_UFO
-    size: STR_VERY_SMALL
-    modSprite: InterceptionUFO-01
-    damageMax: 160
-    speedMax: 1
-    accel: 3
-    power: 5
-    range: 65
-    score: 50
-    reload: 12
-    breakOffTime: 600
-    battlescapeTerrainData:
-      name: MUNIUFO
-      mapDataSets:
-        - BLANKS
-        - MUNI4
-      mapBlocks:
-        - name: MUNIUFO
-          width: 10
-          length: 10
-  - type: STR_MUNI2_UFO
-    size: STR_VERY_SMALL
-    modSprite: InterceptionUFO-01
-    damageMax: 160
-    speedMax: 1
-    accel: 3
-    power: 5
-    range: 65
-    score: 50
-    reload: 12
-    breakOffTime: 600
-    battlescapeTerrainData:
-      name: MUNIUFO2
-      mapDataSets:
-        - BLANKS
-        - MUNI5
-      mapBlocks:
-        - name: MUNIUFO2
-          width: 10
-          length: 10
+
   - type: STR_ARVUS_UFO
     size: STR_VERY_SMALL
     modSprite: InterceptionUFO-01
@@ -2558,16 +2521,24 @@
           width: 20
           length: 20
           items:
+            STR_SCREAMER_SPAWNER:
+              - [9, 4, 1]
             STR_ELERIUM_115:
               - [9, 3, 0]
               - [10, 3, 0]
+          fuseTimers:
+            STR_SCREAMER_SPAWNER: [0, 0]
         - name: CH03B
           width: 20
           length: 20
           items:
+            STR_SCREAMER_SPAWNER:
+              - [9, 4, 1]
             STR_ELERIUM_115:
               - [9, 3, 0]
               - [10, 3, 0]
+          fuseTimers:
+            STR_SCREAMER_SPAWNER: [0, 0]
   - type: STR_HARVESTER_T
     marker: 16
     markerLand: 21
@@ -2603,6 +2574,11 @@
               - [6, 10, 0]
               - [7, 10, 0]
               - [8, 10, 0]
+            STR_SCREAMER_SPAWNER:
+              - [15, 13, 2]
+              - [15, 5, 2]
+          fuseTimers:
+            STR_SCREAMER_SPAWNER: [0, 0]
         - name: CH04
           width: 20
           length: 20
@@ -2611,6 +2587,11 @@
               - [5, 7, 0]
               - [3, 10, 0]
               - [5, 10, 0]
+            STR_SCREAMER_SPAWNER:
+              - [15, 13, 2]
+              - [15, 5, 2]
+          fuseTimers:
+            STR_SCREAMER_SPAWNER: [0, 0]
   - type: STR_ABDUCTOR_T
     marker: 16
     markerLand: 21
@@ -2647,6 +2628,11 @@
               - [9, 4, 1]
               - [10, 4, 1]
               - [11, 4, 1]
+            STR_SCREAMER_SPAWNER:
+              - [12, 15, 3]
+              - [6, 15, 3]
+          fuseTimers:
+            STR_SCREAMER_SPAWNER: [0, 0]
         - name: CH05B
           width: 20
           length: 20
@@ -2656,6 +2642,11 @@
               - [9, 4, 1]
               - [10, 4, 1]
               - [11, 4, 1]
+            STR_SCREAMER_SPAWNER:
+              - [12, 15, 3]
+              - [6, 15, 3]
+          fuseTimers:
+            STR_SCREAMER_SPAWNER: [0, 0]
   - type: STR_TERROR_SHIP_T
     marker: 17
     markerLand: 22
@@ -2696,6 +2687,11 @@
               - [4, 15, 1]
               - [5, 15, 1]
               - [6, 15, 1]
+            STR_SCREAMER_SPAWNER:
+              - [5, 19, 2]
+              - [5, 10, 2]
+          fuseTimers:
+            STR_SCREAMER_SPAWNER: [0, 0]
   - type: STR_BATTLESHIP_T
     marker: 18
     markerLand: 23
@@ -2738,6 +2734,13 @@
               - [3, 12, 0]
               - [26, 12, 0]
               - [27, 12, 0]
+            STR_SCREAMER_SPAWNER:
+              - [6, 7, 3]
+              - [23, 6, 3]
+              - [21, 24, 3]
+              - [8, 23, 3]
+          fuseTimers:
+            STR_SCREAMER_SPAWNER: [0, 0]
   - type: STR_SUPPLY_SHIP_T
     marker: 17
     markerLand: 22
@@ -2774,6 +2777,11 @@
               - [9, 3, 0]
               - [10, 3, 0]
               - [11, 3, 0]
+            STR_SCREAMER_SPAWNER:
+              - [13, 13, 3]
+              - [5, 13, 3]
+          fuseTimers:
+            STR_SCREAMER_SPAWNER: [0, 0]
         - name: CH08B
           width: 20
           length: 30
@@ -2783,6 +2791,11 @@
               - [9, 3, 0]
               - [10, 3, 0]
               - [11, 3, 0]
+            STR_SCREAMER_SPAWNER:
+              - [13, 13, 3]
+              - [5, 13, 3]
+          fuseTimers:
+            STR_SCREAMER_SPAWNER: [0, 0]
         - name: CH08C
           width: 20
           length: 30
@@ -2792,6 +2805,11 @@
               - [9, 3, 0]
               - [10, 3, 0]
               - [11, 3, 0]
+            STR_SCREAMER_SPAWNER:
+              - [13, 13, 3]
+              - [5, 13, 3]
+          fuseTimers:
+            STR_SCREAMER_SPAWNER: [0, 0]
   - type: STR_HELLS_T
     marker: 17
     markerLand: 22
@@ -2832,6 +2850,11 @@
               - [12, 10, 1]
               - [9, 5, 1]
               - [10, 5, 1]
+            STR_SCREAMER_SPAWNER:
+              - [12, 10, 2]
+              - [6, 10, 2]
+          fuseTimers:
+            STR_SCREAMER_SPAWNER: [0, 0]
 ###
   - type: STR_HELLT_N #hell talon HK
     marker: 14

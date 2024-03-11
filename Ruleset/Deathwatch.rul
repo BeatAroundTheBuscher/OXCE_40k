@@ -671,7 +671,7 @@ armors:
     instantWoundRecovery: true
     allowInv: true
     spriteInv: DREADDWINV4
-    customArmorPreviewIndex: [31, 32, 33]
+    customArmorPreviewIndex: [680, 681, 682]
     storeItem: STR_NONE
     corpseGeo: STR_DREAD_CORPSE
     corpseBattle:
@@ -717,7 +717,7 @@ armors:
     instantWoundRecovery: true
     allowInv: true
     spriteInv: DREADDWINV
-    customArmorPreviewIndex: [20, 21, 22]
+    customArmorPreviewIndex: [677, 678, 679]
     storeItem: STR_DREAD2_ARMOR
     corpseGeo: STR_DREAD_CORPSE
     corpseBattle:
@@ -762,7 +762,7 @@ armors:
     spriteSheet: DWDREAD2.PCK
     allowInv: true
     spriteInv: DREADDWINV2
-    customArmorPreviewIndex: [34, 35, 36]
+    customArmorPreviewIndex: [683, 684, 685]
     storeItem: STR_DREAD3_ARMOR
     corpseGeo: STR_DREAD_CORPSE
     corpseBattle:
@@ -807,7 +807,7 @@ armors:
     instantWoundRecovery: true
     allowInv: true
     spriteInv: DREADDWINV3
-    customArmorPreviewIndex: [20, 21, 22]
+    customArmorPreviewIndex: [677, 678, 679]
     storeItem: STR_DREAD4_ARMOR
     corpseGeo: STR_DREAD_CORPSE
     corpseBattle:
@@ -853,7 +853,7 @@ armors:
     instantWoundRecovery: true
     allowInv: true
     spriteInv: DREADDWINV5
-    customArmorPreviewIndex: [26, 27, 28]
+    customArmorPreviewIndex: [686, 687, 688]
     storeItem: STR_DREAD5_ARMOR
     corpseGeo: STR_DREAD_CORPSE
     corpseBattle:
@@ -7895,23 +7895,23 @@ extraSprites:
   - type: DREADDWINV.SPK #DREAD INV
     singleImage: true
     files:
-      0: Resources/LAYER/ULTRAMARINE/DREADI.png
+      0: Resources/LAYER/DW/DREADDW.png
   - type: DREADDWINV2.SPK #DREAD INV
     singleImage: true
     files:
-      0: Resources/LAYER/ULTRAMARINE/DREADI2.png
+      0: Resources/LAYER/DW/DREADDW2.png
   - type: DREADDWINV3.SPK #DREAD INV
     singleImage: true
     files:
-      0: Resources/LAYER/ULTRAMARINE/DREADI3.png
+      0: Resources/LAYER/DW/DREADDW3.png
   - type: DREADDWINV4.SPK #DREAD INV
     singleImage: true
     files:
-      0: Resources/LAYER/ULTRAMARINE/DREADI4.png
+      0: Resources/LAYER/DW/DREADDW4.png
   - type: DREADDWINV5.SPK #DREAD INV
     singleImage: true
     files:
-      0: Resources/LAYER/ULTRAMARINE/DREADI5.png
+      0: Resources/LAYER/DW/DREADDW5.png
 
   - type: THUNDERFIREDW.PCK
     subX: 32

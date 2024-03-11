@@ -532,6 +532,17 @@ items:
     hiddenOnMinimap: true
     hitAnimation: 150
     hitSound: 788
+  - type: STR_SCREAMER_SPAWNER
+    spawnUnit: STR_SCREAMER_TERRORIST
+    spawnUnitFaction: 1 # 1: Enemy faction
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 255
+    recover: false
+    hiddenOnMinimap: true
+    hitAnimation: 150
+    hitSound: 788
 #---TRAITOR GUARD -----------------------------------------------------    
   - type: STR_CCASSIUM_BOLTER_LEFT1_SPAWNER
     spawnUnit: STR_CCASSIUM_BOLTER_LEFT1
@@ -711,6 +722,15 @@ items:
     recover: false
     hiddenOnMinimap: true
 #---vehiculum spawn-----------------------------------------------------
+  - type: STR_DROPPOD_SPAWNER
+    spawnUnit: STR_DROPPOD
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    hitAnimation: 1990
+    armor: 255
+
   - type: STR_CASSIUM_BOLTER_LEFT1_SPAWNER
     spawnUnit: STR_CASSIUM_BOLTER_LEFT1
     spawnUnitFaction: 0
@@ -2612,6 +2632,25 @@ items:
     clipSize: -1
     strengthApplied: true
     damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    flatRate: true
+  - type: STR_SCREAMER_WEAPON
+    bigSprite: 873
+    meleeAnimation: 76
+    weight: 3
+    floorSprite: 31
+    handSprite: 104
+    meleeSound: 48
+    clipSize: -1
+    strengthApplied: true
+    damageType: 7
+    power: 60
     accuracyMelee: 100
     tuMelee: 15
     battleType: 3
@@ -8580,6 +8619,26 @@ items:
     twoHanded: false
     fixedWeapon: true
     recover: false
+  - type: STR_DROPPOD_WEAPON # MANTICORE
+    size: 6
+    weight: 1
+    bigSprite: 874
+    fireSound: 702
+    bulletSprite: 0
+    power: 120
+    accuracySnap: 45
+    accuracyAimed: 110
+    tuSnap: 28
+    tuAimed: 48
+    battleType: 1
+    damageType: 3
+    hitSound: 708
+    hitAnimation: 0
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: 20
+    recover: false
 
   - type: STR_STORMTALON_WEAPON   #STORMTALON rocket                 2850
     categories: [STR_CAT_AUXILIARY]
@@ -9385,6 +9444,38 @@ items:
     clipSize: -1
     recover: false
 
+  - type: STR_DROPPOD_CORPSE #explod
+    size: 1
+    costSell: 30000
+    battleType: 11
+    power: 100
+    recover: false
+  - type: DP_CORPSE1 #Turret PREDATOR CORPSE
+    name: STR_DROPPOD_CORPSE
+    armor: 50
+    floorSprite: 767
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recoveryPoints: 30
+  - type: DP_CORPSE2
+    armor: 50
+    floorSprite: 768
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: DP_CORPSE3
+    armor: 50
+    floorSprite: 769
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: DP_CORPSE4
+    armor: 50
+    floorSprite: 770
+    invWidth: 0
+    invHeight: 0
+    recover: false
 #--------------------------------------------------------------- Corpse--------------------------------
   - type: STR_GENERATOR_CORPSE #explod
     size: 100
@@ -10852,7 +10943,7 @@ items:
     battleType: 11
     armor: 26
     listOrder: 19100
-  - type: STR_FLAMER_CORPSE            #TZEENTCH DEAMONS
+  - type: STR_FLAMER_CORPSE            #TZEENTCH DEAMONS 19202 
     size: 0.4
     costSell: 10000
     weight: 25
@@ -10863,6 +10954,39 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    listOrder: 19202  
+  - type: STR_SCREAMER_CORPSE                   #TZEENTCH DEAMONS 19203 
+    size: 0.8
+    costSell: 10000
+    battleType: 11
+    listOrder: 19203
+  - type: 8_SCREAMER1
+    name: STR_CORPSE
+    armor: 50
+    floorSprite: 763
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+    recoverCorpse: false
+  - type: 8_SCREAMER2
+    armor: 50
+    floorSprite: 764
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: 8_SCREAMER3
+    armor: 50
+    floorSprite: 765
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: 8_SCREAMER4
+    armor: 50
+    floorSprite: 766
+    invWidth: 0
+    invHeight: 0
+    recover: false
   - type: STR_FLOATER_CORPSE      #19600
     size: 0.4
     costSell: 20000
@@ -12211,6 +12335,12 @@ items:
     costSell: 60000
     listOrder: 21100
   - type: STR_FLAMER_TERRORIST        #21100
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 60000
+    listOrder: 21100
+  - type: STR_SCREAMER_TERRORIST       #21100
     size: 0.0
     recover: true
     liveAlien: true

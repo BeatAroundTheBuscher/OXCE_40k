@@ -1324,6 +1324,7 @@ items:
 #                 #                                        #                      #
 soldiers:
   - type: STR_ELDAR_AVANGER_MF
+    group: 4
     flagOffset: 100
     costSalary: 20000
     requires:
@@ -1402,6 +1403,7 @@ soldiers:
     rankBattleSprite: 302
     rankTinySprite: 217
   - type: STR_ELDAR_SEER_F
+    group: 4
     flagOffset: 100
     costSalary: 20000
     requires:
@@ -1481,6 +1483,7 @@ soldiers:
     rankBattleSprite: 296
     rankTinySprite: 211
   - type: STR_ELDAR_BANSHEE_F
+    group: 4
     flagOffset: 100
     costSalary: 20000
     requires:
@@ -1559,6 +1562,7 @@ soldiers:
     rankBattleSprite: 284
     rankTinySprite: 199
   - type: STR_ELDAR_REAPER_M
+    group: 4
     flagOffset: 100
     costSalary: 20000
     requires:
@@ -1637,6 +1641,7 @@ soldiers:
     rankBattleSprite: 290
     rankTinySprite: 205
   - type: STR_ELDAR_SCORPION_M
+    group: 4
     flagOffset: 100
     costSalary: 20000
     requires:
@@ -1715,6 +1720,7 @@ soldiers:
     rankBattleSprite: 278
     rankTinySprite: 193
   - type: STR_ELDAR_M
+    group: 4
     flagOffset: 100
     costBuy: 40000
     costSalary: 20000
@@ -1795,6 +1801,7 @@ soldiers:
     rankBattleSprite: 266
     rankTinySprite: 181
   - type: STR_ELDAR_F
+    group: 4
     flagOffset: 100
     costBuy: 40000
     costSalary: 20000
@@ -1875,6 +1882,7 @@ soldiers:
     rankBattleSprite: 266
     rankTinySprite: 181
   - type: STR_ELDAR_FALLEN
+    group: 4
     costSalary: 20000
     minStats:
       tu: 60
@@ -1933,7 +1941,7 @@ soldiers:
     rankSprite: 889
     rankBattleSprite: 272
     rankTinySprite: 187
-soldierTransformation:  ##############NOT DONE
+soldierTransformation:
   - name: STR_PROMOTE_TO_SCORPION
     requiresBuyBaseFunc: [ASPECT]
     requires:
