@@ -60,7 +60,7 @@ craftWeapons:
     projectileSpeed: 8
     weaponType: 3
 #ELDAR
-  - type: STR_LANCE_CANNON_UC        #R 30      A 10        D70      Acc  45
+  - type: STR_LANCE_CANNON_UC        #R 30      A 10        D70      Acc  45                700max    315
     sprite: 762
     sound: 8
     damage: 70
@@ -73,7 +73,7 @@ craftWeapons:
     rearmRate: 50
     launcher: STR_LANCE_CANNON
     projectileType: 4
-  - type: STR_HEAVYDSCYTHES_UC               #R 50       A 4        D100     Acc 75
+  - type: STR_HEAVYDSCYTHES_UC               #R 50       A 4        D100     Acc 75         400max    300
     sprite: 764
     sound: 5
     damage: 100
@@ -86,13 +86,13 @@ craftWeapons:
     launcher: STR_HEAVYDSCYTHES
     projectileType: 5
     projectileSpeed: 8
-  - type: STR_COBRA_CANNON_UC      #R 40      A 6         D300     Acc 30
+  - type: STR_COBRA_CANNON_UC      #R 40      A 6         D300     Acc 50                   1800max   900
     weaponType: 1
     sprite: 763
     sound: 32
     damage: 300
     range: 40
-    accuracy: 30
+    accuracy: 50
     reloadCautious: 48
     reloadStandard: 48
     reloadAggressive: 48
@@ -100,7 +100,7 @@ craftWeapons:
     launcher: STR_COBRA_CANNON
     projectileType: 2
     projectileSpeed: 50
-  - type: STR_DSTARCANNON_UC         #R 40      A 5         D120     Acc 30
+  - type: STR_DSTARCANNON_UC         #R 40      A 5         D120     Acc 30                   600max  180
     sprite: 765
     sound: 9
     damage: 120
@@ -113,7 +113,20 @@ craftWeapons:
     rearmRate: 50
     launcher: STR_DSTARCANNON
     projectileType: 5
-
+  - type: STR_SCORPION_PULSAR_UC      #R 40      A 6         D200     Acc 30                  1200max   400
+    weaponType: 1
+    sprite: 767
+    sound: 32
+    damage: 200
+    range: 40
+    accuracy: 30
+    reloadCautious: 48
+    reloadStandard: 48
+    reloadAggressive: 48
+    ammoMax: 6
+    launcher: STR_SCORPION_PULSAR
+    projectileType: 4
+#IMPERIUM
   - type: STR_STINGRAY               #R 40       A 6        D 60     Acc 65
     sprite: 0
     sound: 5
@@ -557,6 +570,12 @@ items: #craft Related
     costSell: 22500
     transferTime: 48
     listOrder: 1853
+  - type: STR_SCORPION_PULSAR                   #S 1.5
+    categories: [ STR_CRAFT_WEAPONS]
+    size: 1.5
+    costSell: 22500
+    transferTime: 48
+    listOrder: 1853 
 manufacture:
   - name: STR_FUSION_BALL_LAUNCHER
     #category: STR_CRAFT_WEAPON

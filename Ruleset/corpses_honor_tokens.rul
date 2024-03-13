@@ -19,7 +19,6 @@ items:
     size: 0
     listOrder: 18510
 
-
   - type: STR_PRIEST_CORPSE
     recoveryTransformations:
       STR_KILLPOINT_TOKEN: [12]
@@ -29,6 +28,11 @@ items:
     recoveryTransformations:
       STR_KILLPOINT_TOKEN: [6]
       STR_FLAMER_CORPSE: [1]
+      
+  - type: STR_SCREAMER_CORPSE
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [6]
+      STR_SCREAMER_CORPSE: [1]
 
   - type: STR_CHRYSSALID_CORPSE
     recoveryTransformations:

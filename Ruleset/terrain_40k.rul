@@ -1,4 +1,21 @@
 ﻿facilities:
+#*** Upgraded barracks that allows basic training of troops
+  - type: STR_GUARD_BARRACKS
+    requires:
+      - STR_IMPERIAL_GUARD_BASIC_TRAINING
+    buildOverFacilities:
+      - STR_LIVING_QUARTERS
+    requiresBaseFunc: [BASE]
+    provideBaseFunc: [IMPERIUM]
+    placeSound: 98
+    spriteShape: 1
+    spriteFacility: 18
+    buildCost: 500000
+    buildTime: 16
+    monthlyCost: 15000
+    personnel: 50
+    mapName: XBASE_01
+    trainingRooms: 10
   - type: STR_ACCESS_LIFT
     placeSound: 98
     spriteShape: 2
@@ -10,6 +27,7 @@
     monthlyCost: 4000
     mapName: XBASE_00
   - type: STR_LIVING_QUARTERS
+    canBeBuiltOver: true
     placeSound: 98
     requiresBaseFunc: [BASE]
     provideBaseFunc: [IMPERIUM]
@@ -795,7 +813,7 @@
         size: [4, 4, 1] # if the craft is going on z = 1, the height here needs to be 1
       - type: ceiling
         size: [4, 4, 3] # x and y need to match the size of the facility, and all of the heights should add up to the deployment height
-        terrain: VULTURE4X4 # needs a 40x40 map to match the outpost
+        terrain: THUNDERBOLT4X4 # needs a 40x40 map to match the outpost
         blocks: [0]
     listOrder: 800
   - type: STR_OUTPOST_GK
@@ -1415,7 +1433,7 @@ terrains:
         length: 40
         groups: 6
 
-  - name: TRAITOR_GUARD_OUTPOST
+  - name: TRAITOR_GUARD_OUTPOST   #NOT USED
     mapDataSets:
       - BLANKS
       - TRAITOR_GUARD_ROADS
@@ -1495,7 +1513,7 @@ terrains:
         width: 20
         length: 20
         groups: 9
-      - name: TRAITOR_GUARD_OUTPOST14
+      - name: TRAITOR_GUARD_OUTPOST14 #10
         width: 10
         length: 10
         groups: 8
@@ -1515,7 +1533,7 @@ terrains:
         width: 10
         length: 10
         groups: 8
-      - name: TRAITOR_GUARD_OUTPOST19
+      - name: TRAITOR_GUARD_OUTPOST19 #15
         width: 10
         length: 10
         groups: 8
@@ -1543,7 +1561,7 @@ terrains:
         width: 10
         length: 10
         groups: 12
-      - name: TRAITOR_GUARD_OUTPOST23
+      - name: TRAITOR_GUARD_OUTPOST23  #20
         width: 30
         length: 30
         groups: 7
@@ -1553,8 +1571,15 @@ terrains:
             - [17, 15, 0]
         fuseTimers:
           STR_TRAITOR_GUARD_TURRET_SPAWNER: [0, 0]
-
-  - name: TRAITOR_GUARD_FIRING_RANGE
+      - name: TRAITOR_GUARD_OUTPOST24BOMB #21
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+  - name: TRAITOR_GUARD_FIRING_RANGE   #NOT USED
     mapDataSets:
       - BLANKS
       - TRAITOR_GUARD_ROADS
@@ -1580,6 +1605,126 @@ terrains:
         fuseTimers:
           STR_TRAITOR_GUARD_TARGET_SPAWNER: [0, 0]
 
+  - name: TRAITORGUARDBASE
+    mapDataSets:
+      - BLANKS
+      - TRAITORGUARDBASE1
+      - TRAITORGUARDBASE2
+      - TRAITORGUARDBASE3
+      - TRAITORGUARDBASE4
+      - HIDRACBASE
+      - C_PODS
+      - TRAITORGUARDBASE5
+    mapBlocks:
+      - name: TRAITORGUARDBASE00 #road
+        width: 10
+        length: 10
+        groups: 2
+      - name: TRAITORGUARDBASE01 #road
+        width: 10
+        length: 10
+        groups: 3
+      - name: TRAITORGUARDBASE02 #road
+        width: 10
+        length: 10
+        groups: 4
+      - name: TRAITORGUARDBASE03 #Firing range 20x20
+        width: 20
+        length: 20
+        items:
+          STR_REQUISITION_BOUNTY_250K:
+            - [0, 0, 0]
+      - name: TRAITORGUARDBASE04 #10x10 destroyed
+        width: 10
+        length: 10
+        groups: [0, 1, 9]
+      - name: TRAITORGUARDBASE05 #20x20 HQ
+        width: 20
+        length: 20
+        groups: 5
+        items:
+          STR_TRAITOR_GUARD_TURRET_SPAWNER:
+            - [8, 18, 0]
+            - [18, 11, 0]
+        fuseTimers:
+          STR_TRAITOR_GUARD_TURRET_SPAWNER: [0, 0]
+      - name: TRAITORGUARDBASE06 #20x20 HQ
+        width: 20
+        length: 20
+        groups: 5
+        items:
+          STR_TRAITOR_GUARD_TURRET_SPAWNER:
+            - [6, 18, 0]
+            - [18, 6, 0]
+        fuseTimers:
+          STR_TRAITOR_GUARD_TURRET_SPAWNER: [0, 0]
+      - name: TRAITORGUARDBASE07 #20x20 destroyed
+        width: 20
+        length: 20
+        groups: 9
+      - name: TRAITORGUARDBASE08 #20x20 HQ
+        width: 20
+        length: 20
+        groups: 5
+        items:
+          STR_TRAITOR_GUARD_TURRET_SPAWNER:
+            - [14, 16, 0]
+            - [15, 5, 0]
+        fuseTimers:
+          STR_TRAITOR_GUARD_TURRET_SPAWNER: [0, 0]
+      - name: TRAITORGUARDBASE09 #20x20 BUNKER
+        width: 20
+        length: 20
+        groups: 9
+      - name: TRAITORGUARDBASE10 #10x10 BUNKER
+        width: 10
+        length: 10
+      - name: TRAITORGUARDBASE11 #10x10 BUNKER
+        width: 10
+        length: 10
+      - name: TRAITORGUARDBASE12 #10x10 destroyed
+        width: 10
+        length: 10
+      - name: TRAITORGUARDBASE13 #10x10 AMMO
+        width: 10
+        length: 10
+      - name: TRAITORGUARDBASE14 #10x10 BUNKER
+        width: 10
+        length: 10
+      - name: TRAITORGUARDBASE15  #CRANE 3X3
+        width: 30
+        length: 30
+      - name: TRAITORGUARDBASE16  #SENTINEL HANGAR
+        width: 10
+        length: 10
+        groups: 10
+        items:
+          STR_TRAITOR_GUARD_SENTINEL_SPAWNER:
+            - [2, 2, 0]
+            - [6, 2, 0]
+            - [2, 6, 0]
+            - [6, 6, 0]
+        fuseTimers:
+          STR_TRAITOR_GUARD_SENTINEL_SPAWNER: [0, 0]
+      - name: TRAITORGUARDBASE17  #CRANE
+        width: 10
+        length: 10
+      - name: TRAITORGUARDBASE18 #HANGAR
+        width: 20
+        length: 20
+      - name: TRAITORGUARDBASE19 #30x30
+        width: 30
+        length: 30
+        items:
+          STR_CHAOSTURRET_SPAWNER:
+            - [28, 27, 0]
+            - [28, 0, 0]
+            - [0, 27, 0]
+        fuseTimers:
+          STR_CHAOSTURRET_SPAWNER: [0, 0]
+      - name: TRAITORGUARDBASE20BOMB
+        width: 10
+        length: 10
 
   - name: TOMB
     enviroEffects: STR_URBAN_ENVIRO
@@ -1763,7 +1908,8 @@ terrains:
       - name: ELDARGATE2
         width: 30
         length: 30
-  - name: CULTA
+  - name: CULTA           #FARM            BOMBARDMENT DONE 21
+    script: FARM
     mapDataSets:
       - BLANKS
       - CULTIVAT
@@ -1837,9 +1983,18 @@ terrains:
         width: 30
         length: 30
         groups: [12]
-  - name: ACULTA          #GOTHIC NORMAL
+      - name: CULTA21BOMB  #21
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+        groups: [70]
+  - name: ACULTA          #GOTHIC NORMAL   BOMBARDMENT DONE 21
     enviroEffects: STR_FOREST_ENVIRO
-    script: FARM
+    script: GOTHIC
     mapDataSets:
       - BLANKS
       - GOTHIC
@@ -1909,7 +2064,7 @@ terrains:
       - name: AULTA18
         width: 10
         length: 10
-      - name: AULTA19_2X2P
+      - name: AULTA19_2X2P 
         width: 20
         length: 20
         groups: [11]
@@ -1917,9 +2072,18 @@ terrains:
         width: 30
         length: 30
         groups: [12]
-  - name: ACULTASAND      #GOTHIC SAND
+      - name: AULTA21BOMB  #21
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+        groups: [70]
+  - name: ACULTASAND      #GOTHIC SAND     BOMBARDMENT DONE 21
     enviroEffects: STR_DESERT_ENVIRO
-    script: FARM
+    script: GOTHIC
     mapDataSets:
       - BLANKS
       - GOTHICSAND
@@ -1997,8 +2161,18 @@ terrains:
         width: 30
         length: 30
         groups: [12]
-  - name: ACULTASNOW      #GOTHIC SNOW
+      - name: AULTA21BOMB  #21
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+        groups: [70]
+  - name: ACULTASNOW      #GOTHIC SNOW     BOMBARDMENT DONE 21
     enviroEffects: STR_SNOW_ENVIRO
+    script: GOTHIC
     ambience: 896
     ambientVolume: 0.25
     script: FARM
@@ -2079,7 +2253,16 @@ terrains:
         width: 30
         length: 30
         groups: [12]
-  - name: POLAR           #NEW POLARHR
+      - name: AULTA21BOMB  #21
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+        groups: [70]
+  - name: POLAR           #NEW POLARHR     BOMBARDMENT DONE 21
     enviroEffects: STR_SNOW_ENVIRO
     ambience: 891 #artic
     ambientVolume: 0.25
@@ -2146,7 +2329,7 @@ terrains:
                 amount: 3
                 mixed: true
                 itemList: [STR_RIFLE_CLIP_AP, STR_RIFLE_CLIP_EX, STR_PISTOL_CLIP_EX, STR_PISTOL_CLIP_AP]
-      - name: POLAR14
+      - name: POLAR14 #15
         width: 20
         length: 20
         items:
@@ -2192,15 +2375,23 @@ terrains:
             - [8, 11, 0]
             - [8, 12, 0]
             - [8, 12, 0]
-      - name: POLAR15_2X2P
+      - name: POLAR15_2X2P   #19
         width: 20
         length: 20
         groups: [11]
-      - name: POLAR16_3X3P
+      - name: POLAR16_3X3P    #20
         width: 30
         length: 30
         groups: [12]
-  - name: JUNGLE
+      - name: POLAR17BOMB  #21
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 1]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+  - name: JUNGLE          #                BOMBARDMENT DONE 19
     enviroEffects: STR_FOREST_ENVIRO
     ambience: 887 #jungle
     ambientVolume: 0.25
@@ -2249,7 +2440,7 @@ terrains:
       - name: JUNGLE11
         width: 10
         length: 10
-      - name: JUNGLE12
+      - name: JUNGLE12 #12
         width: 10
         length: 10
         randomizedItems:
@@ -2273,7 +2464,7 @@ terrains:
             - [4, 4, 0]
             - [4, 5, 0]
             - [4, 5, 0]
-      - name: JUNGLE12
+      - name: JUNGLE12 #14
         width: 10
         length: 10
         items:
@@ -2295,7 +2486,7 @@ terrains:
             - [4, 4, 0]
             - [4, 5, 0]
             - [4, 5, 0]
-      - name: JUNGLE12
+      - name: JUNGLE12 #16
         width: 10
         length: 10
         items:
@@ -2315,7 +2506,15 @@ terrains:
         width: 30
         length: 30
         groups: [12]
-  - name: FOREST
+      - name: JUNGLE15BOMB  #19
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+  - name: FOREST          #                BOMBARDMENT DONE 19
     enviroEffects: STR_FOREST_ENVIRO
     script: FOREST
     mapDataSets:
@@ -2361,7 +2560,7 @@ terrains:
       - name: FOREST11
         width: 20
         length: 20
-      - name: FOREST12
+      - name: FOREST12 #12
         width: 20
         length: 20
         randomizedItems:
@@ -2385,7 +2584,7 @@ terrains:
             - [8, 11, 0]
             - [8, 12, 0]
             - [8, 12, 0]
-      - name: FOREST12
+      - name: FOREST12  #14
         width: 20
         length: 20
         items:
@@ -2407,7 +2606,7 @@ terrains:
             - [8, 11, 0]
             - [8, 12, 0]
             - [8, 12, 0]
-      - name: FOREST12
+      - name: FOREST12 #16
         width: 20
         length: 20
         items:
@@ -2427,7 +2626,16 @@ terrains:
         width: 30
         length: 30
         groups: [12]
-  - name: MOUNT # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
+      - name: FOREST16BOMB  #19
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+  - name: MOUNT # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS   15
+    script: MOUNT
     enviroEffects: STR_URBAN_ENVIRO
     mapDataSets:
       - BLANKS
@@ -2483,7 +2691,16 @@ terrains:
         width: 30
         length: 30
         groups: [12]
+      - name: MOUNT15BOMB  #15
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
   - name: MOUNTSNOW # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
+    script: MOUNT
     enviroEffects: STR_SNOW_ENVIRO
     ambience: 891 #artic
     ambientVolume: 0.25
@@ -2541,7 +2758,16 @@ terrains:
         width: 30
         length: 30
         groups: [12]
+      - name: MOUNT15BOMB  #15
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
   - name: MOUNTMUDD # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
+    script: MOUNT
     mapDataSets:
       - BLANKS
       - MOUNTMUD
@@ -2596,7 +2822,16 @@ terrains:
         width: 30
         length: 30
         groups: [12]
+      - name: MOUNT15BOMB  #15
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
   - name: MOUNTGRASS # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
+    script: MOUNT
     mapDataSets:
       - BLANKS
       - MOUNTGRASS
@@ -2651,7 +2886,16 @@ terrains:
         width: 30
         length: 30
         groups: [12]
+      - name: MOUNT15BOMB  #15
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
   - name: MOUNTSAND # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
+    script: MOUNT
     enviroEffects: STR_DESERT_ENVIRO
     mapDataSets:
       - BLANKS
@@ -2707,7 +2951,16 @@ terrains:
         width: 30
         length: 30
         groups: [12]
+      - name: MOUNT15BOMB  #15
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
   - name: MOUNTROCK # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
+    script: MOUNT
     enviroEffects: STR_FOREST_ENVIRO
     mapDataSets:
       - BLANKS
@@ -2764,6 +3017,7 @@ terrains:
         length: 30
         groups: [12]
   - name: MOUNTTROP # MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS MOUNTAINS
+    script: MOUNT
     enviroEffects: STR_FOREST_ENVIRO
     ambience: 888 #swamp
     ambientVolume: 0.25
@@ -2821,7 +3075,16 @@ terrains:
         width: 30
         length: 30
         groups: [12]
-  - name: PLAINS #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS             BOMBARDMENT DONE
+      - name: MOUNT15BOMB  #15
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+  - name: PLAINS #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS              1 BOMBARDMENT DONE
+    script: PLAINS
     enviroEffects: STR_URBAN_ENVIRO
     mapDataSets:
       - BLANKS
@@ -2877,17 +3140,17 @@ terrains:
         width: 30
         length: 30
         groups: [12]
-      - name: PLAINS15BOMB
+      - name: PLAINS15BOMB  #15
         width: 10
         length: 10
         items:
           STR_BOMBARDMENT:
             - [4, 4, 0]
         fuseTimers:
-          STR_BOMBARDMENT: [0, 0]
-        groups: [77]
-  - name: PLAINSSNOW #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
+          STR_BOMBARDMENT: [-2, -2]
+  - name: PLAINSSNOW #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS          1 BOMBARDMENT DONE
     enviroEffects: STR_SNOW_ENVIRO
+    script: PLAINS
     ambience: 891 #artic
     ambientVolume: 0.25
     mapDataSets:
@@ -2944,7 +3207,16 @@ terrains:
         width: 30
         length: 30
         groups: [12]
+      - name: PLAINS15BOMB  #15
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
   - name: PLAINSMUDD #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
+    script: PLAINS
     mapDataSets:
       - BLANKS
       - MOUNTMUD
@@ -2999,7 +3271,17 @@ terrains:
         width: 30
         length: 30
         groups: [12]
+      - name: PLAINS15BOMB  #15
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+        groups: [77]
   - name: PLAINSGRASS #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
+    script: PLAINS
     enviroEffects: STR_FOREST_ENVIRO
     mapDataSets:
       - BLANKS
@@ -3055,7 +3337,17 @@ terrains:
         width: 30
         length: 30
         groups: [12]
+      - name: PLAINS15BOMB  #15
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+        groups: [77]
   - name: PLAINSSAND #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
+    script: PLAINS
     enviroEffects: STR_DESERT_ENVIRO
     mapDataSets:
       - BLANKS
@@ -3111,7 +3403,17 @@ terrains:
         width: 30
         length: 30
         groups: [12]
+      - name: PLAINS15BOMB  #15
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+        groups: [77]
   - name: PLAINSROCK #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
+    script: PLAINS
     enviroEffects: STR_FOREST_ENVIRO
     mapDataSets:
       - BLANKS
@@ -3167,7 +3469,17 @@ terrains:
         width: 30
         length: 30
         groups: [12]
+      - name: PLAINS15BOMB  #15
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+        groups: [77]
   - name: PLAINSTROP #PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS PLAINS
+    script: PLAINS
     enviroEffects: STR_FOREST_ENVIRO
     ambience: 888 #swamp
     ambientVolume: 0.25
@@ -3225,7 +3537,15 @@ terrains:
         width: 30
         length: 30
         groups: [12]
-  - name: DESERT
+      - name: PLAINS15BOMB  #15
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+  - name: DESERT # BOMBARDMENT DONE          DONE 19
     enviroEffects: STR_DESERT_ENVIRO
     mapDataSets:
       - BLANKS
@@ -3233,7 +3553,7 @@ terrains:
       - 01BUNKERSAND
     script: DESERT
     mapBlocks:
-      - name: DESERT00
+      - name: DESERT00 #1
         width: 10
         length: 10
         groups: [0, 1]
@@ -3263,7 +3583,7 @@ terrains:
       - name: DESERT08
         width: 10
         length: 10
-      - name: DESERT09
+      - name: DESERT09 #9
         width: 20
         length: 20
       - name: DESERT10
@@ -3296,7 +3616,7 @@ terrains:
             - [7, 7, 0]
             - [7, 8, 0]
             - [7, 8, 0]
-      - name: DESERT12
+      - name: DESERT12 #14
         width: 20
         length: 20
         items:
@@ -3338,7 +3658,15 @@ terrains:
         width: 30
         length: 30
         groups: [12]
-  - name: REFINERY
+      - name: DESERT15BOMB #19
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+  - name: REFINERY # BOMBARDMENT DONE
     enviroEffects: STR_URBAN_ENVIRO
     ambience: 889 #Pit
     ambientVolume: 0.25
@@ -3436,6 +3764,14 @@ terrains:
         width: 30
         length: 30
         groups: 4
+      - name: FUELD20BOMB  #20
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
   - name: REFINERY_DESTRUCTIBLE
     enviroEffects: STR_URBAN_ENVIRO
     ambience: 889 #Pit
@@ -3553,7 +3889,7 @@ terrains:
             - [5, 3, 1]
         fuseTimers:
           STR_PIPELINE_SPAWNER: [0, 0]
-  - name: BDAIRPORT
+  - name: BDAIRPORT # BOMBARDMENT DONE
     enviroEffects: STR_URBAN_ENVIRO
     mapDataSets:
       - BLANKS
@@ -3648,6 +3984,14 @@ terrains:
       - name: HANGAR19
         width: 30
         length: 30
+      - name: HANGAR20BOMB  #20
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
   - name: BDAIRPORT_DESTRUCTIBLE
     enviroEffects: STR_URBAN_ENVIRO
     mapDataSets:
@@ -3748,7 +4092,7 @@ terrains:
       - name: HANGAR19
         width: 30
         length: 30
-  - name: MUNITORIUM
+  - name: MUNITORIUM # BOMBARDMENT DONE
     enviroEffects: STR_URBAN_ENVIRO
     mapDataSets:
       - BLANKS
@@ -3888,6 +4232,14 @@ terrains:
             - [12, 12, 0]
         fuseTimers:
           STR_MUNITORIUM_SPAWNER: [0, 0]
+#      - name: MUNI20BOMB  #20
+#        width: 10
+#        length: 10
+#        items:
+#          STR_BOMBARDMENT:
+#            - [4, 4, 0]
+#        fuseTimers:
+#          STR_BOMBARDMENT: [-2, -2]
 #ELDAR-----------------------------
   - name: ELDARACESS
     mapDataSets:
@@ -4134,6 +4486,14 @@ terrains:
             - [24, 12, 3]
         fuseTimers:
           STR_TARANTULAE_SPAWNER: [0, 0]
+      - name: CITY20BOMB  #20
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 3]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
   - name: RIG
     enviroEffects: STR_URBAN_ENVIRO
     mapDataSets:
@@ -4214,6 +4574,14 @@ terrains:
       - name: RIG19
         width: 30
         length: 30
+      - name: RIG20BOMB  #20
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 3]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
 
   - name: INDUSTRIALURBAN # <---- UFO 2000
     mapDataSets:
@@ -4300,23 +4668,31 @@ terrains:
         width: 10
         length: 10
         groups: 9
-      - name: INDUSTRIALURBAN16
+      - name: INDUSTRIALURBAN22BOMB  #22
         width: 10
         length: 10
-        groups: 7
         items:
-          STR_CULTIST_SUMMONING_LEVEL_1_TIMER:
-            - [0, 0, 0]
-          STR_CULTIST_SUMMONING_LEVEL_1_TICKER:
-            - [0, 0, 0]
-          STR_CULTIST_RITUALIST_SUMMONING_SPAWNER:
-            - [4, 3, 0]
-            - [6, 6, 0]
-        randomizedItems:
-          - position: [4, 4, 0]
-            amount: 1
-            itemList:
-              - STR_CULTIST_SUMMONING_DAEMON_SPAWNER
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+#      - name: INDUSTRIALURBAN16
+#        width: 10
+#        length: 10
+#        groups: 7
+#        items:
+#          STR_CULTIST_SUMMONING_LEVEL_1_TIMER:
+#            - [0, 0, 0]
+#         STR_CULTIST_SUMMONING_LEVEL_1_TICKER:
+#            - [0, 0, 0]
+#          STR_CULTIST_RITUALIST_SUMMONING_SPAWNER:
+#            - [4, 3, 0]
+#            - [6, 6, 0]
+#        randomizedItems:
+#          - position: [4, 4, 0]
+#            amount: 1
+#            itemList:
+#              - STR_CULTIST_SUMMONING_DAEMON_SPAWNER
 
   - name: INDUSTRIALURBANDIO
     mapDataSets:
@@ -4395,10 +4771,6 @@ terrains:
         width: 10
         length: 10
         groups: 1
-      #- name: INDUSTRIALURBANCULT19 # repeat of 01?
-      #  width: 20
-      #  length: 20
-      #  groups: 9
       - name: INDUSTRIALURBANCULTDIO19 # empty w/tires
         width: 10
         length: 10
@@ -4406,20 +4778,20 @@ terrains:
         width: 20
         length: 20
         groups: 5
-      - name: INDUSTRIALURBANCULTDIO20 # broken crane
+      - name: INDUSTRIALURBANCULTDIO20 # broken crane                     21
         width: 10
         length: 10
-      - name: INDUSTRIALURBANCULT21 # tower for sniper
+      - name: INDUSTRIALURBANCULT21 # tower for sniper                    22
         width: 10
         length: 10
         groups: [0, 10]
-      - name: INDUSTRIALURBANCULTDIO21 # phone booth+lamp
+      - name: INDUSTRIALURBANCULTDIO21 # phone booth+lamp                 23
         width: 10
         length: 10
-      - name: INDUSTRIALURBANCULT30 # new 2-story warehouse
+      - name: INDUSTRIALURBANCULT30 # new 2-story warehouse               24
         width: 10
         length: 10
-      - name: INDUSTRIALURBANCULT30A # with cult icons
+      - name: INDUSTRIALURBANCULT30A # with cult icons                    25
         width: 10
         length: 10
         groups: 8
@@ -4448,10 +4820,10 @@ terrains:
             itemList: *cultistSacrificeSpawnerItems
         #items: [1, 2, 1], [3, 1, 1], [6, 1, 1]
         # [2, 3, 1], [4, 2, 1], [6, 2, 1]
-      - name: INDUSTRIALURBANCULT31 # 2x2 admin building
+      - name: INDUSTRIALURBANCULT31 # 2x2 admin building                    26
         width: 20
         length: 20
-      - name: INDUSTRIALURBANCULT31A # with altar
+      - name: INDUSTRIALURBANCULT31A # with altar                           27
         width: 20
         length: 20
         groups: 8
@@ -4475,10 +4847,10 @@ terrains:
           - position: [17, 7, 0]
             amount: 1
             itemList: *cultistSacrificeSpawnerItems
-      - name: INDUSTRIALURBANCULT32 # castle warehouse
+      - name: INDUSTRIALURBANCULT32 # castle warehouse                      28
         width: 10
         length: 10
-      - name: INDUSTRIALURBANCULT32A # with cult room
+      - name: INDUSTRIALURBANCULT32A # with cult room                       29
         width: 10
         length: 10
         groups: 8
@@ -4502,10 +4874,10 @@ terrains:
           - position: [6, 4, 0]
             amount: 1
             itemList: *cultistSacrificeSpawnerItems
-      - name: INDUSTRIALURBANCULT33 # wood-fence-surrounded warehouse
+      - name: INDUSTRIALURBANCULT33 # wood-fence-surrounded warehouse       30
         width: 10
         length: 10
-      - name: INDUSTRIALURBANCULT33A # with altar
+      - name: INDUSTRIALURBANCULT33A # with altar                           31
         width: 10
         length: 10
         groups: 8
@@ -4528,10 +4900,10 @@ terrains:
           - position: [5, 2, 0]
             amount: 1
             itemList: *cultistSacrificeSpawnerItems
-      - name: INDUSTRIALURBANCULT34 # two small metal buildings
+      - name: INDUSTRIALURBANCULT34 # two small metal buildings                    26
         width: 10
         length: 10
-      - name: INDUSTRIALURBANCULT34A # with altar
+      - name: INDUSTRIALURBANCULT34A # with altar                    26
         width: 10
         length: 10
         groups: 8
@@ -4554,10 +4926,10 @@ terrains:
           - position: [1, 5, 0]
             amount: 1
             itemList: *cultistSacrificeSpawnerItems
-      - name: INDUSTRIALURBANCULT35 # ziggurat warehouse
+      - name: INDUSTRIALURBANCULT35 # ziggurat warehouse                    26
         width: 10
         length: 10
-      - name: INDUSTRIALURBANCULT35A # cult stuff
+      - name: INDUSTRIALURBANCULT35A # cult stuff                    26
         width: 10
         length: 10
         groups: 8
@@ -4580,7 +4952,7 @@ terrains:
           - position: [6, 5, 0]
             amount: 1
             itemList: *cultistSacrificeSpawnerItems
-      - name: INDUSTRIALURBANCULTROADCROSS
+      - name: INDUSTRIALURBANCULTROADCROSS  #                   26
         width: 10
         length: 10
         groups: 4
@@ -4855,21 +5227,38 @@ terrains:
       - name: URBAN09
         width: 20
         length: 20
-      - name: URBAN14
+      - name: URBAN14  #10
         width: 10
         length: 10
       - name: URBAN15
         width: 10
         length: 10
-      - name: URBAN16
+      - name: URBAN16  #12
         width: 10
         length: 10
       - name: URBAN17
         width: 10
         length: 10
-      - name: URBAN18
+      - name: URBAN18  #14
         width: 10
         length: 10
+      - name: URBAN19  #15  3X3 cant be used
+        width: 30
+        length: 30
+      - name: URBAN20  #16
+        width: 10
+        length: 10
+      - name: URBAN21  #17
+        width: 10
+        length: 10
+#      - name: URBAN22BOMB  #18
+#        width: 10
+#        length: 10
+#        items:
+#          STR_BOMBARDMENT:
+#            - [4, 4, 0]
+#        fuseTimers:
+#          STR_BOMBARDMENT: [-2, -2]
   - name: XBASE
     mapDataSets:
       - BLANKS
@@ -5296,7 +5685,7 @@ terrains:
             - [2, 13, 0]
         fuseTimers:
           STR_HANGAR_CHARGE: [1, 1]
-  - name: ALART
+  - name: ALART         #             BOMBARDMENT DONE
     ambience: 896 #cave
     ambientVolume: 0.25
     mapDataSets:
@@ -5344,6 +5733,15 @@ terrains:
       - name: ALART11
         width: 20
         length: 20
+      - name: ALART12BOMB  #12
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+        groups: [77]
   - name: HULK
     mapDataSets:
       - BLANKS
@@ -6186,6 +6584,14 @@ terrains:
       - name: STORMT4X4
         width: 40
         length: 40
+  - name: THUNDERBOLT4X4
+    mapDataSets:
+      - BLANKS
+      - THUNDERBOLT_1
+    mapBlocks:
+      - name: THUNDERBOLT4X4
+        width: 40
+        length: 40
   - name: WAVESERPENT2
     mapDataSets:
       - BLANKS
@@ -6590,7 +6996,7 @@ terrains:
                 mixed: true
                 itemList: [STR_POWERCORE, STR_FUELCORE]
     script: SM
-  - name: ORK_BASE
+  - name: ORK_BASE #OLD BOMBARDMENT
     mapDataSets:
       - BLANKS
       - BATTLE
@@ -6710,6 +7116,14 @@ terrains:
             - [19, 13, 1]
         fuseTimers:
           STR_KILLA_SPAWNER: [0, 0]
+      - name: WAR_ORK22BOMB   #22
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 1]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
       - name: WAR_ORK_BLANKLZ
         width: 10
         length: 10
@@ -6720,7 +7134,103 @@ terrains:
         length: 10
         height: 1
         groups: 11
-  - name: WAR
+  - name: ORK_BASE_GLOBE #NEW
+    mapDataSets:
+      - BLANKS
+      - BATTLE
+      - DEBRIS
+      - ORKB
+      - ORK2
+    mapBlocks:
+      #*** Groups ***
+      # 0-4: Reserved
+      # 5: Tier 1
+      # 6: Tier 2
+      # 7: Tier 3
+      # 8: Tier 4 (Tier 5 is this + airstrip)
+      # 9: 2x2 Airstrips
+      # 10: Blank LZ for placing first of the "UFOs"
+      # 11: Blank LZ for placing second of the "UFOs"
+      - name: ORKB1  #0 Airstrips
+        width: 20
+        length: 20
+      - name: ORKB2  #1 Airstrips
+        width: 20
+        length: 20
+      - name: ORKB3  #1
+        width: 20
+        length: 20
+        items:
+          STR_KILLA_SPAWNER:
+            - [13, 5, 0]
+        fuseTimers:
+          STR_KILLA_SPAWNER: [0, 0]
+      - name: ORKB4  #1
+        width: 30
+        length: 30
+        items:
+          STR_KILLA_SPAWNER:
+            - [19, 13, 0]
+        fuseTimers:
+          STR_KILLA_SPAWNER: [0, 0]
+      - name: ORKB5  #1
+        width: 30
+        length: 30
+        items:
+          STR_TURRET2_SPAWNER:
+            - [21, 9, 2]
+          STR_KILLA_SPAWNER:
+            - [2, 13, 0]
+            - [25, 12, 0]
+        fuseTimers:
+          STR_TURRET2_SPAWNER: [0, 0]
+          STR_KILLA_SPAWNER: [0, 0]
+      - name: ORKB6  #1
+        width: 30
+        length: 30
+        items:
+          STR_KILLA_SPAWNER:
+            - [19, 13, 0]
+            - [19, 13, 0]
+        fuseTimers:
+          STR_KILLA_SPAWNER: [0, 0]
+        
+  - name: BASEPLANE3X3
+    mapDataSets:
+      - BLANKS
+      - ORKT
+      - ORKP
+    mapBlocks:
+      - name: ORKP3X3
+        width: 30
+        length: 30
+  - name: BASEPLANE2X2
+    mapDataSets:
+      - BLANKS
+      - ORKT
+      - ORKP
+    mapBlocks:
+      - name: ORKP2X2
+        width: 20
+        length: 20
+  - name: BASETRUCK3X3
+    mapDataSets:
+      - BLANKS
+      - ORKT
+      - ORKP
+    mapBlocks:
+      - name: ORKT3X3
+        width: 30
+        length: 30
+        items:
+          STR_TURRET1_SPAWNER:
+            - [14, 12, 2]
+          STR_TURRET2_SPAWNER:
+            - [15, 14, 2]
+        fuseTimers:
+          STR_TURRET1_SPAWNER: [0, 0]
+          STR_TURRET2_SPAWNER: [0, 0]
+  - name: WAR         #             BOMBARDMENT DONE
     enviroEffects: STR_URBAN_ENVIRO
     mapDataSets:
       - BLANKS
@@ -6766,7 +7276,7 @@ terrains:
       - name: WAR09
         width: 20
         length: 20
-      - name: WAR14
+      - name: WAR14 #10
         width: 10
         length: 10
       - name: WAR15
@@ -6781,7 +7291,7 @@ terrains:
       - name: WAR18
         width: 10
         length: 10
-      - name: WAR19
+      - name: WAR19 #15
         width: 10
         length: 10
         items:
@@ -6810,7 +7320,15 @@ terrains:
           STR_STORMTALON_ENGINE_SPAWNER: [0, 0]
           STR_RIGHT_STORMTALON_SPAWNER: [0, 0]
           STR_LEFT_STORMTALON_SPAWNER: [0, 0]
-  - name: WAR_ADEPTAS
+      - name: WAR22BOMB  #17
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 1]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
+  - name: WAR_ADEPTAS         #     BOMBARDMENT DONE
     enviroEffects: STR_URBAN_ENVIRO
     mapDataSets:
       - BLANKS
@@ -6854,22 +7372,22 @@ terrains:
       - name: WAR08
         width: 20
         length: 20
-      - name: WAR09
+      - name: WAR09   #09
         width: 20
         length: 20
-      - name: WAR14
+      - name: WAR14 #10
         width: 10
         length: 10
       - name: WAR15
         width: 10
         length: 10
-      - name: WAR16
+      - name: WAR16 #12
         width: 10
         length: 10
       - name: WAR17
         width: 10
         length: 10
-      - name: WAR18
+      - name: WAR18  #14
         width: 10
         length: 10
       - name: WAR19
@@ -6884,7 +7402,7 @@ terrains:
         fuseTimers:
           STR_CHAOSPREDATOR_SPAWNER: [0, 0]
           STR_CHAOSPREDATORSIDE_SPAWNER: [0, 0]
-      - name: WAR20
+      - name: WAR20 #16
         width: 10
         length: 10
         items:
@@ -6909,6 +7427,14 @@ terrains:
             - [4, 5, 2]
         fuseTimers:
           STR_EXORCIST_SPAWNER: [0, 0]
+      - name: WAR22BOMB  #18
+        width: 10
+        length: 10
+        items:
+          STR_BOMBARDMENT:
+            - [4, 4, 1]
+        fuseTimers:
+          STR_BOMBARDMENT: [-2, -2]
   - name: WARR #  TANK HUNT MISSION 6
     enviroEffects: STR_URBAN_ENVIRO
     mapDataSets:
@@ -6947,6 +7473,33 @@ terrains:
 #        width: 50
 #        length: 50
 
+# UFO HELPERS
+  - name: CHIMERATERROR
+    mapDataSets:
+      - BLANKS
+      - CHIMERAUFO
+    mapBlocks:
+      - name: CHIMERAUFO
+        width: 10
+        length: 10
+  - name: CHIMERARIOT
+    mapDataSets:
+      - BLANKS
+      - CHIMERAUFO
+    mapBlocks:
+      - name: CHIMERAUFO
+        width: 10
+        length: 10
+        items:
+          STR_BULLGRYN_SLAB_SPAWNER:
+              - [0, 8, 0]
+              - [9, 9, 0]
+          STR_BULLGRYN_BUCKLER_SPAWNER:
+              - [1, 0, 0]
+              - [9, 1, 0]
+        fuseTimers:
+          STR_BULLGRYN_SLAB_SPAWNER: [0, 0]
+          STR_BULLGRYN_BUCKLER_SPAWNER: [0, 0]
   - name: VOSSC
     mapDataSets:
       - BLANKS
@@ -6955,6 +7508,114 @@ terrains:
       - name: VOSSC
         width: 10
         length: 10
+  - name: CHIMERACHAOS
+    mapDataSets:
+      - BLANKS
+      - CHIMERACHAOS
+      - HIDRACHAOS
+      - INTERIORCHAOS
+    mapBlocks:
+      - name: CHIMERACHAOS
+        width: 10
+        length: 10
+        items:
+          STR_TRAITOR_CHIMERA_TURRET_SPAWNER:
+            - [5, 4, 1]
+        fuseTimers:
+          STR_TRAITOR_CHIMERA_TURRET_SPAWNER: [0, 0]
+  - name: CHIMERACONVOY3X3
+    mapDataSets:
+      - BLANKS
+      - CHIMERACHAOS
+      - HIDRACHAOS
+      - INTERIORCHAOS
+    mapBlocks:
+      - name: CHIMERACONVOY3X3
+        width: 30
+        length: 30
+        items:
+          STR_TRAITOR_CHIMERA_TURRET_SPAWNER:
+            - [15, 16, 1]
+        fuseTimers:
+          STR_TRAITOR_CHIMERA_TURRET_SPAWNER: [0, 0]
+  - name: VOSSC2X2
+    mapDataSets:
+      - BLANKS
+      - VOSSC
+    mapBlocks:
+      - name: VOSSC2X2
+        width: 20
+        length: 20
+  - name: STR_TRAITOR_FIREBASE
+    mapDataSets:
+      - BLANKS
+      - CASSIUMBOMBCHAOS
+      - CASSIUMTURRETCHAOS     
+      - CASSIUMCHAOS
+    mapBlocks:
+      - name: CASSIUMCONVOY2
+        width: 20
+        length: 20
+        items:
+          STR_CCASSIUM_BOLTER_LEFT1_SPAWNER:
+            - [10, 11, 1]
+          STR_CCASSIUM_BOLTER_LEFT2_SPAWNER:
+            - [16, 6, 1]
+            - [13, 16, 1]
+          STR_CCASSIUM_BOLTER_RIGHT1_SPAWNER:
+            - [10, 18, 1]
+          STR_CCASSIUM_BOLTER_RIGHT2_SPAWNER:
+            - [13, 13, 1]
+            - [16, 3, 1]
+          STR_REQUISITION_BOUNTY_500K:
+              - [0, 0, 0]
+        fuseTimers:
+          STR_CCASSIUM_BOLTER_LEFT1_SPAWNER: [0, 0]
+          STR_CCASSIUM_BOLTER_LEFT2_SPAWNER: [0, 0]
+          STR_CCASSIUM_BOLTER_RIGHT1_SPAWNER: [0, 0]
+          STR_CCASSIUM_BOLTER_RIGHT2_SPAWNER: [0, 0]
+
+  - name: STR_MUNIUFO
+    mapDataSets:
+      - BLANKS
+      - MUNI4
+    mapBlocks:
+      - name: MUNIUFO
+        width: 10
+        length: 10
+  - name: STR_MUNIUFO2
+    mapDataSets:
+      - BLANKS
+      - MUNI5
+    mapBlocks:
+      - name: MUNIUFO2
+        width: 10
+        length: 10
+
+  - name: HELPERDROPPOD
+    mapDataSets:
+      - BLANKS
+      - DROPPOD
+    mapBlocks:
+      - name: HELPERDROPPOD
+        width: 10
+        length: 10
+  - name: HELPERDROPPOD2
+    mapDataSets:
+      - BLANKS
+      - DROPPOD
+    mapBlocks:
+      - name: HELPERDROPPOD2
+        width: 10
+        length: 10
+        items:
+          STR_DROPPOD_DEPLOY_CHARGE:
+            - [5, 5, 0]
+          STR_DROPPOD_SPAWNER:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_DROPPOD_DEPLOY_CHARGE: [1, 1]
+          STR_DROPPOD_SPAWNER: [1, 1]
 
   - name: AIRSTRIP_SPAWN
     mapDataSets:

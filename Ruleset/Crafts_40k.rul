@@ -1,6 +1,100 @@
 crafts:
 #GUARD
-  - type: STR_LIGHTNING_INTERCEPTOR
+  - type: STR_CHIMERA                         #TIER I              RR 1000
+    marker: 30
+    requires:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 1002
+    fuelMax: 1000
+    damageMax: 1000
+    speedMax: 90
+    maxAltitude: 1
+    accel: 2
+    weapons: 1
+    weaponTypes:
+      - 3
+    weaponStrings:
+      - STR_ANTI_AIR_WEAPONS
+    soldiers: 24
+    vehicles: 2
+    costBuy: 900000
+    costRent: 400000
+    costSell: 400000
+    refuelRate: 1000
+    transferTime: 96
+    score: 250
+    repairRate: 4
+    battlescapeTerrainData:
+      name: CHIMERA
+      mapDataSets:
+        - BLANKS
+        - CHIMERA
+        - HIDRA
+        - LEMON
+      mapBlocks:
+        - name: CHIMERA_SMALL # CHIMERA
+          width: 10
+          length: 20
+          items:
+            STR_CHIMERA_TURRET_SPAWNER:
+              - [1, 4, 1] #[5, 6, 1]
+              - [2, 16, 1] #[3, 15, 1]
+          fuseTimers:
+            STR_CHIMERA_TURRET_SPAWNER: [0, 0]
+    craftInventoryTile: [1, 2, 0] #[5, 4, 0]
+    deployment:
+      #- [5, 2, 0, 0]
+      #- [6, 2, 0, 0]
+      #- [5, 3, 0, 0]
+      #- [6, 3, 0, 0]
+      #- [3, 11, 0, 0]
+      #- [4, 11, 0, 0]
+      #- [3, 12, 0, 0]
+      #- [4, 12, 0, 0]
+      #- [5, 4, 0, 0]
+      #- [6, 4, 0, 0]
+      #- [5, 5, 0, 0]
+      #- [6, 5, 0, 0]
+      #- [5, 6, 0, 0]
+      #- [6, 6, 0, 0]
+      #- [5, 7, 0, 0]
+      #- [6, 7, 0, 0]
+      #- [3, 13, 0, 0]
+      #- [4, 13, 0, 0]
+      #- [3, 14, 0, 0]
+      #- [4, 14, 0, 0]
+      #- [3, 15, 0, 0]
+      #- [4, 15, 0, 0]
+      #- [3, 16, 0, 0]
+      #- [4, 16, 0, 0]
+      - [1, 2, 0, 0]
+      - [2, 2, 0, 0]
+      - [1, 3, 0, 0]
+      - [2, 3, 0, 0]
+      - [2, 14, 0, 0]
+      - [3, 14, 0, 0]
+      - [2, 15, 0, 0]
+      - [3, 15, 0, 0]
+      - [7, 7, 0, 0]
+      - [8, 7, 0, 0]
+      - [7, 8, 0, 0]
+      - [8, 8, 0, 0]
+      - [1, 4, 0, 0]
+      - [2, 4, 0, 0]
+      - [1, 5, 0, 0]
+      - [2, 5, 0, 0]
+      - [2, 16, 0, 0]
+      - [3, 16, 0, 0]
+      - [2, 17, 0, 0]
+      - [3, 17, 0, 0]
+      - [7, 9, 0, 0]
+      - [8, 9, 0, 0]
+      - [7, 10, 0, 0]
+      - [8, 10, 0, 0]
+    listOrder: 800
+    spacecraft: true
+  - type: STR_LIGHTNING_INTERCEPTOR           #TIER SPECIAL        RR 200
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     requires:
@@ -25,7 +119,7 @@ crafts:
       - STR_WEAPON_THREE
     costBuy: 500000
     costRent: 250000
-    costSell: 42500
+    costSell: 250000
     soldiers: 1
     vehicles: 0
     refuelRate: 200
@@ -46,15 +140,16 @@ crafts:
     spacecraft: true
     allowLanding: false
     listOrder: 210
-
-  - type: STR_THUNDERBOLT_INTERCEPTOR
+  - type: STR_THUNDERBOLT_INTERCEPTOR         #TIER I              RR 200
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     requires:
       - STR_IMPERIAL_GUARD_OPERATIONS
     requiresBuyBaseFunc: [HANGAR]
     marker: 40
-    sprite: 1004
+    maxSkinIndex: 6              # default 0
+    skinSprites: [1479,1480,1481,1482,1483,1484]   # default empty, contains all sprites except for the first (index zero)
+    sprite: 1478
     fuelMax: 1000
     damageMax: 450
     speedMax: 2000
@@ -70,17 +165,28 @@ crafts:
       - STR_WEAPON_THREE
     costBuy: 700000
     costRent: 400000
-    costSell: 600000
+    costSell: 400000
     soldiers: 1
     vehicles: 0
     refuelRate: 200
     transferTime: 96
     score: 250
     pilots: 1
+    battlescapeTerrainData:
+      name: THUNDERBOLTW
+      mapDataSets:
+        - BLANKS
+        - THUNDERBOLTW
+      mapBlocks:
+        - name: THUNDERBOLTW
+          width: 10
+          length: 20
+    deployment:
+      - [4, 12, 0, 4]
+    spacecraft: true
     allowLanding: false
     listOrder: 240
-
-  - type: STR_VALKYRIE
+  - type: STR_VALKYRIE                        #TIER I              RR 200
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [62, 63, 64] #REGULAR SOUND
     requires:
@@ -105,8 +211,9 @@ crafts:
     vehicles: 1
     pilots: 2
     costBuy: 600000
-    costRent: 360000
-    refuelRate: 50
+    costRent: 400000 #TIER I
+    costSell: 400000
+    refuelRate: 200
     transferTime: 96
     score: 300
     listOrder: 210
@@ -131,7 +238,7 @@ crafts:
       - [5, 9, 0, 0]
       - [4, 10, 0, 0]
     spacecraft: true
-  - type: STR_CASSIUM
+  - type: STR_CASSIUM                         #TIER IV
     takeoffSound: 63 #TANKMOVE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 42
@@ -159,7 +266,8 @@ crafts:
     soldiers: 32
     vehicles: 4
     costBuy: 1500000
-    costRent: 1000000
+    costRent: 1000000 #TIER IV
+    costSell: 1000000
     refuelRate: 1000
     transferTime: 96
     score: 250
@@ -229,7 +337,8 @@ crafts:
       - [4, 17, 1, 0]
     listOrder: 820
     spacecraft: true
-  - type: STR_PREATOR
+  - type: STR_PREATOR #BOMBARD 77 78 79        TIER IV
+    groups: [77, 78] #BOMBARD 2
     takeoffSound: 63 #TANKMOVE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 42
@@ -258,7 +367,8 @@ crafts:
     soldiers: 20
     vehicles: 0
     costBuy: 1500000
-    costRent: 1000000
+    costRent: 1000000 #TIER IV
+    costSell: 1000000
     refuelRate: 1000
     transferTime: 96
     score: 250
@@ -304,8 +414,89 @@ crafts:
       - [5, 15, 1, 0]
     listOrder: 820
     spacecraft: true
-
-  - type: STR_TAUROX
+  - type: STR_VALKYRIE_GRAV_DROP              #TIER II
+    marker: 36
+    requiresBuyBaseFunc: [HANGAR]
+    requires:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+    sprite: 1001
+    fuelMax: 1800
+    damageMax: 400
+    speedMax: 600
+    accel: 2
+    weapons: 2
+    weaponTypes:
+      - 0
+      - 0
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+    soldiers: 20
+    vehicles: 0
+    costBuy: 1200000
+    costRent: 800000 #TIER II
+    refuelRate: 200
+    transferTime: 96
+    mapVisible: false
+    score: 300
+    keepCraftAfterFailedMission: true
+    battlescapeTerrainData:
+      name: GUARD_GRAV_DROP
+      mapDataSets:
+        - BLANKS
+        - GUARD_GRAV_DROP
+      mapBlocks:
+        - name: GUARD_GRAV_DROP
+          width: 10
+          length: 20
+          items:
+            STR_GRAVDROP_DEPLOY_CHARGE:
+              - [1, 1, 3]
+              - [5, 2, 3]
+              - [8, 3, 3]
+              - [3, 4, 3]
+              - [6, 5, 3]
+              - [4, 6, 3]
+              - [2, 7, 3]
+              - [7, 8, 3]
+              - [1, 9, 3]
+              - [4, 9, 3]
+              - [7, 10, 3]
+              - [2, 12, 3]
+              - [6, 12, 3]
+              - [4, 13, 3]
+              - [1, 14, 3]
+              - [7, 14, 3]
+              - [4, 15, 3]
+              - [8, 16, 3]
+              - [3, 17, 3]
+              - [6, 17, 3]
+          fuseTimers:
+            STR_GRAVDROP_DEPLOY_CHARGE: [1, 1]
+    deployment:
+      - [1, 1, 3, 0]
+      - [5, 2, 3, 0]
+      - [8, 3, 3, 0]
+      - [3, 4, 3, 0]
+      - [6, 5, 3, 0]
+      - [4, 6, 3, 0]
+      - [2, 7, 3, 0]
+      - [7, 8, 3, 0]
+      - [1, 9, 3, 0]
+      - [4, 9, 3, 0]
+      - [7, 10, 3, 0]
+      - [2, 12, 3, 0]
+      - [6, 12, 3, 0]
+      - [4, 13, 3, 0]
+      - [1, 14, 3, 0]
+      - [7, 14, 3, 0]
+      - [4, 15, 3, 0]
+      - [8, 16, 3, 0]
+      - [3, 17, 3, 0]
+      - [6, 17, 3, 0]
+    listOrder: 220
+    spacecraft: true
+  - type: STR_TAUROX                          #TIER II              RR 1000
     marker: 30
     requiresBuyBaseFunc: [HANGAR]
     requires:
@@ -326,7 +517,7 @@ crafts:
     soldiers: 16
     vehicles: 0
     costBuy: 640000
-    costRent: 360000
+    costRent: 600000           #TIER II
     refuelRate: 1000
     transferTime: 96
     score: 200
@@ -366,14 +557,77 @@ crafts:
       - [4, 16, 1, 0]
     listOrder: 810
     spacecraft: true
-
-
-  - type: STR_TAUROS
+  - type: STR_ARMOR_COLUMN                    #TIER II              RR 1000
+    marker: 30
+    requiresBuyBaseFunc: [HANGAR]
+    requires:
+      - STR_IMPERIAL_GUARD_MIDTIER
+    sprite: 1009
+    fuelMax: 1000
+    damageMax: 1500
+    speedMax: 90
+    maxAltitude: 1
+    accel: 2
+    weapons: 1
+    weaponTypes:
+      - 3
+    weaponStrings:
+      - STR_ANTI_AIR_WEAPONS
+    soldiers: 16
+    vehicles: 1
+    costBuy: 1200000
+    costRent: 600000
+    refuelRate: 1000
+    transferTime: 96
+    score: 250
+    repairRate: 6
+    battlescapeTerrainData:
+      name: CHIMERA
+      mapDataSets:
+        - BLANKS
+        - CHIMERA
+        - HIDRA
+        - LEMON
+      mapBlocks:
+        - name: CHIMERA_LEMAN
+          width: 10
+          length: 20
+          items:
+            STR_CHIMERA_TURRET_SPAWNER:
+              - [1, 4, 1] #[5, 6, 1]
+            STR_LEMONRUSS_SPAWNER:
+              - [2, 16, 1] #[3, 15, 1]
+          fuseTimers:
+            STR_CHIMERA_TURRET_SPAWNER: [0, 0]
+            STR_LEMONRUSS_SPAWNER: [0, 0]
+    craftInventoryTile: [1, 2, 0]
+    deployment:
+      - [1, 2, 0, 0]
+      - [2, 2, 0, 0]
+      - [1, 3, 0, 0]
+      - [2, 3, 0, 0]
+      - [7, 7, 0, 0]
+      - [8, 7, 0, 0]
+      - [7, 8, 0, 0]
+      - [8, 8, 0, 0]
+      - [1, 4, 0, 0]
+      - [2, 4, 0, 0]
+      - [1, 5, 0, 0]
+      - [2, 5, 0, 0]
+      - [7, 9, 0, 0]
+      - [8, 9, 0, 0]
+      - [7, 10, 0, 0]
+      - [8, 10, 0, 0]
+    listOrder: 801
+    spacecraft: true
+  - type: STR_TAUROS                          #TIER II              RR 200
     marker: 36
     requires:
       - STR_IMPERIAL_GUARD_MISSION_ELYSIAN_DROP_COMPLETE
     requiresBuyBaseFunc: [HANGAR]
-    sprite: 1006
+    sprite: 1582
+    maxSkinIndex: 2              # default 0
+    skinSprites: [1583,1584]   # default empty, contains all sprites except for the first (index zero)
     fuelMax: 1800
     damageMax: 400
     speedMax: 600
@@ -386,11 +640,11 @@ crafts:
     weaponStrings:
       - STR_WEAPON_ONE
       - STR_WEAPON_TWO
-    soldiers: 12
+    soldiers: 15
     vehicles: 0
     costBuy: 1200000
-    costRent: 720000
-    refuelRate: 50
+    costRent: 600000           #TIER II
+    refuelRate: 200
     transferTime: 96
     score: 300
     battlescapeTerrainData:
@@ -405,35 +659,182 @@ crafts:
           length: 20
           items:
             STR_TAUROS_TURRET_SPAWNER:
-              - [2, 1, 1]
+              - [2, 0, 1]
               - [6, 9, 1]
               - [1, 13, 1]
             STR_VALK_CHARGE:
               - [4, 6, 4]
-            STR_THUNDER_CHARGE2:
-              - [4, 2, 4]
+            STR_TAUROS_CHARGE:
+              - [0, 15, 1]
+              - [3, 16, 1]
+              - [5, 12, 1]
+              - [8, 12, 1]
+              - [1, 4, 1]
+              - [4, 4, 1]
           fuseTimers:
-            STR_THUNDER_CHARGE2: [1, 1]
+            STR_TAUROS_CHARGE: [-2, -2]
             STR_VALK_CHARGE: [1, 1]
             STR_TAUROS_TURRET_SPAWNER: [0, 0]
     deployment:
       - [0, 16, 1, 4]
       - [0, 15, 1, 4]
+      - [0, 14, 1, 4]
       - [3, 16, 1, 4]
       - [3, 15, 1, 4]
-      - [5, 12, 0, 4]
-      - [5, 11, 0, 4]
-      - [8, 12, 0, 4]
-      - [8, 11, 0, 4]
-      - [1, 4, 0, 4]
-      - [1, 3, 0, 4]
-      - [4, 4, 0, 4]
-      - [4, 3, 0, 4]
+      - [5, 12, 1, 4]
+      - [5, 11, 1, 4]
+      - [5, 10, 1, 4]
+      - [8, 12, 1, 4]
+      - [8, 11, 1, 4]
+      - [1, 4, 1, 4]
+      - [1, 3, 1, 4]
+      - [1, 2, 1, 4]
+      - [4, 4, 1, 4]
+      - [4, 3, 1, 4]
     craftInventoryTile: [5, 12, 0]
     listOrder: 830
     spacecraft: true
+  - type: STR_MARAUDER                        #TIER III             RR 200
+    requiresBuyBaseFunc: [HANGAR]
+    marker: 41
+    sprite: 1007
+    fuelMax: 2000
+    damageMax: 750
+    speedMax: 1800
+    accel: 4
+    avoidBonus: -10
+    repairRate: 3
+    weapons: 4
+    weaponTypes:
+      - 0
+      - 0
+      - 3
+      - [4, 5, 13]
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_ANTI_AIR_WEAPONS
+      - STR_WEAPON_THREE
+    #costBuy: 1050000
+    costRent: 800000
+    costSell: 800000
+    soldiers: 4
+    vehicles: 0
+    refuelRate: 200
+    transferTime: 96
+    score: 400
+    pilots: 4
+    allowLanding: false
+    listOrder: 240
+  - type: STR_GORGON                          #TIER V               RR 1000
+    marker: 42
+    requiresBuyBaseFunc: [HANGAR]
+    requires:
+      - STR_IMPERIAL_GUARD_HIGHTIER
+    sprite: 1008
+    fuelMax: 1000
+    damageMax: 1440
+    speedMax: 75
+    maxAltitude: 1
+    accel: 1
+    weapons: 1
+    weaponTypes:
+      - 3
+    weaponStrings:
+      - STR_ANTI_AIR_WEAPONS
+    soldiers: 50
+    vehicles: 4
+    costBuy: 2400000
+    costRent: 1200000
+    costSell: 1200000
+    refuelRate: 1000
+    transferTime: 96
+    score: 250
+    repairRate: 8
+    battlescapeTerrainData:
+      name: GORGON
+      mapDataSets:
+        - BLANKS
+        - GORGON
+      mapBlocks:
+        - name: GORGON
+          width: 10
+          length: 20
+          items:
+            STR_GORGON_HEAVY_FLAMER_FRONT_LEFT_SPAWNER:
+              - [8, 13, 1]
+            STR_GORGON_HEAVY_FLAMER_BACK_LEFT_SPAWNER:
+              - [8, 10, 1]
+            STR_GORGON_HEAVY_FLAMER_FRONT_RIGHT_SPAWNER:
+              - [0, 13, 1]
+            STR_GORGON_HEAVY_FLAMER_BACK_RIGHT_SPAWNER:
+              - [0, 10, 1]
+            STR_GORGON_HEAVY_STUBBER_LEFT_SPAWNER:
+              - [6, 6, 2]
+            STR_GORGON_HEAVY_STUBBER_RIGHT_SPAWNER:
+              - [2, 6, 2]
+          fuseTimers:
+            STR_GORGON_HEAVY_FLAMER_FRONT_LEFT_SPAWNER: [0, 0]
+            STR_GORGON_HEAVY_FLAMER_BACK_LEFT_SPAWNER: [0, 0]
+            STR_GORGON_HEAVY_FLAMER_FRONT_RIGHT_SPAWNER: [0, 0]
+            STR_GORGON_HEAVY_FLAMER_BACK_RIGHT_SPAWNER: [0, 0]
+            STR_GORGON_HEAVY_STUBBER_LEFT_SPAWNER: [0, 0]
+            STR_GORGON_HEAVY_STUBBER_RIGHT_SPAWNER: [0, 0]
+    deployment:
+      - [2, 6, 1, 0]
+      - [5, 6, 1, 0]
+      - [2, 8, 1, 0]
+      - [5, 8, 1, 0]
+      - [3, 6, 1, 0]
+      - [4, 6, 1, 0]
+      - [6, 6, 1, 0]
+      - [2, 7, 1, 0]
+      - [3, 7, 1, 0]
+      - [4, 7, 1, 0]
+      - [5, 7, 1, 0]
+      - [6, 7, 1, 0]
+      - [3, 8, 1, 0]
+      - [4, 8, 1, 0]
+      - [6, 8, 1, 0]
+      - [2, 9, 1, 0]
+      - [3, 9, 1, 0]
+      - [4, 9, 1, 0]
+      - [5, 9, 1, 0]
+      - [6, 9, 1, 0]
+      - [2, 10, 1, 0]
+      - [3, 10, 1, 0]
+      - [4, 10, 1, 0]
+      - [5, 10, 1, 0]
+      - [6, 10, 1, 0]
+      - [2, 11, 1, 0]
+      - [3, 11, 1, 0]
+      - [4, 11, 1, 0]
+      - [5, 11, 1, 0]
+      - [6, 11, 1, 0]
+      - [2, 12, 1, 0]
+      - [3, 12, 1, 0]
+      - [4, 12, 1, 0]
+      - [5, 12, 1, 0]
+      - [6, 12, 1, 0]
+      - [2, 13, 1, 0]
+      - [3, 13, 1, 0]
+      - [4, 13, 1, 0]
+      - [5, 13, 1, 0]
+      - [6, 13, 1, 0]
+      - [2, 14, 1, 0]
+      - [3, 14, 1, 0]
+      - [4, 14, 1, 0]
+      - [5, 14, 1, 0]
+      - [6, 14, 1, 0]
+      - [2, 15, 1, 0]
+      - [3, 15, 1, 0]
+      - [4, 15, 1, 0]
+      - [5, 15, 1, 0]
+      - [6, 15, 1, 0]
+    listOrder: 820
+    spacecraft: true
 #GK
-  - type: STR_XIPHON_GK #STORTALON
+  - type: STR_XIPHON_GK #STORTALON                  #TIER I         RR 200
     requires:
       - STR_CHAMBERMILITANT
     requiresBuyBaseFunc: [HANGAR]
@@ -444,6 +845,7 @@ crafts:
     skinSprites: [1787,1788] # default empty, contains all sprites except for the first (index zero)
     marker: 73
     fuelMax: 1000
+    refuelRate: 200
     damageMax: 200
     speedMax: 2100
     accel: 3
@@ -460,9 +862,9 @@ crafts:
       - STR_AUX_TWO
     costBuy: 800000
     costRent: 400000
+    costSell: 400000
     soldiers: 1
     vehicles: 0
-    refuelRate: 200
     transferTime: 96
     score: 250
     listOrder: 110
@@ -480,7 +882,9 @@ crafts:
     deployment:
       - [6, 13, 0, 4]
     spacecraft: true
-  - type: STR_STORMRAVEN_GK
+  - type: STR_STORMRAVEN_GK                         #TIER II        RR 200
+    costRent: 600000           #TIER II
+    costSell: 600000
     takeoffSound: 56
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     requires:
@@ -489,7 +893,8 @@ crafts:
     requiresBuyBaseFunc: [HANGAR]
     sprite: 1782
     marker: 11
-    fuelMax: 1200
+    fuelMax: 1400
+    refuelRate: 200
     damageMax: 800
     speedMax: 4200
     accel: 9
@@ -537,7 +942,10 @@ crafts:
       - [4, 10, 1, 0]
       - [5, 10, 1, 0]
     spacecraft: true
-  - type: STR_THUNDERHAWNK_GK #thunderhawnk Type 1
+  - type: STR_THUNDERHAWNK_GK #thunderhawnk Type 1   TIER II      BOMBARD 77 RR 200
+    costRent: 600000          #TIER II
+    costSell: 600000
+    groups: [77] #BOMBARD1
     takeoffSound: 56
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     requires:
@@ -564,8 +972,7 @@ crafts:
     soldiers: 16
     pilots: 4
     vehicles: 2
-    costSell: 650000
-    refuelRate: 5
+    refuelRate: 200
     radarRange: 850
     transferTime: 72
     score: 400
@@ -604,7 +1011,7 @@ crafts:
       - [4, 5, 2, 4]
       - [5, 5, 2, 4]
     spacecraft: true
-  - type: STR_ARVUS_GK
+  - type: STR_ARVUS_GK                              #TIER I         RR 200
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [62, 63, 64] #REGULAR SOUND
     requires:
@@ -621,8 +1028,9 @@ crafts:
     vehicles: 1
     pilots: 2
     costBuy: 600000
-    costRent: 360000
-    refuelRate: 50
+    costRent: 400000          #TIER I
+    costSell: 400000
+    refuelRate: 200
     transferTime: 96
     score: 300
     listOrder: 210
@@ -645,7 +1053,9 @@ crafts:
       - [4, 10, 0, 0]
       - [5, 10, 0, 0]
     spacecraft: true
-  - type: STR_STORMEAGLE_GK
+  - type: STR_STORMEAGLE_GK   #                      TIER III       RR 200
+    costRent: 800000          #TIER III
+    costSell: 800000
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     marker: 13
@@ -670,11 +1080,10 @@ crafts:
       - STR_WEAPON_THREE_PLUS
       - STR_WEAPON_FOURTH_PLUS
     radarRange: 1000
-    costSell: 1500000
     transferTime: 96
     refuelItem: STR_ELERIUM_115
     repairRate: 5
-    refuelRate: 5
+    refuelRate: 200
     score: 400
     soldiers: 15
     pilots: 2
@@ -708,7 +1117,10 @@ crafts:
       - [4, 9, 1, 0]
     spacecraft: true
 #DEATHWATCH
-  - type: STR_REPULSOR_DW
+  - type: STR_REPULSOR_DW    #BOMBARD 3             TIER II         RR 600
+    costRent: 600000          #TIER II
+    costSell: 600000
+    groups: [77, 78, 79] #BOMBARD 3
     takeoffSound: 58 #MAGNETIC SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     marker: 70
@@ -732,7 +1144,7 @@ crafts:
     soldiers: 5
     vehicles: 0
     pilots: 3
-    refuelRate: 50
+    refuelRate: 600
     transferTime: 96
     score: 300
     listOrder: 210
@@ -753,7 +1165,9 @@ crafts:
       - [5, 7, 1, 0]
       - [3, 7, 1, 0]
     spacecraft: true
-  - type: STR_REPULSOR_T_DW
+  - type: STR_REPULSOR_T_DW  #                       TIER II        RR 600
+    costRent: 600000          #TIER II
+    costSell: 600000
     takeoffSound: 58 #MAGNETIC SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 70
@@ -772,7 +1186,7 @@ crafts:
     soldiers: 14
     vehicles: 1
     pilots: 2
-    refuelRate: 50
+    refuelRate: 600
     transferTime: 96
     score: 300
     listOrder: 210
@@ -801,14 +1215,15 @@ crafts:
       - [2, 7, 1, 0]
       - [6, 7, 1, 0]
     spacecraft: true
-  - type: STR_IMPULSOR_DW
+  - type: STR_IMPULSOR_DW    #                       TIER I         RR 600
     requires:
       - STR_DW_PRIMARIS
     takeoffSound: 58 #MAGNETIC SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     requiresBuyBaseFunc: [HANGAR]
     costBuy: 900000
-    costRent: 360000
+    costRent: 400000
+    costSell: 400000
     marker: 69
     sprite: 1802
     fuelMax: 1800
@@ -828,7 +1243,7 @@ crafts:
     soldiers: 10
     vehicles: 1
     pilots: 2
-    refuelRate: 50
+    refuelRate: 600
     transferTime: 96
     score: 300
     listOrder: 210
@@ -854,7 +1269,9 @@ crafts:
       - [5, 9, 1, 0]
     craftInventoryTile: [4,6,1]
     spacecraft: true
-  - type: STR_DW_TT #DEATHWATCH NOT USED
+  - type: STR_DW_TT          #DEATHWATCH NOT USED    TIER III       RR 200
+    costRent: 800000          #TIER III
+    costSell: 800000
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     keepCraftAfterFailedMission: true
@@ -872,7 +1289,7 @@ crafts:
     soldiers: 16
     vehicles: 0
     refuelItem: STR_ELERIUM_115
-    refuelRate: 5
+    refuelRate: 200
     score: 400
     listOrder: 500
     battlescapeTerrainData:
@@ -915,7 +1332,9 @@ crafts:
       - [4, 15, 2, 4]
       - [5, 15, 2, 4]
     spacecraft: true
-  - type: STR_DW_LANDRAIDER
+  - type: STR_DW_LANDRAIDER   #                      TIER III       RR 1000
+    costRent: 800000          #TIER III
+    costSell: 800000
     marker: 30
     takeoffSound: 63 #TANKMOVE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
@@ -940,7 +1359,7 @@ crafts:
     soldiers: 22
     vehicles: 2
     refuelItem: STR_ELERIUM_115
-    refuelRate: 50
+    refuelRate: 1000
     score: 800
     listOrder: 700
     battlescapeTerrainData:
@@ -978,7 +1397,10 @@ crafts:
       - [3, 16, 1, 0]
       - [4, 16, 1, 0] #IMPULSOR 8
     spacecraft: true
-  - type: STR_DW_THUNDERHAWNK # DEATHWATCH
+  - type: STR_DW_THUNDERHAWNK # DEATHWATCH           TIER II        RR 200
+    groups: [77] #BOMBARD1
+    costRent: 600000          #TIER II
+    costSell: 600000
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     requires:
@@ -1006,8 +1428,7 @@ crafts:
     soldiers: 18
     pilots: 4
     vehicles: 2
-    costSell: 650000
-    refuelRate: 5
+    refuelRate: 200
     radarRange: 850
     transferTime: 72
     score: 400
@@ -1049,7 +1470,9 @@ crafts:
       - [5, 4, 2, 4]
     spacecraft: true
 #ADEPTAS AND #DEATHWATCH
-  - type: STR_CORVUS
+  - type: STR_CORVUS         #                       TIER I         RR 200
+    costRent: 400000 #TIER I
+    costSell: 400000
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [62, 63, 64] #REGULAR SOUND
     requires:
@@ -1072,8 +1495,7 @@ crafts:
     vehicles: 1
     pilots: 2
     costBuy: 800000
-    costRent: 400000
-    refuelRate: 50
+    refuelRate: 200
     transferTime: 96
     score: 300
     listOrder: 210
@@ -1102,7 +1524,9 @@ crafts:
       - [4, 10, 0, 0]
       - [5, 10, 0, 0]
     spacecraft: true
-  - type: STR_STORMRAVEN_ADEPTAS #STORMRAVEN
+  - type: STR_STORMRAVEN_ADEPTAS #STORMRAVEN         TIER II        RR 200
+    costRent: 600000          #TIER II  
+    costSell: 600000
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     requires:
@@ -1131,7 +1555,8 @@ crafts:
     pilots: 2
     vehicles: 1
     refuelItem: STR_ELERIUM_115
-    refuelRate: 5
+    fuelMax: 1400
+    refuelRate: 200
     score: 250
     listOrder: 300
     battlescapeTerrainData:
@@ -1160,7 +1585,9 @@ crafts:
       - [4, 7, 1, 0]
       - [5, 7, 1, 0]
     spacecraft: true
-  - type: STR_STORMEAGLE_ADEPTAS
+  - type: STR_STORMEAGLE_ADEPTAS #                   TIER III       RR 200
+    costRent: 800000          #TIER III
+    costSell: 800000
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     marker: 13
@@ -1185,11 +1612,10 @@ crafts:
       - STR_WEAPON_THREE_PLUS
       - STR_WEAPON_FOURTH_PLUS
     radarRange: 1000
-    costSell: 1500000
     transferTime: 96
     refuelItem: STR_ELERIUM_115
     repairRate: 5
-    refuelRate: 5
+    refuelRate: 200
     score: 400
     soldiers: 15
     pilots: 2
@@ -1223,7 +1649,9 @@ crafts:
       - [4, 9, 1, 0]
     spacecraft: true
 #ADEPTAS
-  - type: STR_LANDRAIDER
+  - type: STR_LANDRAIDER   #                         TIER III       RR 1000
+    costRent: 800000          #TIER III
+    costSell: 800000
     takeoffSound: 63 #TANKMOVE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 30
@@ -1242,7 +1670,7 @@ crafts:
     soldiers: 26
     vehicles: 2
     refuelItem: STR_ELERIUM_115
-    refuelRate: 50
+    refuelRate: 1000
     score: 800
     listOrder: 700
     battlescapeTerrainData:
@@ -1287,7 +1715,10 @@ crafts:
       - [7, 8, 0, 0]
       - [8, 8, 0, 0] #rhino
     spacecraft: true
-  - type: STR_ADEPTAS_THUNDERHAWNK #thunderhawnk ADEPTAS
+  - type: STR_ADEPTAS_THUNDERHAWNK #thunderhawnk     TIER II    BOMBARD 77  ADEPTAS RR
+    costRent: 600000          #TIER II
+    costSell: 600000
+    groups: [77] #BOMBARD1
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     requires:
@@ -1297,6 +1728,7 @@ crafts:
     sprite: 506
     marker: 12
     fuelMax: 1400
+    refuelRate: 200
     damageMax: 950
     speedMax: 1600
     accel: 6
@@ -1316,7 +1748,6 @@ crafts:
     pilots: 4
     vehicles: 2
     costSell: 650000
-    refuelRate: 5
     radarRange: 850
     transferTime: 72
     score: 400
@@ -1357,7 +1788,7 @@ crafts:
       - [4, 4, 2, 4]
       - [5, 4, 2, 4]
     spacecraft: true
-  - type: STR_AVENGER_ADEPTAS #ligtning
+  - type: STR_AVENGER_ADEPTAS #ligtning              TIER I         RR 200
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     requires:
@@ -1379,8 +1810,8 @@ crafts:
       - STR_WEAPON_TWO
       - STR_WEAPON_THREE
     costBuy: 500000
-    costRent: 250000
-    costSell: 42500
+    costRent: 250000 # TIER I
+    costSell: 250000
     soldiers: 2
     vehicles: 0
     refuelRate: 200
@@ -1389,14 +1820,16 @@ crafts:
     pilots: 2
     allowLanding: false
     listOrder: 230
-  - type: STR_THUNDERBOLT_ADEPTAS
+  - type: STR_THUNDERBOLT_ADEPTAS    #               TIER I         RR 200
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     requires:
       - STR_ADEPTAS
     requiresBuyBaseFunc: [HANGAR]
     marker: 40
-    sprite: 507
+    maxSkinIndex: 6              # default 0
+    skinSprites: [1479,1480,1481,1482,1483,1484]   # default empty, contains all sprites except for the first (index zero)
+    sprite: 1478
     fuelMax: 1000
     damageMax: 450
     speedMax: 2000
@@ -1411,17 +1844,31 @@ crafts:
       - STR_WEAPON_TWO
       - STR_WEAPON_THREE
     costBuy: 700000
-    costRent: 400000
-    costSell: 600000
+    costRent: 400000  #TIER I
+    costSell: 400000
     soldiers: 1
     vehicles: 0
     refuelRate: 200
     transferTime: 96
     score: 250
     pilots: 1
+    battlescapeTerrainData:
+      name: THUNDERBOLTW
+      mapDataSets:
+        - BLANKS
+        - THUNDERBOLTW
+      mapBlocks:
+        - name: THUNDERBOLTW
+          width: 10
+          length: 20
+    deployment:
+      - [4, 12, 0, 4]
+    spacecraft: true
     allowLanding: false
     listOrder: 240
-  - type: STR_TTA #thunderhawnk Transport Adeptas
+  - type: STR_TTA #thunderhawnk Transport Adeptas    TIER III       RR 200
+    costRent: 800000          #TIER III
+    costSell: 800000
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     keepCraftAfterFailedMission: true
@@ -1439,7 +1886,7 @@ crafts:
     soldiers: 16
     vehicles: 0
     refuelItem: STR_ELERIUM_115
-    refuelRate: 5
+    refuelRate: 200
     score: 400
     listOrder: 500
     battlescapeTerrainData:
@@ -1482,8 +1929,10 @@ crafts:
       - [4, 15, 2, 4]
       - [5, 15, 2, 4]
     spacecraft: true
-#MARINES
-  - type: STR_ARMY_P
+#MARINES PRIMARIS
+  - type: STR_ARMY_P       #                         TIER III       RR 600
+    costRent: 800000          #TIER III
+    costSell: 800000
     marker: 30
     takeoffSound: 63 #TANKMOVE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
@@ -1510,7 +1959,7 @@ crafts:
     soldiers: 22
     vehicles: 2
     refuelItem: STR_ELERIUM_115
-    refuelRate: 50
+    refuelRate: 600
     score: 800
     listOrder: 700
     battlescapeTerrainData:
@@ -1548,7 +1997,10 @@ crafts:
       - [3, 16, 1, 0]
       - [4, 16, 1, 0] #IMPULSOR 8
     spacecraft: true
-  - type: STR_REPULSOR
+  - type: STR_REPULSOR     #BOMBARD 3                TIER II        RR 600
+    costRent: 600000          #TIER II
+    costSell: 600000
+    groups: [77, 78, 79] #BOMBARD 3
     takeoffSound: 58 #MAGNETIC SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     marker: 70
@@ -1572,7 +2024,7 @@ crafts:
     soldiers: 5
     vehicles: 0
     pilots: 3
-    refuelRate: 50
+    refuelRate: 600
     transferTime: 96
     score: 300
     listOrder: 210
@@ -1593,7 +2045,9 @@ crafts:
       - [5, 7, 1, 0]
       - [3, 7, 1, 0]
     spacecraft: true
-  - type: STR_REPULSOR_T
+  - type: STR_REPULSOR_T   #                         TIER II        RR 600
+    costRent: 600000          #TIER II
+    costSell: 600000
     takeoffSound: 58 #MAGNETIC SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 70
@@ -1612,7 +2066,7 @@ crafts:
     soldiers: 14
     vehicles: 1
     pilots: 2
-    refuelRate: 50
+    refuelRate: 600
     transferTime: 96
     score: 300
     listOrder: 210
@@ -1641,14 +2095,15 @@ crafts:
       - [2, 7, 1, 0]
       - [6, 7, 1, 0]
     spacecraft: true
-  - type: STR_IMPULSOR
+  - type: STR_IMPULSOR     #                         TIER I         RR 600 
     requires:
       - STR_PRIMARIS
     takeoffSound: 58 #MAGNETIC SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     requiresBuyBaseFunc: [HANGAR]
     costBuy: 900000
-    costRent: 360000
+    costRent: 400000 #TIER I
+    costSell: 400000
     marker: 69
     sprite: 886
     fuelMax: 1800
@@ -1668,7 +2123,7 @@ crafts:
     soldiers: 10
     vehicles: 1
     pilots: 2
-    refuelRate: 50
+    refuelRate: 600
     transferTime: 96
     score: 300
     listOrder: 210
@@ -1694,7 +2149,7 @@ crafts:
       - [5, 9, 1, 0]
     craftInventoryTile: [4,6,1]
     spacecraft: true
-  - type: STR_IMPULSORS
+  - type: STR_IMPULSORS    #                         TIER I         RR 600
     takeoffSound: 58 #MAGNETIC SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     requires:
@@ -1702,7 +2157,8 @@ crafts:
       - STR_CRAFTADD
     requiresBuyBaseFunc: [HANGAR]
     costBuy: 1200000
-    costRent: 600000
+    costRent: 400000 #TIER I
+    costSell: 400000
     marker: 69
     sprite: 886
     fuelMax: 1800
@@ -1722,7 +2178,7 @@ crafts:
     soldiers: 10
     vehicles: 1
     pilots: 2
-    refuelRate: 50
+    refuelRate: 600
     transferTime: 96
     score: 300
     listOrder: 210
@@ -1753,8 +2209,118 @@ crafts:
       - [5, 9, 1, 0]
     craftInventoryTile: [4,6,1]
     spacecraft: true
-
-  - type: STR_DROP #dropod´s
+#MARINES
+  - type: STR_DROPPODS  #dropod´s                         TIER II
+    groups: [80, 81] #DROPPOD
+    costBuy: 600000
+    costRent: 600000          #TIER II
+    costSell: 100000
+    takeoffSound: 59 #POD SOUND
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_ADV_DROPPODS
+      - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 884
+    marker: 9
+    fuelMax: 1800
+    damageMax: 200
+    speedMax: 20000
+    accel: 20
+    weapons: 0
+    soldiers: 12
+    vehicles: 1
+    refuelRate: 600
+    transferTime: 10
+    score: 200
+    listOrder: 120
+    mapVisible: false
+    battlescapeTerrainData:
+      name: DROPPODS
+      mapDataSets:
+        - BLANKS
+        - DROPPOD
+      mapBlocks:
+        - name: DROPPODS
+          width: 10
+          length: 20
+          items:
+            STR_DROPPOD_DEPLOY_CHARGE:
+              - [2, 2, 0]
+              - [5, 8, 0]
+              - [2, 15, 0]
+          fuseTimers:
+            STR_DROPPOD_DEPLOY_CHARGE: [1, 1]
+    deployment:
+      - [1, 15, 0, 0]
+      - [1, 14, 0, 0]
+      - [2, 15, 0, 0]
+      - [2, 14, 0, 0]
+      - [4, 8, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 8, 0, 0]
+      - [5, 7, 0, 0]
+      - [1, 1, 0, 0]
+      - [1, 2, 0, 0]
+      - [2, 1, 0, 0]
+      - [2, 2, 0, 0]
+    spacecraft: true
+  - type: STR_SKYRANGER #dropod´s                         TIER SPECIAL
+    groups: [80] #DROPPOD
+    costBuy: 200000
+    costRent: 100000 #TIER S
+    costSell: 100000
+    takeoffSound: 59 #POD SOUND
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_MARINES_STRATEGY
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 23
+    marker: 9
+    fuelMax: 1800
+    damageMax: 200
+    speedMax: 20000
+    accel: 20
+    weapons: 0
+    soldiers: 12
+    vehicles: 1
+    refuelRate: 600
+    transferTime: 10
+    score: 200
+    listOrder: 120
+    mapVisible: false
+    battlescapeTerrainData:
+      name: DROPPODS
+      mapDataSets:
+        - BLANKS
+        - DROPPOD
+      mapBlocks:
+        - name: DROPPODS
+          width: 10
+          length: 20
+          items:
+            STR_DROPPOD_DEPLOY_CHARGE:
+              - [2, 2, 0]
+              - [5, 8, 0]
+              - [2, 15, 0]
+          fuseTimers:
+            STR_DROPPOD_DEPLOY_CHARGE: [1, 1]
+    deployment:
+      - [1, 15, 0, 0]
+      - [1, 14, 0, 0]
+      - [2, 15, 0, 0]
+      - [2, 14, 0, 0]
+      - [4, 8, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 8, 0, 0]
+      - [5, 7, 0, 0]
+      - [1, 1, 0, 0]
+      - [1, 2, 0, 0]
+      - [2, 1, 0, 0]
+      - [2, 2, 0, 0]
+    spacecraft: true
+  - type: STR_DROP    #dropod´s                           TIER SPECIAL       RR 600
+    groups: [80] #DROPPOD
     takeoffSound: 59 #POD SOUND
     requires:
       - STR_NOT_PRIMARIS
@@ -1768,21 +2334,22 @@ crafts:
     accel: 20
     weapons: 0
     costBuy: 50000
-    costRent: 5000
+    costRent: 50000
+    costSell: 50000
     soldiers: 4
     vehicles: 1
-    refuelRate: 50
+    refuelRate: 600
     transferTime: 10
     score: 0
     listOrder: 130
     mapVisible: false
     battlescapeTerrainData:
-      name: DROP_GUARD
+      name: DROPPOD
       mapDataSets:
         - BLANKS
-        - DROPPOD_GUARD
+        - DROPPOD
       mapBlocks:
-        - name: DROP_GUARD
+        - name: DROPPOD
           width: 10
           length: 20
           items:
@@ -1796,7 +2363,9 @@ crafts:
       - [5, 8, 0, 0]
       - [5, 7, 0, 0]
     spacecraft: true
-  - type: STR_STORMEAGLE
+  - type: STR_STORMEAGLE        #                         TIER III           RR 200
+    costRent: 800000          #TIER III
+    costSell: 800000
     marker: 13
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
@@ -1821,11 +2390,10 @@ crafts:
       - STR_WEAPON_THREE_PLUS
       - STR_WEAPON_FOURTH_PLUS
     radarRange: 1000
-    costSell: 1500000
     transferTime: 96
     refuelItem: STR_ELERIUM_115
     repairRate: 5
-    refuelRate: 5
+    refuelRate: 200
     score: 400
     soldiers: 15
     pilots: 2
@@ -1858,7 +2426,9 @@ crafts:
       - [4, 9, 1, 0]
       - [4, 9, 1, 0]
     spacecraft: true
-  - type: STR_FIRESTORM #STORMRAVEN
+  - type: STR_FIRESTORM      #STORMRAVEN                  TIER II            RR 200
+    costRent: 600000          #TIER II
+    costSell: 600000
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     requires:
@@ -1888,7 +2458,7 @@ crafts:
     pilots: 2
     vehicles: 1
     refuelItem: STR_ELERIUM_115
-    refuelRate: 5
+    refuelRate: 200
     score: 250
     listOrder: 300
     battlescapeTerrainData:
@@ -1917,7 +2487,7 @@ crafts:
       - [4, 7, 1, 0]
       - [5, 7, 1, 0]
     spacecraft: true
-  - type: STR_INTERCEPTOR #STORTALON
+  - type: STR_INTERCEPTOR    #STORTALON                   TIER I             RR 200
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     requires:
@@ -1939,7 +2509,8 @@ crafts:
       - STR_WEAPON_TWO
       - STR_WEAPON_THREE
     costBuy: 600000
-    costRent: 300000
+    costRent: 400000
+    costSell: 400000
     soldiers: 1
     vehicles: 0
     refuelRate: 200
@@ -1960,7 +2531,7 @@ crafts:
     deployment:
       - [5, 10, 0, 4]
     spacecraft: true
-  - type: STR_STORMHAWK
+  - type: STR_STORMHAWK    #                              TIER I             RR 200
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     requires:
@@ -1983,10 +2554,10 @@ crafts:
       - STR_WEAPON_THREE
     costBuy: 700000
     costRent: 400000
-    costSell: 600000
+    costSell: 400000
     soldiers: 1
     vehicles: 0
-    refuelRate: 50
+    refuelRate: 200
     transferTime: 96
     score: 250
     listOrder: 100
@@ -2005,7 +2576,7 @@ crafts:
     deployment:
       - [5, 10, 0, 4]
     spacecraft: true
-  - type: STR_STORMHAWKS
+  - type: STR_STORMHAWKS     #                            TIER I             RR 200
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     sprite: 100
@@ -2024,10 +2595,10 @@ crafts:
       - STR_WEAPON_TWO
       - STR_WEAPON_THREE
     costRent: 400000
-    costSell: 600000
+    costSell: 400000
     soldiers: 1
     vehicles: 0
-    refuelRate: 50
+    refuelRate: 200
     transferTime: 96
     score: 450
     listOrder: 105
@@ -2046,7 +2617,9 @@ crafts:
     deployment:
       - [5, 10, 0, 4]
     spacecraft: true
-  - type: STR_AVENGER #thunderhawnk Transport
+  - type: STR_AVENGER #thunderhawnk Transport             TIER III           RR 200
+    costRent: 800000          #TIER III
+    costSell: 800000
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     keepCraftAfterFailedMission: true
@@ -2057,6 +2630,7 @@ crafts:
     sprite: 24
     marker: 13
     fuelMax: 1400
+    refuelRate: 200
     damageMax: 1200
     speedMax: 1400
     accel: 10
@@ -2064,7 +2638,6 @@ crafts:
     soldiers: 20
     vehicles: 0
     refuelItem: STR_ELERIUM_115
-    refuelRate: 5
     score: 400
     listOrder: 500
     battlescapeTerrainData:
@@ -2107,7 +2680,9 @@ crafts:
       - [4, 14, 2, 4]
       - [5, 14, 2, 4]
     spacecraft: true
-  - type: STR_TTASS #thunderhawnk Transport ASS
+  - type: STR_TTASS #thunderhawnk Transport ASS           TIER III           RR 200      
+    costRent: 800000          #TIER III
+    costSell: 800000
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     keepCraftAfterFailedMission: true
@@ -2117,6 +2692,7 @@ crafts:
     sprite: 500
     marker: 13
     fuelMax: 1400
+    refuelRate: 200
     damageMax: 1200
     speedMax: 1400
     accel: 10
@@ -2124,7 +2700,6 @@ crafts:
     soldiers: 16
     vehicles: 0
     refuelItem: STR_ELERIUM_115
-    refuelRate: 5
     score: 400
     listOrder: 500
     battlescapeTerrainData:
@@ -2167,7 +2742,9 @@ crafts:
       - [4, 15, 2, 4]
       - [5, 15, 2, 4]
     spacecraft: true
-  - type: STR_TTDEV #thunderhawnk Transport DEV
+  - type: STR_TTDEV #thunderhawnk Transport DEV           TIER III
+    costRent: 800000          #TIER III
+    costSell: 800000
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     keepCraftAfterFailedMission: true
@@ -2177,6 +2754,7 @@ crafts:
     sprite: 501
     marker: 13
     fuelMax: 1400
+    refuelRate: 200
     damageMax: 1200
     speedMax: 1400
     accel: 10
@@ -2184,7 +2762,6 @@ crafts:
     soldiers: 16
     vehicles: 0
     refuelItem: STR_ELERIUM_115
-    refuelRate: 5
     score: 400
     listOrder: 500
     battlescapeTerrainData:
@@ -2227,7 +2804,9 @@ crafts:
       - [4, 15, 2, 4]
       - [5, 15, 2, 4]
     spacecraft: true
-  - type: STR_TTSCT #thunderhawnk Transport SCOUT
+  - type: STR_TTSCT #thunderhawnk Transport SCOUT         TIER III
+    costRent: 800000          #TIER III
+    costSell: 800000
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     keepCraftAfterFailedMission: true
@@ -2237,6 +2816,7 @@ crafts:
     sprite: 502
     marker: 13
     fuelMax: 1400
+    refuelRate: 200
     damageMax: 1200
     speedMax: 1400
     accel: 10
@@ -2244,7 +2824,6 @@ crafts:
     soldiers: 16
     vehicles: 0
     refuelItem: STR_ELERIUM_115
-    refuelRate: 5
     score: 400
     listOrder: 500
     battlescapeTerrainData:
@@ -2287,8 +2866,9 @@ crafts:
       - [4, 15, 2, 4]
       - [5, 15, 2, 4]
     spacecraft: true
-  - type: STR_TTCHAOS #thunderhawnk Transport CHAOS
-    takeoffSound: 56 #TURBINE SOUND
+  - type: STR_TTCHAOS #thunderhawnk Transport CHAOS       TIER SPECIAL NO MAINTENCE
+    allowedSoldierGroups: [3]
+    costSell: 800000
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     keepCraftAfterFailedMission: true
     requires:
@@ -2297,6 +2877,7 @@ crafts:
     sprite: 503
     marker: 13
     fuelMax: 1400
+    refuelRate: 200
     damageMax: 1200
     speedMax: 1400
     accel: 10
@@ -2304,7 +2885,6 @@ crafts:
     soldiers: 20
     vehicles: 0
     refuelItem: STR_ELERIUM_115
-    refuelRate: 5
     score: 400
     listOrder: 500
     battlescapeTerrainData:
@@ -2347,7 +2927,10 @@ crafts:
       - [4, 14, 2, 4]
       - [5, 14, 2, 4]
     spacecraft: true
-  - type: STR_SPEEDC
+  - type: STR_SPEEDC   #landspeeder                       TIER I
+    costBuy: 600000
+    costRent: 400000 #TIER I
+    costSell: 400000
     takeoffSound: 58 #MAGNETIC SOUND
     selectSound: [62, 63, 64] #REGULAR SOUND
     requires:
@@ -2356,12 +2939,10 @@ crafts:
     sprite: 30
     marker: 29
     fuelMax: 1000
+    refuelRate: 200
     damageMax: 200
     speedMax: 2100
     maxAltitude: 2
-    costBuy: 600000
-    costRent: 600000
-    costSell: 300000
     accel: 10
     weapons: 3
     weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
@@ -2375,7 +2956,7 @@ crafts:
     radarRange: 500
     soldiers: 14
     vehicles: 0
-    refuelRate: 50
+    refuelRate: 600
     transferTime: 96
     score: 200
     listOrder: 200
@@ -2405,7 +2986,9 @@ crafts:
       - [8, 11, 1, 2]
       - [8, 10, 1, 4]
     spacecraft: true
-  - type: STR_CHAPTERARMY
+  - type: STR_CHAPTERARMY       #                         TIER III
+    costRent: 800000          #TIER III
+    costSell: 800000
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 30
     requires:
@@ -2415,13 +2998,12 @@ crafts:
     damageMax: 10000
     speedMax: 20
     maxAltitude: 1
-    costRent: 600000
     accel: 10
     weapons: 0
     soldiers: 26
     vehicles: 2
     refuelItem: STR_ELERIUM_115
-    refuelRate: 50
+    refuelRate: 1000
     score: 800
     listOrder: 700
     battlescapeTerrainData:
@@ -2461,57 +3043,10 @@ crafts:
       - [8, 8, 1, 2]
       - [9, 8, 1, 2] #speeder
     spacecraft: true
-  - type: STR_SKYRANGER #dropod´s
-    takeoffSound: 59 #POD SOUND
-    requires:
-      - STR_NOT_PRIMARIS
-      - STR_MARINES_STRATEGY
-    requiresBuyBaseFunc: [HANGAR]
-    sprite: 23
-    marker: 9
-    fuelMax: 1800
-    damageMax: 200
-    speedMax: 20000
-    accel: 20
-    weapons: 0
-    soldiers: 12
-    vehicles: 1
-    refuelRate: 50
-    transferTime: 10
-    score: 200
-    listOrder: 120
-    mapVisible: false
-    battlescapeTerrainData:
-      name: DROPPOD_GUARD
-      mapDataSets:
-        - BLANKS
-        - DROPPOD_GUARD
-      mapBlocks:
-        - name: DROPPOD_GUARD
-          width: 10
-          length: 20
-          items:
-            STR_DROPPOD_DEPLOY_CHARGE:
-              - [2, 2, 0]
-              - [5, 8, 0]
-              - [2, 15, 0]
-          fuseTimers:
-            STR_DROPPOD_DEPLOY_CHARGE: [1, 1]
-    deployment:
-      - [1, 15, 0, 0]
-      - [1, 14, 0, 0]
-      - [2, 15, 0, 0]
-      - [2, 14, 0, 0]
-      - [4, 8, 0, 0]
-      - [4, 7, 0, 0]
-      - [5, 8, 0, 0]
-      - [5, 7, 0, 0]
-      - [1, 1, 0, 0]
-      - [1, 2, 0, 0]
-      - [2, 1, 0, 0]
-      - [2, 2, 0, 0]
-    spacecraft: true
-  - type: STR_LIGHTNING #thunderhawnk Type 2
+  - type: STR_LIGHTNING #thunderhawnk Type 2            BOMBARD 77  TIER II
+    costRent: 600000          #TIER II
+    costSell: 600000
+    groups: [77] #BOMBARD1
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     requires:
@@ -2541,8 +3076,7 @@ crafts:
     soldiers: 18
     pilots: 4
     vehicles: 2
-    costSell: 650000
-    refuelRate: 5
+    refuelRate: 400
     radarRange: 850
     transferTime: 72
     score: 400
@@ -2583,7 +3117,9 @@ crafts:
       - [4, 4, 2, 4]
       - [5, 4, 2, 4]
     spacecraft: true
-  - type: STR_CHAOS_THUNDERHAWNK #thunderhawnk CHAOS
+  - type: STR_CHAOS_THUNDERHAWNK #thunderhawnk CHAOS    BOMBARD 77  TIER SPECIAL NO MAINTENCE
+    allowedSoldierGroups: [3]
+    groups: [77] #BOMBARD1
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     requires:
@@ -2610,8 +3146,8 @@ crafts:
     soldiers: 18
     pilots: 4
     vehicles: 2
-    costSell: 650000
-    refuelRate: 5
+    costSell: 600000
+    refuelRate: 400
     radarRange: 850
     transferTime: 72
     score: 400
@@ -2652,7 +3188,10 @@ crafts:
       - [4, 4, 2, 4]
       - [5, 4, 2, 4]
     spacecraft: true
-  - type: STR_THUNDERHAWNK #thunderhawnk Type 1
+  - type: STR_THUNDERHAWNK #thunderhawnk Type 1         BOMBARD 77  TIER II
+    costRent: 600000          #TIER II
+    costSell: 600000
+    groups: [77] #BOMBARD1
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     requires:
@@ -2683,7 +3222,7 @@ crafts:
     pilots: 4
     vehicles: 2
     costSell: 650000
-    refuelRate: 5
+    refuelRate: 400
     radarRange: 850
     transferTime: 72
     score: 400
@@ -2728,7 +3267,10 @@ crafts:
       - [4, 5, 2, 4]
       - [5, 5, 2, 4]
     spacecraft: true
-  - type: STR_OLDTHUNDERHAWNK # OLD thunderhawnk
+  - type: STR_OLDTHUNDERHAWNK # OLD thunderhawnk        BOMBARD 77  TIER II
+    costRent: 600000          #TIER II
+    costSell: 600000
+    groups: [77] #BOMBARD1
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     requires:
@@ -2755,7 +3297,7 @@ crafts:
     pilots: 2
     vehicles: 4
     costSell: 650000
-    refuelRate: 5
+    refuelRate: 400
     radarRange: 850
     transferTime: 72
     score: 400
@@ -2787,16 +3329,16 @@ crafts:
       - [4, 11, 1, 4]
       - [5, 11, 1, 4]
     spacecraft: true
-#                 #                                        #                      #
 #ARBITES
-  - type: STR_PREATORPD
+  - type: STR_PREATORPD  #BOMBARD 77 &78               TIER IV       RR 1000
+    groups: [77, 78] #BOMBARD 2
     takeoffSound: 63 #TANKMOVE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 42
     requiresBuyBaseFunc: [HANGAR]
     requires:
       - STR_PREATOR_PD_R
-    sprite: 1681
+    sprite: 1682
     maxSkinIndex: 0           # default 0
     fuelMax: 1000
     damageMax: 1440
@@ -2819,6 +3361,7 @@ crafts:
     vehicles: 0
     costBuy: 1500000
     costRent: 1000000
+    costSell: 1000000
     refuelRate: 1000
     transferTime: 96
     score: 250
@@ -2864,8 +3407,7 @@ crafts:
       - [5, 15, 1, 0]
     listOrder: 820
     spacecraft: true
-
-  - type: STR_CASSIUMPD
+  - type: STR_CASSIUMPD #                              TIER IV       RR 1000
     takeoffSound: 63 #TANKMOVE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 42
@@ -2892,6 +3434,7 @@ crafts:
     vehicles: 4
     costBuy: 1500000
     costRent: 1000000
+    costSell: 1000000
     refuelRate: 1000
     transferTime: 96
     score: 250
@@ -2961,7 +3504,7 @@ crafts:
       - [4, 17, 1, 0]
     listOrder: 820
     spacecraft: true
-  - type: STR_HIDRAPD
+  - type: STR_HIDRAPD    #                             TIER I        RR 1000
     requiresBuyBaseFunc: [HANGAR]
     takeoffSound: 63 #TANKMOVE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
@@ -2987,7 +3530,8 @@ crafts:
     pilots: 4
     vehicles: 0
     costBuy: 900000
-    costRent: 480000
+    costRent: 400000 #TIER I
+    costSell: 400000
     refuelRate: 1000
     transferTime: 96
     score: 250
@@ -3012,7 +3556,7 @@ crafts:
     listOrder: 800
     spacecraft: true
     allowLanding: false
-  - type: STR_THUNDERBOLTPD
+  - type: STR_THUNDERBOLTPD    #                       TIER II       RR 200
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     requires:
@@ -3020,7 +3564,8 @@ crafts:
       - STR_NEW_FIGHTER_PD
     requiresBuyBaseFunc: [HANGAR]
     marker: 40
-    sprite: 1882
+    skinSprites: [1479,1480,1481,1482,1483,1484]   # default empty, contains all sprites except for the first (index zero)
+    sprite: 1478
     fuelMax: 1000
     damageMax: 450
     speedMax: 2000
@@ -3035,7 +3580,7 @@ crafts:
       - STR_WEAPON_TWO
       - STR_WEAPON_THREE
     costBuy: 700000
-    costRent: 400000
+    costRent: 600000    #TIER II
     costSell: 600000
     soldiers: 1
     vehicles: 0
@@ -3043,9 +3588,21 @@ crafts:
     transferTime: 96
     score: 250
     pilots: 1
+    battlescapeTerrainData:
+      name: THUNDERBOLTW
+      mapDataSets:
+        - BLANKS
+        - THUNDERBOLTW
+      mapBlocks:
+        - name: THUNDERBOLTW
+          width: 10
+          length: 20
+    deployment:
+      - [4, 12, 0, 4]
+    spacecraft: true
     allowLanding: false
     listOrder: 240
-  - type: STR_VULTURE
+  - type: STR_VULTURE    #                             TIER I        RR 200
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
     requiresBuyBaseFunc: [HANGAR]
@@ -3071,8 +3628,9 @@ crafts:
     soldiers: 2
     pilots: 2
     costBuy: 600000
-    costRent: 360000
-    refuelRate: 50
+    costRent: 400000 # TIER I
+    costSell: 400000
+    refuelRate: 200
     transferTime: 96
     score: 300
 
@@ -3091,7 +3649,9 @@ crafts:
     spacecraft: true
     allowLanding: false
     listOrder: 210
-  - type: STR_CHIMERAPDH
+  - type: STR_CHIMERAPDH #                             TIER III      RR 1000
+    costRent: 800000          #TIER III
+    costSell: 800000
     takeoffSound: 63 #TANKMOVE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 30
@@ -3161,7 +3721,9 @@ crafts:
       - [7, 11, 0, 0]
     listOrder: 800
     spacecraft: true
-  - type: STR_ARMYPD
+  - type: STR_ARMYPD   #                               TIER III      RR 1000
+    costRent: 800000          #TIER III
+    costSell: 800000
     takeoffSound: 63 #TANKMOVE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 30
@@ -3181,7 +3743,6 @@ crafts:
     soldiers: 30
     vehicles: 2
 #    costBuy: 9000000
-    costRent: 480000
     refuelRate: 1000
     transferTime: 96
     score: 250
@@ -3247,7 +3808,9 @@ crafts:
       - [7, 8, 1, 0]
     listOrder: 800
     spacecraft: true
-  - type: STR_TAUROXPD
+  - type: STR_TAUROXPD #                               TIER II       RR 200
+    costRent: 600000          #TIER II
+    costSell: 600000
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 30
@@ -3263,7 +3826,7 @@ crafts:
     weapons: 0
     soldiers: 16
     vehicles: 0
-    refuelRate: 1000
+    refuelRate: 200
     transferTime: 96
     score: 200
     repairRate: 4
@@ -3271,7 +3834,7 @@ crafts:
       name: TAUROXPD
       mapDataSets:
         - BLANKS
-        - TAUROXPD
+        - TAUROX_4
         - VHTPDEX
       mapBlocks:
         - name: TAUROXPD
@@ -3309,7 +3872,7 @@ crafts:
       - [4, 16, 1, 0]
     listOrder: 810
     spacecraft: true
-  - type: STR_ARVUS
+  - type: STR_ARVUS    #                               TIER I        RR 200
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [62, 63, 64] #REGULAR SOUND
     requires:
@@ -3328,8 +3891,9 @@ crafts:
     vehicles: 1
     pilots: 2
     costBuy: 600000
-    costRent: 360000
-    refuelRate: 50
+    costRent: 400000 #TIER I
+    costSell: 400000
+    refuelRate: 200
     transferTime: 96
     score: 300
     listOrder: 210
@@ -3360,7 +3924,7 @@ crafts:
       - [5, 6, 0, 0]
       - [6, 6, 0, 0]
     spacecraft: true
-  - type: STR_CHIMERAPD
+  - type: STR_CHIMERAPD    #                           TIER I        RR 1000
     takeoffSound: 63 #TANKMOVE SOUND
     selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 30
@@ -3383,7 +3947,8 @@ crafts:
     soldiers: 16
     vehicles: 2
     costBuy: 900000
-    costRent: 480000
+    costRent: 400000    #TIER I
+    costSell: 400000
     refuelRate: 1000
     transferTime: 96
     score: 250
@@ -3423,4 +3988,302 @@ crafts:
       - [5, 6, 0, 0]
     listOrder: 800
     spacecraft: true
+#ELDAR
+  - type: STR_SCORPION #         #BOMBARD 2            TIER IV           RR 600
+    allowedSoldierGroups: [4, 5]
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [90, 91, 92, 93]  # ELDAR TRANSP SOUND
+    requiresBuyBaseFunc: [ELDAROUT]
+    requires:
+      - STR_SCORPION_R
+    requiresBuy:
+      - STR_SCORPION_R
+      - STR_ELDAR_PATH
+    groups: [77, 78] #BOMBARD 2
+    marker: 90
+    maxSkinIndex: 0              # default 0
+    sprite: 1707
+    fuelMax: 1800
+    damageMax: 750
+    speedMax: 600
+    accel: 2
+    weapons: 3         #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    fixedWeapons: [STR_SCORPION_PULSAR_UC, STR_SCORPION_PULSAR_UC, STR_ELDAR_SHIELD_UC]
+    soldiers: 18
+    vehicles: 1
+    pilots: 1
+    costBuy: 1200000
+    costRent: 800000
+    costSell: 800000
+    refuelRate: 600
+    transferTime: 96
+    score: 300
+    listOrder: 210
+    battlescapeTerrainData:
+      name: SCORPION
+      mapDataSets:
+        - BLANKS
+        - SCORPION
+        - SCORPION2
+        - SCORPION3
+      mapBlocks:
+        - name: SCORPION
+          width: 10
+          length: 20
+    deployment:
+      - [3, 3, 0, 0]
+      - [4, 3, 0, 0]
+      - [5, 3, 0, 0]
+      - [6, 3, 0, 0]
+      - [3, 4, 0, 0]
+      - [4, 4, 0, 0]
+      - [5, 4, 0, 0]
+      - [6, 4, 0, 0]
+      - [3, 5, 0, 0]
+      - [4, 5, 0, 0]
+      - [5, 5, 0, 0]
+      - [6, 5, 0, 0]
+      - [3, 6, 0, 0]
+      - [4, 6, 0, 0]
+      - [5, 6, 0, 0]
+      - [6, 6, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 7, 0, 0]
+    spacecraft: true
+
+  - type: STR_HEMLOCK    #                          TIER II          RR 600
+    allowedSoldierGroups: [4, 5]
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [94, 95, 96, 97]  # ELDAR INTERCEPTOR SOUND
+    requiresBuyBaseFunc: [ELDAROUT]
+    requires:
+      - STR_ELDAR_HEMLOCK_UFO_DATA
+    requiresBuy:
+      - STR_ELDAR_PATH
+      - STR_ELDAR_HEMLOCK_UFO_DATA      
+    maxSkinIndex: 0              # default 0
+    marker: 91
+    sprite: 1704
+    fuelMax: 1800
+    damageMax: 500
+    speedMax: 1200
+    accel: 2
+    weapons: 3         #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    fixedWeapons: [STR_HEAVYDSCYTHES_UC, STR_HEAVYDSCYTHES_UC, STR_ELDAR_SHIELD_UC]
+    soldiers: 1
+    pilots: 1
+    costBuy: 600000
+    costRent: 400000
+    costSell: 400000
+    refuelRate: 600
+    transferTime: 96
+    score: 300
+
+    battlescapeTerrainData:
+      name: HEMLOCKP
+      mapDataSets:
+        - BLANKS
+        - HEMLOCKP
+      mapBlocks:
+        - name: HEMLOCKP
+          width: 10
+          length: 20
+    deployment:
+      - [6, 11, 0, 2]
+    spacecraft: true
+    allowLanding: false
+    listOrder: 210
+  - type: STR_WAVESERPENT #                         TIER I           RR 600
+    allowedSoldierGroups: [4, 5]
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [90, 91, 92, 93]  # ELDAR TRANSP SOUND
+    requiresBuyBaseFunc: [ELDAROUT]
+    requires:
+      - STR_ELDAR_WAVESERPENT_UFO_DATA
+    requiresBuy:
+      - STR_ELDAR_WAVESERPENT_UFO_DATA
+      - STR_ELDAR_PATH
+    marker: 90
+    maxSkinIndex: 0              # default 0
+    sprite: 1700
+    fuelMax: 1800
+    damageMax: 600
+    speedMax: 600
+    accel: 2
+    weapons: 2         #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_THREE
+    fixedWeapons: [STR_DSTARCANNON_UC, STR_ELDAR_SHIELD_UC]
+    soldiers: 10
+    vehicles: 1
+    pilots: 1
+    costBuy: 600000
+    costRent: 400000
+    costSell: 400000
+    refuelRate: 600
+    transferTime: 96
+    score: 300
+    listOrder: 210
+    battlescapeTerrainData:
+      name: WAVESERPENTP
+      mapDataSets:
+        - BLANKS
+        - WAVESERPENTP
+      mapBlocks:
+        - name: WAVESERPENTP
+          width: 10
+          length: 20
+          items:
+            STR_ELDAR_WS_SPAWNER_P:
+              - [4, 8, 1]
+          fuseTimers:
+            STR_ELDAR_WS_SPAWNER_P: [0, 0]
+    deployment:
+      - [4, 6, 0, 0]
+      - [5, 6, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 7, 0, 0]
+      - [4, 8, 0, 0]
+      - [5, 8, 0, 0]
+      - [4, 9, 0, 0]
+      - [5, 9, 0, 0]
+      - [4, 10, 0, 0]
+      - [5, 10, 0, 0]
+    spacecraft: true
+  - type: STR_COBRA #     #BOMBARD 3                TIER III            RR 600
+    allowedSoldierGroups: [4, 5]
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [90, 91, 92, 93]  # ELDAR TRANSP SOUND
+    groups: [77, 78, 79] #BOMBARD 3
+    requiresBuyBaseFunc: [ELDAROUT]
+    requires:
+      - STR_ELDAR_COBRA_UFO_DATA
+    requiresBuy:
+      - STR_ELDAR_COBRA_UFO_DATA
+      - STR_ELDAR_PATH
+    marker: 90
+    maxSkinIndex: 0              # default 0
+    sprite: 1706
+    fuelMax: 1800
+    damageMax: 750
+    speedMax: 600
+    accel: 2
+    weapons: 2         #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_THREE
+    fixedWeapons: [STR_COBRA_CANNON_UC, STR_ELDAR_SHIELD_UC]
+    soldiers: 8
+    vehicles: 0
+    pilots: 1
+    costBuy: 1000000
+    costRent: 800000
+    costSell: 800000
+    refuelRate: 600
+    transferTime: 96
+    score: 300
+    listOrder: 211
+    battlescapeTerrainData:
+      name: COBRAP
+      mapDataSets:
+        - BLANKS
+        - COBRAP
+        - COBRA2P
+        - COBRA3P
+      mapBlocks:
+        - name: COBRAP
+          width: 10
+          length: 20
+    deployment:
+      - [4, 4, 0, 0]
+      - [5, 4, 0, 0]
+      - [4, 5, 0, 0]
+      - [5, 5, 0, 0]
+      - [4, 6, 0, 0]
+      - [5, 6, 0, 0]
+      - [4, 7, 0, 0]
+      - [5, 7, 0, 0]
+    spacecraft: true
+  - type: STR_HORNET #                               TIER S           RR 600
+    allowedSoldierGroups: [4, 5]
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [94, 95, 96, 97]  # ELDAR INTERCEPTOR SOUND
+    requiresBuyBaseFunc: [ELDAROUT]
+    requires:
+      - STR_ELDAR_HORNET_UFO_DATA
+    requiresBuy:
+      - STR_ELDAR_HORNET_UFO_DATA
+      - STR_ELDAR_PATH
+    sprite: 1702
+    marker: 89
+    fuelMax: 1000
+    damageMax: 300
+    speedMax: 2100
+    accel: 3
+    weapons: 3         #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE
+    fixedWeapons: [STR_LANCE_CANNON_UC, STR_LANCE_CANNON_UC, STR_ELDAR_SHIELD_UC]
+    costBuy: 600000
+    costRent: 300000
+    costSell: 300000
+    soldiers: 1
+    vehicles: 0
+    refuelRate: 600
+    transferTime: 96
+    score: 250
+    listOrder: 110
+    pilots: 1
+    battlescapeTerrainData:
+      name: HORNETP
+      mapDataSets:
+        - BLANKS
+        - HORNETP
+      mapBlocks:
+        - name: HORNETP
+          width: 10
+          length: 20
+    deployment:
+      - [6, 11, 0, 4]
+      - [2, 11, 0, 4]
+    spacecraft: true
+    allowLanding: false 
 #                 #                                        #                      #
+#   Cost Rent TIER I  = 400 000
+#   Cost Rent TIER II = 600 000
+#   Cost Rent TIER III = 800 000
+#   Cost Rent TIER IV = 1000 000
+#   Cost Rent TIER V = 1200 000
+#   Cost Rent TIER Special = case by case
+#                 #                                        #                      #
+#                 #                                        #                      #
+# RR  refuel rate (Unit per halfhour) 200 for air craft 1000 for land 600 for magnetic (primaris, land speeder, eldar and Dpos) 

@@ -9641,7 +9641,7 @@ globe:
             weight: 20
         baseTerrain:
           - name: XBASE_FILL_SNOW
-      - id: 13 #PLAINSMUDD
+      - id: 13  #PLAINSMUDD
         terrain:
           - name: PLAINSMUDD
             weight: 70
@@ -9723,7 +9723,7 @@ globe:
             weight: 15
         baseTerrain:
           - name: XBASE_FILL_MUD
-      - id: 22  #WASTELAND
+      - id: 22 #WASTELAND
         terrain:
           - name: PLAINS
             weight: 10
