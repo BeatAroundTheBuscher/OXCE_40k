@@ -424,6 +424,7 @@ items: #craft Related
     listOrder: 1750
   - type: STR_STINGRAY_LAUNCHER           #S 2     Lo 1100
     categories: [ STR_CRAFT_WEAPONS]
+    ufopediaType: STR_STINGRAY
     size: 0.8
     requiresBuyBaseFunc: [HANGAR]
     costBuy: 16000
@@ -432,6 +433,7 @@ items: #craft Related
     listOrder: 1100
   - type: STR_STINGRAY_MISSILES           #S 0.4   Lo 1150
     categories: [ STR_CRAFT_WEAPONS]
+    ufopediaType: STR_STINGRAY
     size: 0.4
     requiresBuyBaseFunc: [HANGAR]
     costBuy: 3000
@@ -441,6 +443,7 @@ items: #craft Related
     listOrder: 1150
   - type: STR_AVALANCHE_LAUNCHER          #S 1     Lo 1200
     categories: [ STR_CRAFT_WEAPONS]
+    ufopediaType: STR_AVALANCHE
     size: 1
     requiresBuyBaseFunc: [HANGAR]
     costBuy: 17000
@@ -449,6 +452,7 @@ items: #craft Related
     listOrder: 1200
   - type: STR_AVALANCHE_MISSILES          #S 1.5   Lo 1250
     categories: [ STR_CRAFT_WEAPONS]
+    ufopediaType: STR_AVALANCHE
     size: 1.5
     requiresBuyBaseFunc: [HANGAR]
     costBuy: 9000

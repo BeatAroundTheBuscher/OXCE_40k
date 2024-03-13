@@ -1211,6 +1211,12 @@ ufopaedia:
     image_id: 1HB.SPK
     text: STR_AUTO_CANNON_UFOPEDIA
     listOrder: 12000
+  - id: STR_AUTO_CANNON_DW
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1HB.SPK
+    text: STR_AUTO_CANNON_UFOPEDIA
+    listOrder: 12000
   - id: STR_ASSAULT_BOLTER       #2410
     requires:
       - STR_PRIMARIS
