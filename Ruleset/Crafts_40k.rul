@@ -1343,7 +1343,6 @@ crafts:
     damageMax: 2000
     speedMax: 300
     maxAltitude: 1
-    costRent: 0
     accel: 10
     weapons: 4          #weapon number increased to 4.
     weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
@@ -1535,7 +1534,6 @@ crafts:
     requiresBuyBaseFunc: [HANGAR]
     sprite: 540
     marker: 11
-    fuelMax: 1200
     damageMax: 800
     speedMax: 4200
     accel: 9
@@ -1664,7 +1662,6 @@ crafts:
     damageMax: 10000
     speedMax: 20
     maxAltitude: 1
-    costRent: 600000
     accel: 10
     weapons: 0
     soldiers: 26
@@ -1747,7 +1744,6 @@ crafts:
     soldiers: 18
     pilots: 4
     vehicles: 2
-    costSell: 650000
     radarRange: 850
     transferTime: 72
     score: 400
@@ -1943,7 +1939,6 @@ crafts:
     damageMax: 2000
     speedMax: 300
     maxAltitude: 1
-    costRent: 0
     accel: 10
     weapons: 4          #weapon number increased to 4.
     weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
@@ -2956,7 +2951,6 @@ crafts:
     radarRange: 500
     soldiers: 14
     vehicles: 0
-    refuelRate: 600
     transferTime: 96
     score: 200
     listOrder: 200
@@ -3221,7 +3215,6 @@ crafts:
     soldiers: 16
     pilots: 4
     vehicles: 2
-    costSell: 650000
     refuelRate: 400
     radarRange: 850
     transferTime: 72
@@ -3296,7 +3289,6 @@ crafts:
     soldiers: 16
     pilots: 2
     vehicles: 4
-    costSell: 650000
     refuelRate: 400
     radarRange: 850
     transferTime: 72

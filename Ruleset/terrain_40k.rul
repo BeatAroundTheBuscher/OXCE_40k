@@ -2175,7 +2175,6 @@ terrains:
     script: GOTHIC
     ambience: 896
     ambientVolume: 0.25
-    script: FARM
     mapDataSets:
       - BLANKS
       - GOTHICSNOW

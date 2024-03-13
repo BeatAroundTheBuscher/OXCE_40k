@@ -2812,95 +2812,25 @@ alienDeployments:
         highQty: 9 #12
         dQty: 4
         percentageOutsideUfo: 90
-        itemSets: &traitorGuardsmanStandardEquip
-          -
-            - STR_LASER_RIFLEC
-            - STR_LASGUN_CLIP
-            - STR_LASGUN_CLIP
-            - STR_GRENADE
-          -
-            - STR_LASER_RIFLEC
-            - STR_LASGUN_CLIP
-            - STR_LASGUN_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_GRENADE
-          -
-            - STR_LASER_RIFLEC
-            - STR_LASGUN_CLIP
-            - STR_LASGUN_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
+        itemSets: *traitorGuardsmanStandardEquip
       - alienRank: 5 # guardsmen with alternate weapons - GLs, flamers
         lowQty: 3 #2
         highQty: 3 #4
         dQty: 0
         percentageOutsideUfo: 65
-        itemSets: &traitorGuardsmanSpecialEquip
-          -
-            - STR_GRENADE_LAUNCHER_CHAOS
-            - STR_FRAG_GRENADE_DRUM
-            - STR_FRAG_GRENADE_DRUM
-            - STR_FRAG_GRENADE_DRUM
-          -
-            - STR_FLAMETHROWER_CHAOS
-            - STR_FLAMETHROWER_CLIP
-            - STR_FLAMETHROWER_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_GRENADE_LAUNCHER_CHAOS
-            - STR_KRAK_GRENADE_DRUM
-            - STR_FRAG_GRENADE_DRUM
-            - STR_FRAG_GRENADE_DRUM
+        itemSets: *traitorGuardsmanStandardEquip
       - alienRank: 3
         lowQty: 1
         highQty: 1 #2
         dQty: 2 #1
         percentageOutsideUfo: 60
-        itemSets: &traitorGuardsmanHeavyEquip
-          -
-            - STR_CHAOS_MELTAGUN
-            - STR_MELTA_AMMO
-            - STR_MELTA_AMMO
-            - STR_KRAK_GRENADE
-          -
-            - STR_CHAOS_ROCKET_LAUNCHER
-            - STR_SMALL_ROCKET
-            - STR_SMALL_ROCKET
-            - STR_SMALL_ROCKET
-            - STR_LARGE_ROCKET
-            - STR_MGRENADE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_GRENADE
+        itemSets: *traitorGuardsmanHeavyEquip
       - alienRank: 1
         lowQty: 0
         highQty: 0
         dQty: 1
         percentageOutsideUfo: 0
-        itemSets: &traitorGuardsmanScoutEquip
-          -
-            - STR_LASER_PISTOLC
-            - STR_LASPISTOL_CLIP
-            - STR_LASPISTOL_CLIP
-            - STR_LASPISTOL_CLIP
-            - STR_KRAK_GRENADE
-            - STR_KNIF
-          -
-            - STR_BOLTPISTOL_CHAOS
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_KRAK_GRENADE
-            - STR_KNIF
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_MGRENADE
-            - STR_AXE
+        itemSets: *traitorGuardsmanScoutEquip
       - alienRank: 7
         lowQty: 0
         highQty: 0 #1
@@ -2927,95 +2857,25 @@ alienDeployments:
         highQty: 9 #12
         dQty: 4
         percentageOutsideUfo: 90
-        itemSets: &traitorGuardsmanStandardEquip
-          -
-            - STR_LASER_RIFLEC
-            - STR_LASGUN_CLIP
-            - STR_LASGUN_CLIP
-            - STR_GRENADE
-          -
-            - STR_LASER_RIFLEC
-            - STR_LASGUN_CLIP
-            - STR_LASGUN_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_GRENADE
-          -
-            - STR_LASER_RIFLEC
-            - STR_LASGUN_CLIP
-            - STR_LASGUN_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
+        itemSets: *traitorGuardsmanStandardEquip
       - alienRank: 5 # guardsmen with alternate weapons - GLs, flamers
         lowQty: 3 #2
         highQty: 3 #4
         dQty: 0
         percentageOutsideUfo: 65
-        itemSets: &traitorGuardsmanSpecialEquip
-          -
-            - STR_GRENADE_LAUNCHER_CHAOS
-            - STR_FRAG_GRENADE_DRUM
-            - STR_FRAG_GRENADE_DRUM
-            - STR_FRAG_GRENADE_DRUM
-          -
-            - STR_FLAMETHROWER_CHAOS
-            - STR_FLAMETHROWER_CLIP
-            - STR_FLAMETHROWER_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_GRENADE_LAUNCHER_CHAOS
-            - STR_KRAK_GRENADE_DRUM
-            - STR_FRAG_GRENADE_DRUM
-            - STR_FRAG_GRENADE_DRUM
+        itemSets: *traitorGuardsmanSpecialEquip
       - alienRank: 3
         lowQty: 1
         highQty: 1 #2
         dQty: 2 #1
         percentageOutsideUfo: 60
-        itemSets: &traitorGuardsmanHeavyEquip
-          -
-            - STR_CHAOS_MELTAGUN
-            - STR_MELTA_AMMO
-            - STR_MELTA_AMMO
-            - STR_KRAK_GRENADE
-          -
-            - STR_CHAOS_ROCKET_LAUNCHER
-            - STR_SMALL_ROCKET
-            - STR_SMALL_ROCKET
-            - STR_SMALL_ROCKET
-            - STR_LARGE_ROCKET
-            - STR_MGRENADE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_GRENADE
+        itemSets: *traitorGuardsmanHeavyEquip
       - alienRank: 1
         lowQty: 0
         highQty: 0
         dQty: 1
         percentageOutsideUfo: 0
-        itemSets: &traitorGuardsmanScoutEquip
-          -
-            - STR_LASER_PISTOLC
-            - STR_LASPISTOL_CLIP
-            - STR_LASPISTOL_CLIP
-            - STR_LASPISTOL_CLIP
-            - STR_KRAK_GRENADE
-            - STR_KNIF
-          -
-            - STR_BOLTPISTOL_CHAOS
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_KRAK_GRENADE
-            - STR_KNIF
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_MGRENADE
-            - STR_AXE
+        itemSets: *traitorGuardsmanScoutEquip
       - alienRank: 7
         lowQty: 0
         highQty: 0 #1
@@ -3336,28 +3196,7 @@ alienDeployments:
         highQty: 1
         dQty: 0
         percentageOutsideUfo: 0
-        itemSets: &traitorGuardsmanCommanderEquip
-          -
-            - STR_BOLTPISTOL_CHAOS
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_KRAK_GRENADE
-            - STR_KNIF
-          -
-            - STR_BOLTPISTOL_CHAOS
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_KRAK_GRENADE
-            - STR_AXE
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_MGRENADE
-            - STR_AXE
+        itemSets: *traitorGuardsmanCommanderEquip
       - alienRank: 1
         lowQty: 2
         highQty: 2 #3
@@ -3601,28 +3440,7 @@ alienDeployments:
         highQty: 1
         dQty: 1
         percentageOutsideUfo: 0
-        itemSets: &traitorGuardsmanSergeantEquip
-          -
-            - STR_LASER_PISTOLC
-            - STR_LASPISTOL_CLIP
-            - STR_LASPISTOL_CLIP
-            - STR_LASPISTOL_CLIP
-            - STR_KRAK_GRENADE
-            - STR_KNIF
-          -
-            - STR_BOLTPISTOL_CHAOS
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_KRAK_GRENADE
-            - STR_KNIF
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_MGRENADE
-            - STR_AXE
+        itemSets: *traitorGuardsmanSergeantEquip
       - alienRank: 3
         lowQty: 5 #4
         highQty: 5 #6
@@ -5528,9 +5346,6 @@ alienDeployments:
             []
           -
             []
-    width: 50
-    length: 50
-    height: 9
     width: 50
     length: 50
     height: 9
