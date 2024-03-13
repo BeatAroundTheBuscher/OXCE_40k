@@ -3216,9 +3216,6 @@ items:
     costSnap:
       time: 1
       energy: 50
-    flatUse:
-      time: true
-      energy: true
     dropoff: 5
     battleType: 1
     invWidth: 2

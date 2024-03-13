@@ -347,6 +347,7 @@ interfaces:
         color: *geoYellow
       - id: list
         color: *geoYellow
+        color2: *geoLightGrey
         border: *geoTan
       - id: button
         color: *geoLightGrey
@@ -2025,3 +2026,28 @@ interfaces:
         border: 218  # blue
       - id: button
         color: 218   # blue
+  - type: oxceLinks
+    elements:
+      - id: palette
+        color: *geoBackgroundPalette
+      - id: window
+        color: *geoDarkGrey
+      - id: text
+        color: *geoYellow
+      - id: button
+        color: *geoLightGrey
+  - type: noteMenu
+    elements:
+      - id: palette
+        color: *geoBackgroundPalette
+      - id: window
+        color: *geoDarkGrey
+      - id: text
+        color: *geoYellow
+        color2: *geoLightGrey
+      - id: list
+        color: *geoYellow
+        color2: *geoLightGrey
+        border: *geoTan
+      - id: button
+        color: *geoLightGrey
