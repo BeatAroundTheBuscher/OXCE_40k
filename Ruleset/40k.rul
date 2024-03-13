@@ -3,6 +3,29 @@ units:
   - delete: STR_HOVERTANK_PLASMA
   - delete: STR_HOVERTANK_LAUNCHER
   - delete: STR_HOVERTANK_LASER
+#*** TRAINING Missions ***
+  - type: STR_TARGET_SOLDIER_GUARD
+    race: STR_TARGETH
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 1
+      stamina: 1
+      health: 300
+      bravery: 200
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 200
+      psiSkill: 0
+      melee: 0
+    armor: TARGET_INVINCIBLE
+    standHeight: 21
+    kneelHeight: 16
+    value: 1
+    intelligence: 1
+    aggression: 1
+    energyRecovery: 40
 #*** Cultists for Ritual Missions ***
   - &CULTIST_RITUALIST
     type: STR_CULTIST_RITUALIST_SACRIFICES
@@ -66,7 +89,6 @@ units:
       - []
       - - STR_SACRIFICE_FLAMER_SPAWNER
     capturable: false
-
   - type: STR_CIVILIAN_SACRIFICE_M0
     race: STR_CIVILIAN
     stats:
@@ -94,7 +116,6 @@ units:
       - []
       - - STR_SACRIFICE_BLOODLETTER_SPAWNER
     capturable: false
-
   - type: STR_CIVILIAN_SACRIFICE_F1
     race: STR_CIVILIAN
     stats:
@@ -122,7 +143,6 @@ units:
       - []
       - - STR_SACRIFICE_DAEMONETTE_SPAWNER
     capturable: false
-
   - type: STR_CIVILIAN_SACRIFICE_M1
     race: STR_CIVILIAN
     stats:
@@ -150,7 +170,6 @@ units:
       - []
       - - STR_SACRIFICE_PLAGUEBEARER_SPAWNER
     capturable: false
-
 #*** Stuff to be destroyed by rioters incited by cultists ***
   - type: STR_PIPELINE_DESTRUCTIBLE
     race: STR_IMPERIAL_INFRASTRUCTURE
@@ -259,7 +278,6 @@ units:
     energyRecovery: 1
     liveAlien: ""
     capturable: false
-
 #  CIVILIANS
   - type: STR_MONK1
     race: STR_CIVILIAN
@@ -540,7 +558,6 @@ units:
       - - STR_AUTOCANNON_GENE
         - STR_AUTOCANNON_CLIP
     specab: 1
-
   - type: STR_CASSIUM_BOLTER_LEFT1
     race: STR_CASSIUM
     stats:
@@ -735,6 +752,39 @@ units:
       - - STR_CASSIUM_BOLTER
       - - STR_CASSIUM_BOLTER
 
+  - type: STR_DROPPOD
+    race: STR_DROPPOD
+    stats:
+      tu: 100
+      stamina: 1
+      health: 90
+      bravery: 110
+      reactions: 120
+      firing: 60
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 0
+    armor: STR_DROPPOD_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 100
+    deathSound: 23
+    intelligence: 4
+    aggression: 7
+    sniper: 50
+    spotter: 1
+    specab: 1
+    moveSound: 14
+    energyRecovery: 1
+    builtInWeaponSets:
+      - - STR_DROPPOD_WEAPON
+        - STR_DROPPOD_WEAPON
+      - - STR_DROPPOD_WEAPON
+        - STR_DROPPOD_WEAPON
+      - - STR_DROPPOD_WEAPON
+        - STR_DROPPOD_WEAPON
   - type: STR_STORMTURRET #STORMRAven TURRET
     race: STR_STORMRAVEN
     rank: STR_LIVE_TERRORIST
@@ -1384,70 +1434,6 @@ units:
       - - STR_ENABLE_WEAPON
       - - STR_ENABLE_WEAPON
       - - STR_ENABLE_WEAPON
-  - type: STR_ORK_TURRET     #ORK TURRET       race: STR_ORK
-    race: STR_ORK
-    rank: STR_LIVE_TERRORIST
-    stats:
-      tu: 12
-      stamina: 100
-      health: 200
-      bravery: 100
-      reactions: 30
-      firing: 100
-      throwing: 0
-      strength: 90
-      psiStrength: 250
-      psiSkill: 0
-      melee: 0
-    armor: ORK_TURRET_ARMOR
-    standHeight: 23
-    kneelHeight: 16
-    value: 25
-    deathSound: 23
-    intelligence: 4
-    specab: 1
-    aggression: 5
-    sniper: 50
-    spotter: 1
-    energyRecovery: 100
-    livingWeapon: true
-    builtInWeaponSets:
-      - - STR_VINDICATOR_ORK
-      - - STR_VINDICATOR_ORK
-      - - STR_VINDICATOR_ORK
-    capturable: false
-  - type: STR_ORK_TURRET2     #ORK TURRET2       race: STR_ORK
-    race: STR_ORK
-    rank: STR_LIVE_TERRORIST
-    stats:
-      tu: 12
-      stamina: 100
-      health: 200
-      bravery: 100
-      reactions: 30
-      firing: 100
-      throwing: 0
-      strength: 90
-      psiStrength: 250
-      psiSkill: 0
-      melee: 0
-    armor: ORK_TURRET2_ARMOR
-    standHeight: 23
-    kneelHeight: 16
-    value: 25
-    deathSound: 23
-    intelligence: 4
-    specab: 1
-    aggression: 5
-    sniper: 50
-    spotter: 1
-    energyRecovery: 100
-    livingWeapon: true
-    builtInWeaponSets:
-      - - ORKTURRET_WEAPON
-      - - ORKTURRET_WEAPON
-      - - ORKTURRET_WEAPON
-    capturable: false
 
   - type: STR_TRAITOR_CHIMERA_TURRET
     race: STR_TRAITOR_CHIMERA_TURRET
@@ -1844,6 +1830,70 @@ units:
       - - STR_HYPERPHASESWORD
       - - STR_HYPERPHASESWORD
 #    ORK
+  - type: STR_ORK_TURRET     #ORK TURRET       race: STR_ORK
+    race: STR_ORK
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 12
+      stamina: 100
+      health: 200
+      bravery: 100
+      reactions: 30
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 250
+      psiSkill: 0
+      melee: 0
+    armor: ORK_TURRET_ARMOR
+    standHeight: 23
+    kneelHeight: 16
+    value: 25
+    deathSound: 23
+    intelligence: 4
+    specab: 1
+    aggression: 5
+    sniper: 50
+    spotter: 1
+    energyRecovery: 100
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_VINDICATOR_ORK
+      - - STR_VINDICATOR_ORK
+      - - STR_VINDICATOR_ORK
+    capturable: false
+  - type: STR_ORK_TURRET2     #ORK TURRET2       race: STR_ORK
+    race: STR_ORK
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 12
+      stamina: 100
+      health: 200
+      bravery: 100
+      reactions: 30
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 250
+      psiSkill: 0
+      melee: 0
+    armor: ORK_TURRET2_ARMOR
+    standHeight: 23
+    kneelHeight: 16
+    value: 25
+    deathSound: 23
+    intelligence: 4
+    specab: 1
+    aggression: 5
+    sniper: 50
+    spotter: 1
+    energyRecovery: 100
+    livingWeapon: true
+    builtInWeaponSets:
+      - - ORKTURRET_WEAPON
+      - - ORKTURRET_WEAPON
+      - - ORKTURRET_WEAPON
+    capturable: false
   - type: STR_GRETCHIN     # STR_GROTS_ARMOR                       RANK 5 weapons done
     race: STR_ORK
     rank: STR_LIVE_SOLDIER
@@ -1860,8 +1910,8 @@ units:
       psiSkill: 0
       melee: 70
     armor: STR_GROTS_ARMOR
-    standHeight: 20
-    kneelHeight: 15
+    standHeight: 15
+    kneelHeight: 10
     value: 5
     deathSound: [919, 920]
     intelligence: 6
@@ -2668,9 +2718,35 @@ units:
     moveSound: 700
     livingWeapon: true
     capturable: false
-#    ALL
+#    CHAOS
+  - type: STR_SCREAMER_TERRORIST
+    race: STR_TZEENTCH
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 82
+      stamina: 90
+      health: 148
+      bravery: 90
+      reactions: 64
+      firing: 0
+      throwing: 80
+      strength: 90
+      psiStrength: 35
+      psiSkill: 0
+      melee: 80
+    armor: STR_SCREAMER_ARMOR
+    standHeight: 15
+    kneelHeight: 10
+    value: 25
+    spotter: 50
+    deathSound: [686, 687]
+    intelligence: 4
+    aggression: 4
+    moveSound: 845
+    energyRecovery: 40
+    livingWeapon: true
   - type: STR_CHAOS_BEHEMOTH #Chaos BEHEMOTH
-    race: STR_CHAOS_BEHEMOTH
+    race: STR_SLAANESH
     rank: STR_LIVE_COMMANDER
     stats:
       tu: 62
@@ -5153,6 +5229,39 @@ units:
 armors:
   - delete: STR_NONE_UC
 #*** Cultists for Ritual Missions ***
+  - type: TARGET_INVINCIBLE
+    spriteSheet: TARGET.PCK
+    spriteInv: TGT
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    #stunImmune: true
+    painImmune: true
+    corpseBattle:
+      - STR_DISABLEMODULE
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    size: 1
+    damageModifier:
+      - 0.0 #none
+      - 0.0 #AP
+      - 0.0 #FLAMES
+      - 0.0 #HE
+      - 0.0 #LASCANON
+      - 0.0 #PLASMA
+      - 0.0 #STUN
+      - 0.0 #MELEE
+      - 0.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 0.0 #MELTA
+    loftempsSet: [ 3 ]
+    drawingRoutine: 16
+    constantAnimation: true
+    movementType: 2
+#*** Cultists for Ritual Missions ***
   - &CULTIST_RITUAL_ARMOR
     type: CULTIST_RITUAL_SACRIFICE_ARMOR
     visibilityAtDay: 40
@@ -6159,6 +6268,40 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 12
             #TANKS
+  - type: STR_DROPPOD_ARMOR
+    spriteSheet: DROPPOD.PCK
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    spriteInv: NOTDONEIMP
+    corpseGeo:  STR_DROPPOD_CORPSE
+    corpseBattle:
+      - DP_CORPSE1
+      - DP_CORPSE2
+      - DP_CORPSE3
+      - DP_CORPSE4
+    frontArmor: 100
+    sideArmor: 85
+    rearArmor: 70
+    underArmor: 100
+    size: 2
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.4 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 3
   - type: LEMONRUSS_ARMOR
     allowsMoving: false
     spriteSheet: LEMONRUSS.PCK
@@ -7626,6 +7769,7 @@ armors:
   - type: STR_TRAITOR_CHIMERA_TURRET_ARMOR
     visibilityAtDay: 60
     visibilityAtDark: 60
+    spriteInv: CHIMC.SPK
     spriteSheet: TRAITOR_CHIMERA_TURRET.PCK
     allowInv: false
     zombiImmune: true
@@ -11531,6 +11675,45 @@ armors:
     builtInWeapons:
       - FLAMER_WEAPON
       - FLAMER_WEAPON
+  - type: STR_SCREAMER_ARMOR #SCREAMER
+    bleedImmune: false
+    fearImmune: false   #default true for big units.
+    painImmune: false
+    visibilityAtDay: 60
+    visibilityAtDark: 60
+    spriteSheet: SCREAMER.PCK
+    allowInv: false
+    spriteInv: CTZSCREAMER.SPK
+    corpseBattle:
+      - 8_SCREAMER1
+      - 8_SCREAMER2
+      - 8_SCREAMER3
+      - 8_SCREAMER4
+    corpseGeo: STR_SCREAMER_CORPSE
+    frontArmor: 30
+    sideArmor: 30
+    rearArmor: 30
+    underArmor: 30
+    drawingRoutine: 21
+    movementType: 1
+    size: 2
+    damageModifier: #DEAMON ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    builtInWeapons:
+      - INV_NULL_3X3
+      - STR_SCREAMER_WEAPON
 #    JOAN ARMOR´S
   - type: STR_JARMOR_UC
     units:
@@ -12922,67 +13105,6 @@ manufacture:
   - delete: STR_HOVERTANK_LASER
   - delete: STR_HOVERTANK_LAUNCHER
   - delete: STR_HOVERTANK_PLASMA
-#*** Marine strategy wargear packages ***
-  - name: STR_CRATED_IMPULSOR
-    category: STR_CRAFT
-    requires:
-      - STR_PRIMARIS
-    space: 0
-    time: 100
-    cost: 1000
-    requiredItems:
-      STR_CRATED_IMPULSOR: 1
-    producedItems:
-      STR_IMPULSOR: 1
-
-  - name: STR_CRATED_DROPPODS
-    category: STR_CRAFT
-    requires:
-      - STR_CRATED_DROPPODS
-    space: 0
-    time: 100
-    cost: 1000
-    requiredItems:
-      STR_CRATED_DROPPODS: 1
-    producedItems:
-      STR_SKYRANGER: 1
-
-  - name: STR_CRATED_LANDSPEEDER
-    category: STR_CRAFT
-    requires:
-      - STR_SCOUT
-    space: 0
-    time: 100
-    cost: 1000
-    requiredItems:
-      STR_CRATED_LANDSPEEDER: 1
-    producedItems:
-      STR_SPEEDC: 1
-
-#*** Chamber millitant wargear packages ***
-  - name: STR_CRATED_ARVUS_GK
-    category: STR_CRAFT
-    requires:
-      - STR_GREYKNIGHTS
-    space: 0
-    time: 100
-    cost: 1000
-    requiredItems:
-      STR_CRATED_ARVUS_GK: 1
-    producedItems:
-      STR_ARVUS_GK: 1
-  - name: STR_CRATED_CORVUS
-    category: STR_CRAFT
-    requires:
-      - STR_DEATHWATCH
-    space: 0
-    time: 100
-    cost: 1000
-    requiredItems:
-      STR_CRATED_CORVUS: 1
-    producedItems:
-      STR_CORVUS: 1
-
 #--------------------------------------------------------------- PROMOTION --------------------------------
   - name: STR_PROMOTE_JOAN
     category: STR_ADVANCEMENT
@@ -14336,3 +14458,60 @@ manufacture:
       STR_UFO_POWER_SOURCE: 2
       STR_UFO_NAVIGATION: 1
 #
+#*** CRAFT packages ***
+#  - name: STR_CRATED_IMPULSOR
+#    category: STR_CRAFT
+#    requires:
+#      - STR_PRIMARIS
+#    space: 0
+#    time: 100
+#   cost: 1000
+#   requiredItems:
+#      STR_CRATED_IMPULSOR: 1
+#    producedItems:
+#      STR_IMPULSOR: 1
+#  - name: STR_CRATED_DROPPODS
+#    category: STR_CRAFT
+#    requires:
+#      - STR_CRATED_DROPPODS
+#    space: 0
+#    time: 100
+#    cost: 1000
+#    requiredItems:
+#      STR_CRATED_DROPPODS: 1
+#    producedItems:
+#      STR_SKYRANGER: 1
+#  - name: STR_CRATED_LANDSPEEDER
+#    category: STR_CRAFT
+#    requires:
+#      - STR_SCOUT
+#    space: 0
+#   time: 100
+#    cost: 1000
+#    requiredItems:
+#      STR_CRATED_LANDSPEEDER: 1
+#    producedItems:
+#      STR_SPEEDC: 1
+#*** Chamber millitant wargear packages ***
+#  - name: STR_CRATED_ARVUS_GK
+#    category: STR_CRAFT
+#    requires:
+#      - STR_GREYKNIGHTS
+#    space: 0
+#    time: 100
+#    cost: 1000
+#    requiredItems:
+#      STR_CRATED_ARVUS_GK: 1
+#    producedItems:
+#      STR_ARVUS_GK: 1
+#  - name: STR_CRATED_CORVUS
+#    category: STR_CRAFT
+#    requires:
+#     - STR_DEATHWATCH
+#    space: 0
+#    time: 100
+#    cost: 1000
+#    requiredItems:
+#      STR_CRATED_CORVUS: 1
+#    producedItems:
+#      STR_CORVUS: 1

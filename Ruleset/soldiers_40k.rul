@@ -389,6 +389,7 @@ soldiers:
     rankTinySprite: 5
 
   - type: STR_CHAOS_MARINE
+    group: 3
     flagOffset: 100
     costBuy: 60000
     costSalary: 30000

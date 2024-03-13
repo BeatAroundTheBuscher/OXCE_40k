@@ -588,11 +588,9 @@ research:
     points: 30
     dependencies:
       - STR_MASTER_CRAFTING
-
   - name: STR_LIGHT_BOLTERS
     dependencies:
       - STR_GENERALLOCK
-
 #*** armors ***
   - name: STR_THREAT_ONE #THREAT_ONE ARMOR PATH
     cost: 0
@@ -624,6 +622,12 @@ research:
       - STR_LASER_CANNON
       - STR_GREYKNIGHTS
   # marines
+  - name: STR_ADV_DROPPODS
+    cost: 500
+    points: 50
+    dependencies:
+      - STR_MARINES_STRATEGY
+      - STR_NOT_PRIMARIS
   - name: STR_SCOUTH_RESEARCH
     cost: 180
     points: 20
@@ -921,14 +925,12 @@ research:
 
 
 #*** early crafts ***
-
   - name: STR_PREATOR_R
     dependencies:
       - STR_IMPERIAL_GUARD_HIGHTIER
   - name: STR_PREATOR_PD_R
     dependencies:
       - STR_ARBITES_HIGHTIER
-
 
   - name: STR_XIPHON
     dependencies:
@@ -1509,6 +1511,16 @@ research:
     points: 50
     dependencies:
       - STR_ELDAR_PATH
+
+  - name: STR_SCORPION_R #XENO craft
+    cost: 1000
+    points: 500
+    dependencies:
+      - STR_ELDAR_HEMLOCK_UFO_DATA
+      - STR_ELDAR_WAVESERPENT_UFO_DATA
+      - STR_ELDAR_COBRA_UFO_DATA
+      - STR_ELDAR_HORNET_UFO_DATA
+
 #---CHAOS-----------------------------------------------------
   - name: STR_ALIENS_ONLY #CHAOS PATH
     cost: 1000
@@ -1822,6 +1834,22 @@ research:
       - STR_THREAT_ONE
   - name: STR_BERSERKER_CORPSE
     cost: 192
+    points: 50
+    needItem: true
+  - name: STR_FLAMER_CORPSE
+    cost: 100
+    points: 50
+    needItem: true
+  - name: STR_SCREAMER_CORPSE 
+    cost: 100
+    points: 50
+    needItem: true
+  - name: STR_SCREAMER_TERRORIST
+    cost: 100
+    points: 50
+    needItem: true
+  - name: STR_FLAMER_TERRORIST
+    cost: 100
     points: 50
     needItem: true
   - name: STR_SECTOID

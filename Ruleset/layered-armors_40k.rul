@@ -2781,7 +2781,7 @@ extraSprites:
       914: Resources/Thunderhawk/SALA/Thunderhawk_base1.png               #MARINES  3
       915: Resources/Impulsor/ULTRAMARINE/parmy_base.png               #MARINES  4
       916: Resources/Impulsor/ULTRAMARINE/repulsor_base.png            #MARINES  5
-      917: Resources/Impulsor/ULTRAMARINE/parmy_base.png               #MARINES  6
+      917: Resources/Droppod/ULTRAMARINE/Droppod_base3.png               #MARINES  6
       918: Resources/Xiphon/ULTRAMARINE/Xiphon_base.png                #MARINES  7
       919: Resources/Impulsor/ULTRAMARINE/impulsor_base.png            #MARINES  8
       920: Resources/Impulsor/ULTRAMARINE/repulsor_base.png            #MARINES  9

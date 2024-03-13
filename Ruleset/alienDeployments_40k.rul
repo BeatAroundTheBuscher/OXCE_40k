@@ -1555,7 +1555,7 @@ alienDeployments:
     markerIcon: 37
     terrains:
       - ORK_BASE
-    script: ORK1SCRIPT
+    script: ORKBASESCRIPT1
     alienBase: true
     #objectiveType: 100 # not used until we have the tiles for it
     objectiveComplete: [STR_ORK_BASE_DESTROYED, 250]
@@ -1676,7 +1676,7 @@ alienDeployments:
     markerIcon: 37
     terrains:
       - ORK_BASE
-    script: ORK2SCRIPT
+    script: ORKBASESCRIPT2
     alienBase: true
     #objectiveType: 100 # not used until we have the tiles for it
     objectiveComplete: [STR_ORK_BASE_DESTROYED, 250]
@@ -1803,7 +1803,7 @@ alienDeployments:
     markerIcon: 37
     terrains:
       - ORK_BASE
-    script: ORK3SCRIPT
+    script: ORKBASESCRIPT3
     alienBase: true
     #objectiveType: 100 # not used until we have the tiles for it
     objectiveComplete: [STR_ORK_BASE_DESTROYED, 500]
@@ -1943,7 +1943,7 @@ alienDeployments:
     markerIcon: 37
     terrains:
       - ORK_BASE
-    script: ORK4SCRIPT
+    script: ORKBASESCRIPT4
     alienBase: true
     #objectiveType: 100 # not used until we have the tiles for it
     objectiveComplete: [STR_ORK_BASE_DESTROYED, 750]
@@ -2087,7 +2087,7 @@ alienDeployments:
     markerIcon: 37
     terrains:
       - ORK_BASE
-    script: ORK5SCRIPT
+    script: ORKBASESCRIPT5
     alienBase: true
     #objectiveType: 100 # not used until we have the tiles for it
     objectiveComplete: [STR_ORK_BASE_DESTROYED, 1000]
@@ -2211,7 +2211,7 @@ alienDeployments:
     markerIcon: 37
     terrains:
       - ORK_BASE
-    script: ORK4SCRIPT
+    script: ORKBASESCRIPT4
     alienBase: true
     #objectiveType: 100 # not used until we have the tiles for it
     objectiveComplete: [STR_ORK_BASE_DESTROYED, 750]
@@ -3038,11 +3038,10 @@ alienDeployments:
 
   - type: STR_TRAITOR_GUARD_BASE_LEVEL_1
     markerIcon: 51
-    terrains:
-      - TRAITOR_GUARD_OUTPOST
-    script: TRAITOR_GUARD_BASE_LEVEL_1
+    script: TRAITORGUARDBASE_LEVEL1
     alienBase: true
-    objectiveType: 100
+    objectiveType: 3 #target type
+    objectivesRequired: 3 #number of tiles to be dest
     objectiveComplete: [STR_TRAITOR_GUARD_BASE_DESTROYED, 250]
     objectivePopup: STR_COMMUNICATIONS_EQUIPMENT_DESTROYED
     #objectiveFailed:
@@ -3128,13 +3127,12 @@ alienDeployments:
     length: 50
     height: 9
 
-  - type: STR_TRAITOR_GUARD_BASE_LEVEL_2
+  - type: STR_TRAITOR_GUARD_BASE_LEVEL_2 #HANGAR HK
     markerIcon: 52
-    terrains:
-      - TRAITOR_GUARD_OUTPOST
-    script: TRAITOR_GUARD_BASE_LEVEL_2
+    script: TRAITORGUARDBASE_LEVEL2
     alienBase: true
-    objectiveType: 100
+    objectiveType: 3 #target type
+    objectivesRequired: 5 #number of tiles to be dest
     objectiveComplete: [STR_TRAITOR_GUARD_BASE_DESTROYED, 500]
     objectivePopup: STR_COMMUNICATIONS_EQUIPMENT_DESTROYED
     #objectiveFailed:
@@ -3211,13 +3209,12 @@ alienDeployments:
     length: 50
     height: 9
 
-  - type: STR_TRAITOR_GUARD_BASE_LEVEL_3
+  - type: STR_TRAITOR_GUARD_BASE_LEVEL_3 #HANGAR HK
     markerIcon: 53
-    terrains:
-      - TRAITOR_GUARD_OUTPOST
-    script: TRAITOR_GUARD_BASE_LEVEL_3
+    script: TRAITORGUARDBASE_LEVEL3
     alienBase: true
-    objectiveType: 100
+    objectiveType: 3 #target type
+    objectivesRequired: 5 #number of tiles to be dest
     objectiveComplete: [STR_TRAITOR_GUARD_BASE_DESTROYED, 750]
     objectivePopup: STR_COMMUNICATIONS_EQUIPMENT_DESTROYED
     #objectiveFailed:
@@ -3293,10 +3290,121 @@ alienDeployments:
     missionBountyItemCount: 60
     markerName: STR_ALIEN_BASE
     genMission:
-      STR_CHIMERA_PATROL: 45
+      STR_CHIMERA_PATROL: 35
       STR_CHIMERA_MAINTENANCE_PATROL: 10
       STR_CHIMERA_TRAINING_PATROL: 5
-      STR_GUARD_PATROL: 40
+      STR_GUARD_PATROL: 30
+      STR_TRAITOR_FIREBASE_FROM_EXISTING: 20
+    genMissionFreq: 14
+    baseDetectionRange: 850
+    baseDetectionChance: 50
+    huntMissionMaxFrequency: 300
+    huntMissionWeights:
+      0:
+        STR_GUARD_PATROL: 100
+    alienBaseUpgrades:
+      0:
+        STR_TRAITOR_GUARD_BASE_LEVEL_3: 100
+      1:
+        STR_TRAITOR_GUARD_BASE_LEVEL_3: 100
+      2:
+        STR_TRAITOR_GUARD_BASE_LEVEL_3: 50
+        STR_TRAITOR_GUARD_BASE_LEVEL_4: 50
+      3:
+        STR_TRAITOR_GUARD_BASE_LEVEL_3: 50
+        STR_TRAITOR_GUARD_BASE_LEVEL_4: 50
+      4:
+        STR_TRAITOR_GUARD_BASE_LEVEL_4: 100
+    width: 60
+    length: 60
+    height: 9
+
+  - type: STR_TRAITOR_GUARD_BASE_LEVEL_4 #HANGAR HK
+    markerIcon: 53
+    script: TRAITORGUARDBASE_LEVEL4
+    alienBase: true
+    objectiveType: 3 #target type
+    objectivesRequired: 5 #number of tiles to be dest
+    objectiveComplete: [STR_TRAITOR_GUARD_BASE_DESTROYED, 750]
+    objectivePopup: STR_COMMUNICATIONS_EQUIPMENT_DESTROYED
+    #objectiveFailed:
+    #  - STR_TRAITOR_GUARD_BASE_NOT_DESTROYED
+    #  - 0
+    data:
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: &traitorGuardsmanCommanderEquip
+          -
+            - STR_BOLTPISTOL_CHAOS
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_KRAK_GRENADE
+            - STR_KNIF
+          -
+            - STR_BOLTPISTOL_CHAOS
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_KRAK_GRENADE
+            - STR_AXE
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_MGRENADE
+            - STR_AXE
+      - alienRank: 1
+        lowQty: 2
+        highQty: 2 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 0
+        itemSets: *traitorGuardsmanSergeantEquip
+      - alienRank: 3
+        lowQty: 10 #8
+        highQty: 10 #12
+        dQty: 4
+        percentageOutsideUfo: 65
+        itemSets: *traitorGuardsmanHeavyEquip
+      - alienRank: 5
+        lowQty: 10 #8
+        highQty: 10 #12
+        dQty: 6
+        percentageOutsideUfo: 65
+        itemSets: *traitorGuardsmanStandardEquip
+      - alienRank: 5 # guardsmen with alternate weapons - GLs, flamers
+        lowQty: 5 #4
+        highQty: 5 #6
+        dQty: 0
+        percentageOutsideUfo: 65
+        itemSets: *traitorGuardsmanSpecialEquip
+      - alienRank: 4 # add scouts once you change their weapon sets
+        lowQty: 6 #4
+        highQty: 6 #8
+        dQty: 3
+        percentageOutsideUfo: 0
+        itemSets: *traitorGuardsmanScoutEquip
+    briefing:
+      cutscene: TRAITORGUARDBASE
+      music: gmstory2
+      title: STR_ALIEN_BASE_ASSAULT
+      textOffset: -16
+      background: BACK01.SCR
+      showTarget: false
+      desc: STR_TRAITOR_BASE_ASSAULT_BRIEFING
+    missionBountyItem: STR_KILLPOINT_TOKEN
+    missionBountyItemCount: 60
+    markerName: STR_ALIEN_BASE
+    genMission:
+      STR_CHIMERA_PATROL: 20
+      STR_TRAITOR_FIREBASE_FROM_EXISTING: 50
+      STR_CHIMERA_MAINTENANCE_PATROL: 5
+      STR_CHIMERA_TRAINING_PATROL: 5
+      STR_GUARD_PATROL: 20
     genMissionFreq: 14
     baseDetectionRange: 850
     baseDetectionChance: 50
@@ -3310,9 +3418,7 @@ alienDeployments:
 
   - type: STR_TRAITOR_GUARD_BASE_START
     markerIcon: 52
-    terrains:
-      - TRAITOR_GUARD_OUTPOST
-    script: TRAITOR_GUARD_BASE_LEVEL_2
+    script: TRAITORGUARDBASE_LEVEL2
     alienBase: true
     objectiveType: 100
     objectiveComplete: [STR_TRAITOR_GUARD_BASE_DESTROYED, 500]
@@ -3415,9 +3521,7 @@ alienDeployments:
     width: 50
     length: 50
     height: 9
-    terrains:
-      - TRAITOR_GUARD_OUTPOST
-    script: TRAITOR_GUARD_CHIMERA_MAINTENANCE
+    script: TRAITORGUARDBASE_REPAIRBAY
     alert: STR_TRAITOR_CHIMERA_STARTING_REPAIRS
     alertBackground: BACK15.SCR
     alertSound: 49
@@ -3467,9 +3571,7 @@ alienDeployments:
     width: 50
     length: 50
     height: 9
-    terrains:
-      - TRAITOR_GUARD_OUTPOST
-    script: TRAITOR_GUARD_FIRING_RANGE
+    script: TRAITORGUARDBASE_RANGE
     alert: STR_TRAITOR_GUARD_TRAINING_EXERCISE
     alertBackground: BACK15.SCR
     alertSound: 49
@@ -4514,175 +4616,7 @@ alienDeployments:
     turnLimit: 1
     enviroEffects: STR_HANGAR_ENVIRO
     finalDestination: true
-
-#*** The Marines' sidemissions ***
-  - type: STR_TRAIN_MISSION #MISSION 1
-    briefing:
-      title: STR_TRAIN_MISSION_TITLE
-      palette: 4
-      desc: STR_TRAIN_MISSION_DESCRIPTION
-      music: gmstory2
-      showCraft: true
-      showTarget: false
-      background: BACK155.SCR
-    data:
-      - alienRank: 5
-        lowQty: 6
-        highQty: 6
-        dQty: 1
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-    width: 50
-    length: 50
-    height: 9
-  - type: STR_CHOUT #MISSION 2                           # RANK0  RANK1
-    briefing:
-      title: STR_CHOUT_ALERT
-      palette: 4
-      desc: STR_CHOUT_DESCRIPTION
-      music: gmstory2
-      showCraft: true
-      showTarget: false
-      background: BACK156.SCR
-    data: &BATTLESHIP
-      - alienRank: 5
-        lowQty: 6 #4
-        highQty: 6 #8
-        dQty: 4
-        percentageOutsideUfo: 50
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 4
-        lowQty: 1
-        highQty: 1 #2
-        dQty: 1 #0
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 3
-        lowQty: 1
-        highQty: 1 #2
-        dQty: 1 #0
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-      - alienRank: 2
-        lowQty: 1
-        highQty: 1 #2
-        dQty: 1 #0
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_BLASTER_LAUNCHER
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-      - alienRank: 1
-        lowQty: 2 #1
-        highQty: 2 #3
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 0
-        lowQty: 1
-        highQty: 1
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 6
-        lowQty: 1 # 0
-        highQty: 1 #2
-        dQty: 1
-        percentageOutsideUfo: 50
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 7
-        lowQty: 1 #0
-        highQty: 1 #2
-        dQty: 1
-        percentageOutsideUfo: 50
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-    width: 50
-    length: 50
-    height: 9
-  - type: STR_CAT #MISSION 4                             # RANK0  RANK1
-    briefing:
-      title: STR_CAT_ALERT
-      palette: 4
-      desc: STR_CAT_DESCRIPTION
-      music: gmstory2
-      showCraft: true
-      showTarget: false
-      background: BACK157.SCR
-    data: *BATTLESHIP
-    width: 60
-    length: 60
-    height: 10
 #*** UFO***
-
   - type: STR_PREDATOR_UFO
     data:
       - alienRank: 6
@@ -4804,32 +4738,11 @@ alienDeployments:
     length: 40
     height: 9
     missionBountyItem: STR_CHAOS_VOSS_DATA
-  - type: STR_SMALL_SCOUT2 #hell Blade
-    briefing:
-      cutscene: VERYSMALL
-      music: gmstory2
-    data:
-      - alienRank: 5
-        lowQty: 2
-        highQty: 2 #3
-        dQty: 2 #1
-        percentageOutsideUfo: 50
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-    width: 40
-    length: 40
-    height: 9
-    missionBountyItem: STR_SMALL_SCOUT_DATA
   - type: STR_SMALL_SCOUT
     briefing:
       cutscene: VERYSMALL
       music: gmstory2
-    data:
+    data: &SMALL
       - alienRank: 5
         lowQty: 2
         highQty: 2 #3
@@ -4850,7 +4763,7 @@ alienDeployments:
     briefing:
       cutscene: SMALL
       music: gmstory2
-    data:
+    data: &MEDIUM
       - alienRank: 5
         lowQty: 3 #2
         highQty: 3 #4
@@ -4925,7 +4838,7 @@ alienDeployments:
     briefing:
       cutscene: MEDIUM
       music: gmstory2
-    data:
+    data: &LARGE
       - alienRank: 5
         lowQty: 2 #1
         highQty: 2 #3
@@ -5069,7 +4982,7 @@ alienDeployments:
     briefing:
       cutscene: MEDIUMLARGE
       music: gmstory2
-    data:
+    data: &HARVESTER
       - alienRank: 5
         lowQty: 7 #5
         highQty: 7 #9
@@ -5149,7 +5062,7 @@ alienDeployments:
     briefing:
       cutscene: LARGE2
       music: gmstory2
-    data:
+    data: &ABDUCTOR
       - alienRank: 5
         lowQty: 4 #3
         highQty: 4 #5
@@ -5235,7 +5148,7 @@ alienDeployments:
     briefing:
       cutscene: LARGE
       music: gmstory2
-    data:
+    data: &TERROR
       - alienRank: 5
         lowQty: 5 #4
         highQty: 5 #6
@@ -5500,7 +5413,124 @@ alienDeployments:
     briefing:
       cutscene: VERYLARGE
       music: gmstory2
-    data: *BATTLESHIP
+    data: &BATTLESHIP
+      - alienRank: 5
+        lowQty: 6 #4
+        highQty: 6 #8
+        dQty: 4
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_BLASTER_LAUNCHER
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+      - alienRank: 1
+        lowQty: 2 #1
+        highQty: 2 #3
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 6
+        lowQty: 1 # 0
+        highQty: 1 #2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 1 #0
+        highQty: 1 #2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 50
+    length: 50
+    height: 9
     width: 50
     length: 50
     height: 9
@@ -5518,7 +5548,7 @@ alienDeployments:
     briefing:
       cutscene: SUPPLY
       music: gmstory2
-    data:
+    data: &SUPPLY
       - alienRank: 5
         lowQty: 6 #5
         highQty: 6 #7
@@ -5725,7 +5755,7 @@ alienDeployments:
     markerName: STR_TERROR_SITE
     duration: [4, 10]
     despawnPenalty: 1000
-  - type: STR_SABOTAGE_MISSION            # RANK1
+  - type: STR_SABOTAGE_MISSION          # RANK1
     data:
       - alienRank: 5
         lowQty: 5 #4
@@ -8980,6 +9010,304 @@ alienDeployments:
     objectiveComplete: [STR_ALIEN_SYNOMIUM_DEVICE_DESTROYED, 750]
     objectiveFailed: [STR_ALIEN_SYNOMIUM_DEVICE_FAILED, -750]
     objectivePopup: STR_CONTROL_CENTER_DESTROYED
+    
+    
+ #*** The Marines' sidemissions ***
+  - type: STR_TRAIN_MISSION #MISSION 1
+    briefing:
+      title: STR_TRAIN_MISSION_TITLE
+      palette: 4
+      desc: STR_TRAIN_MISSION_DESCRIPTION
+      music: gmstory2
+      showCraft: true
+      showTarget: false
+      background: BACK155.SCR
+    data:
+      - alienRank: 5
+        lowQty: 6
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 50
+    length: 50
+    height: 9
+  - type: STR_CHOUT #MISSION 2                           # RANK0  RANK1
+    briefing:
+      title: STR_CHOUT_ALERT
+      palette: 4
+      desc: STR_CHOUT_DESCRIPTION
+      music: gmstory2
+      showCraft: true
+      showTarget: false
+      background: BACK156.SCR
+    data:
+      - alienRank: 5
+        lowQty: 6 #4
+        highQty: 6 #8
+        dQty: 4
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_BLASTER_LAUNCHER
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+            - STR_BLASTER_BOMB
+      - alienRank: 1
+        lowQty: 2 #1
+        highQty: 2 #3
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 6
+        lowQty: 1 # 0
+        highQty: 1 #2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 1 #0
+        highQty: 1 #2
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 50
+    length: 50
+    height: 9
+  - type: STR_OUTPOST_DEFENSE #MISSION 3                 # RANK1
+    markerIcon: 33
+    missionBountyItem: STR_ALLIED
+    unlockedResearch: STR_UNLOCKED1
+    data:
+      - alienRank: 5
+        lowQty: 9 #8
+        highQty: 9 #10
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 7 #6
+        highQty: 7 #8
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_BOLTPISTOL_CHAOS
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 6
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
+        lowQty: 2
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 60
+    length: 60
+    height: 7
+    civilians: 0
+    civiliansByType:
+      STR_JOANMISSION: 1
+      STR_MARINE: 6 # with 4-6 sumo guards
+    terrains:
+      - MARINEOUT
+    script: SM
+    alert: STR_OUTPOST_DEFENSE_ALERT
+    alertBackground: BACK141.SCR
+    briefing:
+      title: STR_OUTPOST_DEFENSE_TITLE
+      palette: 4
+      desc: STR_OUTPOST_DEFENSE_DESCRIPTION
+      music: gmstory2
+      showCraft: true
+      showTarget: false
+      background: BACK144.SCR
+    markerName: STR_OUTPOST_DEFENSE_SITE
+    duration: [24, 48] #[min, max] in hours
+    despawnPenalty: 1000
+  - type: STR_CAT #MISSION 4                             # RANK0  RANK1
+    briefing:
+      title: STR_CAT_ALERT
+      palette: 4
+      desc: STR_CAT_DESCRIPTION
+      music: gmstory2
+      showCraft: true
+      showTarget: false
+      background: BACK157.SCR
+    data: *BATTLESHIP
+    width: 60
+    length: 60
+    height: 10   
   - type: STR_CHAOSOUT #MISSION 5 Fortress # RANK1
     unlockedResearch: STR_GENESEED
     markerIcon: 33
@@ -9643,136 +9971,7 @@ alienDeployments:
     markerName: STR_TANK_SITE
     duration: [4, 10]
     despawnPenalty: 1000
-  - type: STR_OUTPOST_DEFENSE #MISSION 3                 # RANK1
-    markerIcon: 33
-    missionBountyItem: STR_ALLIED
-    unlockedResearch: STR_UNLOCKED1
-    data:
-      - alienRank: 5
-        lowQty: 9 #8
-        highQty: 9 #10
-        dQty: 1
-        percentageOutsideUfo: 70
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 4
-        lowQty: 7 #6
-        highQty: 7 #8
-        dQty: 0
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 3
-        lowQty: 1
-        highQty: 1
-        dQty: 1
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_BOLTPISTOL_CHAOS
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_PISTOL_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-      - alienRank: 2
-        lowQty: 1
-        highQty: 1 #2
-        dQty: 1 #0
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_HEAVY_PLASMA_CLIP
-      - alienRank: 1
-        lowQty: 1
-        highQty: 1
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 6
-        lowQty: 1
-        highQty: 1
-        dQty: 0
-        percentageOutsideUfo: 100
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 7
-        lowQty: 2
-        highQty: 2
-        dQty: 0
-        percentageOutsideUfo: 100
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-    width: 60
-    length: 60
-    height: 7
-    civilians: 0
-    civiliansByType:
-      STR_JOANMISSION: 1
-      STR_MARINE: 6 # with 4-6 sumo guards
-    terrains:
-      - MARINEOUT
-    script: SM
-    alert: STR_OUTPOST_DEFENSE_ALERT
-    alertBackground: BACK141.SCR
-    briefing:
-      title: STR_OUTPOST_DEFENSE_TITLE
-      palette: 4
-      desc: STR_OUTPOST_DEFENSE_DESCRIPTION
-      music: gmstory2
-      showCraft: true
-      showTarget: false
-      background: BACK144.SCR
-    markerName: STR_OUTPOST_DEFENSE_SITE
-    duration: [24, 48] #[min, max] in hours
-    despawnPenalty: 1000
+
   - type: STR_OUTPOST_FINAL #MISSION 100              # RANK1
     markerIcon: 33
     missionBountyItem: STR_ALLIED
@@ -9915,3 +10114,455 @@ alienDeployments:
     markerName: STR_OUTPOST_FINAL_SITE
     duration: [24, 48] #[min, max] in hours
     despawnPenalty: 0
+####CHAOS GODSS #############
+  - type: STR_HELLT_S
+    briefing:
+      cutscene: VERYSMALL
+      music: gmstory2
+    data:
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_BOLTPISTOL_CHAOS
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_HELLT_DATA
+  - type: STR_SMALL_SCOUT_S
+    briefing:
+      cutscene: VERYSMALL
+      music: gmstory2
+    data: *SMALL
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_SMALL_SCOUT_DATA
+  - type: STR_MEDIUM_SCOUT_S
+    briefing:
+      cutscene: SMALL
+      music: gmstory2
+    data: *MEDIUM
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_MEDIUM_SCOUT_DATA
+  - type: STR_LARGE_SCOUT_S
+    briefing:
+      cutscene: MEDIUM
+      music: gmstory2
+    data: *LARGE
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_LARGE_SCOUT_DATA
+  - type: STR_HARVESTER_S
+    briefing:
+      cutscene: MEDIUMLARGE
+      music: gmstory2
+    data: *HARVESTER
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_HARVESTER_DATA
+  - type: STR_ABDUCTOR_S                          # RANK1
+    briefing:
+      cutscene: LARGE2
+      music: gmstory2
+    data: *ABDUCTOR
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_ABDUCTOR_DATA
+  - type: STR_TERROR_SHIP_S                        # RANK1
+    briefing:
+      cutscene: LARGE
+      music: gmstory2
+    data: *TERROR
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_TERROR_SHIP_DATA
+  - type: STR_BATTLESHIP_S                # RANK0  # RANK1
+    briefing:
+      cutscene: VERYLARGE
+      music: gmstory2
+    data: *BATTLESHIP
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_BATTLESHIP_DATA
+  - type: STR_HELLS_S                     # RANK0  # RANK1
+    briefing:
+      cutscene: VERYLARGESWORD
+      music: gmstory2
+    data: *BATTLESHIP
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_HELLS_DATA
+  - type: STR_SUPPLY_SHIP_S              # RANK1
+    briefing:
+      cutscene: SUPPLY
+      music: gmstory2
+    data: *SUPPLY
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_SUPPLY_SHIP_DATA
+    
+  - type: STR_HELLT_K
+    briefing:
+      cutscene: VERYSMALL
+      music: gmstory2
+    data:
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_BOLTPISTOL_CHAOS
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_HELLT_DATA
+  - type: STR_SMALL_SCOUT_K
+    briefing:
+      cutscene: VERYSMALL
+      music: gmstory2
+    data: *SMALL
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_SMALL_SCOUT_DATA
+  - type: STR_MEDIUM_SCOUT_K
+    briefing:
+      cutscene: SMALL
+      music: gmstory2
+    data: *MEDIUM
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_MEDIUM_SCOUT_DATA
+  - type: STR_LARGE_SCOUT_K
+    briefing:
+      cutscene: MEDIUM
+      music: gmstory2
+    data: *LARGE
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_LARGE_SCOUT_DATA
+  - type: STR_HARVESTER_K
+    briefing:
+      cutscene: MEDIUMLARGE
+      music: gmstory2
+    data: *HARVESTER
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_HARVESTER_DATA
+  - type: STR_ABDUCTOR_K                          # RANK1
+    briefing:
+      cutscene: LARGE2
+      music: gmstory2
+    data: *ABDUCTOR
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_ABDUCTOR_DATA
+  - type: STR_TERROR_SHIP_K                        # RANK1
+    briefing:
+      cutscene: LARGE
+      music: gmstory2
+    data: *TERROR
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_TERROR_SHIP_DATA
+  - type: STR_BATTLESHIP_K                # RANK0  # RANK1
+    briefing:
+      cutscene: VERYLARGE
+      music: gmstory2
+    data: *BATTLESHIP
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_BATTLESHIP_DATA
+  - type: STR_HELLS_K                     # RANK0  # RANK1
+    briefing:
+      cutscene: VERYLARGESWORD
+      music: gmstory2
+    data: *BATTLESHIP
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_HELLS_DATA
+  - type: STR_SUPPLY_SHIP_K              # RANK1
+    briefing:
+      cutscene: SUPPLY
+      music: gmstory2
+    data: *SUPPLY
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_SUPPLY_SHIP_DATA
+    
+  - type: STR_HELLT_T
+    briefing:
+      cutscene: VERYSMALL
+      music: gmstory2
+    data:
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_BOLTPISTOL_CHAOS
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_HELLT_DATA
+  - type: STR_SMALL_SCOUT_T
+    briefing:
+      cutscene: VERYSMALL
+      music: gmstory2
+    data: *SMALL
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_SMALL_SCOUT_DATA
+  - type: STR_MEDIUM_SCOUT_T
+    briefing:
+      cutscene: SMALL
+      music: gmstory2
+    data: *MEDIUM
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_MEDIUM_SCOUT_DATA
+  - type: STR_LARGE_SCOUT_T
+    briefing:
+      cutscene: MEDIUM
+      music: gmstory2
+    data: *LARGE
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_LARGE_SCOUT_DATA
+  - type: STR_HARVESTER_T
+    briefing:
+      cutscene: MEDIUMLARGE
+      music: gmstory2
+    data: *HARVESTER
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_HARVESTER_DATA
+  - type: STR_ABDUCTOR_T                          # RANK1
+    briefing:
+      cutscene: LARGE2
+      music: gmstory2
+    data: *ABDUCTOR
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_ABDUCTOR_DATA
+  - type: STR_TERROR_SHIP_T                        # RANK1
+    briefing:
+      cutscene: LARGE
+      music: gmstory2
+    data: *TERROR
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_TERROR_SHIP_DATA
+  - type: STR_BATTLESHIP_T                # RANK0  # RANK1
+    briefing:
+      cutscene: VERYLARGE
+      music: gmstory2
+    data: *BATTLESHIP
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_BATTLESHIP_DATA
+  - type: STR_HELLS_T                     # RANK0  # RANK1
+    briefing:
+      cutscene: VERYLARGESWORD
+      music: gmstory2
+    data: *BATTLESHIP
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_HELLS_DATA
+  - type: STR_SUPPLY_SHIP_T              # RANK1
+    briefing:
+      cutscene: SUPPLY
+      music: gmstory2
+    data: *SUPPLY
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_SUPPLY_SHIP_DATA
+    
+  - type: STR_HELLT_N
+    briefing:
+      cutscene: VERYSMALL
+      music: gmstory2
+    data:
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_BOLTPISTOL_CHAOS
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_HELLT_DATA
+  - type: STR_SMALL_SCOUT_N
+    briefing:
+      cutscene: VERYSMALL
+      music: gmstory2
+    data: *SMALL
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_SMALL_SCOUT_DATA
+  - type: STR_MEDIUM_SCOUT_N
+    briefing:
+      cutscene: SMALL
+      music: gmstory2
+    data: *MEDIUM
+    width: 40
+    length: 40
+    height: 9
+    missionBountyItem: STR_MEDIUM_SCOUT_DATA
+  - type: STR_LARGE_SCOUT_N
+    briefing:
+      cutscene: MEDIUM
+      music: gmstory2
+    data: *LARGE
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_LARGE_SCOUT_DATA
+  - type: STR_HARVESTER_N
+    briefing:
+      cutscene: MEDIUMLARGE
+      music: gmstory2
+    data: *HARVESTER
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_HARVESTER_DATA
+  - type: STR_ABDUCTOR_N                          # RANK1
+    briefing:
+      cutscene: LARGE2
+      music: gmstory2
+    data: *ABDUCTOR
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_ABDUCTOR_DATA
+  - type: STR_TERROR_SHIP_N                        # RANK1
+    briefing:
+      cutscene: LARGE
+      music: gmstory2
+    data: *TERROR
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_TERROR_SHIP_DATA
+  - type: STR_BATTLESHIP_N                # RANK0  # RANK1
+    briefing:
+      cutscene: VERYLARGE
+      music: gmstory2
+    data: *BATTLESHIP
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_BATTLESHIP_DATA
+  - type: STR_HELLS_N                     # RANK0  # RANK1
+    briefing:
+      cutscene: VERYLARGESWORD
+      music: gmstory2
+    data: *BATTLESHIP
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_HELLS_DATA
+  - type: STR_SUPPLY_SHIP_N              # RANK1
+    briefing:
+      cutscene: SUPPLY
+      music: gmstory2
+    data: *SUPPLY
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_SUPPLY_SHIP_DATA

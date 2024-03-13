@@ -1,7 +1,32 @@
 alienRaces:
+#*** IG missions ***
+  - id: STR_TARGET_GUARD
+    retaliationAggression: -100
+    members:
+      - STR_TARGET_SOLDIER_GUARD
+      - STR_TARGET_SOLDIER_GUARD
+      - STR_TARGET_SOLDIER_GUARD
+      - STR_TARGET_SOLDIER_GUARD
+      - STR_TARGET_SOLDIER_GUARD
+      - STR_TARGET_SOLDIER_GUARD
+      - STR_TARGET_SOLDIER_GUARD
+      - STR_TARGET_SOLDIER_GUARD
+  - id: STR_CHAOS_RIOTS
+    retaliationAggression: -100
+    members:
+      - STR_SECTOID_COMMANDER
+      - STR_SECTOID_LEADER
+      - STR_RIOTER_F1
+      - STR_RIOTER_M1
+      - STR_RIOTER_F0
+      - STR_RIOTER_M0
+      - STR_SECTOID_SOLDIER
+      - STR_SECTOID_SOLDIER
 #*** 'Early' Chaos races for the first few months ***
   - id: STR_EARLY_CULTISTS_MARINES
-    retaliationMission: STR_ALIEN_RETALIATION
+    retaliationMissionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
     retaliationAggression: -100
     members:
       - STR_ETHEREAL_SOLDIER    #0 Commander deploy no weapons
@@ -13,7 +38,9 @@ alienRaces:
       - STR_ETHEREAL_SOLDIER
       - STR_CYBERDISC_TERRORIST
   - id: STR_EARLY_TRAITOR_GUARD_MARINES
-    retaliationMission: STR_ALIEN_RETALIATION
+    retaliationMissionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
     retaliationAggression: -100
     members:
       - STR_ETHEREAL_SOLDIER    #0 Commander deploy no weapons
@@ -37,7 +64,9 @@ alienRaces:
       - STR_GK_SOLDIER
       - STR_GK_SOLDIER
   - id: STR_ORK
-    retaliationMission: STR_ORK_AIR_PATROL_RETALIATION
+    retaliationMissionWeights:
+      0:
+        STR_ORK_AIR_PATROL_RETALIATION: 100
     members:
       - STR_ORK_NOBBURLY         #0 Commander deploy no weapons
       - STR_ORK_ARDBOY            #1 leader  deploy no weapons
@@ -81,7 +110,9 @@ alienRaces:
       - STR_NECRON_DESTROYER
       - STR_NECRON_DESTROYER
   - id: STR_SLAANESH
-    retaliationMission: STR_ALIEN_RETALIATION
+    retaliationMissionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
     members:
       - STR_CHAOS_BEHEMOTH             #0 Commander deploy no weapons
       - STR_SLAANESH_SOLDIER           #1 leader  deploy no weapons
@@ -92,7 +123,9 @@ alienRaces:
       - STR_CHRYSSALID_TERRORIST
       - STR_CHRYSSALID_TERRORIST
   - id: STR_KHRONE
-    retaliationMission: STR_ALIEN_RETALIATION
+    retaliationMissionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
     members:
       - STR_KHORNE_CHAMP             #0 Commander deploy no weapons
       - STR_WARPTALON_COMMANDER           #1 leader  deploy no weapons
@@ -103,7 +136,9 @@ alienRaces:
       - STR_SILACOID_TERRORIST
       - STR_CYBERDISC_TERRORIST
   - id: STR_NURGLE
-    retaliationMission: STR_ALIEN_RETALIATION
+    retaliationMissionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
     members:
       - STR_NURGLE_CHAMP           #0 Commander deploy no weapons
       - STR_NURGLE_SOLDIER         #1 leader  deploy no weapons
@@ -114,7 +149,9 @@ alienRaces:
       - STR_NURGLE_TERMINATOR
       - STR_CELATID_TERRORIST
   - id: STR_TZEENTCH
-    retaliationMission: STR_ALIEN_RETALIATION
+    retaliationMissionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
     members:
       - STR_TZEENTCH_LEADER        #0 Commander  deploy no weapons
       - STR_HAVOC_TZEENTCH        #1 leader     deploy no weapons
@@ -137,7 +174,9 @@ alienRaces:
       - STR_CYBERDISC_TERRORIST
       - STR_CYBERDISC_TERRORIST
   - id: STR_SNAKEMAN
-    retaliationMission: STR_TRAITOR_GUARD_HK_RETALIATION
+    retaliationMissionWeights:
+      0:
+        STR_TRAITOR_GUARD_HK_RETALIATION: 100
     members:
       - STR_SNAKEMAN_COMMANDER
       - STR_SNAKEMAN_LEADER
@@ -148,7 +187,9 @@ alienRaces:
       - STR_GUARD_TURRET
       - STR_SNAKEMAN_SENTINEL
   - id: STR_ETHEREAL
-    retaliationMission: STR_ALIEN_RETALIATION
+    retaliationMissionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
     members:
       - STR_ETHEREAL_COMMANDER    #0
       - STR_ETHEREAL_LEADER       #1
@@ -159,7 +200,9 @@ alienRaces:
       - STR_SECTOPOD_TERRORIST
       - STR_SECTOPOD2_TERRORIST
   - id: STR_MUTON
-    retaliationMission: STR_ALIEN_RETALIATION
+    retaliationMissionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
     members:
       - STR_MUTON_SOLDIER
       - STR_MUTON_SOLDIER
@@ -170,7 +213,9 @@ alienRaces:
       - STR_SILACOID_TERRORIST
       - STR_CELATID_TERRORIST
   - id: STR_FLOATER
-    retaliationMission: STR_ALIEN_RETALIATION
+    retaliationMissionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
     members:
       - STR_FLOATER_COMMANDER
       - STR_FLOATER_LEADER
@@ -181,7 +226,9 @@ alienRaces:
       - STR_REAPER_TERRORIST
       - STR_REAPER_TERRORIST
   - id: STR_WARPTALON
-    retaliationMission: STR_ALIEN_RETALIATION
+    retaliationMissionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
     members:
       - STR_WARPTALON_COMMANDER
       - STR_WARPTALON_SOLDIER

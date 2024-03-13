@@ -1309,6 +1309,32 @@
     selectWeaponMale:   [294]
     selectWeaponFemale: [294]
 
+  - type: STR_DROPPOD_ARMOR
+    selectUnitMale:     [295]
+    selectUnitFemale:   [295]
+    selectWeaponMale:   [294]
+    selectWeaponFemale: [294]
+  - type: STR_CASSIUM_BOLTER_LEFT1_ARMOR
+    selectUnitMale:     [295]
+    selectUnitFemale:   [295]
+    selectWeaponMale:   [294]
+    selectWeaponFemale: [294]
+  - type: STR_CASSIUM_BOLTER_LEFT2_ARMOR
+    selectUnitMale:     [295]
+    selectUnitFemale:   [295]
+    selectWeaponMale:   [294]
+    selectWeaponFemale: [294]
+  - type: STR_CASSIUM_BOLTER_RIGHT1_ARMOR
+    selectUnitMale:     [295]
+    selectUnitFemale:   [295]
+    selectWeaponMale:   [294]
+    selectWeaponFemale: [294]
+  - type: STR_CASSIUM_BOLTER_RIGHT2_ARMOR
+    selectUnitMale:     [295]
+    selectUnitFemale:   [295]
+    selectWeaponMale:   [294]
+    selectWeaponFemale: [294]
+
   - type: CENT_ARMOR           #CENT UNIT
 #    JOAN ARMOR´S
   - type: STR_JARMOR_UC
