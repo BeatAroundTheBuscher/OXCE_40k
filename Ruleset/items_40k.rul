@@ -9455,6 +9455,7 @@ items:
     invHeight: 0
     battleType: 11
     recoveryPoints: 30
+    recover: false
   - type: DP_CORPSE2
     armor: 50
     floorSprite: 768
