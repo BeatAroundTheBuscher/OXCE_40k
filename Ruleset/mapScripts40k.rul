@@ -339,29 +339,6 @@ mapScripts:
     - type: fillArea
       blocks: [4, 5, 6]
       freqs: [1, 1, 1]
-
-
-    #*** this is a normal base, dig some tunnels and fill in with dirt
-    - type: digTunnel
-      conditionals: [-1]
-      direction: both
-      tunnelData:
-        level: 1
-        MCDReplacements:
-          - type: westWall
-            set: 1
-            entry: 13
-          - type: northWall
-            set: 1
-            entry: 14
-    - type: fillArea
-      conditionals: [-1]
-      blocks: 20
-    #*** this is an above-ground outpost, don't dig and fill in with above-ground stuff
-    - type: fillArea
-      conditionals: [1]
-      terrain: baseTerrain
-      groups: [16]
 #---------------ELDAR-----------------
   - type: ELDARGATE_SCRIPT #ELDAR BASE 1
     commands:
