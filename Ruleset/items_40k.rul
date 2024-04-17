@@ -3213,9 +3213,9 @@ items:
     flatUse:
       time: true
       energy: true
-    costSnap:
-      time: 1
-      energy: 50
+#    costSnap: # no accuracySnap is set
+#      time: 1
+#      energy: 50
     dropoff: 5
     battleType: 1
     invWidth: 2

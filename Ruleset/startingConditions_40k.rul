@@ -56,6 +56,10 @@
     allowedCraft:
       - STR_ARMYPD
 
+  - type: STR_FINAL_MISSION_DW
+    allowedCraft:
+      - STR_DW_LANDRAIDER
+
 enviroEffects:
   - type: STR_DEEPSPACE_ENVIRO
     armorTransformations:

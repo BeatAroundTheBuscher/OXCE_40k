@@ -1549,7 +1549,7 @@ alienMissions:
       0:
         STR_TARGET_GUARD: 100
     waves:
-      - ufo: STR_DUMMY
+      - ufo: STR_DUMMY # noqa
         count: 1
         timer: 0
         trajectory: DUMMY
