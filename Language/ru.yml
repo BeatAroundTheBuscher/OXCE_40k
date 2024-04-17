@@ -489,7 +489,7 @@ ru:
   STR_FIRING_SHORT: "Точн.>{ALT}{0}"
   STR_THROWING_SHORT: "Мет.>{ALT}{0}"
   STR_MELEE_SHORT: "Ближ.>{ALT}{0}"
-  STR_PSI_SHORT: "Пси>{ALT}{0}/{1}"
+  # STR_PSI_SHORT: "Пси>{ALT}{0}/{1}"
   STR_SHOW_ONLY_NEW: "Только новые"
   STR_PERSON_JOINING: "Присоединяется персонаж"
   STR_AUTO_PATROL: "АВТОН. ПАТРУЛИР."

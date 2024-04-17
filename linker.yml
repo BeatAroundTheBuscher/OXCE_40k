@@ -1,0 +1,8 @@
+# https://github.com/pedroterzero/oxce-yaml-helper/wiki/linker.yml
+
+# linker.yml
+config:
+  builtinTypes: # noqa stuff
+    items.psiMissSound: [0]
+    alienMissions.waves[].ufo: ["STR_DUMMY"]
+    interfaces.backgroundImage: "ExtendedPediaBackgroundPalBasescape"
