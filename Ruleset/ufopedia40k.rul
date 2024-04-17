@@ -1879,6 +1879,7 @@ ufopaedia:
       - STR_PLASMA_RIFLE
     text: STR_PLASMA_RIFLE_UFOPEDIA
   - id: STR_PLASMA_RIFLE_CLIP
+    type_id: 14
     section: STR_NOT_AVAILABLE
     requires:
       - STR_PLASMA_RIFLE_CLIP
@@ -1895,6 +1896,7 @@ ufopaedia:
       - STR_PLASMA_PISTOL
     text: STR_PLASMA_PISTOL_UFOPEDIA
   - id: STR_PLASMA_PISTOL_CLIP
+    type_id: 14
     section: STR_NOT_AVAILABLE
     requires:
       - STR_PLASMA_PISTOL_CLIP
@@ -1907,6 +1909,7 @@ ufopaedia:
       - STR_HEAVY_PLASMA
     text: STR_HEAVY_PLASMA_UFOPEDIA
   - id: STR_HEAVY_PLASMA_CLIP
+    type_id: 14
     section: STR_NOT_AVAILABLE
     requires:
       - STR_HEAVY_PLASMA_CLIP
@@ -1918,6 +1921,7 @@ ufopaedia:
       - STR_SMALL_LAUNCHER
     text: STR_SMALL_LAUNCHER_UFOPEDIA
   - id: STR_STUN_BOMB
+    type_id: 14
     section: STR_NOT_AVAILABLE
     requires:
       - STR_STUN_BOMB
@@ -1930,6 +1934,7 @@ ufopaedia:
       - STR_BLASTER_LAUNCHER
     text: STR_BLASTER_LAUNCHER_UFOPEDIA
   - id: STR_BLASTER_BOMB
+    type_id: 14
     section: STR_NOT_AVAILABLE
     requires:
       - STR_BLASTER_BOMB
