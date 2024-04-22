@@ -1,0 +1,591 @@
+
+units:
+  - delete: STR_4X4_TURRET_SURROUND
+
+  - type: STR_4X4_TURRET
+    race: STR_LEMONRUSS
+    stats:
+      tu: 100
+      stamina: 1
+      health: 200
+      bravery: 200
+      reactions: 200
+      firing: 120
+      throwing: 0
+      strength: 90
+      psiStrength: 200
+      psiSkill: 0
+      melee: 0
+    armor: 4X4_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 500
+    deathSound: 23
+    intelligence: 4
+    aggression: 7
+    sniper: 50
+    spotter: 1
+    moveSound: 14
+    energyRecovery: 1
+    specab: 1
+    builtInWeaponSets:
+      - - STR_LEMONRUSS_WEAPON
+        - STR_LEMANRUSS_BOLTER
+      - - STR_LEMONRUSS_WEAPON
+        - STR_LEMANRUSS_BOLTER
+      - - STR_LEMONRUSS_WEAPON
+        - STR_LEMANRUSS_BOLTER
+
+  - type: STR_4X4_TURRET_SURROUND
+    race: STR_LEMONRUSS
+    stats:
+      tu: 0
+      stamina: 1
+      health: 200
+      bravery: 200
+      reactions: 200
+      firing: 120
+      throwing: 0
+      strength: 90
+      psiStrength: 200
+      psiSkill: 0
+      melee: 0
+    armor: 4X4_ARMOR_SURROUND
+    standHeight: 16
+    kneelHeight: 16
+    value: 0
+    moraleLossWhenKilled: 0
+    deathSound: 23
+    intelligence: 4
+    aggression: 7
+    sniper: 50
+    spotter: 1
+    moveSound: 14
+    energyRecovery: 1
+    specab: 1
+
+
+armors:
+  - type: 4X4_ARMOR
+    allowsMoving: false
+    spriteSheet: 4X4CENTER.PCK
+    allowInv: false
+    spriteInv: LR.SPK
+    corpseGeo:  O__EXPLOSIVE_CORPSE
+    corpseBattle:
+      - O__EXPLOSIVE_CORPSE
+      - O__EXPLOSIVE_CORPSE
+      - O__EXPLOSIVE_CORPSE
+      - O__EXPLOSIVE_CORPSE
+    visibilityAtDay: 120
+    visibilityAtDark: 120
+    heatVision: 60
+    frontArmor: 150
+    sideArmor: 150
+    rearArmor: 150
+    underArmor: 150
+    movementType: 1
+    size: 2
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.0 #FLAMES #Death by fire will mess the script up
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 3
+    tags:
+      4x4Center: 1
+
+
+  - type: 4X4_ARMOR_SURROUND
+    allowsMoving: false
+    spriteSheet: 4X4SURROUND.PCK
+    allowInv: false
+    spriteInv: LR.SPK
+    corpseGeo:  O__EXPLOSIVE_CORPSE
+    corpseBattle:
+      - O__EXPLOSIVE_CORPSE
+    visibilityAtDay: 120
+    visibilityAtDark: 120
+    heatVision: 60
+    frontArmor: 150
+    sideArmor: 150
+    rearArmor: 150
+    underArmor: 150
+    movementType: 1
+    size: 1
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 0 #none
+      - 0 #AP
+      - 0.0 #FLAMES #Death by fire will mess the script up
+      - 0.1 #HE
+      - 0 #LASCANON
+      - 0 #PLASMA
+      - 0 #STUN
+      - 0 #MELEE
+      - 0 #ACID
+      - 0.0 #SMOKE
+      - 0 #IMPACT
+      - 0 #MELTA
+    loftempsSet: [ 0 ] 
+    alwaysVisible: true
+    drawingRoutine: 4
+    tags:
+      4x4Surround: 1
+
+items:
+
+  - type: STR_4X4_TURRET_SPAWNER
+    spawnUnit: STR_4X4_TURRET
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+
+  - type: STR_4X4_SURROUND_SPAWNER
+    spawnUnit: STR_4X4_TURRET_SURROUND
+    spawnUnitFaction: 2
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+
+
+  - type: O__EXPLOSIVE_CORPSE
+    floorSprite: 94
+    invWidth: 0
+    power: 100
+    blastRadius: 3
+    invHeight: 0
+    battleType: 11
+    recover: false
+    tags:
+      4x4Explosion: 1
+
+crafts:
+
+  - type: STR_CHIMERA_4X4_TEST                         #TIER I              RR 1000
+    marker: 30
+    requires:
+      - STR_GENERALLOCK
+    requiresBuyBaseFunc: [HANGAR]
+    sprite: 1002
+    fuelMax: 1000
+    damageMax: 1000
+    speedMax: 90
+    maxAltitude: 1
+    accel: 2
+    weapons: 1
+    weaponTypes:
+      - 3
+    weaponStrings:
+      - STR_ANTI_AIR_WEAPONS
+    soldiers: 24
+    vehicles: 2
+    costBuy: 900000
+    costRent: 400000
+    costSell: 400000
+    refuelRate: 1000
+    transferTime: 96
+    score: 250
+    repairRate: 4
+    battlescapeTerrainData:
+      name: CHIMERA
+      mapDataSets:
+        - BLANKS
+        - CHIMERA
+        - HIDRA
+        - LEMON
+      mapBlocks:
+        - name: CHIMERA_SMALL # CHIMERA
+          width: 10
+          length: 20
+          items:
+            STR_CHIMERA_TURRET_SPAWNER:
+              - [1, 4, 1] #[5, 6, 1]
+              - [2, 16, 1] #[3, 15, 1]
+            STR_4X4_TURRET_SPAWNER:
+              - [1, 9, 0] #[5, 6, 1]
+            STR_4X4_SURROUND_SPAWNER:
+              - [0, 8, 0] 
+              - [1, 8, 0] 
+              - [2, 8, 0] 
+              - [3, 8, 0] 
+              - [0, 9, 0] 
+              - [3, 9, 0] 
+              - [0, 10, 0] 
+              - [3, 10, 0] 
+              - [0, 11, 0] 
+              - [1, 11, 0] 
+              - [2, 11, 0] 
+              - [3, 11, 0] 
+          fuseTimers:
+            STR_CHIMERA_TURRET_SPAWNER: [0, 0]
+            STR_4X4_TURRET_SPAWNER: [0, 0]
+            STR_4X4_SURROUND_SPAWNER: [0, 0]
+    craftInventoryTile: [1, 2, 0] #[5, 4, 0]
+    deployment:
+      #- [5, 2, 0, 0]
+      #- [6, 2, 0, 0]
+      #- [5, 3, 0, 0]
+      #- [6, 3, 0, 0]
+      #- [3, 11, 0, 0]
+      #- [4, 11, 0, 0]
+      #- [3, 12, 0, 0]
+      #- [4, 12, 0, 0]
+      #- [5, 4, 0, 0]
+      #- [6, 4, 0, 0]
+      #- [5, 5, 0, 0]
+      #- [6, 5, 0, 0]
+      #- [5, 6, 0, 0]
+      #- [6, 6, 0, 0]
+      #- [5, 7, 0, 0]
+      #- [6, 7, 0, 0]
+      #- [3, 13, 0, 0]
+      #- [4, 13, 0, 0]
+      #- [3, 14, 0, 0]
+      #- [4, 14, 0, 0]
+      #- [3, 15, 0, 0]
+      #- [4, 15, 0, 0]
+      #- [3, 16, 0, 0]
+      #- [4, 16, 0, 0]
+      - [1, 2, 0, 0]
+      - [2, 2, 0, 0]
+      - [1, 3, 0, 0]
+      - [2, 3, 0, 0]
+      - [2, 14, 0, 0]
+      - [3, 14, 0, 0]
+      - [2, 15, 0, 0]
+      - [3, 15, 0, 0]
+      - [7, 7, 0, 0]
+      - [8, 7, 0, 0]
+      - [7, 8, 0, 0]
+      - [8, 8, 0, 0]
+      - [1, 4, 0, 0]
+      - [2, 4, 0, 0]
+      - [1, 5, 0, 0]
+      - [2, 5, 0, 0]
+      - [2, 16, 0, 0]
+      - [3, 16, 0, 0]
+      - [2, 17, 0, 0]
+      - [3, 17, 0, 0]
+      - [7, 9, 0, 0]
+      - [8, 9, 0, 0]
+      - [7, 10, 0, 0]
+      - [8, 10, 0, 0]
+    listOrder: 800
+    spacecraft: true
+
+extraSprites:
+  - type: 4X4CENTER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/4x4/TurretCenter.png
+
+
+  - type: 4X4SURROUND.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 320
+    files:
+      0: Resources/4x4/4x4turret.png
+
+
+extended:
+  tags:
+    RuleArmor:
+      4x4Center: int
+      4x4Surround: int
+    BattleGame:
+      MainX: int
+      MainY: int
+      MainZ: int
+      DeathFrame: int
+      DeathDirection: int
+    BattleUnit:
+      LocationChecked: int
+      DefaultOffset: int
+    RuleItem:
+      4x4Explosion: int
+
+
+  scripts:
+    createUnit:
+      - offset: 1
+        code: |
+          var int center;
+          var int x;
+          var int y;
+          var int z;
+          unit.getTag center Tag.4x4Center;
+          if eq center 1;
+            unit.getPosition.getX x;
+            unit.getPosition.getY y;
+            unit.getPosition.getZ z;
+            battle_game.setTag Tag.MainX x;
+            battle_game.setTag Tag.MainY y;
+            battle_game.setTag Tag.MainZ z;
+          end;
+          return;
+    newTurnUnit:
+      - offset: 1
+        code: |
+          var int locationchecked;
+          var int surround;
+          var int mainx;
+          var int mainy;
+          var int x;
+          var int y;
+          var int defaultoffset;
+          unit.getTag locationchecked Tag.LocationChecked;
+          unit.getTag surround Tag.4x4Surround;
+          if and neq locationchecked 1 eq surround 1;
+            unit.setTag Tag.LocationChecked 1;
+
+            battle_game.getTag mainx Tag.MainX;
+            battle_game.getTag mainy Tag.MainY;
+            sub mainx 1;
+            sub mainy 1;
+            unit.getPosition.getX x;
+            unit.getPosition.getY y;
+            sub x mainx;
+            sub y mainy;
+            set defaultoffset y;
+            mul x 4;
+            add defaultoffset x;
+            unit.setTag Tag.DefaultOffset defaultoffset;
+          end;
+          return;
+    selectUnitSprite:
+      - offset: 1
+        code: |
+          var int surround;
+          var int mainx;
+          var int mainy;
+          var int mainz;
+          var int defaultoffset;
+          var int direction;
+          var int health;
+
+          var int deathframe;
+          var int deathdirection;
+          var int deltaframe;
+          var int deltadirection;
+          var int temp;
+
+          var ptr Tile tile;
+          var ptr BattleUnit main_unit;
+          unit.getTag surround Tag.4x4Surround;
+          if eq surround 1;
+            set sprite_index 0;
+            unit.getTag defaultoffset Tag.DefaultOffset;
+            add sprite_index defaultoffset;
+            battle_game.getTag mainx Tag.MainX;
+            battle_game.getTag mainy Tag.MainY;
+            battle_game.getTag mainz Tag.MainZ;
+            battle_game.getTile tile mainx mainy mainz;
+            tile.getUnit main_unit;
+            main_unit.getHealth health;
+            if le health 0;
+              set sprite_index 0;
+              return sprite_index;
+            end;
+            main_unit.getDirection direction;
+            ##Death anim logic start # Scrapped for now
+            #battle_game.getTag deathframe Tag.DeathFrame;
+            #if gt deathframe 0; #God save you if you're trying to understand how this works
+              #battle_game.getTag deathdirection Tag.DeathDirection;
+              #set direction deathdirection;
+              #if neq direction 3;
+                #set deltadirection direction;
+                #sub deltadirection 7;
+                #set direction temp;
+                #sub temp deltadirection;
+                #set deltadirection temp;
+              #end;
+              #set deltaframe anim_frame;
+              #sub deltaframe deathframe;
+              #if gt deltaframe 3;
+                #sub deltaframe 3;
+                #add direction deltaframe;
+                #if ge direction 8;
+                  #sub direction 8;
+                #end;
+                #if gt deltaframe deltadirection;
+                  #set direction 3;
+                #end;
+              #end;
+            #end;
+            ##Death Anim logic end
+            mul direction 16;
+            add sprite_index direction;
+          end;
+          return sprite_index;
+
+      - offset: 2
+        code: |
+          var int health;
+          var int center;
+          unit.getTag center Tag.4x4Center;
+          if eq center 1;
+            unit.getHealth health;
+            if le health 0;
+              set sprite_index 32;
+            end;
+          end;
+          return sprite_index;
+
+    hitUnit: #Makes Turret immune to self-damage
+      - offset: 1
+        code: |
+          var int center;
+          var int surround;
+          var int attackerid;
+          var int defenderid;
+
+          attacker.getTag center Tag.4x4Center;
+          if eq center 1;
+            unit.getId defenderid;
+            attacker.getId attackerid;
+            if eq attackerid defenderid;
+              set power 0;
+              return power part side;
+            end;
+            unit.getTag surround Tag.4x4Surround;
+            if eq surround 1;
+              set power 0;
+              return power part side;
+            end;
+          end;
+          return power part side;
+
+
+      - offset: 2
+        code: |
+           var int center;
+           var int surround;
+           var int explosive;
+           var int damage;
+           var text test;
+           var ptr RuleItem rule_item;
+           unit.getTag center Tag.4x4Center;
+           unit.getTag surround Tag.4x4Surround;
+           if or eq center 1 eq surround 1;
+             damaging_item.getRuleItem rule_item;
+             rule_item.getTag explosive Tag.4x4Explosion;
+             if eq explosive 1;
+               set power 10000;
+             end;
+           end;
+           return power part side;
+
+    # damageUnit: #Scrapped for now
+    #   - offset: 1
+    #     code: | # records animframe for death to get a proper death anim  
+    #       var int center;
+    #       var int health;
+
+    #       var int deathframe;
+    #       var int deathdirection;
+    #       unit.getTag center Tag.4x4Center;
+    #       if eq center 1;
+    #         unit.getHealth health;
+    #         if ge to_health health;
+    #           unit.getDirection deathdirection;
+    #           battle_game.getAnimFrame deathframe;
+
+    #           battle_game.setTag Tag.DeathFrame deathframe;
+    #           battle_game.setTag Tag.DeathDirection deathdirection;
+    #         end;
+    #       end;
+    #       return;
+
+
+    # damageUnit: #Spreads damage to all units, ignores to_transform to_mana to_wound to_armor #Not working due to tile.getUnit not working with ptre:s. revisit after next oxce update
+    #   - offset: 1
+    #     code: |
+    #       var int center;
+    #       var int surround;
+    #       var int mainx;
+    #       var int mainy;
+    #       var int mainz;
+
+    #       var int x;
+    #       var int y;
+    #       var int ownid;
+    #       var int targetid;
+
+    #       var int scancenter;
+    #       var int scansurround;
+
+    #       var int health;
+    #       var int stun;
+    #       var int time;
+    #       var int energy;
+    #       var int morale;
+
+    #       var ptre Tile tile;
+    #       var ptre BattleUnit target;
+    #       unit.getTag center Tag.4x4Center;
+    #       unit.getTag surround Tag.4x4Surround;
+    #       if or eq center 1 eq surround 1;
+    #         battle_game.getTag mainx Tag.MainX;
+    #         battle_game.getTag mainy Tag.MainY;
+    #         battle_game.getTag mainz Tag.MainZ;
+    #         sub mainx 1;
+    #         sub mainy 1;
+    #         set x mainx;
+    #         set y mainy;
+            
+    #         unit.getId ownid;
+    #         loop var loopy 4;
+    #           loop var loopx 4;
+    #             set scancenter 0;
+    #             set scansurround 0;
+    #             battle_game.getTile tile x y mainz;
+    #             tile.getUnit target;
+    #             target.getId targetid;
+    #             if neq ownid targetid;
+    #               target.getTag scancenter Tag.4x4Center;
+    #               target.getTag scansurround Tag.4x4Surround;
+    #               if or eq scancenter 1 eq scansurround 1;
+    #                 target.getHealth health;
+    #                 sub health to_health;
+    #                 target.setHealth health;
+
+    #                 target.getStun stun;
+    #                 sub stun to_stun;
+    #                 target.setStun stunM
+
+    #                 target.getTimeUnits time;
+    #                 sub time to_time;
+    #                 target.setTimeUnits time;
+
+    #                 target.getMorale morale;
+    #                 sub morale to_morale;
+    #                 target.setMorale morale;
+
+    #                 target.getEnergy energy;
+    #                 sub energy to_energy;
+    #                 target.setEnergy energy;
+    #               end;
+    #             end;
+    #           add x 1;
+    #           end;
+    #         add y 1;
+    #         set x mainx;
+    #         end;
+
+    #       end;
+    #       return;
