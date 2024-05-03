@@ -39,7 +39,7 @@ units:
   - type: STR_4X4_TURRET_SURROUND
     race: STR_LEMONRUSS
     stats:
-      tu: 0
+      tu: 1
       stamina: 1
       health: 200
       bravery: 200
@@ -58,8 +58,6 @@ units:
     deathSound: 23
     intelligence: 4
     aggression: 7
-    sniper: 50
-    spotter: 1
     moveSound: 14
     energyRecovery: 1
     specab: 1
