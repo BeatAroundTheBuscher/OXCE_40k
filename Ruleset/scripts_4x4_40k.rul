@@ -58,6 +58,8 @@ units:
     deathSound: 23
     intelligence: 4
     aggression: 7
+    sniper: 50
+    spotter: 1
     moveSound: 14
     energyRecovery: 1
     specab: 1
@@ -66,7 +68,7 @@ units:
 armors:
   - type: 4X4_ARMOR
     allowsMoving: false
-    spriteSheet: 4X4CENTER.PCK
+    spriteSheet: 4X4SURROUND.PCK
     allowInv: false
     spriteInv: LR.SPK
     corpseGeo:  O__EXPLOSIVE_CORPSE
@@ -98,7 +100,7 @@ armors:
       - 1.0 #IMPACT
       - 1.2 #MELTA
     loftempsSet: [ 92, 89, 90, 91 ]
-    drawingRoutine: 3
+    drawingRoutine: 5
     tags:
       4x4Center: 1
 
@@ -282,14 +284,6 @@ crafts:
     spacecraft: true
 
 extraSprites:
-  - type: 4X4CENTER.PCK
-    subX: 32
-    subY: 40
-    width: 256
-    height: 320
-    files:
-      0: Resources/4x4/TurretCenter.png
-
 
   - type: 4X4SURROUND.PCK
     subX: 32
@@ -376,11 +370,6 @@ extended:
           var int direction;
           var int health;
 
-          var int deathframe;
-          var int deathdirection;
-          var int deltaframe;
-          var int deltadirection;
-          var int temp;
 
           var ptr Tile tile;
           var ptr BattleUnit main_unit;
@@ -394,36 +383,15 @@ extended:
             battle_game.getTag mainz Tag.MainZ;
             battle_game.getTile tile mainx mainy mainz;
             tile.getUnit main_unit;
-            main_unit.getHealth health;
+            main_unit.getHealth health; #hides sprite on death
             if le health 0;
               set sprite_index 0;
               return sprite_index;
             end;
             main_unit.getDirection direction;
-            ##Death anim logic start # Scrapped for now
+            ##Death anim logic start 
             #battle_game.getTag deathframe Tag.DeathFrame;
-            #if gt deathframe 0; #God save you if you're trying to understand how this works
-              #battle_game.getTag deathdirection Tag.DeathDirection;
-              #set direction deathdirection;
-              #if neq direction 3;
-                #set deltadirection direction;
-                #sub deltadirection 7;
-                #set direction temp;
-                #sub temp deltadirection;
-                #set deltadirection temp;
-              #end;
-              #set deltaframe anim_frame;
-              #sub deltaframe deathframe;
-              #if gt deltaframe 3;
-                #sub deltaframe 3;
-                #add direction deltaframe;
-                #if ge direction 8;
-                  #sub direction 8;
-                #end;
-                #if gt deltaframe deltadirection;
-                  #set direction 3;
-                #end;
-              #end;
+            #if gt deathframe 0;
             #end;
             ##Death Anim logic end
             mul direction 16;
@@ -435,12 +403,34 @@ extended:
         code: |
           var int health;
           var int center;
+          var int direction;
           unit.getTag center Tag.4x4Center;
           if eq center 1;
-            unit.getHealth health;
+            set sprite_index 0;
+            unit.getHealth health; #hides sprite on death, 
             if le health 0;
-              set sprite_index 32;
+              return sprite_index;
             end;
+            if eq blit_part blit_large_torso_0;
+              add sprite_index 5;
+            end;
+            if eq blit_part blit_large_torso_1;
+              add sprite_index 9;
+            end;
+            if eq blit_part blit_large_torso_2;
+              add sprite_index 6;
+            end;
+            if eq blit_part blit_large_torso_3;
+              add sprite_index 10;
+            end;
+            unit.getDirection direction;
+            ##Death anim logic start 
+            #battle_game.getTag deathframe Tag.DeathFrame;
+            #if gt deathframe 0;
+            #end;
+            ##Death Anim logic end
+            mul direction 16;
+            add sprite_index direction;
           end;
           return sprite_index;
 
@@ -469,7 +459,7 @@ extended:
           return power part side;
 
 
-      - offset: 2
+      - offset: 2 #increases deathexplosion damage to units that make up the turret
         code: |
            var int center;
            var int surround;
@@ -488,26 +478,25 @@ extended:
            end;
            return power part side;
 
-    # damageUnit: #Scrapped for now
-    #   - offset: 1
-    #     code: | # records animframe for death to get a proper death anim  
-    #       var int center;
-    #       var int health;
+    # damageUnit: 
+    #    - offset: 1
+    #      code: | # records animframe for death to get a proper death anim  
+    #        var int center;
+    #        var int health;
+    #        var int deathframe;
+    #        var int deathdirection;
 
-    #       var int deathframe;
-    #       var int deathdirection;
-    #       unit.getTag center Tag.4x4Center;
-    #       if eq center 1;
-    #         unit.getHealth health;
-    #         if ge to_health health;
-    #           unit.getDirection deathdirection;
-    #           battle_game.getAnimFrame deathframe;
-
-    #           battle_game.setTag Tag.DeathFrame deathframe;
-    #           battle_game.setTag Tag.DeathDirection deathdirection;
-    #         end;
-    #       end;
-    #       return;
+    #        unit.getTag center Tag.4x4Center;
+    #        if eq center 1;
+    #          unit.getHealth health;
+    #          if ge to_health health;
+    #            unit.getDirection deathdirection;
+    #            battle_game.getAnimFrame deathframe;
+    #            battle_game.setTag Tag.DeathFrame deathframe;
+    #            battle_game.setTag Tag.DeathDirection deathdirection;
+    #          end;
+    #        end;
+    #        return;
 
 
     # damageUnit: #Spreads damage to all units, ignores to_transform to_mana to_wound to_armor #Not working due to tile.getUnit not working with ptre:s. revisit after next oxce update
