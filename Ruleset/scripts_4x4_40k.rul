@@ -39,7 +39,7 @@ units:
   - type: STR_4X4_TURRET_SURROUND
     race: STR_LEMONRUSS
     stats:
-      tu: 0
+      tu: 1
       stamina: 1
       health: 200
       bravery: 200
@@ -284,14 +284,6 @@ crafts:
     spacecraft: true
 
 extraSprites:
-  - type: 4X4CENTER.PCK
-    subX: 32
-    subY: 40
-    width: 256
-    height: 320
-    files:
-      0: Resources/4x4/TurretCenter.png
-
 
   - type: 4X4SURROUND.PCK
     subX: 32
@@ -391,17 +383,17 @@ extended:
             battle_game.getTag mainz Tag.MainZ;
             battle_game.getTile tile mainx mainy mainz;
             tile.getUnit main_unit;
-            #main_unit.getHealth health; #hides sprite on death
-            #if le health 0;
-              #set sprite_index 0;
-              #return sprite_index;
-            #end;
-            main_unit.getDirection direction;
-            #Death anim logic start 
-            battle_game.getTag deathframe Tag.DeathFrame;
-            if gt deathframe 0;
+            main_unit.getHealth health; #hides sprite on death
+            if le health 0;
+              set sprite_index 0;
+              return sprite_index;
             end;
-            #Death Anim logic end
+            main_unit.getDirection direction;
+            ##Death anim logic start 
+            #battle_game.getTag deathframe Tag.DeathFrame;
+            #if gt deathframe 0;
+            #end;
+            ##Death Anim logic end
             mul direction 16;
             add sprite_index direction;
           end;
@@ -415,10 +407,10 @@ extended:
           unit.getTag center Tag.4x4Center;
           if eq center 1;
             set sprite_index 0;
-            #unit.getHealth health; #hides sprite on death, 
-            #if le health 0;
-              #return sprite_index;
-            #end;
+            unit.getHealth health; #hides sprite on death, 
+            if le health 0;
+              return sprite_index;
+            end;
             if eq blit_part blit_large_torso_0;
               add sprite_index 5;
             end;
@@ -432,11 +424,11 @@ extended:
               add sprite_index 10;
             end;
             unit.getDirection direction;
-            #Death anim logic start 
-            battle_game.getTag deathframe Tag.DeathFrame;
-            if gt deathframe 0;
-            end;
-            #Death Anim logic end
+            ##Death anim logic start 
+            #battle_game.getTag deathframe Tag.DeathFrame;
+            #if gt deathframe 0;
+            #end;
+            ##Death Anim logic end
             mul direction 16;
             add sprite_index direction;
           end;
@@ -467,7 +459,7 @@ extended:
           return power part side;
 
 
-      - offset: 2
+      - offset: 2 #increases deathexplosion damage to units that make up the turret
         code: |
            var int center;
            var int surround;
@@ -486,25 +478,25 @@ extended:
            end;
            return power part side;
 
-    damageUnit: 
-       - offset: 1
-         code: | # records animframe for death to get a proper death anim  
-           var int center;
-           var int health;
-           var int deathframe;
-           var int deathdirection;
+    # damageUnit: 
+    #    - offset: 1
+    #      code: | # records animframe for death to get a proper death anim  
+    #        var int center;
+    #        var int health;
+    #        var int deathframe;
+    #        var int deathdirection;
 
-           unit.getTag center Tag.4x4Center;
-           if eq center 1;
-             unit.getHealth health;
-             if ge to_health health;
-               unit.getDirection deathdirection;
-               battle_game.getAnimFrame deathframe;
-               battle_game.setTag Tag.DeathFrame deathframe;
-               battle_game.setTag Tag.DeathDirection deathdirection;
-             end;
-           end;
-           return;
+    #        unit.getTag center Tag.4x4Center;
+    #        if eq center 1;
+    #          unit.getHealth health;
+    #          if ge to_health health;
+    #            unit.getDirection deathdirection;
+    #            battle_game.getAnimFrame deathframe;
+    #            battle_game.setTag Tag.DeathFrame deathframe;
+    #            battle_game.setTag Tag.DeathDirection deathdirection;
+    #          end;
+    #        end;
+    #        return;
 
 
     # damageUnit: #Spreads damage to all units, ignores to_transform to_mana to_wound to_armor #Not working due to tile.getUnit not working with ptre:s. revisit after next oxce update
