@@ -1,11 +1,15 @@
 crafts:
 #GUARD
   - type: STR_CHIMERA                         #TIER I              RR 1000
+    takeoffSound: 63 #TANKMOVE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 30
     requires:
       - STR_IMPERIAL_GUARD_OPERATIONS
     requiresBuyBaseFunc: [HANGAR]
-    sprite: 1002
+    sprite: 1487
+    maxSkinIndex: 2            # default 0
+    skinSprites: [1488,1500] # default empty, contains all sprites except for the first (index zero)
     fuelMax: 1000
     damageMax: 1000
     speedMax: 90
@@ -16,7 +20,7 @@ crafts:
       - 3
     weaponStrings:
       - STR_ANTI_AIR_WEAPONS
-    soldiers: 24
+    soldiers: 22
     vehicles: 2
     costBuy: 900000
     costRent: 400000
@@ -29,11 +33,10 @@ crafts:
       name: CHIMERA
       mapDataSets:
         - BLANKS
-        - CHIMERA
+        - CHIMERABD
         - HIDRA
-        - LEMON
       mapBlocks:
-        - name: CHIMERA_SMALL # CHIMERA
+        - name: CHIMERA # CHIMERA
           width: 10
           length: 20
           items:
@@ -44,30 +47,6 @@ crafts:
             STR_CHIMERA_TURRET_SPAWNER: [0, 0]
     craftInventoryTile: [1, 2, 0] #[5, 4, 0]
     deployment:
-      #- [5, 2, 0, 0]
-      #- [6, 2, 0, 0]
-      #- [5, 3, 0, 0]
-      #- [6, 3, 0, 0]
-      #- [3, 11, 0, 0]
-      #- [4, 11, 0, 0]
-      #- [3, 12, 0, 0]
-      #- [4, 12, 0, 0]
-      #- [5, 4, 0, 0]
-      #- [6, 4, 0, 0]
-      #- [5, 5, 0, 0]
-      #- [6, 5, 0, 0]
-      #- [5, 6, 0, 0]
-      #- [6, 6, 0, 0]
-      #- [5, 7, 0, 0]
-      #- [6, 7, 0, 0]
-      #- [3, 13, 0, 0]
-      #- [4, 13, 0, 0]
-      #- [3, 14, 0, 0]
-      #- [4, 14, 0, 0]
-      #- [3, 15, 0, 0]
-      #- [4, 15, 0, 0]
-      #- [3, 16, 0, 0]
-      #- [4, 16, 0, 0]
       - [1, 2, 0, 0]
       - [2, 2, 0, 0]
       - [1, 3, 0, 0]
@@ -78,7 +57,7 @@ crafts:
       - [3, 15, 0, 0]
       - [7, 7, 0, 0]
       - [8, 7, 0, 0]
-      - [7, 8, 0, 0]
+#      - [7, 8, 0, 0]
       - [8, 8, 0, 0]
       - [1, 4, 0, 0]
       - [2, 4, 0, 0]
@@ -88,7 +67,7 @@ crafts:
       - [3, 16, 0, 0]
       - [2, 17, 0, 0]
       - [3, 17, 0, 0]
-      - [7, 9, 0, 0]
+#      - [7, 9, 0, 0]
       - [8, 9, 0, 0]
       - [7, 10, 0, 0]
       - [8, 10, 0, 0]
@@ -415,6 +394,8 @@ crafts:
     listOrder: 820
     spacecraft: true
   - type: STR_VALKYRIE_GRAV_DROP              #TIER II
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [62, 63, 64] #REGULAR SOUND
     marker: 36
     requiresBuyBaseFunc: [HANGAR]
     requires:
@@ -558,11 +539,15 @@ crafts:
     listOrder: 810
     spacecraft: true
   - type: STR_ARMOR_COLUMN                    #TIER II              RR 1000
+    takeoffSound: 63 #TANKMOVE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
     marker: 30
     requiresBuyBaseFunc: [HANGAR]
     requires:
       - STR_IMPERIAL_GUARD_MIDTIER
-    sprite: 1009
+    sprite: 1501
+    maxSkinIndex: 1            # default 0
+    skinSprites: [1502] # default empty, contains all sprites except for the first (index zero)
     fuelMax: 1000
     damageMax: 1500
     speedMax: 90
@@ -573,7 +558,7 @@ crafts:
       - 3
     weaponStrings:
       - STR_ANTI_AIR_WEAPONS
-    soldiers: 16
+    soldiers: 14
     vehicles: 1
     costBuy: 1200000
     costRent: 600000
@@ -585,7 +570,7 @@ crafts:
       name: CHIMERA
       mapDataSets:
         - BLANKS
-        - CHIMERA
+        - CHIMERABD
         - HIDRA
         - LEMON
       mapBlocks:
@@ -597,9 +582,13 @@ crafts:
               - [1, 4, 1] #[5, 6, 1]
             STR_LEMONRUSS_SPAWNER:
               - [2, 16, 1] #[3, 15, 1]
+            STR_RUSS_BOLTER_SPAWNER:
+              - [3, 18, 0] #[3, 15, 1]
           fuseTimers:
             STR_CHIMERA_TURRET_SPAWNER: [0, 0]
             STR_LEMONRUSS_SPAWNER: [0, 0]
+            STR_RUSS_BOLTER_SPAWNER: [0, 0]
+            
     craftInventoryTile: [1, 2, 0]
     deployment:
       - [1, 2, 0, 0]
@@ -608,19 +597,21 @@ crafts:
       - [2, 3, 0, 0]
       - [7, 7, 0, 0]
       - [8, 7, 0, 0]
-      - [7, 8, 0, 0]
+#      - [7, 8, 0, 0]
       - [8, 8, 0, 0]
       - [1, 4, 0, 0]
       - [2, 4, 0, 0]
       - [1, 5, 0, 0]
       - [2, 5, 0, 0]
-      - [7, 9, 0, 0]
+#      - [7, 9, 0, 0]
       - [8, 9, 0, 0]
       - [7, 10, 0, 0]
       - [8, 10, 0, 0]
     listOrder: 801
     spacecraft: true
   - type: STR_TAUROS                          #TIER II              RR 200
+    takeoffSound: 56 #TURBINE SOUND
+    selectSound: [62, 63, 64] #REGULAR SOUND
     marker: 36
     requires:
       - STR_IMPERIAL_GUARD_MISSION_ELYSIAN_DROP_COMPLETE
@@ -831,6 +822,103 @@ crafts:
       - [4, 15, 1, 0]
       - [5, 15, 1, 0]
       - [6, 15, 1, 0]
+    listOrder: 820
+    spacecraft: true
+  - type: STR_BANEBLADE                       #TIER V
+    takeoffSound: 63 #TANKMOVE SOUND
+    selectSound: [65, 66, 67, 68]  #HEAVY TRANSPORT SOUND
+    marker: 42
+    requiresBuyBaseFunc: [HANGAR]
+    requires:
+      - STR_BANEBLADE_R
+    sprite: 1485
+    maxSkinIndex: 1            # default 0
+    skinSprites: [1486] # default empty, contains all sprites except for the first (index zero)
+    fuelMax: 800
+    damageMax: 2500
+    speedMax: 75
+    maxAltitude: 1
+    accel: 1
+    weapons: 4        #weapon number increased to 3.
+    weaponTypes:        #definition of allowed weapon types in craft. Max 4 different types per slot.
+      - 0               #slot 1 accepts weapons with type 0. This is default.
+      - 0               #slot 2 accepts weapons with type 0.
+      - 0               #slot 2 accepts weapons with type 0.
+      - [4, 5, 13]      #slot 3 accepts weapons with type 4, 5 and 13.
+    weaponStrings:
+      - STR_WEAPON_ONE
+      - STR_WEAPON_TWO
+      - STR_WEAPON_THREE_PLUS
+      - STR_WEAPON_FOURTH_PLUS
+    fixedWeapons: [STR_CANNON_UC, STR_CANNON_UC, STR_LASER_CANNON_UC, STR_THUNDER_CANNON_UC]
+    soldiers: 16
+    vehicles: 0
+    costBuy: 3400000
+    costRent: 1200000
+    costSell: 1200000
+    refuelRate: 1000
+    transferTime: 96
+    score: 250
+    repairRate: 8
+    battlescapeTerrainData:
+      name: BANEBLADE
+      mapDataSets:
+        - BLANKS
+        - BANEBLADE
+        - BANEBLADEI
+      mapBlocks:
+        - name: BANEBLADE
+          width: 10
+          length: 20
+          items:
+            STR_4X4_TURRET_SPAWNER:
+              - [3, 9, 2] #[5, 6, 1]
+            STR_4X4_SURROUND_SPAWNER:
+              - [2, 8, 2] 
+              - [3, 8, 2] 
+              - [4, 8, 2] 
+              - [5, 8, 2] 
+              - [2, 9, 2] 
+              - [5, 9, 2] 
+              - [2, 10, 2] 
+              - [5, 10, 2] 
+              - [2, 11, 2] 
+              - [3, 11, 2] 
+              - [4, 11, 2] 
+              - [5, 11, 2]
+            STR_BANE_LAS_TURRET_SPAWNER:
+              - [0, 10, 2]
+              - [7, 10, 2]
+            STR_BANE_BOLTER_TURRET_SPAWNER:
+              - [3, 12, 1]
+            STR_BANEBLADE_BOLTER_LEFT_SPAWNER:
+              - [0, 11, 1]
+            STR_BANEBLADE_BOLTER_RIGHT_SPAWNER:
+              - [8, 11, 1]
+          fuseTimers:
+            STR_4X4_TURRET_SPAWNER: [0, 0]
+            STR_4X4_SURROUND_SPAWNER: [0, 0]
+            STR_BANE_LAS_TURRET_SPAWNER: [0, 0]
+            STR_BANE_BOLTER_TURRET_SPAWNER: [0, 0]
+            STR_BANEBLADE_BOLTER_LEFT_SPAWNER: [0, 0]
+            STR_BANEBLADE_BOLTER_RIGHT_SPAWNER: [0, 0]
+    deployment:
+      - [6, 12, 1, 0]
+      - [6, 11, 1, 0]
+      - [6, 10, 1, 0]
+      - [6, 9, 1, 0]
+      - [6, 8, 1, 0]
+      - [5, 11, 1, 0]
+      - [5, 10, 1, 0]
+      - [5, 9, 1, 0]
+      - [5, 8, 1, 0]
+      - [4, 11, 1, 0]
+      - [4, 10, 1, 0]
+      - [3, 11, 1, 0]
+      - [2, 11, 1, 0]
+      - [2, 10, 1, 0]
+      - [2, 9, 1, 0]
+      - [2, 8, 1, 0]
     listOrder: 820
     spacecraft: true
 #GK
@@ -3733,7 +3821,7 @@ crafts:
     weaponStrings:
       - STR_ANTI_AIR_WEAPONS
     soldiers: 30
-    vehicles: 2
+    vehicles: 1
 #    costBuy: 9000000
     refuelRate: 1000
     transferTime: 96
@@ -3743,7 +3831,7 @@ crafts:
       name: ARMYPD
       mapDataSets:
         - BLANKS
-        - TAUROXPD
+        - TAUROX_4
         - CHIMERAPDH
         - WAGPD
         - HIDRAPD

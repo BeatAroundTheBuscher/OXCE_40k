@@ -3244,6 +3244,14 @@ ufopaedia:
     image_id: 2PREATOR.SPK
     text: STR_PREATOR_UFOPEDIA
     listOrder: 820
+  - id: STR_BANEBLADE                     #821
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_BANEBLADE_R
+    image_id: 2BANEBLADE.SPK
+    text: STR_BANEBLADE_UFOPEDIA
+    listOrder: 821
 #ARBITES
   - id: STR_VULTURE                    #212
     type_id: 11

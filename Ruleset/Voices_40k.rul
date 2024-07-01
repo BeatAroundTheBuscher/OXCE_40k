@@ -246,6 +246,42 @@
     annoyedMale:        [256, 257, 258, 259, 250]
     annoyedFemale:      [256, 257, 258, 259, 260]
 #GUARD ARMOR
+  - type: 4X4_ARMOR
+    selectUnitMale:     [1435, 1436, 1437, 1438, 1439, 1440, 1441, 1442]
+    selectUnitFemale:   [1435, 1436, 1437, 1438, 1439, 1440, 1441, 1442]
+    selectWeaponMale:   [1427, 1428, 1429, 1430, 1431, 1432, 1433, 1434]
+    selectWeaponFemale: [1427, 1428, 1429, 1430, 1431, 1432, 1433, 1434]
+    annoyedMale:        [1443, 1444, 1445, 1446, 1447, 1448, 1449, 1450]
+    annoyedFemale:      [1443, 1444, 1445, 1446, 1447, 1448, 1449, 1450]
+  - type: STR_BANE_BOLTER_ARMOR
+    selectUnitMale:     [1435, 1436, 1437, 1438, 1439, 1440, 1441, 1442]
+    selectUnitFemale:   [1435, 1436, 1437, 1438, 1439, 1440, 1441, 1442]
+    selectWeaponMale:   [1427, 1428, 1429, 1430, 1431, 1432, 1433, 1434]
+    selectWeaponFemale: [1427, 1428, 1429, 1430, 1431, 1432, 1433, 1434]
+    annoyedMale:        [1443, 1444, 1445, 1446, 1447, 1448, 1449, 1450]
+    annoyedFemale:      [1443, 1444, 1445, 1446, 1447, 1448, 1449, 1450]
+  - type: STR_BANE_LAS_ARMOR
+    selectUnitMale:     [1435, 1436, 1437, 1438, 1439, 1440, 1441, 1442]
+    selectUnitFemale:   [1435, 1436, 1437, 1438, 1439, 1440, 1441, 1442]
+    selectWeaponMale:   [1427, 1428, 1429, 1430, 1431, 1432, 1433, 1434]
+    selectWeaponFemale: [1427, 1428, 1429, 1430, 1431, 1432, 1433, 1434]
+    annoyedMale:        [1443, 1444, 1445, 1446, 1447, 1448, 1449, 1450]
+    annoyedFemale:      [1443, 1444, 1445, 1446, 1447, 1448, 1449, 1450]
+  - type: STR_BANE_BOLTER_LEFT_ARMOR
+    selectUnitMale:     [295]
+    selectUnitFemale:   [295]
+    selectWeaponMale:   [294]
+    selectWeaponFemale: [294]
+  - type: STR_BANE_BOLTER_RIGHT_ARMOR
+    selectUnitMale:     [295]
+    selectUnitFemale:   [295]
+    selectWeaponMale:   [294]
+    selectWeaponFemale: [294]    
+  - type: STR_LEMONRUSS_BOLTER_ARMOR
+    selectUnitMale:     [295]
+    selectUnitFemale:   [295]
+    selectWeaponMale:   [294]
+    selectWeaponFemale: [294] 
   - type: STR_PSYKER_ARMOR
     selectUnitMale:     [1061, 1062, 1063, 1064, 1065]
     selectUnitFemale:   [1036, 1037, 1038, 1039, 1040]
@@ -727,7 +763,7 @@
     annoyedFemale:      [156, 157, 158, 159, 160]
     deathMale:     [116, 117, 118, 119]
     deathFemale:   [111, 112, 113, 114, 115]
-  - type: STR_CHIMERA_TURRET_ARMOR
+  - type: STR_CHIMERA_PD_ARMOR
     selectUnitMale:     [600, 602, 603, 604, 605]
     selectUnitFemale:   [600, 602, 603, 604, 605]
     selectWeaponMale:   [594, 595, 596, 597, 598, 599]

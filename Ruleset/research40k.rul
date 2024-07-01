@@ -925,6 +925,9 @@ research:
 
 
 #*** early crafts ***
+  - name: STR_BANEBLADE_R
+    dependencies:
+      - STR_IMPERIAL_GUARD_HIGHTIER
   - name: STR_PREATOR_R
     dependencies:
       - STR_IMPERIAL_GUARD_HIGHTIER

@@ -2271,6 +2271,13 @@ en-US:
   STR_POWER_SUIT_UFOPEDIA: "Terminator Armor or Tactical Dreadnought Armor is the toughest and most powerful form of personal armor humanity has ever developed, used in Terminator units."
   STR_PERSONAL_ARMOR_UFOPEDIA: "Mark VII armor, also known as the 'Aquila', 'Imperator' or 'Eagle' armor, was developed during the Horus Heresy, and remains in use as the most common form of power armor."
 #HWP AND CRAFTS ---------------------------------------
+  STR_BANE_BOLTER_RIGHT: "Twin-Linked Bolter Sponson"
+  STR_BANE_BOLTER_LEFT: "Twin-Linked Bolter Sponson"
+  STR_BANE_BOLTER_TURRET: "Twin-Linked Bolter Turret"
+  STR_BANE_LAS_TURRET: "Lascannon Turret"
+  STR_4X4_TURRET: "Baneblade Cannon"
+
+  STR_RUSS_BOLTER: "Bolter Sponson"
   STR_CASSIUM_BOLTER_LEFT1: "Bolter Sponson"
   STR_CASSIUM_BOLTER_LEFT2: "Bolter Sponson"
   STR_CASSIUM_BOLTER_RIGHT1: "Bolter Sponson"
@@ -3015,6 +3022,12 @@ en-US:
   STR_CHIMERAPD: "LIGHT CHIMERA"
   STR_CHIMERAPD_UFOPEDIA: "{NEWLINE} The Chimera is the Imperial Guard's most commonly used armored personnel carrier (APC), proven to be reliable over millennia of service. This wheeled variant is faster than the other chimeras"
 
+  STR_BANEBLADE: "BANEBLADE"
+  STR_BANEBLADE_UFOPEDIA: "{NEWLINE} The Baneblade is the primary super-heavy tank of the Astra Militarum, and one of the largest and oldest armoured fighting vehicles in the service of the Imperial armed forces."
+  STR_BANEBLADE_R: "Baneblade Requisition"
+  STR_BANEBLADE_STD: "STD SHELL"
+  STR_BANEBLADE_AP: "AP SHELL"
+  STR_BANEBLADE_EX: "EX SHELL"
   STR_CASSIUMPD: "CRASSUS"
   STR_CASSIUMPD_UFOPEDIA: "{NEWLINE} Crassus is a relatively new addition to the arsenal of the Astra Militarum, it has already become famous for its heavy armour and firepower support in the battlefield."
   STR_CASSIUM: "CRASSUS"

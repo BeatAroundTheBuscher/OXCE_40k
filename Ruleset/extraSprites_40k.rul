@@ -986,6 +986,14 @@
     files:
       0: Resources/GUARD/Inventory/man_0m9.gif
 #    Drawing routine
+  - type: BANE1.SPK #Baneblade TRACKED INV
+    singleImage: true
+    files:
+      0: Resources/Baneblade/BANE1.png
+  - type: BANE2.SPK #Baneblade TRACKED INV
+    singleImage: true
+    files:
+      0: Resources/Baneblade/BANE2.png
   - type: LR.SPK #LEMON RUSS INV
     singleImage: true
     files:
@@ -1487,6 +1495,50 @@
     height: 120
     files:
       0: Resources/CASSIUM/CCASSR2.png
+#*** BANE turrets ***
+  - type: BANEBOLTER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Baneblade/BANEB.png
+  - type: BANELAS.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Baneblade/BANEL.png
+  - type: BANERIGHT.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/Baneblade/BANEBR.png
+  - type: BANELEFT.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/Baneblade/BANEBL.png
+#*** QUIMERA turrets ***
+  - type: LEMONF.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/CHIMERA/LEMONF.png
+  - type: CHIMERALAS.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/CHIMERA/chimeraturret.png
 
   - type: GENE_TURRET.PCK
     subX: 32
@@ -3232,7 +3284,10 @@
       872: Resources/Foes/872.png
       873: Resources/Foes/873.png
       874: Resources/Droppod/874.png
-      
+      875: Resources/Baneblade/875.png
+      876: Resources/Baneblade/876.png
+      877: Resources/Baneblade/877.png
+      878: Resources/Baneblade/878.png
 #900-999 CHAPTER CHANGE
       1400: Resources_IG/Bigobs/traitor_chimera_multilaser.png
 #FLOOR
@@ -3716,6 +3771,21 @@
       768: Resources/Droppod/floorob_768.png
       769: Resources/Droppod/floorob_769.png
       770: Resources/Droppod/floorob_770.png
+      771: Resources/Baneblade/floorob_771.png
+      772: Resources/Baneblade/floorob_772.png
+      773: Resources/Baneblade/floorob_773.png
+      774: Resources/Baneblade/floorob_774.png
+      775: Resources/Baneblade/floorob_775.png
+      776: Resources/Baneblade/floorob_776.png
+      777: Resources/GENE/floorob_777.png
+      778: Resources/GENE/floorob_778.png
+      779: Resources/GENE/floorob_779.png
+      780: Resources/GENE/floorob_780.png
+      781: Resources/Baneblade/floorob_781.png
+      782: Resources/Baneblade/floorob_782.png
+      783: Resources/Baneblade/floorob_783.png
+      784: Resources/Baneblade/floorob_784.png
+      785: Resources/Chimera/floorob_785.png
 #900-999 CHAPTER CHANGE
 # Traitor guard chimera corpses
       1400: Resources_IG/Floorobs/floorob_traitor_chimera_turret_0.png
@@ -4157,10 +4227,17 @@
       1515: Resources/Thunderbolt/Basebits1515.png           #GUARD ADDON 15
       1516: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 16
       1517: Resources/Thunderbolt/Basebits584.png          #GUARD ADDON 17
-      1518: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 18 X
-      1519: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 19 X
-      1520: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 20 X
-      1521: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 21 X      
+      1518: Resources/Baneblade/baneblade_base.png          #GUARD ADDON 18 
+      1519: Resources/Baneblade/baneblade_base2.png          #GUARD ADDON 19 
+      1520: Resources/CHIMERA/Chimerahidra_base.png          #GUARD ADDON 20 X
+      1521: Resources/CHIMERA/Chimerahidra_base1.png          #GUARD ADDON 21 X
+#  GUARD ADDON 3   
+      1533: Resources/CHIMERA/Chimerahidra_base2.png          #GUARD ADDON 22 X
+      1534: Resources/CHIMERA/Leman_base.png          #GUARD ADDON 23 X
+      1535: Resources/CHIMERA/Leman_base1.png          #GUARD ADDON 24 X     
+      1536: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 25 X
+      1537: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 26 X
+      1538: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 27 X      
 #  GUARD ADDON
       1611: Resources/TAUROX/Taurox_base1.png          #GUARD ADDON 0
       1612: Resources/TAUROX/Taurox_base2.png          #GUARD ADDON 1
@@ -4350,16 +4427,16 @@
 #
 #  GUARD ADDON 2
       1478: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 11 < - sprite index
-      1479: Resources/Thunderbolt/Thunderbolt_minimised.png                     #GUARD ADDON 12
+      1479: Resources/Thunderbolt/Thunderbolt_minimised.png                     #GUARD ADDON 12 <- USED
       1480: Resources/Thunderbolt/Thunderbolt_minimised.png                   #GUARD ADDON 13
       1481: Resources/Thunderbolt/Thunderbolt_minimised.png                  #GUARD ADDON 14
       1482: Resources/Thunderbolt/Thunderbolt_minimised.png                  #GUARD ADDON 15
       1483: Resources/Thunderbolt/Thunderbolt_minimised.png                   #GUARD ADDON 16
-      1484: Resources/Thunderbolt/Thunderbolt_minimised.png                  #GUARD ADDON 17
-      1485: Resources/Thunderbolt/Thunderbolt_minimised.png                 #GUARD ADDON 18 < - sprite index 
-      1486: Resources/Thunderbolt/Thunderbolt_minimised.png                 #GUARD ADDON 19 
-      1487: Resources/Thunderbolt/Thunderbolt_minimised.png                #GUARD ADDON 20
-      1488: Resources/Thunderbolt/Thunderbolt_minimised.png                #GUARD ADDON 21   
+      1484: Resources/Thunderbolt/Thunderbolt_minimised.png                  #GUARD ADDON 17 <- USED
+      1485: Resources/Baneblade/Baneblade_minimised.png                 #GUARD ADDON 18
+      1486: Resources/Baneblade/Baneblade_minimised.png                 #GUARD ADDON 19 
+      1487: Resources/CHIMERA/Chimerahidra_minimised.png                #GUARD ADDON 20
+      1488: Resources/CHIMERA/Chimerahidra_minimised.png                #GUARD ADDON 21  
 # GUARD  ADDON 2 PLUS 11 DOG FIGHT      
       1489: Resources/Thunderbolt/Thunderbolt_dogfight.png                #GUARD ADDON 11
       1490: Resources/Thunderbolt/Thunderbolt_dogfight.png                #GUARD ADDON 12
@@ -4368,10 +4445,24 @@
       1493: Resources/Thunderbolt/Thunderbolt_dogfight.png                #GUARD ADDON 15
       1494: Resources/Thunderbolt/Thunderbolt_dogfight.png                #GUARD ADDON 16
       1495: Resources/Thunderbolt/Thunderbolt_dogfight.png         #GUARD ADDON 17
-      1496: Resources/Thunderbolt/Thunderbolt_dogfight.png              #GUARD ADDON 18
-      1497: Resources/Thunderbolt/Thunderbolt_dogfight.png              #GUARD ADDON 19      
-      1498: Resources/Thunderbolt/Thunderbolt_dogfight.png              #GUARD ADDON 20
-      1499: Resources/Thunderbolt/Thunderbolt_dogfight.png              #GUARD ADDON 21 
+      1496: Resources/Baneblade/Baneblade_dogfight.png              #GUARD ADDON 18
+      1497: Resources/Baneblade/Baneblade_dogfight.png              #GUARD ADDON 19      
+      1498: Resources/CHIMERA/Chimerahidra_dogfight.png              #GUARD ADDON 20
+      1499: Resources/CHIMERA/Chimerahidra_dogfight.png              #GUARD ADDON 21
+#  GUARD ADDON 3
+      1500: Resources/CHIMERA/Chimerahidra_minimised.png                    #GUARD ADDON 22 < - sprite index
+      1501: Resources/CHIMERA/Leman_minimised.png                    #GUARD ADDON 23 < - sprite index 
+      1502: Resources/CHIMERA/Leman_minimised.png                    #GUARD ADDON 24 < - sprite index
+      1503: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 25 < - sprite index
+      1504: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 26 < - sprite index
+      1505: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 27 < - sprite index 
+# GUARD  ADDON 3 PLUS 11 DOG FIGHT      
+      1511: Resources/CHIMERA/Chimerahidra_dogfight.png                    #GUARD ADDON 22 < - sprite index            
+      1512: Resources/CHIMERA/Leman_dogfight.png                    #GUARD ADDON 23 < - sprite index 
+      1513: Resources/CHIMERA/Leman_dogfight.png                    #GUARD ADDON 24 < - sprite index 
+      1514: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 25 < - sprite index 
+      1515: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 26 < - sprite index
+      1516: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 27 < - sprite index
 #  GUARD ADDON
       1578: Resources/TAUROX/Taurox_minimisedG.png                    #GUARD ADDON 0 < - sprite index
       1579: Resources/TAUROX/Taurox_minimisedG.png                     #GUARD ADDON 1
@@ -4669,6 +4760,12 @@
     height: 200
     files:
       0: Resources/CODEX/2PREATOR.png
+  - type: 2BANEBLADE.SPK                #GUARD CRAFT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CODEX/2BANEBLADE.png
   - type: 2TAUROS.SPK                #GUARD CRAFT
     singleImage: true
     width: 320
@@ -8004,7 +8101,7 @@
 extraSounds:
   - type: BATTLE.CAT
     files:
-      15: Resources/Sound/Jpack.wav
+      15: Resources/Sound/Jpack2.wav
       20: Resources/Sound/14dooropen.ogg
       21: Resources/Sound/15doorshut.ogg
 #Vanila to 58
@@ -9243,7 +9340,32 @@ extraSounds:
       1423: Resources/Sound/EREAPER/DIE1.ogg
       1424: Resources/Sound/EREAPER/DIE2.ogg
       1425: Resources/Sound/EREAPER/DIE3.ogg 
-      1426: Resources/Sound/EREAPER/DIE4.ogg    
+      1426: Resources/Sound/EREAPER/DIE4.ogg
+#1427 to 1450 BANEBLADE
+      1427: Resources/Sound/BANEBLADE/ATT1.ogg
+      1428: Resources/Sound/BANEBLADE/ATT2.ogg
+      1429: Resources/Sound/BANEBLADE/ATT3.ogg
+      1430: Resources/Sound/BANEBLADE/ATT4.ogg
+      1431: Resources/Sound/BANEBLADE/ATT5.ogg
+      1432: Resources/Sound/BANEBLADE/ATT6.ogg
+      1433: Resources/Sound/BANEBLADE/ATT7.ogg
+      1434: Resources/Sound/BANEBLADE/ATT8.ogg
+      1435: Resources/Sound/BANEBLADE/SEL1.ogg
+      1436: Resources/Sound/BANEBLADE/SEL2.ogg
+      1437: Resources/Sound/BANEBLADE/SEL3.ogg
+      1438: Resources/Sound/BANEBLADE/SEL4.ogg
+      1439: Resources/Sound/BANEBLADE/SEL5.ogg
+      1440: Resources/Sound/BANEBLADE/SEL6.ogg
+      1441: Resources/Sound/BANEBLADE/SEL7.ogg
+      1442: Resources/Sound/BANEBLADE/SEL8.ogg
+      1443: Resources/Sound/BANEBLADE/IDLE1.ogg
+      1444: Resources/Sound/BANEBLADE/IDLE2.ogg
+      1445: Resources/Sound/BANEBLADE/IDLE3.ogg
+      1446: Resources/Sound/BANEBLADE/IDLE4.ogg
+      1447: Resources/Sound/BANEBLADE/IDLE5.ogg
+      1448: Resources/Sound/BANEBLADE/IDLE6.ogg
+      1449: Resources/Sound/BANEBLADE/IDLE7.ogg
+      1450: Resources/Sound/BANEBLADE/IDLE8.ogg
   - type: GEO.CAT
     files:
       32: Resources/Sound/32CANFIRE.wav
