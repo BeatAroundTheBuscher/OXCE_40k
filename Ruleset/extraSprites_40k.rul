@@ -1,4 +1,4 @@
-﻿extraSprites:
+extraSprites:
   - delete: GlobeMarkers
   - type: MAN_40F0.SPK #ADEPTAS INV 40 F
     singleImage: true

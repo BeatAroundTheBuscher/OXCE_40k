@@ -1,4 +1,4 @@
-﻿itemCategories:
+itemCategories:
   - type: STR_CRAFT_WEAPONS
     listOrder: 2
   - type: STR_CAT_AUXILIARY

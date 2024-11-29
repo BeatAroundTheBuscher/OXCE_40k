@@ -1,4 +1,4 @@
-﻿facilities:
+facilities:
 #*** Upgraded barracks that allows basic training of troops
   - type: STR_GUARD_BARRACKS
     requires:

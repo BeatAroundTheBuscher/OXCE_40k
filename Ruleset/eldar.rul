@@ -1,4 +1,4 @@
-﻿units:
+units:
   - type: STR_ELDAR_PLAT_P     #STR_ELDAR_ARMOR2                        RANK 7
     race: STR_ELDAR
     stats:

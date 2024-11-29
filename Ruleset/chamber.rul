@@ -1,4 +1,4 @@
-﻿#                 #                                        #                      #
+#                 #                                        #                      #
 armors:
   - type: STR_DREAD_GK_ARMOR_UC          #DREAD ARMOR VENERABLE
     visibilityAtDay: 40

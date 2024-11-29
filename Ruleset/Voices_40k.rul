@@ -1,4 +1,4 @@
-﻿armors:
+armors:
   - type: STR_DREAD_GK_ARMOR_UC         #DREAD ARMOR VENERABLE  --VOICE--
     selectUnitMale:     [561, 562, 563, 564, 565]
     selectUnitFemale:   [561, 562, 563, 564, 565]
