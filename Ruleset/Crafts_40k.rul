@@ -588,7 +588,7 @@ crafts:
             STR_CHIMERA_TURRET_SPAWNER: [0, 0]
             STR_LEMONRUSS_SPAWNER: [0, 0]
             STR_RUSS_BOLTER_SPAWNER: [0, 0]
-            
+
     craftInventoryTile: [1, 2, 0]
     deployment:
       - [1, 2, 0, 0]
@@ -874,17 +874,17 @@ crafts:
             STR_4X4_TURRET_SPAWNER:
               - [3, 9, 2] #[5, 6, 1]
             STR_4X4_SURROUND_SPAWNER:
-              - [2, 8, 2] 
-              - [3, 8, 2] 
-              - [4, 8, 2] 
-              - [5, 8, 2] 
-              - [2, 9, 2] 
-              - [5, 9, 2] 
-              - [2, 10, 2] 
-              - [5, 10, 2] 
-              - [2, 11, 2] 
-              - [3, 11, 2] 
-              - [4, 11, 2] 
+              - [2, 8, 2]
+              - [3, 8, 2]
+              - [4, 8, 2]
+              - [5, 8, 2]
+              - [2, 9, 2]
+              - [5, 9, 2]
+              - [2, 10, 2]
+              - [5, 10, 2]
+              - [2, 11, 2]
+              - [3, 11, 2]
+              - [4, 11, 2]
               - [5, 11, 2]
             STR_BANE_LAS_TURRET_SPAWNER:
               - [0, 10, 2]
@@ -1612,7 +1612,7 @@ crafts:
       - [5, 10, 0, 0]
     spacecraft: true
   - type: STR_STORMRAVEN_ADEPTAS #STORMRAVEN         TIER II        RR 200
-    costRent: 600000          #TIER II  
+    costRent: 600000          #TIER II
     costSell: 600000
     takeoffSound: 56 #TURBINE SOUND
     selectSound: [70, 71, 72, 73]  #INTERCEPTOR SOUND
@@ -2178,7 +2178,7 @@ crafts:
       - [2, 7, 1, 0]
       - [6, 7, 1, 0]
     spacecraft: true
-  - type: STR_IMPULSOR     #                         TIER I         RR 600 
+  - type: STR_IMPULSOR     #                         TIER I         RR 600
     requires:
       - STR_PRIMARIS
     takeoffSound: 58 #MAGNETIC SOUND
@@ -2763,7 +2763,7 @@ crafts:
       - [4, 14, 2, 4]
       - [5, 14, 2, 4]
     spacecraft: true
-  - type: STR_TTASS #thunderhawnk Transport ASS           TIER III           RR 200      
+  - type: STR_TTASS #thunderhawnk Transport ASS           TIER III           RR 200
     costRent: 800000          #TIER III
     costSell: 800000
     takeoffSound: 56 #TURBINE SOUND
@@ -4148,7 +4148,7 @@ crafts:
       - STR_ELDAR_HEMLOCK_UFO_DATA
     requiresBuy:
       - STR_ELDAR_PATH
-      - STR_ELDAR_HEMLOCK_UFO_DATA      
+      - STR_ELDAR_HEMLOCK_UFO_DATA
     maxSkinIndex: 0              # default 0
     marker: 91
     sprite: 1704
@@ -4356,7 +4356,7 @@ crafts:
       - [6, 11, 0, 4]
       - [2, 11, 0, 4]
     spacecraft: true
-    allowLanding: false 
+    allowLanding: false
 #                 #                                        #                      #
 #   Cost Rent TIER I  = 400 000
 #   Cost Rent TIER II = 600 000
@@ -4366,4 +4366,4 @@ crafts:
 #   Cost Rent TIER Special = case by case
 #                 #                                        #                      #
 #                 #                                        #                      #
-# RR  refuel rate (Unit per halfhour) 200 for air craft 1000 for land 600 for magnetic (primaris, land speeder, eldar and Dpos) 
+# RR  refuel rate (Unit per halfhour) 200 for air craft 1000 for land 600 for magnetic (primaris, land speeder, eldar and Dpos)

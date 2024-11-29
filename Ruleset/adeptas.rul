@@ -1,4 +1,4 @@
-﻿extended:
+extended:
   tags:
     RuleItem:
       ITEM_ADDS_ENERGY_SHIELD_FROM_POWER: int

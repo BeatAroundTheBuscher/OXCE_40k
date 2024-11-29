@@ -13296,7 +13296,7 @@ armors:
         end;
         return sprite_index;
     corpseBattle:
-      - STR_NECRON_SCARAB_CORPSE 
+      - STR_NECRON_SCARAB_CORPSE
     frontArmor: 30
     sideArmor: 30
     rearArmor: 20
@@ -13464,7 +13464,7 @@ armors:
     loftempsSet: [ 3 ]
     builtInWeapons:
       - STR_ELDAR_LAUNCHER
-      - INV_NULL_3X3      
+      - INV_NULL_3X3
   - type: STR_ELDAR_ARMOR3       #SEER
     visibilityAtDay: 40
     visibilityAtDark: 30

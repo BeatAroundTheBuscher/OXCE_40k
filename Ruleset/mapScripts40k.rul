@@ -1386,8 +1386,8 @@ mapScripts:
       blocks: [16]
       maxUses: [1]
       rects:
-        - [2, 0, 1, 4]#[y,x,mapSize_width,mapSize_heigth]
-        - [1, 0, 1, 4]#[y,x,mapSize_width,mapSize_heigth]
+        - [2, 0, 1, 4] #[y,x,mapSize_width,mapSize_heigth]
+        - [1, 0, 1, 4] #[y,x,mapSize_width,mapSize_heigth]
     - type: addBlock #BLOCK1X1 #DROPPODHELPER1
       size: [1, 1, 4]
       craftGroups: [80]
@@ -1472,8 +1472,8 @@ mapScripts:
       blocks: [17]
       maxUses: [1]
       rects:
-        - [2, 0, 1, 4]#[y,x,mapSize_width,mapSize_heigth]
-        - [1, 0, 1, 4]#[y,x,mapSize_width,mapSize_heigth]
+        - [2, 0, 1, 4] #[y,x,mapSize_width,mapSize_heigth]
+        - [1, 0, 1, 4] #[y,x,mapSize_width,mapSize_heigth]
     - type: addBlock #BLOCK1X1 #DROPPODHELPER1
       size: [1, 1, 4]
       craftGroups: [80]

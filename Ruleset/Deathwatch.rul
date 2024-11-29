@@ -1,4 +1,4 @@
-﻿units:
+units:
   - type: STR_THUNDERFIRE_DW
     race: STR_THUNDERFIRE
     stats:
@@ -886,7 +886,7 @@ armors:
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 20
     builtInWeapons:
-      - AUX_DW_DREAD_ASSC 
+      - AUX_DW_DREAD_ASSC
       - AUX_DW_DREAD_FLAMER
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
@@ -1159,7 +1159,7 @@ armors:
       F5: ["CAPE4", "CAPDW", "M5_FACE", "PLUM"]
 #SPECIAL
     painImmune: true
-    fearImmune: true  
+    fearImmune: true
 
   - &STR_DW_WM_ARMOR_UC #WATCH MASTER
     type: STR_DW_WM_ARMOR_ULTRA_UC
@@ -1339,7 +1339,7 @@ armors:
       - STR_CRISMONF_PRIMARIS
 #SPECIAL
     painImmune: true
-    fearImmune: true   
+    fearImmune: true
 
   - &STR_DW_TAC_ARMOR_UC #TATICAL
     type: STR_DW_TAC_ARMOR_ULTRA_UC
@@ -1663,7 +1663,7 @@ armors:
       F5: ["0", "TACDWCF", "M5_FACE"]
 #SPECIAL
     painImmune: true
-    fearImmune: true    
+    fearImmune: true
 #
   - &STR_DW_DEV_ARMOR_UC #DEVASTATOR
     type: STR_DW_DEV_ARMOR_ULTRA_UC
@@ -1966,7 +1966,7 @@ armors:
       F5: ["0", "DEVDWCF", "M5_FACE"]
 #SPECIAL
     painImmune: true
-    fearImmune: true 
+    fearImmune: true
 
   - &STR_DW_ASS_ARMOR_UC #ASSAULT
     type: STR_DW_ASS_ARMOR_ULTRA_UC
@@ -4948,7 +4948,7 @@ armors:
       F5: ["0", "APODWWS", "M5_FACE"]
 #SPECIAL
     moveCost:
-      basePercent: [100, 25] #overall move cost      
+      basePercent: [100, 25] #overall move cost
   - type: STR_MKX_DW_APO_SW_UC
     refNode: *STR_MKX_DW_APO_UC
     units:
@@ -5025,7 +5025,7 @@ armors:
       F5: ["0", "APODWCF", "M5_FACE"]
 #SPECIAL
     painImmune: true
-    fearImmune: true     
+    fearImmune: true
 
   - &STR_MKX_DW_TAC_UC
     type: STR_MKX_DW_TAC_ULTRA_UC
@@ -6452,9 +6452,9 @@ armors:
       F5: ["CAPEP", "MKXCAPDW", "M5_FACE", ""]
 #SPECIAL
     painImmune: true
-    fearImmune: true 
+    fearImmune: true
 
-#                 #                                        #                      # 
+#                 #                                        #                      #
 extraSprites:
 #
   - typeSingle: 0__1__LIBDWULTRA
@@ -6466,7 +6466,7 @@ extraSprites:
   - typeSingle: 0__1__LIBDWSALA
     fileSingle: Resources/LAYER/DW/LIBDWSALA.png
   - typeSingle: 0__1__LIBDWBT
-    fileSingle: Resources/LAYER/DW/LIBDWBT.png    
+    fileSingle: Resources/LAYER/DW/LIBDWBT.png
   - typeSingle: 0__1__LIBDWWS
     fileSingle: Resources/LAYER/DW/LIBDWWS.png
   - typeSingle: 0__1__LIBDWSW
@@ -6485,7 +6485,7 @@ extraSprites:
   - typeSingle: 0__1__CHPDWSALA
     fileSingle: Resources/LAYER/DW/CHPDWSALA.png
   - typeSingle: 0__1__CHPDWBT
-    fileSingle: Resources/LAYER/DW/CHPDWBT.png    
+    fileSingle: Resources/LAYER/DW/CHPDWBT.png
   - typeSingle: 0__1__CHPDWWS
     fileSingle: Resources/LAYER/DW/CHPDWWS.png
   - typeSingle: 0__1__CHPDWSW
@@ -6504,7 +6504,7 @@ extraSprites:
   - typeSingle: 0__1__TECDWSALA
     fileSingle: Resources/LAYER/DW/TECDWSALA.png
   - typeSingle: 0__1__TECDWBT
-    fileSingle: Resources/LAYER/DW/TECDWBT.png    
+    fileSingle: Resources/LAYER/DW/TECDWBT.png
   - typeSingle: 0__1__TECDWWS
     fileSingle: Resources/LAYER/DW/TECDWWS.png
   - typeSingle: 0__1__TECDWSW
@@ -6649,7 +6649,7 @@ extraSprites:
   - typeSingle: 0__1__ASSDWWS
     fileSingle: Resources/LAYER/DW/ASSAULTWS.png
   - typeSingle: 0__1__ASSDWSW
-    fileSingle: Resources/LAYER/DW/ASSAULTSW.png 
+    fileSingle: Resources/LAYER/DW/ASSAULTSW.png
   - typeSingle: 0__1__ASSDWDA
     fileSingle: Resources/LAYER/DW/ASSAULTDA.png
   - typeSingle: 0__1__ASSDWCF
@@ -6719,11 +6719,11 @@ extraSprites:
   - typeSingle: 0__1__TERSGTIF
     fileSingle: Resources/LAYER/DW/TERSGTIF.png
   - typeSingle: 0__1__TERSGTBA
-    fileSingle: Resources/LAYER/DW/TERSGTBA.png    
+    fileSingle: Resources/LAYER/DW/TERSGTBA.png
   - typeSingle: 0__1__TERSGTSALA
-    fileSingle: Resources/LAYER/DW/TERSGTSALA.png    
+    fileSingle: Resources/LAYER/DW/TERSGTSALA.png
   - typeSingle: 0__1__TERSGTBT
-    fileSingle: Resources/LAYER/DW/TERSGTBT.png    
+    fileSingle: Resources/LAYER/DW/TERSGTBT.png
   - typeSingle: 0__1__TERSGTWS
     fileSingle: Resources/LAYER/DW/TERSGTWS.png
   - typeSingle: 0__1__TERSGTSW
@@ -6765,7 +6765,7 @@ extraSprites:
   - typeSingle: 0__1__TECHDWSALA
     fileSingle: Resources/LAYER/DW/TECHSALA.png
   - typeSingle: 0__1__TECHDWSW
-    fileSingle: Resources/LAYER/DW/TECHSW.png 
+    fileSingle: Resources/LAYER/DW/TECHSW.png
   - typeSingle: 0__1__TECHDWDA
     fileSingle: Resources/LAYER/DW/TECHDA.png
   - typeSingle: 0__1__TECHDWCF
@@ -6845,7 +6845,7 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      0: Resources/Assault/DWATCH/ASSDWSW.png   
+      0: Resources/Assault/DWATCH/ASSDWSW.png
   - type: ASSDWDA.PCK #ASSAULT WHITE SCARS
     width: 512
     height: 720
@@ -6860,7 +6860,7 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Assault/DWATCH/ASSDWCF.png
-      
+
   - type: DEVDWULTRA.PCK #DEVASTATOR ULTRA
     width: 512
     height: 720
@@ -6924,7 +6924,7 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Devastator/DWATCH/DEVDWCF.png
-   
+
   - type: TACDWULTRA.PCK #TACTICAL ULTRA
     width: 512
     height: 720
@@ -7022,7 +7022,7 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      0: Resources/Terminator/DWATCH/TERDWSALA.png      
+      0: Resources/Terminator/DWATCH/TERDWSALA.png
   - type: TERDWBT.PCK #TERMINATOR BLACK TEMPLARS
     width: 512
     height: 720
@@ -7250,7 +7250,7 @@ extraSprites:
     subY: 40
     files:
       0: Resources/APOT/DWATCH/APOTDWCF.png
-      
+
   - type: TECHDWULTRA.PCK #TECH ULTRA
     width: 512
     height: 720
@@ -7634,7 +7634,7 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      0: Resources/MKX-ARMOR/DWATCH/MKXTACDWWS.png      
+      0: Resources/MKX-ARMOR/DWATCH/MKXTACDWWS.png
   - type: MKXTACDWSW.PCK #TACTICAL WHITE SCARS
     width: 512
     height: 720
@@ -7655,7 +7655,7 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      0: Resources/MKX-ARMOR/DWATCH/MKXTACDWCF.png   
+      0: Resources/MKX-ARMOR/DWATCH/MKXTACDWCF.png
 
   - type: MKXINCDWULTRA.PCK #INCPETOR ULTRA
     width: 512
@@ -7755,7 +7755,7 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      0: Resources/MKX-ARMOR/DWATCH/MXGRVDWSALA.png      
+      0: Resources/MKX-ARMOR/DWATCH/MXGRVDWSALA.png
   - type: MKXGRVDWBT.PCK #GRAV IMPERIAL FISTS
     width: 512
     height: 720
@@ -9437,4 +9437,3 @@ soldiers:
     rankSprite: 990
     rankBattleSprite: 325
     rankTinySprite: 235
-    

@@ -170,7 +170,7 @@ research:
       - STR_ARBITES
       - STR_COMMANDER_PLUS
     unlockFinalMission: false
-    
+
   - name: STR_DEATHWATCH_BUST #cutcscene c3 STR_DEATHWATCH disables STR_CYDONIA_OR_BUST SO MISSION CAN DIFERE
     cost: 600
     cutscene: c3
@@ -785,7 +785,7 @@ research:
       - STR_DEATHWATCH
       - STR_POWER_SUIT
       - STR_LORD_CORPSE
-      - STR_DW_CAP_ARMOR    
+      - STR_DW_CAP_ARMOR
   - name: STR_DW_PRIMARIS
     cost: 205
     points: 20
@@ -1504,7 +1504,7 @@ research:
       - STR_ELDAR_GRENADE
       - STR_ELDAR_CHAINSWORD
       - STR_ELDAR_REAPER
-      - STR_ELDAR_REAPER_CORPSE    
+      - STR_ELDAR_REAPER_CORPSE
     spawnedItemCount: 1
   - name: STR_CHOSEN_ELDAR
     dependencies:
@@ -1711,7 +1711,7 @@ research:
   - name: STR_SCORPION_CORPSE
     cost: 192
     points: 50
-    needItem: true 
+    needItem: true
   - name: STR_ELDAR_BANSHEE
     cost: 192
     points: 50
@@ -1843,7 +1843,7 @@ research:
     cost: 100
     points: 50
     needItem: true
-  - name: STR_SCREAMER_CORPSE 
+  - name: STR_SCREAMER_CORPSE
     cost: 100
     points: 50
     needItem: true

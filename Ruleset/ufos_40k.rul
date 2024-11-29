@@ -1,4 +1,4 @@
-﻿ufos:
+ufos:
  #ELDAR
   - type: STR_ELDAR_COBRA_UFO
     marker: 78
@@ -240,7 +240,7 @@
             STR_MONOE_SPAWNER: [0, 0]
             STR_MONON_SPAWNER: [0, 0]
             STR_MONOS_SPAWNER: [0, 0]
-#ORK      
+#ORK
   - type: STR_ORK_MIG_UFO #HK
     marker: 84
     markerLand: 85

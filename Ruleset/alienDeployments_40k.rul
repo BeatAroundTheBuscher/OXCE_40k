@@ -3810,8 +3810,8 @@ alienDeployments:
             lowQty: 0
             highQty: 0
             dQty: 1
-            itemSets: [[], [], []]  
-  
+            itemSets: [[], [], []]
+
     markerIcon: 77
     script: ELDARGATE_SCRIPT2
     alienBase: true
@@ -3903,7 +3903,7 @@ alienDeployments:
     genMission:
       STR_ELDAR_PATROL: 40
       STR_ELDAR_AIR_PATROL: 40
-      STR_ELDAR_BASE_FROM_EXISTING: 20      
+      STR_ELDAR_BASE_FROM_EXISTING: 20
     genMissionFreq: 4
     alienBaseUpgrades:
       0:
@@ -4061,8 +4061,8 @@ alienDeployments:
             lowQty: 0
             highQty: 0
             dQty: 1
-            itemSets: [[], [], []]  
-  
+            itemSets: [[], [], []]
+
     markerIcon: 93
     script: ELDARGATE_SCRIPT2
     alienBase: true
@@ -6905,7 +6905,7 @@ alienDeployments:
             highQty: 0
             dQty: 1
             itemSets: [[], [], []]
-#    
+#
     width: 70
     length: 70
     height: 9
@@ -8825,8 +8825,8 @@ alienDeployments:
     objectiveComplete: [STR_ALIEN_SYNOMIUM_DEVICE_DESTROYED, 750]
     objectiveFailed: [STR_ALIEN_SYNOMIUM_DEVICE_FAILED, -750]
     objectivePopup: STR_CONTROL_CENTER_DESTROYED
-    
-    
+
+
  #*** The Marines' sidemissions ***
   - type: STR_TRAIN_MISSION #MISSION 1
     briefing:
@@ -9122,7 +9122,7 @@ alienDeployments:
     data: *BATTLESHIP
     width: 60
     length: 60
-    height: 10   
+    height: 10
   - type: STR_CHAOSOUT #MISSION 5 Fortress # RANK1
     unlockedResearch: STR_GENESEED
     markerIcon: 33
@@ -10042,7 +10042,7 @@ alienDeployments:
     length: 50
     height: 9
     missionBountyItem: STR_SUPPLY_SHIP_DATA
-    
+
   - type: STR_HELLT_K
     briefing:
       cutscene: VERYSMALL
@@ -10155,7 +10155,7 @@ alienDeployments:
     length: 50
     height: 9
     missionBountyItem: STR_SUPPLY_SHIP_DATA
-    
+
   - type: STR_HELLT_T
     briefing:
       cutscene: VERYSMALL
@@ -10268,7 +10268,7 @@ alienDeployments:
     length: 50
     height: 9
     missionBountyItem: STR_SUPPLY_SHIP_DATA
-    
+
   - type: STR_HELLT_N
     briefing:
       cutscene: VERYSMALL

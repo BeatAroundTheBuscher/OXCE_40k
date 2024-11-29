@@ -1,4 +1,4 @@
-﻿units:
+units:
   - type: STR_T_ARBITES_BOLTER                             # TARANTULA
     race: STR_T_BOLTER
     stats:

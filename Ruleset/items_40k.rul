@@ -543,7 +543,7 @@ items:
     hiddenOnMinimap: true
     hitAnimation: 150
     hitSound: 788
-#---TRAITOR GUARD -----------------------------------------------------    
+#---TRAITOR GUARD -----------------------------------------------------
   - type: STR_CCASSIUM_BOLTER_LEFT1_SPAWNER
     spawnUnit: STR_CCASSIUM_BOLTER_LEFT1
     spawnUnitFaction: 1 # 1: Enemy faction
@@ -3242,7 +3242,7 @@ items:
     invHeight: 3
     clipSize: -1
     recover: false
-#---GENE WEAPONS----------------------------------------------------  
+#---GENE WEAPONS----------------------------------------------------
   - type: STR_AUTOCANNON_GENE
     weight: 85
     bigSprite: 872
@@ -5631,7 +5631,7 @@ items:
     accuracyMelee: 100
     damageAlter: #DA LAS
       ToHealth: 1.0
-      ToStun: 0.5      
+      ToStun: 0.5
     meleeMultiplier:
       melee: 1.0
     tuMelee: 12
@@ -8629,7 +8629,7 @@ items:
       ToHealth: 0.9
     fixedWeapon: true
     recover: false
-  - type: STR_BANEBLADE_WEAPON 
+  - type: STR_BANEBLADE_WEAPON
     ammo:
       1:
         compatibleAmmo: [STR_BANEBLADE_AP]
@@ -8680,7 +8680,7 @@ items:
       ToHealth: 0.9
     fixedWeapon: true
     recover: false
-    
+
   - type: STR_BANEBLADE_AP #                          12140
     size: 0.2
     weight: 8
@@ -8720,8 +8720,8 @@ items:
     invWidth: 1
     invHeight: 1
     hitAnimation: 184
-    recover: false    
-    
+    recover: false
+
   - type: STR_LEMANRUSS_BOLTER #Leman Russ Aux Bolter
     weight: 0
     bigSprite: 335
@@ -11206,7 +11206,7 @@ items:
     battleType: 11
     armor: 26
     listOrder: 19100
-  - type: STR_FLAMER_CORPSE            #TZEENTCH DEAMONS 19202 
+  - type: STR_FLAMER_CORPSE            #TZEENTCH DEAMONS 19202
     size: 0.4
     costSell: 10000
     weight: 25
@@ -11217,8 +11217,8 @@ items:
     recoveryPoints: 5
     battleType: 11
     armor: 26
-    listOrder: 19202  
-  - type: STR_SCREAMER_CORPSE                   #TZEENTCH DEAMONS 19203 
+    listOrder: 19202
+  - type: STR_SCREAMER_CORPSE                   #TZEENTCH DEAMONS 19203
     size: 0.8
     costSell: 10000
     battleType: 11
