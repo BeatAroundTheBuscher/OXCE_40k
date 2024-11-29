@@ -1554,7 +1554,7 @@ extraSprites:
     width: 256
     height: 320
     files:
-      0: Resources/Droppod/drop.png 
+      0: Resources/Droppod/drop.png
   - type: MUNI.PCK
     subX: 32
     subY: 40
@@ -2450,8 +2450,8 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      0: Resources/FOES/battlesprite/cultist2.png    
-#     
+      0: Resources/FOES/battlesprite/cultist2.png
+#
   - type: MKXDWTACZOMBIE.PCK  #MKX                                           ZOMBIESSSSSSSSSSSSS
     width: 512
     height: 720
@@ -2620,7 +2620,7 @@ extraSprites:
       269: Resources/Rank/smoke269.png  #ELDAR
       270: Resources/Rank/smoke270.png  #ELDAR
       271: Resources/Rank/smoke271.png  #ELDAR
-      272: Resources/Rank/smoke272.png  #ELDAR      
+      272: Resources/Rank/smoke272.png  #ELDAR
       273: Resources/Rank/smoke273.png  #ELDAR
       274: Resources/Rank/smoke274.png  #ELDAR
       275: Resources/Rank/smoke275.png  #ELDAR
@@ -3260,7 +3260,7 @@ extraSprites:
       841: Resources/MKX-ARMOR/DWATCH/841.png
       842: Resources/MKX-ARMOR/DWATCH/842.png
       843: Resources/MKX-ARMOR/DWATCH/843.png
-      844: Resources/Lascan/844.png      
+      844: Resources/Lascan/844.png
       845: Resources/Heavybolter/845.png
       846: Resources/Bolter/846.png
       847: Resources/MKX-ARMOR/DWATCH/847.png
@@ -4104,7 +4104,7 @@ extraSprites:
       805: Resources/CW/SCANbase.png
       806: Resources/CW/RETbase.png
       807: Resources/CW/AUTObase.png
-      808: Resources/CW/Sbase.png 
+      808: Resources/CW/Sbase.png
       809: Resources/CW/ESbase.png
       810: Resources/CW/LANbase.png
       811: Resources/CW/COBbase.png
@@ -4150,7 +4150,7 @@ extraSprites:
       881: Resources/Rank/basebits881.png      #CHAMBER
       882: Resources/Rank/basebits882.png      #CHAMBER
       883: Resources/Rank/basebits883.png      #ELDAR
-      884: Resources/Rank/basebits884.png      #ELDAR      
+      884: Resources/Rank/basebits884.png      #ELDAR
       885: Resources/Rank/basebits885.png      #ELDAR
       886: Resources/Rank/basebits886.png      #ELDAR
       887: Resources/Rank/basebits887.png      #ELDAR
@@ -4165,8 +4165,8 @@ extraSprites:
       897: Resources/Rank/basebits897.png      #ELDAR
       898: Resources/Rank/basebits898.png      #ELDAR
       899: Resources/Rank/basebits899.png      #ELDAR
-      900: Resources/Rank/basebits900.png      #ELDAR 
-      901: Resources/Rank/basebits901.png      #ELDAR  
+      900: Resources/Rank/basebits900.png      #ELDAR
+      901: Resources/Rank/basebits901.png      #ELDAR
       902: Resources/Rank/basebits902.png      #ELDAR
       903: Resources/Rank/basebits903.png      #ELDAR
       904: Resources/Rank/basebits904.png      #ELDAR
@@ -4193,9 +4193,9 @@ extraSprites:
       970: Resources/Rank/basebits970.png      #ELDAR
 #RANK  ELDAR
       971: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE
-      972: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE   
-      973: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE  
-      974: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE 
+      972: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE
+      973: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE
+      974: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE
       975: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE
       976: Resources/Rank/basebits970.png      #ELDAR FUTURE MAYBE
 #RANK  BT
@@ -4212,7 +4212,7 @@ extraSprites:
       986: Resources/Rank/basebits986.png      #RANK WS
       987: Resources/Rank/basebits987.png      #RANK WS
       988: Resources/Rank/basebits988.png      #RANK WS
-#RANK  DEATH WATCH  
+#RANK  DEATH WATCH
       990: Resources/Rank/basebits990.png      #RANK DW
       991: Resources/Rank/basebits991.png      #RANK DW
       992: Resources/Rank/basebits992.png      #RANK DW
@@ -4227,17 +4227,17 @@ extraSprites:
       1515: Resources/Thunderbolt/Basebits1515.png           #GUARD ADDON 15
       1516: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 16
       1517: Resources/Thunderbolt/Basebits584.png          #GUARD ADDON 17
-      1518: Resources/Baneblade/baneblade_base.png          #GUARD ADDON 18 
-      1519: Resources/Baneblade/baneblade_base2.png          #GUARD ADDON 19 
+      1518: Resources/Baneblade/baneblade_base.png          #GUARD ADDON 18
+      1519: Resources/Baneblade/baneblade_base2.png          #GUARD ADDON 19
       1520: Resources/CHIMERA/Chimerahidra_base.png          #GUARD ADDON 20 X
       1521: Resources/CHIMERA/Chimerahidra_base1.png          #GUARD ADDON 21 X
-#  GUARD ADDON 3   
+#  GUARD ADDON 3
       1533: Resources/CHIMERA/Chimerahidra_base2.png          #GUARD ADDON 22 X
       1534: Resources/CHIMERA/Leman_base.png          #GUARD ADDON 23 X
-      1535: Resources/CHIMERA/Leman_base1.png          #GUARD ADDON 24 X     
+      1535: Resources/CHIMERA/Leman_base1.png          #GUARD ADDON 24 X
       1536: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 25 X
       1537: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 26 X
-      1538: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 27 X      
+      1538: Resources/Thunderbolt/Basebits540.png          #GUARD ADDON 27 X
 #  GUARD ADDON
       1611: Resources/TAUROX/Taurox_base1.png          #GUARD ADDON 0
       1612: Resources/TAUROX/Taurox_base2.png          #GUARD ADDON 1
@@ -4284,7 +4284,7 @@ extraSprites:
       1819: Resources/Xiphon/GK/Xiphon_base.png              #CHAMBER 8
       1820: Resources/Xiphon/ULTRAMARINE/Xiphon_base.png     #CHAMBER 9
       1821: Resources/Xiphon/GK/Xiphon_base_2.png            #CHAMBER 10
-#  DEATHWATCH 
+#  DEATHWATCH
       1833: Resources/Thunderhawk/DW/Thunderhawk_base.png          #DEATHWATCH  0
       1834: Resources/Thunderhawk/DW/Thunderhawk_base.png           #DEATHWATCH  1
       1835: Resources/Impulsor/DW/impulsor_base.png          #DEATHWATCH  2
@@ -4392,11 +4392,11 @@ extraSprites:
       762: Resources/CW/SCANdog.png
       763: Resources/CW/RETdog.png
       764: Resources/CW/AUTOdog.png
-      765: Resources/CW/Sdog.png      
+      765: Resources/CW/Sdog.png
       766: Resources/CW/ESdog.png
       767: Resources/CW/LANdog.png
       768: Resources/CW/COBdog.png
-      769: Resources/CW/HEMdog.png      
+      769: Resources/CW/HEMdog.png
       770: Resources/CW/WAVdog.png
       771: Resources/CW/MHdog.png
       772: Resources/CW/LAN2dog.png
@@ -4434,10 +4434,10 @@ extraSprites:
       1483: Resources/Thunderbolt/Thunderbolt_minimised.png                   #GUARD ADDON 16
       1484: Resources/Thunderbolt/Thunderbolt_minimised.png                  #GUARD ADDON 17 <- USED
       1485: Resources/Baneblade/Baneblade_minimised.png                 #GUARD ADDON 18
-      1486: Resources/Baneblade/Baneblade_minimised.png                 #GUARD ADDON 19 
+      1486: Resources/Baneblade/Baneblade_minimised.png                 #GUARD ADDON 19
       1487: Resources/CHIMERA/Chimerahidra_minimised.png                #GUARD ADDON 20
-      1488: Resources/CHIMERA/Chimerahidra_minimised.png                #GUARD ADDON 21  
-# GUARD  ADDON 2 PLUS 11 DOG FIGHT      
+      1488: Resources/CHIMERA/Chimerahidra_minimised.png                #GUARD ADDON 21
+# GUARD  ADDON 2 PLUS 11 DOG FIGHT
       1489: Resources/Thunderbolt/Thunderbolt_dogfight.png                #GUARD ADDON 11
       1490: Resources/Thunderbolt/Thunderbolt_dogfight.png                #GUARD ADDON 12
       1491: Resources/Thunderbolt/Thunderbolt_dogfight.png                #GUARD ADDON 13
@@ -4446,21 +4446,21 @@ extraSprites:
       1494: Resources/Thunderbolt/Thunderbolt_dogfight.png                #GUARD ADDON 16
       1495: Resources/Thunderbolt/Thunderbolt_dogfight.png         #GUARD ADDON 17
       1496: Resources/Baneblade/Baneblade_dogfight.png              #GUARD ADDON 18
-      1497: Resources/Baneblade/Baneblade_dogfight.png              #GUARD ADDON 19      
+      1497: Resources/Baneblade/Baneblade_dogfight.png              #GUARD ADDON 19
       1498: Resources/CHIMERA/Chimerahidra_dogfight.png              #GUARD ADDON 20
       1499: Resources/CHIMERA/Chimerahidra_dogfight.png              #GUARD ADDON 21
 #  GUARD ADDON 3
       1500: Resources/CHIMERA/Chimerahidra_minimised.png                    #GUARD ADDON 22 < - sprite index
-      1501: Resources/CHIMERA/Leman_minimised.png                    #GUARD ADDON 23 < - sprite index 
+      1501: Resources/CHIMERA/Leman_minimised.png                    #GUARD ADDON 23 < - sprite index
       1502: Resources/CHIMERA/Leman_minimised.png                    #GUARD ADDON 24 < - sprite index
       1503: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 25 < - sprite index
       1504: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 26 < - sprite index
-      1505: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 27 < - sprite index 
-# GUARD  ADDON 3 PLUS 11 DOG FIGHT      
-      1511: Resources/CHIMERA/Chimerahidra_dogfight.png                    #GUARD ADDON 22 < - sprite index            
-      1512: Resources/CHIMERA/Leman_dogfight.png                    #GUARD ADDON 23 < - sprite index 
-      1513: Resources/CHIMERA/Leman_dogfight.png                    #GUARD ADDON 24 < - sprite index 
-      1514: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 25 < - sprite index 
+      1505: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 27 < - sprite index
+# GUARD  ADDON 3 PLUS 11 DOG FIGHT
+      1511: Resources/CHIMERA/Chimerahidra_dogfight.png                    #GUARD ADDON 22 < - sprite index
+      1512: Resources/CHIMERA/Leman_dogfight.png                    #GUARD ADDON 23 < - sprite index
+      1513: Resources/CHIMERA/Leman_dogfight.png                    #GUARD ADDON 24 < - sprite index
+      1514: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 25 < - sprite index
       1515: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 26 < - sprite index
       1516: Resources/Thunderbolt/Thunderbolt_minimised.png                    #GUARD ADDON 27 < - sprite index
 #  GUARD ADDON
@@ -4471,11 +4471,11 @@ extraSprites:
       1582: Resources/TAUROS/Tauros_minimised.png                  #GUARD ADDON 4
       1583: Resources/TAUROS/Tauros_minimised.png                   #GUARD ADDON 5
       1584: Resources/TAUROS/Tauros_minimised.png                  #GUARD ADDON 6
-      1585: Resources/VOSS/voss_minimised.png                  #GUARD ADDON 7 < - sprite index 
-      1586: Resources/VOSS/voss_minimised.png                 #GUARD ADDON 8  
-      1587: Resources/VOSS/voss_minimised.png                #GUARD ADDON 9 
-      1588: Resources/VOSS/voss_minimised.png                #GUARD ADDON 10   
-# GUARD PLUS 11 DOG FIGHT      
+      1585: Resources/VOSS/voss_minimised.png                  #GUARD ADDON 7 < - sprite index
+      1586: Resources/VOSS/voss_minimised.png                 #GUARD ADDON 8
+      1587: Resources/VOSS/voss_minimised.png                #GUARD ADDON 9
+      1588: Resources/VOSS/voss_minimised.png                #GUARD ADDON 10
+# GUARD PLUS 11 DOG FIGHT
       1589: Resources/TAUROX/Taurox_dogfightG.png                    #GUARD ADDON 0
       1590: Resources/TAUROX/Taurox_dogfightG.png                     #GUARD ADDON 1
       1591: Resources/TAUROX/Taurox_dogfightG.png                       #GUARD ADDON 2
@@ -4484,7 +4484,7 @@ extraSprites:
       1594: Resources/TAUROS/Tauros_dogfight.png                  #GUARD ADDON 5
       1595: Resources/TAUROS/Tauros_dogfight.png                  #GUARD ADDON 6
       1596: Resources/VOSS/voss_dogfight.png              #GUARD ADDON 7
-      1597: Resources/VOSS/voss_dogfight.png                 #GUARD ADDON 8      
+      1597: Resources/VOSS/voss_dogfight.png                 #GUARD ADDON 8
       1598: Resources/VOSS/voss_dogfight.png              #GUARD ADDON 9
       1599: Resources/VOSS/voss_dogfight.png              #GUARD ADDON 10
 #  ADEPTA ADDON
@@ -4495,10 +4495,10 @@ extraSprites:
       1682: Resources/CASSIUM/preator_minimised.png                #GUARD ADDON 4
       1683: Resources/Rhino/Rhino_minimised.gif                    #ADEPTAS ADDON 5
       1684: Resources/CASSIUM/Cassium_minimised.png                #GUARD ADDON 6
-      1685: Resources/CASSIUM/Cassium_minimised.png                #GUARD ADDON 7 
-      1686: Resources/CASSIUM/Cassium_minimised.png                #GUARD ADDON 8  
-      1687: Resources/CASSIUM/Cassium_minimised.png                #GUARD ADDON 9        
-# PLUS 11 DOG FIGHT      
+      1685: Resources/CASSIUM/Cassium_minimised.png                #GUARD ADDON 7
+      1686: Resources/CASSIUM/Cassium_minimised.png                #GUARD ADDON 8
+      1687: Resources/CASSIUM/Cassium_minimised.png                #GUARD ADDON 9
+# PLUS 11 DOG FIGHT
       1689: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 0
       1690: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 1
       1691: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 2
@@ -4507,7 +4507,7 @@ extraSprites:
       1694: Resources/Rhino/Rhino_dogfight.gif                   #ADEPTAS ADDON 5
       1695: Resources/CASSIUM/Cassium_dogfight.png               #GUARD ADDON 6
       1696: Resources/CASSIUM/Cassium_dogfight.png               #GUARD ADDON 7
-      1697: Resources/CASSIUM/Cassium_dogfight.png               #GUARD ADDON 8      
+      1697: Resources/CASSIUM/Cassium_dogfight.png               #GUARD ADDON 8
       1698: Resources/CASSIUM/Cassium_dogfight.png               #GUARD ADDON 9
 #  ELDAR ADDON
       1700: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 0 < - sprite index
@@ -4519,16 +4519,16 @@ extraSprites:
       1706: Resources/EPATH/cobra_minimised.png                    #ELDAR ADDON 6
       1707: Resources/EPATH/scorpion_minimised.png                    #ELDAR ADDON 7
       1708: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 8
-      1709: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 9      
-# PLUS 11 DOG FIGHT  ELDAR ADDON    
-      1711: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 0      
-      1712: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 1            
-      1713: Resources/EPATH/hornet_dogfight.png                   #ELDAR ADDON 2       
+      1709: Resources/EPATH/waveserpent_minimised.png                    #ELDAR ADDON 9
+# PLUS 11 DOG FIGHT  ELDAR ADDON
+      1711: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 0
+      1712: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 1
+      1713: Resources/EPATH/hornet_dogfight.png                   #ELDAR ADDON 2
       1714: Resources/EPATH/hornet_dogfight.png                   #ELDAR ADDON 3
-      1715: Resources/EPATH/hemlock_dogfight.png                   #ELDAR ADDON 4 
-      1716: Resources/EPATH/hemlock_dogfight.png                   #ELDAR ADDON 5  
-      1717: Resources/EPATH/cobra_dogfight.png                   #ELDAR ADDON 6  
-      1718: Resources/EPATH/scorpion_dogfight.png                   #ELDAR ADDON 7  
+      1715: Resources/EPATH/hemlock_dogfight.png                   #ELDAR ADDON 4
+      1716: Resources/EPATH/hemlock_dogfight.png                   #ELDAR ADDON 5
+      1717: Resources/EPATH/cobra_dogfight.png                   #ELDAR ADDON 6
+      1718: Resources/EPATH/scorpion_dogfight.png                   #ELDAR ADDON 7
       1719: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 8
       1720: Resources/EPATH/waveserpent_dogfight.png                   #ELDAR ADDON 9
 # CHAMBER Militante
@@ -4566,16 +4566,16 @@ extraSprites:
       1806: Resources/Impulsor/repulsor_minimised.gif                      #DEATHWATCH ADDON 6
       1807: Resources/Impulsor/repulsor_minimised.gif                     #DEATHWATCH ADDON 7
       1808: Resources/Impulsor/repulsor_minimised.gif                    #DEATHWATCH ADDON 8
-      1809: Resources/Impulsor/repulsor_minimised.gif                    #DEATHWATCH ADDON 9      
-# PLUS 11 DOG FIGHT  DEATHWATCH    
-      1811: Resources/Thunderhawk/Thunderhawk_dogfight.gif                 #DEATHWATCH ADDON 0      
-      1812: Resources/Thunderhawk/Thunderhawk_dogfight.gif                 #DEATHWATCH ADDON 1   
-      1813: Resources/Impulsor/impulsor_dogfight.gif                   #DEATHWATCH ADDON 2       
+      1809: Resources/Impulsor/repulsor_minimised.gif                    #DEATHWATCH ADDON 9
+# PLUS 11 DOG FIGHT  DEATHWATCH
+      1811: Resources/Thunderhawk/Thunderhawk_dogfight.gif                 #DEATHWATCH ADDON 0
+      1812: Resources/Thunderhawk/Thunderhawk_dogfight.gif                 #DEATHWATCH ADDON 1
+      1813: Resources/Impulsor/impulsor_dogfight.gif                   #DEATHWATCH ADDON 2
       1814: Resources/Impulsor/repulsor_dogfight.gif                     #DEATHWATCH ADDON 3
-      1815: Resources/Impulsor/repulsord_dogfight.gif                    #DEATHWATCH ADDON 4 
-      1816: Resources/Impulsor/repulsor_dogfight.gif             #DEATHWATCH ADDON 5  
-      1817: Resources/Impulsor/repulsor_dogfight.gif                   #DEATHWATCH ADDON 6  
-      1818: Resources/Impulsor/repulsor_dogfight.gif               #DEATHWATCH ADDON 7  
+      1815: Resources/Impulsor/repulsord_dogfight.gif                    #DEATHWATCH ADDON 4
+      1816: Resources/Impulsor/repulsor_dogfight.gif             #DEATHWATCH ADDON 5
+      1817: Resources/Impulsor/repulsor_dogfight.gif                   #DEATHWATCH ADDON 6
+      1818: Resources/Impulsor/repulsor_dogfight.gif               #DEATHWATCH ADDON 7
       1819: Resources/Impulsor/repulsor_dogfight.gif                   #DEATHWATCH ADDON 8
       1820: Resources/Impulsor/repulsor_dogfight.gif             #DEATHWATCH ADDON 9
 #
@@ -4771,7 +4771,7 @@ extraSprites:
     width: 320
     height: 200
     files:
-      0: Resources/CODEX/2TAUROS.png      
+      0: Resources/CODEX/2TAUROS.png
   - type: 2GORGON.SPK                #GUARD CRAFT
     singleImage: true
     width: 320
@@ -4802,7 +4802,7 @@ extraSprites:
     height: 200
     files:
       0: Resources/CODEX/2COBRA.png
-      
+
   - type: M1.SPK                 #UFOPEDIA MISSIONS
     singleImage: true
     width: 320
@@ -9339,7 +9339,7 @@ extraSounds:
       1422: Resources/Sound/EREAPER/IDLE5.ogg
       1423: Resources/Sound/EREAPER/DIE1.ogg
       1424: Resources/Sound/EREAPER/DIE2.ogg
-      1425: Resources/Sound/EREAPER/DIE3.ogg 
+      1425: Resources/Sound/EREAPER/DIE3.ogg
       1426: Resources/Sound/EREAPER/DIE4.ogg
 #1427 to 1450 BANEBLADE
       1427: Resources/Sound/BANEBLADE/ATT1.ogg

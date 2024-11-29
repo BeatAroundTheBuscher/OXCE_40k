@@ -276,12 +276,12 @@ armors:
     selectUnitMale:     [295]
     selectUnitFemale:   [295]
     selectWeaponMale:   [294]
-    selectWeaponFemale: [294]    
+    selectWeaponFemale: [294]
   - type: STR_LEMONRUSS_BOLTER_ARMOR
     selectUnitMale:     [295]
     selectUnitFemale:   [295]
     selectWeaponMale:   [294]
-    selectWeaponFemale: [294] 
+    selectWeaponFemale: [294]
   - type: STR_PSYKER_ARMOR
     selectUnitMale:     [1061, 1062, 1063, 1064, 1065]
     selectUnitFemale:   [1036, 1037, 1038, 1039, 1040]

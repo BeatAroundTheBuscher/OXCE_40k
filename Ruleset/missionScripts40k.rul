@@ -225,7 +225,7 @@ missionScripts:
     executionOdds: 25
     researchTriggers:
       STR_ELDAR_PATH: false
-      
+
   - type: GeneBASES
     missionWeights:
       0:

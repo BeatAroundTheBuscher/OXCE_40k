@@ -116,8 +116,8 @@ ufopaedia:
   - delete: STR_SECTOPOD_AUTOPSY
   - delete: STR_CYBERDISC
   - delete: STR_CYBERDISC_AUTOPSY
-  
-  
+
+
   - delete: STR_NONE_UC
 #FOES
   - id: STR_SECTOID_ARMOR0          #20000     ARMOR
@@ -223,7 +223,7 @@ ufopaedia:
       - STR_CHRYSSALID_CORPSE
     image_id: UP015.SPK
     text: STR_CHRYSSALID_AUTOPSY_UFOPEDIA
-    listOrder: 21800 
+    listOrder: 21800
   - id: STR_OBLITERATOR         #7014 DONTSHOWYET
     type_id: 10
     section: STR_ALIEN_LIFE_FORMS
@@ -460,7 +460,7 @@ ufopaedia:
       - STR_SCREAMER_TERRORIST
     image_id: UP172.SPK
     text: STR_FEAR_IMMUNE_UFOPEDIA
-    listOrder: 22730 
+    listOrder: 22730
   - id: STR_SCREAMER_AUTOPSY             #22740
     type_id: 10
     section: STR_ALIEN_LIFE_FORMS
@@ -1802,7 +1802,7 @@ ufopaedia:
     listOrder: 13100
   - id: STR_GK_HB
     type_id: 14
-    section: STR_NOT_AVAILABLE  
+    section: STR_NOT_AVAILABLE
   - id: STR_GK_HB_MC
     type_id: 14
     section: STR_NOT_AVAILABLE
@@ -1818,7 +1818,7 @@ ufopaedia:
     type_id: 14
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_HB_CLIP    
+      - STR_HB_CLIP
   - id: STR_ASSC_CLIP
     type_id: 14
     section: STR_NOT_AVAILABLE
@@ -3232,7 +3232,7 @@ ufopaedia:
     type_id: 11
     section: STR_XCOM_CRAFT_ARMAMENT
     requires:
-      - STR_IMPERIAL_GUARD_HIGHTIER 
+      - STR_IMPERIAL_GUARD_HIGHTIER
     image_id: 2CRASSUS.SPK
     text: STR_CASSIUM_UFOPEDIA
     listOrder: 819

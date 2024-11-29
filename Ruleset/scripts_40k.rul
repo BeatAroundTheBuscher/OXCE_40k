@@ -635,7 +635,7 @@ items:
       ITEM_RECOIL: 40
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
       ITEM_FIRING_SPRITE: 1
-      
+
   - type: STR_RIFLEDW
     tags:
       ITEM_RECOIL: 40
@@ -1026,7 +1026,7 @@ extended:
       YTAG_DAMAGE_RETURNED_AS_HP_BUFF: int
 
     RuleItem:
-    
+
 #*** Tag for vampiric DAMAGE
       YTAG_DAMAGE_RETURNED_AS_HP: int
       YTAG_DAMAGE_RETURNED_RESIST_TYPE: int
@@ -1978,12 +1978,12 @@ extended:
             return;
           end;
 
-          # check if attacker has req. vampiric coeffs          
+          # check if attacker has req. vampiric coeffs
           if and eq hpReturnedCoefficient 0;
             return;
           else;
 
-            # set amount of HP drained, and that it can't be higher than target's total          
+            # set amount of HP drained, and that it can't be higher than target's total
             unit.getHealth hpTarget;
             set hpDamageDone to_health;
             limit_upper hpDamageDone hpTarget;

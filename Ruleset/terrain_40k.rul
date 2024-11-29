@@ -1151,7 +1151,7 @@ facilities:
         groups: [10]
       - type: ceiling
         blocks: [57] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
-        size: [1, 1, 3] # if the craft is going on z = 1, the height here needs to be 1      
+        size: [1, 1, 3] # if the craft is going on z = 1, the height here needs to be 1
   - type: STR_ELDARHANGAR
     requires:
       - STR_ELDAR_PATH
@@ -1192,7 +1192,7 @@ facilities:
         terrain: ELDARHANGAR
         blocks: [0] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
         size: [3, 3, 3] # if the craft is going on z = 1, the height here needs to be 1
-    listOrder: 100 
+    listOrder: 100
   - type: STR_ELDARPOD
     requires:
       - STR_ELDAR_PATH
@@ -2064,7 +2064,7 @@ terrains:
       - name: AULTA18
         width: 10
         length: 10
-      - name: AULTA19_2X2P 
+      - name: AULTA19_2X2P
         width: 20
         length: 20
         groups: [11]
@@ -6603,7 +6603,7 @@ terrains:
           STR_ELDAR_WS_SPAWNER:
             - [10, 14, 1]
         fuseTimers:
-          STR_ELDAR_WS_SPAWNER: [0, 0]            
+          STR_ELDAR_WS_SPAWNER: [0, 0]
   - name: ARVUS4X4
     mapDataSets:
       - BLANKS
@@ -7193,7 +7193,7 @@ terrains:
             - [19, 13, 0]
         fuseTimers:
           STR_KILLA_SPAWNER: [0, 0]
-        
+
   - name: BASEPLANE3X3
     mapDataSets:
       - BLANKS
@@ -7549,7 +7549,7 @@ terrains:
     mapDataSets:
       - BLANKS
       - CASSIUMBOMBCHAOS
-      - CASSIUMTURRETCHAOS     
+      - CASSIUMTURRETCHAOS
       - CASSIUMCHAOS
     mapBlocks:
       - name: CASSIUMCONVOY2

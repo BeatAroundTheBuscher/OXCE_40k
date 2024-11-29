@@ -136,7 +136,7 @@ armors:
       - 0.0 #SMOKE
       - 0 #IMPACT
       - 0 #MELTA
-    loftempsSet: [ 0 ] 
+    loftempsSet: [ 0 ]
     alwaysVisible: true
     drawingRoutine: 4
     tags:
@@ -215,18 +215,18 @@ crafts:
             STR_4X4_TURRET_SPAWNER:
               - [1, 9, 0] #[5, 6, 1]
             STR_4X4_SURROUND_SPAWNER:
-              - [0, 8, 0] 
-              - [1, 8, 0] 
-              - [2, 8, 0] 
-              - [3, 8, 0] 
-              - [0, 9, 0] 
-              - [3, 9, 0] 
-              - [0, 10, 0] 
-              - [3, 10, 0] 
-              - [0, 11, 0] 
-              - [1, 11, 0] 
-              - [2, 11, 0] 
-              - [3, 11, 0] 
+              - [0, 8, 0]
+              - [1, 8, 0]
+              - [2, 8, 0]
+              - [3, 8, 0]
+              - [0, 9, 0]
+              - [3, 9, 0]
+              - [0, 10, 0]
+              - [3, 10, 0]
+              - [0, 11, 0]
+              - [1, 11, 0]
+              - [2, 11, 0]
+              - [3, 11, 0]
           fuseTimers:
             STR_CHIMERA_TURRET_SPAWNER: [0, 0]
             STR_4X4_TURRET_SPAWNER: [0, 0]
@@ -390,7 +390,7 @@ extended:
               return sprite_index;
             end;
             main_unit.getDirection direction;
-            ##Death anim logic start 
+            ##Death anim logic start
             #battle_game.getTag deathframe Tag.DeathFrame;
             #if gt deathframe 0;
             #end;
@@ -408,7 +408,7 @@ extended:
           unit.getTag center Tag.4x4Center;
           if eq center 1;
             set sprite_index 0;
-            unit.getHealth health; #hides sprite on death, 
+            unit.getHealth health; #hides sprite on death,
             if le health 0;
               return sprite_index;
             end;
@@ -425,7 +425,7 @@ extended:
               add sprite_index 10;
             end;
             unit.getDirection direction;
-            ##Death anim logic start 
+            ##Death anim logic start
             #battle_game.getTag deathframe Tag.DeathFrame;
             #if gt deathframe 0;
             #end;
@@ -479,9 +479,9 @@ extended:
            end;
            return power part side;
 
-    # damageUnit: 
+    # damageUnit:
     #    - offset: 1
-    #      code: | # records animframe for death to get a proper death anim  
+    #      code: | # records animframe for death to get a proper death anim
     #        var int center;
     #        var int health;
     #        var int deathframe;
@@ -535,7 +535,7 @@ extended:
     #         sub mainy 1;
     #         set x mainx;
     #         set y mainy;
-            
+
     #         unit.getId ownid;
     #         loop var loopy 4;
     #           loop var loopx 4;

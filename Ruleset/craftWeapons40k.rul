@@ -405,7 +405,7 @@ items: #craft Related
     costSell: 14000
     transferTime: 48
     clipSize: 1
-    listOrder: 1252  
+    listOrder: 1252
   - type: STR_THUNDER_CANNON              #S 3
     categories: [ STR_CRAFT_WEAPONS]
     requires:
@@ -555,19 +555,19 @@ items: #craft Related
     size: 1.5
     costSell: 22500
     transferTime: 48
-    listOrder: 1853    
+    listOrder: 1853
   - type: STR_COBRA_CANNON                      #S 1.5
     categories: [ STR_CRAFT_WEAPONS]
     size: 1.5
     costSell: 22500
     transferTime: 48
-    listOrder: 1853     
+    listOrder: 1853
   - type: STR_HEAVYDSCYTHES                      #S 1.5
     categories: [ STR_CRAFT_WEAPONS]
     size: 1.5
     costSell: 22500
     transferTime: 48
-    listOrder: 1853 
+    listOrder: 1853
   - type: STR_DSTARCANNON                      #S 1.5
     categories: [ STR_CRAFT_WEAPONS]
     size: 1.5
@@ -579,7 +579,7 @@ items: #craft Related
     size: 1.5
     costSell: 22500
     transferTime: 48
-    listOrder: 1853 
+    listOrder: 1853
 manufacture:
   - name: STR_FUSION_BALL_LAUNCHER
     #category: STR_CRAFT_WEAPON

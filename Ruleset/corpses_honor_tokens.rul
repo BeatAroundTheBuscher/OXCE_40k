@@ -28,7 +28,7 @@ items:
     recoveryTransformations:
       STR_KILLPOINT_TOKEN: [6]
       STR_FLAMER_CORPSE: [1]
-      
+
   - type: STR_SCREAMER_CORPSE
     recoveryTransformations:
       STR_KILLPOINT_TOKEN: [6]
@@ -204,12 +204,12 @@ items:
       STR_KILLPOINT_TOKEN: [12]
       STR_MUTONNC_CORPSE: [1]
 
-  - type: STR_TZEENTCHS_CORPSE 
+  - type: STR_TZEENTCHS_CORPSE
     recoveryTransformations:
       STR_KILLPOINT_TOKEN: [12]
       STR_TZEENTCHS_CORPSE: [1]
 
-  - type: STR_KHORNECHAMP_CORPSE 
+  - type: STR_KHORNECHAMP_CORPSE
     recoveryTransformations:
       STR_KILLPOINT_TOKEN: [12]
       STR_KHORNECHAMP_CORPSE: [1]

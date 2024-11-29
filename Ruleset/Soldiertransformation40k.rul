@@ -167,7 +167,7 @@ soldierTransformation:
     transferTime: 24
     recoveryTime: 0
     lowerBoundAtMinStats: true
-    
+
 #Grey Knights
   - name: STR_RESURRECT_MARINE_GK
     requires:
@@ -256,5 +256,4 @@ soldierTransformation:
     transferTime: 1
     recoveryTime: 0
     lowerBoundAtMinStats: true
-    
-    
+
