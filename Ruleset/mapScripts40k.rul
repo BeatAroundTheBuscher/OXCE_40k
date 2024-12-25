@@ -1377,17 +1377,35 @@ mapScripts:
       rects:
         - [4, 2, 2, 2]
     - type: addBlock
-      size: 1
-      executions: 10
-      blocks: [15]
-      maxUses: [1]
-    - type: addBlock
       executions: 10
       blocks: [16]
       maxUses: [1]
       rects:
         - [2, 0, 1, 4] #[y,x,mapSize_width,mapSize_heigth]
         - [1, 0, 1, 4] #[y,x,mapSize_width,mapSize_heigth]
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 50
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 50
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
+    - type: addBlock
+      size: 1
+      executions: 10
+      blocks: [15]
+      maxUses: [1]
     - type: addBlock #BLOCK1X1 #DROPPODHELPER1
       size: [1, 1, 4]
       craftGroups: [80]
@@ -1430,24 +1448,6 @@ mapScripts:
       executions: 10
       maxUses: [1]
       size: 1
-    - type: addLine
-      label: 1
-      direction: vertical
-      executionChances: 50
-      rects:
-        - [1, 1, 4, 1]
-    - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 50
-      direction: horizontal
-      rects:
-        - [1, 1, 1, 4]
-    - type: addLine
-      conditionals: [-1, -2]
-      direction: both
-      rects:
-        - [1, 1, 4, 4]
     - type: addBlock
       size: 2
       executions: 1
@@ -1463,17 +1463,35 @@ mapScripts:
       rects:
         - [4, 2, 2, 2]
     - type: addBlock
-      size: 1
-      executions: 10
-      blocks: [15]
-      maxUses: [1]
-    - type: addBlock
       executions: 10
       blocks: [17]
       maxUses: [1]
       rects:
         - [2, 0, 1, 4] #[y,x,mapSize_width,mapSize_heigth]
         - [1, 0, 1, 4] #[y,x,mapSize_width,mapSize_heigth]
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 50
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 50
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
+    - type: addBlock
+      size: 1
+      executions: 10
+      blocks: [15]
+      maxUses: [1]
     - type: addBlock #BLOCK1X1 #DROPPODHELPER1
       size: [1, 1, 4]
       craftGroups: [80]
@@ -1516,24 +1534,6 @@ mapScripts:
       executions: 10
       maxUses: [1]
       size: 1
-    - type: addLine
-      label: 1
-      direction: vertical
-      executionChances: 50
-      rects:
-        - [1, 1, 4, 1]
-    - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 50
-      direction: horizontal
-      rects:
-        - [1, 1, 1, 4]
-    - type: addLine
-      conditionals: [-1, -2]
-      direction: both
-      rects:
-        - [1, 1, 4, 4]
     - type: addBlock
       size: 2
       executions: 1
